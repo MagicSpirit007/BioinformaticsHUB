@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+.python-version
+
+# Pipeline outputs (regenerable)
+runs/*
+!runs/.gitkeep
+
+# Local historical research assets and third-party binaries
+archive/
+tools/
+
+# Local agent/design metadata
+.grok/
+.hallmark/
+/AGENTS.md
+
+# Historical root-only document tooling (not part of the product)
+/package.json
+/package-lock.json
+
+# Playwright / browsers cache if local
+.playwright/
+playwright-report/
+test-results/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Secrets (never commit)
+*.pem
+.env.*
+!.env.example
+
+# Node (keep package.json; ignore install tree if not needed in VCS)
+# node_modules/ is large; ignore by default
+node_modules/
+
+# Frontend / desktop build artifacts
+apps/**/dist/
+apps/**/release/
+apps/**/out/
+packaging/embed-python/
+packaging/cache/
+packaging/engine/
+*.exe
+!tools/**/*.exe
+!packaging/scripts/**
+
+# Optional local review dumps
+.codex_review/

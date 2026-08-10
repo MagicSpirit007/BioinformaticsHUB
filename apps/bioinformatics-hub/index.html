@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <!--
+      Strict CSP for packaged file:// UI + local Vite (HMR/ws on 5173).
+      script-src 'self' only — Vite build emits module scripts under assets/.
+      style-src allows 'unsafe-inline' for any small runtime style hooks.
+      connect-src permits Vite dev server + its WebSocket; production stays same-origin.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: bioinformatics-hub-artifact:; font-src 'self' data:; connect-src 'self' http://127.0.0.1:5173 http://localhost:5173 ws://127.0.0.1:5173 ws://localhost:5173; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    />
+    <meta name="description" content="BioinformaticsHUB 研究网站整合平台：组织序列输入、网站任务、结果链接与来源明确的本地产物。" />
+    <title>BioinformaticsHUB · 研究网站整合平台</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

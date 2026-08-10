@@ -1,0 +1,10 @@
+# BioinformaticsHUB 0.3 local tools + one fixed-form browser adapter
+# Install: pip install -r requirements-pipeline.txt
+# Browser: playwright install chromium
+
+biopython>=1.81
+matplotlib>=3.7
+logomaker>=0.8
+Pillow>=10.0
+playwright>=1.40
+numpy>=1.24

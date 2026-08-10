@@ -1,0 +1,1961 @@
+/**
+ * BioinformaticsHUB Electron main process (Windows-first).
+ *
+ * The desktop shell owns session.json and the browser-opening lifecycle. Python
+ * performs sequence preprocessing/local tools plus explicitly allow-listed
+ * auto-submit sites and reports newline-delimited JSON events back here.
+ */
+const { app, BrowserWindow, ipcMain, dialog, shell, Menu, protocol } = require('electron')
+const path = require('path')
+const fs = require('fs')
+const { spawn } = require('child_process')
+const os = require('os')
+const { StringDecoder } = require('string_decoder')
+const {
+  isPackaged,
+  engineRoot,
+  resolvePython,
+  sessionRunnerScript,
+  siteCatalogPath,
+  uiIndexHtml,
+  fallbackHtml,
+  defaultRunsRoot,
+  engineEnv,
+  safeRunId,
+  isPathInside,
+  resolveDeclaredArtifact,
+  copyAlignmentIntoRun,
+  assertAlignmentFileExtension,
+  canFinalizeSession,
+  deriveSessionFinalStatus,
+  resolveRunDir,
+  resolveRunDirFromArg,
+  getDevOrigins,
+  isAllowedNavigation,
+  assertFastaByteLimit,
+  assertHttpUrl,
+  isEntryEquivalentResultUrl,
+  MAX_FASTA_BYTES,
+  MAX_ALIGNMENT_BYTES,
+  ALIGNMENT_EXTENSIONS,
+  CANCEL_GRACE_MS,
+  TASKKILL_TIMEOUT_MS,
+} = require('./paths.cjs')
+
+const SESSION_VERSION = 1
+const MAX_ARTIFACT_BYTES = 50 * 1024 * 1024
+// input_ready may describe a 10 MiB nucleotide FASTA plus its translated form.
+const MAX_EVENT_LINE = 48 * 1024 * 1024
+const MAX_STDERR_BUFFER = 1024 * 1024
+const MANUAL_BATCH_SIZE = 5
+const MANUAL_TAB_DELAY_MS = 750
+const MANUAL_BATCH_DELAY_MS = 4_000
+const SITE_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$/
+const LOCAL_TOOL_IDS = new Set([
+  'nucleic',
+  'physchem',
+  'hydrophobicity',
+  'mafft',
+  'weblogo',
+  'iqtree',
+  'itol',
+])
+
+let mainWindow = null
+
+protocol.registerSchemesAsPrivileged([
+  {
+    scheme: 'bioinformatics-hub-artifact',
+    privileges: { standard: true, secure: true, supportFetchAPI: true, stream: true },
+  },
+])
+
+/**
+ * @type {Map<string, {
+ *   sessionId: string,
+ *   runDir: string,
+ *   child: import('child_process').ChildProcess,
+ *   tempDir: string | null,
+ *   tempFasta: string | null,
+ *   cancelled: boolean,
+ *   disposed: boolean,
+ *   childClosed: boolean,
+ *   runnerDone: boolean,
+ *   runnerOverall: string | null,
+ *   outcomeEmitted: boolean,
+ *   stdoutBuffer: string,
+ *   stderrBuffer: string,
+ *   stdoutDecoder: StringDecoder,
+ *   stderrDecoder: StringDecoder,
+ *   manualTimers: Set<ReturnType<typeof setTimeout>>,
+ *   manualSiteIds: string[],
+ *   manualSitesScheduled: boolean,
+ *   manualInFlight: number,
+ *   openingResultSites: Set<string>,
+ *   fallbackSiteOpenAttempts: Set<string>,
+ *   session: Record<string, unknown>,
+ * }>} */
+const activeSessions = new Map()
+
+/** Files whose absolute paths came from the alignment picker. */
+const selectedAlignmentPaths = new Set()
+
+let catalogCache = null
+let catalogCachePath = null
+let catalogCacheMtime = -1
+
+function send(channel, payload) {
+  if (mainWindow && !mainWindow.isDestroyed()) {
+    mainWindow.webContents.send(channel, payload)
+  }
+}
+
+function nowIso() {
+  return new Date().toISOString()
+}
+
+function textValue(value, maxLength = 4_000) {
+  return String(value == null ? '' : value).replace(/\0/g, '').slice(0, maxLength)
+}
+
+function unlinkQuiet(filePath) {
+  if (!filePath) return
+  try {
+    fs.unlinkSync(filePath)
+  } catch {
+    /* already absent or locked */
+  }
+}
+
+function cleanupTemp(entry) {
+  if (!entry) return
+  unlinkQuiet(entry.tempFasta)
+  entry.tempFasta = null
+  if (entry.tempDir) {
+    try {
+      fs.rmdirSync(entry.tempDir)
+    } catch {
+      /* only remove an empty, main-owned temp directory */
+    }
+    entry.tempDir = null
+  }
+}
+
+function writeTempFasta(sessionId, fastaText) {
+  assertFastaByteLimit(fastaText)
+  const root = path.join(os.tmpdir(), 'bioinformatics-hub-session-')
+  const tempDir = fs.mkdtempSync(root)
+  const tempFasta = path.join(tempDir, `${safeRunId(sessionId)}.fasta`)
+  fs.writeFileSync(tempFasta, fastaText, 'utf8')
+  return { tempDir, tempFasta }
+}
+
+function waitForChildExit(child, timeoutMs) {
+  return new Promise((resolve) => {
+    if (!child) return resolve('no_child')
+    if (child.exitCode != null || child.signalCode != null) return resolve('already_exited')
+    let settled = false
+    const finish = (reason) => {
+      if (settled) return
+      settled = true
+      clearTimeout(timer)
+      child.removeListener('close', onClose)
+      resolve(reason)
+    }
+    const onClose = () => finish('closed')
+    const timer = setTimeout(() => finish('timeout'), timeoutMs)
+    child.once('close', onClose)
+  })
+}
+
+function runTaskkill(pid) {
+  return new Promise((resolve) => {
+    let settled = false
+    let timer = null
+    const finish = (result) => {
+      if (settled) return
+      settled = true
+      if (timer) clearTimeout(timer)
+      resolve(result)
+    }
+    let taskkill
+    try {
+      taskkill = spawn('taskkill', ['/PID', String(pid), '/T', '/F'], {
+        windowsHide: true,
+        stdio: 'ignore',
+      })
+    } catch (error) {
+      finish({ ok: false, error: error.message || String(error) })
+      return
+    }
+    timer = setTimeout(() => {
+      try {
+        taskkill.kill()
+      } catch {
+        /* ignore */
+      }
+      finish({ ok: false, error: 'taskkill_timeout' })
+    }, TASKKILL_TIMEOUT_MS)
+    taskkill.once('close', (code) => finish({ ok: code === 0, code }))
+    taskkill.once('error', (error) =>
+      finish({ ok: false, error: error.message || String(error) }),
+    )
+  })
+}
+
+async function killProcessTree(child) {
+  if (!child || child.exitCode != null || child.signalCode != null) return
+  if (process.platform === 'win32' && child.pid) {
+    await runTaskkill(child.pid)
+    const reason = await waitForChildExit(child, CANCEL_GRACE_MS)
+    if (reason === 'timeout' && child.exitCode == null && child.signalCode == null) {
+      try {
+        child.kill()
+      } catch {
+        /* ignore */
+      }
+      await waitForChildExit(child, 2_000)
+    }
+    return
+  }
+  try {
+    child.kill()
+  } catch {
+    /* ignore */
+  }
+  await waitForChildExit(child, CANCEL_GRACE_MS)
+}
+
+function allowedUiFilePaths() {
+  const list = []
+  const ui = uiIndexHtml()
+  if (ui) list.push(ui)
+  list.push(fallbackHtml())
+  return list
+}
+
+function attachNavigationGuards(win) {
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    try {
+      const safeUrl = assertHttpUrl(url)
+      const allowed = [...loadSiteCatalog().sites.values()].some(
+        (site) => site.entryUrl === safeUrl,
+      )
+      if (allowed) shell.openExternal(safeUrl)
+    } catch {
+      /* deny invalid/non-web popup */
+    }
+    return { action: 'deny' }
+  })
+  win.webContents.on('will-navigate', (event, url) => {
+    if (
+      !isAllowedNavigation(url, {
+        allowedFilePaths: allowedUiFilePaths(),
+        devOrigins: getDevOrigins(),
+      })
+    ) {
+      event.preventDefault()
+    }
+  })
+}
+
+function createWindow() {
+  mainWindow = new BrowserWindow({
+    width: 1280,
+    height: 840,
+    minWidth: 900,
+    minHeight: 640,
+    backgroundColor: '#020617',
+    title: 'BioinformaticsHUB',
+    show: false,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.cjs'),
+      contextIsolation: true,
+      nodeIntegration: false,
+      sandbox: true,
+    },
+  })
+  attachNavigationGuards(mainWindow)
+  mainWindow.once('ready-to-show', () => mainWindow.show())
+
+  const devUrl = process.env.BIOINFORMATICS_HUB_DEV_URL || 'http://127.0.0.1:5173'
+  if (!isPackaged() && process.env.BIOINFORMATICS_HUB_USE_DIST !== '1') {
+    mainWindow.loadURL(devUrl).catch(() => {
+      const dist = uiIndexHtml()
+      if (dist) mainWindow.loadFile(dist)
+      else mainWindow.loadFile(fallbackHtml())
+    })
+    if (process.env.BIOINFORMATICS_HUB_DEVTOOLS === '1') {
+      mainWindow.webContents.openDevTools({ mode: 'detach' })
+    }
+  } else {
+    const indexHtml = uiIndexHtml()
+    mainWindow.loadFile(indexHtml && fs.existsSync(indexHtml) ? indexHtml : fallbackHtml())
+  }
+}
+
+function catalogRows(raw) {
+  const rows = Array.isArray(raw) ? raw : raw?.sites || raw?.catalog || []
+  if (Array.isArray(rows)) return rows
+  if (rows && typeof rows === 'object') {
+    return Object.entries(rows).map(([id, value]) => ({ id, ...(value || {}) }))
+  }
+  return []
+}
+
+function firstSiteUrl(row) {
+  const candidates = [
+    row?.entryUrl,
+    row?.entry_url,
+    row?.url,
+    row?.homeUrl,
+    row?.home_url,
+    row?.submitUrl,
+    row?.submit_url,
+  ]
+  for (const candidate of candidates) {
+    if (!candidate) continue
+    return assertHttpUrl(candidate, `站点 ${row?.id || row?.siteId || ''} URL`)
+  }
+  throw new Error(`站点 ${row?.id || row?.siteId || '(unknown)'} 缺少入口 URL`)
+}
+
+function normalizeExecution(value) {
+  const raw = String(value || '').toLowerCase()
+  if (['auto_submit', 'auto-submit', 'auto'].includes(raw)) return 'auto_submit'
+  if (['open_only', 'open-only', 'manual', 'browser'].includes(raw)) return 'open_only'
+  if (raw === 'local') return 'local'
+  return raw
+}
+
+function additionalSiteOrigins(row) {
+  const values = []
+  for (const key of [
+    'resultOrigins',
+    'result_origins',
+    'allowedOrigins',
+    'allowed_origins',
+    'allowedResultOrigins',
+    'allowed_result_origins',
+  ]) {
+    const value = row?.[key]
+    if (Array.isArray(value)) values.push(...value)
+    else if (value) values.push(value)
+  }
+  const origins = new Set()
+  for (const value of values) {
+    try {
+      origins.add(new URL(assertHttpUrl(value, '站点结果来源')).origin)
+    } catch {
+      const host = String(value || '').trim().toLowerCase()
+      if (/^[a-z0-9.-]+$/.test(host)) {
+        origins.add(`https://${host}`)
+        origins.add(`http://${host}`)
+      }
+    }
+  }
+  return origins
+}
+
+function loadSiteCatalog() {
+  const filePath = siteCatalogPath()
+  let stat
+  try {
+    stat = fs.statSync(filePath)
+  } catch {
+    throw new Error(`找不到网站目录: ${filePath}`)
+  }
+  if (catalogCache && catalogCachePath === filePath && catalogCacheMtime === stat.mtimeMs) {
+    return catalogCache
+  }
+  let raw
+  try {
+    raw = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  } catch (error) {
+    throw new Error(`网站目录无法解析: ${error.message || error}`)
+  }
+  const sites = new Map()
+  for (const row of catalogRows(raw)) {
+    const siteId = String(row?.siteId || row?.id || '').trim()
+    if (!SITE_ID_RE.test(siteId)) throw new Error(`网站目录含非法 siteId: ${siteId}`)
+    if (sites.has(siteId)) throw new Error(`网站目录含重复 siteId: ${siteId}`)
+    const execution = normalizeExecution(row?.execution || row?.mode || row?.kind)
+    if (!['open_only', 'auto_submit', 'local'].includes(execution)) {
+      throw new Error(`网站 ${siteId} 的 execution 无效: ${execution || '(empty)'}`)
+    }
+    if (execution === 'local') continue
+    const entryUrl = firstSiteUrl(row)
+    const allowedOrigins = additionalSiteOrigins(row)
+    const entryParsed = new URL(entryUrl)
+    allowedOrigins.add(entryParsed.origin)
+    // Permit an official host to upgrade/downgrade between its catalogued HTTP
+    // and HTTPS endpoint without permitting a different host.
+    allowedOrigins.add(`http://${entryParsed.host}`)
+    allowedOrigins.add(`https://${entryParsed.host}`)
+    sites.set(siteId, {
+      siteId,
+      name: textValue(row?.name || row?.label || siteId, 200),
+      execution,
+      entryUrl,
+      allowedOrigins,
+      warning: textValue(row?.warning || row?.risk || '', 1_000),
+    })
+  }
+  catalogCache = { version: raw?.version || 1, path: filePath, sites }
+  catalogCachePath = filePath
+  catalogCacheMtime = stat.mtimeMs
+  return catalogCache
+}
+
+function getCatalogSite(siteIdRaw) {
+  const siteId = String(siteIdRaw || '').trim()
+  if (!SITE_ID_RE.test(siteId)) throw new Error('siteId 无效')
+  const site = loadSiteCatalog().sites.get(siteId)
+  if (!site) throw new Error(`网站不在目录中: ${siteId}`)
+  return site
+}
+
+function assertResultUrlForSite(site, rawUrl) {
+  const canonical = assertHttpUrl(rawUrl, `${site.name || site.siteId} 结果 URL`)
+  const origin = new URL(canonical).origin
+  if (!site.allowedOrigins.has(origin)) {
+    throw new Error(`结果 URL 来源不属于网站目录允许范围: ${origin}`)
+  }
+  return canonical
+}
+
+function assertPersistableResultUrlForSite(site, rawUrl) {
+  const canonical = assertResultUrlForSite(site, rawUrl)
+  if (isEntryEquivalentResultUrl(site.entryUrl, canonical)) {
+    throw new Error(
+      `这仍是 ${site.name || site.siteId} 的入口页，不能作为可复开的结果链接。` +
+        '若网站提交后地址未变化，请选择“无可复开链接，标记完成”。',
+    )
+  }
+  return canonical
+}
+
+function isValidSiteResultRecord(record) {
+  try {
+    const siteId = String(record?.siteId || record?.id || '')
+    const catalogSite = getCatalogSite(siteId)
+    return Boolean(record?.resultUrl && assertResultUrlForSite(catalogSite, record.resultUrl))
+  } catch {
+    return false
+  }
+}
+
+function normalizeIdList(value, label) {
+  const raw = Array.isArray(value)
+    ? value
+    : typeof value === 'string' && value.trim()
+      ? value.split(',')
+      : []
+  const ids = []
+  const seen = new Set()
+  for (const item of raw) {
+    const id = String(item || '').trim()
+    if (!SITE_ID_RE.test(id)) throw new Error(`${label} 含非法 ID: ${id}`)
+    if (!seen.has(id)) {
+      ids.push(id)
+      seen.add(id)
+    }
+  }
+  if (ids.length > 128) throw new Error(`${label} 数量过多`)
+  return ids
+}
+
+function allocateSessionId(geneIdRaw) {
+  const base = safeRunId(geneIdRaw || 'gene')
+  const baseDir = resolveRunDir(base).runDir
+  if (!fs.existsSync(baseDir)) return base
+  const stamp = nowIso().replace(/[-:TZ.]/g, '').slice(0, 14)
+  for (let index = 0; index < 1_000; index += 1) {
+    const suffix = index ? `-${stamp}-${index + 1}` : `-${stamp}`
+    const candidate = safeRunId(`${base}${suffix}`)
+    if (!fs.existsSync(resolveRunDir(candidate).runDir)) return candidate
+  }
+  throw new Error('无法分配新的会话目录')
+}
+
+function atomicWriteJson(filePath, value) {
+  const dir = path.dirname(filePath)
+  fs.mkdirSync(dir, { recursive: true })
+  const tmp = path.join(
+    dir,
+    `.${path.basename(filePath)}.${process.pid}.${Date.now()}.${Math.random().toString(16).slice(2)}.tmp`,
+  )
+  try {
+    fs.writeFileSync(tmp, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
+    fs.renameSync(tmp, filePath)
+  } finally {
+    unlinkQuiet(tmp)
+  }
+}
+
+function sessionPath(runDir) {
+  const resolved = path.resolve(runDir, 'session.json')
+  if (!isPathInside(runDir, resolved)) throw new Error('session.json 路径越界')
+  return resolved
+}
+
+function persistSession(runDir, session, { touch = true } = {}) {
+  if (touch) session.updatedAt = nowIso()
+  atomicWriteJson(sessionPath(runDir), session)
+}
+
+function normalizedArtifactPath(rawPath) {
+  return String(rawPath || '')
+    .replace(/\\/g, '/')
+    .split('/')
+    .filter((part) => part && part !== '.')
+    .join('/')
+}
+
+function artifactUrl(sessionId, relativePath) {
+  const encodedPath = normalizedArtifactPath(relativePath)
+    .split('/')
+    .map(encodeURIComponent)
+    .join('/')
+  return `bioinformatics-hub-artifact://file/${encodeURIComponent(sessionId)}/${encodedPath}`
+}
+
+function artifactMime(filePath) {
+  return new Map([
+    ['.png', 'image/png'],
+    ['.jpg', 'image/jpeg'],
+    ['.jpeg', 'image/jpeg'],
+    ['.webp', 'image/webp'],
+  ]).get(path.extname(String(filePath || '')).toLowerCase())
+}
+
+function declaredArtifactPaths(session) {
+  return (Array.isArray(session?.localTools) ? session.localTools : []).flatMap((tool) =>
+    (Array.isArray(tool?.artifacts) ? tool.artifacts : [])
+      .map((artifact) => artifact?.path)
+      .filter(Boolean),
+  )
+}
+
+function readDeclaredInputText(runDir, relativePath, maxBytes) {
+  if (!relativePath) return undefined
+  const candidate = path.resolve(runDir, String(relativePath))
+  if (!isPathInside(runDir, candidate)) return undefined
+  try {
+    const stat = fs.statSync(candidate)
+    if (!stat.isFile() || stat.size > maxBytes) return undefined
+    return fs.readFileSync(candidate, 'utf8')
+  } catch {
+    return undefined
+  }
+}
+
+function safeSessionInputPath(runDir, rawPath) {
+  if (!rawPath) return null
+  const raw = String(rawPath).replace(/\\/g, '/')
+  if (
+    raw.includes('\0') ||
+    path.isAbsolute(String(rawPath)) ||
+    path.posix.isAbsolute(raw) ||
+    raw.split('/').includes('..')
+  ) {
+    return null
+  }
+  const normalized = path.posix.normalize(raw)
+  if (!normalized || normalized === '.') return null
+  const candidate = path.resolve(runDir, ...normalized.split('/'))
+  if (!isPathInside(runDir, candidate)) return null
+  return path.relative(runDir, candidate).replace(/\\/g, '/')
+}
+
+function publicSession(session, runDir, { includeInputText = false } = {}) {
+  const input = { ...(session.input || {}) }
+  const inputFiles = [
+    ['normalizedFastaPath', 'normalizedFasta', MAX_FASTA_BYTES],
+    ['cdsFastaPath', 'cdsFasta', MAX_FASTA_BYTES],
+    ['proteinFastaPath', 'proteinFasta', MAX_FASTA_BYTES],
+    ['alignmentFastaPath', 'alignmentFasta', MAX_ALIGNMENT_BYTES],
+  ]
+  for (const textKey of [
+    'fastaText',
+    'sequenceText',
+    'normalizedFasta',
+    'nucleotideFasta',
+    'cdsFasta',
+    'proteinFasta',
+    'alignmentFasta',
+  ]) {
+    delete input[textKey]
+  }
+  for (const [pathKey, textKey, limit] of inputFiles) {
+    const safePath = safeSessionInputPath(runDir, input[pathKey])
+    if (!safePath) {
+      delete input[pathKey]
+      continue
+    }
+    input[pathKey] = safePath
+    if (includeInputText) {
+      const text = readDeclaredInputText(runDir, safePath, limit)
+      if (text !== undefined) input[textKey] = text
+    }
+  }
+  if (includeInputText && !input.nucleotideFasta && input.cdsFasta) {
+    input.nucleotideFasta = input.cdsFasta
+  }
+  if (!input.translationRule && input.translation?.rule) {
+    input.translationRule = textValue(input.translation.rule, 1_000)
+  }
+
+  const localTools = (Array.isArray(session.localTools) ? session.localTools : []).map((tool) => ({
+    ...tool,
+    artifacts: (Array.isArray(tool?.artifacts) ? tool.artifacts : []).map((artifact) => {
+      const item = { ...artifact }
+      if (artifactMime(artifact.path)) {
+        item.url = artifactUrl(session.sessionId || session.id, artifact.path)
+      } else {
+        delete item.url
+      }
+      return item
+    }),
+  }))
+  const result = { ...session, input, localTools, sessionDir: runDir, runDir }
+  for (const key of ['fastaText', 'sequenceText', 'cdsFasta', 'proteinFasta', 'alignmentFasta']) {
+    delete result[key]
+  }
+  return result
+}
+
+async function handleArtifactRequest(request) {
+  try {
+    const url = new URL(request.url)
+    if (url.hostname !== 'file') return new Response('Not found', { status: 404 })
+    const parts = url.pathname
+      .split('/')
+      .filter(Boolean)
+      .map((part) => decodeURIComponent(part))
+    const sessionId = parts.shift()
+    if (!sessionId || safeRunId(sessionId) !== sessionId || !parts.length) {
+      return new Response('Bad request', { status: 400 })
+    }
+    const loaded = readSession(sessionId)
+    if (loaded.legacy) return new Response('Not found', { status: 404 })
+    const declaredPaths = declaredArtifactPaths(loaded.session)
+    const target = resolveDeclaredArtifact(loaded.runDir, declaredPaths, parts.join('/'))
+    const mime = artifactMime(target)
+    if (!mime) return new Response('Unsupported media type', { status: 415 })
+    const stat = await fs.promises.stat(target)
+    if (!stat.isFile() || stat.size > MAX_ARTIFACT_BYTES) {
+      return new Response('Not found', { status: 404 })
+    }
+    const body = await fs.promises.readFile(target)
+    return new Response(body, {
+      status: 200,
+      headers: {
+        'Content-Type': mime,
+        'Content-Length': String(stat.size),
+        'Cache-Control': 'no-store',
+        'X-Content-Type-Options': 'nosniff',
+      },
+    })
+  } catch {
+    return new Response('Not found', { status: 404 })
+  }
+}
+
+function readSession(sessionIdRaw) {
+  const { runId: sessionId, runDir } = resolveRunDir(sessionIdRaw)
+  if (!fs.existsSync(runDir) || !fs.statSync(runDir).isDirectory()) {
+    throw new Error(`会话目录不存在: ${sessionId}`)
+  }
+  const filePath = sessionPath(runDir)
+  if (!fs.existsSync(filePath)) return legacySessionPayload(sessionId, runDir)
+  let session
+  try {
+    session = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  } catch (error) {
+    throw new Error(`session.json 无法解析: ${error.message || error}`)
+  }
+  if (!session || typeof session !== 'object' || Array.isArray(session)) {
+    throw new Error('session.json 结构无效')
+  }
+  if (!Array.isArray(session.sites)) session.sites = []
+  if (!Array.isArray(session.localTools)) session.localTools = []
+  // The containing directory is authoritative; never trust IDs persisted in data.
+  session.id = sessionId
+  session.sessionId = sessionId
+  return { session, sessionId, runDir, legacy: false }
+}
+
+function legacySessionPayload(sessionId, runDir) {
+  const stat = fs.statSync(runDir)
+  const indexPath = path.join(runDir, 'index.html')
+  return {
+    legacy: true,
+    sessionId,
+    runDir,
+    session: {
+      id: sessionId,
+      sessionId,
+      status: 'legacy',
+      legacy: true,
+      createdAt: stat.birthtime?.toISOString?.() || stat.mtime.toISOString(),
+      updatedAt: stat.mtime.toISOString(),
+      input: null,
+      sites: [],
+      localTools: [],
+      openFolderPath: runDir,
+      indexPath: fs.existsSync(indexPath) ? indexPath : null,
+    },
+  }
+}
+
+function loadSessionPayload(sessionIdRaw) {
+  const loaded = readSession(sessionIdRaw)
+  return publicSession(loaded.session, loaded.runDir, { includeInputText: true })
+}
+
+function findSiteRecord(session, siteId) {
+  return session.sites.find((row) => String(row?.siteId || row?.id) === siteId)
+}
+
+function findToolRecord(session, toolId) {
+  return session.localTools.find((row) => String(row?.toolId || row?.id) === toolId)
+}
+
+function sanitizeArtifact(raw, runDir) {
+  if (!raw) return null
+  const source = typeof raw === 'string' ? { path: raw } : raw
+  if (typeof source !== 'object') return null
+  const pathValue = source.path || source.file || source.relativePath
+  if (!pathValue) return null
+  const candidate = path.isAbsolute(String(pathValue))
+    ? path.resolve(String(pathValue))
+    : path.resolve(runDir, String(pathValue))
+  if (!isPathInside(runDir, candidate)) return null
+  const relativePath = path.relative(runDir, candidate).replace(/\\/g, '/')
+  const result = {
+    path: relativePath,
+    name: textValue(source.name || path.basename(candidate), 240),
+    kind: textValue(source.kind || source.type || 'file', 80),
+  }
+  if (source.description) result.description = textValue(source.description, 1_000)
+  if (source.url) {
+    try {
+      result.url = assertHttpUrl(source.url, '产物 URL')
+    } catch {
+      /* local artifacts need no renderer-loadable URL */
+    }
+  }
+  return result
+}
+
+function mergeSitePatch(entry, patch) {
+  if (!patch || typeof patch !== 'object') return false
+  const siteId = String(patch.siteId || patch.id || '').trim()
+  if (!siteId) return false
+  const record = findSiteRecord(entry.session, siteId)
+  if (!record) return false
+  const catalogSite = getCatalogSite(siteId)
+  if (patch.status || patch.state) record.status = textValue(patch.status || patch.state, 64)
+  if (patch.message != null) record.message = textValue(patch.message, 4_000)
+  if (patch.note != null || patch.notes != null) {
+    record.notes = textValue(patch.notes ?? patch.note, 4_000)
+  }
+  for (const key of ['openedAt', 'startedAt', 'completedAt']) {
+    if (patch[key]) record[key] = textValue(patch[key], 80)
+  }
+  if (patch.resultUrl || patch.result_url) {
+    const rawUrl = patch.resultUrl || patch.result_url
+    try {
+      record.resultUrl = assertResultUrlForSite(catalogSite, rawUrl)
+    } catch (error) {
+      record.resultUrl = null
+      record.status = 'needs_manual'
+      record.message = textValue(error.message, 4_000)
+    }
+  }
+  if (record.status === 'result_ready') {
+    try {
+      if (!record.resultUrl) throw new Error(`${catalogSite.name} 未返回结果 URL`)
+      record.resultUrl = assertResultUrlForSite(catalogSite, record.resultUrl)
+    } catch (error) {
+      record.resultUrl = null
+      record.status = 'needs_manual'
+      record.message = textValue(error.message || error, 4_000)
+    }
+  }
+  record.updatedAt = nowIso()
+  return true
+}
+
+function maybeOpenAutomaticResult(entry, siteId) {
+  const record = findSiteRecord(entry.session, siteId)
+  if (
+    !record ||
+    record.execution !== 'auto_submit' ||
+    !record.resultUrl ||
+    record.resultOpenedAt ||
+    entry.openingResultSites.has(siteId) ||
+    entry.cancelled ||
+    entry.disposed
+  ) {
+    return
+  }
+  const catalogSite = getCatalogSite(siteId)
+  let resultUrl
+  try {
+    resultUrl = assertResultUrlForSite(catalogSite, record.resultUrl)
+  } catch (error) {
+    record.resultUrl = null
+    record.status = 'needs_manual'
+    record.message = textValue(error.message || error, 4_000)
+    emitSessionUpdate(entry)
+    maybeOpenAutomaticFallback(entry, siteId)
+    return
+  }
+  entry.openingResultSites.add(siteId)
+  entry.manualInFlight += 1
+  shell
+    .openExternal(resultUrl)
+    .then(() => {
+      if (!entry.cancelled && !entry.disposed) {
+        record.resultOpenedAt = nowIso()
+        record.updatedAt = record.resultOpenedAt
+        emitSessionUpdate(entry)
+      }
+    })
+    .catch((error) => {
+      if (!entry.cancelled && !entry.disposed) {
+        record.status = 'needs_manual'
+        record.message = `结果已生成，但无法自动打开：${textValue(error.message || error, 3_900)}`
+        emitSessionUpdate(entry)
+      }
+    })
+    .finally(() => {
+      entry.openingResultSites.delete(siteId)
+      entry.manualInFlight -= 1
+      maybeDisposeEntry(entry)
+    })
+}
+
+function maybeOpenAutomaticFallback(entry, siteId) {
+  const record = findSiteRecord(entry.session, siteId)
+  if (
+    !record ||
+    record.execution !== 'auto_submit' ||
+    record.status !== 'needs_manual' ||
+    record.resultUrl ||
+    record.fallbackOpenAttemptedAt ||
+    entry.fallbackSiteOpenAttempts.has(siteId) ||
+    entry.openingResultSites.has(siteId) ||
+    entry.cancelled ||
+    entry.disposed
+  ) {
+    return
+  }
+  const catalogSite = getCatalogSite(siteId)
+  entry.fallbackSiteOpenAttempts.add(siteId)
+  entry.openingResultSites.add(siteId)
+  entry.manualInFlight += 1
+  record.fallbackOpenAttemptedAt = nowIso()
+  record.updatedAt = record.fallbackOpenAttemptedAt
+  emitSessionUpdate(entry)
+  shell
+    .openExternal(catalogSite.entryUrl)
+    .then(() => {
+      if (!entry.cancelled && !entry.disposed) {
+        record.openedAt = nowIso()
+        record.updatedAt = record.openedAt
+        emitSessionUpdate(entry)
+      }
+    })
+    .catch((error) => {
+      if (!entry.cancelled && !entry.disposed) {
+        record.message = `需要人工处理，且官方入口打开失败：${textValue(error.message || error, 3_850)}`
+        emitSessionUpdate(entry)
+      }
+    })
+    .finally(() => {
+      entry.openingResultSites.delete(siteId)
+      entry.manualInFlight -= 1
+      maybeDisposeEntry(entry)
+    })
+}
+
+const AUDIT_LEAF = Symbol('bioinformaticsHubAuditLeaf')
+
+function looksLikeAbsolutePath(value) {
+  const raw = String(value || '').trim()
+  return path.isAbsolute(raw) || path.win32.isAbsolute(raw) || path.posix.isAbsolute(raw)
+}
+
+function portableBasename(value) {
+  const raw = String(value || '')
+  return raw.includes('\\') ? path.win32.basename(raw) : path.posix.basename(raw)
+}
+
+function sanitizeAbsoluteAuditPath(rawPath, runDir) {
+  const absolute = path.resolve(String(rawPath))
+  if (isPathInside(runDir, absolute)) {
+    return {
+      [AUDIT_LEAF]: true,
+      value: path.relative(runDir, absolute).replace(/\\/g, '/'),
+      location: 'session',
+    }
+  }
+  const engine = engineRoot()
+  if (isPathInside(engine, absolute)) {
+    const relative = path.relative(engine, absolute).replace(/\\/g, '/')
+    return { [AUDIT_LEAF]: true, value: `engine/${relative}`, location: 'engine' }
+  }
+  return {
+    [AUDIT_LEAF]: true,
+    value: textValue(portableBasename(rawPath), 512),
+    location: 'external',
+  }
+}
+
+function sanitizeAuditValue(value, runDir, depth = 0) {
+  if (value == null || typeof value === 'boolean' || typeof value === 'number') return value
+  if (typeof value === 'string') {
+    if (looksLikeAbsolutePath(value)) return sanitizeAbsoluteAuditPath(value, runDir)
+    return { [AUDIT_LEAF]: true, value: textValue(value, 4_000), location: null }
+  }
+  if (depth >= 8) return null
+  if (Array.isArray(value)) {
+    return value.slice(0, 128).map((item) => {
+      const sanitized = sanitizeAuditValue(item, runDir, depth + 1)
+      return sanitized && typeof sanitized === 'object' && sanitized[AUDIT_LEAF]
+        ? sanitized.value
+        : sanitized
+    })
+  }
+  if (typeof value !== 'object') return null
+  const result = {}
+  let hasExternalPath = false
+  for (const [rawKey, item] of Object.entries(value).slice(0, 128)) {
+    const key = textValue(rawKey, 128)
+    if (!key || ['__proto__', 'prototype', 'constructor'].includes(key)) continue
+    const sanitized = sanitizeAuditValue(item, runDir, depth + 1)
+    if (sanitized && typeof sanitized === 'object' && sanitized[AUDIT_LEAF]) {
+      result[key] = sanitized.value
+      if (sanitized.location === 'external') hasExternalPath = true
+    } else {
+      result[key] = sanitized
+    }
+  }
+  if (hasExternalPath) result.location = 'external'
+  return result
+}
+
+function sanitizeProvenance(value, runDir) {
+  const sanitized = sanitizeAuditValue(value, runDir)
+  return sanitized && typeof sanitized === 'object' && !Array.isArray(sanitized) ? sanitized : {}
+}
+
+function sanitizeSourceText(value, runDir) {
+  const raw = textValue(value, 1_000)
+  if (!looksLikeAbsolutePath(raw)) return { value: raw, location: null }
+  return sanitizeAbsoluteAuditPath(raw, runDir)
+}
+
+function mergeToolPatch(entry, patch) {
+  if (!patch || typeof patch !== 'object') return false
+  const toolId = String(patch.toolId || patch.id || '').trim()
+  if (!toolId) return false
+  const record = findToolRecord(entry.session, toolId)
+  if (!record) return false
+  if (patch.status || patch.state) record.status = textValue(patch.status || patch.state, 64)
+  if (patch.message != null) record.message = textValue(patch.message, 4_000)
+  if (patch.provenance && typeof patch.provenance === 'object') {
+    record.provenance = sanitizeProvenance(patch.provenance, entry.runDir)
+  }
+  if (patch.parameters && typeof patch.parameters === 'object') {
+    record.parameters = patch.parameters
+  }
+  if (patch.version != null) record.version = textValue(patch.version, 128)
+  if (patch.source != null) {
+    const source = sanitizeSourceText(patch.source, entry.runDir)
+    if (source.value) record.source = source.value
+    if (source.location === 'external') {
+      record.provenance = { ...(record.provenance || {}), location: 'external' }
+    }
+  }
+  if (Array.isArray(patch.artifacts)) {
+    record.artifacts = patch.artifacts
+      .slice(0, 256)
+      .map((artifact) => sanitizeArtifact(artifact, entry.runDir))
+      .filter(Boolean)
+  }
+  for (const key of ['startedAt', 'completedAt']) {
+    if (patch[key]) record[key] = textValue(patch[key], 80)
+  }
+  record.updatedAt = nowIso()
+  return true
+}
+
+function mergeInputPatch(entry, patch) {
+  if (!patch || typeof patch !== 'object') return false
+  const input = entry.session.input || {}
+  const primitiveKeys = [
+    'id',
+    'alias',
+    'kind',
+    'inputKind',
+    'detectedKind',
+    'sequenceType',
+    'length',
+    'lengthBp',
+    'lengthAa',
+    'cdsLengthBp',
+    'proteinLengthAa',
+    'hasCds',
+    'hasProtein',
+    'geneticCode',
+    'translationFrame',
+  ]
+  for (const key of primitiveKeys) {
+    if (['string', 'number', 'boolean'].includes(typeof patch[key])) input[key] = patch[key]
+  }
+  if (Array.isArray(patch.warnings)) {
+    input.warnings = patch.warnings.slice(0, 100).map((item) => textValue(item, 1_000))
+  }
+  if (patch.translation && typeof patch.translation === 'object') {
+    input.translation = patch.translation
+  }
+  for (const key of ['normalizedFastaPath', 'cdsFastaPath', 'proteinFastaPath']) {
+    if (!patch[key]) continue
+    const candidate = path.isAbsolute(String(patch[key]))
+      ? path.resolve(String(patch[key]))
+      : path.resolve(entry.runDir, String(patch[key]))
+    if (isPathInside(entry.runDir, candidate)) {
+      input[key] = path.relative(entry.runDir, candidate).replace(/\\/g, '/')
+    }
+  }
+  // The alignment location is fixed by Electron at session:start. A runner
+  // event may echo that path, but must never replace it with another path.
+  if (input.alignmentFastaPath && patch.alignmentFastaPath) {
+    const expected = path.resolve(entry.runDir, String(input.alignmentFastaPath))
+    const candidate = path.isAbsolute(String(patch.alignmentFastaPath))
+      ? path.resolve(String(patch.alignmentFastaPath))
+      : path.resolve(entry.runDir, String(patch.alignmentFastaPath))
+    if (isPathInside(entry.runDir, expected) && candidate === expected) {
+      input.alignmentFastaPath = path.relative(entry.runDir, expected).replace(/\\/g, '/')
+    }
+  }
+  entry.session.input = input
+  return true
+}
+
+function mergeSessionPatch(entry, patch) {
+  if (!patch || typeof patch !== 'object') return false
+  let changed = false
+  if (patch.status) {
+    entry.session.status = textValue(patch.status, 64)
+    changed = true
+  }
+  if (patch.message != null) {
+    entry.session.message = textValue(patch.message, 4_000)
+    changed = true
+  }
+  if (patch.input) changed = mergeInputPatch(entry, patch.input) || changed
+  if (Array.isArray(patch.sites)) {
+    for (const sitePatch of patch.sites) changed = mergeSitePatch(entry, sitePatch) || changed
+  }
+  if (Array.isArray(patch.localTools)) {
+    for (const toolPatch of patch.localTools) changed = mergeToolPatch(entry, toolPatch) || changed
+  }
+  return changed
+}
+
+function emitSessionUpdate(entry) {
+  persistSession(entry.runDir, entry.session)
+  send('session:update', publicSession(entry.session, entry.runDir))
+}
+
+function emitLog(entry, message, level = 'info') {
+  send('session:log', {
+    sessionId: entry?.sessionId,
+    message: textValue(message, 16_000),
+    level: textValue(level, 32),
+  })
+}
+
+function emitOutcomeOnce(entry, channel, payload) {
+  if (!entry || entry.outcomeEmitted) return false
+  entry.outcomeEmitted = true
+  send(channel, payload)
+  return true
+}
+
+function eventType(event) {
+  return String(event?.type || event?.event || event?.kind || '').toLowerCase()
+}
+
+function handleRunnerEvent(entry, event) {
+  if (!event || typeof event !== 'object' || entry.disposed) return
+  const type = eventType(event)
+  const data = event.data && typeof event.data === 'object' ? event.data : event
+
+  if (type === 'log' || type.endsWith(':log')) {
+    emitLog(entry, event.message ?? data.message ?? '', event.level || data.level || 'info')
+    return
+  }
+
+  let changed = false
+  if (event.session && typeof event.session === 'object') {
+    changed = mergeSessionPatch(entry, event.session) || changed
+  }
+  if (type.includes('site') || event.site || data.siteId) {
+    const sitePatch = event.site || data.site || data
+    changed = mergeSitePatch(entry, sitePatch) || changed
+    const siteId = String(sitePatch?.siteId || sitePatch?.id || '').trim()
+    if (siteId) {
+      maybeOpenAutomaticResult(entry, siteId)
+      maybeOpenAutomaticFallback(entry, siteId)
+    }
+  }
+  if (type.includes('local') || type.includes('tool') || event.localTool || data.toolId) {
+    changed = mergeToolPatch(entry, event.localTool || data.localTool || data.tool || data) || changed
+  }
+  if (type.includes('input') || event.input) {
+    changed = mergeInputPatch(entry, event.input || data.input || data) || changed
+  }
+  if (type === 'input_ready') scheduleManualSitesOnce(entry)
+  if ((type === 'update' || type === 'session:update' || type === 'status') && event.status) {
+    entry.session.status = textValue(event.status, 64)
+    if (event.message != null) entry.session.message = textValue(event.message, 4_000)
+    changed = true
+  }
+
+  if (type === 'error' || type === 'session:error') {
+    entry.runnerDone = true
+    entry.runnerOverall = 'partial'
+    entry.session.runner = { status: 'failed', overall: 'partial' }
+    clearManualTimers(entry)
+    entry.session.status = 'failed'
+    entry.session.message = textValue(event.message || data.message || '会话运行失败', 4_000)
+    changed = true
+  } else if (type === 'cancelled' || type === 'session:cancelled') {
+    entry.cancelled = true
+    entry.runnerDone = true
+    entry.runnerOverall = 'partial'
+    entry.session.runner = { status: 'cancelled', overall: 'partial' }
+    clearManualTimers(entry)
+    entry.session.status = 'cancelled'
+    changed = true
+  } else if (type === 'done' || type === 'session:done') {
+    const terminalStatus = event.status || event.overall || data.status || data.overall
+    entry.runnerDone = true
+    entry.runnerOverall = String(terminalStatus || 'ok').toLowerCase()
+    entry.session.runner = { status: 'done', overall: entry.runnerOverall }
+    // Electron still owns pending manual tab opens, so the top-level session
+    // remains running until the child and every open operation have settled.
+    if (!['failed', 'cancelled'].includes(entry.session.status)) entry.session.status = 'running'
+    changed = true
+  }
+
+  if (changed) emitSessionUpdate(entry)
+
+  if (type === 'error' || type === 'session:error') {
+    emitOutcomeOnce(entry, 'session:error', {
+      sessionId: entry.sessionId,
+      message: entry.session.message,
+    })
+  } else if (type === 'cancelled' || type === 'session:cancelled') {
+    emitOutcomeOnce(entry, 'session:cancelled', { sessionId: entry.sessionId })
+  }
+  maybeDisposeEntry(entry)
+}
+
+function handleStdoutChunk(entry, chunk) {
+  entry.stdoutBuffer += entry.stdoutDecoder.write(chunk)
+  if (entry.stdoutBuffer.length > MAX_EVENT_LINE) {
+    emitLog(entry, 'Python 事件行超过大小上限，已丢弃该行', 'error')
+    entry.stdoutBuffer = ''
+    return
+  }
+  const lines = entry.stdoutBuffer.split(/\r?\n/)
+  entry.stdoutBuffer = lines.pop() || ''
+  for (const line of lines) {
+    if (!line.trim()) continue
+    try {
+      handleRunnerEvent(entry, JSON.parse(line))
+    } catch {
+      emitLog(entry, line)
+    }
+  }
+}
+
+function handleStderrChunk(entry, chunk) {
+  entry.stderrBuffer += entry.stderrDecoder.write(chunk)
+  if (entry.stderrBuffer.length > MAX_STDERR_BUFFER) {
+    emitLog(entry, entry.stderrBuffer.slice(0, MAX_STDERR_BUFFER), 'error')
+    entry.stderrBuffer = ''
+    return
+  }
+  const lines = entry.stderrBuffer.split(/\r?\n/)
+  entry.stderrBuffer = lines.pop() || ''
+  for (const line of lines) if (line.trim()) emitLog(entry, line, 'error')
+}
+
+function clearManualTimers(entry) {
+  for (const timer of entry.manualTimers) clearTimeout(timer)
+  entry.manualTimers.clear()
+}
+
+function maybeFinalizeSession(entry) {
+  if (
+    !canFinalizeSession({
+      childClosed: entry.childClosed,
+      runnerDone: entry.runnerDone,
+      pendingManualCount: entry.manualTimers.size,
+      manualInFlight: entry.manualInFlight,
+      cancelled: entry.cancelled,
+      outcomeEmitted: entry.outcomeEmitted,
+    })
+  ) {
+    return false
+  }
+  entry.session.status = deriveSessionFinalStatus(
+    entry.runnerOverall,
+    entry.session.sites,
+    entry.session.localTools,
+    { isValidSiteResult: isValidSiteResultRecord },
+  )
+  entry.session.completedAt = nowIso()
+  emitSessionUpdate(entry)
+  emitOutcomeOnce(entry, 'session:done', {
+    sessionId: entry.sessionId,
+    sessionDir: entry.runDir,
+    status: entry.session.status,
+  })
+  return true
+}
+
+function maybeDisposeEntry(entry) {
+  if (entry.disposed) return
+  if (!entry.childClosed || entry.manualTimers.size > 0 || entry.manualInFlight > 0) return
+  if (!entry.cancelled && !entry.outcomeEmitted && !maybeFinalizeSession(entry)) return
+  if (!entry.outcomeEmitted) return
+  entry.disposed = true
+  cleanupTemp(entry)
+  if (activeSessions.get(entry.sessionId) === entry) activeSessions.delete(entry.sessionId)
+}
+
+async function openScheduledSite(entry, siteId) {
+  if (entry.cancelled || entry.disposed) return
+  const catalogSite = getCatalogSite(siteId)
+  const record = findSiteRecord(entry.session, siteId)
+  // A user may have opened/completed the card before its batch timer fired.
+  if (!record || record.status !== 'queued' || record.resultUrl) return
+  entry.manualInFlight += 1
+  record.status = 'opening'
+  record.updatedAt = nowIso()
+  emitSessionUpdate(entry)
+  try {
+    await shell.openExternal(catalogSite.entryUrl)
+    if (!entry.cancelled) {
+      record.status = 'opened_manual'
+      record.openedAt = nowIso()
+      record.message = ''
+      emitSessionUpdate(entry)
+    }
+  } catch (error) {
+    if (!entry.cancelled) {
+      record.status = 'failed'
+      record.message = textValue(error.message || error, 4_000)
+      emitSessionUpdate(entry)
+    }
+  } finally {
+    entry.manualInFlight -= 1
+    maybeDisposeEntry(entry)
+  }
+}
+
+function scheduleManualSites(entry, siteIds) {
+  let offset = 0
+  for (let start = 0; start < siteIds.length; start += MANUAL_BATCH_SIZE) {
+    const batch = siteIds.slice(start, start + MANUAL_BATCH_SIZE)
+    batch.forEach((siteId, index) => {
+      let timer
+      timer = setTimeout(() => {
+        entry.manualTimers.delete(timer)
+        if (!entry.cancelled && !entry.disposed) {
+          openScheduledSite(entry, siteId)
+            .catch((error) => emitLog(entry, error.message || error, 'error'))
+            .finally(() => maybeDisposeEntry(entry))
+        } else {
+          maybeDisposeEntry(entry)
+        }
+      }, offset + index * MANUAL_TAB_DELAY_MS)
+      entry.manualTimers.add(timer)
+    })
+    offset += Math.max(0, batch.length - 1) * MANUAL_TAB_DELAY_MS
+    if (start + MANUAL_BATCH_SIZE < siteIds.length) offset += MANUAL_BATCH_DELAY_MS
+  }
+}
+
+function scheduleManualSitesOnce(entry) {
+  if (entry.manualSitesScheduled || entry.cancelled || entry.disposed) return
+  entry.manualSitesScheduled = true
+  scheduleManualSites(entry, entry.manualSiteIds)
+}
+
+function finishChild(entry, code) {
+  if (entry.disposed) return
+  entry.stdoutBuffer += entry.stdoutDecoder.end()
+  entry.stderrBuffer += entry.stderrDecoder.end()
+  if (entry.stdoutBuffer.trim()) {
+    try {
+      handleRunnerEvent(entry, JSON.parse(entry.stdoutBuffer))
+    } catch {
+      emitLog(entry, entry.stdoutBuffer)
+    }
+  }
+  if (entry.stderrBuffer.trim()) emitLog(entry, entry.stderrBuffer, 'error')
+  entry.stdoutBuffer = ''
+  entry.stderrBuffer = ''
+  entry.childClosed = true
+  cleanupTemp(entry)
+
+  if (!entry.cancelled) {
+    if (code === 0) {
+      if (!entry.runnerDone) {
+        entry.runnerDone = true
+        entry.runnerOverall = 'partial'
+        entry.session.runner = { status: 'done_without_event', overall: 'partial', exitCode: 0 }
+        entry.session.message = 'session_runner.py 已退出，但未发送 done 事件'
+        emitLog(entry, entry.session.message, 'error')
+        emitSessionUpdate(entry)
+      }
+    } else if (!entry.outcomeEmitted) {
+      entry.runnerDone = true
+      entry.runnerOverall = 'partial'
+      entry.session.runner = { status: 'failed', overall: 'partial', exitCode: code }
+      clearManualTimers(entry)
+      entry.session.status = 'failed'
+      entry.session.message = `session_runner.py exit ${code}`
+      for (const site of entry.session.sites) {
+        if (['queued', 'opening', 'submitting'].includes(site.status)) site.status = 'failed'
+      }
+      for (const tool of entry.session.localTools) {
+        if (['queued', 'running'].includes(tool.status)) tool.status = 'failed'
+      }
+      emitSessionUpdate(entry)
+      emitOutcomeOnce(entry, 'session:error', {
+        sessionId: entry.sessionId,
+        message: entry.session.message,
+      })
+    }
+  }
+  maybeDisposeEntry(entry)
+}
+
+function spawnSessionRunner(pyArgs) {
+  return spawn(resolvePython(), pyArgs, {
+    cwd: engineRoot(),
+    env: engineEnv(),
+    windowsHide: true,
+  })
+}
+
+function validateAlignmentPath(rawPath) {
+  if (!rawPath) return null
+  const absolute = path.resolve(String(rawPath))
+  const key = process.platform === 'win32' ? absolute.toLowerCase() : absolute
+  if (!selectedAlignmentPaths.has(key)) {
+    throw new Error('比对文件必须通过“选择比对文件”导入')
+  }
+  // Picker grants are single-use: a stale path from another session cannot be
+  // silently reused later.
+  selectedAlignmentPaths.delete(key)
+  assertAlignmentFileExtension(absolute)
+  const stat = fs.statSync(absolute)
+  if (!stat.isFile()) throw new Error('所选比对路径不是文件')
+  if (stat.size > MAX_ALIGNMENT_BYTES) throw new Error('比对文件超过 25 MiB 上限')
+  return { path: absolute }
+}
+
+function markdownCell(value) {
+  return textValue(value, 8_000).replace(/\r?\n/g, ' ').replace(/\|/g, '\\|') || '—'
+}
+
+function markdownJson(value) {
+  if (!value || typeof value !== 'object' || !Object.keys(value).length) return '—'
+  return `\n\n\`\`\`json\n${JSON.stringify(value, null, 2)}\n\`\`\``
+}
+
+function markdownWebLink(value) {
+  if (!value) return '—'
+  try {
+    const safeUrl = assertHttpUrl(value, '研究工作包 URL')
+      .replace(/\|/g, '%7C')
+      .replace(/>/g, '%3E')
+    return `<${safeUrl}>`
+  } catch {
+    return '—'
+  }
+}
+
+function buildResearchBundle(session) {
+  const input = session.input || {}
+  const lines = [
+    `# BioinformaticsHUB 研究工作包：${markdownCell(input.geneId || session.sessionId)}`,
+    '',
+    '> 本文件只记录输入、会话状态、本地工具来源与网站结果链接；不包含科学结论。',
+    '',
+    '## 会话与输入',
+    '',
+    '| 字段 | 值 |',
+    '|---|---|',
+    `| 会话 ID | ${markdownCell(session.sessionId)} |`,
+    `| 基因 ID | ${markdownCell(input.geneId)} |`,
+    `| 别名 | ${markdownCell(input.alias)} |`,
+    `| 输入类型 | ${markdownCell(input.detectedKind || input.inputKind)} |`,
+    `| FASTA 字节数 | ${markdownCell(input.fastaBytes)} |`,
+    `| 规范化 FASTA 路径 | ${markdownCell(input.normalizedFastaPath)} |`,
+    `| 多序列比对路径 | ${markdownCell(input.alignmentFastaPath)} |`,
+    `| 创建时间 | ${markdownCell(session.createdAt)} |`,
+    `| 更新时间 | ${markdownCell(session.updatedAt)} |`,
+  ]
+  if (Array.isArray(input.warnings) && input.warnings.length) {
+    lines.push('', '输入警告：', '', ...input.warnings.map((warning) => `- ${markdownCell(warning)}`))
+  }
+
+  lines.push('', '## 本地工具与产物', '')
+  if (!session.localTools.length) lines.push('未选择本地工具。')
+  for (const tool of session.localTools) {
+    lines.push(
+      `### ${markdownCell(tool.toolId || tool.id)}`,
+      '',
+      `- 状态：${markdownCell(tool.status)}`,
+      `- 实现来源：${markdownCell(tool.source)}`,
+      `- 版本：${markdownCell(tool.version)}`,
+      `- Provenance：${markdownJson(tool.provenance)}`,
+      `- 参数：${markdownJson(tool.parameters)}`,
+    )
+    const artifacts = Array.isArray(tool.artifacts) ? tool.artifacts : []
+    if (artifacts.length) {
+      lines.push('', '产物：', '')
+      for (const artifact of artifacts) {
+        lines.push(`- ${markdownCell(artifact.name || artifact.path)} — \`${markdownCell(artifact.path)}\``)
+      }
+    }
+    lines.push('')
+  }
+
+  lines.push(
+    '## 网站任务与结果链接',
+    '',
+    '| 网站 | 模式 | 状态 | 官方入口 | 结果链接 | 用户备注 |',
+    '|---|---|---|---|---|---|',
+  )
+  for (const site of session.sites) {
+    const entryUrl = markdownWebLink(site.entryUrl)
+    const result = site.resultUrl
+      ? markdownWebLink(site.resultUrl)
+      : String(site.status || '').toLowerCase() === 'completed_manual'
+        ? '无可复开链接'
+        : ''
+    lines.push(
+      `| ${markdownCell(site.name || site.siteId)} | ${markdownCell(site.execution)} | ${markdownCell(site.status)} | ${entryUrl} | ${result} | ${markdownCell(site.notes)} |`,
+    )
+  }
+  lines.push('')
+  return `${lines.join('\n')}\n`
+}
+
+function writeResearchBundle(runDir, session) {
+  const handoffDir = path.resolve(runDir, '10_research_handoff')
+  if (!isPathInside(runDir, handoffDir)) throw new Error('研究工作包路径越界')
+  fs.mkdirSync(handoffDir, { recursive: true })
+  const target = path.join(handoffDir, '研究工作包.md')
+  const tmp = path.join(handoffDir, `.研究工作包.${process.pid}.${Date.now()}.tmp`)
+  try {
+    fs.writeFileSync(tmp, buildResearchBundle(session), 'utf8')
+    fs.renameSync(tmp, target)
+  } finally {
+    unlinkQuiet(tmp)
+  }
+  return target
+}
+
+ipcMain.handle('session:start', async (_event, args) => {
+  const fastaText = String(args?.fastaText ?? args?.sequenceText ?? args?.cdsText ?? '').trim()
+  if (!fastaText) throw new Error('缺少 FASTA 序列')
+  assertFastaByteLimit(fastaText)
+
+  const runner = sessionRunnerScript()
+  if (!fs.existsSync(runner)) {
+    throw new Error(`找不到会话引擎: ${runner}`)
+  }
+
+  const geneId = safeRunId(args?.geneId || args?.id || 'gene')
+  const sessionId = allocateSessionId(geneId)
+  if (activeSessions.has(sessionId)) throw new Error(`会话已在运行: ${sessionId}`)
+  const alias = textValue(args?.alias, 256)
+  const inputKind = ['auto', 'cds', 'protein'].includes(String(args?.inputKind))
+    ? String(args.inputKind)
+    : 'auto'
+  const requestedSiteIds = normalizeIdList(args?.siteIds ?? args?.sites, '网站列表')
+  const localToolIds = normalizeIdList(
+    args?.localToolIds ?? args?.localTools,
+    '本地工具列表',
+  )
+  for (const toolId of localToolIds) {
+    if (!LOCAL_TOOL_IDS.has(toolId)) throw new Error(`未知本地工具: ${toolId}`)
+  }
+  const catalogSites = requestedSiteIds.map((siteId) => getCatalogSite(siteId))
+  const autoSiteIds = catalogSites
+    .filter((site) => site.execution === 'auto_submit')
+    .map((site) => site.siteId)
+  const manualSiteIds = catalogSites
+    .filter((site) => site.execution === 'open_only')
+    .map((site) => site.siteId)
+  const alignmentSelection = validateAlignmentPath(args?.alignmentPath)
+
+  fs.mkdirSync(defaultRunsRoot(), { recursive: true })
+  const { runDir } = resolveRunDir(sessionId)
+  fs.mkdirSync(runDir, { recursive: false })
+  let tempDir = null
+  let tempFasta = null
+  let alignmentCopy = null
+  try {
+    if (alignmentSelection) {
+      alignmentCopy = copyAlignmentIntoRun(alignmentSelection.path, runDir)
+    }
+    const tempFiles = writeTempFasta(sessionId, fastaText)
+    tempDir = tempFiles.tempDir
+    tempFasta = tempFiles.tempFasta
+  } catch (error) {
+    cleanupTemp({ tempDir, tempFasta })
+    throw error
+  }
+  const createdAt = nowIso()
+  const session = {
+    schemaVersion: SESSION_VERSION,
+    version: '0.3.0',
+    id: sessionId,
+    sessionId,
+    status: 'running',
+    runner: { status: 'running', overall: null },
+    createdAt,
+    updatedAt: createdAt,
+    input: {
+      geneId,
+      alias,
+      inputKind,
+      fastaBytes: Buffer.byteLength(fastaText, 'utf8'),
+      alignmentFastaPath: alignmentCopy?.relativePath || null,
+    },
+    sites: catalogSites.map((site) => ({
+      id: site.siteId,
+      siteId: site.siteId,
+      name: site.name,
+      execution: site.execution,
+      entryUrl: site.entryUrl,
+      status: 'queued',
+      resultUrl: null,
+      notes: '',
+      warning: site.warning || '',
+      updatedAt: createdAt,
+    })),
+    localTools: localToolIds.map((toolId) => ({
+      id: toolId,
+      toolId,
+      status: 'queued',
+      provenance: {},
+      parameters: {},
+      artifacts: [],
+      updatedAt: createdAt,
+    })),
+  }
+  try {
+    persistSession(runDir, session, { touch: false })
+  } catch (error) {
+    cleanupTemp({ tempDir, tempFasta })
+    throw error
+  }
+
+  const pyArgs = [
+    runner,
+    '--fasta',
+    tempFasta,
+    '--id',
+    sessionId,
+    '--run-dir',
+    runDir,
+    '--alias',
+    alias,
+    '--input-kind',
+    inputKind,
+    '--local-tools',
+    localToolIds.join(','),
+    '--auto-sites',
+    autoSiteIds.join(','),
+  ]
+  if (alignmentCopy) pyArgs.push('--alignment', alignmentCopy.path)
+
+  let child
+  try {
+    child = spawnSessionRunner(pyArgs)
+  } catch (error) {
+    cleanupTemp({ tempDir, tempFasta })
+    session.status = 'failed'
+    session.message = textValue(error.message || error, 4_000)
+    persistSession(runDir, session)
+    throw error
+  }
+
+  const entry = {
+    sessionId,
+    runDir,
+    child,
+    tempDir,
+    tempFasta,
+    cancelled: false,
+    disposed: false,
+    childClosed: false,
+    runnerDone: false,
+    runnerOverall: null,
+    outcomeEmitted: false,
+    stdoutBuffer: '',
+    stderrBuffer: '',
+    stdoutDecoder: new StringDecoder('utf8'),
+    stderrDecoder: new StringDecoder('utf8'),
+    manualTimers: new Set(),
+    manualSiteIds,
+    manualSitesScheduled: false,
+    manualInFlight: 0,
+    openingResultSites: new Set(),
+    fallbackSiteOpenAttempts: new Set(),
+    session,
+  }
+  activeSessions.set(sessionId, entry)
+  child.stdout.on('data', (chunk) => handleStdoutChunk(entry, chunk))
+  child.stderr.on('data', (chunk) => handleStderrChunk(entry, chunk))
+  child.once('close', (code) => finishChild(entry, code))
+  child.once('error', (error) => {
+    if (entry.disposed || entry.cancelled) return
+    entry.runnerDone = true
+    entry.runnerOverall = 'partial'
+    entry.session.runner = { status: 'failed', overall: 'partial' }
+    clearManualTimers(entry)
+    entry.session.status = 'failed'
+    entry.session.message = textValue(error.message || error, 4_000)
+    for (const site of entry.session.sites) {
+      if (['queued', 'opening', 'submitting'].includes(site.status)) site.status = 'failed'
+    }
+    for (const tool of entry.session.localTools) {
+      if (['queued', 'running'].includes(tool.status)) tool.status = 'failed'
+    }
+    emitSessionUpdate(entry)
+    emitOutcomeOnce(entry, 'session:error', {
+      sessionId,
+      message: entry.session.message,
+    })
+  })
+
+  send('session:update', publicSession(session, runDir, { includeInputText: true }))
+  return { sessionId, sessionDir: runDir, runId: sessionId, runDir }
+})
+
+ipcMain.handle('session:cancel', async (_event, sessionIdRaw) => {
+  const sessionId = safeRunId(sessionIdRaw)
+  const entry = activeSessions.get(sessionId)
+  if (!entry) return { ok: false, reason: 'not_running' }
+  entry.cancelled = true
+  clearManualTimers(entry)
+  for (const site of entry.session.sites) {
+    if (['queued', 'opening', 'submitting'].includes(site.status)) {
+      site.status = 'cancelled'
+      site.updatedAt = nowIso()
+    }
+  }
+  for (const tool of entry.session.localTools) {
+    if (['queued', 'running'].includes(tool.status)) {
+      tool.status = 'cancelled'
+      tool.updatedAt = nowIso()
+    }
+  }
+  entry.session.status = 'cancelled'
+  entry.session.runner = {
+    ...(entry.session.runner || {}),
+    status: 'cancelled',
+    overall: 'partial',
+  }
+  emitSessionUpdate(entry)
+  try {
+    await killProcessTree(entry.child)
+  } catch {
+    /* session state still becomes cancelled */
+  }
+  entry.childClosed = true
+  cleanupTemp(entry)
+  emitOutcomeOnce(entry, 'session:cancelled', { sessionId })
+  entry.disposed = true
+  activeSessions.delete(sessionId)
+  return { ok: true }
+})
+
+ipcMain.handle('session:load', async (_event, sessionId) => loadSessionPayload(sessionId))
+
+ipcMain.handle('session:list', async () => {
+  const root = defaultRunsRoot()
+  if (!fs.existsSync(root)) return []
+  const items = []
+  for (const name of fs.readdirSync(root)) {
+    if (name.startsWith('.')) continue
+    if (safeRunId(name) !== name) continue
+    const runDir = path.join(root, name)
+    let stat
+    try {
+      stat = fs.statSync(runDir)
+      if (!stat.isDirectory()) continue
+    } catch {
+      continue
+    }
+    const filePath = sessionPath(runDir)
+    if (!fs.existsSync(filePath)) {
+      const legacy = legacySessionPayload(name, runDir).session
+      items.push({ ...publicSession(legacy, runDir), geneId: name, alias: '' })
+      continue
+    }
+    try {
+      const session = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+      const input = session.input && typeof session.input === 'object' ? session.input : {}
+      const publicInput = publicSession(session, runDir).input
+      items.push({
+        id: name,
+        sessionId: name,
+        geneId: textValue(input.geneId || input.id || name, 256),
+        alias: textValue(input.alias, 256),
+        status: textValue(session.status || 'unknown', 64),
+        createdAt: session.createdAt || stat.birthtime.toISOString(),
+        updatedAt: session.updatedAt || stat.mtime.toISOString(),
+        input: publicInput,
+        version: String(session.version || '0.3.0'),
+        legacy: false,
+        sessionDir: runDir,
+        runDir,
+      })
+    } catch (error) {
+      items.push({
+        id: name,
+        sessionId: name,
+        geneId: name,
+        alias: '',
+        status: 'invalid',
+        message: `session.json 无法解析: ${textValue(error.message || error, 500)}`,
+        createdAt: stat.birthtime.toISOString(),
+        updatedAt: stat.mtime.toISOString(),
+        input: null,
+        legacy: false,
+        sessionDir: runDir,
+        runDir,
+      })
+    }
+  }
+  items.sort((a, b) => String(b.updatedAt || '').localeCompare(String(a.updatedAt || '')))
+  return items
+})
+
+ipcMain.handle('artifact:reveal', async (_event, payload) => {
+  const sessionId = payload?.sessionId || payload?.runId
+  const loaded = readSession(sessionId)
+  if (loaded.legacy) throw new Error('旧版记录不包含已声明的本地产物')
+  const target = resolveDeclaredArtifact(
+    loaded.runDir,
+    declaredArtifactPaths(loaded.session),
+    payload?.path,
+  )
+  const stat = fs.statSync(target)
+  if (!stat.isFile()) throw new Error('产物不是普通文件')
+  shell.showItemInFolder(target)
+  return { ok: true }
+})
+
+ipcMain.handle('site:open', async (_event, payload) => {
+  const sessionId = payload?.sessionId || payload?.runId
+  const loaded = readSession(sessionId)
+  if (loaded.legacy) throw new Error('旧版记录不包含网站任务')
+  const activeEntry = activeSessions.get(loaded.sessionId)
+  const session = activeEntry && !activeEntry.disposed ? activeEntry.session : loaded.session
+  const site = getCatalogSite(payload?.siteId)
+  const record = findSiteRecord(session, site.siteId)
+  if (!record) throw new Error(`网站未包含在本次会话中: ${site.siteId}`)
+
+  let target = record.resultUrl
+    ? assertResultUrlForSite(site, record.resultUrl)
+    : site.entryUrl
+  if (payload?.url) {
+    const supplied = assertHttpUrl(payload.url, '打开 URL')
+    const allowed = new Set([site.entryUrl, record.resultUrl].filter(Boolean))
+    if (!allowed.has(supplied)) throw new Error('打开 URL 不属于该会话的网站记录')
+    target = supplied
+  }
+  await shell.openExternal(target)
+  if (!record.resultUrl) {
+    record.status = record.execution === 'auto_submit' ? 'needs_manual' : 'opened_manual'
+    record.openedAt = nowIso()
+    record.updatedAt = record.openedAt
+    persistSession(loaded.runDir, session)
+    send('session:update', publicSession(session, loaded.runDir))
+    if (activeEntry) maybeDisposeEntry(activeEntry)
+  }
+  return { ok: true, resultUrl: record.resultUrl || undefined, status: record.status }
+})
+
+ipcMain.handle('site:saveResult', async (_event, payload) => {
+  const sessionId = payload?.sessionId || payload?.runId
+  const loaded = readSession(sessionId)
+  if (loaded.legacy) throw new Error('旧版记录不支持保存网站结果')
+  const activeEntry = activeSessions.get(loaded.sessionId)
+  const sessionRecord = activeEntry && !activeEntry.disposed ? activeEntry.session : loaded.session
+  const catalogSite = getCatalogSite(payload?.siteId)
+  const record = findSiteRecord(sessionRecord, catalogSite.siteId)
+  if (!record) throw new Error(`网站未包含在本次会话中: ${catalogSite.siteId}`)
+  const resultMode = String(payload?.resultMode || (payload?.resultUrl ? 'result_url' : '')).trim()
+  if (!['result_url', 'no_persistent_url'].includes(resultMode)) {
+    throw new Error('必须明确保存结果链接，或选择无可复开链接完成')
+  }
+  if (resultMode === 'result_url') {
+    record.resultUrl = assertPersistableResultUrlForSite(catalogSite, payload?.resultUrl)
+  } else {
+    if (payload?.resultUrl) throw new Error('无可复开链接模式不能同时保存结果 URL')
+    record.resultUrl = null
+  }
+  record.notes = textValue(payload?.notes ?? payload?.note, 4_000)
+  const completed = resultMode === 'no_persistent_url' || payload?.completed !== false
+  record.status = completed ? 'completed_manual' : 'result_ready'
+  record.completedAt = completed ? nowIso() : null
+  record.updatedAt = nowIso()
+  if (!activeEntry && sessionRecord.status !== 'cancelled') {
+    const runnerOverall = sessionRecord.runner?.overall ||
+      (sessionRecord.status === 'failed' ? 'partial' : 'ok')
+    sessionRecord.status = deriveSessionFinalStatus(
+      runnerOverall,
+      sessionRecord.sites,
+      sessionRecord.localTools,
+      { isValidSiteResult: isValidSiteResultRecord },
+    )
+  }
+  persistSession(loaded.runDir, sessionRecord)
+  if (activeEntry) maybeDisposeEntry(activeEntry)
+  const session = publicSession(sessionRecord, loaded.runDir)
+  send('session:update', session)
+  return { ok: true, session }
+})
+
+ipcMain.handle('fs:exportResearchBundle', async (_event, runIdOrDir) => {
+  const { runId: sessionId, runDir } = resolveRunDirFromArg(runIdOrDir)
+  const loaded = readSession(sessionId)
+  if (loaded.legacy) throw new Error('旧版记录没有 0.3 研究工作包')
+  const primary = writeResearchBundle(runDir, loaded.session)
+  const { filePath } = await dialog.showSaveDialog(mainWindow, {
+    title: '导出研究工作包',
+    defaultPath: `研究工作包_${sessionId}.md`,
+    filters: [{ name: 'Markdown', extensions: ['md'] }],
+  })
+  if (!filePath) return { path: primary }
+  const destination = path.resolve(filePath)
+  if (destination !== path.resolve(primary)) fs.copyFileSync(primary, destination)
+  return { path: destination }
+})
+
+async function pickTextFile({ title, filters, maxBytes, rememberAlignment = false }) {
+  const { canceled, filePaths } = await dialog.showOpenDialog(mainWindow, {
+    title,
+    filters,
+    properties: ['openFile'],
+  })
+  if (canceled || !filePaths[0]) return null
+  const filePath = path.resolve(filePaths[0])
+  if (rememberAlignment) assertAlignmentFileExtension(filePath)
+  const stat = fs.statSync(filePath)
+  if (!stat.isFile()) throw new Error('所选路径不是文件')
+  if (stat.size > maxBytes) {
+    throw new Error(`文件超过 ${Math.floor(maxBytes / 1024 / 1024)} MiB 上限`)
+  }
+  const text = fs.readFileSync(filePath, 'utf8')
+  if (Buffer.byteLength(text, 'utf8') > maxBytes) throw new Error('文件内容超过大小上限')
+  if (rememberAlignment) {
+    const key = process.platform === 'win32' ? filePath.toLowerCase() : filePath
+    selectedAlignmentPaths.add(key)
+    while (selectedAlignmentPaths.size > 128) {
+      selectedAlignmentPaths.delete(selectedAlignmentPaths.values().next().value)
+    }
+  }
+  return { path: filePath, name: path.basename(filePath), text }
+}
+
+ipcMain.handle('fs:pickFasta', async () =>
+  pickTextFile({
+    title: '选择 FASTA',
+    filters: [
+      { name: 'FASTA', extensions: ['fa', 'fasta', 'fna', 'faa', 'txt'] },
+      { name: 'All', extensions: ['*'] },
+    ],
+    maxBytes: MAX_FASTA_BYTES,
+  }),
+)
+
+ipcMain.handle('fs:pickAlignment', async () =>
+  pickTextFile({
+    title: '选择多序列比对文件',
+    filters: [
+      {
+        name: '多序列 FASTA',
+        extensions: ALIGNMENT_EXTENSIONS.map((extension) => extension.slice(1)),
+      },
+    ],
+    maxBytes: MAX_ALIGNMENT_BYTES,
+    rememberAlignment: true,
+  }),
+)
+
+function stopAllSessions() {
+  for (const entry of activeSessions.values()) {
+    entry.cancelled = true
+    clearManualTimers(entry)
+    entry.session.status = 'cancelled'
+    entry.session.runner = {
+      ...(entry.session.runner || {}),
+      status: 'cancelled',
+      overall: 'partial',
+    }
+    for (const site of entry.session.sites) {
+      if (['queued', 'opening', 'submitting'].includes(site.status)) site.status = 'cancelled'
+    }
+    for (const tool of entry.session.localTools) {
+      if (['queued', 'running'].includes(tool.status)) tool.status = 'cancelled'
+    }
+    try {
+      persistSession(entry.runDir, entry.session)
+    } catch {
+      /* quitting must continue even if storage became unavailable */
+    }
+    entry.disposed = true
+    killProcessTree(entry.child).catch(() => {})
+    cleanupTemp(entry)
+  }
+  activeSessions.clear()
+}
+
+app.whenReady().then(() => {
+  Menu.setApplicationMenu(null)
+  protocol.handle('bioinformatics-hub-artifact', handleArtifactRequest)
+  createWindow()
+})
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow()
+})
+
+app.on('window-all-closed', () => {
+  stopAllSessions()
+  if (process.platform !== 'darwin') app.quit()
+})
+
+app.on('before-quit', stopAllSessions)

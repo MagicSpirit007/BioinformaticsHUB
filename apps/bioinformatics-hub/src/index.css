@@ -1,0 +1,111 @@
+@import '../tokens.css';
+
+:root {
+  font: 100%/1.6 var(--font-body);
+  color-scheme: light;
+  color: var(--color-ink-2);
+  background: var(--color-paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+body {
+  min-width: 20rem;
+  background:
+    radial-gradient(circle at 12% 18%, color-mix(in oklch, var(--color-paper-3) 28%, transparent) 0 0.08rem, transparent 0.1rem),
+    radial-gradient(circle at 76% 42%, color-mix(in oklch, var(--color-rule) 16%, transparent) 0 0.06rem, transparent 0.09rem),
+    linear-gradient(112deg, color-mix(in oklch, var(--color-paper-2) 46%, transparent), transparent 34%),
+    var(--color-paper);
+  background-size: 1.7rem 1.9rem, 2.3rem 2.1rem, 100% 100%, auto;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  opacity: 0.3;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      color-mix(in oklch, var(--color-ink) 5%, transparent) 0,
+      color-mix(in oklch, var(--color-ink) 5%, transparent) var(--rule-hairline),
+      transparent var(--rule-hairline),
+      transparent 0.28rem
+    ),
+    repeating-linear-gradient(
+      91deg,
+      transparent 0,
+      transparent 1.9rem,
+      color-mix(in oklch, var(--color-rule) 7%, transparent) 1.94rem,
+      transparent 2rem
+    );
+  mix-blend-mode: multiply;
+}
+
+body::after {
+  opacity: 0.18;
+  background:
+    radial-gradient(ellipse at 24% 70%, color-mix(in oklch, var(--color-rule) 22%, transparent), transparent 32%),
+    radial-gradient(ellipse at 84% 8%, color-mix(in oklch, var(--color-paper-3) 35%, transparent), transparent 27%);
+  mix-blend-mode: multiply;
+}
+
+#root {
+  position: relative;
+  z-index: var(--z-base);
+  min-height: 100svh;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button,
+label,
+input[type='checkbox'] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+code,
+pre {
+  font-family: var(--font-outlier);
+}
+
+::selection {
+  color: var(--color-accent-ink);
+  background: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}

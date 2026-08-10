@@ -1,0 +1,10 @@
+# BioinformaticsHUB bundled engine (Windows embeddable Python)
+# Playwright and its fixed Chromium build are installed by bootstrap_engine.ps1.
+# Install:  packaging\scripts\bootstrap_engine.ps1
+
+biopython>=1.81
+matplotlib>=3.7
+logomaker>=0.8
+Pillow>=10.0
+numpy>=1.24
+playwright>=1.40,<2

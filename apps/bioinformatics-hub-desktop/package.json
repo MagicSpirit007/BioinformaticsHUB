@@ -1,0 +1,92 @@
+{
+  "name": "bioinformatics-hub-desktop",
+  "private": true,
+  "version": "0.3.0",
+  "description": "BioinformaticsHUB Electron shell — website analysis aggregator and local tools",
+  "author": "MagicSpirit007",
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron .",
+    "test": "node --test tests/paths.helpers.test.cjs",
+    "check": "node --check main.cjs && node --check paths.cjs && node --check preload.cjs",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win --x64",
+    "dist:nsis": "electron-builder --win nsis --x64",
+    "dist:portable": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^35.1.2",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.bioinformaticshub.app",
+    "productName": "BioinformaticsHUB",
+    "copyright": "Copyright © 2026 MagicSpirit007",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.cjs",
+      "paths.cjs",
+      "preload.cjs",
+      "fallback.html",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../bioinformatics-hub/dist",
+        "to": "ui",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "../../packaging/engine",
+        "to": "engine",
+        "filter": [
+          "**/*",
+          "!**/__pycache__/**",
+          "!**/*.pyc",
+          "!**/.doctor_mpl.png",
+          "!**/runs/**"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+      "signAndEditExecutable": false,
+      "signDlls": false
+    },
+    "forceCodeSigning": false,
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BioinformaticsHUB",
+      "deleteAppDataOnUninstall": false
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.${ext}"
+    }
+  }
+}
