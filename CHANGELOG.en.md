@@ -2,6 +2,14 @@
 
 > [中文版](./CHANGELOG.md) · [English](./CHANGELOG.en.md)
 
+## 0.5.1 - 2026-08-13
+
+- Fixed a Windows PATH parsing bug that split drive letters and broke tool auto-detection when the app and tools live on different drives.
+- Fixed degraded mode (no engine detected) leaving sessions stuck in "running" when no website was selected; they now finalize to "partial" immediately.
+- Chromium detection now verifies the browser binary actually exists, so auto-submit readiness is no longer overstated.
+- Reworked the custom-sites dialog: viewport-centered, opaque paper, and the site form can pick an existing category.
+- Fixed the section numbering on the new-session page (custom sites 03, local tools 04).
+
 ## 0.5.0 - 2026-08-13
 
 - The installer no longer bundles the local tool engine (Python / MAFFT / IQ-TREE / Playwright Chromium), greatly reducing its size.

@@ -247,8 +247,34 @@ function nowIso() {
   return new Date().toISOString()
 }
 
+/**
+ * Best-effort removal of a freshly created run directory that never received a
+ * persisted session.json (session start failed mid-setup). Keeps allocateSessionId
+ * names reusable; only removes the directory when it is empty or only contains
+ * the initial alignment copy, and never touches anything outside the runs root.
+ */
+function removeEmptyRunDir(runDir) {
+  if (!runDir) return
+  try {
+    const stat = fs.statSync(runDir)
+    if (!stat.isDirectory()) return
+    const allowed = new Set(['00_input'])
+    for (const entry of fs.readdirSync(runDir)) {
+      if (!allowed.has(entry)) return
+    }
+    const inputDir = path.join(runDir, '00_input')
+    if (fs.existsSync(inputDir)) {
+      fs.rmSync(inputDir, { recursive: true, force: true })
+    }
+    fs.rmdirSync(runDir)
+  } catch {
+    /* best-effort only */
+  }
+}
+
 const PY_PROBE_SNIPPET = [
   'import json',
+  'import os',
   'pkgs = {}',
   "for name, key in [('Bio','biopython'),('numpy','numpy'),('matplotlib','matplotlib'),('logomaker','logomaker'),('PIL','pillow'),('playwright','playwright')]:",
   '    try:',
@@ -261,7 +287,8 @@ const PY_PROBE_SNIPPET = [
   '    try:',
   '        from playwright.sync_api import sync_playwright',
   '        with sync_playwright() as p:',
-  '            chromium = bool(p.chromium.executable_path)',
+  '            exe = p.chromium.executable_path',
+  '            chromium = bool(exe) and os.path.isfile(exe)',
   '    except Exception:',
   '        chromium = False',
   "print(json.dumps({'packages': pkgs, 'chromium': chromium}))",
@@ -1815,8 +1842,10 @@ ipcMain.handle('session:start', async (_event, args) => {
 
   // Engine availability decides whether auto-submit runs and whether the Python
   // session engine can be spawned at all (external tools are no longer bundled).
+  // probeEngine() already resolved the interpreter, so reuse it instead of
+  // re-scanning PATH/spawning a second probe.
   const engine = probeEngine()
-  const python = resolvePython()
+  const python = engine.pythonPath || null
   const canRunEngine = Boolean(python && engine.coreReady)
   const canAutoSubmit = engine.autoSubmitReady
   const downgradedAutoIds = canAutoSubmit
@@ -1848,6 +1877,7 @@ ipcMain.handle('session:start', async (_event, args) => {
     tempFasta = tempFiles.tempFasta
   } catch (error) {
     cleanupTemp({ tempDir, tempFasta })
+    removeEmptyRunDir(runDir)
     throw error
   }
   const createdAt = nowIso()
@@ -1856,7 +1886,7 @@ ipcMain.handle('session:start', async (_event, args) => {
     : '自动提交不可用（未检测到 Playwright/Chromium），已改为手动打开'
   const session = {
     schemaVersion: SESSION_VERSION,
-    version: '0.5.0',
+    version: '0.5.1',
     id: sessionId,
     sessionId,
     status: 'running',
@@ -1918,6 +1948,7 @@ ipcMain.handle('session:start', async (_event, args) => {
     persistSession(runDir, session, { touch: false })
   } catch (error) {
     cleanupTemp({ tempDir, tempFasta })
+    removeEmptyRunDir(runDir)
     throw error
   }
 
@@ -1950,13 +1981,20 @@ ipcMain.handle('session:start', async (_event, args) => {
     }
     activeSessions.set(sessionId, entry)
     send('session:update', publicSession(session, runDir, { includeInputText: true }))
-    scheduleManualSites(entry, manualSiteIds)
+    if (manualSiteIds.length) {
+      scheduleManualSites(entry, manualSiteIds)
+    } else {
+      // No runner and no manual tabs: finalize immediately so the session does
+      // not stay stuck in "running" (which also leaks temp files and the entry).
+      maybeFinalizeSession(entry)
+    }
     return { sessionId, sessionDir: runDir, runId: sessionId, runDir }
   }
 
   const runner = sessionRunnerScript()
   if (!fs.existsSync(runner)) {
     cleanupTemp({ tempDir, tempFasta })
+    removeEmptyRunDir(runDir)
     throw new Error(msg('session.missingRunner', runner))
   }
 
@@ -2117,7 +2155,7 @@ ipcMain.handle('session:list', async () => {
         createdAt: session.createdAt || stat.birthtime.toISOString(),
         updatedAt: session.updatedAt || stat.mtime.toISOString(),
         input: publicInput,
-        version: String(session.version || '0.5.0'),
+        version: String(session.version || '0.5.1'),
         legacy: false,
         sessionDir: runDir,
         runDir,

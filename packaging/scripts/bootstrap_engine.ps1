@@ -249,7 +249,7 @@ Set-Content -LiteralPath (Join-Path $RunsKeep ".gitkeep") -Value "" -Encoding as
 # --- manifest ---
 $manifest = [ordered]@{
   product       = "BioinformaticsHUB"
-  engine_version = "0.5.0"
+  engine_version = "0.5.1"
   python_version = $PythonVersion
   built_at      = (Get-Date).ToUniversalTime().ToString("o")
   repo_root_src = $RepoRoot

@@ -1249,6 +1249,80 @@ describe('Electron 0.3 IPC and preload surface', () => {
     }
   })
 
+  it('finalizes immediately when degraded and no manual sites are requested', async () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'bioinformatics-hub-degraded-none-'))
+    const runsRoot = path.join(root, 'runs')
+    const handlers = new Map()
+    let spawnCalled = false
+    const mockElectron = {
+      app: {
+        isPackaged: false,
+        getLocale: () => 'zh-CN',
+        whenReady: () => new Promise(() => {}),
+        on: () => undefined,
+      },
+      BrowserWindow: class BrowserWindow {
+        static getAllWindows() {
+          return []
+        }
+      },
+      ipcMain: { handle: (channel, handler) => handlers.set(channel, handler) },
+      dialog: {},
+      shell: { openExternal: async () => undefined, showItemInFolder: () => undefined },
+      Menu: {},
+      protocol: { registerSchemesAsPrivileged: () => undefined },
+    }
+    const originalRuns = process.env.BIOINFORMATICS_HUB_RUNS
+    const originalPython = process.env.BIOINFORMATICS_HUB_PYTHON
+    const originalLoad = Module._load
+    process.env.BIOINFORMATICS_HUB_RUNS = runsRoot
+    delete process.env.BIOINFORMATICS_HUB_PYTHON
+    const mockChildProcess = {
+      spawn: () => {
+        spawnCalled = true
+        throw new Error('runner must not be spawned in degraded mode')
+      },
+      spawnSync: () => ({ error: null, status: 0, stdout: '{"packages":{},"chromium":false}' }),
+    }
+    Module._load = function mockLoad(request, parent, isMain) {
+      if (request === 'electron') return mockElectron
+      if (request === 'child_process') return mockChildProcess
+      return originalLoad.call(this, request, parent, isMain)
+    }
+    try {
+      delete require.cache[require.resolve('../main.cjs')]
+      require('../main.cjs')
+      const started = await handlers.get('session:start')(null, {
+        fastaText: '>geneF\nATGGCC\n',
+        geneId: 'geneF',
+        inputKind: 'cds',
+        siteIds: [],
+        localToolIds: ['nucleic'],
+      })
+      await new Promise((resolve) => setImmediate(resolve))
+      const persisted = JSON.parse(
+        fs.readFileSync(path.join(started.sessionDir, 'session.json'), 'utf8'),
+      )
+      assert.equal(spawnCalled, false)
+      assert.equal(persisted.localTools[0].status, 'needs_setup')
+      // No manual tabs and no runner: the session must finalize to partial
+      // instead of staying stuck in "running".
+      assert.equal(persisted.status, 'partial')
+    } finally {
+      Module._load = originalLoad
+      delete require.cache[require.resolve('../main.cjs')]
+      if (originalRuns === undefined) delete process.env.BIOINFORMATICS_HUB_RUNS
+      else process.env.BIOINFORMATICS_HUB_RUNS = originalRuns
+      if (originalPython === undefined) delete process.env.BIOINFORMATICS_HUB_PYTHON
+      else process.env.BIOINFORMATICS_HUB_PYTHON = originalPython
+      try {
+        fs.rmSync(root, { recursive: true, force: true })
+      } catch {
+        /* ignore */
+      }
+    }
+  })
+
   it('exposes only the approved context-isolated renderer bridge', async () => {
     let exposed = null
     const invocations = []

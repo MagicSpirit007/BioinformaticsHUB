@@ -116,15 +116,17 @@ function findOnPath(name) {
     return path.resolve(raw)
   }
   const isWin = process.platform === 'win32'
-  const extensions = isWin ? ['.exe', '.cmd', '.bat', '.com'] : ['']
+  // PATHEXT on Windows carries the preferred executable extensions; never split
+  // PATH on ':' there, because drive letters (C:\...) contain colons.
+  const extensions = isWin
+    ? ['', ...String(process.env.PATHEXT || '.EXE;.CMD;.BAT;.COM').split(';').filter(Boolean)]
+    : ['']
   const pathVar = process.env.PATH || process.env.Path || ''
-  const dirs = pathVar.split(/[;:]/).filter(Boolean)
+  const dirs = pathVar.split(isWin ? ';' : ':').filter(Boolean)
   const lower = raw.toLowerCase()
   for (const dir of dirs) {
     const base = path.resolve(dir, raw)
-    const candidates = isWin
-      ? extensions.map((ext) => (lower.endsWith(ext) ? base : `${base}${ext}`))
-      : [base]
+    const candidates = extensions.map((ext) => (lower.endsWith(ext) ? base : `${base}${ext}`))
     for (const candidate of candidates) {
       try {
         if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) return candidate

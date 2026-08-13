@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useId, useMemo, useState } from 'react'
+import { createPortal } from 'react-dom'
 import {
   ArrowClockwise,
   ArrowSquareOut,
@@ -694,6 +695,7 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
   const { t } = useI18n()
   const groups = catalog.groups
   const [selectedGroupId, setSelectedGroupId] = useState<string>(groups[0]?.id ?? '')
+  const [siteGroupId, setSiteGroupId] = useState<string>(groups[0]?.id ?? '')
   const [newGroupName, setNewGroupName] = useState('')
   const [siteName, setSiteName] = useState('')
   const [siteUrl, setSiteUrl] = useState('')
@@ -715,6 +717,7 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
     onChange({ groups: [...groups, group], sites: catalog.sites })
     setNewGroupName('')
     setSelectedGroupId(group.id)
+    setSiteGroupId(group.id)
   }
 
   const deleteGroup = (group: CustomGroup) => {
@@ -723,6 +726,7 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
     const nextSites = catalog.sites.filter((site) => site.groupId !== group.id)
     onChange({ groups: nextGroups, sites: nextSites })
     if (selectedGroupId === group.id) setSelectedGroupId(nextGroups[0]?.id ?? '')
+    if (siteGroupId === group.id) setSiteGroupId(nextGroups[0]?.id ?? '')
   }
 
   const submitSite = () => {
@@ -736,28 +740,31 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
       setFormError(t('custom.err.urlInvalid'))
       return
     }
-    if (!activeGroup) return
+    const targetGroupId = siteGroupId || groups[0]?.id
+    if (!targetGroupId) return
     setFormError('')
     const note = siteNote.trim() || undefined
     if (editingSiteId) {
       onChange({
         groups,
         sites: catalog.sites.map((site) =>
-          site.id === editingSiteId ? { ...site, name, entryUrl: url, note } : site,
+          site.id === editingSiteId ? { ...site, name, entryUrl: url, note, groupId: targetGroupId } : site,
         ),
       })
     } else {
-      const site: CustomSite = { id: newCustomId('site'), groupId: activeGroup.id, name, entryUrl: url, note }
+      const site: CustomSite = { id: newCustomId('site'), groupId: targetGroupId, name, entryUrl: url, note }
       onChange({ groups, sites: [...catalog.sites, site] })
     }
     setSiteName('')
     setSiteUrl('')
     setSiteNote('')
     setEditingSiteId(null)
+    setSelectedGroupId(targetGroupId)
   }
 
   const startEditSite = (site: CustomSite) => {
     setEditingSiteId(site.id)
+    setSiteGroupId(site.groupId)
     setSiteName(site.name)
     setSiteUrl(site.entryUrl)
     setSiteNote(site.note ?? '')
@@ -774,67 +781,71 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
     }
   }
 
-  return (
+  return createPortal(
     <div className="custom-scrim">
       <div className="custom-dialog-shell" role="dialog" aria-modal="true" aria-label={t('custom.modal.title')}>
-        <GlassPanel nativeMaterial className="custom-dialog" padding="clamp(20px, 4vw, 30px)" cornerRadius={30} elasticity={0}>
+        <GlassPanel nativeMaterial className="custom-dialog" padding="clamp(20px, 4vw, 26px)" cornerRadius={26} elasticity={0}>
           <div className="custom-dialog-head">
-            <div><p className="eyebrow">CUSTOM</p><h2>{t('custom.modal.title')}</h2><p className="section-lead">{t('custom.modal.lead')}</p></div>
+            <div><p className="eyebrow">CUSTOM</p><h2>{t('custom.modal.title')}</h2></div>
             <button className="btn ghost custom-close" type="button" onClick={onClose} aria-label={t('custom.modal.close')}><X /></button>
           </div>
 
-          <div className="custom-body">
-            <div className="custom-groups">
-              <div className="custom-pane-head"><h3>{t('custom.groups.label')}</h3></div>
-              {groups.length ? (
-                <div className="custom-group-list">
-                  {groups.map((group) => (
-                    <div className={`custom-group-item ${activeGroup?.id === group.id ? 'active' : ''}`} key={group.id}>
-                      <button type="button" className="custom-group-select" onClick={() => setSelectedGroupId(group.id)}>{group.name}<span>{catalog.sites.filter((site) => site.groupId === group.id).length}</span></button>
-                      <button type="button" className="custom-icon-button" onClick={() => deleteGroup(group)} aria-label={t('custom.group.remove')}><Trash /></button>
-                    </div>
-                  ))}
-                </div>
-              ) : <p className="custom-empty">{t('custom.groups.empty')}</p>}
-              <div className="custom-form">
-                <label className="field"><span>{t('custom.group.name')}</span><input value={newGroupName} onChange={(e) => setNewGroupName(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addGroup() } }} /></label>
-                <button className="btn ghost block" type="button" onClick={addGroup}><Plus />{t('custom.group.addCta')}</button>
-              </div>
-            </div>
-
-            <div className="custom-sites">
-              <div className="custom-pane-head"><h3>{t('custom.sites.label')}{activeGroup ? ` · ${activeGroup.name}` : ''}</h3></div>
-              {activeSites.length ? (
-                <div className="custom-site-list">
-                  {activeSites.map((site) => (
-                    <div className="custom-site-item" key={site.id}>
-                      <div className="custom-site-info"><strong>{site.name}</strong><code>{site.entryUrl}</code>{site.note && <span>{site.note}</span>}</div>
-                      <div className="custom-site-actions">
-                        <button type="button" className="custom-icon-button" onClick={() => startEditSite(site)} aria-label={t('custom.site.save')}><PencilSimple /></button>
-                        <button type="button" className="custom-icon-button" onClick={() => deleteSite(site)} aria-label={t('custom.site.remove')}><Trash /></button>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : <p className="custom-empty">{t('custom.sites.empty')}</p>}
-              {activeGroup ? (
-                <div className="custom-form">
-                  <div className="custom-form-title">{editingSiteId ? t('custom.site.save') : t('custom.site.add')}</div>
-                  <label className="field"><span>{t('custom.site.name')}</span><input value={siteName} onChange={(e) => setSiteName(e.target.value)} /></label>
-                  <label className="field"><span>{t('custom.site.url')}</span><input type="url" value={siteUrl} onChange={(e) => setSiteUrl(e.target.value)} placeholder="https://…" /></label>
-                  <label className="field"><span>{t('custom.site.note')}</span><input value={siteNote} onChange={(e) => setSiteNote(e.target.value)} /></label>
-                  {formError && <p className="custom-form-error" role="alert">{formError}</p>}
-                  <div className="custom-form-actions">
-                    <button className="btn primary block" type="button" onClick={submitSite}>{editingSiteId ? <CheckCircle /> : <Plus />}{editingSiteId ? t('custom.site.save') : t('custom.site.addCta')}</button>
-                    {editingSiteId && <button className="btn ghost block" type="button" onClick={() => { setEditingSiteId(null); setSiteName(''); setSiteUrl(''); setSiteNote(''); setFormError('') }}>{t('custom.site.cancel')}</button>}
+          <div className="custom-block">
+            <div className="custom-block-head"><h3>{t('custom.groups.label')}</h3></div>
+            {groups.length ? (
+              <div className="custom-group-list">
+                {groups.map((group) => (
+                  <div className={`custom-group-item ${activeGroup?.id === group.id ? 'active' : ''}`} key={group.id}>
+                    <button type="button" className="custom-group-select" onClick={() => { setSelectedGroupId(group.id); setSiteGroupId(group.id) }}>{group.name}<span>{catalog.sites.filter((site) => site.groupId === group.id).length}</span></button>
+                    <button type="button" className="custom-icon-button" onClick={() => deleteGroup(group)} aria-label={t('custom.group.remove')}><Trash /></button>
                   </div>
-                </div>
-              ) : null}
+                ))}
+              </div>
+            ) : <p className="custom-empty">{t('custom.groups.empty')}</p>}
+            <div className="custom-add-row">
+              <label className="field"><span className="sr-only">{t('custom.group.name')}</span><input value={newGroupName} onChange={(e) => setNewGroupName(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addGroup() } }} placeholder={t('custom.group.name')} /></label>
+              <button className="btn ghost" type="button" onClick={addGroup}><Plus />{t('custom.group.add')}</button>
             </div>
+          </div>
+
+          <div className="custom-block">
+            <div className="custom-block-head"><h3>{t('custom.sites.label')}{activeGroup ? ` · ${activeGroup.name}` : ''}</h3></div>
+            {activeSites.length ? (
+              <div className="custom-site-list">
+                {activeSites.map((site) => (
+                  <div className="custom-site-item" key={site.id}>
+                    <div className="custom-site-info"><strong>{site.name}</strong><code>{site.entryUrl}</code>{site.note && <span>{site.note}</span>}</div>
+                    <div className="custom-site-actions">
+                      <button type="button" className="custom-icon-button" onClick={() => startEditSite(site)} aria-label={t('custom.site.save')}><PencilSimple /></button>
+                      <button type="button" className="custom-icon-button" onClick={() => deleteSite(site)} aria-label={t('custom.site.remove')}><Trash /></button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : <p className="custom-empty">{t('custom.sites.empty')}</p>}
+            {groups.length ? (
+              <div className="custom-form">
+                <div className="custom-form-title">{editingSiteId ? t('custom.site.save') : t('custom.site.add')}</div>
+                <label className="field"><span>{t('custom.groups.label')}</span>
+                  <select value={siteGroupId || groups[0]?.id} onChange={(e) => setSiteGroupId(e.target.value)}>
+                    {groups.map((group) => <option key={group.id} value={group.id}>{group.name}</option>)}
+                  </select>
+                </label>
+                <label className="field"><span>{t('custom.site.name')}</span><input value={siteName} onChange={(e) => setSiteName(e.target.value)} /></label>
+                <label className="field"><span>{t('custom.site.url')}</span><input type="url" value={siteUrl} onChange={(e) => setSiteUrl(e.target.value)} placeholder="https://…" /></label>
+                <label className="field"><span>{t('custom.site.note')}</span><input value={siteNote} onChange={(e) => setSiteNote(e.target.value)} /></label>
+                {formError && <p className="custom-form-error" role="alert">{formError}</p>}
+                <div className="custom-form-actions">
+                  <button className="btn primary block" type="button" onClick={submitSite}>{editingSiteId ? <CheckCircle /> : <Plus />}{editingSiteId ? t('custom.site.save') : t('custom.site.addCta')}</button>
+                  {editingSiteId && <button className="btn ghost block" type="button" onClick={() => { setEditingSiteId(null); setSiteName(''); setSiteUrl(''); setSiteNote(''); setFormError('') }}>{t('custom.site.cancel')}</button>}
+                </div>
+              </div>
+            ) : null}
           </div>
         </GlassPanel>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
 

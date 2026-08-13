@@ -55,8 +55,8 @@ Output:
 
 ```text
 apps\bioinformatics-hub-desktop\release\
-  BioinformaticsHUB-0.5.0-win-x64.exe
-  BioinformaticsHUB-0.5.0-portable.exe
+  BioinformaticsHUB-0.5.1-win-x64.exe
+  BioinformaticsHUB-0.5.1-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
