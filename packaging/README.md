@@ -38,16 +38,16 @@ resources/
 在仓库根目录执行：
 
 ```powershell
-# 完整重建引擎、UI、NSIS 与 portable
+# 默认瘦身构建：仅打包 UI + 引擎脚本（不内置 Python/MAFFT/Chromium）
 .\packaging\scripts\build_windows.ps1 -Proxy http://127.0.0.1:7890
 
-# 已确认 packaging\engine 为当前 0.3 版本时跳过引擎
-.\packaging\scripts\build_windows.ps1 -SkipEngine
+# 完整构建：额外内置可移植引擎（Python + MAFFT + Chromium）
+.\packaging\scripts\build_windows.ps1 -BundleEngine -Proxy http://127.0.0.1:7890
 
-# 只构建引擎和 UI，不生成安装包
+# 只构建 UI 和引擎脚本，不生成安装包
 .\packaging\scripts\build_windows.ps1 -SkipInstaller
 
-# 只重建可移植引擎
+# 只重建完整可移植引擎
 .\packaging\scripts\bootstrap_engine.ps1 -Proxy http://127.0.0.1:7890
 ```
 
@@ -55,21 +55,22 @@ resources/
 
 ```text
 apps\bioinformatics-hub-desktop\release\
-  BioinformaticsHUB-0.3.0-win-x64.exe
-  BioinformaticsHUB-0.3.0-portable.exe
+  BioinformaticsHUB-0.5.0-win-x64.exe
+  BioinformaticsHUB-0.5.0-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
 ## 引擎范围
 
-捆绑引擎包含：
+默认（瘦身）安装包**不内置**本地工具运行时，仅携带 `scripts/` 中的会话引擎脚本与 `install_tools.ps1`。Python 解释器、Python 依赖、MAFFT、IQ-TREE 与 Playwright Chromium 由用户按需安装，应用启动时自动探测；缺失时优雅降级（本地工具标 `needs_setup`，Plant-mPLoc 降级为手动打开）。
 
-- `scripts/session_runner.py` 会话入口。
-- 序列预处理、核酸统计、蛋白理化与疏水曲线所需代码。
+`-BundleEngine` 会改为完整构建，捆绑：
+
+- `scripts/session_runner.py` 会话入口与本地工具代码。
 - 官方 MAFFT 7.526 Windows 可移植包、WebLogo、IQ-TREE 与 iTOL 导出能力。
 - Playwright Python 包与固定版 Chromium，用于 Plant-mPLoc 网页代填提交。
 
-捆绑引擎不包含分析 API 客户端、LLM 客户端、大型第三方数据库或需要研究者自行安装的桌面软件。MAFFT 原包校验 SHA-256 后解压，来源与许可证见 [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md)。
+无论哪种构建，都不包含分析 API 客户端、LLM 客户端、大型第三方数据库或需要研究者自行安装的桌面软件。MAFFT 原包校验 SHA-256 后解压，来源与许可证见 [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md)。
 
 公开源码仓库不分发 `tools/` 下的第三方二进制。完整自构建若要包含 IQ-TREE，需预先将 IQ-TREE 2.3.6 Windows 发行版放到仓库 `tools/iqtree-2.3.6-Windows/`；缺失时构建会给出警告，运行时相应工具标记为 `needs_setup`。
 

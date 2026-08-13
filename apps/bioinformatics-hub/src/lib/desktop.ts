@@ -1,4 +1,4 @@
-/** Electron preload bridge for BioinformaticsHUB 0.4 website aggregation sessions. */
+/** Electron preload bridge for BioinformaticsHUB 0.5 website aggregation sessions. */
 
 export type InputKind = 'auto' | 'cds' | 'protein'
 
@@ -176,9 +176,30 @@ export type RevealArtifactArgs = {
 
 export type PickedTextFile = { path: string; name?: string; text: string }
 
+export type EngineStatus = {
+  python: boolean
+  pythonPath: string | null
+  mafft: boolean
+  mafftPath: string | null
+  iqtree: boolean
+  iqtreePath: string | null
+  packages: {
+    biopython: boolean
+    numpy: boolean
+    matplotlib: boolean
+    logomaker: boolean
+    pillow: boolean
+    playwright: boolean
+  }
+  chromium: boolean
+  coreReady: boolean
+  autoSubmitReady: boolean
+}
+
 export type DesktopApi = {
   isDesktop: boolean
   setLocale: (locale: 'zh' | 'en') => void
+  engineStatus: () => Promise<EngineStatus>
   sessionStart: (args: SessionStartArgs) => Promise<{ sessionId: string; sessionDir?: string }>
   sessionCancel: (sessionId: string) => Promise<void | { ok: boolean }>
   loadSession: (sessionId: string) => Promise<SessionRecord>
@@ -217,6 +238,28 @@ export function getDesktopApi(): DesktopApi {
     setLocale: (locale) => {
       bridge?.setLocale?.(locale)
     },
+    engineStatus: async () => {
+      if (bridge?.engineStatus) return bridge.engineStatus()
+      return {
+        python: false,
+        pythonPath: null,
+        mafft: false,
+        mafftPath: null,
+        iqtree: false,
+        iqtreePath: null,
+        packages: {
+          biopython: false,
+          numpy: false,
+          matplotlib: false,
+          logomaker: false,
+          pillow: false,
+          playwright: false,
+        },
+        chromium: false,
+        coreReady: false,
+        autoSubmitReady: false,
+      }
+    },
     sessionStart: async (args) => {
       if (bridge?.sessionStart) return bridge.sessionStart(args)
       const sessionId = `${safeId(args.geneId)}-${new Date().toISOString().replace(/[:.]/g, '-')}`
@@ -236,7 +279,7 @@ export function getDesktopApi(): DesktopApi {
       browserSessions.set(sessionId, {
         sessionId,
         schemaVersion: 1,
-        version: '0.4.0-preview',
+        version: '0.5.0-preview',
         status: 'running',
         createdAt: now,
         updatedAt: now,

@@ -52,9 +52,17 @@ The local tools area is independent of the websites area. It currently keeps:
 - Nucleic-acid composition, reading-frame and codon statistics.
 - Protein physicochemical properties.
 - Per-residue curves such as hydrophobicity.
-- Bundled official MAFFT 7.526 multiple sequence alignment and local WebLogo.
+- Local MAFFT multiple sequence alignment and local WebLogo.
 - IQ-TREE phylogenetic trees.
 - iTOL upload package export.
+
+These tools are **not bundled with the installer**. You install them on demand, and the app auto-detects them at startup:
+
+- Python interpreter and dependencies (Biopython, NumPy, Matplotlib, Logomaker, Pillow);
+- MAFFT and IQ-TREE (adding them to PATH is enough for detection);
+- Playwright Chromium (only needed for the Plant-mPLoc auto-submit site).
+
+When something is missing, the app degrades gracefully: local tools are marked `needs_setup`, Plant-mPLoc falls back to manual open, and website aggregation keeps working. The `install_tools.ps1` script in the install directory installs Python dependencies and Chromium in one step and prints install guidance for MAFFT / IQ-TREE.
 
 Each tool shows its status, source and file path independently. BioinformaticsHUB does not repackage these artifacts into a unified conclusion or an "image evidence" gallery.
 

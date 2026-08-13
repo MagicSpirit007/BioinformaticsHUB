@@ -40,6 +40,7 @@ import {
 } from './analysisCatalog'
 import {
   getDesktopApi,
+  type EngineStatus,
   type InputKind,
   type LocalArtifact,
   type LocalToolTask,
@@ -94,6 +95,7 @@ function App() {
   )
   const [customCatalog, setCustomCatalog] = useState<CustomCatalog>(() => loadCustomCatalog())
   const [customManagerOpen, setCustomManagerOpen] = useState(false)
+  const [engineStatus, setEngineStatus] = useState<EngineStatus | null>(null)
   const [geneId, setGeneId] = useState('')
   const [alias, setAlias] = useState('')
   const [inputKind, setInputKind] = useState<InputKind>('auto')
@@ -139,10 +141,11 @@ function App() {
         if (active) setCatalogError(errorMessage(reason))
       })
     void refreshHistory()
+    void desktop.engineStatus().then(setEngineStatus).catch(() => setEngineStatus(null))
     return () => {
       active = false
     }
-  }, [refreshHistory])
+  }, [refreshHistory, desktop])
 
   useEffect(() => {
     const mergeEvent = (event: SessionUpdateEvent) => {
@@ -438,6 +441,7 @@ function App() {
             setCustomCatalog={setCustomCatalog}
             customManagerOpen={customManagerOpen}
             setCustomManagerOpen={setCustomManagerOpen}
+            engineStatus={engineStatus}
             geneId={geneId}
             setGeneId={setGeneId}
             alias={alias}
@@ -495,6 +499,7 @@ type NewSessionProps = {
   setCustomCatalog: (value: CustomCatalog) => void
   customManagerOpen: boolean
   setCustomManagerOpen: (value: boolean) => void
+  engineStatus: EngineStatus | null
   geneId: string
   setGeneId: (value: string) => void
   alias: string
@@ -606,6 +611,7 @@ function NewSessionView(props: NewSessionProps) {
 
       <section className="catalog-section local-selection" aria-labelledby="local-heading">
         <div className="catalog-heading"><SectionTitle icon={<Wrench />} eyebrow={t('new.local.eyebrow')} title={t('new.local.title')} id="local-heading" /><span className="source-pill">{t('new.local.pill')}</span></div>
+        <EngineStatusBar status={props.engineStatus} />
         <div className="local-select-grid">
           {LOCAL_TOOLS.map((tool) => (
             <label className={`local-select-card ${props.selectedTools.has(tool.id) ? 'selected' : ''}`} key={tool.id}>
@@ -860,7 +866,7 @@ function SessionDashboard(props: SessionDashboardProps) {
     <div className="dashboard enter">
       <GlassPanel className="session-hero" padding="clamp(20px, 3vw, 30px)" cornerRadius={28} solid>
         <div className="session-hero-main">
-          <p className="eyebrow">{t('dash.eyebrow', { version: props.session.legacy ? 'LEGACY' : '0.4' })}</p>
+          <p className="eyebrow">{t('dash.eyebrow', { version: props.session.legacy ? 'LEGACY' : '0.5' })}</p>
           <h1>{sessionTitle(props.session)}</h1>
           <div className="session-meta"><span>{getSessionId(props.session)}</span><StatusBadge status={String(props.session.status ?? 'running')} />{props.session.legacy && <span className="legacy-badge">{t('dash.legacyBadge')}</span>}</div>
         </div>
@@ -1006,7 +1012,7 @@ function HistoryView({ history, busy, onOpen, onRefresh }: { history: SessionLis
         <div className="history-grid">
           {history.map((item, index) => {
             const id = String(item.sessionId ?? item.id ?? `record-${index}`)
-            const legacy = Boolean(item.legacy || (item.version && !String(item.version).startsWith('0.4')))
+            const legacy = Boolean(item.legacy || (item.version && !String(item.version).startsWith('0.5')))
             return (
               <article className="history-card" key={id}>
                 <div><span className="history-date">{formatDate(locale, item.updatedAt ?? item.createdAt)}</span>{legacy && <span className="legacy-badge">{t('history.legacy')}</span>}</div>
@@ -1029,6 +1035,31 @@ function NavButton({ active, icon, children, onClick, disabled = false }: { acti
 
 function SectionTitle({ icon, eyebrow, title, id }: { icon: React.ReactNode; eyebrow: string; title: string; id?: string }) {
   return <div className="section-title"><span className="section-icon">{icon}</span><div><p className="eyebrow">{eyebrow}</p><h2 id={id}>{title}</h2></div></div>
+}
+
+function EngineStatusBar({ status }: { status: EngineStatus | null }) {
+  const { t } = useI18n()
+  if (!status) return null
+  const items = [
+    { label: 'Python', ok: status.coreReady },
+    { label: 'MAFFT', ok: status.mafft },
+    { label: 'IQ-TREE', ok: status.iqtree },
+    { label: t('engine.status.auto'), ok: status.autoSubmitReady },
+  ]
+  return (
+    <div className="engine-status-bar" role="status" aria-label={t('engine.status.title')}>
+      <span className="engine-status-title">{t('engine.status.title')}</span>
+      <div className="engine-status-items">
+        {items.map((item) => (
+          <span key={item.label} className={`engine-status-item ${item.ok ? 'ok' : ''}`}>
+            <span className="engine-status-dot" aria-hidden="true" />
+            {item.label}
+          </span>
+        ))}
+      </div>
+      {!status.coreReady && <p className="engine-status-hint">{t('engine.status.hint')}</p>}
+    </div>
+  )
 }
 
 function ModeBadge({ mode }: { mode: SiteExecution }) {

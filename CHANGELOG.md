@@ -2,6 +2,13 @@
 
 > [中文版](./CHANGELOG.md) · [English](./CHANGELOG.en.md)
 
+## 0.5.0 - 2026-08-13
+
+- 安装包不再内置本地工具引擎（Python / MAFFT / IQ-TREE / Playwright Chromium），体积大幅缩小。
+- 应用运行时自动探测用户本机的 Python、Python 依赖、MAFFT、IQ-TREE 与 Chromium。
+- 引擎缺失时优雅降级：本地工具标记为 `needs_setup`，Plant-mPLoc 降级为手动打开，网站聚合功能不受影响。
+- 新增 `install_tools.ps1` 一键安装辅助脚本，并内置引擎检测状态展示。
+
 ## 0.4.0 - 2026-08-13
 
 - 新增内置中英语言切换按钮，界面与 Electron 主进程提示全面双语化。

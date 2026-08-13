@@ -23,7 +23,7 @@ const STORAGE_KEY = 'bioinformaticshub.locale'
 const messages = {
   zh: {
     // Brand & chrome
-    'brand.subtitle': '研究网站整合平台 · 0.4',
+    'brand.subtitle': '研究网站整合平台 · 0.5',
     'brand.aria': '返回新建任务',
     'nav.new': '新建',
     'nav.session': '任务',
@@ -93,6 +93,11 @@ const messages = {
     'new.local.eyebrow': '03 · LOCAL',
     'new.local.title': '本地工具',
     'new.local.pill': '产物逐卡展示来源',
+    'engine.status.title': '本地引擎',
+    'engine.status.ready': '已就绪',
+    'engine.status.missing': '未检测到',
+    'engine.status.auto': '自动提交',
+    'engine.status.hint': '本地工具不随包安装；缺少 Python 依赖或 MAFFT / IQ-TREE 时，运行安装目录中的 install_tools.ps1。',
     'new.custom.eyebrow': '04 · CUSTOM',
     'new.custom.title': '自定义网站',
     'new.custom.manage': '管理自定义网站',
@@ -184,7 +189,7 @@ const messages = {
     // History
     'history.eyebrow': 'ARCHIVE',
     'history.title': '研究记录',
-    'history.lead': '0.4 会话按网站任务与本地工具展示；旧版流水线记录保留为只读历史。',
+    'history.lead': '0.5 会话按网站任务与本地工具展示；旧版流水线记录保留为只读历史。',
     'history.refresh': '刷新',
     'history.legacy': '旧版记录',
     'history.open': '载入记录',
@@ -248,12 +253,12 @@ const messages = {
 
     // Footer
     'footer.colophon':
-      'BioinformaticsHUB 0.4 只组织输入、网站任务、来源明确的本地产物与研究链接；不替代研究者选择模型，也不生成综合科学结论。',
+      'BioinformaticsHUB 0.5 只组织输入、网站任务、来源明确的本地产物与研究链接；不替代研究者选择模型，也不生成综合科学结论。',
   },
 
   en: {
     // Brand & chrome
-    'brand.subtitle': 'Research Site Integrator · 0.4',
+    'brand.subtitle': 'Research Site Integrator · 0.5',
     'brand.aria': 'Back to new session',
     'nav.new': 'New',
     'nav.session': 'Session',
@@ -324,6 +329,11 @@ const messages = {
     'new.local.eyebrow': '03 · LOCAL',
     'new.local.title': 'Local tools',
     'new.local.pill': 'Source shown per artifact',
+    'engine.status.title': 'Local engine',
+    'engine.status.ready': 'Ready',
+    'engine.status.missing': 'Not detected',
+    'engine.status.auto': 'Auto-submit',
+    'engine.status.hint': 'Local tools are not bundled; if Python dependencies or MAFFT / IQ-TREE are missing, run install_tools.ps1 from the install directory.',
     'new.custom.eyebrow': '04 · CUSTOM',
     'new.custom.title': 'Custom sites',
     'new.custom.manage': 'Manage custom sites',
@@ -419,7 +429,7 @@ const messages = {
     'history.eyebrow': 'ARCHIVE',
     'history.title': 'Research records',
     'history.lead':
-      '0.4 sessions are shown by website tasks and local tools; legacy pipeline records remain as read-only history.',
+      '0.5 sessions are shown by website tasks and local tools; legacy pipeline records remain as read-only history.',
     'history.refresh': 'Refresh',
     'history.legacy': 'Legacy record',
     'history.open': 'Load record',
@@ -485,7 +495,7 @@ const messages = {
 
     // Footer
     'footer.colophon':
-      'BioinformaticsHUB 0.4 organizes input, website tasks, clearly-sourced local artifacts and research links; it does not choose models for the researcher nor synthesize scientific conclusions.',
+      'BioinformaticsHUB 0.5 organizes input, website tasks, clearly-sourced local artifacts and research links; it does not choose models for the researcher nor synthesize scientific conclusions.',
   },
 } as const
 

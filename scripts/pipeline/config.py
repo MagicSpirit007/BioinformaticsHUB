@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Configuration shared by the BioinformaticsHUB 0.3 local analysis runner."""
+"""Configuration shared by the BioinformaticsHUB 0.4 local analysis runner."""
 from __future__ import annotations
 
+import os
+import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional, Sequence, Union
@@ -54,6 +56,12 @@ def assert_not_protected_output(
 
 
 def default_iqtree_exe() -> Optional[Path]:
+    env = os.environ.get("BIOINFORMATICS_HUB_IQTREE")
+    if env and Path(env).is_file():
+        return Path(env)
+    on_path = shutil.which("iqtree2") or shutil.which("iqtree")
+    if on_path:
+        return Path(on_path)
     root = repo_root()
     candidates = (
         root / "tools" / "iqtree-2.3.6-Windows" / "bin" / "iqtree2.exe",

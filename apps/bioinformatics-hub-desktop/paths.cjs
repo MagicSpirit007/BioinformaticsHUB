@@ -4,6 +4,7 @@
  */
 const path = require('path')
 const fs = require('fs')
+const { spawnSync } = require('child_process')
 const { pathToFileURL, fileURLToPath } = require('url')
 
 /** Documented maximum size for pasted/selected FASTA (bytes). */
@@ -87,7 +88,106 @@ function resolvePython() {
   const eng = engineRoot()
   const bundled = path.join(eng, 'python', 'python.exe')
   if (fs.existsSync(bundled)) return bundled
-  return process.platform === 'win32' ? 'python' : 'python3'
+
+  const candidates = process.platform === 'win32'
+    ? [findOnPath('py'), findOnPath('python'), findOnPath('python3')]
+    : [findOnPath('python3'), findOnPath('python')]
+  for (const candidate of candidates) {
+    if (!candidate) continue
+    const probe = spawnSync(candidate, ['--version'], {
+      encoding: 'utf8',
+      windowsHide: true,
+      timeout: 10_000,
+    })
+    if (!probe.error && probe.status === 0) return candidate
+  }
+  return null
+}
+
+/**
+ * Find an executable on PATH (Windows PATHEXT-aware). Returns an absolute path
+ * or null. `name` may already be an existing path or include an extension.
+ */
+function findOnPath(name) {
+  if (!name) return null
+  const raw = String(name).trim()
+  if (!raw) return null
+  if ((raw.includes('/') || raw.includes('\\')) && fs.existsSync(raw)) {
+    return path.resolve(raw)
+  }
+  const isWin = process.platform === 'win32'
+  const extensions = isWin ? ['.exe', '.cmd', '.bat', '.com'] : ['']
+  const pathVar = process.env.PATH || process.env.Path || ''
+  const dirs = pathVar.split(/[;:]/).filter(Boolean)
+  const lower = raw.toLowerCase()
+  for (const dir of dirs) {
+    const base = path.resolve(dir, raw)
+    const candidates = isWin
+      ? extensions.map((ext) => (lower.endsWith(ext) ? base : `${base}${ext}`))
+      : [base]
+    for (const candidate of candidates) {
+      try {
+        if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) return candidate
+      } catch {
+        /* ignore */
+      }
+    }
+  }
+  return null
+}
+
+/**
+ * Locate MAFFT (env override → PATH → bundled full-engine tools directory).
+ */
+function resolveMafft() {
+  if (process.env.BIOINFORMATICS_HUB_MAFFT && fs.existsSync(process.env.BIOINFORMATICS_HUB_MAFFT)) {
+    return path.resolve(process.env.BIOINFORMATICS_HUB_MAFFT)
+  }
+  const onPath = findOnPath('mafft') || findOnPath('mafft.bat')
+  if (onPath) return onPath
+  return firstGlobFile(path.join(engineRoot(), 'tools'), 'mafft.bat')
+}
+
+/**
+ * Locate IQ-TREE (env override → PATH → bundled full-engine tools directory).
+ */
+function resolveIqtree() {
+  if (process.env.BIOINFORMATICS_HUB_IQTREE && fs.existsSync(process.env.BIOINFORMATICS_HUB_IQTREE)) {
+    return path.resolve(process.env.BIOINFORMATICS_HUB_IQTREE)
+  }
+  const onPath = findOnPath('iqtree2') || findOnPath('iqtree')
+  if (onPath) return onPath
+  return (
+    firstGlobFile(path.join(engineRoot(), 'tools'), 'iqtree2.exe') ||
+    firstGlobFile(path.join(engineRoot(), 'tools'), 'iqtree2')
+  )
+}
+
+/** First file matching `leaf` anywhere under `root`, sorted by path depth. */
+function firstGlobFile(root, leaf) {
+  let result = null
+  let resultDepth = Infinity
+  const visit = (dir, depth) => {
+    let entries
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name)
+      if (entry.isDirectory()) {
+        if (depth + 1 < resultDepth) visit(full, depth + 1)
+      } else if (entry.name.toLowerCase() === leaf.toLowerCase()) {
+        if (depth < resultDepth) {
+          result = full
+          resultDepth = depth
+        }
+      }
+    }
+  }
+  visit(root, 0)
+  return result
 }
 
 function sessionRunnerScript() {
@@ -556,9 +656,14 @@ function engineEnv(extra = {}) {
     PYTHONIOENCODING: 'utf-8',
     // Prefer bundled tools discovery via the engine root.
     BIOINFORMATICS_HUB_ENGINE: eng,
-    PLAYWRIGHT_BROWSERS_PATH: path.join(eng, 'playwright-browsers'),
   }
-  // Ensure embeddable python finds its DLLs
+  // Only pin the browser path when a full engine actually ships one; otherwise
+  // leave it unset so Playwright uses the user's default registry location.
+  const bundledBrowsers = path.join(eng, 'playwright-browsers')
+  if (fs.existsSync(bundledBrowsers)) {
+    env.PLAYWRIGHT_BROWSERS_PATH = bundledBrowsers
+  }
+  // Ensure embeddable python finds its DLLs (full-engine builds only)
   const pyHome = path.join(eng, 'python')
   if (fs.existsSync(pyHome)) {
     env.PYTHONHOME = pyHome
@@ -573,6 +678,9 @@ module.exports = {
   isPackaged,
   engineRoot,
   resolvePython,
+  findOnPath,
+  resolveMafft,
+  resolveIqtree,
   sessionRunnerScript,
   doctorScript,
   uiIndexHtml,

@@ -36,7 +36,29 @@ const {
   resolveSiteCatalogPath,
   assertHttpUrl,
   isEntryEquivalentResultUrl,
+  resolvePython,
+  findOnPath,
+  resolveMafft,
+  resolveIqtree,
 } = require('../paths.cjs')
+
+// A "engine fully available" probe result for the session:start tests that
+// expect the Python runner to be spawned (local tools + auto-submit usable).
+const ENGINE_READY_STDOUT = JSON.stringify({
+  packages: {
+    biopython: true,
+    numpy: true,
+    matplotlib: true,
+    logomaker: true,
+    pillow: true,
+    playwright: true,
+  },
+  chromium: true,
+})
+
+function engineReadySpawnSync() {
+  return { error: null, status: 0, stdout: ENGINE_READY_STDOUT }
+}
 
 describe('resolveDefaultRunsRoot', () => {
   const repo = path.join(os.tmpdir(), 'bioinformatics-hub-repo')
@@ -611,6 +633,20 @@ describe('normalizeFsPathFromUrlOrPath / toFileUrl', () => {
 })
 
 describe('Electron 0.3 IPC and preload surface', () => {
+  const originalPython = process.env.BIOINFORMATICS_HUB_PYTHON
+  const originalEngine = process.env.BIOINFORMATICS_HUB_ENGINE
+  before(() => {
+    // Force resolvePython() to a real, existing executable so probeEngine can
+    // run deterministically without scanning the host PATH.
+    process.env.BIOINFORMATICS_HUB_PYTHON = process.execPath
+  })
+  after(() => {
+    if (originalPython === undefined) delete process.env.BIOINFORMATICS_HUB_PYTHON
+    else process.env.BIOINFORMATICS_HUB_PYTHON = originalPython
+    if (originalEngine === undefined) delete process.env.BIOINFORMATICS_HUB_ENGINE
+    else process.env.BIOINFORMATICS_HUB_ENGINE = originalEngine
+  })
+
   it('registers the session/site/file handlers without legacy pipeline handlers', () => {
     const handlers = new Map()
     const mockElectron = {
@@ -648,6 +684,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
       [
         'app:setLocale',
         'artifact:reveal',
+        'engine:status',
         'fs:exportResearchBundle',
         'fs:pickAlignment',
         'fs:pickFasta',
@@ -707,7 +744,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     process.env.BIOINFORMATICS_HUB_RUNS = runsRoot
     Module._load = function mockLoad(request, parent, isMain) {
       if (request === 'electron') return mockElectron
-      if (request === 'child_process') return { spawn: () => child }
+      if (request === 'child_process') return { spawn: () => child, spawnSync: engineReadySpawnSync }
       return originalLoad.call(this, request, parent, isMain)
     }
     try {
@@ -796,6 +833,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
         spawnCalls.push(args)
         return child
       },
+      spawnSync: engineReadySpawnSync,
     }
     const originalRuns = process.env.BIOINFORMATICS_HUB_RUNS
     const originalLoad = Module._load
@@ -947,7 +985,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     process.env.BIOINFORMATICS_HUB_RUNS = runsRoot
     Module._load = function mockLoad(request, parent, isMain) {
       if (request === 'electron') return mockElectron
-      if (request === 'child_process') return { spawn: () => child }
+      if (request === 'child_process') return { spawn: () => child, spawnSync: engineReadySpawnSync }
       return originalLoad.call(this, request, parent, isMain)
     }
     try {
@@ -1041,7 +1079,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     process.env.BIOINFORMATICS_HUB_RUNS = runsRoot
     Module._load = function mockLoad(request, parent, isMain) {
       if (request === 'electron') return mockElectron
-      if (request === 'child_process') return { spawn: () => child }
+      if (request === 'child_process') return { spawn: () => child, spawnSync: engineReadySpawnSync }
       return originalLoad.call(this, request, parent, isMain)
     }
     try {
@@ -1125,6 +1163,92 @@ describe('Electron 0.3 IPC and preload surface', () => {
     }
   })
 
+  it('degraded mode opens manual sites immediately and marks tools needs_setup when the engine is unavailable', async () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'bioinformatics-hub-degraded-'))
+    const runsRoot = path.join(root, 'runs')
+    const handlers = new Map()
+    const openedUrls = []
+    let spawnCalled = false
+    const mockElectron = {
+      app: {
+        isPackaged: false,
+        getLocale: () => 'zh-CN',
+        whenReady: () => new Promise(() => {}),
+        on: () => undefined,
+      },
+      BrowserWindow: class BrowserWindow {
+        static getAllWindows() {
+          return []
+        }
+      },
+      ipcMain: { handle: (channel, handler) => handlers.set(channel, handler) },
+      dialog: {},
+      shell: {
+        openExternal: async (url) => {
+          openedUrls.push(url)
+        },
+        showItemInFolder: () => undefined,
+      },
+      Menu: {},
+      protocol: { registerSchemesAsPrivileged: () => undefined },
+    }
+    const originalRuns = process.env.BIOINFORMATICS_HUB_RUNS
+    const originalPython = process.env.BIOINFORMATICS_HUB_PYTHON
+    const originalLoad = Module._load
+    process.env.BIOINFORMATICS_HUB_RUNS = runsRoot
+    delete process.env.BIOINFORMATICS_HUB_PYTHON
+    // No engine: probe reports no packages and no Python is resolvable.
+    const mockChildProcess = {
+      spawn: () => {
+        spawnCalled = true
+        throw new Error('runner must not be spawned in degraded mode')
+      },
+      spawnSync: () => ({ error: null, status: 0, stdout: '{"packages":{},"chromium":false}' }),
+    }
+    Module._load = function mockLoad(request, parent, isMain) {
+      if (request === 'electron') return mockElectron
+      if (request === 'child_process') return mockChildProcess
+      return originalLoad.call(this, request, parent, isMain)
+    }
+    try {
+      delete require.cache[require.resolve('../main.cjs')]
+      require('../main.cjs')
+      const started = await handlers.get('session:start')(null, {
+        fastaText: '>geneE\nATGGCC\n',
+        geneId: 'geneE',
+        inputKind: 'cds',
+        siteIds: ['orf_finder', 'plant_mploc'],
+        localToolIds: ['nucleic'],
+      })
+
+      // Manual sites (orf_finder + downgraded plant_mploc) open without a runner.
+      // Intra-batch delay is ~750ms, so wait past it for the second tab.
+      await new Promise((resolve) => setTimeout(resolve, 1200))
+      const persisted = JSON.parse(
+        fs.readFileSync(path.join(started.sessionDir, 'session.json'), 'utf8'),
+      )
+      assert.equal(spawnCalled, false)
+      assert.equal(persisted.localTools[0].status, 'needs_setup')
+      // plant_mploc was downgraded to open_only and opened as a manual tab.
+      const mploc = persisted.sites.find((site) => site.siteId === 'plant_mploc')
+      assert.equal(mploc.execution, 'open_only')
+      assert.equal(openedUrls.length, 2)
+      assert.equal(persisted.status, 'partial')
+    } finally {
+      Module._load = originalLoad
+      delete require.cache[require.resolve('../main.cjs')]
+      if (originalRuns === undefined) delete process.env.BIOINFORMATICS_HUB_RUNS
+      else process.env.BIOINFORMATICS_HUB_RUNS = originalRuns
+      if (originalPython === undefined) delete process.env.BIOINFORMATICS_HUB_PYTHON
+      else process.env.BIOINFORMATICS_HUB_PYTHON = originalPython
+      try {
+        fs.rmSync(root, { recursive: true, force: true })
+      } catch {
+        /* ignore */
+      }
+    }
+  })
+
   it('exposes only the approved context-isolated renderer bridge', async () => {
     let exposed = null
     const invocations = []
@@ -1163,6 +1287,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     assert.deepEqual(
       Object.keys(exposed.value).sort(),
       [
+        'engineStatus',
         'exportResearchBundle',
         'isDesktop',
         'listSessions',

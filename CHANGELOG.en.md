@@ -1,6 +1,13 @@
 # Changelog
 
-> [中文版](./CHANGELOG.md) · [English](CHANGELOG.en.md)
+> [中文版](./CHANGELOG.md) · [English](./CHANGELOG.en.md)
+
+## 0.5.0 - 2026-08-13
+
+- The installer no longer bundles the local tool engine (Python / MAFFT / IQ-TREE / Playwright Chromium), greatly reducing its size.
+- The app auto-detects the user's Python, Python packages, MAFFT, IQ-TREE and Chromium at runtime.
+- Graceful degradation when the engine is missing: local tools are marked `needs_setup`, Plant-mPLoc falls back to manual open, and website aggregation keeps working.
+- Added a one-step `install_tools.ps1` helper and an in-app engine-detection status display.
 
 ## 0.4.0 - 2026-08-13
 

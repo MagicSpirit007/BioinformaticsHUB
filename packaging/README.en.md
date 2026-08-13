@@ -38,16 +38,16 @@ Installed tasks default to `%APPDATA%\BioinformaticsHUB\runs\<id>\`; development
 Run from the repo root:
 
 ```powershell
-# Fully rebuild engine, UI, NSIS and portable
+# Default slim build: UI + engine scripts only (no bundled Python/MAFFT/Chromium)
 .\packaging\scripts\build_windows.ps1 -Proxy http://127.0.0.1:7890
 
-# Skip the engine when packaging\engine is already confirmed current 0.3
-.\packaging\scripts\build_windows.ps1 -SkipEngine
+# Full build: additionally bundle the portable engine (Python + MAFFT + Chromium)
+.\packaging\scripts\build_windows.ps1 -BundleEngine -Proxy http://127.0.0.1:7890
 
-# Build only the engine and UI, no installer
+# Build only the UI and engine scripts, no installer
 .\packaging\scripts\build_windows.ps1 -SkipInstaller
 
-# Rebuild only the portable engine
+# Rebuild only the full portable engine
 .\packaging\scripts\bootstrap_engine.ps1 -Proxy http://127.0.0.1:7890
 ```
 
@@ -55,21 +55,22 @@ Output:
 
 ```text
 apps\bioinformatics-hub-desktop\release\
-  BioinformaticsHUB-0.3.0-win-x64.exe
-  BioinformaticsHUB-0.3.0-portable.exe
+  BioinformaticsHUB-0.5.0-win-x64.exe
+  BioinformaticsHUB-0.5.0-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
 ## Engine scope
 
-The bundled engine contains:
+The default (slim) installer does **not** bundle the local tool runtime; it only ships the session-engine scripts under `scripts/` plus `install_tools.ps1`. Python, Python packages, MAFFT, IQ-TREE and Playwright Chromium are installed on demand and auto-detected at startup; when missing, the app degrades gracefully (local tools marked `needs_setup`, Plant-mPLoc falls back to manual open).
 
-- `scripts/session_runner.py` session entry point.
-- Code for sequence preprocessing, nucleic statistics, protein physicochemical properties and hydrophobicity profiles.
+`-BundleEngine` switches to the full build, bundling:
+
+- `scripts/session_runner.py` session entry point and local tool code.
 - Official MAFFT 7.526 Windows portable package, WebLogo, IQ-TREE and iTOL export.
 - The Playwright Python package and a pinned Chromium, used for Plant-mPLoc web form-filling.
 
-The bundled engine does not include analysis API clients, LLM clients, large third-party databases or desktop software the researcher must install themselves. The MAFFT original package is SHA-256-verified before extraction; sources and licenses are in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
+Neither build includes analysis API clients, LLM clients, large third-party databases or desktop software the researcher must install themselves. The MAFFT original package is SHA-256-verified before extraction; sources and licenses are in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
 
 The public source repository does not distribute third-party binaries under `tools/`. A full self-build including IQ-TREE requires first placing the IQ-TREE 2.3.6 Windows distribution under the repo `tools/iqtree-2.3.6-Windows/`; if missing, the build warns and the corresponding tool is marked `needs_setup` at runtime.
 

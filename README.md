@@ -52,9 +52,17 @@ Windows 安装包与便携版可从 [GitHub Releases](https://github.com/MagicSp
 - 核酸组成、阅读框与密码子统计。
 - 蛋白理化性质。
 - 疏水性等逐位曲线。
-- 捆绑的官方 MAFFT 7.526 多序列比对与本地 WebLogo。
+- 本地 MAFFT 多序列比对与本地 WebLogo。
 - IQ-TREE 系统发育树。
 - iTOL 上传数据包导出。
+
+这些工具**不随安装包打包**，而是由用户在需要时自行安装，应用启动时会自动探测它们是否已就绪：
+
+- Python 解释器与依赖（Biopython、NumPy、Matplotlib、Logomaker、Pillow）；
+- MAFFT、IQ-TREE（加入 PATH 即可被识别）；
+- Playwright Chromium（仅 Plant-mPLoc 自动提交需要）。
+
+未检测到时应用会优雅降级：本地工具标为 `needs_setup`，Plant-mPLoc 降级为手动打开，网站聚合功能不受影响。安装目录中的 `install_tools.ps1` 可一键安装 Python 依赖与 Chromium，并给出 MAFFT / IQ-TREE 的安装指引。
 
 每项工具独立显示状态、来源和文件路径。BioinformaticsHUB 不把这些产物重新包装成统一结论或“图像证据”画廊。
 

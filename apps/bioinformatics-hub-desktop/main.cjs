@@ -8,13 +8,15 @@
 const { app, BrowserWindow, ipcMain, dialog, shell, Menu, protocol } = require('electron')
 const path = require('path')
 const fs = require('fs')
-const { spawn } = require('child_process')
+const { spawn, spawnSync } = require('child_process')
 const os = require('os')
 const { StringDecoder } = require('string_decoder')
 const {
   isPackaged,
   engineRoot,
   resolvePython,
+  resolveMafft,
+  resolveIqtree,
   sessionRunnerScript,
   siteCatalogPath,
   uiIndexHtml,
@@ -124,6 +126,8 @@ const MESSAGES = {
     'custom.badId': (p) => `自定义网站含非法 id: ${p}`,
     'custom.badUrl': (p) => `自定义网站 ${p} 的网址无效`,
     'custom.missingName': (p) => `自定义网站 ${p} 缺少名称`,
+    'tool.needsSetup':
+      '未检测到本地引擎；请运行安装目录中的 install_tools.ps1 安装 Python 依赖与 MAFFT / IQ-TREE。',
   },
   en: {
     'catalog.missing': (p) => `Site catalog not found: ${p}`,
@@ -180,6 +184,8 @@ const MESSAGES = {
     'custom.badId': (p) => `Custom site has an invalid id: ${p}`,
     'custom.badUrl': (p) => `Custom site ${p} has an invalid URL`,
     'custom.missingName': (p) => `Custom site ${p} is missing a name`,
+    'tool.needsSetup':
+      'Local engine not detected; run install_tools.ps1 from the install directory to set up Python dependencies and MAFFT / IQ-TREE.',
   },
 }
 
@@ -239,6 +245,84 @@ function send(channel, payload) {
 
 function nowIso() {
   return new Date().toISOString()
+}
+
+const PY_PROBE_SNIPPET = [
+  'import json',
+  'pkgs = {}',
+  "for name, key in [('Bio','biopython'),('numpy','numpy'),('matplotlib','matplotlib'),('logomaker','logomaker'),('PIL','pillow'),('playwright','playwright')]:",
+  '    try:',
+  '        __import__(name)',
+  '        pkgs[key] = True',
+  '    except Exception:',
+  '        pkgs[key] = False',
+  'chromium = False',
+  "if pkgs.get('playwright'):",
+  '    try:',
+  '        from playwright.sync_api import sync_playwright',
+  '        with sync_playwright() as p:',
+  '            chromium = bool(p.chromium.executable_path)',
+  '    except Exception:',
+  '        chromium = False',
+  "print(json.dumps({'packages': pkgs, 'chromium': chromium}))",
+].join('\n')
+
+/**
+ * Probe the user's machine for the external tools that power local analysis and
+ * the auto-submit site. The packaged app no longer ships Python/Chromium/MAFFT,
+ * so this drives the UI status and the session:start engine-vs-degraded split.
+ */
+function probeEngine() {
+  const python = resolvePython()
+  const mafft = resolveMafft()
+  const iqtree = resolveIqtree()
+  const status = {
+    python: Boolean(python),
+    pythonPath: python || null,
+    mafft: Boolean(mafft),
+    mafftPath: mafft || null,
+    iqtree: Boolean(iqtree),
+    iqtreePath: iqtree || null,
+    packages: {
+      biopython: false,
+      numpy: false,
+      matplotlib: false,
+      logomaker: false,
+      pillow: false,
+      playwright: false,
+    },
+    chromium: false,
+    coreReady: false,
+    autoSubmitReady: false,
+  }
+  if (python) {
+    const probe = spawnSync(python, ['-c', PY_PROBE_SNIPPET], {
+      encoding: 'utf8',
+      windowsHide: true,
+      timeout: 20_000,
+    })
+    if (!probe.error && probe.status === 0) {
+      try {
+        const parsed = JSON.parse(String(probe.stdout || '').trim() || '{}')
+        if (parsed.packages && typeof parsed.packages === 'object') {
+          status.packages = { ...status.packages, ...parsed.packages }
+        }
+        status.chromium = Boolean(parsed.chromium)
+      } catch {
+        /* probe output is not authoritative; leave everything as unavailable */
+      }
+    }
+  }
+  status.coreReady = Boolean(
+    python &&
+      status.packages.biopython &&
+      status.packages.numpy &&
+      status.packages.matplotlib &&
+      status.packages.logomaker &&
+      status.packages.pillow,
+  )
+  status.autoSubmitReady = Boolean(python && status.packages.playwright && status.chromium)
+  return status
 }
 
 function textValue(value, maxLength = 4_000) {
@@ -1554,9 +1638,14 @@ function finishChild(entry, code) {
 }
 
 function spawnSessionRunner(pyArgs) {
+  const extra = {}
+  const mafft = resolveMafft()
+  const iqtree = resolveIqtree()
+  if (mafft) extra.BIOINFORMATICS_HUB_MAFFT = mafft
+  if (iqtree) extra.BIOINFORMATICS_HUB_IQTREE = iqtree
   return spawn(resolvePython(), pyArgs, {
     cwd: engineRoot(),
-    env: engineEnv(),
+    env: engineEnv(extra),
     windowsHide: true,
   })
 }
@@ -1697,11 +1786,6 @@ ipcMain.handle('session:start', async (_event, args) => {
   if (!fastaText) throw new Error(msg('session.missingFasta'))
   assertFastaByteLimit(fastaText)
 
-  const runner = sessionRunnerScript()
-  if (!fs.existsSync(runner)) {
-    throw new Error(msg('session.missingRunner', runner))
-  }
-
   const geneId = safeRunId(args?.geneId || args?.id || 'gene')
   const sessionId = allocateSessionId(geneId)
   if (activeSessions.has(sessionId)) throw new Error(msg('session.alreadyRunning', sessionId))
@@ -1728,11 +1812,23 @@ ipcMain.handle('session:start', async (_event, args) => {
     else builtinIds.push(siteId)
   }
   const catalogSites = builtinIds.map((siteId) => getCatalogSite(siteId))
+
+  // Engine availability decides whether auto-submit runs and whether the Python
+  // session engine can be spawned at all (external tools are no longer bundled).
+  const engine = probeEngine()
+  const python = resolvePython()
+  const canRunEngine = Boolean(python && engine.coreReady)
+  const canAutoSubmit = engine.autoSubmitReady
+  const downgradedAutoIds = canAutoSubmit
+    ? []
+    : catalogSites.filter((site) => site.execution === 'auto_submit').map((site) => site.siteId)
+  const downgradedAutoSet = new Set(downgradedAutoIds)
   const autoSiteIds = catalogSites
-    .filter((site) => site.execution === 'auto_submit')
+    .filter((site) => site.execution === 'auto_submit' && !downgradedAutoSet.has(site.siteId))
     .map((site) => site.siteId)
   const manualSiteIds = [
     ...catalogSites.filter((site) => site.execution === 'open_only').map((site) => site.siteId),
+    ...downgradedAutoIds,
     ...customSiteIds,
   ]
   const alignmentSelection = validateAlignmentPath(args?.alignmentPath)
@@ -1755,13 +1851,16 @@ ipcMain.handle('session:start', async (_event, args) => {
     throw error
   }
   const createdAt = nowIso()
+  const downgradeWarning = uiLocale === 'en'
+    ? 'Auto-submit unavailable (Playwright/Chromium not found); opened manually'
+    : '自动提交不可用（未检测到 Playwright/Chromium），已改为手动打开'
   const session = {
     schemaVersion: SESSION_VERSION,
-    version: '0.4.0',
+    version: '0.5.0',
     id: sessionId,
     sessionId,
     status: 'running',
-    runner: { status: 'running', overall: null },
+    runner: { status: canRunEngine ? 'running' : 'unavailable', overall: null },
     createdAt,
     updatedAt: createdAt,
     input: {
@@ -1772,18 +1871,21 @@ ipcMain.handle('session:start', async (_event, args) => {
       alignmentFastaPath: alignmentCopy?.relativePath || null,
     },
     sites: [
-      ...catalogSites.map((site) => ({
-        id: site.siteId,
-        siteId: site.siteId,
-        name: site.name,
-        execution: site.execution,
-        entryUrl: site.entryUrl,
-        status: 'queued',
-        resultUrl: null,
-        notes: '',
-        warning: site.warning || '',
-        updatedAt: createdAt,
-      })),
+      ...catalogSites.map((site) => {
+        const downgraded = downgradedAutoSet.has(site.siteId)
+        return {
+          id: site.siteId,
+          siteId: site.siteId,
+          name: site.name,
+          execution: downgraded ? 'open_only' : site.execution,
+          entryUrl: site.entryUrl,
+          status: 'queued',
+          resultUrl: null,
+          notes: '',
+          warning: downgraded ? downgradeWarning : site.warning || '',
+          updatedAt: createdAt,
+        }
+      }),
       ...customSiteIds.map((siteId) => {
         const custom = customSiteMap.get(siteId)
         return {
@@ -1804,7 +1906,8 @@ ipcMain.handle('session:start', async (_event, args) => {
     localTools: localToolIds.map((toolId) => ({
       id: toolId,
       toolId,
-      status: 'queued',
+      status: canRunEngine ? 'queued' : 'needs_setup',
+      message: canRunEngine ? '' : msg('tool.needsSetup'),
       provenance: {},
       parameters: {},
       artifacts: [],
@@ -1816,6 +1919,45 @@ ipcMain.handle('session:start', async (_event, args) => {
   } catch (error) {
     cleanupTemp({ tempDir, tempFasta })
     throw error
+  }
+
+  // Fully degraded: no spawnable Python engine. Open every requested site as a
+  // manual tab in batches, mark local tools needs_setup, and finish as partial.
+  if (!canRunEngine) {
+    const entry = {
+      sessionId,
+      runDir,
+      child: null,
+      tempDir,
+      tempFasta,
+      cancelled: false,
+      disposed: false,
+      childClosed: true,
+      runnerDone: true,
+      runnerOverall: 'partial',
+      outcomeEmitted: false,
+      stdoutBuffer: '',
+      stderrBuffer: '',
+      stdoutDecoder: new StringDecoder('utf8'),
+      stderrDecoder: new StringDecoder('utf8'),
+      manualTimers: new Set(),
+      manualSiteIds,
+      manualSitesScheduled: false,
+      manualInFlight: 0,
+      openingResultSites: new Set(),
+      fallbackSiteOpenAttempts: new Set(),
+      session,
+    }
+    activeSessions.set(sessionId, entry)
+    send('session:update', publicSession(session, runDir, { includeInputText: true }))
+    scheduleManualSites(entry, manualSiteIds)
+    return { sessionId, sessionDir: runDir, runId: sessionId, runDir }
+  }
+
+  const runner = sessionRunnerScript()
+  if (!fs.existsSync(runner)) {
+    cleanupTemp({ tempDir, tempFasta })
+    throw new Error(msg('session.missingRunner', runner))
   }
 
   const pyArgs = [
@@ -1975,7 +2117,7 @@ ipcMain.handle('session:list', async () => {
         createdAt: session.createdAt || stat.birthtime.toISOString(),
         updatedAt: session.updatedAt || stat.mtime.toISOString(),
         input: publicInput,
-        version: String(session.version || '0.4.0'),
+        version: String(session.version || '0.5.0'),
         legacy: false,
         sessionDir: runDir,
         runDir,
@@ -2159,6 +2301,8 @@ ipcMain.handle('app:setLocale', (_event, locale) => {
   if (locale === 'zh' || locale === 'en') uiLocale = locale
   return { ok: true, locale: uiLocale }
 })
+
+ipcMain.handle('engine:status', async () => probeEngine())
 
 function stopAllSessions() {
   for (const entry of activeSessions.values()) {
