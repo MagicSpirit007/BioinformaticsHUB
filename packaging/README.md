@@ -2,7 +2,7 @@
 
 > [中文版](./README.md) · [English](./README.en.md)
 
-本目录把 React 任务仪表盘、Electron 会话调度层和可移植 Python/Playwright 引擎打成 Windows 安装包与便携版。
+本目录把 React 任务仪表盘、Electron 会话调度层和可移植 Python/Playwright 引擎打成 Windows 安装包。
 
 ## 产物布局
 
@@ -56,7 +56,6 @@ resources/
 ```text
 apps\bioinformatics-hub-desktop\release\
   BioinformaticsHUB-0.5.2-win-x64.exe
-  BioinformaticsHUB-0.5.2-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
@@ -100,7 +99,7 @@ doctor 检查 Python、`session_runner.py`、本地工具模块、Playwright 包
 1. `bootstrap_engine.ps1` 完成且 doctor 返回 0。
 2. 捆绑 Python 可运行 `scripts/session_runner.py` 并产生 JSONL 事件。
 3. React 构建、Electron 测试与静态检查通过。
-4. NSIS、portable 和 `win-unpacked` 均生成。
+4. NSIS 和 `win-unpacked` 均生成。
 5. 新建任务后可打开人工网站；Plant-mPLoc 可自动代填并进入官方结果页。
 6. 任务可保存人工结果 URL，并导出 `10_research_handoff/研究工作包.md`。
 

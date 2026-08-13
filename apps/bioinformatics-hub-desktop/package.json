@@ -12,8 +12,7 @@
     "check": "node --check main.cjs && node --check paths.cjs && node --check preload.cjs",
     "pack": "electron-builder --dir",
     "dist": "electron-builder --win --x64",
-    "dist:nsis": "electron-builder --win nsis --x64",
-    "dist:portable": "electron-builder --win portable --x64"
+    "dist:nsis": "electron-builder --win nsis --x64"
   },
   "devDependencies": {
     "electron": "^35.1.2",
@@ -62,12 +61,6 @@
           "arch": [
             "x64"
           ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
         }
       ],
       "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
@@ -84,9 +77,6 @@
       "createStartMenuShortcut": true,
       "shortcutName": "BioinformaticsHUB",
       "deleteAppDataOnUninstall": false
-    },
-    "portable": {
-      "artifactName": "${productName}-${version}-portable.${ext}"
     }
   }
 }

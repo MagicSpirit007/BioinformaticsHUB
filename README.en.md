@@ -6,7 +6,7 @@ BioinformaticsHUB is a **multi-site aggregation desktop application** for protei
 
 It deliberately does not try to reimplement every website inside the app, nor does it call analysis APIs, assemble "combined conclusions", or generate figures of unclear provenance.
 
-Windows installers and portable builds are available from [GitHub Releases](https://github.com/MagicSpirit007/BioinformaticsHUB/releases). The current release is an unsigned 64-bit build, so Windows SmartScreen may ask you to confirm the publisher manually.
+A Windows installer is available from [GitHub Releases](https://github.com/MagicSpirit007/BioinformaticsHUB/releases). The current release is an unsigned 64-bit build, so Windows SmartScreen may ask you to confirm the publisher manually.
 
 ## Product boundaries
 
@@ -143,7 +143,7 @@ Networked web regression must be run explicitly, never as part of the default of
 .\packaging\scripts\build_windows.ps1 -Proxy http://127.0.0.1:7890
 ```
 
-Outputs land in `apps/bioinformatics-hub-desktop/release/`, including an NSIS installer and a portable build. Full instructions are in [`packaging/README.md`](./packaging/README.md), and third-party tool sources and licenses are in [`packaging/THIRD_PARTY_NOTICES.md`](./packaging/THIRD_PARTY_NOTICES.md).
+Outputs land in `apps/bioinformatics-hub-desktop/release/` as an NSIS installer. Full instructions are in [`packaging/README.md`](./packaging/README.md), and third-party tool sources and licenses are in [`packaging/THIRD_PARTY_NOTICES.md`](./packaging/THIRD_PARTY_NOTICES.md).
 
 The public source repository does not commit third-party binaries under `tools/`. To self-build a full installer including IQ-TREE, first place the IQ-TREE 2.3.6 Windows distribution under `tools/iqtree-2.3.6-Windows/` in accordance with its third-party license; official release installers already include locally validated tools.
 

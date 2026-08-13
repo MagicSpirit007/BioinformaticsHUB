@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-  Windows release build: UI → (slim engine scripts) → electron-builder (NSIS + portable).
+  Windows release build: UI → (slim engine scripts) → electron-builder (NSIS).
 
 .DESCRIPTION
   Local analysis tools (Python interpreter, Python packages, MAFFT, IQ-TREE,

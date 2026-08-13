@@ -2,7 +2,7 @@
 
 > [中文版](./README.md) · [English](README.en.md)
 
-This directory packages the React task dashboard, the Electron session scheduler and the portable Python/Playwright engine into a Windows installer and a portable build.
+This directory packages the React task dashboard, the Electron session scheduler and the portable Python/Playwright engine into a Windows installer.
 
 ## Artifact layout
 
@@ -56,7 +56,6 @@ Output:
 ```text
 apps\bioinformatics-hub-desktop\release\
   BioinformaticsHUB-0.5.2-win-x64.exe
-  BioinformaticsHUB-0.5.2-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
@@ -100,7 +99,7 @@ These variables are read only in the current process; build scripts never write 
 1. `bootstrap_engine.ps1` completes and doctor returns 0.
 2. The bundled Python can run `scripts/session_runner.py` and produce JSONL events.
 3. React build, Electron tests and static checks pass.
-4. NSIS, portable and `win-unpacked` are all produced.
+4. NSIS and `win-unpacked` are both produced.
 5. After creating a task, manual websites open; Plant-mPLoc auto-fills and reaches the official result page.
 6. Tasks can save a manual result URL and export `10_research_handoff/research bundle.md`.
 

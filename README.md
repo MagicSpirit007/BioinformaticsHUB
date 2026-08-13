@@ -6,7 +6,7 @@ BioinformaticsHUB 是面向蛋白质与 CDS 研究的**多网站聚合桌面应�
 
 它不再试图在应用内复刻所有网站，也不再调用分析 API、拼装“综合结论”或生成来源不清的图片。
 
-Windows 安装包与便携版可从 [GitHub Releases](https://github.com/MagicSpirit007/BioinformaticsHUB/releases) 下载。当前发布为 64 位未签名构建，Windows SmartScreen 可能要求手动确认发布者。
+Windows 安装包可从 [GitHub Releases](https://github.com/MagicSpirit007/BioinformaticsHUB/releases) 下载。当前发布为 64 位未签名构建，Windows SmartScreen 可能要求手动确认发布者。
 
 ## 产品边界
 
@@ -143,7 +143,7 @@ packaging\engine\python\python.exe packaging\engine\doctor.py
 .\packaging\scripts\build_windows.ps1 -Proxy http://127.0.0.1:7890
 ```
 
-生成物位于 `apps/bioinformatics-hub-desktop/release/`，包括 NSIS 安装包和 portable 版本。完整说明见 [`packaging/README.md`](./packaging/README.md)，第三方工具来源与许可证见 [`packaging/THIRD_PARTY_NOTICES.md`](./packaging/THIRD_PARTY_NOTICES.md)。
+生成物位于 `apps/bioinformatics-hub-desktop/release/`，即 NSIS 安装包。完整说明见 [`packaging/README.md`](./packaging/README.md)，第三方工具来源与许可证见 [`packaging/THIRD_PARTY_NOTICES.md`](./packaging/THIRD_PARTY_NOTICES.md)。
 
 公开源码仓库不提交 `tools/` 中的第三方二进制。若要自行构建包含 IQ-TREE 的完整安装包，请先按第三方官方许可将 IQ-TREE 2.3.6 Windows 发行版放到 `tools/iqtree-2.3.6-Windows/`；官方 Release 安装包已包含构建时校验过的本地工具。
 
