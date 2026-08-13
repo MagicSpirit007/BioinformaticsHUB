@@ -1,4 +1,4 @@
-# BioinformaticsHUB 0.5.2
+# BioinformaticsHUB
 
 > [中文版](./README.md) · [English](./README.en.md)
 
