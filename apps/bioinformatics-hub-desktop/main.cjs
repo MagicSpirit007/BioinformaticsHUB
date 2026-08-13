@@ -1886,7 +1886,7 @@ ipcMain.handle('session:start', async (_event, args) => {
     : '自动提交不可用（未检测到 Playwright/Chromium），已改为手动打开'
   const session = {
     schemaVersion: SESSION_VERSION,
-    version: '0.5.1',
+    version: '0.5.2',
     id: sessionId,
     sessionId,
     status: 'running',
@@ -2155,7 +2155,7 @@ ipcMain.handle('session:list', async () => {
         createdAt: session.createdAt || stat.birthtime.toISOString(),
         updatedAt: session.updatedAt || stat.mtime.toISOString(),
         input: publicInput,
-        version: String(session.version || '0.5.1'),
+        version: String(session.version || '0.5.2'),
         legacy: false,
         sessionDir: runDir,
         runDir,

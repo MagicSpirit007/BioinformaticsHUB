@@ -1,7 +1,7 @@
 {
   "name": "bioinformatics-hub",
   "private": true,
-  "version": "0.5.1",
+  "version": "0.5.2",
   "type": "module",
   "description": "BioinformaticsHUB — website-first sequence research dashboard with local provenance",
   "scripts": {

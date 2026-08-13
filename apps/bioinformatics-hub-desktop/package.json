@@ -1,7 +1,7 @@
 {
   "name": "bioinformatics-hub-desktop",
   "private": true,
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "BioinformaticsHUB Electron shell — website analysis aggregator and local tools",
   "author": "MagicSpirit007",
   "main": "main.cjs",

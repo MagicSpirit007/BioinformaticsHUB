@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""BioinformaticsHUB 0.3 artifact runner.
+"""BioinformaticsHUB 0.5.2 artifact runner.
 
 Electron owns ``session.json``.  This process writes only step artifacts and
 emits newline-delimited JSON events on stdout.
@@ -234,7 +234,7 @@ class EventState:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="BioinformaticsHUB 0.3 local-artifact and approved-site session runner (JSONL stdout)",
+        description="BioinformaticsHUB 0.5.2 local-artifact and approved-site session runner (JSONL stdout)",
     )
     parser.add_argument("--fasta", type=Path, required=True, help="Primary CDS or protein FASTA")
     parser.add_argument("--id", dest="run_id", required=True, help="Run/gene identifier")

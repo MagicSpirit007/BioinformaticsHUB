@@ -1,4 +1,4 @@
-# BioinformaticsHUB 0.3 Windows packaging
+# BioinformaticsHUB 0.5.2 Windows packaging
 
 > [中文版](./README.md) · [English](README.en.md)
 
@@ -55,8 +55,8 @@ Output:
 
 ```text
 apps\bioinformatics-hub-desktop\release\
-  BioinformaticsHUB-0.5.1-win-x64.exe
-  BioinformaticsHUB-0.5.1-portable.exe
+  BioinformaticsHUB-0.5.2-win-x64.exe
+  BioinformaticsHUB-0.5.2-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
@@ -108,4 +108,4 @@ These variables are read only in the current process; build scripts never write 
 
 With Windows Developer Mode disabled, electron-builder may fail to unpack `winCodeSign` because of macOS symlinks. The project disables executable signing edits and identity auto-discovery; if the local cache is still corrupted, clean the corresponding `winCodeSign` cache as the build script suggests and retry. Do not change system-level security settings for this.
 
-The current v0.3.0 artifacts are unsigned, so Windows SmartScreen may show an unknown-publisher prompt. GitHub Releases also provide SHA-256 checksum files for post-download verification.
+The current v0.5.2 artifacts are unsigned, so Windows SmartScreen may show an unknown-publisher prompt. GitHub Releases also provide SHA-256 checksum files for post-download verification.

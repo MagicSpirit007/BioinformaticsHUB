@@ -2,6 +2,10 @@
 
 > [中文版](./CHANGELOG.md) · [English](./CHANGELOG.en.md)
 
+## 0.5.2 - 2026-08-13
+
+- Unified the version number across all documentation and engine scripts, removing the 0.3 / 0.5 mismatch (README titles, packaging docs, Python engine version strings).
+
 ## 0.5.1 - 2026-08-13
 
 - Fixed a Windows PATH parsing bug that split drive letters and broke tool auto-detection when the app and tools live on different drives.

@@ -279,7 +279,7 @@ export function getDesktopApi(): DesktopApi {
       browserSessions.set(sessionId, {
         sessionId,
         schemaVersion: 1,
-        version: '0.5.1-preview',
+        version: '0.5.2-preview',
         status: 'running',
         createdAt: now,
         updatedAt: now,

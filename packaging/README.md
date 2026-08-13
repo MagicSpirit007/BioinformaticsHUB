@@ -1,4 +1,4 @@
-# BioinformaticsHUB 0.3 Windows 打包
+# BioinformaticsHUB 0.5.2 Windows 打包
 
 > [中文版](./README.md) · [English](./README.en.md)
 
@@ -55,8 +55,8 @@ resources/
 
 ```text
 apps\bioinformatics-hub-desktop\release\
-  BioinformaticsHUB-0.5.1-win-x64.exe
-  BioinformaticsHUB-0.5.1-portable.exe
+  BioinformaticsHUB-0.5.2-win-x64.exe
+  BioinformaticsHUB-0.5.2-portable.exe
   win-unpacked\BioinformaticsHUB.exe
 ```
 
@@ -108,4 +108,4 @@ doctor 检查 Python、`session_runner.py`、本地工具模块、Playwright 包
 
 未开启 Windows 开发人员模式时，electron-builder 解压 `winCodeSign` 可能因 macOS 符号链接失败。项目已关闭可执行文件签名编辑与身份自动发现；如本机缓存仍损坏，可按现有构建脚本提示清理对应的 `winCodeSign` 缓存后重试。不要因此修改系统级安全设置。
 
-当前 v0.3.0 产物未进行代码签名，Windows SmartScreen 可能显示未知发布者提示。GitHub Release 同时提供 SHA-256 校验文件供下载后核对。
+当前 v0.5.2 产物未进行代码签名，Windows SmartScreen 可能显示未知发布者提示。GitHub Release 同时提供 SHA-256 校验文件供下载后核对。
