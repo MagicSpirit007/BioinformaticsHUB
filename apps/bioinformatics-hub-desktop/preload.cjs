@@ -9,6 +9,7 @@ function subscribe(channel, callback) {
 
 contextBridge.exposeInMainWorld('bioinformaticsHub', {
   isDesktop: true,
+  setLocale: (locale) => ipcRenderer.invoke('app:setLocale', locale),
   sessionStart: (args) => ipcRenderer.invoke('session:start', args),
   sessionCancel: (sessionId) => ipcRenderer.invoke('session:cancel', sessionId),
   loadSession: (sessionId) => ipcRenderer.invoke('session:load', sessionId),

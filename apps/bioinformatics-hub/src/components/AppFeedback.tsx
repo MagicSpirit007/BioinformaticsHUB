@@ -2,6 +2,7 @@ import { useEffect, useId, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { CheckCircle, Warning, X } from '@phosphor-icons/react'
 import { GlassPanel } from './GlassPanel'
+import { useI18n } from '../i18n'
 
 type Props = {
   error: string
@@ -13,6 +14,7 @@ type Props = {
 const NOTICE_DURATION_MS = 2600
 
 export function AppFeedback({ error, notice, onDismissError, onDismissNotice }: Props) {
+  const { t } = useI18n()
   const titleId = useId()
   const messageId = useId()
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -60,11 +62,11 @@ export function AppFeedback({ error, notice, onDismissError, onDismissNotice }: 
               <div className="feedback-dialog-content">
                 <span className="feedback-icon fail" aria-hidden="true"><Warning weight="fill" /></span>
                 <div className="feedback-copy">
-                  <p className="eyebrow">ATTENTION</p>
-                  <h2 id={titleId}>需要处理</h2>
+                  <p className="eyebrow">{t('feedback.eyebrow')}</p>
+                  <h2 id={titleId}>{t('feedback.title')}</h2>
                   <p id={messageId}>{error}</p>
                 </div>
-                <button ref={closeButtonRef} className="btn primary feedback-dismiss" type="button" onClick={onDismissError}>知道了</button>
+                <button ref={closeButtonRef} className="btn primary feedback-dismiss" type="button" onClick={onDismissError}>{t('feedback.dismiss')}</button>
               </div>
             </GlassPanel>
           </div>
@@ -76,7 +78,7 @@ export function AppFeedback({ error, notice, onDismissError, onDismissNotice }: 
             <div className="feedback-toast-content">
               <CheckCircle weight="fill" aria-hidden="true" />
               <span>{notice}</span>
-              <button className="feedback-toast-close" type="button" onClick={onDismissNotice} aria-label="关闭提示"><X /></button>
+              <button className="feedback-toast-close" type="button" onClick={onDismissNotice} aria-label={t('feedback.close')}><X /></button>
             </div>
           </GlassPanel>
         </div>

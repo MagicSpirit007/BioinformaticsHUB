@@ -1,5 +1,7 @@
 # Design — BioinformaticsHUB
 
+> [中文版](./design.md) · [English](./design.en.md)
+
 BioinformaticsHUB 的锁定设计系统。应用页面与运行状态共享同一套纸张、字体、玻璃层级和动效规则。
 
 ## Genre

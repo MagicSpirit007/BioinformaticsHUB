@@ -1,4 +1,4 @@
-/** Electron preload bridge for BioinformaticsHUB 0.3 website aggregation sessions. */
+/** Electron preload bridge for BioinformaticsHUB 0.4 website aggregation sessions. */
 
 export type InputKind = 'auto' | 'cds' | 'protein'
 
@@ -28,6 +28,14 @@ export type SessionStartArgs = {
   siteIds: string[]
   localToolIds: string[]
   alignmentPath?: string
+  customSites?: CustomSiteSeed[]
+}
+
+export type CustomSiteSeed = {
+  id: string
+  name: string
+  entryUrl: string
+  note?: string
 }
 
 export type SessionInput = {
@@ -50,6 +58,10 @@ export type SessionInput = {
 export type SiteTask = {
   id?: string
   siteId?: string
+  name?: string
+  execution?: string
+  custom?: boolean
+  warning?: string
   status?: TaskStatus | string
   entryUrl?: string
   resultUrl?: string
@@ -166,6 +178,7 @@ export type PickedTextFile = { path: string; name?: string; text: string }
 
 export type DesktopApi = {
   isDesktop: boolean
+  setLocale: (locale: 'zh' | 'en') => void
   sessionStart: (args: SessionStartArgs) => Promise<{ sessionId: string; sessionDir?: string }>
   sessionCancel: (sessionId: string) => Promise<void | { ok: boolean }>
   loadSession: (sessionId: string) => Promise<SessionRecord>
@@ -201,14 +214,29 @@ export function getDesktopApi(): DesktopApi {
 
   return {
     isDesktop,
+    setLocale: (locale) => {
+      bridge?.setLocale?.(locale)
+    },
     sessionStart: async (args) => {
       if (bridge?.sessionStart) return bridge.sessionStart(args)
       const sessionId = `${safeId(args.geneId)}-${new Date().toISOString().replace(/[:.]/g, '-')}`
       const now = new Date().toISOString()
+      const customSites = (args.customSites ?? []).map((site) => ({
+        id: site.id,
+        siteId: site.id,
+        name: site.name,
+        execution: 'open_only',
+        custom: true,
+        entryUrl: site.entryUrl,
+        status: 'queued',
+      }))
+      const catalogSites = args.siteIds
+        .filter((id) => !customSites.some((custom) => custom.siteId === id))
+        .map((siteId) => ({ siteId, status: 'queued' }))
       browserSessions.set(sessionId, {
         sessionId,
         schemaVersion: 1,
-        version: '0.3.0-preview',
+        version: '0.4.0-preview',
         status: 'running',
         createdAt: now,
         updatedAt: now,
@@ -222,7 +250,7 @@ export function getDesktopApi(): DesktopApi {
           proteinFasta: args.inputKind === 'protein' ? args.fastaText : undefined,
           alignmentPath: args.alignmentPath,
         },
-        sites: args.siteIds.map((siteId) => ({ siteId, status: 'queued' })),
+        sites: [...catalogSites, ...customSites],
         localTools: args.localToolIds.map((toolId) => ({
           toolId,
           status: 'needs_setup',

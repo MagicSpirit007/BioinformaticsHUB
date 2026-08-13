@@ -43,7 +43,7 @@ a {
   inset-block-start: 0;
   z-index: var(--z-sticky);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
   align-items: center;
   gap: var(--space-lg);
   min-height: 4.8rem;
@@ -157,6 +157,36 @@ a {
 .connection-pill.connected > span {
   background: var(--color-ok);
   box-shadow: 0 0 0 0.22rem color-mix(in oklch, var(--color-ok) 12%, transparent);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  padding: var(--space-2xs);
+  border: var(--rule-hairline) solid var(--color-rule-2);
+  border-radius: var(--radius-pill);
+  background: color-mix(in oklch, var(--color-paper-2) 68%, transparent);
+}
+
+.lang-switch button {
+  min-width: 2.4rem;
+  min-height: 2.2rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding-inline: var(--space-xs);
+  color: var(--color-muted);
+  background: transparent;
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-switch button.active {
+  color: var(--color-accent-ink);
+  background: var(--color-ink);
+  box-shadow: var(--shadow-whisper);
 }
 
 .main-content {
@@ -1490,6 +1520,228 @@ a {
   line-height: 1.6;
 }
 
+/* --- Custom site/category manager --- */
+
+.custom-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: grid;
+  place-items: center;
+  padding: var(--space-lg);
+  background: color-mix(in oklch, var(--color-scrim) 46%, transparent);
+  backdrop-filter: blur(0.35rem);
+}
+
+.custom-dialog-shell {
+  width: min(64rem, 100%);
+  max-height: min(48rem, 90vh);
+}
+
+.custom-dialog {
+  display: flex;
+  flex-direction: column;
+  max-height: min(48rem, 90vh);
+  overflow: hidden;
+}
+
+.custom-dialog-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.custom-dialog-head h2 {
+  margin-block-start: var(--space-xs);
+  font-size: var(--text-xl);
+}
+
+.custom-close {
+  flex: 0 0 auto;
+}
+
+.custom-body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--space-lg);
+  margin-block-start: var(--space-lg);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.custom-groups,
+.custom-sites {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: var(--space-sm);
+  overflow: hidden;
+}
+
+.custom-pane-head h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  letter-spacing: 0;
+}
+
+.custom-group-list,
+.custom-site-list {
+  display: grid;
+  gap: var(--space-2xs);
+  min-height: 0;
+  overflow: auto;
+}
+
+.custom-group-item {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-2xs);
+}
+
+.custom-group-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 2.6rem;
+  border: var(--rule-hairline) solid var(--color-rule-2);
+  border-radius: var(--radius-input);
+  padding-inline: var(--space-sm);
+  color: var(--color-ink-2);
+  background: color-mix(in oklch, var(--color-paper) 62%, transparent);
+  font-size: var(--text-sm);
+  font-weight: 650;
+  cursor: pointer;
+  text-align: start;
+}
+
+.custom-group-select span {
+  min-width: 1.6rem;
+  border-radius: var(--radius-pill);
+  padding-inline: var(--space-2xs);
+  color: var(--color-muted);
+  background: var(--color-paper-2);
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  text-align: center;
+}
+
+.custom-group-item.active .custom-group-select {
+  border-color: var(--color-ink-2);
+  background: color-mix(in oklch, var(--color-ink) 5%, var(--color-paper));
+}
+
+.custom-icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 auto;
+  border: var(--rule-hairline) solid var(--color-rule);
+  border-radius: var(--radius-input);
+  color: var(--color-muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.custom-icon-button svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.custom-icon-button:hover {
+  color: var(--color-fail);
+  border-color: color-mix(in oklch, var(--color-fail) 44%, var(--color-rule));
+}
+
+.custom-empty {
+  padding: var(--space-md);
+  border: var(--rule-hairline) dashed var(--color-rule);
+  border-radius: var(--radius-input);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.custom-form {
+  display: grid;
+  gap: var(--space-xs);
+  margin-block-start: var(--space-sm);
+  padding-block-start: var(--space-sm);
+  border-block-start: var(--rule-hairline) solid var(--color-rule-2);
+}
+
+.custom-form-title {
+  color: var(--color-ink-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.custom-form-error {
+  margin: 0;
+  color: var(--color-fail);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.custom-form-actions {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.custom-site-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  border: var(--rule-hairline) solid var(--color-rule-2);
+  border-radius: var(--radius-input);
+  background: color-mix(in oklch, var(--color-paper) 58%, transparent);
+}
+
+.custom-site-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  min-width: 0;
+}
+
+.custom-site-info strong {
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+}
+
+.custom-site-info code {
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  overflow-wrap: anywhere;
+}
+
+.custom-site-info span {
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+}
+
+.custom-site-actions {
+  display: flex;
+  gap: var(--space-2xs);
+  flex: 0 0 auto;
+}
+
+@media (max-width: 52rem) {
+  .custom-body {
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
+
+  .custom-dialog {
+    max-height: none;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .site-select-card:hover,
   .local-select-card:hover,
@@ -1521,7 +1773,7 @@ a {
 
 @media (max-width: 52rem) {
   .topbar {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
   }
 
   .connection-pill {

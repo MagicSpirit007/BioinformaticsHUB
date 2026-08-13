@@ -1,5 +1,7 @@
 # BioinformaticsHUB 0.3
 
+> [中文版](./README.md) · [English](./README.en.md)
+
 BioinformaticsHUB 是网站优先的研究网站整合平台，不是一站式综合分析器。它负责：
 
 - 规范化 CDS / 蛋白 FASTA，并在需要时由本地引擎翻译 CDS；

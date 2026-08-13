@@ -1,5 +1,7 @@
 # BioinformaticsHUB 0.3 Windows 打包
 
+> [中文版](./README.md) · [English](./README.en.md)
+
 本目录把 React 任务仪表盘、Electron 会话调度层和可移植 Python/Playwright 引擎打成 Windows 安装包与便携版。
 
 ## 产物布局

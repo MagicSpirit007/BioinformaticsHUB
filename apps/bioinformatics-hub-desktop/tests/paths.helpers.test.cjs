@@ -646,6 +646,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     assert.deepEqual(
       [...handlers.keys()].sort(),
       [
+        'app:setLocale',
         'artifact:reveal',
         'fs:exportResearchBundle',
         'fs:pickAlignment',
@@ -1018,6 +1019,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
     const mockElectron = {
       app: {
         isPackaged: false,
+        getLocale: () => 'zh-CN',
         whenReady: () => new Promise(() => {}),
         on: () => undefined,
       },
@@ -1177,6 +1179,7 @@ describe('Electron 0.3 IPC and preload surface', () => {
         'saveSiteResult',
         'sessionCancel',
         'sessionStart',
+        'setLocale',
       ],
     )
     await exposed.value.sessionStart({ geneId: 'G' })

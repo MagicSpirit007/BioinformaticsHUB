@@ -1,5 +1,7 @@
 # BioinformaticsHUB Desktop 0.3
 
+> [中文版](./README.md) · [English](./README.en.md)
+
 Electron 桌面层负责加载 React 任务驾驶舱、校验网站目录、调度系统浏览器、启动 Python 会话引擎，并原子持久化 `session.json`。
 
 ## 开发
@@ -25,6 +27,7 @@ Renderer 只能通过 context-isolated preload 使用以下功能：
 - `exportResearchBundle`
 - `pickFasta` / `pickAlignment`
 - `revealArtifact`
+- `setLocale`
 - `onSessionUpdate` / `onLog` / `onSessionDone` / `onSessionCancelled` / `onSessionError`
 
 Python stdout 必须是 JSONL 事件：`input_ready`、`local_update`、`site_update`、`done`。普通日志只从 stderr 进入日志面板。

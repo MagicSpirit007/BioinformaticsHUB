@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "productVersion": "0.3.0",
+  "productVersion": "0.4.0",
   "sites": [
     {
       "id": "orf_finder",
@@ -8,6 +8,7 @@
       "group": "sequence",
       "provider": "NCBI",
       "description": "在官方页面复核六阅读框、起始密码子与开放阅读框。",
+      "descriptionEn": "Review six reading frames, start codons and open reading frames on the official page.",
       "entryUrl": "https://www.ncbi.nlm.nih.gov/orffinder/",
       "execution": "open_only",
       "inputKind": "nucleotide_fasta"
@@ -18,6 +19,7 @@
       "group": "homology",
       "provider": "NCBI",
       "description": "将核酸序列与所选核酸数据库比对。",
+      "descriptionEn": "Align a nucleotide sequence against a chosen nucleotide database.",
       "entryUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROGRAM=blastn",
       "execution": "open_only",
       "inputKind": "nucleotide_fasta"
@@ -28,6 +30,7 @@
       "group": "homology",
       "provider": "NCBI",
       "description": "查找蛋白同源序列并检查覆盖度与一致性。",
+      "descriptionEn": "Find protein homologs and inspect coverage and identity.",
       "entryUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -38,6 +41,7 @@
       "group": "homology",
       "provider": "NCBI",
       "description": "通过迭代搜索寻找普通 BLASTp 难以发现的远缘同源。",
+      "descriptionEn": "Iterative search for distant homologs ordinary BLASTp may miss.",
       "entryUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&RUN_PSIBLAST=on",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -48,6 +52,7 @@
       "group": "annotation",
       "provider": "EMBL-EBI",
       "description": "整合蛋白家族、结构域、保守位点与 GO 注释。",
+      "descriptionEn": "Integrated protein families, domains, conserved sites and GO annotations.",
       "entryUrl": "https://www.ebi.ac.uk/interpro/search/sequence/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -58,6 +63,7 @@
       "group": "annotation",
       "provider": "NCBI",
       "description": "以保守结构域数据库复核蛋白域与功能位点。",
+      "descriptionEn": "Review protein domains and functional sites against the conserved domain database.",
       "entryUrl": "https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -68,6 +74,7 @@
       "group": "annotation",
       "provider": "SIB ExPASy",
       "description": "扫描 PROSITE 模式与 profile，定位保守基序。",
+      "descriptionEn": "Scan PROSITE patterns and profiles to locate conserved motifs.",
       "entryUrl": "https://prosite.expasy.org/scanprosite/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -78,6 +85,7 @@
       "group": "topology",
       "provider": "UCL",
       "description": "预测蛋白二级结构并提供官方结果页面。",
+      "descriptionEn": "Predict protein secondary structure with an official result page.",
       "entryUrl": "https://bioinf.cs.ucl.ac.uk/psipred/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -88,6 +96,7 @@
       "group": "topology",
       "provider": "University of Dundee",
       "description": "独立预测蛋白二级结构，适合与其他方法交叉复核。",
+      "descriptionEn": "Independent secondary structure prediction for cross-checking.",
       "entryUrl": "https://www.compbio.dundee.ac.uk/jpred4/index.html",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -98,6 +107,7 @@
       "group": "topology",
       "provider": "EMBL-EBI",
       "description": "联合预测跨膜拓扑与信号肽。",
+      "descriptionEn": "Joint transmembrane topology and signal peptide prediction.",
       "entryUrl": "https://www.ebi.ac.uk/Tools/pfa/phobius/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -108,6 +118,7 @@
       "group": "topology",
       "provider": "DTU Health Tech",
       "description": "预测信号肽类型与切割位点。",
+      "descriptionEn": "Predict signal peptide type and cleavage site.",
       "entryUrl": "https://services.healthtech.dtu.dk/services/SignalP-6.0/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -118,6 +129,7 @@
       "group": "topology",
       "provider": "DTU Health Tech",
       "description": "复核跨膜螺旋与蛋白拓扑。",
+      "descriptionEn": "Review transmembrane helices and protein topology.",
       "entryUrl": "https://services.healthtech.dtu.dk/services/TMHMM-2.0/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -128,6 +140,7 @@
       "group": "topology",
       "provider": "DTU BioLib",
       "description": "以深度学习模型预测跨膜拓扑与蛋白类别。",
+      "descriptionEn": "Deep-learning transmembrane topology and protein class prediction.",
       "entryUrl": "https://dtu.biolib.com/DeepTMHMM",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -138,11 +151,13 @@
       "group": "localization",
       "provider": "SJTU CSBio",
       "description": "面向植物蛋白预测亚细胞定位。",
+      "descriptionEn": "Predict subcellular localization for plant proteins.",
       "entryUrl": "http://www.csbio.sjtu.edu.cn/bioinf/plant-multi/",
       "execution": "auto_submit",
       "inputKind": "protein_fasta",
       "automationNote": "固定定位 FASTA 文本框与提交按钮；等待 CGI 结果标志后打开最终结果页。",
-      "risk": "HTTP 未加密传输"
+      "risk": "HTTP 未加密传输",
+      "riskEn": "Unencrypted HTTP transport"
     },
     {
       "id": "cell_ploc",
@@ -150,6 +165,7 @@
       "group": "localization",
       "provider": "SJTU CSBio",
       "description": "按所选生物类别复核蛋白亚细胞定位。",
+      "descriptionEn": "Review protein subcellular localization by organism class.",
       "entryUrl": "http://www.csbio.sjtu.edu.cn/bioinf/Cell-PLoc-2/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -160,6 +176,7 @@
       "group": "localization",
       "provider": "DTU Health Tech",
       "description": "预测亚细胞定位、膜关联及排序信号。",
+      "descriptionEn": "Predict subcellular localization, membrane association and sorting signals.",
       "entryUrl": "https://services.healthtech.dtu.dk/services/DeepLoc-2.1/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -170,6 +187,7 @@
       "group": "annotation",
       "provider": "MusiteDeep",
       "description": "预测磷酸化、泛素化、甲基化等翻译后修饰位点。",
+      "descriptionEn": "Predict phosphorylation, ubiquitination, methylation and other PTM sites.",
       "entryUrl": "https://www.musite.net/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -180,6 +198,7 @@
       "group": "annotation",
       "provider": "STRING Consortium",
       "description": "检索蛋白关联网络并核对物种映射。",
+      "descriptionEn": "Retrieve protein association networks and verify species mapping.",
       "entryUrl": "https://string-db.org/",
       "execution": "open_only",
       "inputKind": "identifier"
@@ -190,6 +209,7 @@
       "group": "annotation",
       "provider": "UniProt Consortium",
       "description": "用蛋白序列检索 UniProtKB，并进入人工审阅的条目。",
+      "descriptionEn": "Search UniProtKB by protein sequence and reach curated entries.",
       "entryUrl": "https://www.uniprot.org/blast",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -200,10 +220,12 @@
       "group": "annotation",
       "provider": "EMBL",
       "description": "执行正交群、GO、COG 与功能注释。",
+      "descriptionEn": "Orthologous groups, GO, COG and functional annotation.",
       "entryUrl": "http://eggnog-mapper.embl.de/",
       "execution": "open_only",
       "inputKind": "protein_fasta",
-      "risk": "入口站点使用 HTTP"
+      "risk": "入口站点使用 HTTP",
+      "riskEn": "Entry site uses HTTP"
     },
     {
       "id": "iupred",
@@ -211,6 +233,7 @@
       "group": "topology",
       "provider": "ELTE",
       "description": "预测蛋白内在无序区域。",
+      "descriptionEn": "Predict intrinsically disordered regions.",
       "entryUrl": "https://iupred3.elte.hu/",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -221,6 +244,7 @@
       "group": "homology",
       "provider": "EMBL-EBI",
       "description": "以 HMMER 补充蛋白同源搜索。",
+      "descriptionEn": "Complement protein homology search with HMMER.",
       "entryUrl": "https://www.ebi.ac.uk/Tools/hmmer/search/phmmer",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -231,6 +255,7 @@
       "group": "evolution",
       "provider": "EMBL-EBI",
       "description": "在网页中执行多序列比对，作为本地工具之外的人工选项。",
+      "descriptionEn": "Web-based multiple sequence alignment as a manual alternative to local tools.",
       "entryUrl": "https://www.ebi.ac.uk/jdispatcher/msa/mafft",
       "execution": "open_only",
       "inputKind": "alignment_fasta"
@@ -241,6 +266,7 @@
       "group": "evolution",
       "provider": "EMBL",
       "description": "上传 Newick 与注释数据包，交互式排版系统发育树。",
+      "descriptionEn": "Upload Newick and annotation packages for interactive tree styling.",
       "entryUrl": "https://itol.embl.de/upload.cgi",
       "execution": "open_only",
       "inputKind": "tree"
@@ -251,6 +277,7 @@
       "group": "evolution",
       "provider": "IBCP",
       "description": "将多序列比对排版为结构感知的出版图。",
+      "descriptionEn": "Render structure-aware publication figures from an alignment.",
       "entryUrl": "https://espript.ibcp.fr/ESPript/ESPript/index.php",
       "execution": "open_only",
       "inputKind": "alignment_fasta"
@@ -261,6 +288,7 @@
       "group": "structure",
       "provider": "EMBL-EBI",
       "description": "按 UniProt accession 检索公开预测结构。",
+      "descriptionEn": "Look up public predicted structures by UniProt accession.",
       "entryUrl": "https://alphafold.ebi.ac.uk/",
       "execution": "open_only",
       "inputKind": "identifier"
@@ -271,6 +299,7 @@
       "group": "structure",
       "provider": "SIB ExPASy",
       "description": "在交互页面选择模板并进行同源建模。",
+      "descriptionEn": "Choose templates and run homology modeling interactively.",
       "entryUrl": "https://swissmodel.expasy.org/interactive",
       "execution": "open_only",
       "inputKind": "protein_fasta"
@@ -281,6 +310,7 @@
       "group": "structure",
       "provider": "ELIXIR CZ",
       "description": "上传结构并预测潜在配体结合口袋。",
+      "descriptionEn": "Upload a structure and predict ligand binding pockets.",
       "entryUrl": "https://prankweb.cz/",
       "execution": "open_only",
       "inputKind": "structure"

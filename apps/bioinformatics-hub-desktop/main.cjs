@@ -51,6 +51,7 @@ const MANUAL_BATCH_SIZE = 5
 const MANUAL_TAB_DELAY_MS = 750
 const MANUAL_BATCH_DELAY_MS = 4_000
 const SITE_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$/
+const CUSTOM_SITE_ID_RE = /^custom_[A-Za-z0-9_.-]{1,63}$/
 const LOCAL_TOOL_IDS = new Set([
   'nucleic',
   'physchem',
@@ -62,6 +63,132 @@ const LOCAL_TOOL_IDS = new Set([
 ])
 
 let mainWindow = null
+
+// UI language for main-process messages (errors, dialogs, research bundle).
+// The renderer pushes its selection via app:setLocale; defaults to the OS locale.
+let uiLocale = /^zh/i.test(String(typeof app.getLocale === 'function' ? app.getLocale() : 'en')) ? 'zh' : 'en'
+
+const MESSAGES = {
+  zh: {
+    'catalog.missing': (p) => `找不到网站目录: ${p}`,
+    'catalog.invalid': (p) => `网站目录无法解析: ${p}`,
+    'catalog.badSiteId': (p) => `网站目录含非法 siteId: ${p}`,
+    'catalog.dupSiteId': (p) => `网站目录含重复 siteId: ${p}`,
+    'catalog.badExecution': (s, e) => `网站 ${s} 的 execution 无效: ${e || '(empty)'}`,
+    'site.invalidId': 'siteId 无效',
+    'site.notInCatalog': (p) => `网站不在目录中: ${p}`,
+    'site.resultUrlLabel': (p) => `${p} 结果 URL`,
+    'site.originNotAllowed': (p) => `结果 URL 来源不属于网站目录允许范围: ${p}`,
+    'site.stillEntry': (p) =>
+      `这仍是 ${p} 的入口页，不能作为可复开的结果链接。` +
+      '若网站提交后地址未变化，请选择“无可复开链接，标记完成”。',
+    'site.urlLabel': (p) => `站点 ${p} URL`,
+    'site.missingUrl': (p) => `站点 ${p} 缺少入口 URL`,
+    'list.badId': (l, i) => `${l} 含非法 ID: ${i}`,
+    'list.tooMany': (l) => `${l} 数量过多`,
+    'session.allocFail': '无法分配新的会话目录',
+    'session.pathEscape': 'session.json 路径越界',
+    'session.dirMissing': (p) => `会话目录不存在: ${p}`,
+    'session.invalidJson': (p) => `session.json 无法解析: ${p}`,
+    'session.invalidStructure': 'session.json 结构无效',
+    'session.missingFasta': '缺少 FASTA 序列',
+    'session.missingRunner': (p) => `找不到会话引擎: ${p}`,
+    'session.alreadyRunning': (p) => `会话已在运行: ${p}`,
+    'session.unknownTool': (p) => `未知本地工具: ${p}`,
+    'session.missingSite': (p) => `网站未包含在本次会话中: ${p}`,
+    'session.openUrlNotOwned': '打开 URL 不属于该会话的网站记录',
+    'session.resultModeRequired': '必须明确保存结果链接，或选择无可复开链接完成',
+    'session.noLinkWithUrl': '无可复开链接模式不能同时保存结果 URL',
+    'legacy.noArtifacts': '旧版记录不包含已声明的本地产物',
+    'legacy.noSites': '旧版记录不包含网站任务',
+    'legacy.noBundle': '旧版记录没有 0.3 研究工作包',
+    'legacy.noSaveResult': '旧版记录不支持保存网站结果',
+    'artifact.notFile': '产物不是普通文件',
+    'alignment.importRequired': '比对文件必须通过“选择比对文件”导入',
+    'alignment.notFile': '所选比对路径不是文件',
+    'alignment.tooLarge': '比对文件超过 25 MiB 上限',
+    'pick.notFile': '所选路径不是文件',
+    'pick.tooLarge': (p) => `文件超过 ${p} MiB 上限`,
+    'pick.contentTooLarge': '文件内容超过大小上限',
+    'dialog.exportTitle': '导出研究工作包',
+    'dialog.exportDefault': (p) => `研究工作包_${p}.md`,
+    'dialog.pickFasta': '选择 FASTA',
+    'dialog.pickAlignment': '选择多序列比对文件',
+    'dialog.pickAlignmentFilter': '多序列 FASTA',
+    'log.eventTooLarge': 'Python 事件行超过大小上限，已丢弃该行',
+    'log.runnerExitedNoDone': 'session_runner.py 已退出，但未发送 done 事件',
+    'log.runnerExit': (p) => `session_runner.py exit ${p}`,
+    'session.runFailed': '会话运行失败',
+    'result.autoOpenFailed': (p) => `结果已生成，但无法自动打开：${p}`,
+    'result.manualOpenFailed': (p) => `需要人工处理，且官方入口打开失败：${p}`,
+    'custom.badId': (p) => `自定义网站含非法 id: ${p}`,
+    'custom.badUrl': (p) => `自定义网站 ${p} 的网址无效`,
+    'custom.missingName': (p) => `自定义网站 ${p} 缺少名称`,
+  },
+  en: {
+    'catalog.missing': (p) => `Site catalog not found: ${p}`,
+    'catalog.invalid': (p) => `Site catalog could not be parsed: ${p}`,
+    'catalog.badSiteId': (p) => `Site catalog has an invalid siteId: ${p}`,
+    'catalog.dupSiteId': (p) => `Site catalog has a duplicate siteId: ${p}`,
+    'catalog.badExecution': (s, e) => `Site ${s} has an invalid execution: ${e || '(empty)'}`,
+    'site.invalidId': 'Invalid siteId',
+    'site.notInCatalog': (p) => `Site is not in the catalog: ${p}`,
+    'site.resultUrlLabel': (p) => `${p} result URL`,
+    'site.originNotAllowed': (p) => `The result URL origin is outside the allowed catalog range: ${p}`,
+    'site.stillEntry': (p) =>
+      `This is still the entry page of ${p}, so it cannot be reused as a result link. ` +
+      'If the address does not change after submission, choose “no link, mark complete”.',
+    'site.urlLabel': (p) => `Site ${p} URL`,
+    'site.missingUrl': (p) => `Site ${p} is missing an entry URL`,
+    'list.badId': (l, i) => `${l} contains an invalid ID: ${i}`,
+    'list.tooMany': (l) => `Too many entries in ${l}`,
+    'session.allocFail': 'Could not allocate a new session directory',
+    'session.pathEscape': 'session.json path escapes its directory',
+    'session.dirMissing': (p) => `Session directory does not exist: ${p}`,
+    'session.invalidJson': (p) => `session.json could not be parsed: ${p}`,
+    'session.invalidStructure': 'session.json has an invalid structure',
+    'session.missingFasta': 'Missing FASTA sequence',
+    'session.missingRunner': (p) => `Session engine not found: ${p}`,
+    'session.alreadyRunning': (p) => `Session already running: ${p}`,
+    'session.unknownTool': (p) => `Unknown local tool: ${p}`,
+    'session.missingSite': (p) => `Site is not part of this session: ${p}`,
+    'session.openUrlNotOwned': 'The URL to open does not belong to this session’s site record',
+    'session.resultModeRequired': 'Save a result link explicitly, or choose “no link, mark complete”',
+    'session.noLinkWithUrl': 'The “no link” mode cannot also save a result URL',
+    'legacy.noArtifacts': 'Legacy records do not contain declared local artifacts',
+    'legacy.noSites': 'Legacy records do not contain website tasks',
+    'legacy.noBundle': 'Legacy records have no 0.3 research bundle',
+    'legacy.noSaveResult': 'Legacy records do not support saving site results',
+    'artifact.notFile': 'Artifact is not a regular file',
+    'alignment.importRequired': 'The alignment file must be imported via “choose alignment file”',
+    'alignment.notFile': 'The selected alignment path is not a file',
+    'alignment.tooLarge': 'Alignment file exceeds the 25 MiB limit',
+    'pick.notFile': 'The selected path is not a file',
+    'pick.tooLarge': (p) => `File exceeds the ${p} MiB limit`,
+    'pick.contentTooLarge': 'File content exceeds the size limit',
+    'dialog.exportTitle': 'Export research bundle',
+    'dialog.exportDefault': (p) => `research_bundle_${p}.md`,
+    'dialog.pickFasta': 'Choose FASTA',
+    'dialog.pickAlignment': 'Choose alignment file',
+    'dialog.pickAlignmentFilter': 'Multiple sequence FASTA',
+    'log.eventTooLarge': 'Python event line exceeded the size limit and was dropped',
+    'log.runnerExitedNoDone': 'session_runner.py exited without sending a done event',
+    'log.runnerExit': (p) => `session_runner.py exit ${p}`,
+    'session.runFailed': 'Session run failed',
+    'result.autoOpenFailed': (p) => `Result generated but could not be opened automatically: ${p}`,
+    'result.manualOpenFailed': (p) => `Manual handling required, and the official entry failed to open: ${p}`,
+    'custom.badId': (p) => `Custom site has an invalid id: ${p}`,
+    'custom.badUrl': (p) => `Custom site ${p} has an invalid URL`,
+    'custom.missingName': (p) => `Custom site ${p} is missing a name`,
+  },
+}
+
+function msg(key, ...args) {
+  const dict = MESSAGES[uiLocale] || MESSAGES.en
+  const entry = dict[key]
+  if (entry == null) return key
+  return typeof entry === 'function' ? entry(...args) : entry
+}
 
 protocol.registerSchemesAsPrivileged([
   {
@@ -315,9 +442,9 @@ function firstSiteUrl(row) {
   ]
   for (const candidate of candidates) {
     if (!candidate) continue
-    return assertHttpUrl(candidate, `站点 ${row?.id || row?.siteId || ''} URL`)
+    return assertHttpUrl(candidate, msg('site.urlLabel', row?.id || row?.siteId || ''))
   }
-  throw new Error(`站点 ${row?.id || row?.siteId || '(unknown)'} 缺少入口 URL`)
+  throw new Error(msg('site.missingUrl', row?.id || row?.siteId || '(unknown)'))
 }
 
 function normalizeExecution(value) {
@@ -345,7 +472,7 @@ function additionalSiteOrigins(row) {
   const origins = new Set()
   for (const value of values) {
     try {
-      origins.add(new URL(assertHttpUrl(value, '站点结果来源')).origin)
+      origins.add(new URL(assertHttpUrl(value, 'Site result origin')).origin)
     } catch {
       const host = String(value || '').trim().toLowerCase()
       if (/^[a-z0-9.-]+$/.test(host)) {
@@ -363,7 +490,7 @@ function loadSiteCatalog() {
   try {
     stat = fs.statSync(filePath)
   } catch {
-    throw new Error(`找不到网站目录: ${filePath}`)
+    throw new Error(msg('catalog.missing', filePath))
   }
   if (catalogCache && catalogCachePath === filePath && catalogCacheMtime === stat.mtimeMs) {
     return catalogCache
@@ -372,16 +499,16 @@ function loadSiteCatalog() {
   try {
     raw = JSON.parse(fs.readFileSync(filePath, 'utf8'))
   } catch (error) {
-    throw new Error(`网站目录无法解析: ${error.message || error}`)
+    throw new Error(msg('catalog.invalid', error.message || error))
   }
   const sites = new Map()
   for (const row of catalogRows(raw)) {
     const siteId = String(row?.siteId || row?.id || '').trim()
-    if (!SITE_ID_RE.test(siteId)) throw new Error(`网站目录含非法 siteId: ${siteId}`)
-    if (sites.has(siteId)) throw new Error(`网站目录含重复 siteId: ${siteId}`)
+    if (!SITE_ID_RE.test(siteId)) throw new Error(msg('catalog.badSiteId', siteId))
+    if (sites.has(siteId)) throw new Error(msg('catalog.dupSiteId', siteId))
     const execution = normalizeExecution(row?.execution || row?.mode || row?.kind)
     if (!['open_only', 'auto_submit', 'local'].includes(execution)) {
-      throw new Error(`网站 ${siteId} 的 execution 无效: ${execution || '(empty)'}`)
+      throw new Error(msg('catalog.badExecution', siteId, execution || '(empty)'))
     }
     if (execution === 'local') continue
     const entryUrl = firstSiteUrl(row)
@@ -409,17 +536,74 @@ function loadSiteCatalog() {
 
 function getCatalogSite(siteIdRaw) {
   const siteId = String(siteIdRaw || '').trim()
-  if (!SITE_ID_RE.test(siteId)) throw new Error('siteId 无效')
+  if (!SITE_ID_RE.test(siteId)) throw new Error(msg('site.invalidId'))
   const site = loadSiteCatalog().sites.get(siteId)
-  if (!site) throw new Error(`网站不在目录中: ${siteId}`)
+  if (!site) throw new Error(msg('site.notInCatalog', siteId))
   return site
 }
 
+/**
+ * Resolve a site record for a session, preferring the built-in catalog but
+ * falling back to custom sites persisted in the session record.
+ */
+function resolveSessionSite(session, siteIdRaw) {
+  const siteId = String(siteIdRaw || '').trim()
+  if (!SITE_ID_RE.test(siteId)) throw new Error(msg('site.invalidId'))
+  const catalogSite = loadSiteCatalog().sites.get(siteId)
+  if (catalogSite) return catalogSite
+  const record = findSiteRecord(session, siteId)
+  if (!record || !record.custom || !record.entryUrl) {
+    throw new Error(msg('site.notInCatalog', siteId))
+  }
+  const entryUrl = assertHttpUrl(record.entryUrl, msg('site.urlLabel', siteId))
+  const entryParsed = new URL(entryUrl)
+  return {
+    siteId,
+    name: textValue(record.name || siteId, 200),
+    execution: 'open_only',
+    entryUrl,
+    custom: true,
+    allowedOrigins: new Set([
+      entryParsed.origin,
+      `http://${entryParsed.host}`,
+      `https://${entryParsed.host}`,
+    ]),
+    warning: textValue(record.warning || '', 1_000),
+  }
+}
+
+/**
+ * Validate and normalize renderer-supplied custom sites for session:start.
+ * @returns {Array<{ id: string, name: string, entryUrl: string, note?: string }>}
+ */
+function parseCustomSites(rawSites) {
+  if (rawSites == null) return []
+  if (!Array.isArray(rawSites)) throw new Error(msg('list.badId', '自定义网站列表', '(not a list)'))
+  const seen = new Set()
+  const result = []
+  for (const row of rawSites.slice(0, 128)) {
+    const id = String(row?.id ?? row?.siteId ?? '').trim()
+    if (!CUSTOM_SITE_ID_RE.test(id)) throw new Error(msg('custom.badId', id || '(empty)'))
+    if (seen.has(id)) continue
+    const name = String(row?.name ?? '').trim()
+    if (!name) throw new Error(msg('custom.missingName', id))
+    const entryUrl = assertHttpUrl(row?.entryUrl, msg('site.urlLabel', name))
+    seen.add(id)
+    result.push({
+      id,
+      name: textValue(name, 200),
+      entryUrl,
+      note: textValue(row?.note, 1_000) || undefined,
+    })
+  }
+  return result
+}
+
 function assertResultUrlForSite(site, rawUrl) {
-  const canonical = assertHttpUrl(rawUrl, `${site.name || site.siteId} 结果 URL`)
+  const canonical = assertHttpUrl(rawUrl, msg('site.resultUrlLabel', site.name || site.siteId))
   const origin = new URL(canonical).origin
   if (!site.allowedOrigins.has(origin)) {
-    throw new Error(`结果 URL 来源不属于网站目录允许范围: ${origin}`)
+    throw new Error(msg('site.originNotAllowed', origin))
   }
   return canonical
 }
@@ -427,10 +611,7 @@ function assertResultUrlForSite(site, rawUrl) {
 function assertPersistableResultUrlForSite(site, rawUrl) {
   const canonical = assertResultUrlForSite(site, rawUrl)
   if (isEntryEquivalentResultUrl(site.entryUrl, canonical)) {
-    throw new Error(
-      `这仍是 ${site.name || site.siteId} 的入口页，不能作为可复开的结果链接。` +
-        '若网站提交后地址未变化，请选择“无可复开链接，标记完成”。',
-    )
+    throw new Error(msg('site.stillEntry', site.name || site.siteId))
   }
   return canonical
 }
@@ -438,8 +619,28 @@ function assertPersistableResultUrlForSite(site, rawUrl) {
 function isValidSiteResultRecord(record) {
   try {
     const siteId = String(record?.siteId || record?.id || '')
-    const catalogSite = getCatalogSite(siteId)
-    return Boolean(record?.resultUrl && assertResultUrlForSite(catalogSite, record.resultUrl))
+    if (!record?.resultUrl) return false
+    let site
+    try {
+      site = getCatalogSite(siteId)
+    } catch {
+      // Custom sites carry their own entry URL in the session record.
+      if (!record.entryUrl) return false
+      const entryUrl = assertHttpUrl(record.entryUrl, msg('site.urlLabel', siteId))
+      const entryParsed = new URL(entryUrl)
+      site = {
+        siteId,
+        name: textValue(record.name || siteId, 200),
+        execution: 'open_only',
+        entryUrl,
+        allowedOrigins: new Set([
+          entryParsed.origin,
+          `http://${entryParsed.host}`,
+          `https://${entryParsed.host}`,
+        ]),
+      }
+    }
+    return Boolean(assertResultUrlForSite(site, record.resultUrl))
   } catch {
     return false
   }
@@ -455,13 +656,13 @@ function normalizeIdList(value, label) {
   const seen = new Set()
   for (const item of raw) {
     const id = String(item || '').trim()
-    if (!SITE_ID_RE.test(id)) throw new Error(`${label} 含非法 ID: ${id}`)
+    if (!SITE_ID_RE.test(id)) throw new Error(msg('list.badId', label, id))
     if (!seen.has(id)) {
       ids.push(id)
       seen.add(id)
     }
   }
-  if (ids.length > 128) throw new Error(`${label} 数量过多`)
+  if (ids.length > 128) throw new Error(msg('list.tooMany', label))
   return ids
 }
 
@@ -475,7 +676,7 @@ function allocateSessionId(geneIdRaw) {
     const candidate = safeRunId(`${base}${suffix}`)
     if (!fs.existsSync(resolveRunDir(candidate).runDir)) return candidate
   }
-  throw new Error('无法分配新的会话目录')
+  throw new Error(msg('session.allocFail'))
 }
 
 function atomicWriteJson(filePath, value) {
@@ -495,7 +696,7 @@ function atomicWriteJson(filePath, value) {
 
 function sessionPath(runDir) {
   const resolved = path.resolve(runDir, 'session.json')
-  if (!isPathInside(runDir, resolved)) throw new Error('session.json 路径越界')
+  if (!isPathInside(runDir, resolved)) throw new Error(msg('session.pathEscape'))
   return resolved
 }
 
@@ -665,7 +866,7 @@ async function handleArtifactRequest(request) {
 function readSession(sessionIdRaw) {
   const { runId: sessionId, runDir } = resolveRunDir(sessionIdRaw)
   if (!fs.existsSync(runDir) || !fs.statSync(runDir).isDirectory()) {
-    throw new Error(`会话目录不存在: ${sessionId}`)
+    throw new Error(msg('session.dirMissing', sessionId))
   }
   const filePath = sessionPath(runDir)
   if (!fs.existsSync(filePath)) return legacySessionPayload(sessionId, runDir)
@@ -673,10 +874,10 @@ function readSession(sessionIdRaw) {
   try {
     session = JSON.parse(fs.readFileSync(filePath, 'utf8'))
   } catch (error) {
-    throw new Error(`session.json 无法解析: ${error.message || error}`)
+    throw new Error(msg('session.invalidJson', error.message || error))
   }
   if (!session || typeof session !== 'object' || Array.isArray(session)) {
-    throw new Error('session.json 结构无效')
+    throw new Error(msg('session.invalidStructure'))
   }
   if (!Array.isArray(session.sites)) session.sites = []
   if (!Array.isArray(session.localTools)) session.localTools = []
@@ -741,7 +942,7 @@ function sanitizeArtifact(raw, runDir) {
   if (source.description) result.description = textValue(source.description, 1_000)
   if (source.url) {
     try {
-      result.url = assertHttpUrl(source.url, '产物 URL')
+      result.url = assertHttpUrl(source.url, 'Artifact URL')
     } catch {
       /* local artifacts need no renderer-loadable URL */
     }
@@ -755,7 +956,7 @@ function mergeSitePatch(entry, patch) {
   if (!siteId) return false
   const record = findSiteRecord(entry.session, siteId)
   if (!record) return false
-  const catalogSite = getCatalogSite(siteId)
+  const catalogSite = resolveSessionSite(entry.session, siteId)
   if (patch.status || patch.state) record.status = textValue(patch.status || patch.state, 64)
   if (patch.message != null) record.message = textValue(patch.message, 4_000)
   if (patch.note != null || patch.notes != null) {
@@ -776,7 +977,7 @@ function mergeSitePatch(entry, patch) {
   }
   if (record.status === 'result_ready') {
     try {
-      if (!record.resultUrl) throw new Error(`${catalogSite.name} 未返回结果 URL`)
+      if (!record.resultUrl) throw new Error(`${catalogSite.name} returned no result URL`)
       record.resultUrl = assertResultUrlForSite(catalogSite, record.resultUrl)
     } catch (error) {
       record.resultUrl = null
@@ -827,7 +1028,7 @@ function maybeOpenAutomaticResult(entry, siteId) {
     .catch((error) => {
       if (!entry.cancelled && !entry.disposed) {
         record.status = 'needs_manual'
-        record.message = `结果已生成，但无法自动打开：${textValue(error.message || error, 3_900)}`
+        record.message = msg('result.autoOpenFailed', textValue(error.message || error, 3_900))
         emitSessionUpdate(entry)
       }
     })
@@ -871,7 +1072,7 @@ function maybeOpenAutomaticFallback(entry, siteId) {
     })
     .catch((error) => {
       if (!entry.cancelled && !entry.disposed) {
-        record.message = `需要人工处理，且官方入口打开失败：${textValue(error.message || error, 3_850)}`
+        record.message = msg('result.manualOpenFailed', textValue(error.message || error, 3_850))
         emitSessionUpdate(entry)
       }
     })
@@ -1134,7 +1335,7 @@ function handleRunnerEvent(entry, event) {
     entry.session.runner = { status: 'failed', overall: 'partial' }
     clearManualTimers(entry)
     entry.session.status = 'failed'
-    entry.session.message = textValue(event.message || data.message || '会话运行失败', 4_000)
+    entry.session.message = textValue(event.message || data.message || msg('session.runFailed'), 4_000)
     changed = true
   } else if (type === 'cancelled' || type === 'session:cancelled') {
     entry.cancelled = true
@@ -1171,7 +1372,7 @@ function handleRunnerEvent(entry, event) {
 function handleStdoutChunk(entry, chunk) {
   entry.stdoutBuffer += entry.stdoutDecoder.write(chunk)
   if (entry.stdoutBuffer.length > MAX_EVENT_LINE) {
-    emitLog(entry, 'Python 事件行超过大小上限，已丢弃该行', 'error')
+    emitLog(entry, msg('log.eventTooLarge'), 'error')
     entry.stdoutBuffer = ''
     return
   }
@@ -1245,7 +1446,7 @@ function maybeDisposeEntry(entry) {
 
 async function openScheduledSite(entry, siteId) {
   if (entry.cancelled || entry.disposed) return
-  const catalogSite = getCatalogSite(siteId)
+  const catalogSite = resolveSessionSite(entry.session, siteId)
   const record = findSiteRecord(entry.session, siteId)
   // A user may have opened/completed the card before its batch timer fired.
   if (!record || record.status !== 'queued' || record.resultUrl) return
@@ -1325,7 +1526,7 @@ function finishChild(entry, code) {
         entry.runnerDone = true
         entry.runnerOverall = 'partial'
         entry.session.runner = { status: 'done_without_event', overall: 'partial', exitCode: 0 }
-        entry.session.message = 'session_runner.py 已退出，但未发送 done 事件'
+        entry.session.message = msg('log.runnerExitedNoDone')
         emitLog(entry, entry.session.message, 'error')
         emitSessionUpdate(entry)
       }
@@ -1335,7 +1536,7 @@ function finishChild(entry, code) {
       entry.session.runner = { status: 'failed', overall: 'partial', exitCode: code }
       clearManualTimers(entry)
       entry.session.status = 'failed'
-      entry.session.message = `session_runner.py exit ${code}`
+      entry.session.message = msg('log.runnerExit', code)
       for (const site of entry.session.sites) {
         if (['queued', 'opening', 'submitting'].includes(site.status)) site.status = 'failed'
       }
@@ -1365,15 +1566,15 @@ function validateAlignmentPath(rawPath) {
   const absolute = path.resolve(String(rawPath))
   const key = process.platform === 'win32' ? absolute.toLowerCase() : absolute
   if (!selectedAlignmentPaths.has(key)) {
-    throw new Error('比对文件必须通过“选择比对文件”导入')
+    throw new Error(msg('alignment.importRequired'))
   }
   // Picker grants are single-use: a stale path from another session cannot be
   // silently reused later.
   selectedAlignmentPaths.delete(key)
   assertAlignmentFileExtension(absolute)
   const stat = fs.statSync(absolute)
-  if (!stat.isFile()) throw new Error('所选比对路径不是文件')
-  if (stat.size > MAX_ALIGNMENT_BYTES) throw new Error('比对文件超过 25 MiB 上限')
+  if (!stat.isFile()) throw new Error(msg('alignment.notFile'))
+  if (stat.size > MAX_ALIGNMENT_BYTES) throw new Error(msg('alignment.tooLarge'))
   return { path: absolute }
 }
 
@@ -1389,7 +1590,7 @@ function markdownJson(value) {
 function markdownWebLink(value) {
   if (!value) return '—'
   try {
-    const safeUrl = assertHttpUrl(value, '研究工作包 URL')
+    const safeUrl = assertHttpUrl(value, 'Research bundle URL')
       .replace(/\|/g, '%7C')
       .replace(/>/g, '%3E')
     return `<${safeUrl}>`
@@ -1400,44 +1601,48 @@ function markdownWebLink(value) {
 
 function buildResearchBundle(session) {
   const input = session.input || {}
+  const en = uiLocale === 'en'
+  const title = en ? 'Research bundle' : '研究工作包'
   const lines = [
-    `# BioinformaticsHUB 研究工作包：${markdownCell(input.geneId || session.sessionId)}`,
+    `# BioinformaticsHUB ${title}：${markdownCell(input.geneId || session.sessionId)}`,
     '',
-    '> 本文件只记录输入、会话状态、本地工具来源与网站结果链接；不包含科学结论。',
+    en
+      ? '> This file records input, session state, local tool provenance and website result links; it contains no scientific conclusions.'
+      : '> 本文件只记录输入、会话状态、本地工具来源与网站结果链接；不包含科学结论。',
     '',
-    '## 会话与输入',
+    en ? '## Session & input' : '## 会话与输入',
     '',
-    '| 字段 | 值 |',
+    en ? '| Field | Value |' : '| 字段 | 值 |',
     '|---|---|',
-    `| 会话 ID | ${markdownCell(session.sessionId)} |`,
-    `| 基因 ID | ${markdownCell(input.geneId)} |`,
-    `| 别名 | ${markdownCell(input.alias)} |`,
-    `| 输入类型 | ${markdownCell(input.detectedKind || input.inputKind)} |`,
-    `| FASTA 字节数 | ${markdownCell(input.fastaBytes)} |`,
-    `| 规范化 FASTA 路径 | ${markdownCell(input.normalizedFastaPath)} |`,
-    `| 多序列比对路径 | ${markdownCell(input.alignmentFastaPath)} |`,
-    `| 创建时间 | ${markdownCell(session.createdAt)} |`,
-    `| 更新时间 | ${markdownCell(session.updatedAt)} |`,
+    `${en ? '| Session ID' : '| 会话 ID'} | ${markdownCell(session.sessionId)} |`,
+    `${en ? '| Gene ID' : '| 基因 ID'} | ${markdownCell(input.geneId)} |`,
+    `${en ? '| Alias' : '| 别名'} | ${markdownCell(input.alias)} |`,
+    `${en ? '| Input type' : '| 输入类型'} | ${markdownCell(input.detectedKind || input.inputKind)} |`,
+    `${en ? '| FASTA bytes' : '| FASTA 字节数'} | ${markdownCell(input.fastaBytes)} |`,
+    `${en ? '| Normalized FASTA path' : '| 规范化 FASTA 路径'} | ${markdownCell(input.normalizedFastaPath)} |`,
+    `${en ? '| Alignment path' : '| 多序列比对路径'} | ${markdownCell(input.alignmentFastaPath)} |`,
+    `${en ? '| Created at' : '| 创建时间'} | ${markdownCell(session.createdAt)} |`,
+    `${en ? '| Updated at' : '| 更新时间'} | ${markdownCell(session.updatedAt)} |`,
   ]
   if (Array.isArray(input.warnings) && input.warnings.length) {
-    lines.push('', '输入警告：', '', ...input.warnings.map((warning) => `- ${markdownCell(warning)}`))
+    lines.push('', en ? 'Input warnings:' : '输入警告：', '', ...input.warnings.map((warning) => `- ${markdownCell(warning)}`))
   }
 
-  lines.push('', '## 本地工具与产物', '')
-  if (!session.localTools.length) lines.push('未选择本地工具。')
+  lines.push('', en ? '## Local tools & artifacts' : '## 本地工具与产物', '')
+  if (!session.localTools.length) lines.push(en ? 'No local tools selected.' : '未选择本地工具。')
   for (const tool of session.localTools) {
     lines.push(
       `### ${markdownCell(tool.toolId || tool.id)}`,
       '',
-      `- 状态：${markdownCell(tool.status)}`,
-      `- 实现来源：${markdownCell(tool.source)}`,
-      `- 版本：${markdownCell(tool.version)}`,
+      `${en ? '- Status' : '- 状态'}：${markdownCell(tool.status)}`,
+      `${en ? '- Implementation' : '- 实现来源'}：${markdownCell(tool.source)}`,
+      `${en ? '- Version' : '- 版本'}：${markdownCell(tool.version)}`,
       `- Provenance：${markdownJson(tool.provenance)}`,
-      `- 参数：${markdownJson(tool.parameters)}`,
+      `${en ? '- Parameters' : '- 参数'}：${markdownJson(tool.parameters)}`,
     )
     const artifacts = Array.isArray(tool.artifacts) ? tool.artifacts : []
     if (artifacts.length) {
-      lines.push('', '产物：', '')
+      lines.push('', en ? 'Artifacts:' : '产物：', '')
       for (const artifact of artifacts) {
         lines.push(`- ${markdownCell(artifact.name || artifact.path)} — \`${markdownCell(artifact.path)}\``)
       }
@@ -1446,9 +1651,11 @@ function buildResearchBundle(session) {
   }
 
   lines.push(
-    '## 网站任务与结果链接',
+    en ? '## Website tasks & result links' : '## 网站任务与结果链接',
     '',
-    '| 网站 | 模式 | 状态 | 官方入口 | 结果链接 | 用户备注 |',
+    en
+      ? '| Site | Mode | Status | Official entry | Result link | Note |'
+      : '| 网站 | 模式 | 状态 | 官方入口 | 结果链接 | 用户备注 |',
     '|---|---|---|---|---|---|',
   )
   for (const site of session.sites) {
@@ -1456,7 +1663,7 @@ function buildResearchBundle(session) {
     const result = site.resultUrl
       ? markdownWebLink(site.resultUrl)
       : String(site.status || '').toLowerCase() === 'completed_manual'
-        ? '无可复开链接'
+        ? (en ? 'No reopenable link' : '无可复开链接')
         : ''
     lines.push(
       `| ${markdownCell(site.name || site.siteId)} | ${markdownCell(site.execution)} | ${markdownCell(site.status)} | ${entryUrl} | ${result} | ${markdownCell(site.notes)} |`,
@@ -1468,8 +1675,12 @@ function buildResearchBundle(session) {
 
 function writeResearchBundle(runDir, session) {
   const handoffDir = path.resolve(runDir, '10_research_handoff')
-  if (!isPathInside(runDir, handoffDir)) throw new Error('研究工作包路径越界')
+  if (!isPathInside(runDir, handoffDir)) {
+    throw new Error(uiLocale === 'en' ? 'Research bundle path escapes its directory' : '研究工作包路径越界')
+  }
   fs.mkdirSync(handoffDir, { recursive: true })
+  // The fixed directory filename is part of the documented session layout and
+  // stays language-neutral; only the exported copy gets a localized name.
   const target = path.join(handoffDir, '研究工作包.md')
   const tmp = path.join(handoffDir, `.研究工作包.${process.pid}.${Date.now()}.tmp`)
   try {
@@ -1483,36 +1694,47 @@ function writeResearchBundle(runDir, session) {
 
 ipcMain.handle('session:start', async (_event, args) => {
   const fastaText = String(args?.fastaText ?? args?.sequenceText ?? args?.cdsText ?? '').trim()
-  if (!fastaText) throw new Error('缺少 FASTA 序列')
+  if (!fastaText) throw new Error(msg('session.missingFasta'))
   assertFastaByteLimit(fastaText)
 
   const runner = sessionRunnerScript()
   if (!fs.existsSync(runner)) {
-    throw new Error(`找不到会话引擎: ${runner}`)
+    throw new Error(msg('session.missingRunner', runner))
   }
 
   const geneId = safeRunId(args?.geneId || args?.id || 'gene')
   const sessionId = allocateSessionId(geneId)
-  if (activeSessions.has(sessionId)) throw new Error(`会话已在运行: ${sessionId}`)
+  if (activeSessions.has(sessionId)) throw new Error(msg('session.alreadyRunning', sessionId))
   const alias = textValue(args?.alias, 256)
   const inputKind = ['auto', 'cds', 'protein'].includes(String(args?.inputKind))
     ? String(args.inputKind)
     : 'auto'
-  const requestedSiteIds = normalizeIdList(args?.siteIds ?? args?.sites, '网站列表')
+  const requestedSiteIds = normalizeIdList(args?.siteIds ?? args?.sites, 'Website list')
   const localToolIds = normalizeIdList(
     args?.localToolIds ?? args?.localTools,
-    '本地工具列表',
+    'Local tool list',
   )
   for (const toolId of localToolIds) {
-    if (!LOCAL_TOOL_IDS.has(toolId)) throw new Error(`未知本地工具: ${toolId}`)
+    if (!LOCAL_TOOL_IDS.has(toolId)) throw new Error(msg('session.unknownTool', toolId))
   }
-  const catalogSites = requestedSiteIds.map((siteId) => getCatalogSite(siteId))
+  const customSites = parseCustomSites(args?.customSites)
+  const customSiteMap = new Map(customSites.map((site) => [site.id, site]))
+
+  // Split requested site ids into built-in catalog sites and custom sites.
+  const builtinIds = []
+  const customSiteIds = []
+  for (const siteId of requestedSiteIds) {
+    if (customSiteMap.has(siteId)) customSiteIds.push(siteId)
+    else builtinIds.push(siteId)
+  }
+  const catalogSites = builtinIds.map((siteId) => getCatalogSite(siteId))
   const autoSiteIds = catalogSites
     .filter((site) => site.execution === 'auto_submit')
     .map((site) => site.siteId)
-  const manualSiteIds = catalogSites
-    .filter((site) => site.execution === 'open_only')
-    .map((site) => site.siteId)
+  const manualSiteIds = [
+    ...catalogSites.filter((site) => site.execution === 'open_only').map((site) => site.siteId),
+    ...customSiteIds,
+  ]
   const alignmentSelection = validateAlignmentPath(args?.alignmentPath)
 
   fs.mkdirSync(defaultRunsRoot(), { recursive: true })
@@ -1535,7 +1757,7 @@ ipcMain.handle('session:start', async (_event, args) => {
   const createdAt = nowIso()
   const session = {
     schemaVersion: SESSION_VERSION,
-    version: '0.3.0',
+    version: '0.4.0',
     id: sessionId,
     sessionId,
     status: 'running',
@@ -1549,18 +1771,36 @@ ipcMain.handle('session:start', async (_event, args) => {
       fastaBytes: Buffer.byteLength(fastaText, 'utf8'),
       alignmentFastaPath: alignmentCopy?.relativePath || null,
     },
-    sites: catalogSites.map((site) => ({
-      id: site.siteId,
-      siteId: site.siteId,
-      name: site.name,
-      execution: site.execution,
-      entryUrl: site.entryUrl,
-      status: 'queued',
-      resultUrl: null,
-      notes: '',
-      warning: site.warning || '',
-      updatedAt: createdAt,
-    })),
+    sites: [
+      ...catalogSites.map((site) => ({
+        id: site.siteId,
+        siteId: site.siteId,
+        name: site.name,
+        execution: site.execution,
+        entryUrl: site.entryUrl,
+        status: 'queued',
+        resultUrl: null,
+        notes: '',
+        warning: site.warning || '',
+        updatedAt: createdAt,
+      })),
+      ...customSiteIds.map((siteId) => {
+        const custom = customSiteMap.get(siteId)
+        return {
+          id: siteId,
+          siteId,
+          name: custom.name,
+          execution: 'open_only',
+          custom: true,
+          entryUrl: custom.entryUrl,
+          status: 'queued',
+          resultUrl: null,
+          description: custom.note || '',
+          notes: '',
+          updatedAt: createdAt,
+        }
+      }),
+    ],
     localTools: localToolIds.map((toolId) => ({
       id: toolId,
       toolId,
@@ -1735,7 +1975,7 @@ ipcMain.handle('session:list', async () => {
         createdAt: session.createdAt || stat.birthtime.toISOString(),
         updatedAt: session.updatedAt || stat.mtime.toISOString(),
         input: publicInput,
-        version: String(session.version || '0.3.0'),
+        version: String(session.version || '0.4.0'),
         legacy: false,
         sessionDir: runDir,
         runDir,
@@ -1747,7 +1987,7 @@ ipcMain.handle('session:list', async () => {
         geneId: name,
         alias: '',
         status: 'invalid',
-        message: `session.json 无法解析: ${textValue(error.message || error, 500)}`,
+        message: `${uiLocale === 'en' ? 'session.json could not be parsed' : 'session.json 无法解析'}: ${textValue(error.message || error, 500)}`,
         createdAt: stat.birthtime.toISOString(),
         updatedAt: stat.mtime.toISOString(),
         input: null,
@@ -1764,14 +2004,14 @@ ipcMain.handle('session:list', async () => {
 ipcMain.handle('artifact:reveal', async (_event, payload) => {
   const sessionId = payload?.sessionId || payload?.runId
   const loaded = readSession(sessionId)
-  if (loaded.legacy) throw new Error('旧版记录不包含已声明的本地产物')
+  if (loaded.legacy) throw new Error(msg('legacy.noArtifacts'))
   const target = resolveDeclaredArtifact(
     loaded.runDir,
     declaredArtifactPaths(loaded.session),
     payload?.path,
   )
   const stat = fs.statSync(target)
-  if (!stat.isFile()) throw new Error('产物不是普通文件')
+  if (!stat.isFile()) throw new Error(msg('artifact.notFile'))
   shell.showItemInFolder(target)
   return { ok: true }
 })
@@ -1779,20 +2019,20 @@ ipcMain.handle('artifact:reveal', async (_event, payload) => {
 ipcMain.handle('site:open', async (_event, payload) => {
   const sessionId = payload?.sessionId || payload?.runId
   const loaded = readSession(sessionId)
-  if (loaded.legacy) throw new Error('旧版记录不包含网站任务')
+  if (loaded.legacy) throw new Error(msg('legacy.noSites'))
   const activeEntry = activeSessions.get(loaded.sessionId)
   const session = activeEntry && !activeEntry.disposed ? activeEntry.session : loaded.session
-  const site = getCatalogSite(payload?.siteId)
+  const site = resolveSessionSite(session, payload?.siteId)
   const record = findSiteRecord(session, site.siteId)
-  if (!record) throw new Error(`网站未包含在本次会话中: ${site.siteId}`)
+  if (!record) throw new Error(msg('session.missingSite', site.siteId))
 
   let target = record.resultUrl
     ? assertResultUrlForSite(site, record.resultUrl)
     : site.entryUrl
   if (payload?.url) {
-    const supplied = assertHttpUrl(payload.url, '打开 URL')
+    const supplied = assertHttpUrl(payload.url, 'Open URL')
     const allowed = new Set([site.entryUrl, record.resultUrl].filter(Boolean))
-    if (!allowed.has(supplied)) throw new Error('打开 URL 不属于该会话的网站记录')
+    if (!allowed.has(supplied)) throw new Error(msg('session.openUrlNotOwned'))
     target = supplied
   }
   await shell.openExternal(target)
@@ -1810,20 +2050,20 @@ ipcMain.handle('site:open', async (_event, payload) => {
 ipcMain.handle('site:saveResult', async (_event, payload) => {
   const sessionId = payload?.sessionId || payload?.runId
   const loaded = readSession(sessionId)
-  if (loaded.legacy) throw new Error('旧版记录不支持保存网站结果')
+  if (loaded.legacy) throw new Error(msg('legacy.noSaveResult'))
   const activeEntry = activeSessions.get(loaded.sessionId)
   const sessionRecord = activeEntry && !activeEntry.disposed ? activeEntry.session : loaded.session
-  const catalogSite = getCatalogSite(payload?.siteId)
+  const catalogSite = resolveSessionSite(sessionRecord, payload?.siteId)
   const record = findSiteRecord(sessionRecord, catalogSite.siteId)
-  if (!record) throw new Error(`网站未包含在本次会话中: ${catalogSite.siteId}`)
+  if (!record) throw new Error(msg('session.missingSite', catalogSite.siteId))
   const resultMode = String(payload?.resultMode || (payload?.resultUrl ? 'result_url' : '')).trim()
   if (!['result_url', 'no_persistent_url'].includes(resultMode)) {
-    throw new Error('必须明确保存结果链接，或选择无可复开链接完成')
+    throw new Error(msg('session.resultModeRequired'))
   }
   if (resultMode === 'result_url') {
     record.resultUrl = assertPersistableResultUrlForSite(catalogSite, payload?.resultUrl)
   } else {
-    if (payload?.resultUrl) throw new Error('无可复开链接模式不能同时保存结果 URL')
+    if (payload?.resultUrl) throw new Error(msg('session.noLinkWithUrl'))
     record.resultUrl = null
   }
   record.notes = textValue(payload?.notes ?? payload?.note, 4_000)
@@ -1851,11 +2091,11 @@ ipcMain.handle('site:saveResult', async (_event, payload) => {
 ipcMain.handle('fs:exportResearchBundle', async (_event, runIdOrDir) => {
   const { runId: sessionId, runDir } = resolveRunDirFromArg(runIdOrDir)
   const loaded = readSession(sessionId)
-  if (loaded.legacy) throw new Error('旧版记录没有 0.3 研究工作包')
+  if (loaded.legacy) throw new Error(msg('legacy.noBundle'))
   const primary = writeResearchBundle(runDir, loaded.session)
   const { filePath } = await dialog.showSaveDialog(mainWindow, {
-    title: '导出研究工作包',
-    defaultPath: `研究工作包_${sessionId}.md`,
+    title: msg('dialog.exportTitle'),
+    defaultPath: msg('dialog.exportDefault', sessionId),
     filters: [{ name: 'Markdown', extensions: ['md'] }],
   })
   if (!filePath) return { path: primary }
@@ -1874,12 +2114,12 @@ async function pickTextFile({ title, filters, maxBytes, rememberAlignment = fals
   const filePath = path.resolve(filePaths[0])
   if (rememberAlignment) assertAlignmentFileExtension(filePath)
   const stat = fs.statSync(filePath)
-  if (!stat.isFile()) throw new Error('所选路径不是文件')
+  if (!stat.isFile()) throw new Error(msg('pick.notFile'))
   if (stat.size > maxBytes) {
-    throw new Error(`文件超过 ${Math.floor(maxBytes / 1024 / 1024)} MiB 上限`)
+    throw new Error(msg('pick.tooLarge', Math.floor(maxBytes / 1024 / 1024)))
   }
   const text = fs.readFileSync(filePath, 'utf8')
-  if (Buffer.byteLength(text, 'utf8') > maxBytes) throw new Error('文件内容超过大小上限')
+  if (Buffer.byteLength(text, 'utf8') > maxBytes) throw new Error(msg('pick.contentTooLarge'))
   if (rememberAlignment) {
     const key = process.platform === 'win32' ? filePath.toLowerCase() : filePath
     selectedAlignmentPaths.add(key)
@@ -1892,7 +2132,7 @@ async function pickTextFile({ title, filters, maxBytes, rememberAlignment = fals
 
 ipcMain.handle('fs:pickFasta', async () =>
   pickTextFile({
-    title: '选择 FASTA',
+    title: msg('dialog.pickFasta'),
     filters: [
       { name: 'FASTA', extensions: ['fa', 'fasta', 'fna', 'faa', 'txt'] },
       { name: 'All', extensions: ['*'] },
@@ -1903,10 +2143,10 @@ ipcMain.handle('fs:pickFasta', async () =>
 
 ipcMain.handle('fs:pickAlignment', async () =>
   pickTextFile({
-    title: '选择多序列比对文件',
+    title: msg('dialog.pickAlignment'),
     filters: [
       {
-        name: '多序列 FASTA',
+        name: msg('dialog.pickAlignmentFilter'),
         extensions: ALIGNMENT_EXTENSIONS.map((extension) => extension.slice(1)),
       },
     ],
@@ -1914,6 +2154,11 @@ ipcMain.handle('fs:pickAlignment', async () =>
     rememberAlignment: true,
   }),
 )
+
+ipcMain.handle('app:setLocale', (_event, locale) => {
+  if (locale === 'zh' || locale === 'en') uiLocale = locale
+  return { ok: true, locale: uiLocale }
+})
 
 function stopAllSessions() {
   for (const entry of activeSessions.values()) {
