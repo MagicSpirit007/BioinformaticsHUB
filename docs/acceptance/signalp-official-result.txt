@@ -1,0 +1,37 @@
+SignalP-6.0 - Results
+Summary of 1 predicted sequences from eukarya
+
+Predictions list. Use the instruction page for more detailed description of the output page.
+
+Download:
+
+JSON Summary
+
+Prediction summary
+
+Processed entries fasta
+
+Processed entries gff3
+
+Region predictions gff3
+
+All results compressed (zip)
+
+Predicted proteins
+sp_P69905_HBA_HUMAN Hemoglobin subunit alpha
+
+
+Prediction: Other
+
+
+
+
+
+Protein type	Other	Signal Peptide (Sec/SPI)
+Likelihood	1	0
+Download: PNG / EPS / Tabular
+
+
+
+Instructions - SignalP 6.0
+Open guide in new window

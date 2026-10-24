@@ -1,0 +1,70 @@
+{
+  "url": "https://prosite.expasy.org/cgi-bin/prosite/scanprosite/ScanView.cgi?scanfile=3549319.scan.gz",
+  "title": "ScanProsite",
+  "text": " Home\n ScanProsite\n Browse\n ProRule\n Documentation\n Downloads\n About\n Contact\n \nScanProsite Results\n\n\nOuput format: Graphical view - this view shows ScanProsite results together with ProRule-based predicted intra-domain features if a ProRule exists [help].\nHits for all PROSITE (release 2026_03) motifs on\n1 FASTA sequence(s): sp-P69905-HBA_HUMAN\nNote: Scan performed locally.\nFound: 1 hit in 1 sequence\nsp-P69905-HBA_HUMAN (142 aa)\nMVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADA\nLTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLAS\nVSTVLTSKYR\nPlease note that the graphical representations of domains displayed hereafter are for illustrative purposes only, and that their colors and shapes are not intended to indicate homology or shared function.\nFor more information about how these graphical representations are constructed, go to https://prosite.expasy.org/mydomains/.\n\nhits by profiles: [1 hit (by 1 profile) on 1 sequence]\n\nUpper case represents match positions, lower case insert positions, and the '-' symbol represents deletions relative to the matching profile.\n\n\nruler:\t\n\n\nsp-P69905-HBA_HUMAN\t\n\t    142 aa\n\n\n\nPS01033 :\n2 - 142:\tscore = 42.058\nVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF---DLSHGSAQVKG\nHGKKVADALTNAVAHV---DDMPNALSALSDLHAhKLRVDPVNFKLLSHCLLVTLAAHLP\nAEFTPAVHASLDKFLASVSTVLTSKYR\n\nPredicted features:\n\nDOMAIN\t2\t142\t/note=\"Globin \"\t[condition: none]\t\nBINDING\t59\t\t/ligand=\"O2\" /ligand_id=\"ChEBI:CHEBI:15379\"\t[condition: H and <61-62=H-G>]\t[group: 1]\nBINDING\t88\t\t/ligand=\"heme b\" /ligand_id=\"ChEBI:CHEBI:60344\" /ligand_part=\"Fe\" /ligand_part_id=\"ChEBI:CHEBI:18248\" /note=\"proximal binding residue\"\t[condition: H and <61-62=H-G>]\t[group: 1]\n\nhorizontal scaling: \ndo not show text labels: \ndo not show sites in hits: \ndo not show ranges in hits: \n\nExpasy is operated by the SIB Swiss Institute of Bioinformatics\nTerms of Use | Privacy policy\nBack to the top",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Hits for all PROSITE (release 2026_03) motifs on"
+      ],
+      [
+        "1 FASTA sequence(s): sp-P69905-HBA_HUMAN"
+      ],
+      [
+        "Note: Scan performed locally."
+      ]
+    ],
+    [
+      [
+        "hits by profiles: [1 hit (by 1 profile) on 1 sequence]"
+      ]
+    ],
+    [
+      [
+        "ruler:",
+        ""
+      ]
+    ],
+    [
+      [
+        "sp-P69905-HBA_HUMAN",
+        "",
+        "    142 aa"
+      ]
+    ],
+    [
+      [
+        "2 - 142:",
+        "score = 42.058"
+      ]
+    ],
+    [
+      [
+        "DOMAIN",
+        "2",
+        "142",
+        "/note=\"Globin \"",
+        "[condition: none]",
+        ""
+      ],
+      [
+        "BINDING",
+        "59",
+        "",
+        "/ligand=\"O2\" /ligand_id=\"ChEBI:CHEBI:15379\"",
+        "[condition: H and <61-62=H-G>]",
+        "[group: 1]"
+      ],
+      [
+        "BINDING",
+        "88",
+        "",
+        "/ligand=\"heme b\" /ligand_id=\"ChEBI:CHEBI:60344\" /ligand_part=\"Fe\" /ligand_part_id=\"ChEBI:CHEBI:18248\" /note=\"proximal binding residue\"",
+        "[condition: H and <61-62=H-G>]",
+        "[group: 1]"
+      ]
+    ]
+  ]
+}

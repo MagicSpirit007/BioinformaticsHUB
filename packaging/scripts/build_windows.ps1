@@ -5,7 +5,7 @@
 
 .DESCRIPTION
   Local analysis tools (Python interpreter, Python packages, MAFFT, IQ-TREE,
-  Playwright Chromium) are NOT bundled into the installer by default. The app
+  Chrome) are NOT bundled into the installer by default. The app
   auto-detects them on the user's machine at runtime and degrades gracefully
   when they are missing. Only the small Python scripts ship in resources\engine.
 
@@ -19,10 +19,16 @@ param(
   [switch]$BundleEngine,
   [switch]$SkipUi,
   [switch]$SkipInstaller,
-  [switch]$SkipDownload
+  [switch]$SkipDownload,
+  [string]$OutputDir = "release-candidate"
 )
 
 $ErrorActionPreference = "Stop"
+# WSL/automation callers can supply PATHEXT without .EXE/.CMD. Keep the fix
+# process-local so PowerShell invokes native build tools instead of opening them.
+if (($env:PATHEXT -split ';') -notcontains '.EXE') {
+  $env:PATHEXT = '.EXE;.COM;.BAT;.CMD;' + $env:PATHEXT
+}
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $HubDir = Join-Path $RepoRoot "apps\bioinformatics-hub"
 $DeskDir = Join-Path $RepoRoot "apps\bioinformatics-hub-desktop"
@@ -75,11 +81,18 @@ if ($BundleEngine) {
     throw "Missing scripts/session_runner.py"
   }
   $EngineScripts = Join-Path $EngineDir "scripts"
-  if (Test-Path $EngineScripts) { Remove-Item -LiteralPath $EngineScripts -Recurse -Force }
+  $ResolvedStage = [IO.Path]::GetFullPath($EngineScripts)
+  $AllowedStage = [IO.Path]::GetFullPath((Join-Path $RepoRoot 'packaging\engine\scripts'))
+  if ($ResolvedStage -ne $AllowedStage) { throw 'Unexpected engine staging path' }
+  if (Test-Path $EngineScripts) { Remove-Item -LiteralPath $ResolvedStage -Recurse -Force }
   New-Item -ItemType Directory -Path $EngineScripts -Force | Out-Null
   Copy-Item -LiteralPath (Join-Path $ScriptsDir "session_runner.py") -Destination $EngineScripts -Force
   Copy-Item -LiteralPath (Join-Path $ScriptsDir "pipeline") -Destination $EngineScripts -Recurse -Force
   Copy-Item -LiteralPath (Join-Path $ScriptsDir "browser") -Destination $EngineScripts -Recurse -Force
+  Copy-Item -LiteralPath (Join-Path $ScriptsDir "workflow_worker.py") -Destination $EngineScripts -Force
+  Copy-Item -LiteralPath (Join-Path $ScriptsDir "biohub.cjs") -Destination $EngineScripts -Force
+  Copy-Item -LiteralPath (Join-Path $ScriptsDir "workflow") -Destination $EngineScripts -Recurse -Force
+  Copy-Item -LiteralPath (Join-Path $ScriptsDir "vendor") -Destination $EngineScripts -Recurse -Force
   # strip pycache from the staged copy
   Get-ChildItem -LiteralPath $EngineScripts -Recurse -Directory -Filter "__pycache__" -ErrorAction SilentlyContinue |
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
@@ -87,7 +100,14 @@ if ($BundleEngine) {
   Copy-Item -LiteralPath (Join-Path $PSScriptRoot "doctor.py") -Destination (Join-Path $EngineDir "doctor.py") -Force
   Copy-Item -LiteralPath (Join-Path $PSScriptRoot "install_tools.ps1") -Destination (Join-Path $EngineDir "install_tools.ps1") -Force
   Copy-Item -LiteralPath (Join-Path $RepoRoot "packaging\requirements-engine.txt") -Destination (Join-Path $EngineDir "requirements-engine.txt") -Force
+  Copy-Item -LiteralPath (Join-Path $RepoRoot "requirements-browser.txt") -Destination (Join-Path $EngineDir "requirements-browser.txt") -Force
+  Copy-Item -LiteralPath (Join-Path $RepoRoot "packaging\THIRD_PARTY_NOTICES.md") -Destination (Join-Path $EngineDir "THIRD_PARTY_NOTICES.md") -Force
 }
+
+# Fingerprint actual staged bytes, including uncommitted source changes.
+$ManifestNode = (Get-Command node.exe -ErrorAction Stop).Source
+& $ManifestNode (Join-Path $ScriptsDir 'build_manifest.cjs')
+if ($LASTEXITCODE -ne 0) { throw 'Build manifest failed; staged engine is stale' }
 
 # 3) Desktop deps + installer
 if (-not $SkipInstaller) {
@@ -101,13 +121,15 @@ if (-not $SkipInstaller) {
       if ($LASTEXITCODE -ne 0) { throw "npm install failed" }
     }
     if (-not (Test-Path $Builder)) { throw "electron-builder is missing from desktop dependencies" }
-    Write-Info "electron-builder → release/"
-    & $Builder --win --x64
+    Write-Info "electron-builder → $OutputDir/"
+    $NodeExe = (Get-Command node.exe -ErrorAction Stop).Source
+    $BuilderCli = Join-Path $DeskDir "node_modules\electron-builder\cli.js"
+    & $NodeExe $BuilderCli --win --x64 "--config.directories.output=$OutputDir"
     if ($LASTEXITCODE -ne 0) { throw "electron-builder failed" }
   } finally {
     Pop-Location
   }
-  Write-Info "Artifacts under apps\bioinformatics-hub-desktop\release\"
+  Write-Info "Artifacts under apps\bioinformatics-hub-desktop\$OutputDir\"
 } else {
   Write-Info "SkipInstaller — UI and engine scripts staged only"
 }

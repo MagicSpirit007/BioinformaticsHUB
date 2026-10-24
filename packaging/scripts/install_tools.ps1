@@ -2,22 +2,23 @@
 <#
 .SYNOPSIS
   Install the external tools BioinformaticsHUB needs for local analysis and the
-  Plant-mPLoc auto-submit site. These are NOT bundled with the installer.
+  Jev workflow executor. These are NOT bundled with the installer.
 
 .DESCRIPTION
   - Detects a system Python (prefers the `py` launcher, then `python`).
   - Installs the Python packages from requirements-engine.txt.
-  - Installs Playwright Chromium (used by the auto-submit site).
+  - Optionally installs Jev dependencies into a separate Python 3.12+ environment.
   - Reports whether MAFFT and IQ-TREE are already on PATH, and prints manual
     install guidance when they are not.
 
 .EXAMPLE
   .\install_tools.ps1
-  .\install_tools.ps1 -SkipChromium   # only Python deps, no browser download
+  .\install_tools.ps1 -BrowserPython C:\Tools\Jev\.venv\Scripts\python.exe
 #>
 param(
   [string]$PipIndexUrl = "https://pypi.org/simple",
-  [switch]$SkipChromium
+  [switch]$SkipChromium,
+  [string]$BrowserPython = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -58,14 +59,13 @@ if ($LASTEXITCODE -ne 0) { throw "pip upgrade failed" }
 & $Python -m pip install -r $ReqFile --index-url $PipIndexUrl
 if ($LASTEXITCODE -ne 0) { throw "pip install failed" }
 
-if (-not $SkipChromium) {
-  Write-Info "Install Playwright Chromium (for the Plant-mPLoc auto-submit site)"
-  & $Python -m playwright install chromium
-  if ($LASTEXITCODE -ne 0) {
-    Write-Warn "Chromium install failed; Plant-mPLoc will fall back to manual open."
-  }
+if ($BrowserPython) {
+  & $BrowserPython -c "import sys; sys.exit(0 if sys.version_info >= (3,12) else 1)"
+  if ($LASTEXITCODE -ne 0) { throw 'Browser Python must be 3.12 or later' }
+  & $BrowserPython -m pip install -r (Join-Path $Here 'requirements-browser.txt') --index-url $PipIndexUrl
+  if ($LASTEXITCODE -ne 0) { throw 'Browser dependency installation failed' }
 } else {
-  Write-Info "SkipChromium — Plant-mPLoc will open manually."
+  Write-Info 'Select an existing Jev Python environment in Settings, or rerun with -BrowserPython <Python 3.12+ executable>.'
 }
 
 Write-Info ""

@@ -1,0 +1,148 @@
+EMBL-EBI
+Services
+Research
+Training
+About us
+ 
+InterPro
+Classification of protein families
+Home
+▾ Search
+▾ Browse
+▾ Results
+Release notes
+Download
+Help
+ / Result / InterProScan / Iprscan6-R20260920-115857-0169-57414676-P1m / Entry / InterPro
+InterProScan Search Result
+InterProScan protein 
+Overview
+Entries 6
+Sequence
+
+This protein matches these entries:
+
+1 - 5 of 5 entries matching InterPro 
+D
+D
+ Select your database:
+InterPro
+5
+AntiFam
+0
+CATH-Gene3D
+1
+CDD
+1
+HAMAP
+0
+NCBIFAM
+0
+PANTHER
+1
+Pfam
+1
+PIRSF
+0
+PRINTS
+2
+PROSITE profiles
+1
+PROSITE patterns
+0
+SFLD
+0
+SMART
+0
+SUPERFAMILY
+1
+×
+Accession
+	
+Short Name
+	
+Name
+	
+Source Database
+	
+Matches
+
+IPR012292	Globin/Proto	Globin/Protoglobin	InterPro	
+50
+100
+
+IPR000971	Globin	Globin	InterPro	
+50
+100
+
+IPR002338	Hemoglobin_a-typ	Hemoglobin, alpha-type	InterPro	
+50
+100
+
+IPR002339	Hemoglobin_pi	Hemoglobin, pi	InterPro	
+50
+100
+
+IPR009050	Globin-like_sf	Globin-like superfamily	InterPro	
+50
+100
+
+IPR050056	Hemoglobin_oxygen_transport	Hemoglobin and related oxygen transporters	InterPro	
+50
+100
+Rows per page: 
+20
+50
+100
+Previous1Next
+	
+InterPro is part of the ELIXIR infrastructure
+
+InterPro is an ELIXIR Core Data Resource. Learn more ›
+
+InterPro is part of the Global Biodata Coalition
+
+InterPro is a Global Core Biodata Resource. Learn more ›
+
+	
+
+EMBL-EBI is the home for big data in biology.
+
+We help scientists exploit complex information to make discoveries that benefit humankind.
+
+SERVICES
+Data resources and tools
+Data submission
+Support and feedback
+Licensing
+Long-term data preservation
+RESEARCH
+Publications
+Research groups
+Postdocs and PhDs
+TRAINING
+Live training
+On-demand training
+Support for trainers
+Contact organisers
+INDUSTRY
+Members Area
+Contact Industry team
+ABOUT
+Contact us
+Events
+Jobs
+News
+People and groups
+Intranet for staff
+
+EMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK.
+Tel: +44 (0)1223 49 44 44
+Full contact details
+
+Copyright © EMBL 2026
+EMBL-EBI is part of the European Molecular Biology Laboratory
+Terms of use
+
+This website requires cookies, and the limited processing of your personal data in order to function. By using the site you are agreeing to this as outlined in our Privacy Notice and Terms of Use.
+I agree, dismiss this banner

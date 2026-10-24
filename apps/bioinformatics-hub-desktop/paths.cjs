@@ -119,7 +119,7 @@ function findOnPath(name) {
   // PATHEXT on Windows carries the preferred executable extensions; never split
   // PATH on ':' there, because drive letters (C:\...) contain colons.
   const extensions = isWin
-    ? ['', ...String(process.env.PATHEXT || '.EXE;.CMD;.BAT;.COM').split(';').filter(Boolean)]
+    ? ['', ...new Set([...String(process.env.PATHEXT || '').split(';').filter(Boolean), '.EXE', '.CMD', '.BAT', '.COM'])]
     : ['']
   const pathVar = process.env.PATH || process.env.Path || ''
   const dirs = pathVar.split(isWin ? ';' : ':').filter(Boolean)

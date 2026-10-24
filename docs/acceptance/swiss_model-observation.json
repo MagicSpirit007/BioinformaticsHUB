@@ -1,0 +1,162 @@
+{
+  "url": "https://swissmodel.expasy.org/interactive/M4nmJE/models/",
+  "title": "Untitled Project | Models",
+  "text": "Modelling\nRepository\nTools\nDocumentation\nLog in\nCreate Account\n All Projects\nUntitled ProjectCreated: today at 13:36\nSummary\nTemplates 50\nModels 2\nProject Data \nModel Results \nOrder by: \nGMQE\nQMEANDisCo\nOligo State\nLigands\nSeq Identity\nSimilarity\nCoverage\n1\n142\nModel 01\nStructure Assessment\nCompare \nDownload files \nDisplay files \nOligo-State \nMonomer\n\nGMQE \n0.98\nTemplate\nP63112.1.A Hemoglobin subunit alpha\nAlphaFold DB model of HBA_PAPCY (gene: HBA, organism: Papio cynocephalus (Yellow baboon))\nSeq Identity\n92.25%\nCoverage\nModel-Template Alignment\nModel 02\nStructure Assessment\nCompare \nDownload files \nDisplay files \nOligo-State \nMonomer\n\nGMQE \n0.90\nQMEANDisCo Global: \n0.84 ± 0.07\nLigands \n1 x HEM\nQMEANDisCo Local\nQMEAN Z-Scores\nTemplate\n9vic.3.A Hemoglobin subunit alpha\ncryo-EM structure of human haemoglobin in the R conformation\nSeq Identity\n100.00%\nCoverage\nModel-Template Alignment\nCartoon\nSchwede Group\nContact Us\nTerms of use\nSWISS-MODEL is part of SIB’s portfolio of open databases and software tools.\n Back to top",
+  "svgText": [
+    "1",
+    "142"
+  ],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Background",
+        "",
+        "",
+        ""
+      ]
+    ],
+    [
+      [
+        "Biounit Oligo State",
+        "Monomer"
+      ],
+      [
+        "QSQE",
+        "-"
+      ],
+      [
+        "Method",
+        "AlphaFold v2"
+      ],
+      [
+        "Seq Similarity",
+        "0.58"
+      ],
+      [
+        "Coverage",
+        "1.00"
+      ],
+      [
+        "Range",
+        "1-142"
+      ]
+    ],
+    [
+      [
+        "",
+        "Model_01P63112.1.AModel_01P63112.1.AModel_01P63112.1.A",
+        "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSMVLSPDDKKHVKAAWGKVGEHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKHGSDQVNKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYRLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ]
+    ],
+    [
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ],
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ],
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ]
+    ],
+    [
+      [
+        "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+      ],
+      [
+        "MVLSPDDKKHVKAAWGKVGEHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+      ],
+      [
+        "HGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFK"
+      ],
+      [
+        "HGSDQVNKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFK"
+      ],
+      [
+        "LLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ],
+      [
+        "LLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ]
+    ],
+    [
+      [
+        "\n                          HEM.1:\n                      ",
+        "17 residues within 4Å:Chain A: \n                                      Y.43, \n                                \n                                  \n                                 \n                                  F.44, \n                                \n                                  \n                                 \n                                  H.46, \n                                \n                                  \n                                 \n                                  F.47, \n                                \n                                  \n                                 \n                                  H.59, \n                                \n                                  \n                                 \n                                  K.62, \n                                \n                                  \n                                 \n                                  V.63, \n                                \n                                  \n                                 \n                                  L.84, \n                                \n                                  \n                                 \n                                  L.87, \n                                \n                                  \n                                 \n                                  H.88, \n                                \n                                  \n                                 \n                                  L.92, \n                                \n                                  \n                                 \n                                  V.94, \n                                \n                                  \n                                 \n                                  N.98, \n                                \n                                  \n                                 \n                                  F.99, \n                                \n                                  \n                                 \n                                  L.102, \n                                \n                                  \n                                 \n                                  V.133, \n                                \n                                  \n                                 \n                                  L.13718 PLIP interactions:18 interactions with chain A, \n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\tHydrophobic interactions:\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:F.44, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:F.44, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.63, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.84, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.92, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.94, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:N.98, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.102, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.133, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.137Salt bridges:\n\t\t\t\t\t\tA:H.46, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:H.59, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:K.62pi-Stacking:\n\t\t\t\t\t\tA:H.59Metal complexes:\n\t\t\t\t\t\tA:H.88"
+      ]
+    ],
+    [],
+    [
+      [
+        "Biounit Oligo State",
+        "Hetero-dimer"
+      ],
+      [
+        "QSQE",
+        "0.00"
+      ],
+      [
+        "Method",
+        "EM, 2.45 Å"
+      ],
+      [
+        "Seq Similarity",
+        "0.61"
+      ],
+      [
+        "Coverage",
+        "1.00"
+      ],
+      [
+        "Range",
+        "2-142"
+      ]
+    ],
+    [
+      [
+        "Ligand",
+        "Added to Model",
+        "Description"
+      ],
+      [
+        "HEM",
+        "✓",
+        "PROTOPORPHYRIN IX CONTAINING FE"
+      ],
+      [
+        "CMO ",
+        "✕ - Not biologically relevant.\n              ",
+        "CARBON MONOXIDE"
+      ],
+      [
+        "CMO ",
+        "✕ - Not biologically relevant.\n              ",
+        "CARBON MONOXIDE"
+      ],
+      [
+        "HEM ",
+        "✕ - Binding site not conserved.\n              ",
+        "PROTOPORPHYRIN IX CONTAINING FE"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    [],
+    []
+  ]
+}

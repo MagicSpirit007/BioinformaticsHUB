@@ -1,0 +1,91 @@
+EMBL-EBI
+About us
+Training
+Research
+Services
+EMBL-EBI home
+MAFFT
+
+Multiple Sequence Alignment (MSA)
+
+Home
+Help & Privacy
+Recent Jobs
+Input Form
+Feedback 
+
+Welcome to the Job Dispatcher website! If you need assistance or have feedback, please contact us.
+
+Results for Job ID
+mafft-I20260920-133722-0372-91887522-p2m
+Copy
+Resubmission
+Tool Output
+Alignments
+Guide Tree
+Phylogenetic Tree
+Results Viewers
+Result Files
+Submission Details
+Tool output
+Download
+>sp|P69905|HBA_HUMAN Hemoglobin subunit alpha OS=Homo sapiens OX=9606 GN=HBA1 PE=1 SV=2
+MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+KKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTP
+AVHASLDKFLASVSTVLTSKYR
+>sp|P01958|HBA_HORSE Hemoglobin subunit alpha OS=Equus caballus OX=9796 GN=HBA PE=1 SV=2
+MVLSAADKTNVKAAWSKVGGHAGEYGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG
+KKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP
+AVHASLDKFLSSVSTVLTSKYR
+>sp|P01942|HBA_MOUSE Hemoglobin subunit alpha OS=Mus musculus OX=10090 GN=Hba PE=1 SV=2
+MVLSGEDKSNIKAAWGKIGGHGAEYGAEALERMFASFPTTKTYFPHFDVSHGSAQVKGHG
+KKVADALASAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLSHCLLVTLASHHPADFTP
+AVHASLDKFLASVSTVLTSKYR
+>sp|P01946|HBA_RAT Hemoglobin subunit alpha-1/2 OS=Rattus norvegicus OX=10116 GN=Hba1 PE=1 SV=3
+MVLSADDKTNIKNCWGKIGGHGGEYGEEALQRMFAAFPTTKTYFSHIDVSPGSAQVKAHG
+KKVADALAKAADHVEDLPGALSTLSDLHAHKLRVDPVNFKFLSHCLLVTLACHHPGDFTP
+AMHASLDKFLASVSTVLTSKYR
+
+Coloured sequences
+Show
+If you use this service, please consider citing the following publication: The EMBL-EBI Job Dispatcher sequence analysis tools framework in 2024. More information about this bioinformatics application can be found in its bio.tools record.
+Please read the provided Help & Privacy before seeking help from our support staff. If you have any feedback or experienced any issues please let us know via EMBL-EBI Support. Read our Privacy Notice if you are concerned with your privacy and how we handle personal information.
+
+EMBL-EBI is the home for big data in biology.
+
+We help scientists exploit complex information to make discoveries that benefit humankind.
+
+SERVICES
+Data resources and tools
+Data submission
+Support and feedback
+Licensing
+Long-term data preservation
+RESEARCH
+Publications
+Research groups
+Postdocs and PhDs
+TRAINING
+Live training
+On-demand training
+Support for trainers
+Contact organisers
+INDUSTRY
+Members Area
+Contact Industry team
+ABOUT
+FAQ
+Contact us
+Events
+Jobs
+News
+People and groups
+Intranet for staff
+
+EMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK.
+Tel: +44 (0)1223 49 44 44
+Full contact details
+
+Copyright © EMBL 2026
+EMBL-EBI is part of the European Molecular Biology Laboratory
+Terms of use

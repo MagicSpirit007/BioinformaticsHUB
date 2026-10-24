@@ -1,0 +1,15 @@
+{
+  "phase": "before-repair-implementation",
+  "date": "2026-10-22",
+  "workspace": "/mnt/d/BioinformaticsHUB",
+  "head": "f4b541bc721411e3fd8df69af03637e25ebdfa77",
+  "dirty": true,
+  "files": {
+    "scripts/workflow/site.py": "aefcc530fbc7fa65346bcc7cb77164f98e50a1e5939118c51b1fe5c1cda9e45d",
+    "scripts/workflow/browser.py": "7005fe26b5a1e76911e20242c177121ee8b708813d6616ac9921f834a5ebd58c",
+    "scripts/workflow/archive.py": "1c0233289a1dab8dace215d02a610582407239c5be0254aa8effa1540e1b5b12",
+    "apps/bioinformatics-hub-desktop/workflow/core.cjs": "635210841f09697271c9f32d00d8a113339f768a896427b4975b86488d0dfd87",
+    "apps/bioinformatics-hub-desktop/workflow/delivery.cjs": "5d26deb7f12549d20597fdba6f63d877bec23ffd0c65928967e0a19124b498d6",
+    "apps/bioinformatics-hub-desktop/workflow/scheduler.cjs": "e21fe36f79f9b4e91fa439d7b48e6c3ba8e96ddceac2868575925d39c4425799"
+  }
+}

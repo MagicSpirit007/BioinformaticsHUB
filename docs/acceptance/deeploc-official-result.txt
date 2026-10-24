@@ -1,0 +1,17 @@
+Download prediction results: CSV Summary
+Probability thresholds
+Summary of 1 predicted sequences
+Table of predicted subcelullar localizations and membrane association. Use the Instructions page for more detailed description of the output page.
+sp_P69905_HBA_HUMAN
+Predicted localizations: Cytoplasm
+Predicted membrane association: Soluble
+Predicted signals:
+
+
+Localization	Cytoplasm	Nucleus	Extracellular	Cell membrane	Mitochondrion	Plastid	Endoplasmic reticulum	Lysosome/Vacuole	Golgi apparatus	Peroxisome
+Probability	0.6461	0.2103	0.2506	0.2849	0.5905	0.0794	0.2541	0.1126	0.1284	0.1836
+Membrane association	Peripheral	Transmembrane	Lipid anchor	Soluble
+Probability	0.5410	0.0670	0.0790	0.7580
+Sorting Signal Importance. Download: PNG / CSV
+
+Running ProtT5 on device of type cuda: NVIDIA L40S Model loaded in 33.95066285133362s Attention plotted in 2.480661630630493s Finished prediction in 39.80868053436279s

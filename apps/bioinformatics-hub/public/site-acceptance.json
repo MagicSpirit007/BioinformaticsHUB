@@ -1,0 +1,170 @@
+[
+  {
+    "siteId": "orf_finder",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "blastn",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "blastp",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "psi_blast",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "interpro",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "cdd",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "scanprosite",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "psipred",
+    "passed": false,
+    "status": "failed",
+    "reason": "Worker stopped without a valid result (exit 1)"
+  },
+  {
+    "siteId": "jpred",
+    "passed": false,
+    "status": "waiting_human",
+    "reason": "JPred remote cluster failed: its Slurm job status API returned an error; no resubmission performed"
+  },
+  {
+    "siteId": "phobius",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "signalp",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "tmhmm",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "deeptmhmm",
+    "passed": false,
+    "status": "waiting_human",
+    "reason": "DeepTMHMM has no confirmed task result URL in this checkpoint; reconcile the original job before resuming"
+  },
+  {
+    "siteId": "plant_mploc",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "cell_ploc",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "deeploc",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "musite",
+    "passed": false,
+    "status": "waiting_human",
+    "reason": "Website requires login/verification or is unavailable"
+  },
+  {
+    "siteId": "string",
+    "passed": false,
+    "status": "waiting_human",
+    "reason": "P69905 matched HBA1 and HBA2; an explicit protein selection and recovery of the original browser session are required"
+  },
+  {
+    "siteId": "uniprot",
+    "passed": false,
+    "status": "needs_review",
+    "reason": "No independently verified BLAST hit table; the earlier help-page result was revoked"
+  },
+  {
+    "siteId": "eggnog",
+    "passed": false,
+    "status": "waiting_human",
+    "reason": "eggNOG sent a private start link to the configured email; open that link and reconcile this node before resuming"
+  },
+  {
+    "siteId": "iupred",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "hmmer",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "mafft_web",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "itol_web",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "espript",
+    "passed": false,
+    "status": "needs_review",
+    "reason": "Jev stopped; independent result verification did not pass"
+  },
+  {
+    "siteId": "alphafold_db",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "swiss_model",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  },
+  {
+    "siteId": "prankweb",
+    "passed": true,
+    "status": "succeeded",
+    "reason": "Official result markers and input provenance verified"
+  }
+]

@@ -1,0 +1,7528 @@
+{
+  "url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+  "title": "NCBI Blast:sp|P69905|HBA_HUMAN Hemoglobin subunit alpha",
+  "text": "An official website of the United States government\n\n Here's how you know \nSkip to main page content\nLog in\nAccess keys\nNCBI Homepage\nMyNCBI Homepage\nMain Content\nMain Navigation\nBLAST ® » blastp suite » results for RID-AZJ4S1EF014\nHome Recent Results Saved Strategies Help\n Edit Search Save Search Search Summary\n How to read this report?  BLAST Help Videos Back to Traditional Results Page\n\nJob Title\nsp|P69905|HBA_HUMAN Hemoglobin subunit alpha\nRID\nAZJ4S1EF014 Search expires on 09-21 19:50 pm Download All\nProgram\nBLASTP  \nHelp\nCitation\nDatabase\nnr See details\nQuery ID\nlcl|Query_8146019\nDescription\nsp|P69905|HBA_HUMAN Hemoglobin subunit alpha\nMolecule type\namino acid\nQuery Length\n142\nOther reports\nDistance tree of results Multiple alignment MSA viewer \nHelp\nFilter Results\nOrganism\nonly top 20 will appear\nexclude\nAdd organism\nPercent Identity\nfrom\n \nPercent Identity\nto \nE value\nfrom\n \nE value\nto \nQuery Coverage\nfrom\n \nQuery Coverage\nto \nFilter Reset\nCompare these results against the new Clustered nr database  \nHelp\nBLAST\nDescriptions\nSequences producing significant alignments\nDownload Select columns \nShow \n10\n50\n100\n \nHelp\nselect all\n 100 sequences selected\nGenPept\n \nGraphics\n \nDistance tree of results\n \nMultiple alignment\n \nMSA Viewer\nSequences producing significant alignments:\nSelect for downloading or viewing reports\n\t\nDescription\n\t\nScientific Name\n\t\nMax Score\n\t\nTotal Score\n\t\nQuery Cover\n\t\nE value\n\t\nPer. Ident\n\t\nAcc. Len\n\tAccession\n\nSelect seq gb|AAX29522.1|\n\t\nhemoglobin alpha 2, partial [synthetic construct]\n\t\nsynthetic construct\n\t287\t287\t100%\t3e-97\t100.00%\t143\tAAX29522.1\n\nSelect seq ref|NP_000508.1|\n\t\nhemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t286\t286\t100%\t5e-97\t100.00%\t142\tNP_000508.1\n\nSelect seq pdb|3IA3|B\n\t\nChain B, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t286\t286\t100%\t6e-97\t100.00%\t145\t3IA3_B\n\nSelect seq gb|AKZ66543.1|\n\t\nmutant hemoglobin alpha 2 globin chain [Homo sapiens]\n\t\nHomo sapiens\n\t286\t286\t100%\t8e-97\t99.30%\t142\tAKZ66543.1\n\nSelect seq gb|AXY55002.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t286\t286\t100%\t9e-97\t99.30%\t142\tAXY55002.1\n\nSelect seq gb|AAN04486.1|\n\t\nhemoglobin alpha-2 [Homo sapiens]\n\t\nHomo sapiens\n\t285\t285\t100%\t1e-96\t99.30%\t142\tAAN04486.1\n\nSelect seq gb|AAF72612.1|\n\t\nalpha-2-globin [Homo sapiens]\n\t\nHomo sapiens\n\t285\t285\t100%\t2e-96\t99.30%\t142\tAAF72612.1\n\nSelect seq tpe|SAI82135.1|\n\t\nTPA: globin C1 [Homo sapiens]\n\t\nHomo sapiens\n\t286\t286\t100%\t2e-96\t100.00%\t177\tSAI82135.1\n\nSelect seq ref|XP_030858703.1|\n\t\nhemoglobin subunit alpha [Gorilla gorilla gorilla]\n\t\nGorilla gorilla gorilla\n\t285\t285\t100%\t2e-96\t99.30%\t142\tXP_030858703.1\n\nSelect seq gb|ABF56145.1|\n\t\nhemoglobin alpha 1-2 hybrid [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t4e-96\t99.30%\t142\tABF56145.1\n\nSelect seq gb|AXY54998.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t4e-96\t99.30%\t142\tAXY54998.1\n\nSelect seq gb|AXY55003.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t4e-96\t99.30%\t142\tAXY55003.1\n\nSelect seq gb|AXY55001.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t4e-96\t99.30%\t142\tAXY55001.1\n\nSelect seq pdb|1BAB|A\n\t\nChain A, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t4e-96\t99.30%\t143\t1BAB_A\n\nSelect seq gb|AAK37554.1|\n\t\nhemoglobin alpha-1 globin chain [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t5e-96\t99.30%\t142\tAAK37554.1\n\nSelect seq pdb|1A00|A\n\t\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t99%\t5e-96\t100.00%\t141\t1A00_A\n\nSelect seq dbj|BAD97112.1|\n\t\nalpha 2 globin variant, partial [Homo sapiens]\n\t\nHomo sapiens\n\t284\t284\t100%\t6e-96\t99.30%\t142\tBAD97112.1\n\nSelect seq ref|XP_010380159.1|\n\t\nhemoglobin subunit alpha [Rhinopithecus roxellana]\n\t\nRhinopithecus roxellana\n\t283\t283\t100%\t6e-96\t98.59%\t142\tXP_010380159.1\n\nSelect seq gb|AAR29173.1|\n\t\nalpha-2 globin [Pongo pygmaeus]\n\t\nPongo pygmaeus\n\t283\t283\t100%\t8e-96\t98.59%\t142\tAAR29173.1\n\nSelect seq ref|XP_063555904.1|\n\t\nhemoglobin subunit alpha-like [Gorilla gorilla gorilla]\n\t\nGorilla gorilla gorilla\n\t285\t285\t100%\t1e-95\t99.30%\t177\tXP_063555904.1\n\nSelect seq gb|AFI57164.1|\n\t\nhemoglobin alpha 1 [Homo sapiens]\n\t\nHomo sapiens\n\t283\t283\t100%\t1e-95\t99.30%\t142\tAFI57164.1\n\nSelect seq pdb|1BZZ|A\n\t\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\t\nHomo sapiens\n\t283\t283\t99%\t1e-95\t99.29%\t141\t1BZZ_A\n\nSelect seq pdb|4MQC|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t283\t283\t99%\t1e-95\t99.29%\t141\t4MQC_A\n\nSelect seq pdb|1AJ9|A\n\t\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\t\nHomo sapiens\n\t283\t283\t99%\t1e-95\t99.29%\t141\t1AJ9_A\n\nSelect seq pdb|5SW7|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t282\t282\t99%\t2e-95\t99.29%\t142\t5SW7_A\n\nSelect seq ref|XP_030780270.1|\n\t\nhemoglobin subunit alpha-like [Rhinopithecus roxellana]\n\t\nRhinopithecus roxellana\n\t284\t284\t100%\t2e-95\t98.59%\t177\tXP_030780270.1\n\nSelect seq pdb|7DY4|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t282\t282\t99%\t2e-95\t99.29%\t141\t7DY4_A\n\nSelect seq pdb|7DY3|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t282\t282\t99%\t2e-95\t99.29%\t141\t7DY3_A\n\nSelect seq pdb|9S3P|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t282\t282\t99%\t2e-95\t100.00%\t140\t9S3P_A\n\nSelect seq sp|P01923.1|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]\n\t\nGorilla gorilla gorilla\n\t282\t282\t99%\t2e-95\t99.29%\t141\tP01923.1\n\nSelect seq pdb|1O1O|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t4e-95\t98.58%\t141\t1O1O_A\n\nSelect seq pdb|1Y0D|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t5e-95\t100.00%\t140\t1Y0D_A\n\nSelect seq pdb|1A3O|A\n\t\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t5e-95\t99.29%\t141\t1A3O_A\n\nSelect seq sp|Q9TS35.2|\n\t\nRecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]\n\t\nHylobates lar\n\t281\t281\t100%\t6e-95\t98.59%\t142\tQ9TS35.2\n\nSelect seq pdb|1Y0C|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t6e-95\t98.58%\t141\t1Y0C_A\n\nSelect seq pdb|1RVW|A\n\t\nChain A, HEMOGLOBIN [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t6e-95\t99.29%\t141\t1RVW_A\n\nSelect seq pdb|1R1X|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t99%\t6e-95\t99.29%\t141\t1R1X_A\n\nSelect seq gb|KAL4682940.1|\n\t\nhypothetical protein H8957_006364 [Semnopithecus entellus]\n\t\nSemnopithecus entellus\n\t281\t281\t100%\t7e-95\t97.89%\t142\tKAL4682940.1\n\nSelect seq ref|XP_054309248.2|\n\t\nhemoglobin subunit alpha [Pongo pygmaeus]\n\t\nPongo pygmaeus\n\t281\t281\t100%\t8e-95\t97.89%\t142\tXP_054309248.2\n\nSelect seq pdb|7QU4|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t281\t281\t100%\t8e-95\t97.18%\t142\t7QU4_A\n\nSelect seq pdb|1XZ5|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t98.58%\t141\t1XZ5_A\n\nSelect seq pdb|3NMM|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t99.29%\t141\t3NMM_A\n\nSelect seq pdb|3QJB|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t99.29%\t141\t3QJB_A\n\nSelect seq pdb|1XY0|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t98.58%\t141\t1XY0_A\n\nSelect seq pdb|2W72|A\n\t\nChain A, HUMAN HEMOGLOBIN A [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t98.58%\t141\t2W72_A\n\nSelect seq pdb|1XZV|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t1e-94\t98.58%\t141\t1XZV_A\n\nSelect seq pdb|1XZU|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t2e-94\t98.58%\t141\t1XZU_A\n\nSelect seq gb|AXY54999.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t100%\t2e-94\t99.30%\t141\tAXY54999.1\n\nSelect seq gb|AXY55000.1|\n\t\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t100%\t2e-94\t99.30%\t141\tAXY55000.1\n\nSelect seq ref|XP_055099075.1|\n\t\nhemoglobin subunit alpha-1 [Symphalangus syndactylus]\n\t\nSymphalangus syndactylus\n\t280\t280\t100%\t2e-94\t97.89%\t142\tXP_055099075.1\n\nSelect seq pdb|1Y09|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t2e-94\t98.58%\t141\t1Y09_A\n\nSelect seq pdb|1GLI|A\n\t\nChain A, DEOXYHEMOGLOBIN [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t2e-94\t98.58%\t141\t1GLI_A\n\nSelect seq pdb|6BB5|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t98%\t2e-94\t100.00%\t139\t6BB5_A\n\nSelect seq pdb|1XZ7|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t280\t99%\t2e-94\t98.58%\t141\t1XZ7_A\n\nSelect seq gb|KAL4835551.1|\n\t\nhypothetical protein H8958_000280 [Nasalis larvatus]\n\t\nNasalis larvatus\n\t280\t280\t100%\t2e-94\t97.18%\t142\tKAL4835551.1\n\nSelect seq ref|XP_003269148.1|\n\t\nhemoglobin subunit alpha-1 [Nomascus leucogenys]\n\t\nNomascus leucogenys\n\t280\t280\t100%\t3e-94\t97.89%\t142\tXP_003269148.1\n\nSelect seq pdb|1O1I|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t279\t279\t99%\t3e-94\t97.87%\t141\t1O1I_A\n\nSelect seq pdb|1XYE|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t279\t279\t99%\t3e-94\t98.58%\t141\t1XYE_A\n\nSelect seq pdb|1Y0A|A\n\t\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t279\t279\t99%\t3e-94\t98.58%\t141\t1Y0A_A\n\nSelect seq ref|XP_033092341.1|\n\t\nhemoglobin subunit alpha [Trachypithecus francoisi]\n\t\nTrachypithecus francoisi\n\t279\t279\t100%\t3e-94\t97.18%\t142\tXP_033092341.1\n\nSelect seq ref|XP_035122196.3|\n\t\nhemoglobin subunit alpha [Callithrix jacchus]\n\t\nCallithrix jacchus\n\t279\t279\t100%\t4e-94\t97.18%\t142\tXP_035122196.3\n\nSelect seq pdb|1J7S|A\n\t\nChain A, Hemoglobin [Homo sapiens]\n\t\nHomo sapiens\n\t279\t279\t99%\t5e-94\t97.87%\t141\t1J7S_A\n\nSelect seq pdb|1ABW|A\n\t\nChain A, HEMOGLOBIN-BASED BLOOD SUBSTITUTE [Homo sapiens]\n\t\nHomo sapiens\n\t284\t567\t99%\t6e-94\t100.00%\t283\t1ABW_A\n\nSelect seq ref|XP_024089067.2|\n\t\nhemoglobin subunit alpha [Pongo abelii]\n\t\nPongo abelii\n\t280\t280\t100%\t6e-94\t97.89%\t177\tXP_024089067.2\n\nSelect seq pdb|1C7D|A\n\t\nChain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]\n\t\nHomo sapiens\n\t284\t567\t99%\t7e-94\t100.00%\t284\t1C7D_A\n\nSelect seq ref|XP_054309249.2|\n\t\nhemoglobin subunit alpha [Pongo pygmaeus]\n\t\nPongo pygmaeus\n\t280\t280\t100%\t7e-94\t97.89%\t177\tXP_054309249.2\n\nSelect seq ref|XP_055099076.2|\n\t\nhemoglobin subunit alpha-1 [Symphalangus syndactylus]\n\t\nSymphalangus syndactylus\n\t280\t280\t100%\t7e-94\t97.89%\t177\tXP_055099076.2\n\nSelect seq sp|P01924.1|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]\n\t\nSemnopithecus entellus\n\t278\t278\t99%\t7e-94\t97.87%\t141\tP01924.1\n\nSelect seq sp|P63107.2|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata]\n\t\nMacaca fuscata fuscata\n\t278\t278\t100%\t8e-94\t97.18%\t142\tP63107.2\n\nSelect seq gb|AYO89356.1|\n\t\nhemoglobin subunit alpha [Nasalis larvatus]\n\t\nNasalis larvatus\n\t278\t278\t100%\t1e-93\t96.48%\t142\tAYO89356.1\n\nSelect seq ref|XP_030654647.1|\n\t\nhemoglobin subunit alpha-1-like [Nomascus leucogenys]\n\t\nNomascus leucogenys\n\t278\t278\t100%\t1e-93\t97.18%\t142\tXP_030654647.1\n\nSelect seq prf||0404170A\n\t\nhemoglobin alphaI [Pongo pygmaeus]\n\t\nPongo pygmaeus\n\t278\t278\t99%\t1e-93\t97.87%\t141\t0404170A\n\nSelect seq ref|XP_009007060.3|\n\t\nhemoglobin subunit alpha [Callithrix jacchus]\n\t\nCallithrix jacchus\n\t279\t279\t100%\t1e-93\t97.18%\t177\tXP_009007060.3\n\nSelect seq ref|XP_050630719.1|\n\t\nhemoglobin subunit alpha-A/Q/R/T [Macaca thibetana thibetana]\n\t\nMacaca thibetana thibetana\n\t278\t278\t100%\t1e-93\t97.18%\t142\tXP_050630719.1\n\nSelect seq ref|XP_012324138.1|\n\t\nhemoglobin subunit alpha [Aotus nancymaae]\n\t\nAotus nancymaae\n\t278\t278\t100%\t2e-93\t96.48%\t142\tXP_012324138.1\n\nSelect seq ref|XP_033092340.1|\n\t\ntranslation initiation factor IF-2-like [Trachypithecus francoisi]\n\t\nTrachypithecus francoisi\n\t284\t284\t100%\t2e-93\t97.18%\t327\tXP_033092340.1\n\nSelect seq pdb|4MQH|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t277\t277\t98%\t2e-93\t99.28%\t139\t4MQH_A\n\nSelect seq ref|XP_032004373.1|\n\t\nhemoglobin subunit alpha [Hylobates moloch]\n\t\nHylobates moloch\n\t277\t277\t100%\t2e-93\t97.18%\t142\tXP_032004373.1\n\nSelect seq ref|XP_011815457.1|\n\t\nPREDICTED: hemoglobin subunit alpha isoform X1 [Colobus angolensis palliatus]\n\t\nColobus angolensis palliatus\n\t277\t277\t100%\t2e-93\t96.48%\t142\tXP_011815457.1\n\nSelect seq sp|P67817.2|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]\n\t\nAteles geoffroyi\n\t277\t277\t100%\t3e-93\t96.48%\t142\tP67817.2\n\nSelect seq gb|EHH60005.1|\n\t\nHemoglobin alpha chain [Macaca fascicularis]\n\t\nMacaca fascicularis\n\t277\t277\t100%\t3e-93\t97.18%\t142\tEHH60005.1\n\nSelect seq sp|Q9TS34.2|\n\t\nRecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]\n\t\nHylobates lar\n\t277\t277\t100%\t3e-93\t96.48%\t142\tQ9TS34.2\n\nSelect seq sp|P18972.1|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]\n\t\nMico argentatus\n\t276\t276\t99%\t3e-93\t97.16%\t141\tP18972.1\n\nSelect seq ref|NP_001253705.1|\n\t\nhemoglobin subunit alpha [Macaca mulatta]\n\t\nMacaca mulatta\n\t276\t276\t100%\t4e-93\t96.48%\t142\tNP_001253705.1\n\nSelect seq prf||681081A\n\t\nhemoglobin alpha [Macaca mulatta]\n\t\nMacaca mulatta\n\t276\t276\t99%\t5e-93\t97.16%\t141\t681081A\n\nSelect seq pdb|1O1N|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t561\t99%\t7e-93\t99.29%\t285\t1O1N_A\n\nSelect seq ref|NP_001038189.1|\n\t\nhemoglobin subunit alpha [Macaca mulatta]\n\t\nMacaca mulatta\n\t276\t276\t100%\t9e-93\t96.48%\t142\tNP_001038189.1\n\nSelect seq gb|AYO89359.1|\n\t\nhemoglobin subunit alpha [Cercopithecus wolfi]\n\t\nCercopithecus wolfi\n\t276\t276\t100%\t9e-93\t96.48%\t142\tAYO89359.1\n\nSelect seq sp|P21767.1|\n\t\nRecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]\n\t\nMacaca fascicularis\n\t275\t275\t99%\t1e-92\t97.16%\t141\tP21767.1\n\nSelect seq ref|XP_017377050.2|\n\t\nhemoglobin subunit alpha [Cebus imitator]\n\t\nCebus imitator\n\t275\t275\t100%\t1e-92\t95.77%\t142\tXP_017377050.2\n\nSelect seq pdb|1O1M|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t281\t560\t99%\t1e-92\t98.58%\t285\t1O1M_A\n\nSelect seq pdb|1O1J|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t560\t99%\t1e-92\t98.58%\t283\t1O1J_A\n\nSelect seq pdb|5WOG|A\n\t\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\t\nHomo sapiens\n\t275\t275\t96%\t1e-92\t100.00%\t137\t5WOG_A\n\nSelect seq sp|P67818.1|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]\n\t\nSaguinus oedipus\n\t275\t275\t99%\t2e-92\t96.45%\t141\tP67818.1\n\nSelect seq sp|P21766.1|\n\t\nRecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]\n\t\nMacaca assamensis\n\t275\t275\t99%\t3e-92\t97.16%\t141\tP21766.1\n\nSelect seq tpe|SAI82172.1|\n\t\nTPA: globin C1 [Macaca mulatta]\n\t\nMacaca mulatta\n\t276\t276\t100%\t3e-92\t96.48%\t177\tSAI82172.1\n\nSelect seq sp|P01929.1|\n\t\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]\n\t\nLeontocebus fuscicollis\n\t274\t274\t99%\t3e-92\t96.45%\t141\tP01929.1\n\nSelect seq pdb|1O1L|A\n\t\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\t\nHomo sapiens\n\t280\t558\t99%\t3e-92\t98.58%\t283\t1O1L_A\n\nSelect seq ref|XP_003928392.1|\n\t\nhemoglobin subunit alpha [Saimiri boliviensis]\n\t\nSaimiri boliviensis\n\t274\t274\t100%\t4e-92\t95.77%\t142\tXP_003928392.1\n\nSelect seq ref|XP_050630718.1|\n\t\nhemoglobin subunit alpha-A/Q/R/T-like [Macaca thibetana thibetana]\n\t\nMacaca thibetana thibetana\n\t275\t275\t100%\t4e-92\t96.48%\t177\tXP_050630718.1\n \nGraphic Summary\n \nAlignments\n \nTaxonomy\n \nFOLLOW NCBI\n\nConnect with NLM\n\n  \n\nNational Library of Medicine\n8600 Rockville Pike\nBethesda, MD 20894\n\nWeb Policies\nFOIA\nHHS Vulnerability Disclosure\n\nHelp\nAccessibility\nCareers\n\nNLM\nNIH\nHHS\nUSA.gov",
+  "svgText": [
+    "1",
+    "20",
+    "40",
+    "60",
+    "80",
+    "100",
+    "120",
+    "142",
+    "Query",
+    "heme binding site",
+    "tetramer interface",
+    "Hb-alpha-like",
+    "Specific hits",
+    "Globin-like",
+    "Superfamily arch."
+  ],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Search parameter name",
+        "Search parameter value"
+      ],
+      [
+        "Program",
+        "blastp"
+      ],
+      [
+        "Word size",
+        "5"
+      ],
+      [
+        "Expect value",
+        "0.05"
+      ],
+      [
+        "Hitlist size",
+        "100"
+      ],
+      [
+        "Gapcosts",
+        "11,1"
+      ],
+      [
+        "Matrix",
+        "BLOSUM62"
+      ],
+      [
+        "Filter string ",
+        "F"
+      ],
+      [
+        "Genetic Code",
+        "1"
+      ],
+      [
+        "Window Size",
+        "40"
+      ],
+      [
+        "Threshold",
+        "0"
+      ],
+      [
+        "Composition-based stats",
+        "2"
+      ]
+    ],
+    [
+      [
+        "Database parameter name",
+        "Database parameter value"
+      ],
+      [
+        "Posted date",
+        "Sep 16, 2026  4:44 AM"
+      ],
+      [
+        "Number of letters",
+        "435,179,992,296"
+      ],
+      [
+        "Number of sequences",
+        "1,153,329,301"
+      ],
+      [
+        "Entrez query",
+        "\n Includes: \n Excludes: \n None\n "
+      ]
+    ],
+    [
+      [
+        "Params",
+        "Ungapped",
+        "Gapped"
+      ],
+      [
+        "Lambda",
+        "0.318985",
+        "0.267"
+      ],
+      [
+        "K",
+        "0.130238",
+        "0.041"
+      ],
+      [
+        "H",
+        "0.384902",
+        "0.14"
+      ],
+      [
+        "Alpha",
+        " 0.7916",
+        " 1.9"
+      ],
+      [
+        "Alpha_v",
+        " 4.96466",
+        " 42.6028"
+      ],
+      [
+        "Sigma",
+        "",
+        " 43.6362"
+      ]
+    ],
+    [
+      [
+        "Results Statistics parameter name",
+        "Results Statistics parameter value"
+      ]
+    ],
+    [
+      [
+        "Select for downloading or viewing reports",
+        "Description",
+        "Scientific Name",
+        "\n  \n  \n  Common Name\n  \n  \n  ",
+        "\n  \n  Taxid\n  \n  \n  ",
+        "Max Score",
+        "Total Score",
+        "Query Cover",
+        "E value",
+        "Per. Ident",
+        "Acc. Len",
+        "Accession"
+      ],
+      [
+        "Select seq gb|AAX29522.1|",
+        "hemoglobin alpha 2, partial [synthetic construct]",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "287",
+        "287",
+        "100%",
+        "3e-97",
+        "100.00%",
+        "143",
+        "AAX29522.1"
+      ],
+      [
+        "Select seq ref|NP_000508.1|",
+        "hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "286",
+        "286",
+        "100%",
+        "5e-97",
+        "100.00%",
+        "142",
+        "NP_000508.1"
+      ],
+      [
+        "Select seq pdb|3IA3|B",
+        "Chain B, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "286",
+        "286",
+        "100%",
+        "6e-97",
+        "100.00%",
+        "145",
+        "3IA3_B"
+      ],
+      [
+        "Select seq gb|AKZ66543.1|",
+        "mutant hemoglobin alpha 2 globin chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "286",
+        "286",
+        "100%",
+        "8e-97",
+        "99.30%",
+        "142",
+        "AKZ66543.1"
+      ],
+      [
+        "Select seq gb|AXY55002.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "286",
+        "286",
+        "100%",
+        "9e-97",
+        "99.30%",
+        "142",
+        "AXY55002.1"
+      ],
+      [
+        "Select seq gb|AAN04486.1|",
+        "hemoglobin alpha-2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "285",
+        "285",
+        "100%",
+        "1e-96",
+        "99.30%",
+        "142",
+        "AAN04486.1"
+      ],
+      [
+        "Select seq gb|AAF72612.1|",
+        "alpha-2-globin [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "285",
+        "285",
+        "100%",
+        "2e-96",
+        "99.30%",
+        "142",
+        "AAF72612.1"
+      ],
+      [
+        "Select seq tpe|SAI82135.1|",
+        "TPA: globin C1 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "286",
+        "286",
+        "100%",
+        "2e-96",
+        "100.00%",
+        "177",
+        "SAI82135.1"
+      ],
+      [
+        "Select seq ref|XP_030858703.1|",
+        "hemoglobin subunit alpha [Gorilla gorilla gorilla]",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "285",
+        "285",
+        "100%",
+        "2e-96",
+        "99.30%",
+        "142",
+        "XP_030858703.1"
+      ],
+      [
+        "Select seq gb|ABF56145.1|",
+        "hemoglobin alpha 1-2 hybrid [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "4e-96",
+        "99.30%",
+        "142",
+        "ABF56145.1"
+      ],
+      [
+        "Select seq gb|AXY54998.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "4e-96",
+        "99.30%",
+        "142",
+        "AXY54998.1"
+      ],
+      [
+        "Select seq gb|AXY55003.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "4e-96",
+        "99.30%",
+        "142",
+        "AXY55003.1"
+      ],
+      [
+        "Select seq gb|AXY55001.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "4e-96",
+        "99.30%",
+        "142",
+        "AXY55001.1"
+      ],
+      [
+        "Select seq pdb|1BAB|A",
+        "Chain A, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "4e-96",
+        "99.30%",
+        "143",
+        "1BAB_A"
+      ],
+      [
+        "Select seq gb|AAK37554.1|",
+        "hemoglobin alpha-1 globin chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "5e-96",
+        "99.30%",
+        "142",
+        "AAK37554.1"
+      ],
+      [
+        "Select seq pdb|1A00|A",
+        "Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "99%",
+        "5e-96",
+        "100.00%",
+        "141",
+        "1A00_A"
+      ],
+      [
+        "Select seq dbj|BAD97112.1|",
+        "alpha 2 globin variant, partial [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "284",
+        "100%",
+        "6e-96",
+        "99.30%",
+        "142",
+        "BAD97112.1"
+      ],
+      [
+        "Select seq ref|XP_010380159.1|",
+        "hemoglobin subunit alpha [Rhinopithecus roxellana]",
+        "Rhinopithecus roxellana",
+        "golden snub-nosed monkey",
+        "61622",
+        "283",
+        "283",
+        "100%",
+        "6e-96",
+        "98.59%",
+        "142",
+        "XP_010380159.1"
+      ],
+      [
+        "Select seq gb|AAR29173.1|",
+        "alpha-2 globin [Pongo pygmaeus]",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "283",
+        "283",
+        "100%",
+        "8e-96",
+        "98.59%",
+        "142",
+        "AAR29173.1"
+      ],
+      [
+        "Select seq ref|XP_063555904.1|",
+        "hemoglobin subunit alpha-like [Gorilla gorilla gorilla]",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "285",
+        "285",
+        "100%",
+        "1e-95",
+        "99.30%",
+        "177",
+        "XP_063555904.1"
+      ],
+      [
+        "Select seq gb|AFI57164.1|",
+        "hemoglobin alpha 1 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "283",
+        "283",
+        "100%",
+        "1e-95",
+        "99.30%",
+        "142",
+        "AFI57164.1"
+      ],
+      [
+        "Select seq pdb|1BZZ|A",
+        "Chain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "283",
+        "283",
+        "99%",
+        "1e-95",
+        "99.29%",
+        "141",
+        "1BZZ_A"
+      ],
+      [
+        "Select seq pdb|4MQC|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "283",
+        "283",
+        "99%",
+        "1e-95",
+        "99.29%",
+        "141",
+        "4MQC_A"
+      ],
+      [
+        "Select seq pdb|1AJ9|A",
+        "Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "283",
+        "283",
+        "99%",
+        "1e-95",
+        "99.29%",
+        "141",
+        "1AJ9_A"
+      ],
+      [
+        "Select seq pdb|5SW7|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "282",
+        "282",
+        "99%",
+        "2e-95",
+        "99.29%",
+        "142",
+        "5SW7_A"
+      ],
+      [
+        "Select seq ref|XP_030780270.1|",
+        "hemoglobin subunit alpha-like [Rhinopithecus roxellana]",
+        "Rhinopithecus roxellana",
+        "golden snub-nosed monkey",
+        "61622",
+        "284",
+        "284",
+        "100%",
+        "2e-95",
+        "98.59%",
+        "177",
+        "XP_030780270.1"
+      ],
+      [
+        "Select seq pdb|7DY4|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "282",
+        "282",
+        "99%",
+        "2e-95",
+        "99.29%",
+        "141",
+        "7DY4_A"
+      ],
+      [
+        "Select seq pdb|7DY3|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "282",
+        "282",
+        "99%",
+        "2e-95",
+        "99.29%",
+        "141",
+        "7DY3_A"
+      ],
+      [
+        "Select seq pdb|9S3P|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "282",
+        "282",
+        "99%",
+        "2e-95",
+        "100.00%",
+        "140",
+        "9S3P_A"
+      ],
+      [
+        "Select seq sp|P01923.1|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "282",
+        "282",
+        "99%",
+        "2e-95",
+        "99.29%",
+        "141",
+        "P01923.1"
+      ],
+      [
+        "Select seq pdb|1O1O|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "4e-95",
+        "98.58%",
+        "141",
+        "1O1O_A"
+      ],
+      [
+        "Select seq pdb|1Y0D|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "5e-95",
+        "100.00%",
+        "140",
+        "1Y0D_A"
+      ],
+      [
+        "Select seq pdb|1A3O|A",
+        "Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "5e-95",
+        "99.29%",
+        "141",
+        "1A3O_A"
+      ],
+      [
+        "Select seq sp|Q9TS35.2|",
+        "RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]",
+        "Hylobates lar",
+        "common gibbon",
+        "9580",
+        "281",
+        "281",
+        "100%",
+        "6e-95",
+        "98.59%",
+        "142",
+        "Q9TS35.2"
+      ],
+      [
+        "Select seq pdb|1Y0C|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "6e-95",
+        "98.58%",
+        "141",
+        "1Y0C_A"
+      ],
+      [
+        "Select seq pdb|1RVW|A",
+        "Chain A, HEMOGLOBIN [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "6e-95",
+        "99.29%",
+        "141",
+        "1RVW_A"
+      ],
+      [
+        "Select seq pdb|1R1X|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "99%",
+        "6e-95",
+        "99.29%",
+        "141",
+        "1R1X_A"
+      ],
+      [
+        "Select seq gb|KAL4682940.1|",
+        "hypothetical protein H8957_006364 [Semnopithecus entellus]",
+        "Semnopithecus entellus",
+        "Hanuman langur",
+        "88029",
+        "281",
+        "281",
+        "100%",
+        "7e-95",
+        "97.89%",
+        "142",
+        "KAL4682940.1"
+      ],
+      [
+        "Select seq ref|XP_054309248.2|",
+        "hemoglobin subunit alpha [Pongo pygmaeus]",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "281",
+        "281",
+        "100%",
+        "8e-95",
+        "97.89%",
+        "142",
+        "XP_054309248.2"
+      ],
+      [
+        "Select seq pdb|7QU4|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "281",
+        "100%",
+        "8e-95",
+        "97.18%",
+        "142",
+        "7QU4_A"
+      ],
+      [
+        "Select seq pdb|1XZ5|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "98.58%",
+        "141",
+        "1XZ5_A"
+      ],
+      [
+        "Select seq pdb|3NMM|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "99.29%",
+        "141",
+        "3NMM_A"
+      ],
+      [
+        "Select seq pdb|3QJB|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "99.29%",
+        "141",
+        "3QJB_A"
+      ],
+      [
+        "Select seq pdb|1XY0|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "98.58%",
+        "141",
+        "1XY0_A"
+      ],
+      [
+        "Select seq pdb|2W72|A",
+        "Chain A, HUMAN HEMOGLOBIN A [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "98.58%",
+        "141",
+        "2W72_A"
+      ],
+      [
+        "Select seq pdb|1XZV|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "1e-94",
+        "98.58%",
+        "141",
+        "1XZV_A"
+      ],
+      [
+        "Select seq pdb|1XZU|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "2e-94",
+        "98.58%",
+        "141",
+        "1XZU_A"
+      ],
+      [
+        "Select seq gb|AXY54999.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "100%",
+        "2e-94",
+        "99.30%",
+        "141",
+        "AXY54999.1"
+      ],
+      [
+        "Select seq gb|AXY55000.1|",
+        "mutant hemoglobin subunit alpha 2 [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "100%",
+        "2e-94",
+        "99.30%",
+        "141",
+        "AXY55000.1"
+      ],
+      [
+        "Select seq ref|XP_055099075.1|",
+        "hemoglobin subunit alpha-1 [Symphalangus syndactylus]",
+        "Symphalangus syndactylus",
+        "siamang",
+        "9590",
+        "280",
+        "280",
+        "100%",
+        "2e-94",
+        "97.89%",
+        "142",
+        "XP_055099075.1"
+      ],
+      [
+        "Select seq pdb|1Y09|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "2e-94",
+        "98.58%",
+        "141",
+        "1Y09_A"
+      ],
+      [
+        "Select seq pdb|1GLI|A",
+        "Chain A, DEOXYHEMOGLOBIN [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "2e-94",
+        "98.58%",
+        "141",
+        "1GLI_A"
+      ],
+      [
+        "Select seq pdb|6BB5|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "98%",
+        "2e-94",
+        "100.00%",
+        "139",
+        "6BB5_A"
+      ],
+      [
+        "Select seq pdb|1XZ7|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "280",
+        "99%",
+        "2e-94",
+        "98.58%",
+        "141",
+        "1XZ7_A"
+      ],
+      [
+        "Select seq gb|KAL4835551.1|",
+        "hypothetical protein H8958_000280 [Nasalis larvatus]",
+        "Nasalis larvatus",
+        "proboscis monkey",
+        "43780",
+        "280",
+        "280",
+        "100%",
+        "2e-94",
+        "97.18%",
+        "142",
+        "KAL4835551.1"
+      ],
+      [
+        "Select seq ref|XP_003269148.1|",
+        "hemoglobin subunit alpha-1 [Nomascus leucogenys]",
+        "Nomascus leucogenys",
+        "northern white-cheeked gibbon",
+        "61853",
+        "280",
+        "280",
+        "100%",
+        "3e-94",
+        "97.89%",
+        "142",
+        "XP_003269148.1"
+      ],
+      [
+        "Select seq pdb|1O1I|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "279",
+        "279",
+        "99%",
+        "3e-94",
+        "97.87%",
+        "141",
+        "1O1I_A"
+      ],
+      [
+        "Select seq pdb|1XYE|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "279",
+        "279",
+        "99%",
+        "3e-94",
+        "98.58%",
+        "141",
+        "1XYE_A"
+      ],
+      [
+        "Select seq pdb|1Y0A|A",
+        "Chain A, Hemoglobin alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "279",
+        "279",
+        "99%",
+        "3e-94",
+        "98.58%",
+        "141",
+        "1Y0A_A"
+      ],
+      [
+        "Select seq ref|XP_033092341.1|",
+        "hemoglobin subunit alpha [Trachypithecus francoisi]",
+        "Trachypithecus francoisi",
+        "Francois's langur",
+        "54180",
+        "279",
+        "279",
+        "100%",
+        "3e-94",
+        "97.18%",
+        "142",
+        "XP_033092341.1"
+      ],
+      [
+        "Select seq ref|XP_035122196.3|",
+        "hemoglobin subunit alpha [Callithrix jacchus]",
+        "Callithrix jacchus",
+        "white-tufted-ear marmoset",
+        "9483",
+        "279",
+        "279",
+        "100%",
+        "4e-94",
+        "97.18%",
+        "142",
+        "XP_035122196.3"
+      ],
+      [
+        "Select seq pdb|1J7S|A",
+        "Chain A, Hemoglobin [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "279",
+        "279",
+        "99%",
+        "5e-94",
+        "97.87%",
+        "141",
+        "1J7S_A"
+      ],
+      [
+        "Select seq pdb|1ABW|A",
+        "Chain A, HEMOGLOBIN-BASED BLOOD SUBSTITUTE [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "567",
+        "99%",
+        "6e-94",
+        "100.00%",
+        "283",
+        "1ABW_A"
+      ],
+      [
+        "Select seq ref|XP_024089067.2|",
+        "hemoglobin subunit alpha [Pongo abelii]",
+        "Pongo abelii",
+        "Sumatran orangutan",
+        "9601",
+        "280",
+        "280",
+        "100%",
+        "6e-94",
+        "97.89%",
+        "177",
+        "XP_024089067.2"
+      ],
+      [
+        "Select seq pdb|1C7D|A",
+        "Chain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "284",
+        "567",
+        "99%",
+        "7e-94",
+        "100.00%",
+        "284",
+        "1C7D_A"
+      ],
+      [
+        "Select seq ref|XP_054309249.2|",
+        "hemoglobin subunit alpha [Pongo pygmaeus]",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "280",
+        "280",
+        "100%",
+        "7e-94",
+        "97.89%",
+        "177",
+        "XP_054309249.2"
+      ],
+      [
+        "Select seq ref|XP_055099076.2|",
+        "hemoglobin subunit alpha-1 [Symphalangus syndactylus]",
+        "Symphalangus syndactylus",
+        "siamang",
+        "9590",
+        "280",
+        "280",
+        "100%",
+        "7e-94",
+        "97.89%",
+        "177",
+        "XP_055099076.2"
+      ],
+      [
+        "Select seq sp|P01924.1|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]",
+        "Semnopithecus entellus",
+        "Hanuman langur",
+        "88029",
+        "278",
+        "278",
+        "99%",
+        "7e-94",
+        "97.87%",
+        "141",
+        "P01924.1"
+      ],
+      [
+        "Select seq sp|P63107.2|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata]",
+        "Macaca fuscata fuscata",
+        "Japanese macaque",
+        "9543",
+        "278",
+        "278",
+        "100%",
+        "8e-94",
+        "97.18%",
+        "142",
+        "P63107.2"
+      ],
+      [
+        "Select seq gb|AYO89356.1|",
+        "hemoglobin subunit alpha [Nasalis larvatus]",
+        "Nasalis larvatus",
+        "proboscis monkey",
+        "43780",
+        "278",
+        "278",
+        "100%",
+        "1e-93",
+        "96.48%",
+        "142",
+        "AYO89356.1"
+      ],
+      [
+        "Select seq ref|XP_030654647.1|",
+        "hemoglobin subunit alpha-1-like [Nomascus leucogenys]",
+        "Nomascus leucogenys",
+        "northern white-cheeked gibbon",
+        "61853",
+        "278",
+        "278",
+        "100%",
+        "1e-93",
+        "97.18%",
+        "142",
+        "XP_030654647.1"
+      ],
+      [
+        "Select seq prf||0404170A",
+        "hemoglobin alphaI [Pongo pygmaeus]",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "278",
+        "278",
+        "99%",
+        "1e-93",
+        "97.87%",
+        "141",
+        "0404170A"
+      ],
+      [
+        "Select seq ref|XP_009007060.3|",
+        "hemoglobin subunit alpha [Callithrix jacchus]",
+        "Callithrix jacchus",
+        "white-tufted-ear marmoset",
+        "9483",
+        "279",
+        "279",
+        "100%",
+        "1e-93",
+        "97.18%",
+        "177",
+        "XP_009007060.3"
+      ],
+      [
+        "Select seq ref|XP_050630719.1|",
+        "hemoglobin subunit alpha-A/Q/R/T [Macaca thibetana thibetana]",
+        "Macaca thibetana thibetana",
+        "NA",
+        "257877",
+        "278",
+        "278",
+        "100%",
+        "1e-93",
+        "97.18%",
+        "142",
+        "XP_050630719.1"
+      ],
+      [
+        "Select seq ref|XP_012324138.1|",
+        "hemoglobin subunit alpha [Aotus nancymaae]",
+        "Aotus nancymaae",
+        "Ma's night monkey",
+        "37293",
+        "278",
+        "278",
+        "100%",
+        "2e-93",
+        "96.48%",
+        "142",
+        "XP_012324138.1"
+      ],
+      [
+        "Select seq ref|XP_033092340.1|",
+        "translation initiation factor IF-2-like [Trachypithecus francoisi]",
+        "Trachypithecus francoisi",
+        "Francois's langur",
+        "54180",
+        "284",
+        "284",
+        "100%",
+        "2e-93",
+        "97.18%",
+        "327",
+        "XP_033092340.1"
+      ],
+      [
+        "Select seq pdb|4MQH|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "277",
+        "277",
+        "98%",
+        "2e-93",
+        "99.28%",
+        "139",
+        "4MQH_A"
+      ],
+      [
+        "Select seq ref|XP_032004373.1|",
+        "hemoglobin subunit alpha [Hylobates moloch]",
+        "Hylobates moloch",
+        "silvery gibbon",
+        "81572",
+        "277",
+        "277",
+        "100%",
+        "2e-93",
+        "97.18%",
+        "142",
+        "XP_032004373.1"
+      ],
+      [
+        "Select seq ref|XP_011815457.1|",
+        "PREDICTED: hemoglobin subunit alpha isoform X1 [Colobus angolensis palliatus]",
+        "Colobus angolensis palliatus",
+        "NA",
+        "336983",
+        "277",
+        "277",
+        "100%",
+        "2e-93",
+        "96.48%",
+        "142",
+        "XP_011815457.1"
+      ],
+      [
+        "Select seq sp|P67817.2|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]",
+        "Ateles geoffroyi",
+        "black-handed spider monkey",
+        "9509",
+        "277",
+        "277",
+        "100%",
+        "3e-93",
+        "96.48%",
+        "142",
+        "P67817.2"
+      ],
+      [
+        "Select seq gb|EHH60005.1|",
+        "Hemoglobin alpha chain [Macaca fascicularis]",
+        "Macaca fascicularis",
+        "crab-eating macaque",
+        "9541",
+        "277",
+        "277",
+        "100%",
+        "3e-93",
+        "97.18%",
+        "142",
+        "EHH60005.1"
+      ],
+      [
+        "Select seq sp|Q9TS34.2|",
+        "RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]",
+        "Hylobates lar",
+        "common gibbon",
+        "9580",
+        "277",
+        "277",
+        "100%",
+        "3e-93",
+        "96.48%",
+        "142",
+        "Q9TS34.2"
+      ],
+      [
+        "Select seq sp|P18972.1|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]",
+        "Mico argentatus",
+        "silvery marmoset",
+        "9482",
+        "276",
+        "276",
+        "99%",
+        "3e-93",
+        "97.16%",
+        "141",
+        "P18972.1"
+      ],
+      [
+        "Select seq ref|NP_001253705.1|",
+        "hemoglobin subunit alpha [Macaca mulatta]",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "276",
+        "276",
+        "100%",
+        "4e-93",
+        "96.48%",
+        "142",
+        "NP_001253705.1"
+      ],
+      [
+        "Select seq prf||681081A",
+        "hemoglobin alpha [Macaca mulatta]",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "276",
+        "276",
+        "99%",
+        "5e-93",
+        "97.16%",
+        "141",
+        "681081A"
+      ],
+      [
+        "Select seq pdb|1O1N|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "561",
+        "99%",
+        "7e-93",
+        "99.29%",
+        "285",
+        "1O1N_A"
+      ],
+      [
+        "Select seq ref|NP_001038189.1|",
+        "hemoglobin subunit alpha [Macaca mulatta]",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "276",
+        "276",
+        "100%",
+        "9e-93",
+        "96.48%",
+        "142",
+        "NP_001038189.1"
+      ],
+      [
+        "Select seq gb|AYO89359.1|",
+        "hemoglobin subunit alpha [Cercopithecus wolfi]",
+        "Cercopithecus wolfi",
+        "Wolf's monkey",
+        "263448",
+        "276",
+        "276",
+        "100%",
+        "9e-93",
+        "96.48%",
+        "142",
+        "AYO89359.1"
+      ],
+      [
+        "Select seq sp|P21767.1|",
+        "RecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]",
+        "Macaca fascicularis",
+        "crab-eating macaque",
+        "9541",
+        "275",
+        "275",
+        "99%",
+        "1e-92",
+        "97.16%",
+        "141",
+        "P21767.1"
+      ],
+      [
+        "Select seq ref|XP_017377050.2|",
+        "hemoglobin subunit alpha [Cebus imitator]",
+        "Cebus imitator",
+        "Panamanian white-faced capuchin",
+        "2715852",
+        "275",
+        "275",
+        "100%",
+        "1e-92",
+        "95.77%",
+        "142",
+        "XP_017377050.2"
+      ],
+      [
+        "Select seq pdb|1O1M|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "281",
+        "560",
+        "99%",
+        "1e-92",
+        "98.58%",
+        "285",
+        "1O1M_A"
+      ],
+      [
+        "Select seq pdb|1O1J|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "560",
+        "99%",
+        "1e-92",
+        "98.58%",
+        "283",
+        "1O1J_A"
+      ],
+      [
+        "Select seq pdb|5WOG|A",
+        "Chain A, Hemoglobin subunit alpha [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "275",
+        "275",
+        "96%",
+        "1e-92",
+        "100.00%",
+        "137",
+        "5WOG_A"
+      ],
+      [
+        "Select seq sp|P67818.1|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]",
+        "Saguinus oedipus",
+        "cotton-top tamarin",
+        "9490",
+        "275",
+        "275",
+        "99%",
+        "2e-92",
+        "96.45%",
+        "141",
+        "P67818.1"
+      ],
+      [
+        "Select seq sp|P21766.1|",
+        "RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]",
+        "Macaca assamensis",
+        "Assam macaque",
+        "9551",
+        "275",
+        "275",
+        "99%",
+        "3e-92",
+        "97.16%",
+        "141",
+        "P21766.1"
+      ],
+      [
+        "Select seq tpe|SAI82172.1|",
+        "TPA: globin C1 [Macaca mulatta]",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "276",
+        "276",
+        "100%",
+        "3e-92",
+        "96.48%",
+        "177",
+        "SAI82172.1"
+      ],
+      [
+        "Select seq sp|P01929.1|",
+        "RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]",
+        "Leontocebus fuscicollis",
+        "brown-headed tamarin",
+        "9487",
+        "274",
+        "274",
+        "99%",
+        "3e-92",
+        "96.45%",
+        "141",
+        "P01929.1"
+      ],
+      [
+        "Select seq pdb|1O1L|A",
+        "Chain A, Hemoglobin Alpha chain [Homo sapiens]",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "280",
+        "558",
+        "99%",
+        "3e-92",
+        "98.58%",
+        "283",
+        "1O1L_A"
+      ],
+      [
+        "Select seq ref|XP_003928392.1|",
+        "hemoglobin subunit alpha [Saimiri boliviensis]",
+        "Saimiri boliviensis",
+        "Bolivian squirrel monkey",
+        "27679",
+        "274",
+        "274",
+        "100%",
+        "4e-92",
+        "95.77%",
+        "142",
+        "XP_003928392.1"
+      ],
+      [
+        "Select seq ref|XP_050630718.1|",
+        "hemoglobin subunit alpha-A/Q/R/T-like [Macaca thibetana thibetana]",
+        "Macaca thibetana thibetana",
+        "NA",
+        "257877",
+        "275",
+        "275",
+        "100%",
+        "4e-92",
+        "96.48%",
+        "177",
+        "XP_050630718.1"
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Method",
+        "Identities",
+        "Positives",
+        "Gaps",
+        "Frame"
+      ],
+      [
+        "287 bits(734)",
+        "3e-97()",
+        "Compositional matrix adjust.",
+        "142/142(100%)",
+        "142/142(100%)",
+        "0/142(0%)",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Method",
+        "Identities",
+        "Positives",
+        "Gaps",
+        "Frame"
+      ],
+      [
+        "286 bits(733)",
+        "5e-97()",
+        "Compositional matrix adjust.",
+        "142/142(100%)",
+        "142/142(100%)",
+        "0/142(0%)",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Method",
+        "Identities",
+        "Positives",
+        "Gaps",
+        "Frame"
+      ],
+      [
+        "286 bits(733)",
+        "6e-97()",
+        "Compositional matrix adjust.",
+        "142/142(100%)",
+        "142/142(100%)",
+        "0/142(0%)",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Method",
+        "Identities",
+        "Positives",
+        "Gaps",
+        "Frame"
+      ],
+      [
+        "286 bits(731)",
+        "8e-97()",
+        "Compositional matrix adjust.",
+        "141/142(99%)",
+        "142/142(100%)",
+        "0/142(0%)",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Method",
+        "Identities",
+        "Positives",
+        "Gaps",
+        "Frame"
+      ],
+      [
+        "286 bits(731)",
+        "9e-97()",
+        "Compositional matrix adjust.",
+        "141/142(99%)",
+        "142/142(100%)",
+        "0/142(0%)",
+        ""
+      ]
+    ],
+    [
+      [
+        "Organism",
+        "Blast Name",
+        "Score",
+        "Number of Hits",
+        "Description"
+      ],
+      [
+        "root",
+        "",
+        "",
+        "842",
+        ""
+      ],
+      [
+        ".synthetic construct",
+        "other sequences",
+        "287",
+        "2",
+        "\n\nsynthetic construct hits  \n\n"
+      ],
+      [
+        ".Homo sapiens",
+        "primates",
+        "286",
+        "735",
+        "\n\nHomo sapiens hits  \n\n"
+      ],
+      [
+        ".Pan troglodytes",
+        "primates",
+        "286",
+        "4",
+        "\n\nPan troglodytes hits  \n\n"
+      ],
+      [
+        ".Pongo abelii",
+        "primates",
+        "286",
+        "3",
+        "\n\nPongo abelii hits  \n\n"
+      ],
+      [
+        ".Pan paniscus",
+        "primates",
+        "286",
+        "4",
+        "\n\nPan paniscus hits  \n\n"
+      ],
+      [
+        ".Gorilla gorilla gorilla",
+        "primates",
+        "285",
+        "3",
+        "\n\nGorilla gorilla gorilla hits  \n\n"
+      ],
+      [
+        ".unidentified",
+        "unclassified sequences",
+        "284",
+        "2",
+        "\n\nunidentified hits  \n\n"
+      ],
+      [
+        ".Rhinopithecus roxellana",
+        "primates",
+        "283",
+        "2",
+        "\n\nRhinopithecus roxellana hits  \n\n"
+      ],
+      [
+        ".Pongo pygmaeus",
+        "primates",
+        "283",
+        "13",
+        "\n\nPongo pygmaeus hits  \n\n"
+      ],
+      [
+        ".Gorilla gorilla",
+        "primates",
+        "282",
+        "1",
+        "\n\nGorilla gorilla hits  \n\n"
+      ],
+      [
+        ".Hylobates lar",
+        "primates",
+        "281",
+        "5",
+        "\n\nHylobates lar hits  \n\n"
+      ],
+      [
+        ".Semnopithecus entellus",
+        "primates",
+        "281",
+        "2",
+        "\n\nSemnopithecus entellus hits  \n\n"
+      ],
+      [
+        ".Symphalangus syndactylus",
+        "primates",
+        "280",
+        "2",
+        "\n\nSymphalangus syndactylus hits  \n\n"
+      ],
+      [
+        ".Nasalis larvatus",
+        "primates",
+        "280",
+        "2",
+        "\n\nNasalis larvatus hits  \n\n"
+      ],
+      [
+        ".Nomascus leucogenys",
+        "primates",
+        "280",
+        "3",
+        "\n\nNomascus leucogenys hits  \n\n"
+      ],
+      [
+        ".Trachypithecus francoisi",
+        "primates",
+        "279",
+        "3",
+        "\n\nTrachypithecus francoisi hits  \n\n"
+      ],
+      [
+        ".Callithrix jacchus",
+        "primates",
+        "279",
+        "4",
+        "\n\nCallithrix jacchus hits  \n\n"
+      ],
+      [
+        ".Callithrix geoffroyi",
+        "primates",
+        "279",
+        "1",
+        "\n\nCallithrix geoffroyi hits  \n\n"
+      ],
+      [
+        ".Macaca fuscata fuscata",
+        "primates",
+        "278",
+        "1",
+        "\n\nMacaca fuscata fuscata hits  \n\n"
+      ],
+      [
+        ".Macaca mulatta",
+        "primates",
+        "278",
+        "8",
+        "\n\nMacaca mulatta hits  \n\n"
+      ],
+      [
+        ".Macaca thibetana thibetana",
+        "primates",
+        "278",
+        "2",
+        "\n\nMacaca thibetana thibetana hits  \n\n"
+      ],
+      [
+        ".Miopithecus talapoin",
+        "primates",
+        "278",
+        "1",
+        "\n\nMiopithecus talapoin hits  \n\n"
+      ],
+      [
+        ".Aotus nancymaae",
+        "primates",
+        "278",
+        "3",
+        "\n\nAotus nancymaae hits  \n\n"
+      ],
+      [
+        ".Hylobates moloch",
+        "primates",
+        "277",
+        "2",
+        "\n\nHylobates moloch hits  \n\n"
+      ],
+      [
+        ".Colobus angolensis palliatus",
+        "primates",
+        "277",
+        "1",
+        "\n\nColobus angolensis palliatus hits  \n\n"
+      ],
+      [
+        ".Colobus guereza",
+        "primates",
+        "277",
+        "1",
+        "\n\nColobus guereza hits  \n\n"
+      ],
+      [
+        ".Ateles geoffroyi",
+        "primates",
+        "277",
+        "2",
+        "\n\nAteles geoffroyi hits  \n\n"
+      ],
+      [
+        ".Plecturocebus moloch",
+        "primates",
+        "277",
+        "4",
+        "\n\nPlecturocebus moloch hits  \n\n"
+      ],
+      [
+        ".Saguinus oedipus",
+        "primates",
+        "277",
+        "3",
+        "\n\nSaguinus oedipus hits  \n\n"
+      ],
+      [
+        ".Macaca fascicularis",
+        "primates",
+        "277",
+        "6",
+        "\n\nMacaca fascicularis hits  \n\n"
+      ],
+      [
+        ".Mico argentatus",
+        "primates",
+        "276",
+        "2",
+        "\n\nMico argentatus hits  \n\n"
+      ],
+      [
+        ".Chlorocebus sabaeus",
+        "primates",
+        "276",
+        "2",
+        "\n\nChlorocebus sabaeus hits  \n\n"
+      ],
+      [
+        ".Chlorocebus aethiops",
+        "primates",
+        "276",
+        "2",
+        "\n\nChlorocebus aethiops hits  \n\n"
+      ],
+      [
+        ".Erythrocebus patas",
+        "primates",
+        "276",
+        "1",
+        "\n\nErythrocebus patas hits  \n\n"
+      ],
+      [
+        ".Allenopithecus nigroviridis",
+        "primates",
+        "276",
+        "1",
+        "\n\nAllenopithecus nigroviridis hits  \n\n"
+      ],
+      [
+        ".Cercopithecus wolfi",
+        "primates",
+        "276",
+        "1",
+        "\n\nCercopithecus wolfi hits  \n\n"
+      ],
+      [
+        ".Cebus imitator",
+        "primates",
+        "275",
+        "1",
+        "\n\nCebus imitator hits  \n\n"
+      ],
+      [
+        ".Sapajus apella",
+        "primates",
+        "275",
+        "3",
+        "\n\nSapajus apella hits  \n\n"
+      ],
+      [
+        ".Macaca assamensis",
+        "primates",
+        "275",
+        "1",
+        "\n\nMacaca assamensis hits  \n\n"
+      ],
+      [
+        ".Leontocebus fuscicollis",
+        "primates",
+        "274",
+        "1",
+        "\n\nLeontocebus fuscicollis hits  \n\n"
+      ],
+      [
+        ".Saimiri boliviensis",
+        "primates",
+        "274",
+        "2",
+        "\n\nSaimiri boliviensis hits  \n\n"
+      ]
+    ],
+    [
+      [
+        "Description",
+        "Score",
+        "E value",
+        "Accession"
+      ],
+      [
+        "\n\nsynthetic construct  [other sequences]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin alpha 2, partial [synthetic construct]\n\n",
+        "287",
+        "3e-97",
+        "\nAAX29522\n"
+      ],
+      [
+        "\n\nhemoglobin alpha 2 [synthetic construct]\n\n",
+        "286",
+        "5e-97",
+        "\nAAX36652\n"
+      ],
+      [
+        "\n\nHomo sapiens (human) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nNP_000508\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nNP_000549\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nP69905\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n1BZ1_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n1BZ1_C\n"
+      ],
+      [
+        "\n\nChain B, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n1Y01_B\n"
+      ],
+      [
+        "\n\nChain B, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n1Z8U_B\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n1Z8U_D\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n6KYE_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7CUE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7CUE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7K4M_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7K4M_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7K4M_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7K4M_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7K4M_I\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UD7_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UD7_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UD8_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UD8_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UF6_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UF6_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UF7_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7UF7_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7VDE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7VDE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7XGY_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n7XGY_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8EGI_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8EGI_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8VYL_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8VYL_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8WJ0_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8WJ1_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8WJ2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8XMP_C\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8XMQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n8XMW_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9FHB_A\n"
+      ],
+      [
+        "\n\nChain A, Hemopressin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9FMU_A\n"
+      ],
+      [
+        "\n\nChain A, Hemopressin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9FNO_A\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9HEJ_D\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9HEK_D\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9NB6_D\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9NB8_D\n"
+      ],
+      [
+        "\n\nChain D, Hemopressin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9TQD_D\n"
+      ],
+      [
+        "\n\nChain F, Hemopressin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9TQD_F\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9VIB_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\n9VIC_A\n"
+      ],
+      [
+        "\n\nhemoglobin alpha 2 [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nAAB59407\n"
+      ],
+      [
+        "\n\nhemoglobin alpha 1 [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nAAB59408\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nAAC72839\n"
+      ],
+      [
+        "\n\nalpha one globin [Homo sapiens]\n\n",
+        "286",
+        "5e-97",
+        "\nAAC97373\n"
+      ],
+      [
+        "\n\nChain B, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "6e-97",
+        "\n3IA3_B\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "286",
+        "6e-97",
+        "\n3IA3_D\n"
+      ],
+      [
+        "\n\nmutant hemoglobin alpha 2 globin chain [Homo sapiens]\n\n",
+        "286",
+        "8e-97",
+        "\nAKZ66543\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "286",
+        "9e-97",
+        "\nAXY55002\n"
+      ],
+      [
+        "\n\nhemoglobin alpha-2 [Homo sapiens]\n\n",
+        "285",
+        "1e-96",
+        "\nAAN04486\n"
+      ],
+      [
+        "\n\nalpha-2-globin [Homo sapiens]\n\n",
+        "285",
+        "2e-96",
+        "\nAAF72612\n"
+      ],
+      [
+        "\n\nTPA: globin C1 [Homo sapiens]\n\n",
+        "286",
+        "2e-96",
+        "\nSAI82135\n"
+      ],
+      [
+        "\n\nTPA: globin C2 [Homo sapiens]\n\n",
+        "286",
+        "2e-96",
+        "\nSAI82136\n"
+      ],
+      [
+        "\n\nhemoglobin alpha 1-2 hybrid [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\nABF56145\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\nAXY54998\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\nAXY55003\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\nAXY55001\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\n1BAB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "4e-96",
+        "\n1BAB_C\n"
+      ],
+      [
+        "\n\nhemoglobin alpha-1 globin chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\nAAK37554\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A00_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A00_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A01_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A01_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A0U_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A0U_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A0Z_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A0Z_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A3N_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A3N_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A9W_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1A9W_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN; ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1B86_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN; ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1B86_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BBB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BBB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BIJ_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BIJ_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BUW_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BUW_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BZ0_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1BZ0_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1CLS_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1CLS_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN YPSILANTI (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1CMY_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN YPSILANTI (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1CMY_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (FERROUS CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1COH_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (FERROUS CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1COH_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN: ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DKE_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN: ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DKE_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXT_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXT_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXU_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXU_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXV_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1DXV_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN F (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1FDH_A\n"
+      ],
+      [
+        "\n\nChain B, HEMOGLOBIN F (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1FDH_B\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1FN3_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1FN3_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1G9V_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1G9V_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GBU_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GBU_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GBV_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GBV_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GZX_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1GZX_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HAB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HAB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HAC_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HAC_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN ROTHSCHILD (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBA_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN ROTHSCHILD (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBA_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN S (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBS_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN S (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBS_C\n"
+      ],
+      [
+        "\n\nChain E, HEMOGLOBIN S (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBS_E\n"
+      ],
+      [
+        "\n\nChain G, HEMOGLOBIN S (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HBS_G\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HCO_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) BETA-V67T [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HDB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) BETA-V67T [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HDB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGA_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGA_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (AQUO MET) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (AQUO MET) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (OXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGC_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (OXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HGC_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (OXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1HHO_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1IRD_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Y_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Y_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Y_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Y_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Z_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Z_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Z_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J3Z_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J40_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J40_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J40_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J40_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J41_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J41_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J41_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha Chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1J41_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_C\n"
+      ],
+      [
+        "\n\nChain P, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_P\n"
+      ],
+      [
+        "\n\nChain R, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_R\n"
+      ],
+      [
+        "\n\nChain U, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_U\n"
+      ],
+      [
+        "\n\nChain W, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1JY7_W\n"
+      ],
+      [
+        "\n\nChain A, hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1K0Y_A\n"
+      ],
+      [
+        "\n\nChain C, hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1K0Y_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1K1K_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1KD2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1KD2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFL_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFL_C\n"
+      ],
+      [
+        "\n\nChain P, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFL_P\n"
+      ],
+      [
+        "\n\nChain R, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFL_R\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFQ_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFT_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFV_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFY_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LFZ_A\n"
+      ],
+      [
+        "\n\nChain A, hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1LJW_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1M9P_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1M9P_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1MKO_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1MKO_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NEJ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NEJ_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (NICKELOUS DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NIH_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (NICKELOUS DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NIH_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NQP_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1NQP_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QSH_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QSH_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QSI_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QSI_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QXD_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QXD_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QXE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1QXE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RPS_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RPS_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQ3_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQ3_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQ4_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQ4_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQA_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1RQA_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SDK_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SDK_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SDL_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SDL_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SHR_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SHR_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SI4_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1SI4_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (OXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1THB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN A (OXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1THB_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1UIW_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1UIW_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1UIW_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1UIW_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1XXT_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1XXT_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1XZ2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1XZ2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y0T_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y0T_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y0W_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y0W_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y22_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y22_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y2Z_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y2Z_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y31_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y31_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y35_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y35_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y45_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y45_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y46_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y46_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4B_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4B_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4F_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4F_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4G_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4G_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4P_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4P_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4Q_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4Q_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4R_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4R_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4V_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y4V_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5F_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5F_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5J_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5J_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5K_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y5K_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7C_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7C_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7D_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7D_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7G_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7G_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7Z_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y7Z_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y83_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y83_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y85_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1Y85_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE0_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE0_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE1_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE1_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YE2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEN_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEN_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEO_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEO_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEU_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEU_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEV_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YEV_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YFF_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YFF_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YFF_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YFF_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YG5_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YG5_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YGD_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YGD_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YGF_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YGF_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YH9_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YH9_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YHE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YHE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YHR_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YHR_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YIE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YIE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YIH_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YIH_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YVQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YVQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YVT_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n1YZI_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n28OD_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n28OD_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2D5Z_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2D5Z_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2D60_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2D60_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DN1_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DN2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DN2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DN3_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DXM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2DXM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2H35_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha subunit [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2H35_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (ETHYL ISOCYANIDE) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBC_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (METHYL ISOCYANIDE) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBD_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (N-BUTYL ISOCYANIDE) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBE_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN A (N-PROPYL ISOCYANIDE) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBF_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN S (DEOXY), ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBS_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN S (DEOXY), ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBS_C\n"
+      ],
+      [
+        "\n\nChain E, HEMOGLOBIN S (DEOXY), ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBS_E\n"
+      ],
+      [
+        "\n\nChain G, HEMOGLOBIN S (DEOXY), ALPHA CHAIN [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HBS_G\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (CARBONMONOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HCO_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHB_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHD_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHD_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHE_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2HHE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2M6Z_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2M6Z_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN SUBUNIT ALPHA [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2W6V_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN SUBUNIT ALPHA [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2W6V_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2YRS_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2YRS_C\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2YRS_I\n"
+      ],
+      [
+        "\n\nChain M, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n2YRS_M\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3B75_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3B75_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3B75_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3B75_G\n"
+      ],
+      [
+        "\n\nChain S, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3B75_S\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3D7O_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3DUT_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3DUT_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3HHB_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3HHB_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3HXN_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3HXN_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3IC0_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3IC0_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3IC2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3IC2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3KMF_A\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3KMF_E\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3NL7_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3ODQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3ODQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3ONZ_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3OO4_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3OO5_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3OVU_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3P5Q_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3QJC_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3QJE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3QJE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3R5I_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3R5I_C\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3S48_C\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3S48_D\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3S65_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3S65_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3S66_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3SZK_A\n"
+      ],
+      [
+        "\n\nChain D, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3SZK_D\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3WCP_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3WCP_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3WHM_A\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n3WHM_E\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4FC3_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4HHB_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4HHB_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4IJ2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4IJ2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4L7Y_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4L7Y_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4M4A_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4M4B_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQG_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQJ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQJ_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQJ_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQJ_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQK_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQK_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQK_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4MQK_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7N_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7O_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N7P_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4N8T_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4NI0_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4NI1_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4ROL_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4ROL_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4ROM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4ROM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_A\n"
+      ],
+      [
+        "\n\nChain F, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_F\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_K\n"
+      ],
+      [
+        "\n\nChain P, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_P\n"
+      ],
+      [
+        "\n\nChain U, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_U\n"
+      ],
+      [
+        "\n\nChain Z, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4WJG_Z\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4X0L_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n4XS0_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5E29_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5E29_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5E6E_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5E83_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5E83_C\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5EE4_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5EE4_E\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HU6_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HY8_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HY8_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HY8_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HY8_G\n"
+      ],
+      [
+        "\n\nChain S, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5HY8_S\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5JDO_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KDQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KDQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KSI_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KSI_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KSJ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5KSJ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5NI1_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5NI1_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5U3I_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5U3I_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5UCU_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5UFJ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5UFJ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5URC_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5URC_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5VMM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5VMM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2R_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2S_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2T_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_G\n"
+      ],
+      [
+        "\n\nChain I, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_I\n"
+      ],
+      [
+        "\n\nChain K, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n5X2U_K\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6BNR_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6BNR_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6BWP_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6BWP_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6BWU_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6DI4_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6DI4_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA 1) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6HBW_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA 1) [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6HBW_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6HK2_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6HK2_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KA9_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KA9_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KA9_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KA9_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAE_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAE_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAE_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAH_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAH_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAH_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAH_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAI_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAI_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAI_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAI_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAO_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAP_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAQ_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAR_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAS_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAS_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAT_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAT_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAU_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAU_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAV_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6KAV_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5V_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5W_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5X_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5X_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5Y_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6L5Y_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCW_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCW_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCW_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCW_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCX_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCX_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCX_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6LCX_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6NQ5_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6TB2_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XD9_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XD9_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XDT_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XDT_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XE7_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n6XE7_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JJQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JJQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JXZ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JXZ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY0_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY0_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY1_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY1_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY3_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7JY3_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7PCF_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7PCH_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7PCH_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7PCQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7PCQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7UVB_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n7UVB_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8DOV_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8DOV_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8DOV_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8DOV_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDK_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDK_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDL_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDL_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDN_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n8FDN_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AV9_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AV9_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AYZ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AYZ_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AYZ_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9AYZ_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9BCJ_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9HBA_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n9HBA_C\n"
+      ],
+      [
+        "\n\nalpha 1 globin [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\nCAA23750\n"
+      ],
+      [
+        "\n\nalpha-2-globin, partial [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\nCAA23774\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Homo sapiens]\n\n",
+        "284",
+        "5e-96",
+        "\n620479A\n"
+      ],
+      [
+        "\n\nalpha 2 globin variant, partial [Homo sapiens]\n\n",
+        "284",
+        "6e-96",
+        "\nBAD97112\n"
+      ],
+      [
+        "\n\nhemoglobin alpha 1 [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\nAFI57164\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1BZZ_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1BZZ_C\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1C7B_A\n"
+      ],
+      [
+        "\n\nChain C, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1C7B_C\n"
+      ],
+      [
+        "\n\nChain A, hemoglobin [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1J7W_A\n"
+      ],
+      [
+        "\n\nChain C, hemoglobin [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1J7W_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1O1K_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1O1K_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n4MQC_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "283",
+        "1e-95",
+        "\n1AJ9_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n5SW7_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY4_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY4_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY4_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY4_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY3_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY3_C\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY3_E\n"
+      ],
+      [
+        "\n\nChain G, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n7DY3_G\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S3P_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S3P_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S4F_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S4I_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S4J_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9S4K_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "282",
+        "2e-95",
+        "\n9SZW_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "281",
+        "4e-95",
+        "\n1O1O_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "281",
+        "4e-95",
+        "\n1O1O_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n1Y0D_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n1Y0D_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n4MQI_A\n"
+      ],
+      [
+        "\n\nChain E, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n5JDO_E\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n6NBC_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n6NBC_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n6NBD_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n6NBD_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQO_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQO_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQP_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQP_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQQ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQQ_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQR_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQR_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQV_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQV_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQW_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n9CQW_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n1A3O_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]\n\n",
+        "281",
+        "5e-95",
+        "\n1A3O_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1Y0C_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1Y0C_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1YDZ_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1YDZ_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1RVW_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1VWT_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1VWT_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1R1X_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1R1Y_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "281",
+        "6e-95",
+        "\n1R1Y_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "8e-95",
+        "\n7QU4_A\n"
+      ],
+      [
+        "\n\nChain B, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "281",
+        "8e-95",
+        "\n7QU4_B\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XZ5_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XZ5_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n3NMM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n3NMM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n3QJB_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n3QJD_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n3QJD_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XY0_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XY0_C\n"
+      ],
+      [
+        "\n\nChain A, HUMAN HEMOGLOBIN A [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n2W72_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XZV_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-94",
+        "\n1XZV_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1XZU_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1XZU_C\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\nAXY54999\n"
+      ],
+      [
+        "\n\nmutant hemoglobin subunit alpha 2 [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\nAXY55000\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1Y09_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1Y09_C\n"
+      ],
+      [
+        "\n\nChain A, DEOXYHEMOGLOBIN [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1GLI_A\n"
+      ],
+      [
+        "\n\nChain C, DEOXYHEMOGLOBIN [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1GLI_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n6BB5_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n6HAL_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n6HAL_C\n"
+      ],
+      [
+        "\n\nChain AAA, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AET_AAA\n"
+      ],
+      [
+        "\n\nChain CCC, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AET_CCC\n"
+      ],
+      [
+        "\n\nChain AAA, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AEU_AAA\n"
+      ],
+      [
+        "\n\nChain CCC, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AEU_CCC\n"
+      ],
+      [
+        "\n\nChain AAA, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AEV_AAA\n"
+      ],
+      [
+        "\n\nChain CCC, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n7AEV_CCC\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQM_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQM_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQN_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQN_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQS_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQS_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQT_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQT_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQU_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n9CQU_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1XZ7_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1XZ7_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1Y8W_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "280",
+        "2e-94",
+        "\n1Y8W_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1O1I_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1XYE_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1XYE_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1XZ4_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1XZ4_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1Y0A_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin alpha chain [Homo sapiens]\n\n",
+        "279",
+        "3e-94",
+        "\n1Y0A_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1J7S_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1J7S_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1J7Y_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1J7Y_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1QI8_A\n"
+      ],
+      [
+        "\n\nChain C, HEMOGLOBIN [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n1QI8_C\n"
+      ],
+      [
+        "\n\nChain C, HUMAN HEMOGLOBIN A [Homo sapiens]\n\n",
+        "279",
+        "5e-94",
+        "\n2W72_C\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN-BASED BLOOD SUBSTITUTE [Homo sapiens]\n\n",
+        "284",
+        "6e-94",
+        "\n1ABW_A\n"
+      ],
+      [
+        "\n\nChain A, HEMOGLOBIN [Homo sapiens]\n\n",
+        "284",
+        "6e-94",
+        "\n1ABY_A\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]\n\n",
+        "284",
+        "6e-94",
+        "\n1C7C_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "284",
+        "6e-94",
+        "\n1O1P_A\n"
+      ],
+      [
+        "\n\nChain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]\n\n",
+        "284",
+        "7e-94",
+        "\n1C7D_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "277",
+        "2e-93",
+        "\n4MQH_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "281",
+        "7e-93",
+        "\n1O1N_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "281",
+        "1e-92",
+        "\n1O1M_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "280",
+        "1e-92",
+        "\n1O1J_A\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "275",
+        "1e-92",
+        "\n5WOG_A\n"
+      ],
+      [
+        "\n\nChain B, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "275",
+        "1e-92",
+        "\n5WOG_B\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "275",
+        "1e-92",
+        "\n5WOH_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [Homo sapiens]\n\n",
+        "275",
+        "1e-92",
+        "\n5WOH_C\n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin Alpha chain [Homo sapiens]\n\n",
+        "280",
+        "3e-92",
+        "\n1O1L_A\n"
+      ],
+      [
+        "\n\nPan troglodytes (chimpanzee) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pan troglodytes]\n\n",
+        "286",
+        "5e-97",
+        "\nNP_001036091\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pan troglodytes]\n\n",
+        "286",
+        "5e-97",
+        "\nNP_001036092\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pan troglodytes]\n\n",
+        "286",
+        "5e-97",
+        "\nXP_054934595\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pan troglodytes]\n\n",
+        "286",
+        "5e-97",
+        "\nP69907\n"
+      ],
+      [
+        "\n\nPongo abelii (Sumatran orangutan) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pongo abelii]\n\n",
+        "286",
+        "5e-97",
+        "\nNP_001125901\n"
+      ],
+      [
+        "\n\nHBA1 isoform 1 [Pongo abelii]\n\n",
+        "283",
+        "8e-96",
+        "\nPNJ02725\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pongo abelii]\n\n",
+        "280",
+        "6e-94",
+        "\nXP_024089067\n"
+      ],
+      [
+        "\n\nPan paniscus (pygmy chimpanzee) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pan paniscus]\n\n",
+        "286",
+        "5e-97",
+        "\nXP_003809438\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pan paniscus]\n\n",
+        "286",
+        "5e-97",
+        "\nXP_003809441\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pan paniscus]\n\n",
+        "286",
+        "5e-97",
+        "\nP69906\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Pan paniscus]\n\n",
+        "284",
+        "5e-96",
+        "\n0907233A\n"
+      ],
+      [
+        "\n\nGorilla gorilla gorilla (western lowland gorilla) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Gorilla gorilla gorilla]\n\n",
+        "285",
+        "2e-96",
+        "\nXP_030858703\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-like [Gorilla gorilla gorilla]\n\n",
+        "285",
+        "1e-95",
+        "\nXP_063555904\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]\n\n",
+        "282",
+        "2e-95",
+        "\nP01923\n"
+      ],
+      [
+        "\n\nunidentified  [unclassified sequences]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nChain A, Hemoglobin subunit alpha [unidentified]\n\n",
+        "284",
+        "5e-96",
+        "\n3D17_A\n"
+      ],
+      [
+        "\n\nChain C, Hemoglobin subunit alpha [unidentified]\n\n",
+        "284",
+        "5e-96",
+        "\n3D17_C\n"
+      ],
+      [
+        "\n\nRhinopithecus roxellana (golden snub-nosed monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Rhinopithecus roxellana]\n\n",
+        "283",
+        "6e-96",
+        "\nXP_010380159\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-like [Rhinopithecus roxellana]\n\n",
+        "284",
+        "2e-95",
+        "\nXP_030780270\n"
+      ],
+      [
+        "\n\nPongo pygmaeus (Bornean orangutan) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "283",
+        "8e-96",
+        "\nAAR29173\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "283",
+        "8e-96",
+        "\nAAR29174\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "283",
+        "8e-96",
+        "\nAAR29185\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "283",
+        "8e-96",
+        "\nAAR29186\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nXP_054309248\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nP06635\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nAAA66030\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nAAA66031\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nAAR29172\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nAAR29175\n"
+      ],
+      [
+        "\n\nalpha-2 globin [Pongo pygmaeus]\n\n",
+        "281",
+        "8e-95",
+        "\nAAR29176\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Pongo pygmaeus]\n\n",
+        "280",
+        "7e-94",
+        "\nXP_054309249\n"
+      ],
+      [
+        "\n\nhemoglobin alphaI [Pongo pygmaeus]\n\n",
+        "278",
+        "1e-93",
+        "\n0404170A\n"
+      ],
+      [
+        "\n\nGorilla gorilla (western gorilla) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Gorilla gorilla]\n\n",
+        "282",
+        "2e-95",
+        "\n610524A\n"
+      ],
+      [
+        "\n\nHylobates lar (common gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]\n\n",
+        "281",
+        "6e-95",
+        "\nQ9TS35\n"
+      ],
+      [
+        "\n\nalpha1-globin [Hylobates lar]\n\n",
+        "281",
+        "6e-95",
+        "\nAAK13563\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Hylobates lar]\n\n",
+        "280",
+        "2e-94",
+        "\nAYO89350\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]\n\n",
+        "277",
+        "3e-93",
+        "\nQ9TS34\n"
+      ],
+      [
+        "\n\nalpha2-globin [Hylobates lar]\n\n",
+        "277",
+        "3e-93",
+        "\nAAK13562\n"
+      ],
+      [
+        "\n\nSemnopithecus entellus (Hanuman langur) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhypothetical protein H8957_006364 [Semnopithecus entellus]\n\n",
+        "281",
+        "7e-95",
+        "\nKAL4682940\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]\n\n",
+        "278",
+        "7e-94",
+        "\nP01924\n"
+      ],
+      [
+        "\n\nSymphalangus syndactylus (siamang) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-1 [Symphalangus syndactylus]\n\n",
+        "280",
+        "2e-94",
+        "\nXP_055099075\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-1 [Symphalangus syndactylus]\n\n",
+        "280",
+        "7e-94",
+        "\nXP_055099076\n"
+      ],
+      [
+        "\n\nNasalis larvatus (proboscis monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhypothetical protein H8958_000280 [Nasalis larvatus]\n\n",
+        "280",
+        "2e-94",
+        "\nKAL4835551\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Nasalis larvatus]\n\n",
+        "278",
+        "1e-93",
+        "\nAYO89356\n"
+      ],
+      [
+        "\n\nNomascus leucogenys (northern white-cheeked gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-1 [Nomascus leucogenys]\n\n",
+        "280",
+        "3e-94",
+        "\nXP_003269148\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-1 [Nomascus leucogenys]\n\n",
+        "280",
+        "3e-94",
+        "\nXP_030654648\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-1-like [Nomascus leucogenys]\n\n",
+        "278",
+        "1e-93",
+        "\nXP_030654647\n"
+      ],
+      [
+        "\n\nTrachypithecus francoisi (Francois's langur) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Trachypithecus francoisi]\n\n",
+        "279",
+        "3e-94",
+        "\nXP_033092341\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Trachypithecus francoisi]\n\n",
+        "279",
+        "3e-94",
+        "\nAYO89351\n"
+      ],
+      [
+        "\n\ntranslation initiation factor IF-2-like [Trachypithecus francoisi]\n\n",
+        "284",
+        "2e-93",
+        "\nXP_033092340\n"
+      ],
+      [
+        "\n\nCallithrix jacchus (white-tufted-ear marmoset) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Callithrix jacchus]\n\n",
+        "279",
+        "4e-94",
+        "\nXP_035122196\n"
+      ],
+      [
+        "\n\ntheta 1 globin (predicted) [Callithrix jacchus]\n\n",
+        "279",
+        "4e-94",
+        "\nABZ80337\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Callithrix jacchus]\n\n",
+        "279",
+        "1e-93",
+        "\nXP_009007060\n"
+      ],
+      [
+        "\n\nTPA: globin C1 [Callithrix jacchus]\n\n",
+        "279",
+        "1e-93",
+        "\nSAI82184\n"
+      ],
+      [
+        "\n\nCallithrix geoffroyi (Geoffroy's marmoset) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Callithrix geoffroyi]\n\n",
+        "279",
+        "4e-94",
+        "\nAYO89353\n"
+      ],
+      [
+        "\n\nMacaca fuscata fuscata (Japanese macaque) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata]\n\n",
+        "278",
+        "8e-94",
+        "\nP63107\n"
+      ],
+      [
+        "\n\nMacaca mulatta (Rhesus monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca mulatta]\n\n",
+        "278",
+        "8e-94",
+        "\nP63108\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Macaca mulatta]\n\n",
+        "276",
+        "4e-93",
+        "\nNP_001253705\n"
+      ],
+      [
+        "\n\nHemoglobin alpha chain [Macaca mulatta]\n\n",
+        "276",
+        "4e-93",
+        "\nEHH31250\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Macaca mulatta]\n\n",
+        "276",
+        "5e-93",
+        "\n681081A\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Macaca mulatta]\n\n",
+        "276",
+        "9e-93",
+        "\nNP_001038189\n"
+      ],
+      [
+        "\n\nhemoglobin alpha-2 chain - rhesus macaque [Macaca mulatta]\n\n",
+        "276",
+        "9e-93",
+        "\nHAMQR\n"
+      ],
+      [
+        "\n\nalpha-globin [Macaca mulatta]\n\n",
+        "276",
+        "9e-93",
+        "\nAAA36844\n"
+      ],
+      [
+        "\n\nTPA: globin C1 [Macaca mulatta]\n\n",
+        "276",
+        "3e-92",
+        "\nSAI82172\n"
+      ],
+      [
+        "\n\nMacaca thibetana thibetana  [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-A/Q/R/T [Macaca thibetana thibetana]\n\n",
+        "278",
+        "1e-93",
+        "\nXP_050630719\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-A/Q/R/T-like [Macaca thibetana thibetana]\n\n",
+        "275",
+        "4e-92",
+        "\nXP_050630718\n"
+      ],
+      [
+        "\n\nMiopithecus talapoin (talapoin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Miopithecus talapoin]\n\n",
+        "278",
+        "1e-93",
+        "\nAYO89358\n"
+      ],
+      [
+        "\n\nAotus nancymaae (Ma's night monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Aotus nancymaae]\n\n",
+        "278",
+        "2e-93",
+        "\nXP_012324138\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Aotus nancymaae]\n\n",
+        "278",
+        "2e-93",
+        "\nXP_064218333\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Aotus nancymaae]\n\n",
+        "278",
+        "2e-93",
+        "\nAYO89354\n"
+      ],
+      [
+        "\n\nHylobates moloch (silvery gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Hylobates moloch]\n\n",
+        "277",
+        "2e-93",
+        "\nXP_032004373\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Hylobates moloch]\n\n",
+        "277",
+        "2e-93",
+        "\nXP_032004411\n"
+      ],
+      [
+        "\n\nColobus angolensis palliatus  [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: hemoglobin subunit alpha isoform X1 [Colobus angolensis palliatus]\n\n",
+        "277",
+        "2e-93",
+        "\nXP_011815457\n"
+      ],
+      [
+        "\n\nColobus guereza (mantled guereza) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Colobus guereza]\n\n",
+        "277",
+        "2e-93",
+        "\nAYO89349\n"
+      ],
+      [
+        "\n\nAteles geoffroyi (black-handed spider monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]\n\n",
+        "277",
+        "3e-93",
+        "\nP67817\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Ateles geoffroyi]\n\n",
+        "275",
+        "2e-92",
+        "\n732178A\n"
+      ],
+      [
+        "\n\nPlecturocebus moloch (red-bellied titi) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\ntheta 1 globin (predicted) [Plecturocebus moloch]\n\n",
+        "277",
+        "3e-93",
+        "\nACA51072\n"
+      ],
+      [
+        "\n\nAlpha 2 globin variant (predicted) [Plecturocebus moloch]\n\n",
+        "277",
+        "3e-93",
+        "\nACA51073\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha (predicted) [Plecturocebus moloch]\n\n",
+        "277",
+        "3e-93",
+        "\nACA51074\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha (predicted) [Plecturocebus moloch]\n\n",
+        "277",
+        "3e-93",
+        "\nACA51075\n"
+      ],
+      [
+        "\n\nSaguinus oedipus (cotton-top tamarin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhypothetical protein P7K49_022599 [Saguinus oedipus]\n\n",
+        "277",
+        "3e-93",
+        "\nKAK2097149\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]\n\n",
+        "275",
+        "2e-92",
+        "\nP67818\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Saguinus oedipus]\n\n",
+        "275",
+        "2e-92",
+        "\n1004272A\n"
+      ],
+      [
+        "\n\nMacaca fascicularis (crab-eating macaque) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nHemoglobin alpha chain [Macaca fascicularis]\n\n",
+        "277",
+        "3e-93",
+        "\nEHH60005\n"
+      ],
+      [
+        "\n\nHemoglobin alpha chain [Macaca fascicularis]\n\n",
+        "277",
+        "3e-93",
+        "\nEHH60006\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-A/Q/R/T [Macaca fascicularis]\n\n",
+        "276",
+        "4e-93",
+        "\nXP_005590788\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha-A/Q/R/T [Macaca fascicularis]\n\n",
+        "276",
+        "4e-93",
+        "\nXP_045238646\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]\n\n",
+        "275",
+        "1e-92",
+        "\nP21767\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Macaca fascicularis]\n\n",
+        "275",
+        "1e-92",
+        "\n1509322A\n"
+      ],
+      [
+        "\n\nMico argentatus (silvery marmoset) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]\n\n",
+        "276",
+        "3e-93",
+        "\nP18972\n"
+      ],
+      [
+        "\n\nhemoglobin alpha [Mico argentatus]\n\n",
+        "276",
+        "3e-93",
+        "\n1004272B\n"
+      ],
+      [
+        "\n\nChlorocebus sabaeus (green monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Chlorocebus sabaeus]\n\n",
+        "276",
+        "9e-93",
+        "\nXP_037852279\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Chlorocebus sabaeus]\n\n",
+        "276",
+        "9e-93",
+        "\nXP_072871057\n"
+      ],
+      [
+        "\n\nChlorocebus aethiops (grivet monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Chlorocebus aethiops]\n\n",
+        "276",
+        "9e-93",
+        "\nP01926\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Chlorocebus aethiops]\n\n",
+        "276",
+        "9e-93",
+        "\nAYO89348\n"
+      ],
+      [
+        "\n\nErythrocebus patas (red guenon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Erythrocebus patas]\n\n",
+        "276",
+        "9e-93",
+        "\nAYO89355\n"
+      ],
+      [
+        "\n\nAllenopithecus nigroviridis (Allen's swamp monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Allenopithecus nigroviridis]\n\n",
+        "276",
+        "9e-93",
+        "\nAYO89357\n"
+      ],
+      [
+        "\n\nCercopithecus wolfi (Wolf's monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Cercopithecus wolfi]\n\n",
+        "276",
+        "9e-93",
+        "\nAYO89359\n"
+      ],
+      [
+        "\n\nCebus imitator (Panamanian white-faced capuchin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Cebus imitator]\n\n",
+        "275",
+        "1e-92",
+        "\nXP_017377050\n"
+      ],
+      [
+        "\n\nSapajus apella (tufted capuchin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Sapajus apella]\n\n",
+        "275",
+        "1e-92",
+        "\nXP_032129544\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Sapajus apella]\n\n",
+        "275",
+        "1e-92",
+        "\nXP_032129546\n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Sapajus apella]\n\n",
+        "275",
+        "1e-92",
+        "\nP01928\n"
+      ],
+      [
+        "\n\nMacaca assamensis (Assam macaque) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]\n\n",
+        "275",
+        "3e-92",
+        "\nP21766\n"
+      ],
+      [
+        "\n\nLeontocebus fuscicollis (brown-headed tamarin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]\n\n",
+        "274",
+        "3e-92",
+        "\nP01929\n"
+      ],
+      [
+        "\n\nSaimiri boliviensis (Bolivian squirrel monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Saimiri boliviensis]\n\n",
+        "274",
+        "4e-92",
+        "\nXP_003928392\n"
+      ],
+      [
+        "\n\nhemoglobin subunit alpha [Saimiri boliviensis]\n\n",
+        "274",
+        "4e-92",
+        "\nXP_003928393\n"
+      ]
+    ],
+    [
+      [
+        "Taxonomy",
+        "Number of hits",
+        "Number of Organisms",
+        "Description"
+      ],
+      [
+        "\n\nroot\n",
+        "842",
+        "41",
+        ""
+      ],
+      [
+        ".\n\nsynthetic construct\n",
+        "2",
+        "1",
+        "\n\nsynthetic construct hits  \n\n"
+      ],
+      [
+        ".\n\nSimiiformes\n",
+        "838",
+        "39",
+        ""
+      ],
+      [
+        "..\n\nCatarrhini\n",
+        "812",
+        "28",
+        ""
+      ],
+      [
+        "...\n\nHominoidea\n",
+        "775",
+        "11",
+        ""
+      ],
+      [
+        "....\n\nHominidae\n",
+        "763",
+        "7",
+        ""
+      ],
+      [
+        ".....\n\nHomininae\n",
+        "747",
+        "5",
+        ""
+      ],
+      [
+        "......\n\nHomo sapiens\n",
+        "735",
+        "1",
+        "\n\nHomo sapiens hits  \n\n"
+      ],
+      [
+        "......\n\nPan\n",
+        "8",
+        "2",
+        ""
+      ],
+      [
+        ".......\n\nPan troglodytes\n",
+        "4",
+        "1",
+        "\n\nPan troglodytes hits  \n\n"
+      ],
+      [
+        ".......\n\nPan paniscus\n",
+        "4",
+        "1",
+        "\n\nPan paniscus hits  \n\n"
+      ],
+      [
+        "......\n\nGorilla\n",
+        "4",
+        "2",
+        ""
+      ],
+      [
+        ".......\n\nGorilla gorilla\n",
+        "1",
+        "2",
+        "\n\nGorilla gorilla hits  \n\n"
+      ],
+      [
+        "........\n\nGorilla gorilla gorilla\n",
+        "3",
+        "1",
+        "\n\nGorilla gorilla gorilla hits  \n\n"
+      ],
+      [
+        ".....\n\nPongo\n",
+        "16",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nPongo abelii\n",
+        "3",
+        "1",
+        "\n\nPongo abelii hits  \n\n"
+      ],
+      [
+        "......\n\nPongo pygmaeus\n",
+        "13",
+        "1",
+        "\n\nPongo pygmaeus hits  \n\n"
+      ],
+      [
+        "....\n\nHylobatidae\n",
+        "12",
+        "4",
+        ""
+      ],
+      [
+        ".....\n\nHylobates\n",
+        "7",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nHylobates lar\n",
+        "5",
+        "1",
+        "\n\nHylobates lar hits  \n\n"
+      ],
+      [
+        "......\n\nHylobates moloch\n",
+        "2",
+        "1",
+        "\n\nHylobates moloch hits  \n\n"
+      ],
+      [
+        ".....\n\nSymphalangus syndactylus\n",
+        "2",
+        "1",
+        "\n\nSymphalangus syndactylus hits  \n\n"
+      ],
+      [
+        ".....\n\nNomascus leucogenys\n",
+        "3",
+        "1",
+        "\n\nNomascus leucogenys hits  \n\n"
+      ],
+      [
+        "...\n\nCercopithecidae\n",
+        "37",
+        "17",
+        ""
+      ],
+      [
+        "....\n\nColobinae\n",
+        "11",
+        "6",
+        ""
+      ],
+      [
+        ".....\n\nRhinopithecus roxellana\n",
+        "2",
+        "1",
+        "\n\nRhinopithecus roxellana hits  \n\n"
+      ],
+      [
+        ".....\n\nSemnopithecus entellus\n",
+        "2",
+        "1",
+        "\n\nSemnopithecus entellus hits  \n\n"
+      ],
+      [
+        ".....\n\nNasalis larvatus\n",
+        "2",
+        "1",
+        "\n\nNasalis larvatus hits  \n\n"
+      ],
+      [
+        ".....\n\nTrachypithecus francoisi\n",
+        "3",
+        "1",
+        "\n\nTrachypithecus francoisi hits  \n\n"
+      ],
+      [
+        ".....\n\nColobus\n",
+        "2",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nColobus angolensis palliatus\n",
+        "1",
+        "1",
+        "\n\nColobus angolensis palliatus hits  \n\n"
+      ],
+      [
+        "......\n\nColobus guereza\n",
+        "1",
+        "1",
+        "\n\nColobus guereza hits  \n\n"
+      ],
+      [
+        "....\n\nCercopithecinae\n",
+        "26",
+        "11",
+        ""
+      ],
+      [
+        ".....\n\nMacaca\n",
+        "18",
+        "5",
+        ""
+      ],
+      [
+        "......\n\nMacaca fuscata fuscata\n",
+        "1",
+        "1",
+        "\n\nMacaca fuscata fuscata hits  \n\n"
+      ],
+      [
+        "......\n\nMacaca mulatta\n",
+        "8",
+        "1",
+        "\n\nMacaca mulatta hits  \n\n"
+      ],
+      [
+        "......\n\nMacaca thibetana thibetana\n",
+        "2",
+        "1",
+        "\n\nMacaca thibetana thibetana hits  \n\n"
+      ],
+      [
+        "......\n\nMacaca fascicularis\n",
+        "6",
+        "1",
+        "\n\nMacaca fascicularis hits  \n\n"
+      ],
+      [
+        "......\n\nMacaca assamensis\n",
+        "1",
+        "1",
+        "\n\nMacaca assamensis hits  \n\n"
+      ],
+      [
+        ".....\n\nMiopithecus talapoin\n",
+        "1",
+        "1",
+        "\n\nMiopithecus talapoin hits  \n\n"
+      ],
+      [
+        ".....\n\nChlorocebus\n",
+        "4",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nChlorocebus sabaeus\n",
+        "2",
+        "1",
+        "\n\nChlorocebus sabaeus hits  \n\n"
+      ],
+      [
+        "......\n\nChlorocebus aethiops\n",
+        "2",
+        "1",
+        "\n\nChlorocebus aethiops hits  \n\n"
+      ],
+      [
+        ".....\n\nErythrocebus patas\n",
+        "1",
+        "1",
+        "\n\nErythrocebus patas hits  \n\n"
+      ],
+      [
+        ".....\n\nAllenopithecus nigroviridis\n",
+        "1",
+        "1",
+        "\n\nAllenopithecus nigroviridis hits  \n\n"
+      ],
+      [
+        ".....\n\nCercopithecus wolfi\n",
+        "1",
+        "1",
+        "\n\nCercopithecus wolfi hits  \n\n"
+      ],
+      [
+        "..\n\nPlatyrrhini\n",
+        "26",
+        "11",
+        ""
+      ],
+      [
+        "...\n\nCebidae\n",
+        "17",
+        "8",
+        ""
+      ],
+      [
+        "....\n\nCallitrichinae\n",
+        "11",
+        "5",
+        ""
+      ],
+      [
+        ".....\n\nCallithrix\n",
+        "5",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nCallithrix jacchus\n",
+        "4",
+        "1",
+        "\n\nCallithrix jacchus hits  \n\n"
+      ],
+      [
+        "......\n\nCallithrix geoffroyi\n",
+        "1",
+        "1",
+        "\n\nCallithrix geoffroyi hits  \n\n"
+      ],
+      [
+        ".....\n\nSaguinus oedipus\n",
+        "3",
+        "1",
+        "\n\nSaguinus oedipus hits  \n\n"
+      ],
+      [
+        ".....\n\nMico argentatus\n",
+        "2",
+        "1",
+        "\n\nMico argentatus hits  \n\n"
+      ],
+      [
+        ".....\n\nLeontocebus fuscicollis\n",
+        "1",
+        "1",
+        "\n\nLeontocebus fuscicollis hits  \n\n"
+      ],
+      [
+        "....\n\nCebinae\n",
+        "4",
+        "2",
+        ""
+      ],
+      [
+        ".....\n\nCebus imitator\n",
+        "1",
+        "1",
+        "\n\nCebus imitator hits  \n\n"
+      ],
+      [
+        ".....\n\nSapajus apella\n",
+        "3",
+        "1",
+        "\n\nSapajus apella hits  \n\n"
+      ],
+      [
+        "....\n\nSaimiri boliviensis\n",
+        "2",
+        "1",
+        "\n\nSaimiri boliviensis hits  \n\n"
+      ],
+      [
+        "...\n\nAotus nancymaae\n",
+        "3",
+        "1",
+        "\n\nAotus nancymaae hits  \n\n"
+      ],
+      [
+        "...\n\nAteles geoffroyi\n",
+        "2",
+        "1",
+        "\n\nAteles geoffroyi hits  \n\n"
+      ],
+      [
+        "...\n\nPlecturocebus moloch\n",
+        "4",
+        "1",
+        "\n\nPlecturocebus moloch hits  \n\n"
+      ],
+      [
+        ".\n\nunidentified\n",
+        "2",
+        "1",
+        "\n\nunidentified hits  \n\n"
+      ]
+    ]
+  ]
+}

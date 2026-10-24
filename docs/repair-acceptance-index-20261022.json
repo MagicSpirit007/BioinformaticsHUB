@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-22",
+  "scope": "first-implementation-batch",
+  "report": "deferred_by_user",
+  "tests": {
+    "node": {
+      "passed": 91,
+      "failed": 0
+    },
+    "windowsPython": {
+      "total": 86,
+      "passed": 84,
+      "skipped": 2,
+      "failed": 0
+    }
+  },
+  "archive": {
+    "path": "/mnt/d/BioinformaticsHUB/runs/archive-smoke-1792667657/validation.json",
+    "ok": true,
+    "runId": null
+  },
+  "recovery": {
+    "path": "/mnt/d/BioinformaticsHUB/runs/recovery-fixture-1792667664125/validation.json",
+    "ok": true,
+    "runId": "recovery-fixture-1792667664125",
+    "browserRestarted": true,
+    "submissions": 1,
+    "foreignSubmissions": 0
+  },
+  "packaged": {
+    "path": "/mnt/d/BioinformaticsHUB/runs/packaged-repair-validation-1792756925179/validation.json",
+    "ok": true,
+    "runId": "wf-1792756926319-a24050",
+    "runtime": {
+      "protocol": 2,
+      "buildId": "9265bae6768f72515f46e03d440d09f4ceb008a22a53bf39589e1ed02a6ca89f",
+      "components": {
+        "backend": "ab8dac746886f75fb44bbb235078a90121970aa8c3bbc3bb8e27b83b35db4a44",
+        "engine": "897110d22d64391bebce142d721aed47f639dbaedc075a3c74ad218797ab4e33",
+        "ui": "d5451983ba435d06997fa0f0b45feb075aa1d62004de36345a18c7635643ae70"
+      },
+      "engineRoot": "d:\\bioinformaticshub\\apps\\bioinformatics-hub-desktop\\release-candidate-repair-20261022\\win-unpacked\\resources\\engine",
+      "runsRoot": "d:\\bioinformaticshub\\runs\\packaged-repair-validation-1792756925179\\tasks",
+      "dataDir": "d:\\bioinformaticshub\\runs\\packaged-repair-validation-1792756925179\\home",
+      "manifestStatus": "matched"
+    }
+  },
+  "installer": {
+    "path": "/mnt/d/BioinformaticsHUB/apps/bioinformatics-hub-desktop/release-candidate-repair-20261022/BioinformaticsHUB-0.7.0-win-x64.exe",
+    "bytes": 85960838,
+    "sha256": "8dec4693d6c99ff053fcadaf07a56c214a12b854a67d389d27fabed294e97a2b"
+  },
+  "packageContents": {
+    "ok": true,
+    "engineFilesVerified": 24,
+    "record": "/mnt/d/BioinformaticsHUB/runs/delivery/release-validation.json"
+  },
+  "scientificImports": {
+    "record": "/mnt/d/BioinformaticsHUB/docs/repair-import-validation-20261022.json",
+    "items": [
+      "blastp",
+      "interpro",
+      "musite"
+    ]
+  },
+  "deployment": {
+    "installed": true,
+    "record": "/mnt/d/BioinformaticsHUB/docs/repair-installed-validation-20261022.json",
+    "installPath": "C:\\Users\\18993\\AppData\\Local\\Programs\\BioinformaticsHUB",
+    "formalRelease": "D:\\BioinformaticsHUB\\apps\\bioinformatics-hub-desktop\\release",
+    "backup": "D:\\BioinformaticsHUB\\runs\\deployment-20261022-1792668468407",
+    "buildId": "9265bae6768f72515f46e03d440d09f4ceb008a22a53bf39589e1ed02a6ca89f",
+    "tasksPreserved": 5,
+    "protectedFilesUnchanged": 15,
+    "desktopOpened": true
+  }
+}

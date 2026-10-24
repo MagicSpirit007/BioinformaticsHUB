@@ -1,0 +1,58 @@
+{
+  "url": "http://www.csbio.sjtu.edu.cn/cgi-bin/PlantmPLoc.cgi",
+  "title": "Plant-mPLoc server",
+  "text": "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites\n\n\n\n    | Read Me  |  Data  |  Citation  |  \n\n\n \nYour input sequence (180aa) is:\n\n>sp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\nMASSMLSSATMVASPAQATMVAPFNGLKSSAAFPATRKANNDITSITSNGGRVNCMQVWP\nPIGKKKFETLSYLPDLTDSELAKEVDYLIRNKWIPCVEFELEHGFVYREHGNSPGYYDGR\nYWTMWKLPLFGCTDSAQVLKEVEECKKEYPNAFIRIIGFDNTRQVQCISFIAYKPPSFTG\n \n----------- Plant-mPLoc Computation Result -----------\n \n\nQuery protein\tPredicted location(s)\nsp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\tChloroplast.",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites\n\n\n\n    | Read Me  |  Data  |  Citation  |  "
+      ],
+      [
+        " "
+      ],
+      [
+        "Your input sequence (180aa) is:"
+      ],
+      [
+        "\n>sp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\nMASSMLSSATMVASPAQATMVAPFNGLKSSAAFPATRKANNDITSITSNGGRVNCMQVWP\nPIGKKKFETLSYLPDLTDSELAKEVDYLIRNKWIPCVEFELEHGFVYREHGNSPGYYDGR\nYWTMWKLPLFGCTDSAQVLKEVEECKKEYPNAFIRIIGFDNTRQVQCISFIAYKPPSFTG"
+      ],
+      [
+        " "
+      ],
+      [
+        "----------- Plant-mPLoc Computation Result -----------"
+      ],
+      [
+        " "
+      ],
+      [
+        "Query protein\tPredicted location(s)\nsp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\tChloroplast."
+      ]
+    ],
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites"
+      ],
+      [
+        "    | Read Me  |  Data  |  Citation  |  "
+      ]
+    ],
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites"
+      ]
+    ],
+    [
+      [
+        "Query protein",
+        "Predicted location(s)"
+      ],
+      [
+        "sp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2",
+        "Chloroplast."
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,828 @@
+An official website of the United States government
+
+ Here's how you know 
+Skip to main page content
+Log in
+Access keys
+NCBI Homepage
+MyNCBI Homepage
+Main Content
+Main Navigation
+BLAST ® » blastp suite » results for RID-AZJ4S1EF014
+Home Recent Results Saved Strategies Help
+ Edit Search Save Search Search Summary
+ How to read this report?  BLAST Help Videos Back to Traditional Results Page
+
+Job Title
+sp|P69905|HBA_HUMAN Hemoglobin subunit alpha
+RID
+AZJ4S1EF014 Search expires on 09-21 19:50 pm Download All
+Program
+BLASTP  
+Help
+Citation
+Database
+nr See details
+Query ID
+lcl|Query_8146019
+Description
+sp|P69905|HBA_HUMAN Hemoglobin subunit alpha
+Molecule type
+amino acid
+Query Length
+142
+Other reports
+Distance tree of results Multiple alignment MSA viewer 
+Help
+Filter Results
+Organism
+only top 20 will appear
+exclude
+Add organism
+Percent Identity
+from
+ 
+Percent Identity
+to 
+E value
+from
+ 
+E value
+to 
+Query Coverage
+from
+ 
+Query Coverage
+to 
+Filter Reset
+Compare these results against the new Clustered nr database  
+Help
+BLAST
+Descriptions
+Sequences producing significant alignments
+Download Select columns 
+Show 
+10
+50
+100
+ 
+Help
+select all
+ 100 sequences selected
+GenPept
+ 
+Graphics
+ 
+Distance tree of results
+ 
+Multiple alignment
+ 
+MSA Viewer
+Sequences producing significant alignments:
+Select for downloading or viewing reports
+	
+Description
+	
+Scientific Name
+	
+Max Score
+	
+Total Score
+	
+Query Cover
+	
+E value
+	
+Per. Ident
+	
+Acc. Len
+	Accession
+
+Select seq gb|AAX29522.1|
+	
+hemoglobin alpha 2, partial [synthetic construct]
+	
+synthetic construct
+	287	287	100%	3e-97	100.00%	143	AAX29522.1
+
+Select seq ref|NP_000508.1|
+	
+hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	5e-97	100.00%	142	NP_000508.1
+
+Select seq pdb|3IA3|B
+	
+Chain B, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	6e-97	100.00%	145	3IA3_B
+
+Select seq gb|AKZ66543.1|
+	
+mutant hemoglobin alpha 2 globin chain [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	8e-97	99.30%	142	AKZ66543.1
+
+Select seq gb|AXY55002.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	9e-97	99.30%	142	AXY55002.1
+
+Select seq gb|AAN04486.1|
+	
+hemoglobin alpha-2 [Homo sapiens]
+	
+Homo sapiens
+	285	285	100%	1e-96	99.30%	142	AAN04486.1
+
+Select seq gb|AAF72612.1|
+	
+alpha-2-globin [Homo sapiens]
+	
+Homo sapiens
+	285	285	100%	2e-96	99.30%	142	AAF72612.1
+
+Select seq tpe|SAI82135.1|
+	
+TPA: globin C1 [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	2e-96	100.00%	177	SAI82135.1
+
+Select seq ref|XP_030858703.1|
+	
+hemoglobin subunit alpha [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	285	285	100%	2e-96	99.30%	142	XP_030858703.1
+
+Select seq gb|ABF56145.1|
+	
+hemoglobin alpha 1-2 hybrid [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	ABF56145.1
+
+Select seq gb|AXY54998.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY54998.1
+
+Select seq gb|AXY55003.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY55003.1
+
+Select seq gb|AXY55001.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY55001.1
+
+Select seq pdb|1BAB|A
+	
+Chain A, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	143	1BAB_A
+
+Select seq gb|AAK37554.1|
+	
+hemoglobin alpha-1 globin chain [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	5e-96	99.30%	142	AAK37554.1
+
+Select seq pdb|1A00|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	284	284	99%	5e-96	100.00%	141	1A00_A
+
+Select seq dbj|BAD97112.1|
+	
+alpha 2 globin variant, partial [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	6e-96	99.30%	142	BAD97112.1
+
+Select seq ref|XP_010380159.1|
+	
+hemoglobin subunit alpha [Rhinopithecus roxellana]
+	
+Rhinopithecus roxellana
+	283	283	100%	6e-96	98.59%	142	XP_010380159.1
+
+Select seq gb|AAR29173.1|
+	
+alpha-2 globin [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	283	283	100%	8e-96	98.59%	142	AAR29173.1
+
+Select seq ref|XP_063555904.1|
+	
+hemoglobin subunit alpha-like [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	285	285	100%	1e-95	99.30%	177	XP_063555904.1
+
+Select seq gb|AFI57164.1|
+	
+hemoglobin alpha 1 [Homo sapiens]
+	
+Homo sapiens
+	283	283	100%	1e-95	99.30%	142	AFI57164.1
+
+Select seq pdb|1BZZ|A
+	
+Chain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	1BZZ_A
+
+Select seq pdb|4MQC|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	4MQC_A
+
+Select seq pdb|1AJ9|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	1AJ9_A
+
+Select seq pdb|5SW7|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	142	5SW7_A
+
+Select seq ref|XP_030780270.1|
+	
+hemoglobin subunit alpha-like [Rhinopithecus roxellana]
+	
+Rhinopithecus roxellana
+	284	284	100%	2e-95	98.59%	177	XP_030780270.1
+
+Select seq pdb|7DY4|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	141	7DY4_A
+
+Select seq pdb|7DY3|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	141	7DY3_A
+
+Select seq pdb|9S3P|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	100.00%	140	9S3P_A
+
+Select seq sp|P01923.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	282	282	99%	2e-95	99.29%	141	P01923.1
+
+Select seq pdb|1O1O|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	4e-95	98.58%	141	1O1O_A
+
+Select seq pdb|1Y0D|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	5e-95	100.00%	140	1Y0D_A
+
+Select seq pdb|1A3O|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	5e-95	99.29%	141	1A3O_A
+
+Select seq sp|Q9TS35.2|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]
+	
+Hylobates lar
+	281	281	100%	6e-95	98.59%	142	Q9TS35.2
+
+Select seq pdb|1Y0C|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	98.58%	141	1Y0C_A
+
+Select seq pdb|1RVW|A
+	
+Chain A, HEMOGLOBIN [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	99.29%	141	1RVW_A
+
+Select seq pdb|1R1X|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	99.29%	141	1R1X_A
+
+Select seq gb|KAL4682940.1|
+	
+hypothetical protein H8957_006364 [Semnopithecus entellus]
+	
+Semnopithecus entellus
+	281	281	100%	7e-95	97.89%	142	KAL4682940.1
+
+Select seq ref|XP_054309248.2|
+	
+hemoglobin subunit alpha [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	281	281	100%	8e-95	97.89%	142	XP_054309248.2
+
+Select seq pdb|7QU4|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	281	281	100%	8e-95	97.18%	142	7QU4_A
+
+Select seq pdb|1XZ5|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XZ5_A
+
+Select seq pdb|3NMM|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	99.29%	141	3NMM_A
+
+Select seq pdb|3QJB|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	99.29%	141	3QJB_A
+
+Select seq pdb|1XY0|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XY0_A
+
+Select seq pdb|2W72|A
+	
+Chain A, HUMAN HEMOGLOBIN A [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	2W72_A
+
+Select seq pdb|1XZV|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XZV_A
+
+Select seq pdb|1XZU|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1XZU_A
+
+Select seq gb|AXY54999.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	280	280	100%	2e-94	99.30%	141	AXY54999.1
+
+Select seq gb|AXY55000.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	280	280	100%	2e-94	99.30%	141	AXY55000.1
+
+Select seq ref|XP_055099075.1|
+	
+hemoglobin subunit alpha-1 [Symphalangus syndactylus]
+	
+Symphalangus syndactylus
+	280	280	100%	2e-94	97.89%	142	XP_055099075.1
+
+Select seq pdb|1Y09|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1Y09_A
+
+Select seq pdb|1GLI|A
+	
+Chain A, DEOXYHEMOGLOBIN [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1GLI_A
+
+Select seq pdb|6BB5|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	98%	2e-94	100.00%	139	6BB5_A
+
+Select seq pdb|1XZ7|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1XZ7_A
+
+Select seq gb|KAL4835551.1|
+	
+hypothetical protein H8958_000280 [Nasalis larvatus]
+	
+Nasalis larvatus
+	280	280	100%	2e-94	97.18%	142	KAL4835551.1
+
+Select seq ref|XP_003269148.1|
+	
+hemoglobin subunit alpha-1 [Nomascus leucogenys]
+	
+Nomascus leucogenys
+	280	280	100%	3e-94	97.89%	142	XP_003269148.1
+
+Select seq pdb|1O1I|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	97.87%	141	1O1I_A
+
+Select seq pdb|1XYE|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	98.58%	141	1XYE_A
+
+Select seq pdb|1Y0A|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	98.58%	141	1Y0A_A
+
+Select seq ref|XP_033092341.1|
+	
+hemoglobin subunit alpha [Trachypithecus francoisi]
+	
+Trachypithecus francoisi
+	279	279	100%	3e-94	97.18%	142	XP_033092341.1
+
+Select seq ref|XP_035122196.3|
+	
+hemoglobin subunit alpha [Callithrix jacchus]
+	
+Callithrix jacchus
+	279	279	100%	4e-94	97.18%	142	XP_035122196.3
+
+Select seq pdb|1J7S|A
+	
+Chain A, Hemoglobin [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	5e-94	97.87%	141	1J7S_A
+
+Select seq pdb|1ABW|A
+	
+Chain A, HEMOGLOBIN-BASED BLOOD SUBSTITUTE [Homo sapiens]
+	
+Homo sapiens
+	284	567	99%	6e-94	100.00%	283	1ABW_A
+
+Select seq ref|XP_024089067.2|
+	
+hemoglobin subunit alpha [Pongo abelii]
+	
+Pongo abelii
+	280	280	100%	6e-94	97.89%	177	XP_024089067.2
+
+Select seq pdb|1C7D|A
+	
+Chain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]
+	
+Homo sapiens
+	284	567	99%	7e-94	100.00%	284	1C7D_A
+
+Select seq ref|XP_054309249.2|
+	
+hemoglobin subunit alpha [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	280	280	100%	7e-94	97.89%	177	XP_054309249.2
+
+Select seq ref|XP_055099076.2|
+	
+hemoglobin subunit alpha-1 [Symphalangus syndactylus]
+	
+Symphalangus syndactylus
+	280	280	100%	7e-94	97.89%	177	XP_055099076.2
+
+Select seq sp|P01924.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]
+	
+Semnopithecus entellus
+	278	278	99%	7e-94	97.87%	141	P01924.1
+
+Select seq sp|P63107.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata]
+	
+Macaca fuscata fuscata
+	278	278	100%	8e-94	97.18%	142	P63107.2
+
+Select seq gb|AYO89356.1|
+	
+hemoglobin subunit alpha [Nasalis larvatus]
+	
+Nasalis larvatus
+	278	278	100%	1e-93	96.48%	142	AYO89356.1
+
+Select seq ref|XP_030654647.1|
+	
+hemoglobin subunit alpha-1-like [Nomascus leucogenys]
+	
+Nomascus leucogenys
+	278	278	100%	1e-93	97.18%	142	XP_030654647.1
+
+Select seq prf||0404170A
+	
+hemoglobin alphaI [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	278	278	99%	1e-93	97.87%	141	0404170A
+
+Select seq ref|XP_009007060.3|
+	
+hemoglobin subunit alpha [Callithrix jacchus]
+	
+Callithrix jacchus
+	279	279	100%	1e-93	97.18%	177	XP_009007060.3
+
+Select seq ref|XP_050630719.1|
+	
+hemoglobin subunit alpha-A/Q/R/T [Macaca thibetana thibetana]
+	
+Macaca thibetana thibetana
+	278	278	100%	1e-93	97.18%	142	XP_050630719.1
+
+Select seq ref|XP_012324138.1|
+	
+hemoglobin subunit alpha [Aotus nancymaae]
+	
+Aotus nancymaae
+	278	278	100%	2e-93	96.48%	142	XP_012324138.1
+
+Select seq ref|XP_033092340.1|
+	
+translation initiation factor IF-2-like [Trachypithecus francoisi]
+	
+Trachypithecus francoisi
+	284	284	100%	2e-93	97.18%	327	XP_033092340.1
+
+Select seq pdb|4MQH|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	277	277	98%	2e-93	99.28%	139	4MQH_A
+
+Select seq ref|XP_032004373.1|
+	
+hemoglobin subunit alpha [Hylobates moloch]
+	
+Hylobates moloch
+	277	277	100%	2e-93	97.18%	142	XP_032004373.1
+
+Select seq ref|XP_011815457.1|
+	
+PREDICTED: hemoglobin subunit alpha isoform X1 [Colobus angolensis palliatus]
+	
+Colobus angolensis palliatus
+	277	277	100%	2e-93	96.48%	142	XP_011815457.1
+
+Select seq sp|P67817.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]
+	
+Ateles geoffroyi
+	277	277	100%	3e-93	96.48%	142	P67817.2
+
+Select seq gb|EHH60005.1|
+	
+Hemoglobin alpha chain [Macaca fascicularis]
+	
+Macaca fascicularis
+	277	277	100%	3e-93	97.18%	142	EHH60005.1
+
+Select seq sp|Q9TS34.2|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]
+	
+Hylobates lar
+	277	277	100%	3e-93	96.48%	142	Q9TS34.2
+
+Select seq sp|P18972.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]
+	
+Mico argentatus
+	276	276	99%	3e-93	97.16%	141	P18972.1
+
+Select seq ref|NP_001253705.1|
+	
+hemoglobin subunit alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	4e-93	96.48%	142	NP_001253705.1
+
+Select seq prf||681081A
+	
+hemoglobin alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	99%	5e-93	97.16%	141	681081A
+
+Select seq pdb|1O1N|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	561	99%	7e-93	99.29%	285	1O1N_A
+
+Select seq ref|NP_001038189.1|
+	
+hemoglobin subunit alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	9e-93	96.48%	142	NP_001038189.1
+
+Select seq gb|AYO89359.1|
+	
+hemoglobin subunit alpha [Cercopithecus wolfi]
+	
+Cercopithecus wolfi
+	276	276	100%	9e-93	96.48%	142	AYO89359.1
+
+Select seq sp|P21767.1|
+	
+RecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]
+	
+Macaca fascicularis
+	275	275	99%	1e-92	97.16%	141	P21767.1
+
+Select seq ref|XP_017377050.2|
+	
+hemoglobin subunit alpha [Cebus imitator]
+	
+Cebus imitator
+	275	275	100%	1e-92	95.77%	142	XP_017377050.2
+
+Select seq pdb|1O1M|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	560	99%	1e-92	98.58%	285	1O1M_A
+
+Select seq pdb|1O1J|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	560	99%	1e-92	98.58%	283	1O1J_A
+
+Select seq pdb|5WOG|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	275	275	96%	1e-92	100.00%	137	5WOG_A
+
+Select seq sp|P67818.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]
+	
+Saguinus oedipus
+	275	275	99%	2e-92	96.45%	141	P67818.1
+
+Select seq sp|P21766.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]
+	
+Macaca assamensis
+	275	275	99%	3e-92	97.16%	141	P21766.1
+
+Select seq tpe|SAI82172.1|
+	
+TPA: globin C1 [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	3e-92	96.48%	177	SAI82172.1
+
+Select seq sp|P01929.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]
+	
+Leontocebus fuscicollis
+	274	274	99%	3e-92	96.45%	141	P01929.1
+
+Select seq pdb|1O1L|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	558	99%	3e-92	98.58%	283	1O1L_A
+
+Select seq ref|XP_003928392.1|
+	
+hemoglobin subunit alpha [Saimiri boliviensis]
+	
+Saimiri boliviensis
+	274	274	100%	4e-92	95.77%	142	XP_003928392.1
+
+Select seq ref|XP_050630718.1|
+	
+hemoglobin subunit alpha-A/Q/R/T-like [Macaca thibetana thibetana]
+	
+Macaca thibetana thibetana
+	275	275	100%	4e-92	96.48%	177	XP_050630718.1
+ 
+Graphic Summary
+ 
+Alignments
+ 
+Taxonomy
+ 
+FOLLOW NCBI
+
+Connect with NLM
+
+  
+
+National Library of Medicine
+8600 Rockville Pike
+Bethesda, MD 20894
+
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+
+Help
+Accessibility
+Careers
+
+NLM
+NIH
+HHS
+USA.gov

@@ -1,0 +1,672 @@
+{
+  "date": "2026-10-22",
+  "taskId": "wf-1792549945863-fd7989",
+  "originalExecutionUnchanged": true,
+  "nodes": [
+    {
+      "id": "blastp",
+      "status": "succeeded",
+      "executionStatus": "failed",
+      "resultStatus": "verified"
+    },
+    {
+      "id": "musite",
+      "status": "succeeded",
+      "executionStatus": "needs_review",
+      "resultStatus": "verified"
+    },
+    {
+      "id": "interpro",
+      "status": "succeeded",
+      "executionStatus": "failed",
+      "resultStatus": "verified"
+    }
+  ],
+  "results": [
+    {
+      "id": "interpro",
+      "nodeId": "interpro",
+      "name": "09 · InterProScan",
+      "kind": "website",
+      "executionStatus": "failed",
+      "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table",
+      "artifacts": [
+        {
+          "path": "delivery/files/interpro/8921dd3e0733cc5a/interpro-result.json",
+          "name": "interpro-result.json",
+          "role": "data",
+          "kind": "report",
+          "sha256": "0abfd5168a87bbc4fc4854c8aa523a26783b3b770d8b13e69fc12aa2b5101fd5",
+          "bytes": 436871,
+          "verified": true,
+          "producer": "interpro",
+          "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table"
+        },
+        {
+          "path": "delivery/files/interpro/8921dd3e0733cc5a/original-page/page-001.png",
+          "name": "page-001.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "b1f8cb46913b57f1d21563e7318f36b403baf667a4cb5a28ac3bb05d66a96720",
+          "bytes": 917220,
+          "verified": true,
+          "producer": "interpro",
+          "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table"
+        },
+        {
+          "path": "delivery/files/interpro/8921dd3e0733cc5a/original-page/page-002.png",
+          "name": "page-002.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "f66fc96bb2bd762d722f8feca6d1e30685888584024a12bc99e27705eee384bb",
+          "bytes": 20655,
+          "verified": true,
+          "producer": "interpro",
+          "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table"
+        },
+        {
+          "path": "delivery/files/interpro/8921dd3e0733cc5a/original-page/page.html",
+          "name": "page.html",
+          "role": "page",
+          "kind": "report",
+          "sha256": "d1487b8c6d9cc4f546b312353dd5e189a74483c09295c796cf8ee98ea9f8eb4b",
+          "bytes": 455485,
+          "verified": true,
+          "producer": "interpro",
+          "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table"
+        },
+        {
+          "path": "delivery/files/interpro/8921dd3e0733cc5a/original-page/page.png",
+          "name": "page.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "7f5e3b16bc0625eaa2582c3e7479821ca331f7c5ce2475beb4cd768c72a5d5b4",
+          "bytes": 10680,
+          "verified": true,
+          "producer": "interpro",
+          "sourceUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20261021-040143-0493-30971739-p2m/#table"
+        }
+      ],
+      "message": "",
+      "capturedAt": "2026-10-21T02:34:07Z",
+      "checks": {
+        "analysis": "verified",
+        "visual": "unverified",
+        "archive": "unverified",
+        "downloads": "unverified"
+      },
+      "archive": {
+        "status": "partial",
+        "capturedAt": "2026-10-21T02:34:07Z",
+        "errors": [
+          "Result still displays Loading or an active progress indicator",
+          "Missing font: IBM Plex Sans",
+          "Result still displays Loading"
+        ],
+        "sourceUrl": "https://www.ebi.ac.uk/interpro/search/text/",
+        "title": "Search - InterPro",
+        "baseline": {
+          "text": "EMBL-EBI\nServices\nResearch\nTraining\nAbout us\n \nInterPro\nClassification of protein families\nHome\n▾ Search\n▾ Browse\n▾ Results\nRelease notes\nDownload\nHelp\n / Search / Text\nSearch InterPro\nby sequence\nby text\nby domain architecture\nSearch by protein families, domains, proteins, keywords, or GO terms\nExamples: IPR020422, kinase, O00167, PF02932, GO:0007165, 1t2v, UP000005640\nSearchClear\nPowered by EBI search\n\t\nInterPro is part of the ELIXIR infrastructure\n\nInterPro is an ELIXIR Core Data Resource. Learn more ›\n\nInterPro is part of the Global Biodata Coalition\n\nInterPro is a Global Core Biodata Resource. Learn more ›\n\n\t\n\nEMBL-EBI is the home for big data in biology.\n\nWe help scientists exploit complex information to make discoveries that benefit humankind.\n\nSERVICES\nData resources and tools\nData submission\nSupport and feedback\nLicensing\nLong-term data preservation\nRESEARCH\nPublications\nResearch groups\nPostdocs and PhDs\nTRAINING\nLive training\nOn-demand training\nSupport for trainers\nContact organisers\nINDUSTRY\nMembers Area\nContact Industry team\nABOUT\nContact us\nEvents\nJobs\nNews\nPeople and groups\nIntranet for staff\n\nEMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK.\nTel: +44 (0)1223 49 44 44\nFull contact details\n\nCopyright © EMBL 2026\nEMBL-EBI is part of the European Molecular Biology Laboratory\nTerms of use\n\nThis website requires cookies, and the limited processing of your personal data in order to function. By using the site you are agreeing to this as outlined in our Privacy Notice and Terms of Use.\nI agree, dismiss this banner",
+          "samples": [
+            {
+              "node": 133,
+              "tag": "H1",
+              "width": 813.2000122070312,
+              "height": 67.20000457763672,
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+              "fontSize": "48px",
+              "color": "rgb(248, 248, 248)",
+              "text": "InterPro"
+            },
+            {
+              "node": 137,
+              "tag": "svg",
+              "width": 62,
+              "height": 62,
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+              "fontSize": "48px",
+              "color": "rgb(255, 255, 255)",
+              "text": ""
+            },
+            {
+              "node": 149,
+              "tag": "svg",
+              "width": 38.400001525878906,
+              "height": 38.400001525878906,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "19.2px",
+              "color": "rgb(238, 238, 238)",
+              "text": ""
+            },
+            {
+              "node": 174,
+              "tag": "svg",
+              "width": 45.75,
+              "height": 45.75,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "20.8px",
+              "color": "rgb(248, 248, 248)",
+              "text": ""
+            },
+            {
+              "node": 227,
+              "tag": "IMG",
+              "width": 30,
+              "height": 6.175000190734863,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(255, 255, 255)",
+              "text": ""
+            },
+            {
+              "node": 242,
+              "tag": "H3",
+              "width": 1234.800048828125,
+              "height": 43.400001525878906,
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+              "fontSize": "31px",
+              "color": "rgb(10, 10, 10)",
+              "text": "Search InterPro"
+            },
+            {
+              "node": 271,
+              "tag": "svg",
+              "width": 20,
+              "height": 20,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(204, 204, 204)",
+              "text": ""
+            },
+            {
+              "node": 275,
+              "tag": "svg",
+              "width": 20,
+              "height": 20,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(204, 204, 204)",
+              "text": ""
+            },
+            {
+              "node": 333,
+              "tag": "IMG",
+              "width": 60,
+              "height": 60,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(10, 10, 10)",
+              "text": ""
+            },
+            {
+              "node": 347,
+              "tag": "IMG",
+              "width": 162.4499969482422,
+              "height": 60,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(10, 10, 10)",
+              "text": ""
+            },
+            {
+              "node": 440,
+              "tag": "svg",
+              "width": 24,
+              "height": 24,
+              "fontFamily": "\"IBM Plex Sans\", Helvetica, Arial, sans-serif",
+              "fontSize": "16px",
+              "color": "rgb(0, 0, 0)",
+              "text": ""
+            }
+          ],
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        },
+        "visual": {
+          "status": "partial",
+          "issues": [
+            "Result still displays Loading or an active progress indicator"
+          ]
+        },
+        "interactive": false,
+        "resourceRecoveryFailures": [
+          {
+            "url": "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-SemiBold.woff",
+            "reason": "Chrome could not retrieve the observed resource"
+          },
+          {
+            "url": "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Light.woff",
+            "reason": "Chrome could not retrieve the observed resource"
+          },
+          {
+            "url": "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff",
+            "reason": "Chrome could not retrieve the observed resource"
+          }
+        ],
+        "html": "page.html",
+        "resourceCount": 44,
+        "embeddedFonts": 15,
+        "missingResources": [
+          "https://acxngcvroo.cloudimg.io/v7/https://www.embl.org/files/wp-content/uploads/roundels.png",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/embl-breadcrumbs-lookup/assets/embl-breadcrumbs-lookup-ghost.svg",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/embl-logo/assets/logo-medium.svg",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/embl-logo/assets/logo.svg",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-mono/assets/IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Regular.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-BoldItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ExtraLight.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ExtraLightItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Italic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-LightItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Medium.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-MediumItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-SemiBoldItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Text.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-TextItalic.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Thin.woff",
+          "https://assets.emblstatic.net/vf/v2.5.10/assets/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ThinItalic.woff",
+          "https://cdn.jsdelivr.net/npm/@ibm/plex@4.0.2/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Medium.woff",
+          "https://cdn.jsdelivr.net/npm/@ibm/plex@4.0.2/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff",
+          "https://cdn.jsdelivr.net/npm/@ibm/plex@4.0.2/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Medium.woff2",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-mono/assets/IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Regular.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Bold.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-BoldItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ExtraLight.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ExtraLightItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Italic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Light.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-LightItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-MediumItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-SemiBold.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-SemiBoldItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Text.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-TextItalic.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Thin.woff",
+          "https://docbot-64c680.gitdocs.ebi.ac.uk/dist/~@visual-framework/vf-font-plex-sans/assets/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-ThinItalic.woff",
+          "https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/images/logos/EMBL-EBI/EMBL_EBI_Logo_black.svg",
+          "https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/images/logos/EMBL/EMBL-black.svg",
+          "https://fonts.googleapis.com",
+          "https://fonts.gstatic.com",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq129k.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq129k.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1isq129k.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwa0Xdgv-s.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwa1Xdg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwa23dgv-s.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwa2Hdgv-s.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwa2ndgv-s.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwl1FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwl5FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwl9FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlBFgg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQIwlRFgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgtIU.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlR1gMoQ.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlR1hMoQLNg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlR1j8oQLNg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlR1jcoQLNg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlR1jsoQLNg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYDYALZg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYfYALZg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYnYALZg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYrYALZg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYvYALZg.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA.woff2",
+          "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA.woff2",
+          "https://proteinswebteam.github.io",
+          "https://www.ebi.ac.uk",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Chemistry.c59.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Common.54f.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Conceptual.64d.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-FileFormats.c49.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Functional.b49.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Generic.39d.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-SocialMedia.273.woff",
+          "https://www.ebi.ac.uk/interpro/assets/fonts/EBI-Species.50a.woff",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-1024x1024.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-114x114.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-120x120.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-144x144.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-152x152.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-167x167.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-180x180.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-57x57.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-60x60.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-72x72.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-icon-76x76.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1125x2436.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1136x640.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1170x2532.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1242x2208.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1242x2688.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1284x2778.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1334x750.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1536x2048.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1620x2160.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1668x2224.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1668x2388.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-1792x828.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2048x1536.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2048x2732.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2160x1620.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2208x1242.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2224x1668.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2388x1668.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2436x1125.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2532x1170.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2688x1242.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2732x2048.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-2778x1284.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-640x1136.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-750x1334.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/apple-touch-startup-image-828x1792.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-16x16.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-48x48.png",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon.ico",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/manifest.webmanifest",
+          "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/yandex-browser-manifest.json",
+          "https://www.ebi.ac.uk/interpro/assets/images/EMBL-black.97f.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/EMBL-white.966.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/EMBL_EBI_Logo_black.78f.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/EMBL_EBI_Logo_white.bb2.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/black-asc.66a.gif",
+          "https://www.ebi.ac.uk/interpro/assets/images/black-desc.afc.gif",
+          "https://www.ebi.ac.uk/interpro/assets/images/black-unsorted.717.gif",
+          "https://www.ebi.ac.uk/interpro/assets/images/composite_03.0cd.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-species.29a.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-view-grid.e5a.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-view-list.955.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-view-sunburst.0bd.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-view-table.8a0.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/ico-view-tree.025.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/interpro_blue_offcanvas.fef.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/interpro_grey_offcanvas.b1e.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/logo_bbsrc.89e.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/logo_embl.2ca.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/logo_wellcome.5e9.jpg",
+          "https://www.ebi.ac.uk/interpro/assets/images/md-pile.af9.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/protein3d_02.a78.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/proteins.cff.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/sqc.6ef.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_api.270.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_ida_100.95c.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_interproscan.520.svg",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_ngl.978.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_protvista.7ea.png",
+          "https://www.ebi.ac.uk/interpro/assets/images/tool_textsearch.1d5.svg",
+          "https://www.ebi.ac.uk/interpro/js/7714.module.ipscan-search.edb.js",
+          "https://www.ebi.ac.uk/interpro/js/9041.module.9041.92f.js",
+          "https://www.ebi.ac.uk/interpro/js/9223.module.home-page.3d9.js",
+          "https://www.ebi.ac.uk/interpro/js/959.module.959.194.js",
+          "https://www.google-analytics.com"
+        ],
+        "offlineReadable": false,
+        "criticalMissingResources": [],
+        "images": [
+          {
+            "name": "page.png",
+            "width": 2528,
+            "height": 2704,
+            "scale": 2,
+            "clip": {
+              "x": 0,
+              "y": 0,
+              "width": 1264,
+              "height": 1352
+            }
+          }
+        ],
+        "offlineVerification": {
+          "path": "D:\\BioinformaticsHUB\\runs\\cca0737s0009-26items-20261019\\tasks\\wf-1792549945863-fd7989\\nodes\\interpro\\attempt-1\\results\\webpage\\page.html",
+          "itemId": null,
+          "status": "partial",
+          "issues": [
+            "Missing font: IBM Plex Sans",
+            "Result still displays Loading"
+          ],
+          "sha256": "3574dab3fe76a114641577f987e73f52dad8dcaf88cde9c66b9f8d0fe4e3b352",
+          "textSha256": "2bf2a938137fdb21b175fc0cf132175a1ca9bb75ab47c58467057398fa833daa"
+        },
+        "path": "nodes/interpro/attempt-1/results/webpage"
+      },
+      "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+      "registeredAt": "2026-10-22T11:00:07.897Z",
+      "unavailable": false,
+      "integrityIssues": [],
+      "analysisVerification": {
+        "status": "verified",
+        "validatorId": "interpro",
+        "facts": {
+          "sequenceMatches": true,
+          "matches": 15,
+          "toolVersion": "6.0.2.2"
+        },
+        "issues": [],
+        "fingerprint": "852a6dfafabd697b118a0ed0cf200c62f312e52e3eae1be91b4c9a657a7bf99a",
+        "validatorVersion": "eff37b3020ab0310fea5d0048df4843859d3e5d3371f21792fb66be7a373bb05",
+        "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+        "parametersSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "verifiedAt": "2026-10-22T11:00:10.987Z",
+        "current": true
+      },
+      "attachmentInventory": {
+        "status": "complete",
+        "version": 1,
+        "items": [
+          {
+            "id": "interpro-json",
+            "required": true,
+            "state": "downloaded",
+            "files": [
+              "delivery/files/interpro/8921dd3e0733cc5a/interpro-result.json"
+            ]
+          }
+        ],
+        "issues": []
+      },
+      "gaps": [
+        "图表 / Figures: unverified",
+        "网页保存 / Page archive: unverified",
+        "附件下载 / Downloads: unverified"
+      ]
+    },
+    {
+      "id": "musite",
+      "nodeId": "musite",
+      "name": "13 · MusiteDeep",
+      "kind": "website",
+      "executionStatus": "needs_review",
+      "sourceUrl": "https://www.musite.net/",
+      "artifacts": [
+        {
+          "path": "delivery/files/musite/f07ba4e4592ce670/MusiteDeepResult.zip",
+          "name": "MusiteDeepResult.zip",
+          "role": "data",
+          "kind": "report",
+          "sha256": "cca7aac0f345bf1c001f3192e2f9cecea8a6e2eafe71e3ab6964966d9d330489",
+          "bytes": 9399,
+          "verified": true,
+          "producer": "musite",
+          "sourceUrl": "https://www.musite.net/"
+        }
+      ],
+      "message": "",
+      "checks": {
+        "analysis": "verified",
+        "visual": "unverified",
+        "archive": "not_saved",
+        "downloads": "unverified"
+      },
+      "archive": {
+        "status": "not_saved"
+      },
+      "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+      "registeredAt": "2026-10-22T11:00:12.294Z",
+      "unavailable": false,
+      "integrityIssues": [],
+      "analysisVerification": {
+        "status": "verified",
+        "validatorId": "musite",
+        "facts": {
+          "positionsValidated": 124,
+          "association": "original-input-bound-download-and-predicted-residues",
+          "scope": "computational prediction"
+        },
+        "issues": [],
+        "fingerprint": "535fac01f4b3f8aad6f6645b92bba67c1a9158e13f39b068db72b36bb6ab9c28",
+        "validatorVersion": "eff37b3020ab0310fea5d0048df4843859d3e5d3371f21792fb66be7a373bb05",
+        "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+        "parametersSha256": "4b23a1115da3ba5090dcf6269139ebbda6320e610b14e499a8f834b0037f540d",
+        "verifiedAt": "2026-10-22T11:00:14.903Z",
+        "current": true
+      },
+      "attachmentInventory": {
+        "status": "complete",
+        "version": 1,
+        "items": [
+          {
+            "id": "prediction-zip",
+            "required": true,
+            "state": "downloaded",
+            "files": [
+              "delivery/files/musite/f07ba4e4592ce670/MusiteDeepResult.zip"
+            ]
+          }
+        ],
+        "issues": []
+      },
+      "gaps": [
+        "缺少原站 HTML 存档 / Original HTML is missing",
+        "图表 / Figures: unverified",
+        "网页保存 / Page archive: not_saved",
+        "附件下载 / Downloads: unverified"
+      ]
+    },
+    {
+      "id": "blastp",
+      "nodeId": "blastp",
+      "name": "18 · NCBI BLASTp",
+      "kind": "website",
+      "executionStatus": "failed",
+      "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014",
+      "artifacts": [
+        {
+          "path": "delivery/files/blastp/9cd9f4326c49c64b/blastp.xml",
+          "name": "blastp.xml",
+          "role": "data",
+          "kind": "report",
+          "sha256": "168f0a030e5e87abaa7af5064a1aa14e3eae8f9fdf5da830af2cbefa166ab6e8",
+          "bytes": 338515,
+          "verified": true,
+          "producer": "blastp",
+          "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014"
+        },
+        {
+          "path": "delivery/files/blastp/9cd9f4326c49c64b/original-page/page-001.png",
+          "name": "page-001.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "e93fe638753edc787ffa6eff672fc90e0e549e5bca7305f2262d8908a9ae828f",
+          "bytes": 1455370,
+          "verified": true,
+          "producer": "blastp",
+          "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014"
+        },
+        {
+          "path": "delivery/files/blastp/9cd9f4326c49c64b/original-page/page-002.png",
+          "name": "page-002.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "d5a345d6f461d4cbcb1f85f28a76ee8107b513110f793e271239a9b91062d993",
+          "bytes": 1629143,
+          "verified": true,
+          "producer": "blastp",
+          "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014"
+        },
+        {
+          "path": "delivery/files/blastp/9cd9f4326c49c64b/original-page/page-003.png",
+          "name": "page-003.png",
+          "role": "figure",
+          "kind": "report",
+          "sha256": "452614bb0908bd1b10722a7bf19e7f7d3f6a619e173b835e48c211396518404f",
+          "bytes": 61493,
+          "verified": true,
+          "producer": "blastp",
+          "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014"
+        },
+        {
+          "path": "delivery/files/blastp/9cd9f4326c49c64b/original-page/page.html",
+          "name": "page.html",
+          "role": "page",
+          "kind": "report",
+          "sha256": "47ad82a0a02edad849bea8c56dbe446f1e3dba137d0331f7944e851dde0cf94e",
+          "bytes": 1571914,
+          "verified": true,
+          "producer": "blastp",
+          "sourceUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=DGAD0TVP014"
+        }
+      ],
+      "message": "",
+      "checks": {
+        "analysis": "verified",
+        "visual": "unverified",
+        "archive": "unverified",
+        "downloads": "unverified"
+      },
+      "archive": {
+        "status": "not_saved"
+      },
+      "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+      "registeredAt": "2026-10-22T10:58:20.371Z",
+      "unavailable": false,
+      "integrityIssues": [],
+      "analysisVerification": {
+        "status": "verified",
+        "validatorId": "blastp",
+        "facts": {
+          "querySegmentsChecked": 200,
+          "queryResiduesChecked": 260,
+          "database": "clustered_nr"
+        },
+        "issues": [],
+        "fingerprint": "3bfbb080eb96c9b28cac421aa07e5a73db88f4853b58e994b6ffdd994517c037",
+        "validatorVersion": "eff37b3020ab0310fea5d0048df4843859d3e5d3371f21792fb66be7a373bb05",
+        "inputSha256": "a2401f56944dd9d374f807c1f1dc0579738e93b6c3dc7e8176219e0fd09708b4",
+        "parametersSha256": "2a02dc5d8ba67e6c2d927715a22c5ee19a2df39b63b77fef9399285c2d350601",
+        "verifiedAt": "2026-10-22T11:00:06.826Z",
+        "current": true
+      },
+      "attachmentInventory": {
+        "status": "complete",
+        "version": 1,
+        "items": [
+          {
+            "id": "blast-xml",
+            "required": true,
+            "state": "downloaded",
+            "files": [
+              "delivery/files/blastp/9cd9f4326c49c64b/blastp.xml"
+            ]
+          }
+        ],
+        "issues": []
+      },
+      "gaps": [
+        "图表 / Figures: unverified",
+        "网页保存 / Page archive: unverified",
+        "附件下载 / Downloads: unverified"
+      ]
+    }
+  ]
+}

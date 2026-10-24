@@ -1,0 +1,11 @@
+{
+  "siteId": "alphafold_db",
+  "recipeVersion": 1,
+  "url": "https://alphafold.ebi.ac.uk/entry/AF-P69905-F1",
+  "title": "AlphaFold Protein Structure Database",
+  "tables": [],
+  "parameters": {},
+  "inputSha256": "8ce70050b039db1e264d61338e22b69c356e9644b39c6f65483555ce3b0979e1",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T11:08:43Z"
+}

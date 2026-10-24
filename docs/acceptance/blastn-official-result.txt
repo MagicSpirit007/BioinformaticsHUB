@@ -1,0 +1,824 @@
+An official website of the United States government
+
+ Here's how you know 
+Skip to main page content
+Log in
+Access keys
+NCBI Homepage
+MyNCBI Homepage
+Main Content
+Main Navigation
+BLAST ® » blastn suite » results for RID-AZJ2ZS6T014
+Home Recent Results Saved Strategies Help
+ Edit Search Save Search Search Summary
+ How to read this report?  BLAST Help Videos Back to Traditional Results Page
+
+Job Title
+NM_000558.5 Homo sapiens hemoglobin subunit
+RID
+AZJ2ZS6T014 Search expires on 09-21 19:49 pm Download All
+Program
+BLASTN  
+Help
+Citation
+Database
+nt See details
+Query ID
+lcl|Query_5362197
+Description
+NM_000558.5 Homo sapiens hemoglobin subunit alpha 1 (HBA1), mRNA
+...
+Molecule type
+dna
+Query Length
+577
+Other reports
+Distance tree of results MSA viewer 
+Help
+Filter Results
+Organism
+only top 20 will appear
+exclude
+Add organism
+Percent Identity
+from
+ 
+Percent Identity
+to 
+E value
+from
+ 
+E value
+to 
+Query Coverage
+from
+ 
+Query Coverage
+to 
+Filter Reset
+Descriptions
+Sequences producing significant alignments
+Download Select columns 
+Show 
+10
+50
+100
+ 
+Help
+select all
+ 100 sequences selected
+GenBank
+ 
+Graphics
+ 
+Distance tree of results
+  
+MSA Viewer
+Sequences producing significant alignments:
+Select for downloading or viewing reports
+	
+Description
+	
+Scientific Name
+	
+Max Score
+	
+Total Score
+	
+Query Cover
+	
+E value
+	
+Per. Ident
+	
+Acc. Len
+	Accession
+
+Select seq NM_000558.5
+	
+Homo sapiens hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Homo sapiens
+	1066	1066	100%	0.0	100.00%	577	NM_000558.5
+
+Select seq BC005931.1
+	
+Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:14541 IMAGE:4047053), complete cds
+	
+Homo sapiens
+	1066	1066	100%	0.0	100.00%	633	BC005931.1
+
+Select seq AK223392.1
+	
+Homo sapiens mRNA for alpha 2 globin variant, clone: FCC107C11
+	
+Homo sapiens
+	1061	1061	100%	0.0	99.83%	608	AK223392.1
+
+Select seq BC032122.2
+	
+Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:29691 IMAGE:4849981), complete cds
+	
+Homo sapiens
+	1040	1040	98%	0.0	100.00%	585	BC032122.2
+
+Select seq BC050661.1
+	
+Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:60177 IMAGE:5209215), complete cds
+	
+Homo sapiens
+	1040	1040	98%	0.0	100.00%	603	BC050661.1
+
+Select seq XM_003809393.4
+	
+PREDICTED: Pan paniscus hemoglobin subunit alpha (LOC100984160), mRNA
+	
+Pan paniscus
+	1016	1016	100%	0.0	98.44%	631	XM_003809393.4
+
+Select seq NM_001042626.1
+	
+Pan troglodytes hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Pan troglodytes
+	1003	1003	100%	0.0	98.09%	577	NM_001042626.1
+
+Select seq XM_010381857.2
+	
+PREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Rhinopithecus roxellana
+	992	992	100%	0.0	97.75%	603	XM_010381857.2
+
+Select seq XM_030924410.1
+	
+PREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha-like (LOC115895176), mRNA
+	
+Rhinopithecus roxellana
+	985	985	100%	0.0	97.57%	657	XM_030924410.1
+
+Select seq XM_054453274.2
+	
+PREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015394), mRNA
+	
+Pongo pygmaeus
+	983	983	100%	0.0	97.40%	666	XM_054453274.2
+
+Select seq XM_024233299.2
+	
+PREDICTED: Pongo abelii hemoglobin subunit alpha (LOC112128473), mRNA
+	
+Pongo abelii
+	983	983	100%	0.0	97.40%	660	XM_024233299.2
+
+Select seq XM_033236450.1
+	
+PREDICTED: Trachypithecus francoisi hemoglobin subunit alpha (LOC117097923), mRNA
+	
+Trachypithecus francoisi
+	976	976	100%	0.0	97.23%	604	XM_033236450.1
+
+Select seq XM_033236449.1
+	
+PREDICTED: Trachypithecus francoisi translation initiation factor IF-2-like (LOC117097922), mRNA
+	
+Trachypithecus francoisi
+	976	976	100%	0.0	97.23%	1108	XM_033236449.1
+
+Select seq XM_037996351.2
+	
+PREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (HBA), mRNA
+	
+Chlorocebus sabaeus
+	970	970	100%	0.0	97.05%	616	XM_037996351.2
+
+Select seq XM_011960067.1
+	
+PREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X1, mRNA
+	
+Colobus angolensis palliatus
+	970	970	100%	0.0	97.05%	599	XM_011960067.1
+
+Select seq NM_001132429.1
+	
+Pongo abelii hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Pongo abelii
+	959	959	100%	0.0	96.71%	589	NM_001132429.1
+
+Select seq XM_030798787.1
+	
+PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1-like (LOC115830409), mRNA
+	
+Nomascus leucogenys
+	955	955	100%	0.0	96.53%	584	XM_030798787.1
+
+Select seq XM_073014956.1
+	
+PREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (LOC103231670), mRNA
+	
+Chlorocebus sabaeus
+	953	953	100%	0.0	96.53%	596	XM_073014956.1
+
+Select seq NM_000517.6
+	
+Homo sapiens hemoglobin subunit alpha 2 (HBA2), mRNA
+	
+Homo sapiens
+	953	953	100%	0.0	96.53%	576	NM_000517.6
+
+Select seq XM_023189803.1
+	
+PREDICTED: Piliocolobus tephrosceles hemoglobin subunit alpha (LOC111524597), mRNA
+	
+Piliocolobus tephrosceles
+	953	953	100%	0.0	96.53%	606	XM_023189803.1
+
+Select seq XM_003809390.6
+	
+PREDICTED: Pan paniscus hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Pan paniscus
+	948	948	100%	0.0	96.36%	637	XM_003809390.6
+
+Select seq NM_001042627.1
+	
+Pan troglodytes hemoglobin subunit alpha 2 (HBA2), mRNA
+	
+Pan troglodytes
+	946	946	100%	0.0	96.35%	575	NM_001042627.1
+
+Select seq XM_050774762.1
+	
+PREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T (LOC126944882), mRNA
+	
+Macaca thibetana thibetana
+	942	942	100%	0.0	96.19%	611	XM_050774762.1
+
+Select seq XM_071083758.1
+	
+PREDICTED: Macaca nemestrina hemoglobin subunit alpha-1/2/3 (LOC139359788), mRNA
+	
+Macaca nemestrina
+	937	937	100%	0.0	96.01%	600	XM_071083758.1
+
+Select seq XM_005590731.4
+	
+PREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136846), mRNA
+	
+Macaca fascicularis
+	937	937	100%	0.0	96.01%	576	XM_005590731.4
+
+Select seq XM_045382711.2
+	
+PREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136192), mRNA
+	
+Macaca fascicularis
+	937	937	100%	0.0	96.01%	576	XM_045382711.2
+
+Select seq XM_050774761.1
+	
+PREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T-like (LOC126944881), mRNA
+	
+Macaca thibetana thibetana
+	937	937	100%	0.0	96.01%	790	XM_050774761.1
+
+Select seq V00493.1
+	
+Homo sapiens messenger mRNA for hemoglobin alpha chain
+	
+Homo sapiens
+	935	935	100%	0.0	96.01%	575	V00493.1
+
+Select seq BC008572.1
+	
+Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:17020 IMAGE:4177243), complete cds
+	
+Homo sapiens
+	933	933	98%	0.0	96.63%	579	BC008572.1
+
+Select seq XM_063699834.1
+	
+PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-like (LOC134757486), mRNA
+	
+Gorilla gorilla gorilla
+	931	931	100%	0.0	95.84%	659	XM_063699834.1
+
+Select seq XM_031002843.3
+	
+PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha (LOC115931067), mRNA
+	
+Gorilla gorilla gorilla
+	931	931	100%	0.0	95.84%	630	XM_031002843.3
+
+Select seq XM_055078620.2
+	
+PREDICTED: Pan troglodytes hemoglobin subunit alpha (LOC129388389), mRNA
+	
+Pan troglodytes
+	929	929	99%	0.0	96.14%	569	XM_055078620.2
+
+Select seq AF147332.1
+	
+Homo sapiens full length insert cDNA clone YB24D09
+	
+Homo sapiens
+	924	924	97%	0.0	96.59%	566	AF147332.1
+
+Select seq XM_003269100.3
+	
+PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X1, mRNA
+	
+Nomascus leucogenys
+	920	920	100%	0.0	95.49%	586	XM_003269100.3
+
+Select seq XM_030798788.1
+	
+PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X2, mRNA
+	
+Nomascus leucogenys
+	915	915	95%	0.0	96.72%	559	XM_030798788.1
+
+Select seq XM_055243101.2
+	
+PREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462773), mRNA
+	
+Symphalangus syndactylus
+	915	915	100%	0.0	95.32%	659	XM_055243101.2
+
+Select seq XM_055243100.1
+	
+PREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462771), mRNA
+	
+Symphalangus syndactylus
+	915	915	100%	0.0	95.32%	603	XM_055243100.1
+
+Select seq BC101846.1
+	
+Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:126895 IMAGE:8069352), complete cds
+	
+Homo sapiens
+	913	913	86%	0.0	100.00%	494	BC101846.1
+
+Select seq KX533500.1
+	
+Homo sapiens Hemoglobin subunit alpha (HBA2) mRNA, complete cds
+	
+Homo sapiens
+	909	1328	100%	0.0	100.00%	742	KX533500.1
+
+Select seq XM_032148482.2
+	
+PREDICTED: Hylobates moloch hemoglobin subunit alpha (LOC116465397), mRNA
+	
+Hylobates moloch
+	909	909	100%	0.0	95.15%	603	XM_032148482.2
+
+Select seq AF105974.1
+	
+Homo sapiens alpha one globin (HBA1) mRNA, complete cds
+	
+Homo sapiens
+	902	902	85%	0.0	100.00%	488	AF105974.1
+
+Select seq AF349571.1
+	
+Homo sapiens hemoglobin alpha-1 globin chain (HBA1) mRNA, complete cds
+	
+Homo sapiens
+	896	896	85%	0.0	99.80%	491	AF349571.1
+
+Select seq NM_001168816.2
+	
+Papio anubis hemoglobin, alpha 1 (HBA1), mRNA
+	
+Papio anubis
+	893	893	97%	0.0	95.37%	561	NM_001168816.2
+
+Select seq NM_001266776.2
+	
+Macaca mulatta hemoglobin subunit alpha 1 (HBA1), mRNA
+	
+Macaca mulatta
+	891	891	96%	0.0	95.83%	551	NM_001266776.2
+
+Select seq AF097635.1
+	
+Homo sapiens alpha-2 globin (HBA1) mRNA, complete cds
+	
+Homo sapiens
+	891	891	90%	0.0	97.50%	521	AF097635.1
+
+Select seq XM_064362263.1
+	
+PREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC135268998), mRNA
+	
+Aotus nancymaae
+	881	881	100%	0.0	94.29%	592	XM_064362263.1
+
+Select seq XM_054453273.2
+	
+PREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015393), mRNA
+	
+Pongo pygmaeus
+	881	881	100%	0.0	94.28%	591	XM_054453273.2
+
+Select seq XM_009008812.5
+	
+PREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC103787296), mRNA
+	
+Callithrix jacchus
+	865	865	100%	0.0	93.77%	697	XM_009008812.5
+
+Select seq LT548101.1
+	
+TPA_inf: Homo sapiens GLNC1 gene for globin C1
+	
+Homo sapiens
+	861	861	81%	0.0	100.00%	534	LT548101.1
+
+Select seq XM_004056858.5
+	
+PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-3 (LOC101146261), mRNA
+	
+Gorilla gorilla gorilla
+	856	856	100%	0.0	93.33%	997	XM_004056858.5
+
+Select seq XM_012468715.2
+	
+PREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC105728358), mRNA
+	
+Aotus nancymaae
+	843	843	100%	0.0	93.08%	591	XM_012468715.2
+
+Select seq XM_054668109.2
+	
+PREDICTED: Pan troglodytes hemoglobin subunit alpha-3-like (LOC129137268), mRNA
+	
+Pan troglodytes
+	832	832	100%	0.0	92.50%	603	XM_054668109.2
+
+Select seq XM_012035741.1
+	
+PREDICTED: Cercocebus atys hemoglobin subunit alpha (LOC105574652), mRNA
+	
+Cercocebus atys
+	832	832	89%	0.0	95.91%	513	XM_012035741.1
+
+Select seq XM_024733557.1
+	
+PREDICTED: Neophocaena asiaeorientalis asiaeorientalis hemoglobin subunit alpha (LOC112392006), mRNA
+	
+Neophocaena asiaeorientalis asiaeorientalis
+	830	830	78%	0.0	100.00%	449	XM_024733557.1
+
+Select seq XM_035266305.3
+	
+PREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC118142868), mRNA
+	
+Callithrix jacchus
+	830	830	100%	0.0	92.61%	580	XM_035266305.3
+
+Select seq XM_003928343.4
+	
+PREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101034843), mRNA
+	
+Saimiri boliviensis
+	828	828	100%	0.0	92.49%	590	XM_003928343.4
+
+Select seq XM_003928344.4
+	
+PREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101035149), mRNA
+	
+Saimiri boliviensis
+	821	821	100%	0.0	92.39%	595	XM_003928344.4
+
+Select seq DQ891761.2
+	
+Synthetic construct clone IMAGE:100004391; FLH179692.01X; RZPDo839B06132D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein
+	
+synthetic construct
+	800	800	75%	0.0	100.00%	469	DQ891761.2
+
+Select seq DQ894945.2
+	
+Synthetic construct Homo sapiens clone IMAGE:100009405; FLH179688.01L; RZPDo839B06131D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein
+	
+synthetic construct
+	798	798	75%	0.0	100.00%	469	DQ894945.2
+
+Select seq AY893615.1
+	
+Synthetic construct Homo sapiens clone FLH130873.01X hemoglobin alpha 2 (HBA2) mRNA, complete cds
+	
+synthetic construct
+	793	793	74%	0.0	100.00%	429	AY893615.1
+
+Select seq AB590168.1
+	
+Synthetic construct DNA, clone: pFN21AE1112, Homo sapiens HBA1 gene for hemoglobin, alpha 1, without stop codon, in Flexi system
+	
+synthetic construct
+	791	791	74%	0.0	100.00%	443	AB590168.1
+
+Select seq LT548130.1
+	
+TPA_inf: Macaca mulatta GLNC1 gene for globin C1
+	
+Macaca mulatta
+	789	789	81%	0.0	97.21%	534	LT548130.1
+
+Select seq AY892605.1
+	
+Synthetic construct Homo sapiens clone FLH030172.01L hemoglobin alpha 2 (HBA2) mRNA, partial cds
+	
+synthetic construct
+	789	789	74%	0.0	100.00%	429	AY892605.1
+
+Select seq XM_017521561.2
+	
+PREDICTED: Cebus imitator hemoglobin subunit alpha (LOC108299244), mRNA
+	
+Cebus imitator
+	776	776	83%	0.0	96.02%	509	XM_017521561.2
+
+Select seq XM_032273653.1
+	
+PREDICTED: Sapajus apella hemoglobin subunit alpha (LOC116547886), mRNA
+	
+Sapajus apella
+	765	765	83%	0.0	95.60%	506	XM_032273653.1
+
+Select seq LT548141.1
+	
+TPA_inf: Callithrix jacchus GLNC1 gene for globin C1
+	
+Callithrix jacchus
+	750	750	81%	0.0	95.72%	534	LT548141.1
+
+Select seq MH382891.1
+	
+Nasalis larvatus hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Nasalis larvatus
+	737	737	74%	0.0	97.67%	429	MH382891.1
+
+Select seq MH382886.1
+	
+Trachypithecus francoisi hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Trachypithecus francoisi
+	737	737	74%	0.0	97.67%	429	MH382886.1
+
+Select seq MH382885.1
+	
+Hylobates lar hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Hylobates lar
+	737	737	74%	0.0	97.67%	429	MH382885.1
+
+Select seq LT548134.1
+	
+TPA_inf: Papio hamadryas GLNC1 gene for globin C1
+	
+Papio hamadryas
+	734	734	81%	0.0	95.06%	984	LT548134.1
+
+Select seq MH382894.1
+	
+Cercopithecus wolfi hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Cercopithecus wolfi
+	732	732	74%	0.0	97.44%	429	MH382894.1
+
+Select seq MH382893.1
+	
+Miopithecus talapoin hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Miopithecus talapoin
+	732	732	74%	0.0	97.44%	429	MH382893.1
+
+Select seq MH382890.1
+	
+Erythrocebus patas hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Erythrocebus patas
+	732	732	74%	0.0	97.44%	429	MH382890.1
+
+Select seq NM_001044724.1
+	
+Macaca mulatta hemoglobin, alpha 2 (HBA), mRNA
+	
+Macaca mulatta
+	732	732	74%	0.0	97.44%	429	NM_001044724.1
+
+Select seq MH382892.1
+	
+Allenopithecus nigroviridis hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Allenopithecus nigroviridis
+	726	726	74%	0.0	97.20%	429	MH382892.1
+
+Select seq MH382884.1
+	
+Colobus guereza hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Colobus guereza
+	721	721	74%	0.0	96.97%	429	MH382884.1
+
+Select seq MH382883.1
+	
+Chlorocebus aethiops hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Chlorocebus aethiops
+	721	721	74%	0.0	96.97%	429	MH382883.1
+
+Select seq MH382889.1
+	
+Aotus nancymaae hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Aotus nancymaae
+	710	710	74%	0.0	96.51%	429	MH382889.1
+
+Select seq MH382888.1
+	
+Callithrix geoffroyi hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Callithrix geoffroyi
+	704	704	74%	0.0	96.28%	429	MH382888.1
+
+Select seq MH382887.1
+	
+Lophocebus albigena hemoglobin subunit alpha (HBA) mRNA, complete cds
+	
+Lophocebus albigena
+	671	671	74%	0.0	94.87%	429	MH382887.1
+
+Select seq XM_025374666.2
+	
+PREDICTED: Theropithecus gelada hemoglobin subunit alpha (LOC112618059), mRNA
+	
+Theropithecus gelada
+	660	660	74%	0.0	94.41%	429	XM_025374666.2
+
+Select seq XM_017866554.1
+	
+PREDICTED: Rhinopithecus bieti hemoglobin subunit alpha (LOC108525644), partial mRNA
+	
+Rhinopithecus bieti
+	647	647	65%	3e-180	97.87%	373	XM_017866554.1
+
+Select seq XM_008063911.1
+	
+PREDICTED: Carlito syrichta hemoglobin subunit alpha-like (LOC103266303), partial mRNA
+	
+Carlito syrichta
+	645	645	83%	1e-179	91.04%	503	XM_008063911.1
+
+Select seq XM_011960069.1
+	
+PREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X2, mRNA
+	
+Colobus angolensis palliatus
+	640	748	77%	5e-178	96.86%	434	XM_011960069.1
+
+Select seq XM_076839989.1
+	
+PREDICTED: Callospermophilus lateralis hemoglobin subunit alpha (LOC143384821), mRNA
+	
+Callospermophilus lateralis
+	628	628	98%	1e-174	86.80%	567	XM_076839989.1
+
+Select seq XM_053556072.1
+	
+PREDICTED: Nycticebus coucang hemoglobin subunit alpha-like (LOC128561619), mRNA
+	
+Nycticebus coucang
+	617	617	97%	2e-171	86.79%	658	XM_053556072.1
+
+Select seq XM_034670739.1
+	
+PREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC117804209), mRNA
+	
+Ailuropoda melanoleuca
+	612	612	82%	1e-169	90.08%	592	XM_034670739.1
+
+Select seq XM_002920155.4
+	
+PREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC100472013), mRNA
+	
+Ailuropoda melanoleuca
+	606	606	82%	5e-168	89.89%	663	XM_002920155.4
+
+Select seq XM_012659590.1
+	
+PREDICTED: Propithecus coquereli hemoglobin, alpha 1 (HBA1), mRNA
+	
+Propithecus coquereli
+	604	604	99%	2e-167	85.89%	576	XM_012659590.1
+
+Select seq XM_069486403.1
+	
+PREDICTED: Eulemur rufifrons hemoglobin subunit alpha (LOC138394438), mRNA
+	
+Eulemur rufifrons
+	601	601	96%	2e-166	86.27%	563	XM_069486403.1
+
+Select seq XM_027940371.2
+	
+PREDICTED: Marmota flaviventris hemoglobin subunit alpha 1 (Hba1), mRNA
+	
+Marmota flaviventris
+	595	595	100%	1e-164	85.27%	588	XM_027940371.2
+
+Select seq XM_046440878.2
+	
+PREDICTED: Marmota monax hemoglobin subunit alpha 1 (Hba1), mRNA
+	
+Marmota monax
+	595	595	100%	1e-164	85.27%	606	XM_046440878.2
+
+Select seq XM_015491058.2
+	
+PREDICTED: Marmota marmota marmota hemoglobin subunit alpha 1 (Hba1), mRNA
+	
+Marmota marmota marmota
+	595	595	100%	1e-164	85.27%	610	XM_015491058.2
+
+Select seq XM_081040025.1
+	
+Rhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493622), mRNA
+	
+Rhinolophus hipposideros
+	590	590	82%	5e-163	89.12%	559	XM_081040025.1
+
+Select seq XM_081040011.1
+	
+Rhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493614), mRNA
+	
+Rhinolophus hipposideros
+	590	590	82%	5e-163	89.12%	561	XM_081040011.1
+
+Select seq XM_045849121.1
+	
+PREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825583), mRNA
+	
+Phyllostomus hastatus
+	588	588	83%	2e-162	88.77%	580	XM_045849121.1
+
+Select seq XM_045849116.1
+	
+PREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825577), mRNA
+	
+Phyllostomus hastatus
+	588	588	83%	2e-162	88.77%	588	XM_045849116.1
+
+Select seq XM_066383080.1
+	
+PREDICTED: Saccopteryx leptura hemoglobin subunit alpha (LOC136403832), mRNA
+	
+Saccopteryx leptura
+	586	586	82%	7e-162	88.89%	585	XM_066383080.1
+
+Select seq XM_036460327.2
+	
+PREDICTED: Pipistrellus kuhlii hemoglobin subunit alpha (LOC118731626), mRNA
+	
+Pipistrellus kuhlii
+	586	586	83%	7e-162	88.80%	591	XM_036460327.2
+
+Select seq AB104818.1
+	
+Pipistrellus abramus HBA mRNA for alpha globin, complete cds
+	
+Pipistrellus abramus
+	573	573	81%	5e-158	88.68%	554	AB104818.1
+ 
+Graphic Summary
+ 
+Alignments
+ 
+Taxonomy
+ 
+FOLLOW NCBI
+
+Connect with NLM
+
+  
+
+National Library of Medicine
+8600 Rockville Pike
+Bethesda, MD 20894
+
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+
+Help
+Accessibility
+Careers
+
+NLM
+NIH
+HHS
+USA.gov

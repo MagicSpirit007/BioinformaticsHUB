@@ -1,3 +1,5 @@
+0.7 安装包增加 `biohub.cmd` CLI 与 MCP 入口，复用 Electron Node，继续连接已有 Chrome。见 [AI 工具说明](../docs/ai-tools.md)。
+
 # BioinformaticsHUB 0.5.2 Windows 打包
 
 > [中文版](./README.md) · [English](./README.en.md)

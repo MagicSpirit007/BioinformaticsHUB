@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "status": "candidate_verified_not_installed",
+  "installer": "apps/bioinformatics-hub-desktop/release-candidate-usability-20261023/BioinformaticsHUB-0.7.0-win-x64.exe",
+  "installerSha256": "af7d7019cbd87d183f0aca3e8670138d1c1e45f2be875f57019b88c56f06ddcc",
+  "buildId": "3a223d1095e86b7216ceec72029f8b792ac944ec03b8ed20de60c9068d301508",
+  "tests": {
+    "node": {
+      "passed": 98,
+      "failed": 0,
+      "scope": "Prior full regression before browser quoting fix; see browserFix.tests for the current targeted rerun"
+    },
+    "python": {
+      "run": 88,
+      "passed": 86,
+      "skipped": 2,
+      "failed": 0
+    }
+  },
+  "desktop": "runs/usability-desktop-1792746676224/validation.json",
+  "runtime": "runs/packaged-repair-validation-1792756940694/validation.json",
+  "release": "runs/delivery/release-validation.json",
+  "logs": "runs/usability-validation-20261023",
+  "originalEvidenceFilesUnchanged": 22,
+  "remoteAnalysisSubmissions": 0,
+  "limits": [
+    "Original PSIPRED job still lacks a recoverable receipt; no new job submitted",
+    "Real external email delivery was not tested",
+    "Unconfirmed website notification support remains unknown",
+    "Current installed version was not replaced"
+  ],
+  "browserFix": {
+    "cause": "Edge --single-argument consumed re-quoted URL literally",
+    "tests": {
+      "passed": 18,
+      "failed": 0
+    },
+    "nativeBrowserScreenshot": "runs/usability-validation-20261023/edge-candidate-fixed.png",
+    "previousGap": "OS accepted launch; native browser rendering was not verified in the previous candidate"
+  }
+}

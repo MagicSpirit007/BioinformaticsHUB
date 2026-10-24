@@ -1,0 +1,113 @@
+{
+  "url": "https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi",
+  "title": "Welcome to NCBI Batch CD-search",
+  "text": "\t\n\t\n\n\n\t\nStructure Home\t3D Macromolecular Structures\tConserved Domains\tHelp\n\nNCBI's Conserved Domain Database (CDD) is now available as a preview version, providing protein domain family models and corresponding RPS-BLAST search databases that are not yet part of a versioned public release. Find more details on the CDD News Page if you want to scan protein or nucleotide query sequences against the NCBI_Preview set.\n\n\n\nLaunch a new search\nEnter query protein sequences\n\nWarning: Batch CD-Search accepts only protein sequences. The maximal number of query sequences per request is 1000. A single query sequence can not exceed a length of 40,000 residues.\n\nRequests containing more than 1000 queries will be rejected as peak usage of this shared resource has increased significantly and affects service availability. Standard CD-Search can be used for either protein or nucleotide sequences.\n\nor Upload a file\n\t\nAdjust search options\nSearch mode\tAutomatic Pre-computed only Live search only\nSearch against database\t\nCDD -- 62456 PSSMs\nNCBI_Curated -- 19902 PSSMs\nNCBI_Preview -- 72382 PSSMs\nPfam -- 19638 PSSMs\nSMART -- 1011 PSSMs\nKOG -- 4825 PSSMs\nCOG -- 5137 PSSMs\nPRK -- 12282 PSSMs\nTIGR -- 4488 PSSMs\n\nExpect Value threshold\t\nComposition-corrected scoring\t\nApply low-complexity filter\t\nMaximum number of hits\t\ninclude retired sequences\nHelp\n\n\nOptional job title\n\t\nEmail address(es) to receive notification when job is done:\n\t Reset form\nRetrieve a previous search\nEnter Search-ID:\t \n\t\n\nReferences:\n\nWang J et al. (2023), \"The conserved domain database in 2023\", Nucleic Acids Res.51(D)384-8.\nLu S et al. (2020), \"The conserved domain database in 2020\", Nucleic Acids Res.48(D)265-8.\nMarchler-Bauer A et al. (2017), \"CDD/SPARCLE: functional classification of proteins via subfamily domain architectures.\", Nucleic Acids Res.45(D)200-3.\nHelp | Disclaimer | Write to the Help Desk\nNCBI | NLM | NIH\nHHS Vulnerability Disclosure",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "",
+        "\t"
+      ],
+      [
+        "",
+        "Structure Home\t3D Macromolecular Structures\tConserved Domains\tHelp"
+      ]
+    ],
+    [
+      [
+        "",
+        ""
+      ]
+    ],
+    [
+      [
+        "Structure Home",
+        "3D Macromolecular Structures",
+        "Conserved Domains",
+        "Help"
+      ]
+    ],
+    [
+      [
+        ""
+      ]
+    ],
+    [
+      [
+        "NCBI's Conserved Domain Database (CDD) is now available as a preview version, providing protein domain family models and corresponding RPS-BLAST search databases that are not yet part of a versioned public release. Find more details on the CDD News Page if you want to scan protein or nucleotide query sequences against the NCBI_Preview set."
+      ],
+      [
+        "Launch a new search\nEnter query protein sequences\n\nWarning: Batch CD-Search accepts only protein sequences. The maximal number of query sequences per request is 1000. A single query sequence can not exceed a length of 40,000 residues.\n\nRequests containing more than 1000 queries will be rejected as peak usage of this shared resource has increased significantly and affects service availability. Standard CD-Search can be used for either protein or nucleotide sequences.\n\nor Upload a file\n\t\nAdjust search options\nSearch mode\tAutomatic Pre-computed only Live search only\nSearch against database\t\nCDD -- 62456 PSSMs\nNCBI_Curated -- 19902 PSSMs\nNCBI_Preview -- 72382 PSSMs\nPfam -- 19638 PSSMs\nSMART -- 1011 PSSMs\nKOG -- 4825 PSSMs\nCOG -- 5137 PSSMs\nPRK -- 12282 PSSMs\nTIGR -- 4488 PSSMs\n\nExpect Value threshold\t\nComposition-corrected scoring\t\nApply low-complexity filter\t\nMaximum number of hits\t\ninclude retired sequences\nHelp\n\n\nOptional job title\n\t\nEmail address(es) to receive notification when job is done:\n\t Reset form\nRetrieve a previous search\nEnter Search-ID:\t \n\t"
+      ]
+    ],
+    [
+      [
+        "Enter query protein sequences\n\nWarning: Batch CD-Search accepts only protein sequences. The maximal number of query sequences per request is 1000. A single query sequence can not exceed a length of 40,000 residues.\n\nRequests containing more than 1000 queries will be rejected as peak usage of this shared resource has increased significantly and affects service availability. Standard CD-Search can be used for either protein or nucleotide sequences.\n\nor Upload a file\n\t\nAdjust search options\nSearch mode\tAutomatic Pre-computed only Live search only\nSearch against database\t\nCDD -- 62456 PSSMs\nNCBI_Curated -- 19902 PSSMs\nNCBI_Preview -- 72382 PSSMs\nPfam -- 19638 PSSMs\nSMART -- 1011 PSSMs\nKOG -- 4825 PSSMs\nCOG -- 5137 PSSMs\nPRK -- 12282 PSSMs\nTIGR -- 4488 PSSMs\n\nExpect Value threshold\t\nComposition-corrected scoring\t\nApply low-complexity filter\t\nMaximum number of hits\t\ninclude retired sequences\nHelp\n\n\nOptional job title\n\t\nEmail address(es) to receive notification when job is done:\n\t Reset form"
+      ]
+    ],
+    [
+      [
+        "Enter query protein sequences\n\nWarning: Batch CD-Search accepts only protein sequences. The maximal number of query sequences per request is 1000. A single query sequence can not exceed a length of 40,000 residues.\n\nRequests containing more than 1000 queries will be rejected as peak usage of this shared resource has increased significantly and affects service availability. Standard CD-Search can be used for either protein or nucleotide sequences.\n\nor Upload a file",
+        "Adjust search options\nSearch mode\tAutomatic Pre-computed only Live search only\nSearch against database\t\nCDD -- 62456 PSSMs\nNCBI_Curated -- 19902 PSSMs\nNCBI_Preview -- 72382 PSSMs\nPfam -- 19638 PSSMs\nSMART -- 1011 PSSMs\nKOG -- 4825 PSSMs\nCOG -- 5137 PSSMs\nPRK -- 12282 PSSMs\nTIGR -- 4488 PSSMs\n\nExpect Value threshold\t\nComposition-corrected scoring\t\nApply low-complexity filter\t\nMaximum number of hits\t\ninclude retired sequences\nHelp"
+      ],
+      [
+        "Optional job title\n\t\nEmail address(es) to receive notification when job is done:\n\t Reset form"
+      ]
+    ],
+    [
+      [
+        "Search mode",
+        "Automatic Pre-computed only Live search only"
+      ],
+      [
+        "Search against database",
+        "CDD -- 62456 PSSMs\nNCBI_Curated -- 19902 PSSMs\nNCBI_Preview -- 72382 PSSMs\nPfam -- 19638 PSSMs\nSMART -- 1011 PSSMs\nKOG -- 4825 PSSMs\nCOG -- 5137 PSSMs\nPRK -- 12282 PSSMs\nTIGR -- 4488 PSSMs"
+      ],
+      [
+        "Expect Value threshold",
+        ""
+      ],
+      [
+        "Composition-corrected scoring",
+        ""
+      ],
+      [
+        "Apply low-complexity filter",
+        ""
+      ],
+      [
+        "Maximum number of hits",
+        ""
+      ]
+    ],
+    [
+      [
+        "Optional job title",
+        "Email address(es) to receive notification when job is done:",
+        " Reset form"
+      ]
+    ],
+    [
+      [
+        "Enter Search-ID:\t \n\t"
+      ]
+    ],
+    [
+      [
+        "Enter Search-ID:",
+        " "
+      ],
+      [
+        "",
+        ""
+      ]
+    ],
+    [
+      [
+        "Help | Disclaimer | Write to the Help Desk\nNCBI | NLM | NIH"
+      ]
+    ]
+  ]
+}

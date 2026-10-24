@@ -1,9 +1,9 @@
 {
   "name": "bioinformatics-hub",
   "private": true,
-  "version": "0.5.2",
+  "version": "0.7.0",
   "type": "module",
-  "description": "BioinformaticsHUB — website-first sequence research dashboard with local provenance",
+  "description": "BioinformaticsHUB \u2014 website-first sequence research dashboard with local provenance",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

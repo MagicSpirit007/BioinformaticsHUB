@@ -1,0 +1,127 @@
+{
+  "siteId": "interpro",
+  "recipeVersion": 1,
+  "url": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20260920-115857-0169-57414676-p1m/internal-1789905054307-1-1/entry/InterPro/#table",
+  "title": "Results - InterPro",
+  "tables": [
+    [
+      [
+        "Accession",
+        "Short Name",
+        "Name",
+        "Source Database",
+        "Matches"
+      ],
+      [
+        "IPR012292",
+        "Globin/Proto",
+        "Globin/Protoglobin",
+        "InterPro",
+        "50\n100"
+      ],
+      [
+        "IPR000971",
+        "Globin",
+        "Globin",
+        "InterPro",
+        "50\n100"
+      ],
+      [
+        "IPR002338",
+        "Hemoglobin_a-typ",
+        "Hemoglobin, alpha-type",
+        "InterPro",
+        "50\n100"
+      ],
+      [
+        "IPR002339",
+        "Hemoglobin_pi",
+        "Hemoglobin, pi",
+        "InterPro",
+        "50\n100"
+      ],
+      [
+        "IPR009050",
+        "Globin-like_sf",
+        "Globin-like superfamily",
+        "InterPro",
+        "50\n100"
+      ],
+      [
+        "IPR050056",
+        "Hemoglobin_oxygen_transport",
+        "Hemoglobin and related oxygen transporters",
+        "InterPro",
+        "50\n100"
+      ]
+    ]
+  ],
+  "data": {
+    "interproEntries": [
+      "IPR000971",
+      "IPR002338",
+      "IPR002339",
+      "IPR009050",
+      "IPR012292",
+      "IPR050056"
+    ],
+    "pfamSignatures": [],
+    "tables": [
+      [
+        [
+          "Accession",
+          "Short Name",
+          "Name",
+          "Source Database",
+          "Matches"
+        ],
+        [
+          "IPR012292",
+          "Globin/Proto",
+          "Globin/Protoglobin",
+          "InterPro",
+          "50\n100"
+        ],
+        [
+          "IPR000971",
+          "Globin",
+          "Globin",
+          "InterPro",
+          "50\n100"
+        ],
+        [
+          "IPR002338",
+          "Hemoglobin_a-typ",
+          "Hemoglobin, alpha-type",
+          "InterPro",
+          "50\n100"
+        ],
+        [
+          "IPR002339",
+          "Hemoglobin_pi",
+          "Hemoglobin, pi",
+          "InterPro",
+          "50\n100"
+        ],
+        [
+          "IPR009050",
+          "Globin-like_sf",
+          "Globin-like superfamily",
+          "InterPro",
+          "50\n100"
+        ],
+        [
+          "IPR050056",
+          "Hemoglobin_oxygen_transport",
+          "Hemoglobin and related oxygen transporters",
+          "InterPro",
+          "50\n100"
+        ]
+      ]
+    ]
+  },
+  "parameters": {},
+  "inputSha256": "beb3aa4ad7ad4b4f6d8237f7a760656132efd811765050fd49a25f96154b36c6",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:29:21Z"
+}

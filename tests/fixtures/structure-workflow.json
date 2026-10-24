@@ -1,0 +1,45 @@
+{
+  "executionMode": "web",
+  "name": "Public P69905 structure and pockets",
+  "workflow": {
+    "id": "structure",
+    "name": "Accession → AlphaFold DB → PrankWeb",
+    "version": 1,
+    "nodes": [
+      {
+        "id": "alphafold",
+        "kind": "site",
+        "siteId": "alphafold_db",
+        "input": {
+          "source": "input",
+          "key": "identifier"
+        },
+        "dependsOn": [],
+        "parameters": {}
+      },
+      {
+        "id": "prankweb",
+        "kind": "site",
+        "siteId": "prankweb",
+        "input": {
+          "source": "node",
+          "nodeId": "alphafold",
+          "kind": "structure"
+        },
+        "dependsOn": [
+          "alphafold"
+        ],
+        "parameters": {
+          "model": "AlphaFold model",
+          "inputMode": "Custom structure"
+        }
+      }
+    ]
+  },
+  "inputs": {
+    "identifier": {
+      "kind": "identifier",
+      "value": "P69905"
+    }
+  }
+}

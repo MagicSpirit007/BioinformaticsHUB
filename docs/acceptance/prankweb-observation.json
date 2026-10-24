@@ -1,0 +1,50 @@
+{
+  "url": "https://prankweb.cz/viewer?id=2026-09-20-11-08-59-AFB303B7-3F54-46B0-A59A-05C3717D1B62&database=v4-user-upload",
+  "title": "PrankWeb",
+  "text": "About\nHelp\nReport issue\n0\n20\n40\n60\n80\n100\n120\n140\nSEQUENCE\nPOCKETS\nHome\nDownload Structure\nSource\nPDB\nPDB Id(s)\nOptions\nApply\nDownload Density\nDownload File\nOpen Files\nLoad Trajectory\nDownload\nSurface\n​\n\nProtein visualization\n\nSurface (atoms)\n​\n\nPockets visualization (color by)\n\nWhite\n​\n\nPolymer coloring\n\nHIDE 1D VIEWER\nRESET 3D CAMERA\nPOCKETS\nINFO\nTASKS\nPockets\n\t\nTools\n\t\nRank\nsorted ascending\n\t\nScore\n\t\nProbability\n\t\n# of residues\n\n\n\t\n \n\t1\t47.61\t0.964\t25\n\n\n\t\n \n\t2\t1.53\t0.018\t8\n\n\n\t\n \n\t3\t1.51\t0.018\t6\n\n\nRows per page:\n\n10\n\n1–3 of 3",
+  "tables": [
+    [
+      [
+        "",
+        "Tools",
+        "Rank\nsorted ascending",
+        "Score",
+        "Probability",
+        "# of residues"
+      ],
+      [
+        "",
+        " ",
+        "1",
+        "47.61",
+        "0.964",
+        "25"
+      ],
+      [
+        ""
+      ],
+      [
+        "",
+        " ",
+        "2",
+        "1.53",
+        "0.018",
+        "8"
+      ],
+      [
+        ""
+      ],
+      [
+        "",
+        " ",
+        "3",
+        "1.51",
+        "0.018",
+        "6"
+      ],
+      [
+        ""
+      ]
+    ]
+  ]
+}

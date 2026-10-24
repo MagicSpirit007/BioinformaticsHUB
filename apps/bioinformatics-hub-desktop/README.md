@@ -1,3 +1,6 @@
+0.7 的共享后台、CLI/MCP 和原始结果目录请参阅 [AI 工具说明](../../docs/ai-tools.md)。以下保留历史接口说明。
+
+当前默认进入开始页：选择网页／本地／组合方式、工具、参数和邮件通知，复制任务说明交给助手执行，或保存 JSON 草稿。复制与保存不会启动任务；成果、历史及系统设置仍保留。交付协议见仓库 docs/delivery.md。
 # BioinformaticsHUB Desktop 0.5.2
 
 > [中文版](./README.md) · [English](./README.en.md)

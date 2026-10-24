@@ -1,0 +1,165 @@
+{
+  "siteId": "swiss_model",
+  "recipeVersion": 1,
+  "url": "https://swissmodel.expasy.org/interactive/M4nmJE/models/",
+  "title": "Untitled Project | Models",
+  "tables": [
+    [
+      [
+        "Background",
+        "",
+        "",
+        ""
+      ]
+    ],
+    [
+      [
+        "Biounit Oligo State",
+        "Monomer"
+      ],
+      [
+        "QSQE",
+        "-"
+      ],
+      [
+        "Method",
+        "AlphaFold v2"
+      ],
+      [
+        "Seq Similarity",
+        "0.58"
+      ],
+      [
+        "Coverage",
+        "1.00"
+      ],
+      [
+        "Range",
+        "1-142"
+      ]
+    ],
+    [
+      [
+        "",
+        "Model_01P63112.1.AModel_01P63112.1.AModel_01P63112.1.A",
+        "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSMVLSPDDKKHVKAAWGKVGEHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKHGSDQVNKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYRLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ]
+    ],
+    [
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ],
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ],
+      [
+        "Model_01"
+      ],
+      [
+        "P63112.1.A"
+      ]
+    ],
+    [
+      [
+        "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+      ],
+      [
+        "MVLSPDDKKHVKAAWGKVGEHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+      ],
+      [
+        "HGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFK"
+      ],
+      [
+        "HGSDQVNKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFK"
+      ],
+      [
+        "LLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ],
+      [
+        "LLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+      ]
+    ],
+    [
+      [
+        "\n                          HEM.1:\n                      ",
+        "17 residues within 4Å:Chain A: \n                                      Y.43, \n                                \n                                  \n                                 \n                                  F.44, \n                                \n                                  \n                                 \n                                  H.46, \n                                \n                                  \n                                 \n                                  F.47, \n                                \n                                  \n                                 \n                                  H.59, \n                                \n                                  \n                                 \n                                  K.62, \n                                \n                                  \n                                 \n                                  V.63, \n                                \n                                  \n                                 \n                                  L.84, \n                                \n                                  \n                                 \n                                  L.87, \n                                \n                                  \n                                 \n                                  H.88, \n                                \n                                  \n                                 \n                                  L.92, \n                                \n                                  \n                                 \n                                  V.94, \n                                \n                                  \n                                 \n                                  N.98, \n                                \n                                  \n                                 \n                                  F.99, \n                                \n                                  \n                                 \n                                  L.102, \n                                \n                                  \n                                 \n                                  V.133, \n                                \n                                  \n                                 \n                                  L.13718 PLIP interactions:18 interactions with chain A, \n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\tHydrophobic interactions:\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:Y.43, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:F.44, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:F.44, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.63, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.84, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.92, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.94, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:N.98, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.102, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:V.133, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:L.137Salt bridges:\n\t\t\t\t\t\tA:H.46, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:H.59, \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tA:K.62pi-Stacking:\n\t\t\t\t\t\tA:H.59Metal complexes:\n\t\t\t\t\t\tA:H.88"
+      ]
+    ],
+    [],
+    [
+      [
+        "Biounit Oligo State",
+        "Hetero-dimer"
+      ],
+      [
+        "QSQE",
+        "0.00"
+      ],
+      [
+        "Method",
+        "EM, 2.45 Å"
+      ],
+      [
+        "Seq Similarity",
+        "0.61"
+      ],
+      [
+        "Coverage",
+        "1.00"
+      ],
+      [
+        "Range",
+        "2-142"
+      ]
+    ],
+    [
+      [
+        "Ligand",
+        "Added to Model",
+        "Description"
+      ],
+      [
+        "HEM",
+        "✓",
+        "PROTOPORPHYRIN IX CONTAINING FE"
+      ],
+      [
+        "CMO ",
+        "✕ - Not biologically relevant.\n              ",
+        "CARBON MONOXIDE"
+      ],
+      [
+        "CMO ",
+        "✕ - Not biologically relevant.\n              ",
+        "CARBON MONOXIDE"
+      ],
+      [
+        "HEM ",
+        "✕ - Binding site not conserved.\n              ",
+        "PROTOPORPHYRIN IX CONTAINING FE"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    [],
+    []
+  ],
+  "data": null,
+  "parameters": {
+    "template": "Automated modelling"
+  },
+  "inputSha256": "885d988e837aceb36173cc97cff5205961d92f71765ee4c24c57ebbc9b688e25",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:11:54Z"
+}

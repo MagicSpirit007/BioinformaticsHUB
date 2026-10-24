@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BioHub Repair Plan</title>
+<link rel="stylesheet" href="/mnt/c/Users/18993/.codex/skills/html-plan/runtime/htmlplan.css">
+<script src="/mnt/c/Users/18993/.codex/skills/html-plan/runtime/htmlplan.js" defer></script>
+<body>
+<header>
+<h1>Job Recovery and Results in BioHub</h1>
+<details class="thread"><summary>Why · 2 requests</summary>
+<doc-quote via="prompt" from="官家">在这次任务中，你有没有发现软件还有什么问题或者你为了继续任务做了哪些本应该有但你临时改动了才能继续任务的软件不足，给我一份修复计划</doc-quote>
+<doc-quote via="prompt" from="官家">完成剩余分析就行了，报告先不用写</doc-quote>
+</details>
+</header>
+<main><doc-plan>
+<doc-claim><p>A restart restores a job from its saved receipt.</p>
+<doc-mock frame="none" w="440"><template><div style="padding:22px;background:#edf5f4;border-radius:14px;font:15px/1.8 system-ui"><b>作业恢复 · 拟议界面</b><p>HMMER · 已取得回执 → 查询原作业</p><p>PSIPRED · 提交不确定 → 待核对回执</p><small>关闭 Chrome 后仍保留作业编号、输入指纹和原结果地址。</small></div></template></doc-mock>
+<doc-claim><p>The worker saves intent before submit and stores the receipt.</p>
+<doc-calls title="Recovery entrypoints" caption="A receipt survives the loss of a browser tab."><script type="text/plain">
+~ WorkflowBrowser.__init__() @ scripts/workflow/browser.py:33
++   **reconcile_job_receipt()** @ scripts/workflow/browser.py:40
+~   reconnect_owned() @ scripts/workflow/browser.py:72
+</script></doc-calls>
+<doc-claim at="scripts/workflow/browser.py:33"><p><b>browser.py:33</b> · WorkflowBrowser</p><doc-code src="scripts/workflow/browser.py" lines="33-46"></doc-code></doc-claim>
+</doc-claim>
+<doc-claim><p>A known job can return results without a model call.</p>
+<doc-schema lang="ts" title="Site adapter · sketch"><script type="text/plain">
+interface SiteAdapter {
+  submit(input: InputRef): Promise<JobReceipt>;
+  reconcile(intent: SubmitIntent): Promise<JobReceipt | null>;
+  poll(receipt: JobReceipt): Promise<JobState>;
+  fetch(receipt: JobReceipt): Promise<Artifact[]>;
+  parse(files: Artifact[]): Promise<ParsedResult>;
+}
+// First: HMMER, ESPript, InterPro, MusiteDeep, BLAST.
+// Reuse a known job. Do not repeat an uncertain submit.
+</script></doc-schema></doc-claim>
+</doc-claim>
+
+<doc-claim><p>Every interface shows the same result evidence.</p>
+<doc-mock frame="none" w="440"><template><div style="padding:22px;background:#f2f5fa;border-radius:14px;font:15px/1.8 system-ui"><b>InterPro · 拟议状态</b><p>执行历史：首次执行失败，后续取回结果</p><p>分析：已核验　图表：已核验<br>原网页：部分完整　下载：按清单核验</p><small>桌面、CLI、MCP、导出使用同一记录。</small></div></template></doc-mock>
+<doc-claim><p>The engine parses imported files before it accepts their evidence.</p>
+<doc-calls title="Result entrypoints" caption="Import and display use the same evidence."><script type="text/plain">
+~ resultsRegister @ apps/bioinformatics-hub-desktop/workflow/delivery.cjs:147
++   **validate_registered_result()** @ scripts/validate_cca_rerun_data.py:1
+~ resultsVerify @ apps/bioinformatics-hub-desktop/workflow/delivery.cjs:146
+~   projection @ apps/bioinformatics-hub-desktop/workflow/delivery.cjs:40
+</script></doc-calls>
+<doc-ask id="migration"><p>When does an old task get new evidence?</p>
+<label><input type="radio" name="migration" value="explicit" checked> Run a task migration <small>Keep a preview and the old record.</small></label>
+<label><input type="radio" name="migration" value="automatic"> Run at first open <small>Each old task starts a local scan.</small></label>
+</doc-ask>
+</doc-claim>
+<doc-claim><p>File changes make the related evidence out of date.</p>
+<doc-schema lang="ts" title="Evidence record · sketch"><script type="text/plain">
+interface Evidence {
+  itemId: string;
+  inputSha256: string;
+  parameterSha256: string;
+  files: { path: string; sha256: string }[];
+  validatorVersion: string;
+  status: "verified" | "partial" | "unverified" | "blocked";
+  issues: string[];
+}
+// Keep execution history separate from current result evidence.
+</script></doc-schema></doc-claim>
+</doc-claim>
+
+<doc-claim><p>Offline pages show all required content and mark each gap.</p>
+<doc-mock frame="none" w="440"><template><div style="padding:22px;background:#fff7e9;border-radius:14px;font:15px/1.8 system-ui"><b>当前证据 · 4 个原网页待修复</b><p>InterPro · 字体／Loading／布局<br>SWISS-MODEL · SVG／布局<br>QuickGO · 样式／布局<br>MAFFT · 嵌套页面／空白内容</p><small>静态整理页通过，不能覆盖原网页的 partial 状态。</small></div></template></doc-mock>
+<doc-claim><p>Region images cannot change the full-page capture area.</p>
+<doc-code src="scripts/workflow/archive.py" lines="271-279"></doc-code>
+<doc-note tone="info">The source has this fix. The checked release copy differs.</doc-note>
+</doc-claim>
+<doc-claim><p>The archive stores used resources and the rendered chart content.</p>
+<doc-calls title="Archive checks" caption="Each original page has its own offline result."><script type="text/plain">
+~ archive_page @ scripts/workflow/archive.py:261
+~   capture_pngs @ scripts/workflow/archive.py:178
+~ compare_baseline @ scripts/workflow/archive_validation.py:25
+~ verifyItems @ apps/bioinformatics-hub-desktop/workflow/delivery.cjs:110
+</script></doc-calls></doc-claim>
+<doc-claim><p>A missing required attachment cannot mean that none applies.</p>
+<doc-code src="apps/bioinformatics-hub-desktop/workflow/delivery.cjs" lines="126-131"></doc-code>
+<doc-note tone="warn">Replace this fallback with an expected-file manifest and parser results.</doc-note>
+</doc-claim>
+</doc-claim>
+
+<doc-claim><p>Each output has an input, parameter set, and parent result.</p>
+<doc-mock frame="none" w="440"><template><div style="padding:22px;background:#eff6ee;border-radius:14px;font:15px/1.8 system-ui"><b>本轮依赖 · 拟议软件能力</b><p>新检索 → 同源筛选 → MAFFT<br>MAFFT → ESPript／WebLogo／IQ-TREE</p><p>本轮结构模型 → PrankWeb</p><small>改变输入后，只使相关下游结果待复核。每项保留输入指纹及参数。</small></div></template></doc-mock>
+<doc-claim><p>The recipe replaces task-specific paths and fixed success counts.</p>
+<doc-code src="scripts/package_cca_rerun_analyses.py" lines="7-18"></doc-code>
+<doc-note tone="info">Move reusable steps into the engine. Keep task data in recipe records.</doc-note>
+</doc-claim>
+<doc-claim><p>The result record includes the seed used by IQ-TREE.</p>
+<doc-code src="scripts/pipeline/steps/iqtree_step.py" lines="222-229"></doc-code>
+<doc-note tone="warn">The command accepts a seed. This result summary does not store it.</doc-note>
+</doc-claim>
+</doc-claim>
+
+<doc-claim><p>The installed app runs the same engine as the CLI.</p>
+<doc-mock frame="terminal" title="Proposed runtime check" w="470"><template><span class="dim">biohub doctor --runtime</span>
+desktop build    candidate-A
+daemon build     candidate-A
+CLI build        candidate-A
+workspace        D:\BioinformaticsHUB
+engine SHA-256   matches manifest
+<span class="g">PASS</span> run from the candidate package</template></doc-mock>
+<doc-ask id="release"><p>How does the fixed package replace the current package?</p>
+<label><input type="radio" name="release" value="candidate" checked> Test a separate candidate first <small>Keep the current package for rollback.</small></label>
+<label><input type="radio" name="release" value="inplace"> Test through an in-place upgrade <small>Back up tasks and the current package first.</small></label>
+</doc-ask>
+<doc-claim><p>The handshake compares the build, workspace, and engine path.</p>
+<doc-calls title="Runtime and package checks" caption="The package must contain the tested engine."><script type="text/plain">
+~ ping @ apps/bioinformatics-hub-desktop/workflow/daemon.cjs:51
+~ package build @ packaging/scripts/build_windows.ps1:1
+~ installed app acceptance @ scripts/check_workflow_desktop.cjs:1
+</script></doc-calls></doc-claim>
+<doc-claim><p>Tests run against the package and copied offline results.</p>
+<doc-schema lang="ts" title="Release gate · sketch"><script type="text/plain">
+const releaseGate = {
+  pythonAndNode: "passed",
+  frontendBuild: "passed",
+  chromeFixtures: "passed",
+  receiptRecoveryWithoutResubmit: "passed",
+  sourceAndInstalledEngineMatch: "passed",
+  movedOfflineExport: "passed",
+  perItemEvidence: "complete-with-explicit-gaps",
+};
+// This is a target gate, not a claim about the current package.
+</script></doc-schema></doc-claim>
+</doc-claim>
+
+<doc-claim aux="shared"><p>Shared records connect jobs, files, and evidence.</p>
+<doc-schema lang="ts" title="Shared records · sketch"><script type="text/plain">
+interface JobReceipt {
+  taskId: string;
+  itemId: string;
+  attemptId: string;
+  inputSha256: string;
+  parameterSha256: string;
+  remoteJobId?: string;
+  resultUrl?: string;
+  state: "prepared" | "submitting" | "receipt_known"
+    | "running" | "results_ready" | "needs_reconciliation";
+}
+// Keep secrets out of shared exports.
+</script></doc-schema></doc-claim>
+<doc-claim aux="scope"><p>The plan keeps the study scope and the report deferral.</p>
+<ul><li>Keep all 26 items, the species, the tools, and the scientific parameters.</li><li>Keep old tasks and original execution history.</li><li>Keep external service limits visible. Do not count them as success.</li><li>Do not write the Word or PDF report in this repair work.</li><li>This page proposes repairs. It does not apply them.</li></ul>
+</doc-claim>
+</doc-plan></main></body></html>

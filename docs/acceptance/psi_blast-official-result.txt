@@ -1,0 +1,4637 @@
+An official website of the United States government
+
+ Here's how you know 
+Skip to main page content
+Log in
+Access keys
+NCBI Homepage
+MyNCBI Homepage
+Main Content
+Main Navigation
+BLAST ® » blastp suite » results for RID-AZJ690DF014
+Home Recent Results Saved Strategies Help
+ Edit Search Save Search Search Summary
+ How to read this report?  BLAST Help Videos Back to Traditional Results Page
+
+Job Title
+sp|P69905|HBA_HUMAN Hemoglobin subunit alpha
+RID
+AZJ690DF014 Search expires on 09-21 19:51 pm Download All
+Program
+PSI-BLAST Iteration 1 Citation
+Database
+nr See details
+Query ID
+lcl|Query_8231159
+Description
+sp|P69905|HBA_HUMAN Hemoglobin subunit alpha
+Molecule type
+amino acid
+Query Length
+142
+Other reports
+Distance tree of results Multiple alignment MSA viewer 
+Help
+Filter Results
+Organism
+only top 20 will appear
+exclude
+Add organism
+Percent Identity
+from
+ 
+Percent Identity
+to 
+E value
+from
+ 
+E value
+to 
+Query Coverage
+from
+ 
+Query Coverage
+to 
+PSI-BLAST incl. threshold
+Filter Reset
+Run PSI-Blast iteration 2
+Number of sequences
+Run
+Compare these results against the new Clustered nr database  
+Help
+BLAST
+Descriptions
+Sequences producing significant alignments
+Download Select columns 
+Show 
+10
+50
+100
+250
+500
+ 
+Help
+500 sequences selected 
+GenPept
+ 
+Graphics
+ 
+Distance tree of results
+ 
+Multiple alignment
+ 
+MSA Viewer
+Sequences with E-value BETTER than threshold
+select all
+ 500 sequences selected 
+PSI-BLAST iteration 1
+Sequences producing significant alignments with E-value BETTER than threshold
+Select for downloading or viewing reports
+	
+Description
+	
+Scientific Name
+	
+Max Score
+	
+Total Score
+	
+Query Cover
+	
+E value
+	
+Per. Ident
+	
+Acc. Len
+	Accession	Select for PSI blast	Used to build PSSM	Newly added
+
+Select seq gb|AAX29522.1|
+	
+hemoglobin alpha 2, partial [synthetic construct]
+	
+synthetic construct
+	287	287	100%	3e-97	100.00%	143	AAX29522.1	
+Select seq AAX29522.1 for PSI blast
+		
+
+Select seq ref|NP_000508.1|
+	
+hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	5e-97	100.00%	142	NP_000508.1	
+Select seq NP_000508.1 for PSI blast
+		
+
+Select seq pdb|3IA3|B
+	
+Chain B, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	6e-97	100.00%	145	3IA3_B	
+Select seq 3IA3_B for PSI blast
+		
+
+Select seq gb|AKZ66543.1|
+	
+mutant hemoglobin alpha 2 globin chain [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	8e-97	99.30%	142	AKZ66543.1	
+Select seq AKZ66543.1 for PSI blast
+		
+
+Select seq gb|AXY55002.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	9e-97	99.30%	142	AXY55002.1	
+Select seq AXY55002.1 for PSI blast
+		
+
+Select seq gb|AAN04486.1|
+	
+hemoglobin alpha-2 [Homo sapiens]
+	
+Homo sapiens
+	285	285	100%	1e-96	99.30%	142	AAN04486.1	
+Select seq AAN04486.1 for PSI blast
+		
+
+Select seq gb|AAF72612.1|
+	
+alpha-2-globin [Homo sapiens]
+	
+Homo sapiens
+	285	285	100%	2e-96	99.30%	142	AAF72612.1	
+Select seq AAF72612.1 for PSI blast
+		
+
+Select seq tpe|SAI82135.1|
+	
+TPA: globin C1 [Homo sapiens]
+	
+Homo sapiens
+	286	286	100%	2e-96	100.00%	177	SAI82135.1	
+Select seq SAI82135.1 for PSI blast
+		
+
+Select seq ref|XP_030858703.1|
+	
+hemoglobin subunit alpha [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	285	285	100%	2e-96	99.30%	142	XP_030858703.1	
+Select seq XP_030858703.1 for PSI blast
+		
+
+Select seq gb|ABF56145.1|
+	
+hemoglobin alpha 1-2 hybrid [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	ABF56145.1	
+Select seq ABF56145.1 for PSI blast
+		
+
+Select seq gb|AXY54998.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY54998.1	
+Select seq AXY54998.1 for PSI blast
+		
+
+Select seq gb|AXY55003.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY55003.1	
+Select seq AXY55003.1 for PSI blast
+		
+
+Select seq gb|AXY55001.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	142	AXY55001.1	
+Select seq AXY55001.1 for PSI blast
+		
+
+Select seq pdb|1BAB|A
+	
+Chain A, HEMOGLOBIN THIONVILLE (DEOXY) (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	4e-96	99.30%	143	1BAB_A	
+Select seq 1BAB_A for PSI blast
+		
+
+Select seq gb|AAK37554.1|
+	
+hemoglobin alpha-1 globin chain [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	5e-96	99.30%	142	AAK37554.1	
+Select seq AAK37554.1 for PSI blast
+		
+
+Select seq pdb|1A00|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	284	284	99%	5e-96	100.00%	141	1A00_A	
+Select seq 1A00_A for PSI blast
+		
+
+Select seq dbj|BAD97112.1|
+	
+alpha 2 globin variant, partial [Homo sapiens]
+	
+Homo sapiens
+	284	284	100%	6e-96	99.30%	142	BAD97112.1	
+Select seq BAD97112.1 for PSI blast
+		
+
+Select seq ref|XP_010380159.1|
+	
+hemoglobin subunit alpha [Rhinopithecus roxellana]
+	
+Rhinopithecus roxellana
+	283	283	100%	6e-96	98.59%	142	XP_010380159.1	
+Select seq XP_010380159.1 for PSI blast
+		
+
+Select seq gb|AAR29173.1|
+	
+alpha-2 globin [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	283	283	100%	8e-96	98.59%	142	AAR29173.1	
+Select seq AAR29173.1 for PSI blast
+		
+
+Select seq ref|XP_063555904.1|
+	
+hemoglobin subunit alpha-like [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	285	285	100%	1e-95	99.30%	177	XP_063555904.1	
+Select seq XP_063555904.1 for PSI blast
+		
+
+Select seq gb|AFI57164.1|
+	
+hemoglobin alpha 1 [Homo sapiens]
+	
+Homo sapiens
+	283	283	100%	1e-95	99.30%	142	AFI57164.1	
+Select seq AFI57164.1 for PSI blast
+		
+
+Select seq pdb|1BZZ|A
+	
+Chain A, PROTEIN (HEMOGLOBIN ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	1BZZ_A	
+Select seq 1BZZ_A for PSI blast
+		
+
+Select seq pdb|4MQC|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	4MQC_A	
+Select seq 4MQC_A for PSI blast
+		
+
+Select seq pdb|1AJ9|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	283	283	99%	1e-95	99.29%	141	1AJ9_A	
+Select seq 1AJ9_A for PSI blast
+		
+
+Select seq pdb|5SW7|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	142	5SW7_A	
+Select seq 5SW7_A for PSI blast
+		
+
+Select seq ref|XP_030780270.1|
+	
+hemoglobin subunit alpha-like [Rhinopithecus roxellana]
+	
+Rhinopithecus roxellana
+	284	284	100%	2e-95	98.59%	177	XP_030780270.1	
+Select seq XP_030780270.1 for PSI blast
+		
+
+Select seq pdb|7DY4|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	141	7DY4_A	
+Select seq 7DY4_A for PSI blast
+		
+
+Select seq pdb|7DY3|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	99.29%	141	7DY3_A	
+Select seq 7DY3_A for PSI blast
+		
+
+Select seq pdb|9S3P|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	282	282	99%	2e-95	100.00%	140	9S3P_A	
+Select seq 9S3P_A for PSI blast
+		
+
+Select seq sp|P01923.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	282	282	99%	2e-95	99.29%	141	P01923.1	
+Select seq P01923.1 for PSI blast
+		
+
+Select seq pdb|1O1O|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	4e-95	98.58%	141	1O1O_A	
+Select seq 1O1O_A for PSI blast
+		
+
+Select seq pdb|1Y0D|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	5e-95	100.00%	140	1Y0D_A	
+Select seq 1Y0D_A for PSI blast
+		
+
+Select seq pdb|1A3O|A
+	
+Chain A, HEMOGLOBIN (ALPHA CHAIN) [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	5e-95	99.29%	141	1A3O_A	
+Select seq 1A3O_A for PSI blast
+		
+
+Select seq sp|Q9TS35.2|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]
+	
+Hylobates lar
+	281	281	100%	6e-95	98.59%	142	Q9TS35.2	
+Select seq Q9TS35.2 for PSI blast
+		
+
+Select seq pdb|1Y0C|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	98.58%	141	1Y0C_A	
+Select seq 1Y0C_A for PSI blast
+		
+
+Select seq pdb|1RVW|A
+	
+Chain A, HEMOGLOBIN [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	99.29%	141	1RVW_A	
+Select seq 1RVW_A for PSI blast
+		
+
+Select seq pdb|1R1X|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	281	99%	6e-95	99.29%	141	1R1X_A	
+Select seq 1R1X_A for PSI blast
+		
+
+Select seq gb|KAL4682940.1|
+	
+hypothetical protein H8957_006364 [Semnopithecus entellus]
+	
+Semnopithecus entellus
+	281	281	100%	7e-95	97.89%	142	KAL4682940.1	
+Select seq KAL4682940.1 for PSI blast
+		
+
+Select seq ref|XP_054309248.2|
+	
+hemoglobin subunit alpha [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	281	281	100%	8e-95	97.89%	142	XP_054309248.2	
+Select seq XP_054309248.2 for PSI blast
+		
+
+Select seq pdb|7QU4|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	281	281	100%	8e-95	97.18%	142	7QU4_A	
+Select seq 7QU4_A for PSI blast
+		
+
+Select seq pdb|1XZ5|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XZ5_A	
+Select seq 1XZ5_A for PSI blast
+		
+
+Select seq pdb|3NMM|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	99.29%	141	3NMM_A	
+Select seq 3NMM_A for PSI blast
+		
+
+Select seq pdb|3QJB|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	99.29%	141	3QJB_A	
+Select seq 3QJB_A for PSI blast
+		
+
+Select seq pdb|1XY0|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XY0_A	
+Select seq 1XY0_A for PSI blast
+		
+
+Select seq pdb|2W72|A
+	
+Chain A, HUMAN HEMOGLOBIN A [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	2W72_A	
+Select seq 2W72_A for PSI blast
+		
+
+Select seq pdb|1XZV|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	1e-94	98.58%	141	1XZV_A	
+Select seq 1XZV_A for PSI blast
+		
+
+Select seq pdb|1XZU|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1XZU_A	
+Select seq 1XZU_A for PSI blast
+		
+
+Select seq gb|AXY54999.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	280	280	100%	2e-94	99.30%	141	AXY54999.1	
+Select seq AXY54999.1 for PSI blast
+		
+
+Select seq gb|AXY55000.1|
+	
+mutant hemoglobin subunit alpha 2 [Homo sapiens]
+	
+Homo sapiens
+	280	280	100%	2e-94	99.30%	141	AXY55000.1	
+Select seq AXY55000.1 for PSI blast
+		
+
+Select seq ref|XP_055099075.1|
+	
+hemoglobin subunit alpha-1 [Symphalangus syndactylus]
+	
+Symphalangus syndactylus
+	280	280	100%	2e-94	97.89%	142	XP_055099075.1	
+Select seq XP_055099075.1 for PSI blast
+		
+
+Select seq pdb|1Y09|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1Y09_A	
+Select seq 1Y09_A for PSI blast
+		
+
+Select seq pdb|1GLI|A
+	
+Chain A, DEOXYHEMOGLOBIN [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1GLI_A	
+Select seq 1GLI_A for PSI blast
+		
+
+Select seq pdb|6BB5|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	280	280	98%	2e-94	100.00%	139	6BB5_A	
+Select seq 6BB5_A for PSI blast
+		
+
+Select seq pdb|1XZ7|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	280	99%	2e-94	98.58%	141	1XZ7_A	
+Select seq 1XZ7_A for PSI blast
+		
+
+Select seq gb|KAL4835551.1|
+	
+hypothetical protein H8958_000280 [Nasalis larvatus]
+	
+Nasalis larvatus
+	280	280	100%	2e-94	97.18%	142	KAL4835551.1	
+Select seq KAL4835551.1 for PSI blast
+		
+
+Select seq ref|XP_003269148.1|
+	
+hemoglobin subunit alpha-1 [Nomascus leucogenys]
+	
+Nomascus leucogenys
+	280	280	100%	3e-94	97.89%	142	XP_003269148.1	
+Select seq XP_003269148.1 for PSI blast
+		
+
+Select seq pdb|1O1I|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	97.87%	141	1O1I_A	
+Select seq 1O1I_A for PSI blast
+		
+
+Select seq pdb|1XYE|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	98.58%	141	1XYE_A	
+Select seq 1XYE_A for PSI blast
+		
+
+Select seq pdb|1Y0A|A
+	
+Chain A, Hemoglobin alpha chain [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	3e-94	98.58%	141	1Y0A_A	
+Select seq 1Y0A_A for PSI blast
+		
+
+Select seq ref|XP_033092341.1|
+	
+hemoglobin subunit alpha [Trachypithecus francoisi]
+	
+Trachypithecus francoisi
+	279	279	100%	3e-94	97.18%	142	XP_033092341.1	
+Select seq XP_033092341.1 for PSI blast
+		
+
+Select seq ref|XP_035122196.3|
+	
+hemoglobin subunit alpha [Callithrix jacchus]
+	
+Callithrix jacchus
+	279	279	100%	4e-94	97.18%	142	XP_035122196.3	
+Select seq XP_035122196.3 for PSI blast
+		
+
+Select seq pdb|1J7S|A
+	
+Chain A, Hemoglobin [Homo sapiens]
+	
+Homo sapiens
+	279	279	99%	5e-94	97.87%	141	1J7S_A	
+Select seq 1J7S_A for PSI blast
+		
+
+Select seq pdb|1ABW|A
+	
+Chain A, HEMOGLOBIN-BASED BLOOD SUBSTITUTE [Homo sapiens]
+	
+Homo sapiens
+	284	567	99%	6e-94	100.00%	283	1ABW_A	
+Select seq 1ABW_A for PSI blast
+		
+
+Select seq ref|XP_024089067.2|
+	
+hemoglobin subunit alpha [Pongo abelii]
+	
+Pongo abelii
+	280	280	100%	6e-94	97.89%	177	XP_024089067.2	
+Select seq XP_024089067.2 for PSI blast
+		
+
+Select seq pdb|1C7D|A
+	
+Chain A, PROTEIN (DEOXYHEMOGLOBIN (ALPHA CHAIN)) [Homo sapiens]
+	
+Homo sapiens
+	284	567	99%	7e-94	100.00%	284	1C7D_A	
+Select seq 1C7D_A for PSI blast
+		
+
+Select seq ref|XP_054309249.2|
+	
+hemoglobin subunit alpha [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	280	280	100%	7e-94	97.89%	177	XP_054309249.2	
+Select seq XP_054309249.2 for PSI blast
+		
+
+Select seq ref|XP_055099076.2|
+	
+hemoglobin subunit alpha-1 [Symphalangus syndactylus]
+	
+Symphalangus syndactylus
+	280	280	100%	7e-94	97.89%	177	XP_055099076.2	
+Select seq XP_055099076.2 for PSI blast
+		
+
+Select seq sp|P01924.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]
+	
+Semnopithecus entellus
+	278	278	99%	7e-94	97.87%	141	P01924.1	
+Select seq P01924.1 for PSI blast
+		
+
+Select seq sp|P63107.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata]
+	
+Macaca fuscata fuscata
+	278	278	100%	8e-94	97.18%	142	P63107.2	
+Select seq P63107.2 for PSI blast
+		
+
+Select seq gb|AYO89356.1|
+	
+hemoglobin subunit alpha [Nasalis larvatus]
+	
+Nasalis larvatus
+	278	278	100%	1e-93	96.48%	142	AYO89356.1	
+Select seq AYO89356.1 for PSI blast
+		
+
+Select seq ref|XP_030654647.1|
+	
+hemoglobin subunit alpha-1-like [Nomascus leucogenys]
+	
+Nomascus leucogenys
+	278	278	100%	1e-93	97.18%	142	XP_030654647.1	
+Select seq XP_030654647.1 for PSI blast
+		
+
+Select seq prf||0404170A
+	
+hemoglobin alphaI [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	278	278	99%	1e-93	97.87%	141	0404170A	
+Select seq 0404170A for PSI blast
+		
+
+Select seq ref|XP_009007060.3|
+	
+hemoglobin subunit alpha [Callithrix jacchus]
+	
+Callithrix jacchus
+	279	279	100%	1e-93	97.18%	177	XP_009007060.3	
+Select seq XP_009007060.3 for PSI blast
+		
+
+Select seq ref|XP_050630719.1|
+	
+hemoglobin subunit alpha-A/Q/R/T [Macaca thibetana thibetana]
+	
+Macaca thibetana thibetana
+	278	278	100%	1e-93	97.18%	142	XP_050630719.1	
+Select seq XP_050630719.1 for PSI blast
+		
+
+Select seq ref|XP_012324138.1|
+	
+hemoglobin subunit alpha [Aotus nancymaae]
+	
+Aotus nancymaae
+	278	278	100%	2e-93	96.48%	142	XP_012324138.1	
+Select seq XP_012324138.1 for PSI blast
+		
+
+Select seq ref|XP_033092340.1|
+	
+translation initiation factor IF-2-like [Trachypithecus francoisi]
+	
+Trachypithecus francoisi
+	284	284	100%	2e-93	97.18%	327	XP_033092340.1	
+Select seq XP_033092340.1 for PSI blast
+		
+
+Select seq pdb|4MQH|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	277	277	98%	2e-93	99.28%	139	4MQH_A	
+Select seq 4MQH_A for PSI blast
+		
+
+Select seq ref|XP_032004373.1|
+	
+hemoglobin subunit alpha [Hylobates moloch]
+	
+Hylobates moloch
+	277	277	100%	2e-93	97.18%	142	XP_032004373.1	
+Select seq XP_032004373.1 for PSI blast
+		
+
+Select seq ref|XP_011815457.1|
+	
+PREDICTED: hemoglobin subunit alpha isoform X1 [Colobus angolensis palliatus]
+	
+Colobus angolensis palliatus
+	277	277	100%	2e-93	96.48%	142	XP_011815457.1	
+Select seq XP_011815457.1 for PSI blast
+		
+
+Select seq sp|P67817.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]
+	
+Ateles geoffroyi
+	277	277	100%	3e-93	96.48%	142	P67817.2	
+Select seq P67817.2 for PSI blast
+		
+
+Select seq gb|EHH60005.1|
+	
+Hemoglobin alpha chain [Macaca fascicularis]
+	
+Macaca fascicularis
+	277	277	100%	3e-93	97.18%	142	EHH60005.1	
+Select seq EHH60005.1 for PSI blast
+		
+
+Select seq sp|Q9TS34.2|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]
+	
+Hylobates lar
+	277	277	100%	3e-93	96.48%	142	Q9TS34.2	
+Select seq Q9TS34.2 for PSI blast
+		
+
+Select seq sp|P18972.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]
+	
+Mico argentatus
+	276	276	99%	3e-93	97.16%	141	P18972.1	
+Select seq P18972.1 for PSI blast
+		
+
+Select seq ref|NP_001253705.1|
+	
+hemoglobin subunit alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	4e-93	96.48%	142	NP_001253705.1	
+Select seq NP_001253705.1 for PSI blast
+		
+
+Select seq prf||681081A
+	
+hemoglobin alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	99%	5e-93	97.16%	141	681081A	
+Select seq 681081A for PSI blast
+		
+
+Select seq pdb|1O1N|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	561	99%	7e-93	99.29%	285	1O1N_A	
+Select seq 1O1N_A for PSI blast
+		
+
+Select seq ref|NP_001038189.1|
+	
+hemoglobin subunit alpha [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	9e-93	96.48%	142	NP_001038189.1	
+Select seq NP_001038189.1 for PSI blast
+		
+
+Select seq gb|AYO89359.1|
+	
+hemoglobin subunit alpha [Cercopithecus wolfi]
+	
+Cercopithecus wolfi
+	276	276	100%	9e-93	96.48%	142	AYO89359.1	
+Select seq AYO89359.1 for PSI blast
+		
+
+Select seq sp|P21767.1|
+	
+RecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]
+	
+Macaca fascicularis
+	275	275	99%	1e-92	97.16%	141	P21767.1	
+Select seq P21767.1 for PSI blast
+		
+
+Select seq ref|XP_017377050.2|
+	
+hemoglobin subunit alpha [Cebus imitator]
+	
+Cebus imitator
+	275	275	100%	1e-92	95.77%	142	XP_017377050.2	
+Select seq XP_017377050.2 for PSI blast
+		
+
+Select seq pdb|1O1M|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	281	560	99%	1e-92	98.58%	285	1O1M_A	
+Select seq 1O1M_A for PSI blast
+		
+
+Select seq pdb|1O1J|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	560	99%	1e-92	98.58%	283	1O1J_A	
+Select seq 1O1J_A for PSI blast
+		
+
+Select seq pdb|5WOG|A
+	
+Chain A, Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	275	275	96%	1e-92	100.00%	137	5WOG_A	
+Select seq 5WOG_A for PSI blast
+		
+
+Select seq sp|P67818.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]
+	
+Saguinus oedipus
+	275	275	99%	2e-92	96.45%	141	P67818.1	
+Select seq P67818.1 for PSI blast
+		
+
+Select seq sp|P21766.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]
+	
+Macaca assamensis
+	275	275	99%	3e-92	97.16%	141	P21766.1	
+Select seq P21766.1 for PSI blast
+		
+
+Select seq tpe|SAI82172.1|
+	
+TPA: globin C1 [Macaca mulatta]
+	
+Macaca mulatta
+	276	276	100%	3e-92	96.48%	177	SAI82172.1	
+Select seq SAI82172.1 for PSI blast
+		
+
+Select seq sp|P01929.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]
+	
+Leontocebus fuscicollis
+	274	274	99%	3e-92	96.45%	141	P01929.1	
+Select seq P01929.1 for PSI blast
+		
+
+Select seq pdb|1O1L|A
+	
+Chain A, Hemoglobin Alpha chain [Homo sapiens]
+	
+Homo sapiens
+	280	558	99%	3e-92	98.58%	283	1O1L_A	
+Select seq 1O1L_A for PSI blast
+		
+
+Select seq ref|XP_003928392.1|
+	
+hemoglobin subunit alpha [Saimiri boliviensis]
+	
+Saimiri boliviensis
+	274	274	100%	4e-92	95.77%	142	XP_003928392.1	
+Select seq XP_003928392.1 for PSI blast
+		
+
+Select seq ref|XP_050630718.1|
+	
+hemoglobin subunit alpha-A/Q/R/T-like [Macaca thibetana thibetana]
+	
+Macaca thibetana thibetana
+	275	275	100%	4e-92	96.48%	177	XP_050630718.1	
+Select seq XP_050630718.1 for PSI blast
+		
+
+Select seq ref|XP_070939859.1|
+	
+hemoglobin subunit alpha-1/2/3 [Macaca nemestrina]
+	
+Macaca nemestrina
+	274	274	100%	5e-92	96.48%	142	XP_070939859.1	
+Select seq XP_070939859.1 for PSI blast
+		
+
+Select seq prf||731485A
+	
+hemoglobin alpha [Chlorocebus aethiops]
+	
+Chlorocebus aethiops
+	273	273	99%	7e-92	96.45%	141	731485A	
+Select seq 731485A for PSI blast
+		
+
+Select seq prf||732177A
+	
+hemoglobin alpha [Sapajus apella]
+	
+Sapajus apella
+	273	273	99%	8e-92	95.74%	141	732177A	
+Select seq 732177A for PSI blast
+		
+
+Select seq sp|P07421.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cebus capucinus]
+	
+Cebus capucinus
+	273	273	99%	9e-92	95.74%	141	P07421.1	
+Select seq P07421.1 for PSI blast
+		
+
+Select seq sp|P21768.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Macaca sinica]
+	
+Macaca sinica
+	273	273	99%	1e-91	96.45%	141	P21768.1	
+Select seq P21768.1 for PSI blast
+		
+
+Select seq sp|P19002.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca nemestrina]
+	
+Macaca nemestrina
+	272	272	99%	2e-91	96.45%	141	P19002.1	
+Select seq P19002.1 for PSI blast
+		
+
+Select seq prf||764140A
+	
+hemoglobin alpha [Leontocebus fuscicollis]
+	
+Leontocebus fuscicollis
+	272	272	99%	2e-91	95.04%	141	764140A	
+Select seq 764140A for PSI blast
+		
+
+Select seq gb|KAK2086208.1|
+	
+hypothetical protein P7K49_035633 [Saguinus oedipus]
+	
+Saguinus oedipus
+	274	274	100%	2e-91	94.37%	193	KAK2086208.1	
+Select seq KAK2086208.1 for PSI blast
+		
+
+Select seq gb|ABA29746.1|
+	
+alpha globin a3 [Pongo pygmaeus]
+	
+Pongo pygmaeus
+	271	271	100%	3e-91	95.77%	142	ABA29746.1	
+Select seq ABA29746.1 for PSI blast
+		
+
+Select seq sp|P07402.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Macaca arctoides]
+	
+Macaca arctoides
+	271	271	99%	4e-91	96.45%	141	P07402.1	
+Select seq P07402.1 for PSI blast
+		
+
+Select seq sp|P01930.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Piliocolobus badius]
+	
+Piliocolobus badius
+	271	271	100%	6e-91	95.07%	142	P01930.2	
+Select seq P01930.2 for PSI blast
+		
+
+Select seq ref|XP_023045571.1|
+	
+hemoglobin subunit alpha [Piliocolobus tephrosceles]
+	
+Piliocolobus tephrosceles
+	271	271	100%	6e-91	94.37%	142	XP_023045571.1	
+Select seq XP_023045571.1 for PSI blast
+		
+
+Select seq sp|Q7M3B6.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus mystax]
+	
+Saguinus mystax
+	271	271	99%	7e-91	95.74%	141	Q7M3B6.1	
+Select seq Q7M3B6.1 for PSI blast
+		
+
+Select seq ref|XP_053412045.1|
+	
+hemoglobin subunit alpha [Nycticebus coucang]
+	
+Nycticebus coucang
+	269	269	100%	3e-90	93.66%	142	XP_053412045.1	
+Select seq XP_053412045.1 for PSI blast
+		
+
+Select seq ref|XP_053412047.1|
+	
+hemoglobin subunit alpha-like [Nycticebus coucang]
+	
+Nycticebus coucang
+	270	270	100%	8e-90	93.66%	177	XP_053412047.1	
+Select seq XP_053412047.1 for PSI blast
+		
+
+Select seq ref|WP_185150429.1|
+	
+MULTISPECIES: hemoglobin alpha subunit family protein, partial [unclassified Apibacter]
+	
+unclassified Apibacter
+	268	268	100%	1e-89	90.85%	150	WP_185150429.1	
+Select seq WP_185150429.1 for PSI blast
+		
+
+Select seq gb|MXO35264.1|
+	
+hypothetical protein [Apibacter sp. B3883]
+	
+Apibacter sp. B3883
+	267	267	100%	3e-89	90.85%	142	MXO35264.1	
+Select seq MXO35264.1 for PSI blast
+		
+
+Select seq sp|P01937.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Nycticebus coucang]
+	
+Nycticebus coucang
+	266	266	99%	3e-89	93.62%	141	P01937.1	
+Select seq P01937.1 for PSI blast
+		
+
+Select seq sp|P01939.3|
+	
+RecName: Full=Hemoglobin subunit alpha-B; AltName: Full=Alpha-B-globin; AltName: Full=Alpha-II; AltName: Full=Hemoglobin alpha-B chain [Otolemur crassicaudatus]
+	
+Otolemur crassicaudatus
+	266	266	100%	5e-89	92.25%	142	P01939.3	
+Select seq P01939.3 for PSI blast
+		
+
+Select seq sp|P01935.1|
+	
+RecName: Full=Hemoglobin subunit alpha-3; AltName: Full=Alpha-3-globin; AltName: Full=Hemoglobin alpha-2 chain [Pan troglodytes]
+	
+Pan troglodytes
+	266	266	99%	8e-89	88.65%	141	P01935.1	
+Select seq P01935.1 for PSI blast
+		
+
+Select seq prf||765952A
+	
+hemoglobin alpha [Tarsius sp.]
+	
+Tarsius sp.
+	265	265	99%	1e-88	92.20%	141	765952A	
+Select seq 765952A for PSI blast
+		
+
+Select seq sp|P01934.1|
+	
+RecName: Full=Hemoglobin subunit alpha-3; AltName: Full=Alpha-3-globin; AltName: Full=Hemoglobin alpha-2 chain [Gorilla gorilla gorilla]
+	
+Gorilla gorilla gorilla
+	265	265	99%	1e-88	89.36%	141	P01934.1	
+Select seq P01934.1 for PSI blast
+		
+
+Select seq sp|P14259.2|
+	
+RecName: Full=Hemoglobin subunit alpha-A; AltName: Full=Alpha-A-globin; Short=Alpha-I; AltName: Full=Hemoglobin alpha-A chain [Otolemur crassicaudatus]
+	
+Otolemur crassicaudatus
+	265	265	100%	2e-88	92.25%	142	P14259.2	
+Select seq P14259.2 for PSI blast
+		
+
+Select seq sp|P08258.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain; AltName: Full=Hemoglobin alpha-I/II chain [Mandrillus sphinx]
+	
+Mandrillus sphinx
+	265	265	99%	2e-88	93.62%	141	P08258.1	
+Select seq P08258.1 for PSI blast
+		
+
+Select seq prf||0409309A
+	
+hemoglobin alpha [Loris tardigradus]
+	
+Loris tardigradus
+	264	264	99%	3e-88	92.91%	141	0409309A	
+Select seq 0409309A for PSI blast
+		
+
+Select seq sp|P01938.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Loris tardigradus]
+	
+Loris tardigradus
+	264	264	99%	4e-88	92.91%	141	P01938.2	
+Select seq P01938.2 for PSI blast
+		
+
+Select seq sp|P01940.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cephalopachus bancanus]
+	
+Cephalopachus bancanus
+	264	264	99%	4e-88	91.49%	141	P01940.1	
+Select seq P01940.1 for PSI blast
+		
+
+Select seq sp|P11757.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Myotis velifer]
+	
+Myotis velifer
+	263	263	99%	7e-88	90.78%	141	P11757.1	
+Select seq P11757.1 for PSI blast
+		
+
+Select seq gb|ACG63685.1|
+	
+theta 1 globin (predicted) [Otolemur garnettii]
+	
+Otolemur garnettii
+	263	263	100%	7e-88	90.85%	142	ACG63685.1	
+Select seq ACG63685.1 for PSI blast
+		
+
+Select seq gb|AQN67653.1|
+	
+Hemoglobin subunit alpha [Homo sapiens]
+	
+Homo sapiens
+	265	265	100%	9e-88	75.94%	187	AQN67653.1	
+Select seq AQN67653.1 for PSI blast
+		
+
+Select seq gb|ACE60604.1|
+	
+hemoglobin alpha chain [Cynopterus sphinx]
+	
+Cynopterus sphinx
+	263	263	100%	1e-87	89.44%	142	ACE60604.1	
+Select seq ACE60604.1 for PSI blast
+		
+
+Select seq ref|XP_015992247.1|
+	
+hemoglobin subunit alpha [Rousettus aegyptiacus]
+	
+Rousettus aegyptiacus
+	263	263	100%	1e-87	90.14%	142	XP_015992247.1	
+Select seq XP_015992247.1 for PSI blast
+		
+
+Select seq ref|XP_004596643.2|
+	
+hemoglobin subunit alpha [Ochotona princeps]
+	
+Ochotona princeps
+	262	262	100%	2e-87	90.85%	142	XP_004596643.2	
+Select seq XP_004596643.2 for PSI blast
+		
+
+Select seq gb|KAN7441022.1|
+	
+hemoglobin subunit alpha [Corynorhinus townsendii]
+	
+Corynorhinus townsendii
+	262	262	100%	2e-87	90.85%	142	KAN7441022.1	
+Select seq KAN7441022.1 for PSI blast
+		
+
+Select seq ref|NP_001162287.1|
+	
+hemoglobin subunit alpha [Papio anubis]
+	
+Papio anubis
+	262	262	100%	3e-87	92.25%	142	NP_001162287.1	
+Select seq NP_001162287.1 for PSI blast
+		
+
+Select seq ref|XP_087671269.1|
+	
+hemoglobin subunit alpha [Miniopterus natalensis]
+	
+Miniopterus natalensis
+	261	261	100%	3e-87	90.14%	142	XP_087671269.1	
+Select seq XP_087671269.1 for PSI blast
+		
+
+Select seq gb|AGT37231.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	261	261	100%	3e-87	90.85%	142	AGT37231.1	
+Select seq AGT37231.1 for PSI blast
+		
+
+Select seq gb|ACE60607.1|
+	
+hemoglobin alpha chain [Myotis adversus]
+	
+Myotis adversus
+	261	261	100%	3e-87	89.44%	142	ACE60607.1	
+Select seq ACE60607.1 for PSI blast
+		
+
+Select seq sp|P01933.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cercocebus atys]
+	
+Cercocebus atys
+	261	261	99%	4e-87	92.91%	141	P01933.1	
+Select seq P01933.1 for PSI blast
+		
+
+Select seq ref|XP_005870406.1|
+	
+PREDICTED: hemoglobin subunit alpha isoform X2 [Myotis brandtii]
+	
+Myotis brandtii
+	261	261	100%	4e-87	90.14%	142	XP_005870406.1	
+Select seq XP_005870406.1 for PSI blast
+		
+
+Select seq sp|P11753.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cynopterus sphinx]
+	
+Cynopterus sphinx
+	261	261	99%	5e-87	90.07%	141	P11753.1	
+Select seq P11753.1 for PSI blast
+		
+
+Select seq ref|XP_005870405.1|
+	
+PREDICTED: hemoglobin subunit alpha isoform X1 [Myotis brandtii]
+	
+Myotis brandtii
+	261	261	100%	7e-87	89.44%	142	XP_005870405.1	
+Select seq XP_005870405.1 for PSI blast
+		
+
+Select seq gb|KAN7637922.1|
+	
+hemoglobin subunit alpha [Antrozous pallidus]
+	
+Antrozous pallidus
+	261	261	100%	7e-87	90.85%	142	KAN7637922.1	
+Select seq KAN7637922.1 for PSI blast
+		
+
+Select seq ref|XP_016071731.2|
+	
+hemoglobin subunit alpha [Miniopterus natalensis]
+	
+Miniopterus natalensis
+	261	261	100%	7e-87	89.44%	142	XP_016071731.2	
+Select seq XP_016071731.2 for PSI blast
+		
+
+Select seq gb|AGT37235.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	261	261	100%	8e-87	90.14%	142	AGT37235.1	
+Select seq AGT37235.1 for PSI blast
+		
+
+Select seq ref|XP_008062102.1|
+	
+hemoglobin subunit alpha-like, partial [Carlito syrichta]
+	
+Carlito syrichta
+	261	261	99%	8e-87	92.14%	147	XP_008062102.1	
+Select seq XP_008062102.1 for PSI blast
+		
+
+Select seq ref|XP_036135546.1|
+	
+hemoglobin subunit alpha [Molossus molossus]
+	
+Molossus molossus
+	260	260	100%	9e-87	89.44%	142	XP_036135546.1	
+Select seq XP_036135546.1 for PSI blast
+		
+
+Select seq gb|AGT37237.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	260	260	100%	1e-86	90.14%	142	AGT37237.1	
+Select seq AGT37237.1 for PSI blast
+		
+
+Select seq gb|KAM5331010.1|
+	
+hemoglobin subunit alpha [Glossophaga mutica]
+	
+Glossophaga mutica
+	260	260	100%	1e-86	88.73%	142	KAM5331010.1	
+Select seq KAM5331010.1 for PSI blast
+		
+
+Select seq ref|XP_054570186.1|
+	
+hemoglobin subunit alpha [Eptesicus fuscus]
+	
+Eptesicus fuscus
+	260	260	100%	1e-86	90.14%	142	XP_054570186.1	
+Select seq XP_054570186.1 for PSI blast
+		
+
+Select seq ref|XP_025230451.1|
+	
+hemoglobin subunit alpha [Theropithecus gelada]
+	
+Theropithecus gelada
+	260	260	100%	1e-86	91.55%	142	XP_025230451.1	
+Select seq XP_025230451.1 for PSI blast
+		
+
+Select seq gb|AIC83979.1|
+	
+alpha-globin HBA-T2 [Myodes glareolus]
+	
+Myodes glareolus
+	260	260	100%	1e-86	87.32%	142	AIC83979.1	
+Select seq AIC83979.1 for PSI blast
+		
+
+Select seq sp|P01956.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Rousettus aegyptiacus]
+	
+Rousettus aegyptiacus
+	260	260	99%	1e-86	90.07%	141	P01956.1	
+Select seq P01956.1 for PSI blast
+		
+
+Select seq ref|XP_080946583.1|
+	
+hemoglobin subunit alpha-like [Myotis nattereri]
+	
+Myotis nattereri
+	259	259	100%	2e-86	88.73%	142	XP_080946583.1	
+Select seq XP_080946583.1 for PSI blast
+		
+
+Select seq sp|P14387.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Antrozous pallidus]
+	
+Antrozous pallidus
+	259	259	100%	2e-86	90.14%	142	P14387.2	
+Select seq P14387.2 for PSI blast
+		
+
+Select seq ref|XP_080946584.1|
+	
+hemoglobin subunit alpha [Myotis nattereri]
+	
+Myotis nattereri
+	259	259	100%	2e-86	88.73%	142	XP_080946584.1	
+Select seq XP_080946584.1 for PSI blast
+		
+
+Select seq gb|ACE60610.1|
+	
+hemoglobin alpha chain [Taphozous melanopogon]
+	
+Taphozous melanopogon
+	259	259	100%	2e-86	90.14%	142	ACE60610.1	
+Select seq ACE60610.1 for PSI blast
+		
+
+Select seq ref|XP_070269501.1|
+	
+hemoglobin subunit alpha [Myotis yumanensis]
+	
+Myotis yumanensis
+	259	259	100%	2e-86	88.73%	142	XP_070269501.1	
+Select seq XP_070269501.1 for PSI blast
+		
+
+Select seq ref|XP_066131589.1|
+	
+hemoglobin subunit alpha [Saccopteryx bilineata]
+	
+Saccopteryx bilineata
+	259	259	100%	2e-86	90.85%	142	XP_066131589.1	
+Select seq XP_066131589.1 for PSI blast
+		
+
+Select seq gb|AGS13717.1|
+	
+hemoglobin alpha [Ochotona cansus]
+	
+Ochotona cansus
+	259	259	100%	3e-86	90.14%	142	AGS13717.1	
+Select seq AGS13717.1 for PSI blast
+		
+
+Select seq ref|XP_059548476.1|
+	
+hemoglobin subunit alpha [Myotis daubentonii]
+	
+Myotis daubentonii
+	259	259	100%	3e-86	90.14%	142	XP_059548476.1	
+Select seq XP_059548476.1 for PSI blast
+		
+
+Select seq gb|KAN3407131.1|
+	
+hemoglobin subunit alpha [Aselliscus stoliczkanus]
+	
+Aselliscus stoliczkanus
+	259	259	100%	3e-86	90.14%	142	KAN3407131.1	
+Select seq KAN3407131.1 for PSI blast
+		
+
+Select seq gb|KAM5227256.1|
+	
+hemoglobin subunit alpha [Ctenodactylus gundi]
+	
+Ctenodactylus gundi
+	259	259	100%	3e-86	88.73%	142	KAM5227256.1	
+Select seq KAM5227256.1 for PSI blast
+		
+
+Select seq ref|XP_036159083.1|
+	
+hemoglobin subunit alpha [Myotis myotis]
+	
+Myotis myotis
+	259	259	100%	3e-86	88.73%	142	XP_036159083.1	
+Select seq XP_036159083.1 for PSI blast
+		
+
+Select seq ref|XP_069342504.1|
+	
+hemoglobin subunit alpha [Eulemur rufifrons]
+	
+Eulemur rufifrons
+	259	259	100%	3e-86	89.44%	142	XP_069342504.1	
+Select seq XP_069342504.1 for PSI blast
+		
+
+Select seq ref|XP_036159111.1|
+	
+hemoglobin subunit alpha-like [Myotis myotis]
+	
+Myotis myotis
+	259	259	100%	4e-86	88.73%	142	XP_036159111.1	
+Select seq XP_036159111.1 for PSI blast
+		
+
+Select seq ref|XP_048292025.3|
+	
+hemoglobin subunit alpha [Myodes glareolus]
+	
+Myodes glareolus
+	259	259	100%	4e-86	87.32%	142	XP_048292025.3	
+Select seq XP_048292025.3 for PSI blast
+		
+
+Select seq gb|AGT37233.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	259	259	100%	5e-86	89.44%	142	AGT37233.1	
+Select seq AGT37233.1 for PSI blast
+		
+
+Select seq gb|AID57465.1|
+	
+alpha-globin [Myodes glareolus]
+	
+Myodes glareolus
+	259	259	100%	5e-86	87.32%	142	AID57465.1	
+Select seq AID57465.1 for PSI blast
+		
+
+Select seq dbj|GAC3179256.1|
+	
+hemoglobin subunit alpha [Miniopterus fuliginosus]
+	
+Miniopterus fuliginosus
+	259	259	100%	5e-86	88.03%	142	GAC3179256.1	
+Select seq GAC3179256.1 for PSI blast
+		
+
+Select seq ref|XP_070269502.1|
+	
+hemoglobin subunit alpha [Myotis yumanensis]
+	
+Myotis yumanensis
+	258	258	100%	5e-86	88.73%	142	XP_070269502.1	
+Select seq XP_070269502.1 for PSI blast
+		
+
+Select seq ref|XP_080559404.1|
+	
+hemoglobin subunit alpha [Muscardinus avellanarius]
+	
+Muscardinus avellanarius
+	258	258	100%	6e-86	87.32%	142	XP_080559404.1	
+Select seq XP_080559404.1 for PSI blast
+		
+
+Select seq ref|XP_045705072.1|
+	
+hemoglobin subunit alpha [Phyllostomus hastatus]
+	
+Phyllostomus hastatus
+	258	258	100%	6e-86	88.73%	142	XP_045705072.1	
+Select seq XP_045705072.1 for PSI blast
+		
+
+Select seq gb|KAO2665913.1|
+	
+hemoglobin subunit alpha-1 [Mops condylurus]
+	
+Mops condylurus
+	258	258	100%	6e-86	88.73%	142	KAO2665913.1	
+Select seq KAO2665913.1 for PSI blast
+		
+
+Select seq ref|XP_044927985.1|
+	
+hemoglobin subunit alpha [Mustela putorius furo]
+	
+Mustela putorius furo
+	258	258	100%	7e-86	88.03%	142	XP_044927985.1	
+Select seq XP_044927985.1 for PSI blast
+		
+
+Select seq ref|XP_005349096.1|
+	
+hemoglobin subunit alpha [Microtus ochrogaster]
+	
+Microtus ochrogaster
+	258	258	100%	7e-86	87.32%	142	XP_005349096.1	
+Select seq XP_005349096.1 for PSI blast
+		
+
+Select seq gb|AFX00018.1|
+	
+hemoglobin alpha chain [Alexandromys oeconomus]
+	
+Alexandromys oeconomus
+	258	258	100%	8e-86	89.44%	142	AFX00018.1	
+Select seq AFX00018.1 for PSI blast
+		
+
+Select seq sp|P01932.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Theropithecus gelada]
+	
+Theropithecus gelada
+	258	258	99%	8e-86	91.49%	141	P01932.1	
+Select seq P01932.1 for PSI blast
+		
+
+Select seq ref|XP_006914102.1|
+	
+hemoglobin subunit alpha isoform X2 [Pteropus alecto]
+	
+Pteropus alecto
+	258	258	100%	8e-86	87.32%	142	XP_006914102.1	
+Select seq XP_006914102.1 for PSI blast
+		
+
+Select seq gb|KAN3407191.1|
+	
+hemoglobin subunit alpha-like [Aselliscus stoliczkanus]
+	
+Aselliscus stoliczkanus
+	258	258	100%	8e-86	89.44%	142	KAN3407191.1	
+Select seq KAN3407191.1 for PSI blast
+		
+
+Select seq ref|XP_080534141.1|
+	
+hemoglobin subunit alpha [Plecotus auritus]
+	
+Plecotus auritus
+	258	258	100%	8e-86	88.73%	142	XP_080534141.1	
+Select seq XP_080534141.1 for PSI blast
+		
+
+Select seq gb|ACE60608.1|
+	
+hemoglobin alpha chain [Rhinolophus pusillus]
+	
+Rhinolophus pusillus
+	258	258	100%	9e-86	89.44%	142	ACE60608.1	
+Select seq ACE60608.1 for PSI blast
+		
+
+Select seq sp|B3EWC7.1|
+	
+RecName: Full=Hemoglobin subunit alpha [Tamias merriami]
+	
+Tamias merriami
+	258	258	99%	1e-85	90.07%	141	B3EWC7.1	
+Select seq B3EWC7.1 for PSI blast
+		
+
+Select seq gb|AGT37243.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	258	258	100%	1e-85	89.44%	142	AGT37243.1	
+Select seq AGT37243.1 for PSI blast
+		
+
+Select seq ref|XP_044088518.1|
+	
+hemoglobin subunit alpha [Neogale vison]
+	
+Neogale vison
+	258	258	100%	1e-85	87.32%	142	XP_044088518.1	
+Select seq XP_044088518.1 for PSI blast
+		
+
+Select seq ref|XP_006914101.1|
+	
+hemoglobin subunit alpha isoform X1 [Pteropus alecto]
+	
+Pteropus alecto
+	258	258	100%	1e-85	87.32%	142	XP_006914101.1	
+Select seq XP_006914101.1 for PSI blast
+		
+
+Select seq ref|XP_054442734.1|
+	
+hemoglobin subunit alpha-4 [Pteronotus mesoamericanus]
+	
+Pteronotus mesoamericanus
+	258	258	100%	1e-85	88.03%	142	XP_054442734.1	
+Select seq XP_054442734.1 for PSI blast
+		
+
+Select seq ref|XP_019504014.1|
+	
+hemoglobin subunit alpha [Hipposideros armiger]
+	
+Hipposideros armiger
+	258	258	100%	1e-85	88.73%	142	XP_019504014.1	
+Select seq XP_019504014.1 for PSI blast
+		
+
+Select seq ref|XP_037013152.1|
+	
+hemoglobin subunit alpha [Artibeus jamaicensis]
+	
+Artibeus jamaicensis
+	258	258	100%	1e-85	88.73%	142	XP_037013152.1	
+Select seq XP_037013152.1 for PSI blast
+		
+
+Select seq ref|XP_069342505.1|
+	
+hemoglobin subunit alpha-like [Eulemur rufifrons]
+	
+Eulemur rufifrons
+	257	257	100%	1e-85	88.73%	142	XP_069342505.1	
+Select seq XP_069342505.1 for PSI blast
+		
+
+Select seq gb|KAN3830381.1|
+	
+hemoglobin subunit alpha [Rhinopoma microphyllum]
+	
+Rhinopoma microphyllum
+	257	257	100%	1e-85	89.44%	142	KAN3830381.1	
+Select seq KAN3830381.1 for PSI blast
+		
+
+Select seq pdb|5EUI|A
+	
+Chain A, HBA protein [Ochotona princeps]
+	
+Ochotona princeps
+	257	257	99%	2e-85	90.07%	141	5EUI_A	
+Select seq 5EUI_A for PSI blast
+		
+
+Select seq gb|KAO2666271.1|
+	
+hemoglobin subunit alpha-1-like [Mops condylurus]
+	
+Mops condylurus
+	257	257	100%	2e-85	88.03%	142	KAO2666271.1	
+Select seq KAO2666271.1 for PSI blast
+		
+
+Select seq ref|XP_039740669.1|
+	
+hemoglobin subunit alpha [Pteropus medius]
+	
+Pteropus medius
+	257	257	100%	2e-85	87.32%	142	XP_039740669.1	
+Select seq XP_039740669.1 for PSI blast
+		
+
+Select seq gb|ELK10887.1|
+	
+Hemoglobin subunit alpha [Pteropus alecto]
+	
+Pteropus alecto
+	258	258	100%	2e-85	87.32%	161	ELK10887.1	
+Select seq ELK10887.1 for PSI blast
+		
+
+Select seq sp|P28780.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Taphozous georgianus]
+	
+Taphozous georgianus
+	257	257	99%	2e-85	90.07%	141	P28780.1	
+Select seq P28780.1 for PSI blast
+		
+
+Select seq ref|XP_011375038.1|
+	
+hemoglobin subunit alpha-like [Pteropus vampyrus]
+	
+Pteropus vampyrus
+	257	257	100%	2e-85	87.32%	142	XP_011375038.1	
+Select seq XP_011375038.1 for PSI blast
+		
+
+Select seq tpe|SAI82176.1|
+	
+TPA: globin C1 [Papio hamadryas]
+	
+Papio hamadryas
+	264	264	100%	2e-85	92.25%	327	SAI82176.1	
+Select seq SAI82176.1 for PSI blast
+		
+
+Select seq gb|KAM8779235.1|
+	
+hemoglobin subunit alpha [Rhynchonycteris naso]
+	
+Rhynchonycteris naso
+	257	257	100%	3e-85	89.44%	142	KAM8779235.1	
+Select seq KAM8779235.1 for PSI blast
+		
+
+Select seq ref|XP_040829605.1|
+	
+hemoglobin subunit alpha [Ochotona curzoniae]
+	
+Ochotona curzoniae
+	257	257	100%	3e-85	88.73%	142	XP_040829605.1	
+Select seq XP_040829605.1 for PSI blast
+		
+
+Select seq gb|ACE60603.1|
+	
+hemoglobin alpha chain [Mops plicatus]
+	
+Mops plicatus
+	257	257	100%	3e-85	88.03%	142	ACE60603.1	
+Select seq ACE60603.1 for PSI blast
+		
+
+Select seq ref|XP_087766847.1|
+	
+hemoglobin subunit alpha [Myodes glareolus]
+	
+Myodes glareolus
+	257	257	100%	3e-85	86.62%	142	XP_087766847.1	
+Select seq XP_087766847.1 for PSI blast
+		
+
+Select seq sp|P20854.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ctenodactylus gundi]
+	
+Ctenodactylus gundi
+	257	257	99%	3e-85	88.65%	141	P20854.1	
+Select seq P20854.1 for PSI blast
+		
+
+Select seq gb|AGT37234.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	257	257	100%	3e-85	88.73%	142	AGT37234.1	
+Select seq AGT37234.1 for PSI blast
+		
+
+Select seq ref|XP_032956912.1|
+	
+hemoglobin subunit alpha [Rhinolophus ferrumequinum]
+	
+Rhinolophus ferrumequinum
+	256	256	100%	3e-85	87.32%	142	XP_032956912.1	
+Select seq XP_032956912.1 for PSI blast
+		
+
+Select seq gb|AID57469.1|
+	
+alpha-globin [Myodes glareolus]
+	
+Myodes glareolus
+	256	256	100%	3e-85	86.62%	142	AID57469.1	
+Select seq AID57469.1 for PSI blast
+		
+
+Select seq gb|ACE60605.1|
+	
+hemoglobin alpha chain [Eonycteris spelaea]
+	
+Eonycteris spelaea
+	256	256	100%	3e-85	88.03%	142	ACE60605.1	
+Select seq ACE60605.1 for PSI blast
+		
+
+Select seq ref|XP_062035887.1|
+	
+hemoglobin subunit alpha-1/2 [Lepus europaeus]
+	
+Lepus europaeus
+	256	256	100%	3e-85	86.62%	142	XP_062035887.1	
+Select seq XP_062035887.1 for PSI blast
+		
+
+Select seq sp|P09839.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macrotus californicus]
+	
+Macrotus californicus
+	256	256	99%	3e-85	89.36%	141	P09839.1	
+Select seq P09839.1 for PSI blast
+		
+
+Select seq pdb|4YU3|A
+	
+Chain A, hemoglobin [Helogale parvula]
+	
+Helogale parvula
+	256	256	99%	3e-85	87.94%	141	4YU3_A	
+Select seq 4YU3_A for PSI blast
+		
+
+Select seq ref|XP_041532356.1|
+	
+hemoglobin subunit alpha-like [Microtus oregoni]
+	
+Microtus oregoni
+	256	256	100%	3e-85	85.92%	142	XP_041532356.1	
+Select seq XP_041532356.1 for PSI blast
+		
+
+Select seq gb|QJF11761.1|
+	
+hemoglobin [Lasiopodomys brandtii]
+	
+Lasiopodomys brandtii
+	256	256	100%	3e-85	87.32%	142	QJF11761.1	
+Select seq QJF11761.1 for PSI blast
+		
+
+Select seq gb|KAN3558483.1|
+	
+hemoglobin subunit alpha [Doryrhina cyclops]
+	
+Doryrhina cyclops
+	256	256	100%	4e-85	88.03%	142	KAN3558483.1	
+Select seq KAN3558483.1 for PSI blast
+		
+
+Select seq gb|AGT37226.1|
+	
+hemoglobin alpha chain [Ochotona hyperborea]
+	
+Ochotona hyperborea
+	256	256	100%	4e-85	89.44%	142	AGT37226.1	
+Select seq AGT37226.1 for PSI blast
+		
+
+Select seq gb|KAN8327253.1|
+	
+hemoglobin subunit alpha [Rhinolophus perniger lanosus]
+	
+Rhinolophus perniger lanosus
+	256	256	100%	4e-85	87.32%	142	KAN8327253.1	
+Select seq KAN8327253.1 for PSI blast
+		
+
+Select seq ref|XP_054570185.1|
+	
+hemoglobin subunit alpha-like [Eptesicus fuscus]
+	
+Eptesicus fuscus
+	256	256	100%	4e-85	88.73%	142	XP_054570185.1	
+Select seq XP_054570185.1 for PSI blast
+		
+
+Select seq sp|P01953.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Meles meles]
+	
+Meles meles
+	256	256	99%	4e-85	88.65%	141	P01953.1	
+Select seq P01953.1 for PSI blast
+		
+
+Select seq ref|XP_036316221.1|
+	
+hemoglobin subunit alpha-like [Pipistrellus kuhlii]
+	
+Pipistrellus kuhlii
+	256	256	100%	4e-85	88.03%	142	XP_036316221.1	
+Select seq XP_036316221.1 for PSI blast
+		
+
+Select seq ref|XP_080989676.1|
+	
+hemoglobin subunit alpha [Miniopterus schreibersii]
+	
+Miniopterus schreibersii
+	256	256	100%	5e-85	87.32%	142	XP_080989676.1	
+Select seq XP_080989676.1 for PSI blast
+		
+
+Select seq ref|XP_079636895.1|
+	
+hemoglobin subunit alpha [Cnephaeus nilssonii]
+	
+Cnephaeus nilssonii
+	256	256	100%	5e-85	88.73%	142	XP_079636895.1	
+Select seq XP_079636895.1 for PSI blast
+		
+
+Select seq ref|XP_047569436.1|
+	
+hemoglobin subunit alpha [Lutra lutra]
+	
+Lutra lutra
+	256	256	100%	5e-85	87.32%	142	XP_047569436.1	
+Select seq XP_047569436.1 for PSI blast
+		
+
+Select seq gb|AID57457.1|
+	
+alpha-globin [Myodes glareolus]
+	
+Myodes glareolus
+	256	256	100%	5e-85	86.62%	142	AID57457.1	
+Select seq AID57457.1 for PSI blast
+		
+
+Select seq ref|XP_040325267.1|
+	
+hemoglobin subunit alpha [Herpailurus yagouaroundi]
+	
+Herpailurus yagouaroundi
+	256	256	100%	5e-85	86.62%	142	XP_040325267.1	
+Select seq XP_040325267.1 for PSI blast
+		
+
+Select seq ref|XP_011375036.1|
+	
+hemoglobin subunit alpha [Pteropus vampyrus]
+	
+Pteropus vampyrus
+	256	256	100%	5e-85	86.62%	142	XP_011375036.1	
+Select seq XP_011375036.1 for PSI blast
+		
+
+Select seq sp|P01936.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Eulemur fulvus fulvus]
+	
+Eulemur fulvus fulvus
+	256	256	99%	5e-85	89.36%	141	P01936.1	
+Select seq P01936.1 for PSI blast
+		
+
+Select seq ref|XP_036890530.1|
+	
+hemoglobin subunit alpha [Sturnira hondurensis]
+	
+Sturnira hondurensis
+	256	256	100%	5e-85	88.03%	142	XP_036890530.1	
+Select seq XP_036890530.1 for PSI blast
+		
+
+Select seq gb|AGS13718.1|
+	
+hemoglobin alpha [Ochotona dauurica]
+	
+Ochotona dauurica
+	256	256	100%	5e-85	88.73%	142	AGS13718.1	
+Select seq AGS13718.1 for PSI blast
+		
+
+Select seq gb|KAN3457899.1|
+	
+hemoglobin subunit alpha [Rhinolophus trifoliatus]
+	
+Rhinolophus trifoliatus
+	257	257	100%	5e-85	87.32%	178	KAN3457899.1	
+Select seq KAN3457899.1 for PSI blast
+		
+
+Select seq gb|AGT37248.1|
+	
+hemoglobin alpha chain [Ochotona princeps]
+	
+Ochotona princeps
+	256	256	100%	5e-85	88.73%	142	AGT37248.1	
+Select seq AGT37248.1 for PSI blast
+		
+
+Select seq ref|XP_045396943.1|
+	
+hemoglobin subunit alpha-like [Lemur catta]
+	
+Lemur catta
+	256	256	100%	6e-85	87.32%	142	XP_045396943.1	
+Select seq XP_045396943.1 for PSI blast
+		
+
+Select seq emb|CAO2642394.1|
+	
+Hemoglobin subunit alpha [Lemmus lemmus]
+	
+Lemmus lemmus
+	256	256	100%	6e-85	86.62%	142	CAO2642394.1	
+Select seq CAO2642394.1 for PSI blast
+		
+
+Select seq ref|XP_038181718.1|
+	
+hemoglobin subunit alpha [Arvicola amphibius]
+	
+Arvicola amphibius
+	256	256	100%	6e-85	86.62%	142	XP_038181718.1	
+Select seq XP_038181718.1 for PSI blast
+		
+
+Select seq sp|Q862A7.3|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pipistrellus abramus]
+	
+Pipistrellus abramus
+	256	256	100%	7e-85	89.51%	143	Q862A7.3	
+Select seq Q862A7.3 for PSI blast
+		
+
+Select seq gb|AFN89856.1|
+	
+hemoglobin alpha chain [Eospalax fontanierii baileyi]
+	
+Eospalax fontanierii baileyi
+	256	256	100%	7e-85	88.73%	142	AFN89856.1	
+Select seq AFN89856.1 for PSI blast
+		
+
+Select seq gb|AGT37238.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	256	256	100%	7e-85	88.73%	142	AGT37238.1	
+Select seq AGT37238.1 for PSI blast
+		
+
+Select seq gb|AID57455.1|
+	
+alpha-globin [Myodes glareolus]
+	
+Myodes glareolus
+	256	256	100%	7e-85	86.62%	142	AID57455.1	
+Select seq AID57455.1 for PSI blast
+		
+
+Select seq gb|AGT37230.1|
+	
+hemoglobin alpha chain [Ochotona pallasi]
+	
+Ochotona pallasi
+	256	256	100%	8e-85	88.73%	142	AGT37230.1	
+Select seq AGT37230.1 for PSI blast
+		
+
+Select seq dbj|GAB9665206.1|
+	
+Hemoglobin subunit zeta [Pteropus pselaphon]
+	
+Pteropus pselaphon
+	255	255	100%	8e-85	86.62%	142	GAB9665206.1	
+Select seq GAB9665206.1 for PSI blast
+		
+
+Select seq ref|XP_028364430.1|
+	
+hemoglobin subunit alpha [Phyllostomus discolor]
+	
+Phyllostomus discolor
+	255	255	100%	8e-85	87.32%	142	XP_028364430.1	
+Select seq XP_028364430.1 for PSI blast
+		
+
+Select seq ref|XP_041532413.1|
+	
+hemoglobin subunit alpha [Microtus oregoni]
+	
+Microtus oregoni
+	255	255	100%	9e-85	85.92%	142	XP_041532413.1	
+Select seq XP_041532413.1 for PSI blast
+		
+
+Select seq gb|AGT37244.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	255	255	100%	9e-85	88.73%	142	AGT37244.1	
+Select seq AGT37244.1 for PSI blast
+		
+
+Select seq sp|P14389.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus alecto]
+	
+Pteropus alecto
+	255	255	99%	9e-85	87.23%	141	P14389.1	
+Select seq P14389.1 for PSI blast
+		
+
+Select seq ref|XP_032701929.1|
+	
+hemoglobin subunit alpha [Lontra canadensis]
+	
+Lontra canadensis
+	255	255	100%	9e-85	85.92%	142	XP_032701929.1	
+Select seq XP_032701929.1 for PSI blast
+		
+
+Select seq gb|KAN3558494.1|
+	
+hemoglobin subunit alpha-like [Doryrhina cyclops]
+	
+Doryrhina cyclops
+	255	255	100%	1e-84	87.32%	142	KAN3558494.1	
+Select seq KAN3558494.1 for PSI blast
+		
+
+Select seq gb|KAN3586613.1|
+	
+hemoglobin subunit alpha [Rhinolophus affinis]
+	
+Rhinolophus affinis
+	255	255	100%	1e-84	87.32%	142	KAN3586613.1	
+Select seq KAN3586613.1 for PSI blast
+		
+
+Select seq ref|XP_004750989.2|
+	
+hemoglobin subunit alpha-1/2 [Mustela putorius furo]
+	
+Mustela putorius furo
+	255	255	100%	1e-84	87.32%	142	XP_004750989.2	
+Select seq XP_004750989.2 for PSI blast
+		
+
+Select seq sp|P20018.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; AltName: Full=Hemoglobin alpha-I chain [Varecia variegata]
+	
+Varecia variegata
+	255	255	99%	1e-84	87.94%	141	P20018.1	
+Select seq P20018.1 for PSI blast
+		
+
+Select seq gb|ABO27190.1|
+	
+hemoglobin alpha chain [Ochotona curzoniae]
+	
+Ochotona curzoniae
+	255	255	100%	1e-84	88.03%	142	ABO27190.1	
+Select seq ABO27190.1 for PSI blast
+		
+
+Select seq ref|XP_036316220.1|
+	
+hemoglobin subunit alpha [Pipistrellus kuhlii]
+	
+Pipistrellus kuhlii
+	255	255	100%	1e-84	88.03%	142	XP_036316220.1	
+Select seq XP_036316220.1 for PSI blast
+		
+
+Select seq ref|XP_046953853.1|
+	
+hemoglobin subunit alpha [Lynx rufus]
+	
+Lynx rufus
+	255	255	100%	1e-84	85.92%	142	XP_046953853.1	
+Select seq XP_046953853.1 for PSI blast
+		
+
+Select seq gb|KAN8327250.1|
+	
+hemoglobin subunit alpha-like [Rhinolophus perniger lanosus]
+	
+Rhinolophus perniger lanosus
+	255	255	100%	1e-84	87.32%	142	KAN8327250.1	
+Select seq KAN8327250.1 for PSI blast
+		
+
+Select seq emb|CAO2642408.1|
+	
+Hemoglobin subunit alpha [Lemmus lemmus]
+	
+Lemmus lemmus
+	255	255	100%	1e-84	86.62%	142	CAO2642408.1	
+Select seq CAO2642408.1 for PSI blast
+		
+
+Select seq ref|XP_049991312.1|
+	
+hemoglobin subunit alpha [Alexandromys fortis]
+	
+Alexandromys fortis
+	255	255	100%	1e-84	86.62%	142	XP_049991312.1	
+Select seq XP_049991312.1 for PSI blast
+		
+
+Select seq ref|XP_045849529.1|
+	
+hemoglobin subunit alpha [Meles meles]
+	
+Meles meles
+	255	255	100%	1e-84	87.32%	142	XP_045849529.1	
+Select seq XP_045849529.1 for PSI blast
+		
+
+Select seq ref|XP_040604330.1|
+	
+hemoglobin subunit alpha [Mesocricetus auratus]
+	
+Mesocricetus auratus
+	255	255	100%	1e-84	86.62%	142	XP_040604330.1	
+Select seq XP_040604330.1 for PSI blast
+		
+
+Select seq emb|CAO2642406.1|
+	
+Hemoglobin subunit alpha [Lemmus lemmus]
+	
+Lemmus lemmus
+	255	255	100%	2e-84	86.62%	142	CAO2642406.1	
+Select seq CAO2642406.1 for PSI blast
+		
+
+Select seq ref|NP_001077424.1|
+	
+hemoglobin alpha, adult chain 2 [Mus musculus]
+	
+Mus musculus
+	255	255	100%	2e-84	86.62%	142	NP_001077424.1	
+Select seq NP_001077424.1 for PSI blast
+		
+
+Select seq ref|XP_084737880.1|
+	
+hemoglobin subunit alpha [Pipistrellus hanaki]
+	
+Pipistrellus hanaki
+	255	255	100%	2e-84	87.32%	142	XP_084737880.1	
+Select seq XP_084737880.1 for PSI blast
+		
+
+Select seq sp|P20019.1|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; AltName: Full=Hemoglobin alpha-II chain [Varecia variegata]
+	
+Varecia variegata
+	254	254	99%	2e-84	87.94%	141	P20019.1	
+Select seq P20019.1 for PSI blast
+		
+
+Select seq gb|AGT37227.1|
+	
+hemoglobin alpha chain [Ochotona hyperborea]
+	
+Ochotona hyperborea
+	254	254	100%	2e-84	89.44%	142	AGT37227.1	
+Select seq AGT37227.1 for PSI blast
+		
+
+Select seq ref|XP_032183550.1|
+	
+hemoglobin subunit alpha-1/2 [Mustela erminea]
+	
+Mustela erminea
+	254	254	100%	2e-84	86.62%	142	XP_032183550.1	
+Select seq XP_032183550.1 for PSI blast
+		
+
+Select seq gb|WCR76152.1|
+	
+hemoglobin alpha chain [Eospalax fontanierii baileyi]
+	
+Eospalax fontanierii baileyi
+	254	254	100%	2e-84	87.32%	142	WCR76152.1	
+Select seq WCR76152.1 for PSI blast
+		
+
+Select seq ref|XP_058426586.1|
+	
+hemoglobin subunit alpha [Diceros bicornis minor]
+	
+Diceros bicornis minor
+	254	254	100%	2e-84	87.32%	142	XP_058426586.1	
+Select seq XP_058426586.1 for PSI blast
+		
+
+Select seq ref|XP_025779006.2|
+	
+hemoglobin subunit alpha [Puma concolor]
+	
+Puma concolor
+	254	254	100%	2e-84	86.62%	142	XP_025779006.2	
+Select seq XP_025779006.2 for PSI blast
+		
+
+Select seq prf||1306390B
+	
+globin alpha1 [Papio anubis]
+	
+Papio anubis
+	254	254	100%	2e-84	90.85%	142	1306390B	
+Select seq 1306390B for PSI blast
+		
+
+Select seq gb|AGU68544.1|
+	
+hemoglobin alpha, partial [Tamias umbrinus]
+	
+Tamias umbrinus
+	254	254	99%	2e-84	88.65%	142	AGU68544.1	
+Select seq AGU68544.1 for PSI blast
+		
+
+Select seq ref|XP_019611838.2|
+	
+hemoglobin subunit alpha [Rhinolophus sinicus]
+	
+Rhinolophus sinicus
+	254	254	100%	2e-84	86.62%	142	XP_019611838.2	
+Select seq XP_019611838.2 for PSI blast
+		
+
+Select seq ref|XP_057630631.1|
+	
+hemoglobin subunit alpha [Chionomys nivalis]
+	
+Chionomys nivalis
+	254	254	100%	3e-84	85.92%	142	XP_057630631.1	
+Select seq XP_057630631.1 for PSI blast
+		
+
+Select seq ref|XP_022372332.1|
+	
+hemoglobin subunit alpha-1/2 [Enhydra lutris kenyoni]
+	
+Enhydra lutris kenyoni
+	254	254	100%	3e-84	85.92%	142	XP_022372332.1	
+Select seq XP_022372332.1 for PSI blast
+		
+
+Select seq gb|AGT37240.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	254	254	100%	3e-84	88.03%	142	AGT37240.1	
+Select seq AGT37240.1 for PSI blast
+		
+
+Select seq sp|P20243.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela putorius furo]
+	
+Mustela putorius furo
+	254	254	99%	3e-84	87.94%	141	P20243.1	
+Select seq P20243.1 for PSI blast
+		
+
+Select seq ref|XP_084736647.1|
+	
+hemoglobin subunit alpha-like [Pipistrellus hanaki]
+	
+Pipistrellus hanaki
+	256	256	100%	3e-84	87.32%	208	XP_084736647.1	
+Select seq XP_084736647.1 for PSI blast
+		
+
+Select seq dbj|BAB27381.1|
+	
+unnamed protein product [Mus musculus]
+	
+Mus musculus
+	254	254	100%	3e-84	85.92%	142	BAB27381.1	
+Select seq BAB27381.1 for PSI blast
+		
+
+Select seq gb|QJF11762.1|
+	
+hemoglobin [Lasiopodomys mandarinus]
+	
+Lasiopodomys mandarinus
+	254	254	100%	3e-84	86.62%	142	QJF11762.1	
+Select seq QJF11762.1 for PSI blast
+		
+
+Select seq sp|B3EWE3.1|
+	
+RecName: Full=Hemoglobin subunit alpha [Microtus pennsylvanicus]
+	
+Microtus pennsylvanicus
+	254	254	99%	3e-84	87.23%	141	B3EWE3.1	
+Select seq B3EWE3.1 for PSI blast
+		
+
+Select seq ref|XP_021031890.1|
+	
+hemoglobin subunit alpha [Mus caroli]
+	
+Mus caroli
+	254	254	100%	4e-84	86.62%	142	XP_021031890.1	
+Select seq XP_021031890.1 for PSI blast
+		
+
+Select seq ref|XP_030156763.1|
+	
+hemoglobin subunit alpha [Lynx canadensis]
+	
+Lynx canadensis
+	254	254	100%	4e-84	85.21%	142	XP_030156763.1	
+Select seq XP_030156763.1 for PSI blast
+		
+
+Select seq sp|P10892.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Lutra lutra]
+	
+Lutra lutra
+	254	254	99%	4e-84	87.23%	141	P10892.1	
+Select seq P10892.1 for PSI blast
+		
+
+Select seq ref|XP_029803196.1|
+	
+hemoglobin subunit alpha [Suricata suricatta]
+	
+Suricata suricatta
+	254	254	100%	4e-84	86.62%	142	XP_029803196.1	
+Select seq XP_029803196.1 for PSI blast
+		
+
+Select seq dbj|BAC36159.1|
+	
+unnamed protein product [Mus musculus]
+	
+Mus musculus
+	254	254	100%	4e-84	86.62%	142	BAC36159.1	
+Select seq BAC36159.1 for PSI blast
+		
+
+Select seq ref|XP_043417110.1|
+	
+hemoglobin subunit alpha [Prionailurus bengalensis]
+	
+Prionailurus bengalensis
+	254	254	100%	4e-84	84.51%	142	XP_043417110.1	
+Select seq XP_043417110.1 for PSI blast
+		
+
+Select seq ref|XP_004438305.1|
+	
+hemoglobin subunit alpha [Ceratotherium simum simum]
+	
+Ceratotherium simum simum
+	254	254	100%	5e-84	87.32%	142	XP_004438305.1	
+Select seq XP_004438305.1 for PSI blast
+		
+
+Select seq gb|KAN7347083.1|
+	
+hemoglobin subunit alpha-1/2 [Tapirus indicus]
+	
+Tapirus indicus
+	254	254	100%	5e-84	85.92%	142	KAN7347083.1	
+Select seq KAN7347083.1 for PSI blast
+		
+
+Select seq emb|CCE45516.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	253	253	100%	5e-84	85.92%	142	CCE45516.1	
+Select seq CCE45516.1 for PSI blast
+		
+
+Select seq ref|XP_006050021.3|
+	
+hemoglobin subunit alpha-4-like [Bubalus bubalis]
+	
+Bubalus bubalis
+	253	253	100%	5e-84	88.03%	142	XP_006050021.3	
+Select seq XP_006050021.3 for PSI blast
+		
+
+Select seq sp|D0VX09.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus vampyrus]
+	
+Pteropus vampyrus
+	253	253	99%	5e-84	86.52%	141	D0VX09.1	
+Select seq D0VX09.1 for PSI blast
+		
+
+Select seq emb|CAK6444904.1|
+	
+unnamed protein product [Pipistrellus nathusii]
+	
+Pipistrellus nathusii
+	253	253	100%	6e-84	86.62%	142	CAK6444904.1	
+Select seq CAK6444904.1 for PSI blast
+		
+
+Select seq gb|AGT37242.1|
+	
+hemoglobin alpha chain [Ochotona collaris]
+	
+Ochotona collaris
+	253	253	100%	6e-84	88.03%	142	AGT37242.1	
+Select seq AGT37242.1 for PSI blast
+		
+
+Select seq gb|KAN3777413.1|
+	
+hemoglobin subunit alpha-1-like [Tadarida brasiliensis]
+	
+Tadarida brasiliensis
+	253	253	100%	6e-84	87.32%	142	KAN3777413.1	
+Select seq KAN3777413.1 for PSI blast
+		
+
+Select seq ref|XP_019843813.2|
+	
+hemoglobin subunit alpha-like [Bos indicus]
+	
+Bos indicus
+	253	253	100%	6e-84	88.73%	142	XP_019843813.2	
+Select seq XP_019843813.2 for PSI blast
+		
+
+Select seq ref|XP_037360517.1|
+	
+hemoglobin subunit alpha [Talpa occidentalis]
+	
+Talpa occidentalis
+	253	253	100%	6e-84	87.32%	142	XP_037360517.1	
+Select seq XP_037360517.1 for PSI blast
+		
+
+Select seq gb|KAN3747631.1|
+	
+hemoglobin subunit alpha [Rhinolophus yonghoiseni]
+	
+Rhinolophus yonghoiseni
+	253	253	100%	6e-84	86.62%	142	KAN3747631.1	
+Select seq KAN3747631.1 for PSI blast
+		
+
+Select seq ref|XP_003999021.1|
+	
+hemoglobin subunit alpha-like [Felis catus]
+	
+Felis catus
+	253	253	100%	7e-84	85.21%	142	XP_003999021.1	
+Select seq XP_003999021.1 for PSI blast
+		
+
+Select seq gb|AMN15004.1|
+	
+hemoglobin subunit alpha, partial [Sousa chinensis]
+	
+Sousa chinensis
+	253	253	100%	7e-84	84.51%	142	AMN15004.1	
+Select seq AMN15004.1 for PSI blast
+		
+
+Select seq ref|XP_080896137.1|
+	
+hemoglobin subunit alpha-1 [Rhinolophus hipposideros]
+	
+Rhinolophus hipposideros
+	253	253	100%	8e-84	86.62%	142	XP_080896137.1	
+Select seq XP_080896137.1 for PSI blast
+		
+
+Select seq gb|AUO29954.1|
+	
+hemoglobin subunit alpha [Galemys pyrenaicus]
+	
+Galemys pyrenaicus
+	253	253	100%	8e-84	85.21%	142	AUO29954.1	
+Select seq AUO29954.1 for PSI blast
+		
+
+Select seq ref|XP_022450003.1|
+	
+hemoglobin subunit alpha [Delphinapterus leucas]
+	
+Delphinapterus leucas
+	253	253	100%	8e-84	84.51%	142	XP_022450003.1	
+Select seq XP_022450003.1 for PSI blast
+		
+
+Select seq sp|P23601.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela putorius]
+	
+Mustela putorius
+	253	253	99%	8e-84	87.23%	141	P23601.1	
+Select seq P23601.1 for PSI blast
+		
+
+Select seq gb|AMN15003.1|
+	
+hemoglobin subunit alpha, partial [Delphinus capensis]
+	
+Delphinus capensis
+	253	253	100%	8e-84	83.80%	142	AMN15003.1	
+Select seq AMN15003.1 for PSI blast
+		
+
+Select seq ref|XP_008536600.2|
+	
+hemoglobin subunit alpha [Equus przewalskii]
+	
+Equus przewalskii
+	253	253	100%	9e-84	88.03%	142	XP_008536600.2	
+Select seq XP_008536600.2 for PSI blast
+		
+
+Select seq emb|CCE45517.1|
+	
+alpha-globin 2 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	253	253	100%	9e-84	84.51%	142	CCE45517.1	
+Select seq CCE45517.1 for PSI blast
+		
+
+Select seq gb|AGU68546.1|
+	
+hemoglobin alpha, partial [Tamias umbrinus]
+	
+Tamias umbrinus
+	253	253	99%	9e-84	87.94%	142	AGU68546.1	
+Select seq AGU68546.1 for PSI blast
+		
+
+Select seq ref|XP_045396941.1|
+	
+hemoglobin subunit alpha [Lemur catta]
+	
+Lemur catta
+	253	253	100%	1e-83	86.62%	142	XP_045396941.1	
+Select seq XP_045396941.1 for PSI blast
+		
+
+Select seq gb|KAN3881144.1|
+	
+hemoglobin subunit alpha-1/2 [Megaderma spasma]
+	
+Megaderma spasma
+	253	253	100%	1e-83	87.32%	142	KAN3881144.1	
+Select seq KAN3881144.1 for PSI blast
+		
+
+Select seq sp|P01945.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mesocricetus auratus]
+	
+Mesocricetus auratus
+	253	253	99%	1e-83	86.52%	141	P01945.1	
+Select seq P01945.1 for PSI blast
+		
+
+Select seq emb|CCE45498.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	253	253	100%	1e-83	85.21%	142	CCE45498.1	
+Select seq CCE45498.1 for PSI blast
+		
+
+Select seq sp|P01942.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mus musculus]
+	
+Mus musculus
+	253	253	100%	1e-83	85.92%	142	P01942.2	
+Select seq P01942.2 for PSI blast
+		
+
+Select seq emb|CCE45489.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	253	253	100%	1e-83	84.51%	142	CCE45489.1	
+Select seq CCE45489.1 for PSI blast
+		
+
+Select seq ref|XP_057630632.1|
+	
+hemoglobin subunit alpha-like [Chionomys nivalis]
+	
+Chionomys nivalis
+	253	253	100%	1e-83	85.21%	142	XP_057630632.1	
+Select seq XP_057630632.1 for PSI blast
+		
+
+Select seq gb|AJQ22224.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	253	253	100%	1e-83	85.92%	142	AJQ22224.1	
+Select seq AJQ22224.1 for PSI blast
+		
+
+Select seq gb|AGT37228.1|
+	
+hemoglobin alpha chain [Ochotona dauurica]
+	
+Ochotona dauurica
+	252	252	100%	1e-83	87.32%	142	AGT37228.1	
+Select seq AGT37228.1 for PSI blast
+		
+
+Select seq sp|P23600.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela lutreola]
+	
+Mustela lutreola
+	252	252	99%	1e-83	86.52%	141	P23600.1	
+Select seq P23600.1 for PSI blast
+		
+
+Select seq gb|KAG8508945.1|
+	
+Hemoglobin subunit alpha [Galemys pyrenaicus]
+	
+Galemys pyrenaicus
+	252	252	100%	2e-83	85.21%	142	KAG8508945.1	
+Select seq KAG8508945.1 for PSI blast
+		
+
+Select seq ref|XP_070424996.1|
+	
+hemoglobin subunit alpha [Equus przewalskii]
+	
+Equus przewalskii
+	252	252	100%	2e-83	87.32%	142	XP_070424996.1	
+Select seq XP_070424996.1 for PSI blast
+		
+
+Select seq ref|XP_070218271.1|
+	
+hemoglobin subunit alpha-2 [Bos mutus]
+	
+Bos mutus
+	252	252	100%	2e-83	88.03%	142	XP_070218271.1	
+Select seq XP_070218271.1 for PSI blast
+		
+
+Select seq ref|XP_006050022.3|
+	
+hemoglobin subunit alpha-2 [Bubalus bubalis]
+	
+Bubalus bubalis
+	252	252	100%	2e-83	86.62%	142	XP_006050022.3	
+Select seq XP_006050022.3 for PSI blast
+		
+
+Select seq gb|KAN3776511.1|
+	
+hemoglobin subunit alpha-1 [Tadarida brasiliensis]
+	
+Tadarida brasiliensis
+	252	252	100%	2e-83	86.62%	142	KAN3776511.1	
+Select seq KAN3776511.1 for PSI blast
+		
+
+Select seq emb|CCE45501.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	252	252	100%	2e-83	83.80%	142	CCE45501.1	
+Select seq CCE45501.1 for PSI blast
+		
+
+Select seq ref|NP_001070890.2|
+	
+hemoglobin subunit alpha [Bos taurus]
+	
+Bos taurus
+	252	252	100%	2e-83	88.03%	142	NP_001070890.2	
+Select seq NP_001070890.2 for PSI blast
+		
+
+Select seq sp|P11755.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain [Tadarida brasiliensis]
+	
+Tadarida brasiliensis
+	252	252	99%	2e-83	87.23%	141	P11755.1	
+Select seq P11755.1 for PSI blast
+		
+
+Select seq ref|XP_055418417.1|
+	
+hemoglobin subunit alpha-1-like [Bubalus kerabau]
+	
+Bubalus kerabau
+	252	252	100%	2e-83	88.03%	142	XP_055418417.1	
+Select seq XP_055418417.1 for PSI blast
+		
+
+Select seq ref|XP_059976301.1|
+	
+hemoglobin subunit alpha-like [Mesoplodon densirostris]
+	
+Mesoplodon densirostris
+	252	252	100%	2e-83	84.51%	142	XP_059976301.1	
+Select seq XP_059976301.1 for PSI blast
+		
+
+Select seq sp|Q7M2Y4.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Chalinolobus morio]
+	
+Chalinolobus morio
+	252	252	99%	2e-83	87.94%	141	Q7M2Y4.1	
+Select seq Q7M2Y4.1 for PSI blast
+		
+
+Select seq dbj|BAB26925.1|
+	
+unnamed protein product [Mus musculus]
+	
+Mus musculus
+	252	252	100%	2e-83	85.92%	142	BAB26925.1	
+Select seq BAB26925.1 for PSI blast
+		
+
+Select seq gb|AXE72013.1|
+	
+hemoglobin subunit alpha [Monodon monoceros]
+	
+Monodon monoceros
+	252	252	100%	3e-83	83.80%	142	AXE72013.1	
+Select seq AXE72013.1 for PSI blast
+		
+
+Select seq ref|XP_055264827.1|
+	
+hemoglobin subunit alpha-1-like [Moschus berezovskii]
+	
+Moschus berezovskii
+	252	252	100%	3e-83	88.03%	142	XP_055264827.1	
+Select seq XP_055264827.1 for PSI blast
+		
+
+Select seq gb|QJF11764.1|
+	
+hemoglobin [Lasiopodomys mandarinus]
+	
+Lasiopodomys mandarinus
+	252	252	100%	3e-83	85.92%	142	QJF11764.1	
+Select seq QJF11764.1 for PSI blast
+		
+
+Select seq ref|XP_004270431.1|
+	
+hemoglobin subunit alpha [Orcinus orca]
+	
+Orcinus orca
+	252	252	100%	3e-83	83.80%	142	XP_004270431.1	
+Select seq XP_004270431.1 for PSI blast
+		
+
+Select seq ref|XP_026973856.1|
+	
+hemoglobin subunit alpha [Aethalodelphis obliquidens]
+	
+Aethalodelphis obliquidens
+	252	252	100%	3e-83	83.80%	142	XP_026973856.1	
+Select seq XP_026973856.1 for PSI blast
+		
+
+Select seq emb|CCE45493.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	252	252	100%	3e-83	84.51%	142	CCE45493.1	
+Select seq CCE45493.1 for PSI blast
+		
+
+Select seq ref|XP_006978909.2|
+	
+hemoglobin subunit alpha [Peromyscus maniculatus bairdii]
+	
+Peromyscus maniculatus bairdii
+	251	251	100%	3e-83	85.92%	142	XP_006978909.2	
+Select seq XP_006978909.2 for PSI blast
+		
+
+Select seq emb|CCE45492.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	3e-83	83.80%	142	CCE45492.1	
+Select seq CCE45492.1 for PSI blast
+		
+
+Select seq sp|P41327.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Lynx lynx]
+	
+Lynx lynx
+	251	251	99%	3e-83	85.11%	141	P41327.1	
+Select seq P41327.1 for PSI blast
+		
+
+Select seq gb|AFN89859.1|
+	
+hemoglobin alpha chain [Ochotona ladacensis]
+	
+Ochotona ladacensis
+	251	251	100%	3e-83	87.32%	142	AFN89859.1	
+Select seq AFN89859.1 for PSI blast
+		
+
+Select seq ref|NP_001078901.1|
+	
+hemoglobin subunit alpha [Equus caballus]
+	
+Equus caballus
+	251	251	100%	3e-83	87.32%	142	NP_001078901.1	
+Select seq NP_001078901.1 for PSI blast
+		
+
+Select seq emb|CCE45502.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	4e-83	84.51%	142	CCE45502.1	
+Select seq CCE45502.1 for PSI blast
+		
+
+Select seq ref|XP_078296530.1|
+	
+hemoglobin subunit alpha-like [Panthera onca]
+	
+Panthera onca
+	251	251	100%	4e-83	84.51%	142	XP_078296530.1	
+Select seq XP_078296530.1 for PSI blast
+		
+
+Select seq gb|AGU68543.1|
+	
+hemoglobin alpha [Tamias minimus]
+	
+Tamias minimus
+	251	251	99%	4e-83	87.23%	141	AGU68543.1	
+Select seq AGU68543.1 for PSI blast
+		
+
+Select seq gb|AJQ22440.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	251	251	100%	4e-83	87.32%	142	AJQ22440.1	
+Select seq AJQ22440.1 for PSI blast
+		
+
+Select seq sp|P09423.2|
+	
+RecName: Full=Hemoglobin subunit alpha-I/II; AltName: Full=Alpha-I/II-globin; AltName: Full=Hemoglobin alpha-I/II chain [Bison bonasus]
+	
+Bison bonasus
+	251	251	100%	4e-83	88.03%	142	P09423.2	
+Select seq P09423.2 for PSI blast
+		
+
+Select seq sp|P09906.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Rhinoceros unicornis]
+	
+Rhinoceros unicornis
+	251	251	99%	4e-83	87.23%	141	P09906.1	
+Select seq P09906.1 for PSI blast
+		
+
+Select seq dbj|GAB1295894.1|
+	
+Alpha globin 1 [Apodemus speciosus]
+	
+Apodemus speciosus
+	251	251	100%	4e-83	85.21%	142	GAB1295894.1	
+Select seq GAB1295894.1 for PSI blast
+		
+
+Select seq emb|CCE45998.1|
+	
+alpha-globin [Sylvilagus floridanus]
+	
+Sylvilagus floridanus
+	251	251	100%	4e-83	85.21%	142	CCE45998.1	
+Select seq CCE45998.1 for PSI blast
+		
+
+Select seq ref|XP_032281834.1|
+	
+hemoglobin subunit alpha [Phoca vitulina]
+	
+Phoca vitulina
+	251	251	100%	4e-83	85.92%	142	XP_032281834.1	
+Select seq XP_032281834.1 for PSI blast
+		
+
+Select seq emb|CCE45490.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	5e-83	84.51%	142	CCE45490.1	
+Select seq CCE45490.1 for PSI blast
+		
+
+Select seq ref|XP_038181774.1|
+	
+hemoglobin subunit alpha-like [Arvicola amphibius]
+	
+Arvicola amphibius
+	251	251	100%	5e-83	85.21%	142	XP_038181774.1	
+Select seq XP_038181774.1 for PSI blast
+		
+
+Select seq sp|P01951.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Talpa europaea]
+	
+Talpa europaea
+	251	251	99%	5e-83	87.23%	141	P01951.1	
+Select seq P01951.1 for PSI blast
+		
+
+Select seq ref|XP_010618933.1|
+	
+hemoglobin subunit alpha [Fukomys damarensis]
+	
+Fukomys damarensis
+	251	251	100%	5e-83	87.32%	142	XP_010618933.1	
+Select seq XP_010618933.1 for PSI blast
+		
+
+Select seq emb|CCE45515.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	5e-83	84.51%	142	CCE45515.1	
+Select seq CCE45515.1 for PSI blast
+		
+
+Select seq ref|XP_032183551.1|
+	
+hemoglobin subunit alpha-1/2-like [Mustela erminea]
+	
+Mustela erminea
+	251	251	100%	5e-83	85.92%	142	XP_032183551.1	
+Select seq XP_032183551.1 for PSI blast
+		
+
+Select seq ref|XP_034526630.1|
+	
+hemoglobin subunit alpha [Ailuropoda melanoleuca]
+	
+Ailuropoda melanoleuca
+	251	251	100%	5e-83	86.62%	142	XP_034526630.1	
+Select seq XP_034526630.1 for PSI blast
+		
+
+Select seq ref|XP_082499638.1|
+	
+hemoglobin subunit alpha-like [Mesoplodon mirus]
+	
+Mesoplodon mirus
+	251	251	100%	5e-83	84.51%	155	XP_082499638.1	
+Select seq XP_082499638.1 for PSI blast
+		
+
+Select seq sp|Q9TVA3.3|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Equus quagga burchellii]
+	
+Equus quagga burchellii
+	251	251	100%	5e-83	86.62%	142	Q9TVA3.3	
+Select seq Q9TVA3.3 for PSI blast
+		
+
+Select seq gb|ABW88818.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	251	251	100%	5e-83	86.62%	142	ABW88818.1	
+Select seq ABW88818.1 for PSI blast
+		
+
+Select seq ref|XP_080989677.1|
+	
+hemoglobin subunit alpha-like [Miniopterus schreibersii]
+	
+Miniopterus schreibersii
+	251	251	100%	5e-83	85.21%	142	XP_080989677.1	
+Select seq XP_080989677.1 for PSI blast
+		
+
+Select seq ref|XP_052508121.1|
+	
+hemoglobin subunit alpha [Budorcas taxicolor]
+	
+Budorcas taxicolor
+	251	251	100%	6e-83	87.32%	142	XP_052508121.1	
+Select seq XP_052508121.1 for PSI blast
+		
+
+Select seq sp|B3EWD9.1|
+	
+RecName: Full=Hemoglobin subunit alpha [Tamias striatus]
+	
+Tamias striatus
+	251	251	99%	6e-83	87.23%	141	B3EWD9.1	
+Select seq B3EWD9.1 for PSI blast
+		
+
+Select seq sp|P07405.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Felis catus]
+	
+Felis catus
+	251	251	99%	6e-83	85.11%	141	P07405.1	
+Select seq P07405.1 for PSI blast
+		
+
+Select seq gb|AKV93655.1|
+	
+alpha globin [Panthera uncia]
+	
+Panthera uncia
+	251	251	100%	6e-83	84.51%	142	AKV93655.1	
+Select seq AKV93655.1 for PSI blast
+		
+
+Select seq ref|XP_055418418.1|
+	
+hemoglobin subunit alpha-1 [Bubalus kerabau]
+	
+Bubalus kerabau
+	251	251	100%	6e-83	87.32%	142	XP_055418418.1	
+Select seq XP_055418418.1 for PSI blast
+		
+
+Select seq pdb|1IWH|A
+	
+Chain A, Hemoglobin alpha chain [Equus caballus]
+	
+Equus caballus
+	251	251	99%	6e-83	87.94%	141	1IWH_A	
+Select seq 1IWH_A for PSI blast
+		
+
+Select seq ref|XP_059976269.1|
+	
+hemoglobin subunit alpha [Mesoplodon densirostris]
+	
+Mesoplodon densirostris
+	251	251	100%	7e-83	84.51%	142	XP_059976269.1	
+Select seq XP_059976269.1 for PSI blast
+		
+
+Select seq ref|XP_081112142.1|
+	
+hemoglobin subunit alpha-like [Mesoplodon bidens]
+	
+Mesoplodon bidens
+	251	251	100%	7e-83	84.51%	155	XP_081112142.1	
+Select seq XP_081112142.1 for PSI blast
+		
+
+Select seq gb|KAL2766675.1|
+	
+hemoglobin subunit alpha [Daubentonia madagascariensis]
+	
+Daubentonia madagascariensis
+	251	251	100%	7e-83	88.73%	142	KAL2766675.1	
+Select seq KAL2766675.1 for PSI blast
+		
+
+Select seq emb|CCE45495.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	7e-83	83.80%	142	CCE45495.1	
+Select seq CCE45495.1 for PSI blast
+		
+
+Select seq ref|XP_004873771.1|
+	
+hemoglobin subunit alpha [Heterocephalus glaber]
+	
+Heterocephalus glaber
+	251	251	100%	8e-83	86.62%	142	XP_004873771.1	
+Select seq XP_004873771.1 for PSI blast
+		
+
+Select seq ref|XP_079575620.1|
+	
+hemoglobin subunit alpha-like [Hyperoodon ampullatus]
+	
+Hyperoodon ampullatus
+	251	251	100%	8e-83	84.51%	142	XP_079575620.1	
+Select seq XP_079575620.1 for PSI blast
+		
+
+Select seq emb|CCE45508.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	251	251	100%	8e-83	83.80%	142	CCE45508.1	
+Select seq CCE45508.1 for PSI blast
+		
+
+Select seq ref|XP_004403127.1|
+	
+PREDICTED: hemoglobin subunit alpha [Odobenus rosmarus divergens]
+	
+Odobenus rosmarus divergens
+	251	251	100%	8e-83	85.92%	142	XP_004403127.1	
+Select seq XP_004403127.1 for PSI blast
+		
+
+Select seq ref|XP_042524602.1|
+	
+hemoglobin subunit alpha [Dipodomys spectabilis]
+	
+Dipodomys spectabilis
+	250	250	100%	8e-83	85.21%	142	XP_042524602.1	
+Select seq XP_042524602.1 for PSI blast
+		
+
+Select seq gb|KAN7489057.1|
+	
+hypothetical protein NIMR1_010246 [Panthera pardus nimr]
+	
+Panthera pardus nimr
+	250	250	100%	8e-83	83.80%	142	KAN7489057.1	
+Select seq KAN7489057.1 for PSI blast
+		
+
+Select seq ref|XP_057603990.1|
+	
+hemoglobin subunit alpha [Hippopotamus amphibius kiboko]
+	
+Hippopotamus amphibius kiboko
+	250	250	100%	8e-83	87.32%	142	XP_057603990.1	
+Select seq XP_057603990.1 for PSI blast
+		
+
+Select seq ref|NP_001078900.1|
+	
+hemoglobin subunit alpha [Equus caballus]
+	
+Equus caballus
+	250	250	100%	8e-83	86.62%	142	NP_001078900.1	
+Select seq NP_001078900.1 for PSI blast
+		
+
+Select seq sp|P14390.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus poliocephalus]
+	
+Pteropus poliocephalus
+	250	250	99%	9e-83	86.52%	141	P14390.1	
+Select seq P14390.1 for PSI blast
+		
+
+Select seq gb|AJQ20753.1|
+	
+alpha-globin subunit [Peromyscus polionotus]
+	
+Peromyscus polionotus
+	250	250	100%	9e-83	85.21%	142	AJQ20753.1	
+Select seq AJQ20753.1 for PSI blast
+		
+
+Select seq gb|KAN3455961.1|
+	
+uncharacterized protein PXG93_008579 [Rhinolophus trifoliatus]
+	
+Rhinolophus trifoliatus
+	256	387	100%	1e-82	87.32%	307	KAN3455961.1	
+Select seq KAN3455961.1 for PSI blast
+		
+
+Select seq gb|ACD74652.1|
+	
+alpha-globin subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.21%	142	ACD74652.1	
+Select seq ACD74652.1 for PSI blast
+		
+
+Select seq gb|AJQ22237.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.92%	142	AJQ22237.1	
+Select seq AJQ22237.1 for PSI blast
+		
+
+Select seq sp|P09908.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Phoca vitulina]
+	
+Phoca vitulina
+	250	250	99%	1e-82	86.52%	141	P09908.1	
+Select seq P09908.1 for PSI blast
+		
+
+Select seq ref|XP_064448262.1|
+	
+hemoglobin subunit alpha [Mirounga angustirostris]
+	
+Mirounga angustirostris
+	250	250	100%	1e-82	84.51%	142	XP_064448262.1	
+Select seq XP_064448262.1 for PSI blast
+		
+
+Select seq sp|P01962.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Tapirus terrestris]
+	
+Tapirus terrestris
+	250	250	99%	1e-82	85.82%	141	P01962.1	
+Select seq P01962.1 for PSI blast
+		
+
+Select seq gb|AJQ22220.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.92%	142	AJQ22220.1	
+Select seq AJQ22220.1 for PSI blast
+		
+
+Select seq sp|P41330.2|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; AltName: Full=Hemoglobin alpha-II chain [Arctocephalus galapagoensis]
+	
+Arctocephalus galapagoensis
+	250	250	100%	1e-82	85.92%	142	P41330.2	
+Select seq P41330.2 for PSI blast
+		
+
+Select seq pdb|3HRW|A
+	
+Chain A, Hemoglobin subunit alpha [Mus musculus]
+	
+Mus musculus
+	250	250	99%	1e-82	85.82%	141	3HRW_A	
+Select seq 3HRW_A for PSI blast
+		
+
+Select seq gb|ABN71080.1|
+	
+hemoglobin alpha subunit 2 [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.21%	142	ABN71080.1	
+Select seq ABN71080.1 for PSI blast
+		
+
+Select seq gb|AET98891.1|
+	
+hemoglobin subunit alpha [Neurotrichus gibbsii]
+	
+Neurotrichus gibbsii
+	250	250	100%	1e-82	87.32%	142	AET98891.1	
+Select seq AET98891.1 for PSI blast
+		
+
+Select seq ref|XP_075797521.1|
+	
+hemoglobin subunit alpha-like [Microtus pennsylvanicus]
+	
+Microtus pennsylvanicus
+	250	250	100%	1e-82	83.80%	142	XP_075797521.1	
+Select seq XP_075797521.1 for PSI blast
+		
+
+Select seq ref|XP_052614825.1|
+	
+hemoglobin subunit alpha [Peromyscus californicus insignis]
+	
+Peromyscus californicus insignis
+	250	250	100%	1e-82	86.62%	142	XP_052614825.1	
+Select seq XP_052614825.1 for PSI blast
+		
+
+Select seq emb|CAB56829.1|
+	
+hemoglobin alpha chain [Bos taurus]
+	
+Bos taurus
+	250	250	100%	1e-82	87.32%	142	CAB56829.1	
+Select seq CAB56829.1 for PSI blast
+		
+
+Select seq sp|P01969.2|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Bos frontalis]
+	
+Bos frontalis
+	250	250	100%	1e-82	88.03%	142	P01969.2	
+Select seq P01969.2 for PSI blast
+		
+
+Select seq ref|XP_059976295.1|
+	
+hemoglobin subunit alpha-like [Mesoplodon densirostris]
+	
+Mesoplodon densirostris
+	250	250	100%	1e-82	84.51%	142	XP_059976295.1	
+Select seq XP_059976295.1 for PSI blast
+		
+
+Select seq gb|ABW88819.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.92%	142	ABW88819.1	
+Select seq ABW88819.1 for PSI blast
+		
+
+Select seq sp|P01968.1|
+	
+RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain [Bos grunniens]
+	
+Bos grunniens
+	250	250	99%	1e-82	87.94%	141	P01968.1	
+Select seq P01968.1 for PSI blast
+		
+
+Select seq gb|ADK63199.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.21%	142	ADK63199.1	
+Select seq ADK63199.1 for PSI blast
+		
+
+Select seq ref|XP_005886909.1|
+	
+hemoglobin subunit alpha-1 [Bos mutus]
+	
+Bos mutus
+	250	250	100%	1e-82	87.32%	142	XP_005886909.1	
+Select seq XP_005886909.1 for PSI blast
+		
+
+Select seq gb|ASO75694.1|
+	
+hemoglobine alpha globin subunit [Spalacopus cyanus]
+	
+Spalacopus cyanus
+	250	250	100%	1e-82	86.62%	142	ASO75694.1	
+Select seq ASO75694.1 for PSI blast
+		
+
+Select seq gb|AJQ22229.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.21%	142	AJQ22229.1	
+Select seq AJQ22229.1 for PSI blast
+		
+
+Select seq ref|XP_042777615.1|
+	
+hemoglobin subunit alpha-like [Panthera leo]
+	
+Panthera leo
+	250	250	100%	1e-82	83.80%	142	XP_042777615.1	
+Select seq XP_042777615.1 for PSI blast
+		
+
+Select seq sp|P10885.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteronura brasiliensis]
+	
+Pteronura brasiliensis
+	250	250	99%	1e-82	87.23%	141	P10885.1	
+Select seq P10885.1 for PSI blast
+		
+
+Select seq gb|AET98888.1|
+	
+hemoglobin subunit alpha 1 [Condylura cristata]
+	
+Condylura cristata
+	250	250	100%	1e-82	85.21%	142	AET98888.1	
+Select seq AET98888.1 for PSI blast
+		
+
+Select seq ref|XP_082501500.1|
+	
+hemoglobin subunit alpha [Mesoplodon mirus]
+	
+Mesoplodon mirus
+	250	250	100%	1e-82	84.51%	142	XP_082501500.1	
+Select seq XP_082501500.1 for PSI blast
+		
+
+Select seq gb|ACD74715.1|
+	
+alpha-globin subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	1e-82	85.92%	142	ACD74715.1	
+Select seq ACD74715.1 for PSI blast
+		
+
+Select seq ref|XP_079575806.1|
+	
+hemoglobin subunit alpha [Hyperoodon ampullatus]
+	
+Hyperoodon ampullatus
+	250	250	100%	2e-82	84.51%	142	XP_079575806.1	
+Select seq XP_079575806.1 for PSI blast
+		
+
+Select seq gb|ABW88772.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	250	250	100%	2e-82	85.92%	142	ABW88772.1	
+Select seq ABW88772.1 for PSI blast
+		
+
+Select seq sp|P24659.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain; AltName: Full=Hemoglobin alpha-I/II chain [Macroderma gigas]
+	
+Macroderma gigas
+	249	249	99%	2e-82	87.23%	141	P24659.1	
+Select seq P24659.1 for PSI blast
+		
+
+Select seq ref|XP_035939453.2|
+	
+hemoglobin subunit alpha-like [Halichoerus grypus]
+	
+Halichoerus grypus
+	250	250	100%	2e-82	85.21%	142	XP_035939453.2	
+Select seq XP_035939453.2 for PSI blast
+		
+
+Select seq ref|XP_019292914.1|
+	
+hemoglobin subunit alpha [Panthera pardus]
+	
+Panthera pardus
+	249	249	100%	2e-82	83.80%	142	XP_019292914.1	
+Select seq XP_019292914.1 for PSI blast
+		
+
+Select seq ref|XP_021486365.1|
+	
+hemoglobin subunit alpha [Meriones unguiculatus]
+	
+Meriones unguiculatus
+	249	249	100%	2e-82	83.80%	142	XP_021486365.1	
+Select seq XP_021486365.1 for PSI blast
+		
+
+Select seq pdb|1FSX|A
+	
+Chain A, HEMOGLOBIN ALPHA CHAIN [Bos taurus]
+	
+Bos taurus
+	249	249	99%	2e-82	87.94%	141	1FSX_A	
+Select seq 1FSX_A for PSI blast
+		
+
+Select seq pdb|3CY5|A
+	
+Chain A, Hemoglobin subunit alpha-2 [Bubalus bubalis]
+	
+Bubalus bubalis
+	249	249	99%	2e-82	86.52%	141	3CY5_A	
+Select seq 3CY5_A for PSI blast
+		
+
+Select seq emb|CCE45499.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	249	249	100%	2e-82	83.80%	142	CCE45499.1	
+Select seq CCE45499.1 for PSI blast
+		
+
+Select seq gb|ADK63210.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	2e-82	85.21%	142	ADK63210.1	
+Select seq ADK63210.1 for PSI blast
+		
+
+Select seq gb|ABN71102.1|
+	
+hemoglobin alpha subunit 2 [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	2e-82	85.92%	142	ABN71102.1	
+Select seq ABN71102.1 for PSI blast
+		
+
+Select seq ref|NP_001268784.1|
+	
+hemoglobin, alpha 2 [Condylura cristata]
+	
+Condylura cristata
+	249	249	100%	2e-82	84.51%	142	NP_001268784.1	
+Select seq NP_001268784.1 for PSI blast
+		
+
+Select seq emb|CCE45506.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	249	249	100%	2e-82	84.51%	142	CCE45506.1	
+Select seq CCE45506.1 for PSI blast
+		
+
+Select seq sp|P41329.2|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; AltName: Full=Hemoglobin alpha-I chain [Arctocephalus galapagoensis]
+	
+Arctocephalus galapagoensis
+	249	249	100%	2e-82	85.21%	142	P41329.2	
+Select seq P41329.2 for PSI blast
+		
+
+Select seq gb|AKV93654.1|
+	
+alpha globin [Panthera uncia]
+	
+Panthera uncia
+	249	249	100%	2e-82	83.80%	142	AKV93654.1	
+Select seq AKV93654.1 for PSI blast
+		
+
+Select seq ref|XP_012515044.1|
+	
+PREDICTED: hemoglobin subunit alpha [Propithecus coquereli]
+	
+Propithecus coquereli
+	249	249	100%	2e-82	85.21%	142	XP_012515044.1	
+Select seq XP_012515044.1 for PSI blast
+		
+
+Select seq emb|CCE45504.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	249	249	100%	2e-82	82.39%	142	CCE45504.1	
+Select seq CCE45504.1 for PSI blast
+		
+
+Select seq sp|P18978.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Tursiops truncatus]
+	
+Tursiops truncatus
+	249	249	99%	2e-82	83.69%	141	P18978.1	
+Select seq P18978.1 for PSI blast
+		
+
+Select seq ref|XP_081114155.1|
+	
+hemoglobin subunit alpha [Mesoplodon bidens]
+	
+Mesoplodon bidens
+	249	249	100%	2e-82	83.80%	142	XP_081114155.1	
+Select seq XP_081114155.1 for PSI blast
+		
+
+Select seq ref|XP_052053540.1|
+	
+hemoglobin subunit alpha [Apodemus sylvaticus]
+	
+Apodemus sylvaticus
+	249	249	100%	2e-82	84.51%	142	XP_052053540.1	
+Select seq XP_052053540.1 for PSI blast
+		
+
+Select seq gb|ABW88780.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	2e-82	86.62%	142	ABW88780.1	
+Select seq ABW88780.1 for PSI blast
+		
+
+Select seq emb|CCE45512.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	249	249	100%	2e-82	83.10%	142	CCE45512.1	
+Select seq CCE45512.1 for PSI blast
+		
+
+Select seq ref|XP_058566753.1|
+	
+hemoglobin subunit alpha [Neofelis nebulosa]
+	
+Neofelis nebulosa
+	249	249	100%	2e-82	84.51%	142	XP_058566753.1	
+Select seq XP_058566753.1 for PSI blast
+		
+
+Select seq ref|XP_084619249.1|
+	
+hemoglobin subunit alpha [Acomys minous]
+	
+Acomys minous
+	249	249	100%	2e-82	84.51%	142	XP_084619249.1	
+Select seq XP_084619249.1 for PSI blast
+		
+
+Select seq emb|CAR9241720.1|
+	
+unnamed protein product [Gulo gulo gulo]
+	
+Gulo gulo gulo
+	249	249	100%	3e-82	85.92%	142	CAR9241720.1	
+Select seq CAR9241720.1 for PSI blast
+		
+
+Select seq gb|ACD74628.1|
+	
+alpha-globin subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	3e-82	85.92%	142	ACD74628.1	
+Select seq ACD74628.1 for PSI blast
+		
+
+Select seq ref|XP_042827397.1|
+	
+hemoglobin subunit alpha [Panthera tigris]
+	
+Panthera tigris
+	249	249	100%	3e-82	83.80%	142	XP_042827397.1	
+Select seq XP_042827397.1 for PSI blast
+		
+
+Select seq gb|ACN44167.1|
+	
+hemoglobin alpha4 chain [Delphinus delphis]
+	
+Delphinus delphis
+	249	249	100%	3e-82	83.10%	142	ACN44167.1	
+Select seq ACN44167.1 for PSI blast
+		
+
+Select seq ref|XP_006978909.1|
+	
+hemoglobin subunit alpha-like [Peromyscus maniculatus bairdii]
+	
+Peromyscus maniculatus bairdii
+	249	249	100%	3e-82	85.21%	142	XP_006978909.1	
+Select seq XP_006978909.1 for PSI blast
+		
+
+Select seq ref|XP_007093709.2|
+	
+hemoglobin subunit alpha [Panthera tigris]
+	
+Panthera tigris
+	249	249	100%	3e-82	83.80%	142	XP_007093709.2	
+Select seq XP_007093709.2 for PSI blast
+		
+
+Select seq gb|AXE72010.1|
+	
+hemoglobin subunit alpha [Globicephala melas]
+	
+Globicephala melas
+	249	249	100%	3e-82	82.39%	142	AXE72010.1	
+Select seq AXE72010.1 for PSI blast
+		
+
+Select seq ref|XP_069875843.1|
+	
+hemoglobin subunit alpha-1/2 [Dipodomys merriami]
+	
+Dipodomys merriami
+	249	249	100%	3e-82	84.51%	142	XP_069875843.1	
+Select seq XP_069875843.1 for PSI blast
+		
+
+Select seq ref|XP_076998464.1|
+	
+hemoglobin subunit alpha-1/2 [Tamandua tetradactyla]
+	
+Tamandua tetradactyla
+	249	249	100%	3e-82	83.10%	142	XP_076998464.1	
+Select seq XP_076998464.1 for PSI blast
+		
+
+Select seq gb|AAB59723.1|
+	
+alpha-globin [Mus musculus]
+	
+Mus musculus
+	249	249	100%	3e-82	85.21%	142	AAB59723.1	
+Select seq AAB59723.1 for PSI blast
+		
+
+Select seq pdb|2DHB|A
+	
+Chain A, HEMOGLOBIN (DEOXY) (ALPHA CHAIN) [Equus caballus]
+	
+Equus caballus
+	249	249	99%	4e-82	87.23%	141	2DHB_A	
+Select seq 2DHB_A for PSI blast
+		
+
+Select seq pdb|1G0B|A
+	
+Chain A, HEMOGLOBIN ALPHA CHAIN [Equus caballus]
+	
+Equus caballus
+	249	249	99%	4e-82	87.23%	141	1G0B_A	
+Select seq 1G0B_A for PSI blast
+		
+
+Select seq ref|NP_001075858.1|
+	
+hemoglobin subunit alpha-1/2 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	249	249	100%	4e-82	82.39%	142	NP_001075858.1	
+Select seq NP_001075858.1 for PSI blast
+		
+
+Select seq ref|XP_027469406.1|
+	
+hemoglobin subunit alpha [Zalophus californianus]
+	
+Zalophus californianus
+	249	249	100%	4e-82	85.92%	142	XP_027469406.1	
+Select seq XP_027469406.1 for PSI blast
+		
+
+Select seq dbj|GAC3179255.1|
+	
+hemoglobin subunit alpha [Miniopterus fuliginosus]
+	
+Miniopterus fuliginosus
+	249	249	100%	4e-82	85.21%	142	GAC3179255.1	
+Select seq GAC3179255.1 for PSI blast
+		
+
+Select seq gb|ABW88828.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	4e-82	85.21%	142	ABW88828.1	
+Select seq ABW88828.1 for PSI blast
+		
+
+Select seq gb|AUO29952.1|
+	
+hemoglobin subunit alpha [Uropsilus gracilis]
+	
+Uropsilus gracilis
+	249	249	100%	4e-82	86.62%	142	AUO29952.1	
+Select seq AUO29952.1 for PSI blast
+		
+
+Select seq gb|ABU63212.1|
+	
+alpha-globin [Mus musculus]
+	
+Mus musculus
+	249	249	100%	4e-82	84.51%	142	ABU63212.1	
+Select seq ABU63212.1 for PSI blast
+		
+
+Select seq gb|AJQ22283.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	249	249	100%	4e-82	85.92%	142	AJQ22283.1	
+Select seq AJQ22283.1 for PSI blast
+		
+
+Select seq ref|XP_015346544.1|
+	
+hemoglobin subunit alpha [Marmota marmota marmota]
+	
+Marmota marmota marmota
+	249	249	100%	4e-82	90.85%	142	XP_015346544.1	
+Select seq XP_015346544.1 for PSI blast
+		
+
+Select seq gb|KAN7995985.1|
+	
+hemoglobin subunit alpha [Tupaia tana]
+	
+Tupaia tana
+	248	248	100%	5e-82	81.69%	142	KAN7995985.1	
+Select seq KAN7995985.1 for PSI blast
+		
+
+Select seq ref|XP_007453698.1|
+	
+hemoglobin subunit alpha [Lipotes vexillifer]
+	
+Lipotes vexillifer
+	248	248	100%	5e-82	83.80%	142	XP_007453698.1	
+Select seq XP_007453698.1 for PSI blast
+		
+
+Select seq sp|P01944.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ondatra zibethicus]
+	
+Ondatra zibethicus
+	248	248	99%	5e-82	84.40%	141	P01944.1	
+Select seq P01944.1 for PSI blast
+		
+
+Select seq ref|XP_080798162.1|
+	
+hemoglobin subunit alpha [Micromys minutus]
+	
+Micromys minutus
+	248	248	100%	5e-82	84.51%	142	XP_080798162.1	
+Select seq XP_080798162.1 for PSI blast
+		
+
+Select seq dbj|GAB1295893.1|
+	
+Alpha globin 1 [Apodemus speciosus]
+	
+Apodemus speciosus
+	251	371	100%	5e-82	85.21%	228	GAB1295893.1	
+Select seq GAB1295893.1 for PSI blast
+		
+
+Select seq ref|XP_036857703.2|
+	
+hemoglobin subunit alpha [Manis javanica]
+	
+Manis javanica
+	248	248	100%	5e-82	85.21%	142	XP_036857703.2	
+Select seq XP_036857703.2 for PSI blast
+		
+
+Select seq ref|XP_084619248.1|
+	
+hemoglobin subunit alpha-like [Acomys minous]
+	
+Acomys minous
+	248	248	100%	5e-82	84.51%	142	XP_084619248.1	
+Select seq XP_084619248.1 for PSI blast
+		
+
+Select seq ref|XP_044603265.1|
+	
+hemoglobin subunit alpha [Equus asinus]
+	
+Equus asinus
+	248	248	100%	5e-82	85.92%	142	XP_044603265.1	
+Select seq XP_044603265.1 for PSI blast
+		
+
+Select seq gb|AMN15000.1|
+	
+hemoglobin subunit alpha, partial [Mesoplodon densirostris]
+	
+Mesoplodon densirostris
+	248	248	100%	6e-82	83.80%	142	AMN15000.1	
+Select seq AMN15000.1 for PSI blast
+		
+
+Select seq gb|AGT37224.1|
+	
+hemoglobin alpha chain [Ochotona rufescens]
+	
+Ochotona rufescens
+	248	248	100%	6e-82	86.62%	142	AGT37224.1	
+Select seq AGT37224.1 for PSI blast
+		
+
+Select seq ref|XP_004438306.2|
+	
+LOW QUALITY PROTEIN: hemoglobin subunit alpha [Ceratotherium simum simum]
+	
+Ceratotherium simum simum
+	248	248	100%	6e-82	85.92%	142	XP_004438306.2	
+Select seq XP_004438306.2 for PSI blast
+		
+
+Select seq gb|AJQ20762.1|
+	
+alpha-globin subunit [Peromyscus aztecus]
+	
+Peromyscus aztecus
+	248	248	100%	6e-82	85.92%	142	AJQ20762.1	
+Select seq AJQ20762.1 for PSI blast
+		
+
+Select seq gb|AJQ22276.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	6e-82	85.21%	142	AJQ22276.1	
+Select seq AJQ22276.1 for PSI blast
+		
+
+Select seq sp|P19015.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Hippopotamus amphibius]
+	
+Hippopotamus amphibius
+	248	248	99%	6e-82	87.23%	141	P19015.1	
+Select seq P19015.1 for PSI blast
+		
+
+Select seq gb|AJQ22479.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	6e-82	84.51%	142	AJQ22479.1	
+Select seq AJQ22479.1 for PSI blast
+		
+
+Select seq gb|ACK58465.1|
+	
+alpha-hemoglobin (predicted) [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	248	248	100%	7e-82	81.69%	142	ACK58465.1	
+Select seq ACK58465.1 for PSI blast
+		
+
+Select seq ref|XP_004628004.1|
+	
+hemoglobin subunit alpha [Octodon degus]
+	
+Octodon degus
+	248	248	100%	7e-82	85.92%	142	XP_004628004.1	
+Select seq XP_004628004.1 for PSI blast
+		
+
+Select seq gb|AJQ22297.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	7e-82	85.92%	142	AJQ22297.1	
+Select seq AJQ22297.1 for PSI blast
+		
+
+Select seq sp|P10778.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Odobenus rosmarus divergens]
+	
+Odobenus rosmarus divergens
+	248	248	99%	7e-82	85.82%	141	P10778.1	
+Select seq P10778.1 for PSI blast
+		
+
+Select seq gb|AJQ22217.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	7e-82	85.21%	142	AJQ22217.1	
+Select seq AJQ22217.1 for PSI blast
+		
+
+Select seq ref|XP_046296834.1|
+	
+hemoglobin subunit alpha [Marmota monax]
+	
+Marmota monax
+	248	248	100%	7e-82	90.85%	142	XP_046296834.1	
+Select seq XP_046296834.1 for PSI blast
+		
+
+Select seq ref|XP_036771897.1|
+	
+hemoglobin subunit alpha [Manis pentadactyla]
+	
+Manis pentadactyla
+	248	248	100%	7e-82	85.21%	142	XP_036771897.1	
+Select seq XP_036771897.1 for PSI blast
+		
+
+Select seq pdb|6SVA|A
+	
+Chain A, Hemoglobin subunit alpha [Equus caballus]
+	
+Equus caballus
+	248	248	99%	7e-82	87.86%	140	6SVA_A	
+Select seq 6SVA_A for PSI blast
+		
+
+Select seq ref|XP_061256531.1|
+	
+hemoglobin subunit alpha-I/II [Bos javanicus]
+	
+Bos javanicus
+	248	248	100%	7e-82	86.62%	142	XP_061256531.1	
+Select seq XP_061256531.1 for PSI blast
+		
+
+Select seq sp|Q9TSN9.3|
+	
+RecName: Full=Hemoglobin subunit alpha-3; AltName: Full=Alpha-3-globin; AltName: Full=Hemoglobin alpha-3 chain; AltName: Full=IIalpha3 [Bubalus bubalis]
+	
+Bubalus bubalis
+	248	248	100%	7e-82	85.92%	142	Q9TSN9.3	
+Select seq Q9TSN9.3 for PSI blast
+		
+
+Select seq ref|XP_027469223.1|
+	
+hemoglobin subunit alpha-1 [Zalophus californianus]
+	
+Zalophus californianus
+	248	248	100%	8e-82	85.21%	142	XP_027469223.1	
+Select seq XP_027469223.1 for PSI blast
+		
+
+Select seq gb|QLJ83445.1|
+	
+hemoglobin subunit alpha [Bos gaurus]
+	
+Bos gaurus
+	248	248	100%	8e-82	87.32%	142	QLJ83445.1	
+Select seq QLJ83445.1 for PSI blast
+		
+
+Select seq sp|B3EWD5.1|
+	
+RecName: Full=Hemoglobin subunit alpha [Peromyscus californicus]
+	
+Peromyscus californicus
+	248	248	99%	8e-82	87.23%	141	B3EWD5.1	
+Select seq B3EWD5.1 for PSI blast
+		
+
+Select seq pdb|3LQD|A
+	
+Chain A, Hemoglobin subunit alpha [Lepus europaeus]
+	
+Lepus europaeus
+	248	248	99%	8e-82	82.98%	141	3LQD_A	
+Select seq 3LQD_A for PSI blast
+		
+
+Select seq ref|XP_042777610.1|
+	
+hemoglobin subunit alpha [Panthera leo]
+	
+Panthera leo
+	248	248	100%	8e-82	83.10%	142	XP_042777610.1	
+Select seq XP_042777610.1 for PSI blast
+		
+
+Select seq ref|XP_079575480.1|
+	
+hemoglobin subunit alpha-like [Hyperoodon ampullatus]
+	
+Hyperoodon ampullatus
+	248	248	100%	8e-82	83.80%	142	XP_079575480.1	
+Select seq XP_079575480.1 for PSI blast
+		
+
+Select seq gb|ABN71096.1|
+	
+hemoglobin alpha subunit 2 [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	9e-82	85.21%	142	ABN71096.1	
+Select seq ABN71096.1 for PSI blast
+		
+
+Select seq ref|XP_007130440.2|
+	
+hemoglobin subunit alpha [Physeter macrocephalus]
+	
+Physeter macrocephalus
+	248	248	100%	9e-82	85.21%	142	XP_007130440.2	
+Select seq XP_007130440.2 for PSI blast
+		
+
+Select seq gb|KAN7175011.1|
+	
+hemoglobin subunit alpha [Inia geoffrensis]
+	
+Inia geoffrensis
+	248	248	100%	9e-82	83.10%	142	KAN7175011.1	
+Select seq KAN7175011.1 for PSI blast
+		
+
+Select seq gb|AJQ21808.1|
+	
+alpha-globin [Peromyscus keeni]
+	
+Peromyscus keeni
+	248	248	100%	9e-82	84.51%	142	AJQ21808.1	
+Select seq AJQ21808.1 for PSI blast
+		
+
+Select seq ref|XP_014959464.2|
+	
+hemoglobin subunit alpha-1 [Ovis aries]
+	
+Ovis aries
+	248	248	100%	1e-81	86.62%	142	XP_014959464.2	
+Select seq XP_014959464.2 for PSI blast
+		
+
+Select seq gb|ABW88830.1|
+	
+hemoglobin alpha-subunit [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	1e-81	85.21%	142	ABW88830.1	
+Select seq ABW88830.1 for PSI blast
+		
+
+Select seq gb|ASO75698.1|
+	
+hemoglobine alpha globin subunit [Tympanoctomys barrerae]
+	
+Tympanoctomys barrerae
+	248	248	100%	1e-81	84.51%	142	ASO75698.1	
+Select seq ASO75698.1 for PSI blast
+		
+
+Select seq sp|Q0ZA50.3|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pantholops hodgsonii]
+	
+Pantholops hodgsonii
+	248	248	100%	1e-81	86.62%	142	Q0ZA50.3	
+Select seq Q0ZA50.3 for PSI blast
+		
+
+Select seq ref|XP_017895579.1|
+	
+PREDICTED: hemoglobin subunit alpha-1/2 [Capra hircus]
+	
+Capra hircus
+	248	248	100%	1e-81	86.62%	142	XP_017895579.1	
+Select seq XP_017895579.1 for PSI blast
+		
+
+Select seq gb|AJQ22286.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	1e-81	85.21%	142	AJQ22286.1	
+Select seq AJQ22286.1 for PSI blast
+		
+
+Select seq gb|AJQ20748.1|
+	
+alpha-globin subunit [Peromyscus melanotis]
+	
+Peromyscus melanotis
+	248	248	100%	1e-81	85.92%	142	AJQ20748.1	
+Select seq AJQ20748.1 for PSI blast
+		
+
+Select seq gb|ADJ17347.1|
+	
+hemoglobin subunit alpha [Scapanus orarius]
+	
+Scapanus orarius
+	248	248	100%	1e-81	84.51%	142	ADJ17347.1	
+Select seq ADJ17347.1 for PSI blast
+		
+
+Select seq gb|ASO75691.1|
+	
+hemoglobine alpha globin subunit [Ctenomys leucodon]
+	
+Ctenomys leucodon
+	248	248	100%	1e-81	86.62%	142	ASO75691.1	
+Select seq ASO75691.1 for PSI blast
+		
+
+Select seq ref|XP_052508126.1|
+	
+hemoglobin subunit alpha-1 [Budorcas taxicolor]
+	
+Budorcas taxicolor
+	248	248	100%	1e-81	86.62%	142	XP_052508126.1	
+Select seq XP_052508126.1 for PSI blast
+		
+
+Select seq gb|AJQ22233.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	1e-81	85.21%	142	AJQ22233.1	
+Select seq AJQ22233.1 for PSI blast
+		
+
+Select seq sp|P01967.1|
+	
+RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain [Bos grunniens]
+	
+Bos grunniens
+	248	248	99%	1e-81	87.23%	141	P01967.1	
+Select seq P01967.1 for PSI blast
+		
+
+Select seq gb|AJQ22442.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	1e-81	85.21%	142	AJQ22442.1	
+Select seq AJQ22442.1 for PSI blast
+		
+
+Select seq emb|CCE45505.1|
+	
+alpha-globin 1 [Oryctolagus cuniculus]
+	
+Oryctolagus cuniculus
+	248	248	100%	1e-81	83.10%	142	CCE45505.1	
+Select seq CCE45505.1 for PSI blast
+		
+
+Select seq gb|AJQ20754.1|
+	
+alpha-globin subunit [Peromyscus polionotus]
+	
+Peromyscus polionotus
+	248	248	100%	1e-81	85.21%	142	AJQ20754.1	
+Select seq AJQ20754.1 for PSI blast
+		
+
+Select seq gb|AJQ22272.1|
+	
+alpha-globin [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	248	248	100%	1e-81	85.21%	142	AJQ22272.1	
+Select seq AJQ22272.1 for PSI blast
+		
+
+Select seq gb|ABN71099.1|
+	
+hemoglobin alpha subunit 2 [Peromyscus maniculatus]
+	
+Peromyscus maniculatus
+	247	247	100%	1e-81	85.21%	142	ABN71099.1	
+Select seq ABN71099.1 for PSI blast
+		
+
+Select seq sp|P63110.1|
+	
+RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Panthera pardus orientalis]
+	
+Panthera pardus orientalis
+	247	247	99%	1e-81	83.69%	141	P63110.1	
+Select seq P63110.1 for PSI blast
+		
+
+Select seq ref|XP_006978908.1|
+	
+hemoglobin subunit alpha [Peromyscus maniculatus bairdii]
+	
+Peromyscus maniculatus bairdii
+	247	247	100%	1e-81	85.21%	142	XP_006978908.1	
+Select seq XP_006978908.1 for PSI blast
+		
+Run PSI-BLAST Iteration 2 with max number of sequences
+Run
+ 
+Graphic Summary
+ 
+Alignments
+ 
+Taxonomy
+ 
+FOLLOW NCBI
+
+Connect with NLM
+
+  
+
+National Library of Medicine
+8600 Rockville Pike
+Bethesda, MD 20894
+
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+
+Help
+Accessibility
+Careers
+
+NLM
+NIH
+HHS
+USA.gov

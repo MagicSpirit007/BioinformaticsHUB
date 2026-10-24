@@ -84,10 +84,10 @@ const STATUS_TONES: Record<string, 'muted' | 'info' | 'ok' | 'warn' | 'fail'> = 
 
 const TERMINAL_STATUSES = new Set(['result_ready', 'completed_manual', 'completed', 'ok'])
 
-function App() {
+function App({ archiveOnly = false, onNew }: { archiveOnly?: boolean; onNew?: () => void }) {
   const { locale, setLocale, t } = useI18n()
   const desktop = useMemo(() => getDesktopApi(), [])
-  const [view, setView] = useState<View>('new')
+  const [view, setView] = useState<View>(archiveOnly ? 'history' : 'new')
   const [sites, setSites] = useState<SiteCatalogEntry[]>([])
   const [catalogError, setCatalogError] = useState('')
   const [selectedSites, setSelectedSites] = useState<Set<string>>(new Set())
@@ -410,12 +410,12 @@ function App() {
     <div className="app-shell">
       <a className="skip-link" href="#main-content">{t('skip.link')}</a>
       <header className="topbar">
-        <button className="brand" type="button" onClick={() => setView('new')} aria-label={t('brand.aria')}>
+        <button className="brand" type="button" onClick={() => archiveOnly ? onNew?.() : setView('new')} aria-label={t('brand.aria')}>
           <span className="brand-mark"><Dna size={23} weight="duotone" /></span>
           <span><strong>BioinformaticsHUB</strong><small>{t('brand.subtitle')}</small></span>
         </button>
         <nav className="nav" aria-label={t('nav.aria')}>
-          <NavButton active={view === 'new'} icon={<House />} onClick={() => setView('new')}>{t('nav.new')}</NavButton>
+          <NavButton active={view === 'new'} icon={<House />} onClick={() => archiveOnly ? onNew?.() : setView('new')}>{t('nav.new')}</NavButton>
           <NavButton active={view === 'session'} icon={<ListChecks />} onClick={() => setView('session')} disabled={!activeSession}>{t('nav.session')}</NavButton>
           <NavButton active={view === 'history'} icon={<ClockCounterClockwise />} onClick={() => { setView('history'); void refreshHistory() }}>{t('nav.history')}</NavButton>
         </nav>
@@ -462,6 +462,7 @@ function App() {
 
         {view === 'session' && activeSession && (
           <SessionDashboard
+            archiveOnly={archiveOnly}
             session={activeSession}
             sites={sites}
             busy={busy}
@@ -850,6 +851,7 @@ function CustomCatalogManager({ catalog, onChange, onClose }: { catalog: CustomC
 }
 
 type SessionDashboardProps = {
+  archiveOnly?: boolean
   session: SessionRecord
   sites: SiteCatalogEntry[]
   busy: boolean
@@ -884,7 +886,7 @@ function SessionDashboard(props: SessionDashboardProps) {
         <div className="dashboard-actions">
           <button className="btn ghost" type="button" onClick={() => void props.reloadSession()}><ArrowClockwise />{t('dash.refresh')}</button>
           <button className="btn ghost" type="button" onClick={() => void props.exportBundle()}><DownloadSimple />{t('dash.export')}</button>
-          {running && <button className="btn danger" type="button" onClick={() => void props.cancelSession()}><StopCircle />{t('dash.cancel')}</button>}
+          {running && !props.archiveOnly && <button className="btn danger" type="button" onClick={() => void props.cancelSession()}><StopCircle />{t('dash.cancel')}</button>}
         </div>
         <div className="session-stats">
           <Stat value={`${doneSites}/${selectedSites.length}`} label={t('dash.stat.sites')} />
@@ -902,7 +904,8 @@ function SessionDashboard(props: SessionDashboardProps) {
         {selectedSites.length ? (
           <div className="task-grid">
             {selectedSites.map((site) => (
-              <SiteTaskCard
+              <div key={site.id}>
+              {props.archiveOnly ? <article className="task-card"><h3>{site.name}</h3><StatusBadge status={String(siteTaskMap.get(site.id)?.status || 'unknown')} /><p>{String(siteTaskMap.get(site.id)?.resultUrl || '')}</p><p>{String(siteTaskMap.get(site.id)?.notes || '')}</p></article> : <SiteTaskCard
                 key={site.id}
                 site={site}
                 task={siteTaskMap.get(site.id) as SiteTask | undefined}
@@ -910,7 +913,8 @@ function SessionDashboard(props: SessionDashboardProps) {
                 onOpen={() => props.openSite(site)}
                 onCopy={() => props.copyForSite(site)}
                 onSave={(resultMode, url, notes) => props.saveSiteResult(site, resultMode, url, notes)}
-              />
+              />}
+              </div>
             ))}
           </div>
         ) : <p className="empty-inline">{t('dash.sites.empty')}</p>}

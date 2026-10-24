@@ -1,0 +1,53 @@
+ AIUPred, the successor of IUPred3 is now available!
+ Predictions
+ How to use
+ Examples
+ New features
+ Statistics
+ Related links
+ Download
+ Changelog
+Disorder conservation
+Search motif or region
+Disorder cut-off 0.5
+0
+20
+40
+60
+80
+100
+120
+140
+0
+0.5
+1
+.2.4.6.8.10.12.14.16.18.20.22.24.26.28.30.32.34.36.38.40.42.44.46.48.50.52.54.56.58.60.62.64.66.68.70.72.74.76.78.80.82.84.86.88.90.92.94.96.98.100.102.104.106.108.110.112.114.116.118.120.122.124.126.128.130.132.134.136.138.140.142
+HBA_HUMAN
+References
+Primary citations
+
+Gábor Erdős, Mátyás Pajkos, Zsuzsanna Dosztányi
+IUPred3: prediction of protein disorder enhanced with unambiguous experimental annotation and visualization of evolutionary conservation
+Nucleic Acids Research 2021;49(W1):W297-W303.
+
+Bálint Mészáros, Gábor Erdős, Zsuzsanna Dosztányi
+IUPred2A: context-dependent prediction of protein disorder as a function of redox state and protein binding
+Nucleic Acids Research 2018;46(W1):W329-W337.
+
+Gábor Erdős, Zsuzsanna Dosztányi
+Analyzing Protein Disorder with IUPred2A
+Current Protocols in Bioinformatics 2020;70(1):e99
+
+Additional citations
+
+Zsuzsanna Dosztányi
+Prediction of protein disorder based on IUPred
+Protein Science 2017;27:331-340.
+
+Dosztányi Z, Csizmók V, Tompa P, Simon I.
+The pairwise energy content estimated from amino acid composition discriminates between folded and intrinsically unstructured proteins
+J Mol Biol. 2005;347:827-39.
+
+Mészáros B, Simon I, Dosztányi Z.
+Prediction of protein binding regions in disordered proteins
+PLoS Comput Biol. 2009;5:e1000376.

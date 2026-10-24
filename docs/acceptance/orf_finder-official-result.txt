@@ -1,0 +1,73 @@
+Skip to main page content
+
+An official website of the United States government
+
+ Here's how you know 
+Log in
+Access keys
+NCBI Homepage
+MyNCBI Homepage
+Main Content
+Main Navigation
+< ORFfinder submitting page
+> Help
+Open Reading Frame Viewer
+Sequence
+ORFs found: 2 Genetic code: 1 Start codon: 'ATG' only
+Loading...
+Six-frame translation...
+Mark subset...
+Marked: 0 Download marked set as 
+Protein FASTA
+CDS FASTA
+ASN.1
+Feature table
+ORF1 (142 aa) Display ORF as... Mark
+Marked set ( 0 )
+SmartBLAST best hit titles... 
+BLAST
+ORF1
+SmartBLAST
+BLAST
+BLAST Database:
+
+UniProtKB/Swiss-Prot (swissprot)
+Reference proteins (refseq_protein)
+Non-redundant protein sequences (nr)
+Label
+	
+Strand
+	
+Frame
+	
+Start
+	
+Stop
+	
+Length (nt | aa)
+
+ORF1	+	2	38	466	429 | 142
+ORF2	-	2	267	163	105 | 34
+Go back to the submitting page...
+FOLLOW NCBI
+
+Connect with NLM
+
+  
+
+National Library of Medicine
+8600 Rockville Pike
+Bethesda, MD 20894
+
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+
+Help
+Accessibility
+Careers
+
+NLM
+NIH
+HHS
+USA.gov

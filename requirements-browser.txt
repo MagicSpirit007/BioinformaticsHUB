@@ -1,0 +1,4 @@
+# Product loads its vendored jev source, never the independently installed demo.
+# Python >= 3.12. Install into the browser interpreter selected in Settings.
+browser-harness==0.1.13
+httpx[http2]==0.28.1

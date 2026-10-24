@@ -1,0 +1,70 @@
+{
+  "executionMode": "mixed",
+  "name": "Public P69905 protein characterization and InterPro",
+  "workflow": {
+    "id": "protein-local-validation",
+    "name": "Local artifact handoff",
+    "version": 1,
+    "nodes": [
+      {
+        "id": "prepare",
+        "kind": "local",
+        "tool": "prepare",
+        "input": {
+          "source": "input",
+          "key": "protein"
+        },
+        "dependsOn": [],
+        "parameters": {}
+      },
+      {
+        "id": "physchem",
+        "kind": "local",
+        "tool": "physchem",
+        "input": {
+          "source": "node",
+          "nodeId": "prepare",
+          "kind": "protein_fasta"
+        },
+        "dependsOn": [
+          "prepare"
+        ],
+        "parameters": {}
+      },
+      {
+        "id": "hydrophobicity",
+        "kind": "local",
+        "tool": "hydrophobicity",
+        "input": {
+          "source": "node",
+          "nodeId": "prepare",
+          "kind": "protein_fasta"
+        },
+        "dependsOn": [
+          "prepare"
+        ],
+        "parameters": {}
+      },
+      {
+        "id": "interpro",
+        "kind": "site",
+        "siteId": "interpro",
+        "input": {
+          "kind": "protein_fasta",
+          "source": "node",
+          "nodeId": "prepare"
+        },
+        "dependsOn": [
+          "prepare"
+        ],
+        "parameters": {}
+      }
+    ]
+  },
+  "inputs": {
+    "protein": {
+      "kind": "protein_fasta",
+      "value": ">sp|P69905|HBA_HUMAN Hemoglobin subunit alpha\nMVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR\n"
+    }
+  }
+}

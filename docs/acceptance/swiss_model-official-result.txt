@@ -1,0 +1,75 @@
+Modelling
+Repository
+Tools
+Documentation
+Log in
+Create Account
+ All Projects
+Untitled ProjectCreated: today at 13:36
+Summary
+Templates 50
+Models 2
+Project Data 
+Model Results 
+Order by: 
+GMQE
+QMEANDisCo
+Oligo State
+Ligands
+Seq Identity
+Similarity
+Coverage
+1
+142
+Model 01
+Structure Assessment
+Compare 
+Download files 
+PDB format
+ModelCIF format
+DeepView format
+Model Report
+Metadata
+ Delete Model
+Display files 
+Oligo-State 
+Monomer
+
+GMQE 
+0.98
+Template
+P63112.1.A Hemoglobin subunit alpha
+AlphaFold DB model of HBA_PAPCY (gene: HBA, organism: Papio cynocephalus (Yellow baboon))
+Seq Identity
+92.25%
+Coverage
+Model-Template Alignment
+Model 02
+Structure Assessment
+Compare 
+Download files 
+Display files 
+Oligo-State 
+Monomer
+
+GMQE 
+0.90
+QMEANDisCo Global: 
+0.84 ± 0.07
+Ligands 
+1 x HEM
+QMEANDisCo Local
+QMEAN Z-Scores
+Template
+9vic.3.A Hemoglobin subunit alpha
+cryo-EM structure of human haemoglobin in the R conformation
+Seq Identity
+100.00%
+Coverage
+Model-Template Alignment
+Cartoon
+Schwede Group
+Contact Us
+Terms of use
+SWISS-MODEL is part of SIB’s portfolio of open databases and software tools.
+ Back to top

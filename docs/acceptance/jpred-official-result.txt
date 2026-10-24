@@ -1,0 +1,139 @@
+## Running Jpred Server version 4.0.0 ##
+
+--/homes/www-jpred/live4/bin/webrun -ipline 182.189.18.246 -log /homes/www-jpred/live4/public_html/results/jp_TXMUwpw/LOG -sequence /homes/www-jpred/live4/public_html/results/jp_TXMUwpw/jp_TXMUwpw.seq -format seq -id jp_TXMUwpw
+--TIMEOUT set at 10800 seconds
+--Started work on jp_TXMUwpw at Fri Jun 12 02:06:43 2015
+--On machine fc-003
+--format = seq
+>>10% complete
+--Running Jpred pipeline
+--CMD /homes/www-jpred/live4/jpred/jpred --seq jp_TXMUwpw.fasta --output jp_TXMUwpw --db uniref90 --pred-nohits --verbose
+DB is global.
+Host: fc-003
+path: jp_TXMUwpw.fasta
+output: jp_TXMUwpw
+db: uniref90
+Changed DB to local.
+Time STEP0: 0
+Running PSI-BLAST on query against 'uniref.filt'...
+Time STEP1: 126
+Time STEP2: 126
+>>40% complete
+Untruncating the PSIBLAST alignments...
+Unmasking the alignments...
+Converting sequences to the same case...
+Remove excessive sequences...
+Remove sequences which too long or short...
+Remove redundant sequences...
+Removing gaps in the query sequence...
+Outputting cleaned-up PSI_BLAST alignment...
+Time STEP3: 156
+Output the PSSM matrix from the PSI-BLAST profile...
+>>50% complete
+Time STEP4: 156
+Running HMMer on sequences found by PSI-BLAST...
+hmmbuild - build a hidden Markov model from an alignment
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alignment file:                    /tmp/4861163.1.64bit-pri.q/ZsAvH5_KYo
+File format:                       a2m
+Search algorithm configuration:    Multiple domain (hmmls)
+Model construction strategy:       Fast/ad hoc (gapmax 1.00)
+Null model used:                   (default)
+Prior used:                        (default)
+Sequence weighting method:         BLOSUM filter at 0.62 id
+New HMM file:                      /tmp/4861163.1.64bit-pri.q/FvSUqw2zYc 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Alignment:           #1
+Number of sequences: 787
+Number of columns:   142
+
+Determining effective sequence number    ... done. [286]
+Weighting sequences heuristically        ... done.
+Constructing model architecture          ... done.
+Converting counts to probabilities       ... done.
+Setting model name, etc.                 ... done. [ZsAvH5_KYo]
+
+Constructed a profile HMM (length 142)
+Average score:      135.38 bits
+Minimum score:        4.50 bits
+Maximum score:      219.22 bits
+Std. deviation:      36.50 bits
+
+Finalizing model configuration           ... done.
+Saving model to file                     ... done.
+//
+
+hmmconvert - convert between profile HMM file formats
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Input HMM file:           /tmp/4861163.1.64bit-pri.q/FvSUqw2zYc
+Output HMM file:          /tmp/4861163.1.64bit-pri.q/bWzaUjNqpb
+Converting to:            GCG Profile .prf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ - converted ZsAvH5_KYo
+
+1 HMM(s) converted and written to /tmp/4861163.1.64bit-pri.q/bWzaUjNqpb
+>>70% complete
+Time STEP5: 156
+Running JNet using the generated inputs from HMM and PSI-BLAST...
+Jnet 2.3.1
+Found HMM profile data
+Found PSSM profile file
+Running final predictions!
+
+
+Both PSIBLAST and HMM profiles were found
+Accuracy will average 82.0%
+
+Jpred Finished
+Time STEP6: 156
+>>80% complete
+--Running ncoils and multicoil
+       1 sequences      142 aas        0 in coil
+       1 sequences      142 aas        0 in coil
+       1 sequences      142 aas        0 in coil
+>>90% complete
+--creating output
+"JNETALIGN" data not present
+
+ALSCRIPT  (ALignment to PostScript)
+ALSCRIPT Version 2.07d - 2nd August 2011
+
+See ALSCRIPT.DOC for details
+
+Please Reference: Barton, G. J. (1993), Protein Engineering, 6, 37-40.
+
+By: G. J. Barton
+
+Copyright: Geoffrey J. Barton (1992,1997)
+email: geoff@compbio.dundee.ac.uk
+
+Initial Defaults:
+Maximum number of sequences:	 500 	(Change using MAX_NSEQ command)
+Maximum sequence length:	 8000 	(Change using MAX_SEQ_LEN command)
+Maximum identifier length:	 50 	(Change using MAX_ID_LEN command)
+ALscript Command File: jp_TXMUwpw.als
+Starting ALSCRIPT
+SILENT_MODE
+Max No. of sequences now:	801
+ALscript Finished
+--tarring up the data
+>>100% complete
+--Finished work on jp_TXMUwpw at Fri Jun 12 02:09:33 2015
+--Execution time on jp_TXMUwpw is 170 seconds
+found jp_TXMUwpw.fasta
+Java version: 1.6.0_32
+amd64 Linux 2.6.32-358.6.2.el6.x86_64
+Opening file: jp_TXMUwpw.fasta
+12-Jun-2015 02:09:43 jalview.util.MessageManager <clinit>
+INFO: Getting messages for lang: en_GB
+java.awt.HeadlessException
+Added jp_TXMUwpw.concise
+Creating HTML image: svg.html

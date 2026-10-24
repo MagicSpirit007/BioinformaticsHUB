@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-23",
+  "version": "0.7.0",
+  "status": "installed",
+  "installer": "apps/bioinformatics-hub-desktop/release-candidate-export-delete-20261023/BioinformaticsHUB-0.7.0-win-x64.exe",
+  "installerSha256": "1e79e82ab5debe2ac356170e8758b251b29e58b1a9bf6137c10a2f6f572a290c",
+  "installerBytes": 85977367,
+  "buildId": "a66f075e56ea34ba2a11462281f3607a8eaf93da386e9600f8cc013e29cf3db0",
+  "components": {
+    "backend": "9473822cceced8f221051a20bcc40f42a8b70868ac586cac3f5bf6775bb96950",
+    "engine": "711975d649a5cb451e2db1e34caa0db3b5bc4b587fadae3b415af050a5ba6100",
+    "ui": "3c88a0afb4aeb1da71dca6f1e9ad9764ff318a8af76e8a8807da9acd0bc0a4e0"
+  },
+  "install": {
+    "at": "2026-10-24T12:16:04+08:00",
+    "path": "D:\\BioinformaticsHUB\\apps",
+    "installerExitCode": 0,
+    "previousBuildId": "3a223d1095e86b7216ceec72029f8b792ac944ec03b8ed20de60c9068d301508",
+    "backup": "runs/install-backup-usability-0.7.0-20261024-120220",
+    "taskCount": 5,
+    "historyMetadataFilesUnchanged": 14,
+    "mainPid": 59272,
+    "daemonPid": 56480,
+    "windowTitle": "BioinformaticsHUB · 原始分析成果",
+    "validation": "runs/install-validation-20261024.json",
+    "installedClick": "runs/export-delete-desktop-1792815420203/validation.json",
+    "installedRuntime": "runs/packaged-repair-validation-1792815458309/validation.json",
+    "windowScreenshot": "runs/installed-app-20261024.png",
+    "firstAttemptFailure": "exit 2: old uninstaller could not remove the non-empty install root because repository source directories live there; resolved by temporarily moving those two source directories to a same-volume hold directory and restoring them in a finally block"
+  },
+  "tests": {
+    "node": { "passed": 108, "failed": 0 },
+    "python": { "run": 88, "passed": 86, "skipped": 2, "failed": 0 },
+    "frontendBuild": "passed",
+    "installedClick": "passed",
+    "installedRuntime": "passed"
+  },
+  "rootCause": {
+    "synchronousResultScan": "226 MB / 1091-file task blocked the daemon event loop for 1.26-1.92 s per read",
+    "pingTimeout": "client.ensure treated a 1 s ping timeout as fatal; three concurrent results requests failed in about 1.0 s",
+    "duplicateScan": "load scanned results twice (publicSession and results projection) and export scanned again"
+  },
+  "desktop": "runs/export-delete-desktop-1792756686313/validation.json",
+  "desktopRepeat": "runs/export-delete-desktop-1792756721911/validation.json",
+  "desktopRepeat2": "runs/export-delete-desktop-1792756752244/validation.json",
+  "sourceDesktop": "runs/export-delete-desktop-1792756593502/validation.json",
+  "runtime": "runs/packaged-repair-validation-1792756791667/validation.json",
+  "screenshots": {
+    "export": "runs/export-delete-desktop-1792756686313/export.png",
+    "deleteDialog": "runs/export-delete-desktop-1792756686313/delete-dialog.png",
+    "deleteRefused": "runs/export-delete-desktop-1792756686313/delete-refused.png",
+    "empty": "runs/export-delete-desktop-1792756686313/empty.png",
+    "installedApp": "runs/installed-app-20261024.png"
+  },
+  "evidenceLogs": {
+    "node": "runs/export-delete-node-tests-20261023.log",
+    "python": "runs/export-delete-python-tests-20261023.log",
+    "frontendBuild": "runs/export-delete-frontend-build-20261023.log"
+  },
+  "performance": {
+    "fixtureBytes": 100663296,
+    "candidateExportMs": [285, 298, 497],
+    "candidateMaxQueryMs": [34, 48, 28],
+    "installedExportMs": 268,
+    "installedMaxQueryMs": 21,
+    "note": "The 497 ms candidate run used four concurrent queries and a visible screenshot flush; all runs stayed far below the 5 s assertion and the 15 s read timeout."
+  },
+  "realHistory": {
+    "modified": false,
+    "deleted": false,
+    "taskCountBefore": 5,
+    "taskCountAfter": 5,
+    "metadataFilesCompared": 14,
+    "note": "The old running build was used read-only to reproduce the timeout. No export or delete ran against real history; metadata hashes still match after installation."
+  },
+  "limits": [
+    "The installed app was verified on this machine; the old build is backed up but not automatically restored",
+    "Open-export-folder was verified through the preload/IPC shell.openPath call; a real Explorer window was not kept open by automation",
+    "No batch delete or recycle bin was added",
+    "Windows file-lock behaviour was verified on a temporary task, not on real history",
+    "The install root also contains repository source directories, so the installer needed a temporary move/restore of those two directories"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "executionMode": "mixed",
+  "workflow": {
+    "version": 1,
+    "name": "Alignment and phylogeny",
+    "id": "evolution",
+    "nodes": [
+      {
+        "input": {
+          "key": "alignment",
+          "source": "input"
+        },
+        "parameters": {
+          "strategy": "auto"
+        },
+        "dependsOn": [],
+        "id": "mafft",
+        "kind": "local",
+        "tool": "mafft"
+      },
+      {
+        "input": {
+          "kind": "alignment_fasta",
+          "nodeId": "mafft",
+          "source": "node"
+        },
+        "parameters": {
+          "model": "MFP",
+          "bootstrap": "1000",
+          "threads": "2"
+        },
+        "dependsOn": [
+          "mafft"
+        ],
+        "id": "iqtree",
+        "kind": "local",
+        "tool": "iqtree"
+      },
+      {
+        "siteId": "itol_web",
+        "parameters": {
+          "treeName": "BioinformaticsHUB"
+        },
+        "dependsOn": [
+          "iqtree"
+        ],
+        "id": "itol",
+        "kind": "site",
+        "input": {
+          "kind": "tree",
+          "nodeId": "iqtree",
+          "source": "node"
+        }
+      }
+    ]
+  },
+  "name": "Public hemoglobin orthologs — MAFFT → IQ-TREE → iTOL",
+  "inputs": {
+    "alignment": {
+      "kind": "alignment_fasta",
+      "value": ">sp|P69905|HBA_HUMAN Hemoglobin subunit alpha OS=Homo sapiens OX=9606 GN=HBA1 PE=1 SV=2\nMVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG\nKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTP\nAVHASLDKFLASVSTVLTSKYR\n\n>sp|P01942|HBA_MOUSE Hemoglobin subunit alpha OS=Mus musculus OX=10090 GN=Hba PE=1 SV=2\nMVLSGEDKSNIKAAWGKIGGHGAEYGAEALERMFASFPTTKTYFPHFDVSHGSAQVKGHG\nKKVADALASAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLSHCLLVTLASHHPADFTP\nAVHASLDKFLASVSTVLTSKYR\n\n>sp|P01946|HBA_RAT Hemoglobin subunit alpha-1/2 OS=Rattus norvegicus OX=10116 GN=Hba1 PE=1 SV=3\nMVLSADDKTNIKNCWGKIGGHGGEYGEEALQRMFAAFPTTKTYFSHIDVSPGSAQVKAHG\nKKVADALAKAADHVEDLPGALSTLSDLHAHKLRVDPVNFKFLSHCLLVTLACHHPGDFTP\nAMHASLDKFLASVSTVLTSKYR\n\n>sp|P01958|HBA_HORSE Hemoglobin subunit alpha OS=Equus caballus OX=9796 GN=HBA PE=1 SV=2\nMVLSAADKTNVKAAWSKVGGHAGEYGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG\nKKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP\nAVHASLDKFLSSVSTVLTSKYR\n\r\n"
+    }
+  }
+}

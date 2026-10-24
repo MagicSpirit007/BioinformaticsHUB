@@ -1,0 +1,764 @@
+[
+  {
+    "siteId": "orf_finder",
+    "name": "NCBI ORF Finder",
+    "checkedAt": "2026-09-20T12:20:29.303Z",
+    "runId": "wf-1789906815240-079ddf",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://www.ncbi.nlm.nih.gov/orffinder/",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/orf_finder/attempt-1/results/official-result.txt",
+        "sha256": "cabce80d1d30efbfb13fbd7076fb455fcd5824c8c6cd2414fcc11df62b7e59a3",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/orf_finder/attempt-1/results/result.json",
+        "sha256": "6f9a4020dd11428dcf42ca1f92464f2f223082444cb2ec9ce9c2c2d59b1cb437",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/orf_finder/attempt-1/results/official-result.png",
+        "sha256": "372f941ab533c889a0181083034a044a37404131744d88033a5d8d4aa6d16fda",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "blastn",
+    "name": "NCBI BLASTn",
+    "checkedAt": "2026-09-20T12:34:22.312Z",
+    "runId": "wf-1789904964214-c08600",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/blastn/attempt-2/results/official-result.txt",
+        "sha256": "d7e141f1b1717da4584743ac0e8209853feeb063843226f742fe070f0b21fdab",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/blastn/attempt-2/results/result.json",
+        "sha256": "90cfff320831e8d4109314f0c163460389a8ea5c9022b95b4ed6625490bbd432",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/blastn/attempt-2/results/official-result.png",
+        "sha256": "06425d6b0886e577a114ba1b986d4fbb23ac7598a4433da624c3dcbd20eaac2f",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "blastp",
+    "name": "NCBI BLASTp",
+    "checkedAt": "2026-09-20T12:11:52.181Z",
+    "runId": "wf-1789904964490-4e4b84",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/blastp/attempt-2/results/official-result.txt",
+        "sha256": "3829b578d23dc4a3a54472f3ae03da513ed17644371e86a9f31511ccce99a239",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/blastp/attempt-2/results/result.json",
+        "sha256": "fad2ad4aed9c4c0cbb0ac40142ad224762325a8595f5a43d817b42416df97324",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/blastp/attempt-2/results/official-result.png",
+        "sha256": "9992a2e569641392d5e53c5cfd0ead803d2ba2a54c7c928f01b5c138e1eaaf53",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "psi_blast",
+    "name": "NCBI PSI-BLAST",
+    "checkedAt": "2026-09-20T12:34:25.603Z",
+    "runId": "wf-1789904964506-e50b69",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/psi_blast/attempt-2/results/official-result.txt",
+        "sha256": "68c349a6153003430e34d567b48ea07de6f55e8a08524edca62d24d2fc0e61b0",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/psi_blast/attempt-2/results/result.json",
+        "sha256": "9e11589b067ebf987edb2b57611bb2fbbce0d61d4b787edf905dd181974bcd24",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/psi_blast/attempt-2/results/official-result.png",
+        "sha256": "eccff0ed753c454a6cde11fc02c566468d7fa1855391f33b4fc57d5ce186f29d",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "interpro",
+    "name": "InterPro",
+    "checkedAt": "2026-09-20T12:29:22.064Z",
+    "runId": "wf-1789901913427-4e0208",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://www.ebi.ac.uk/interpro/result/InterProScan/iprscan6-R20260920-115857-0169-57414676-p1m/internal-1789905054307-1-1/entry/InterPro/#table",
+    "attempts": 20,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/interpro/attempt-20/results/official-result.txt",
+        "sha256": "71163bcde08d824c3e5734203137c772406ca5127b0a767daa3b5f068878b484",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/interpro/attempt-20/results/result.json",
+        "sha256": "1d5cb291433b9e30841f391963421a1b59f6e7d02d6f76b930be2a264a44552b",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/interpro/attempt-20/results/official-result.png",
+        "sha256": "5feec7bd8f4d690ccd608b851757ab4324cfaf2b7faa893005f0cbdc8434d393",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "cdd",
+    "name": "NCBI CDD / CD-Search",
+    "checkedAt": "2026-09-20T12:34:23.291Z",
+    "runId": "wf-1789907357738-7f7c5c",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/cdd/attempt-2/results/official-result.txt",
+        "sha256": "d3f7fb19c5d34f5d76fef7c3453fee7b6161253f914c34a4ba52ebad6070072a",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/cdd/attempt-2/results/result.json",
+        "sha256": "db49db12fb0d4b972e6c8b3febf9dd5f7cdc2b6cc2e5c5bd8ee7782dd4681b79",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/cdd/attempt-2/results/official-result.png",
+        "sha256": "07893b81484a18311bb32a2024c3981552d7be446385274c3a6744db2c30c0bd",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "scanprosite",
+    "name": "ScanProsite",
+    "checkedAt": "2026-09-20T12:11:53.292Z",
+    "runId": "wf-1789904964517-b57e6b",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://prosite.expasy.org/cgi-bin/prosite/scanprosite/ScanView.cgi?scanfile=3549319.scan.gz",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/scanprosite/attempt-2/results/official-result.txt",
+        "sha256": "97fa090afe0b854fa7b6c6111f01b1305b4c4ff2ddd6c847c0ff330939cafae6",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/scanprosite/attempt-2/results/result.json",
+        "sha256": "657df0208be68596fa1c1d797c6196b0246572538da2ee08671c5bf93fa0f82e",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/scanprosite/attempt-2/results/official-result.png",
+        "sha256": "845b4c6c1883c1f6c3bcf9fc248c0aa7f97d31a59e521926db6e8366d3afb5fe",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "psipred",
+    "name": "PSIPRED Workbench",
+    "checkedAt": "2026-09-21T03:50:23.708Z",
+    "runId": "wf-1789904107045-55ebb7",
+    "status": "failed",
+    "passed": false,
+    "reason": "Worker stopped without a valid result (exit 1)",
+    "resultUrl": "https://bioinf.cs.ucl.ac.uk/psipred/",
+    "attempts": 3,
+    "artifacts": [],
+    "category": "external_or_configuration_block"
+  },
+  {
+    "siteId": "jpred",
+    "name": "JPred4",
+    "checkedAt": "2026-09-20T12:52:01.455Z",
+    "runId": "wf-1789904964776-5c60af",
+    "status": "waiting_human",
+    "passed": false,
+    "reason": "JPred remote cluster failed: its Slurm job status API returned an error; no resubmission performed",
+    "resultUrl": "https://www.compbio.dundee.ac.uk/jpred4/results/jp_sobAKyQ/LOG",
+    "attempts": 2,
+    "artifacts": [],
+    "category": "external_or_configuration_block"
+  },
+  {
+    "siteId": "phobius",
+    "name": "Phobius",
+    "checkedAt": "2026-09-20T12:27:00.503Z",
+    "runId": "wf-1789907211828-532428",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://phobius.sbc.su.se/predict",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/phobius/attempt-1/results/official-result.txt",
+        "sha256": "108889a5f030b30d43527bc8f4bee7fd3216f9b50b1c2056683fd7ee4e006894",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/phobius/attempt-1/results/result.json",
+        "sha256": "1cf31d7e40bf41315406e4a710732e03c4bd5e0ada116adeecc717bd1e3cad42",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/phobius/attempt-1/results/official-result.png",
+        "sha256": "5c9e714f9ad119c0bc0ad899d254e2763f71054d52b8a357e9b657ff3d3c8827",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "signalp",
+    "name": "SignalP 6.0",
+    "checkedAt": "2026-09-20T12:11:44.119Z",
+    "runId": "wf-1789904107066-d180c5",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC52700009DECA0B1A9C7&wait=20",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/signalp/attempt-2/results/official-result.txt",
+        "sha256": "06def973d237a4e82e543c549482172d574a0700995560588a76bb3b0b188d2d",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/signalp/attempt-2/results/result.json",
+        "sha256": "c3411bb60e04f3d42e5d9f2472c2436f38afdb223e4561fac9b050f8eb79c64c",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/signalp/attempt-2/results/official-result.png",
+        "sha256": "9d0758b16d99749c7d168d0b2c7384def7287850fce84a79f6a5fdc044c98a36",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "tmhmm",
+    "name": "TMHMM 2.0",
+    "checkedAt": "2026-09-20T12:11:47.472Z",
+    "runId": "wf-1789904107078-93e560",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC53000009E17B6B0E575&wait=20",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/tmhmm/attempt-2/results/official-result.txt",
+        "sha256": "a63acb2881faa81488a2d97d181e9d61924fe7994875f85994bc774fa045494f",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/tmhmm/attempt-2/results/result.json",
+        "sha256": "58ede97661963a1baead3569e2b9910d5a7563932000e2e9886cf94ca1a770bd",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/tmhmm/attempt-2/results/official-result.png",
+        "sha256": "c3a925187af3f920c211c53839959fdf74ad40d2b665526491ff521c23c5c8a7",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "deeptmhmm",
+    "name": "DeepTMHMM",
+    "checkedAt": "2026-09-21T03:01:47.383Z",
+    "runId": "wf-1789904964804-3c9c4a",
+    "status": "waiting_human",
+    "passed": false,
+    "reason": "DeepTMHMM has no confirmed task result URL in this checkpoint; reconcile the original job before resuming",
+    "resultUrl": "https://dtu.biolib.com/dtu",
+    "attempts": 6,
+    "artifacts": [],
+    "category": "adapter_or_verification_incomplete"
+  },
+  {
+    "siteId": "plant_mploc",
+    "name": "Plant-mPLoc",
+    "checkedAt": "2026-09-20T12:20:23.431Z",
+    "runId": "wf-1789906815550-88f1bb",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "http://www.csbio.sjtu.edu.cn/cgi-bin/PlantmPLoc.cgi",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/plant_mploc/attempt-1/results/official-result.txt",
+        "sha256": "36a504a2a21271263d7f557b5a28e20b9f042a1372a2b23d450f198d256cc9b2",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/plant_mploc/attempt-1/results/result.json",
+        "sha256": "9aca2dc0a18162284ecedaffb36a9a6806435588b14a35ec77e8a9d9b60aa4fd",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/plant_mploc/attempt-1/results/official-result.png",
+        "sha256": "1ec9b25743a60f688e5ff762e84404b704ad8b24e87a9cd3bbef08ac0af17dc9",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "cell_ploc",
+    "name": "Cell-PLoc 2.0",
+    "checkedAt": "2026-09-20T11:50:19.564Z",
+    "runId": "wf-1789904964815-3fb686",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "http://www.csbio.sjtu.edu.cn/cgi-bin/PlantmPLoc.cgi",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/cell_ploc/attempt-1/results/official-result.txt",
+        "sha256": "36a504a2a21271263d7f557b5a28e20b9f042a1372a2b23d450f198d256cc9b2",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/cell_ploc/attempt-1/results/result.json",
+        "sha256": "52328f14af2c5f6e4d89de14f4e906ea09d364c1dc9385e64957a09eece42c76",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/cell_ploc/attempt-1/results/official-result.png",
+        "sha256": "6ecacae054d102e16852937508d94642b12b339a4433c55cd5ebbbfdf5bb823b",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "deeploc",
+    "name": "DeepLoc 2.1",
+    "checkedAt": "2026-09-20T12:34:20.725Z",
+    "runId": "wf-1789904107099-3b97b8",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC53C00009E36D233EEDE&wait=20",
+    "attempts": 3,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/deeploc/attempt-3/results/official-result.txt",
+        "sha256": "68ba036a2b1fb8a350bc6025875bc69cecf6e0429a091476453bce3c9cf74d37",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/deeploc/attempt-3/results/result.json",
+        "sha256": "8e37c7f3e163943b519905244937828603cfcae9145d33b215e7b86a056fca55",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/deeploc/attempt-3/results/official-result.png",
+        "sha256": "8261ae7c2ded10d1a63972b74fdb861940e973651ea5510eeca0606a608334b0",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "musite",
+    "name": "MusiteDeep",
+    "checkedAt": "2026-09-20T11:15:37.567Z",
+    "runId": "wf-1789902861063-5e8b57",
+    "status": "waiting_human",
+    "passed": false,
+    "reason": "Website requires login/verification or is unavailable",
+    "resultUrl": null,
+    "attempts": 1,
+    "artifacts": [],
+    "category": "external_or_configuration_block"
+  },
+  {
+    "siteId": "string",
+    "name": "STRING",
+    "checkedAt": "2026-09-21T02:58:29.471Z",
+    "runId": "wf-1789908722208-65f574",
+    "status": "waiting_human",
+    "passed": false,
+    "reason": "P69905 matched HBA1 and HBA2; an explicit protein selection and recovery of the original browser session are required",
+    "resultUrl": "https://string-db.org/cgi/network?pollingId=bxIJ39oJAIyZ&sessionId=[redacted]&urldisam=bLEQJ5PtDSNS",
+    "attempts": 7,
+    "artifacts": [],
+    "category": "ambiguous_accession"
+  },
+  {
+    "siteId": "uniprot",
+    "name": "UniProtKB / BLAST",
+    "checkedAt": "2026-09-21T03:21:26.929Z",
+    "runId": "wf-1789959931892-6af237",
+    "status": "needs_review",
+    "passed": false,
+    "reason": "No independently verified BLAST hit table; the earlier help-page result was revoked",
+    "resultUrl": "https://www.uniprot.org/uniprotkb?query=*",
+    "attempts": 5,
+    "artifacts": [],
+    "category": "adapter_or_verification_incomplete"
+  },
+  {
+    "siteId": "eggnog",
+    "name": "eggNOG-mapper",
+    "checkedAt": "2026-09-21T03:00:58.849Z",
+    "runId": "wf-1789909253892-339588",
+    "status": "waiting_human",
+    "passed": false,
+    "reason": "eggNOG sent a private start link to the configured email; open that link and reconcile this node before resuming",
+    "resultUrl": "https://eggnog-mapper.cgmlab.org/submitted/",
+    "attempts": 6,
+    "artifacts": [],
+    "category": "external_or_configuration_block"
+  },
+  {
+    "siteId": "iupred",
+    "name": "IUPred3",
+    "checkedAt": "2026-09-20T11:15:22.562Z",
+    "runId": "wf-1789902861094-f0ae6d",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://iupred3.elte.hu/plot",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/iupred/attempt-1/results/official-result.txt",
+        "sha256": "36be6acaf1fa9b70fac649eba0b79543077f329a50d02c00e3fa06707cd1afbd",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/iupred/attempt-1/results/result.json",
+        "sha256": "a95113c917ab235e4bcb77edcdd17cd33dedb558f6237641ea3fe000e026db8c",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/iupred/attempt-1/results/official-result.png",
+        "sha256": "61931dcd057eeaf1fe731912deaf971a403384f784efb48ea99edf5dfe0d0a57",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "hmmer",
+    "name": "HMMER phmmer",
+    "checkedAt": "2026-09-20T11:36:36.658Z",
+    "runId": "wf-1789904107129-19c35d",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://www.ebi.ac.uk/Tools/hmmer/results/b609e6ac-d197-4221-b5c5-39615207af5d/score",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/hmmer/attempt-1/results/official-result.txt",
+        "sha256": "9d156d118fbf9f10f20434bc3111cc245e451e686d8c42ce75401b04a51b05e6",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/hmmer/attempt-1/results/result.json",
+        "sha256": "fb9186fd5241da74c40054fc93ac3f7af3d5d81bb66bb82828b1a6d85a31660f",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/hmmer/attempt-1/results/official-result.png",
+        "sha256": "9bad3af4a7339561838675a51daa0e4f6784a501e6261c78c74a3a3b422f07f1",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "mafft_web",
+    "name": "MAFFT Web",
+    "checkedAt": "2026-09-20T12:45:44.090Z",
+    "runId": "wf-1789907815739-affa13",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://www.ebi.ac.uk/jdispatcher/msa/mafft/summary?jobId=mafft-I20260920-133722-0372-91887522-p2m",
+    "attempts": 3,
+    "artifacts": [
+      {
+        "kind": "alignment_fasta",
+        "path": "nodes/mafft_web/attempt-3/results/mafft-I20260920-133722-0372-91887522-p2m.aln-fasta",
+        "sha256": "3fe0106b8cc43ad8aaa54984b339285e9339a8ccb9f9ef4eca7409c95dd901aa",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/mafft_web/attempt-3/results/official-result.txt",
+        "sha256": "de2ab5e2b42bad40d65ab97f3af9203efec2139d25c219330fa7f39c1fa0e6d8",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/mafft_web/attempt-3/results/result.json",
+        "sha256": "08661a647c9b59900acf6f173a637694227a2f215eb19943645d5286f87f04a0",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/mafft_web/attempt-3/results/official-result.png",
+        "sha256": "b0ff3aaa8f372519915af3d08d6bd49389f76ea6bf10a0e265359acbadc5bc53",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "itol_web",
+    "name": "iTOL",
+    "checkedAt": "2026-09-21T03:39:13.275Z",
+    "runId": "wf-1789903371835-53218a",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://itol.embl.de/tree/21623645165214821789903394",
+    "attempts": 8,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/itol/attempt-8/results/official-result.txt",
+        "sha256": "f5f684054ec79716bc1784136060cbc90d7e8b5a1f5cbd1dd102ea51fe4db1f4",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/itol/attempt-8/results/result.json",
+        "sha256": "8cc4df4ac95bc0a2e164d9249738b382b6ca1d7d8c911ef5aff600f4b9e5f0c5",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/itol/attempt-8/results/official-result.png",
+        "sha256": "7850344bdd353812d68f021f99ad10aca02dd99bfdfa6ea1bc04de2787706642",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "espript",
+    "name": "ESPript 3",
+    "checkedAt": "2026-09-20T11:15:37.583Z",
+    "runId": "wf-1789902861115-c018ae",
+    "status": "needs_review",
+    "passed": false,
+    "reason": "Jev stopped; independent result verification did not pass",
+    "resultUrl": "https://espript.ibcp.fr/ESPript/cgi-bin/ESPript.cgi",
+    "attempts": 1,
+    "artifacts": [],
+    "category": "external_or_configuration_block"
+  },
+  {
+    "siteId": "alphafold_db",
+    "name": "AlphaFold DB",
+    "checkedAt": "2026-09-20T11:31:32.801Z",
+    "runId": "wf-1789902514175-5e01af",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://alphafold.ebi.ac.uk/entry/AF-P69905-F1",
+    "attempts": 1,
+    "artifacts": [
+      {
+        "kind": "structure",
+        "path": "nodes/alphafold/attempt-1/results/AF-P69905-F1-model_v6.pdb",
+        "sha256": "d9d7ad4607164de17b65767b467d366909d74f96df5176ee368a9a515aaa1911",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/alphafold/attempt-1/results/official-result.txt",
+        "sha256": "fdc2cec8d183531434aca2e21e4b55c4040d4101afbbc1eee5f88b6590854d74",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/alphafold/attempt-1/results/result.json",
+        "sha256": "70346f99c067cce8f9f2203a292ba11416911c837eede8a9af8119bfddfbbe8a",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/alphafold/attempt-1/results/official-result.png",
+        "sha256": "fa224b1317d34726ada990ad6c71e7792d86ce489945f1a218e0c7a8a51bae99",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "swiss_model",
+    "name": "SWISS-MODEL",
+    "checkedAt": "2026-09-20T12:11:54.394Z",
+    "runId": "wf-1789904107149-11a85b",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://swissmodel.expasy.org/interactive/M4nmJE/models/",
+    "attempts": 2,
+    "artifacts": [
+      {
+        "kind": "structure",
+        "path": "nodes/swiss_model/attempt-2/results/model_01.pdb",
+        "sha256": "8fae31744dd5f5c5d26e9212902f9829e6437d9ce8ad7e1f2abd795a95df1073",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/swiss_model/attempt-2/results/official-result.txt",
+        "sha256": "b9374912fa7af85fc56023d1d48c577a0db8ecb1c46e984bf77e294bdd218e61",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/swiss_model/attempt-2/results/result.json",
+        "sha256": "bbc3a585a9bb4f98c2a63d94747c657804b38c365b8f3b707c9d0d84b92b1476",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/swiss_model/attempt-2/results/official-result.png",
+        "sha256": "016b84ea8957924b137a3034e67467fbcd264b7ba03a235664f92af26567d594",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  },
+  {
+    "siteId": "prankweb",
+    "name": "PrankWeb",
+    "checkedAt": "2026-09-20T11:31:32.801Z",
+    "runId": "wf-1789902514175-5e01af",
+    "status": "succeeded",
+    "passed": true,
+    "reason": "Official result markers and input provenance verified",
+    "resultUrl": "https://prankweb.cz/viewer?id=2026-09-20-11-08-59-AFB303B7-3F54-46B0-A59A-05C3717D1B62&database=v4-user-upload",
+    "attempts": 8,
+    "artifacts": [
+      {
+        "kind": "report",
+        "path": "nodes/prankweb/attempt-8/results/official-result.txt",
+        "sha256": "52c72f37d70a62da94ddaeaee085dbf4f62fc083e5de6742ea637da159e857b2",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/prankweb/attempt-8/results/result.json",
+        "sha256": "a194ac50c3d93fb8ef06c56e4442dbecc6d963d66c3716c7938537d4e8b52885",
+        "integrityVerified": true
+      },
+      {
+        "kind": "report",
+        "path": "nodes/prankweb/attempt-8/results/official-result.png",
+        "sha256": "d6887edbd32a0ce53cdcb7feecf37afdf5b393e43c4a4c7c937338e812d333f9",
+        "integrityVerified": true
+      }
+    ],
+    "category": "verified"
+  }
+]

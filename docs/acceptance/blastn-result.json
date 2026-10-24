@@ -1,0 +1,3476 @@
+{
+  "siteId": "blastn",
+  "recipeVersion": 1,
+  "url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+  "title": "NCBI Blast:NM_000558.5 Homo sapiens hemoglobin subunit",
+  "tables": [
+    [
+      [
+        "Search parameter name",
+        "Search parameter value"
+      ],
+      [
+        "Program",
+        "blastn"
+      ],
+      [
+        "Word size",
+        "28"
+      ],
+      [
+        "Expect value",
+        "0.05"
+      ],
+      [
+        "Hitlist size",
+        "100"
+      ],
+      [
+        "Match/Mismatch scores",
+        "1,-2"
+      ],
+      [
+        "Gapcosts",
+        "0,2.5"
+      ],
+      [
+        "Low Complexity Filter",
+        "Yes"
+      ],
+      [
+        "Filter string ",
+        "L;m;"
+      ],
+      [
+        "Genetic Code",
+        "1"
+      ]
+    ],
+    [
+      [
+        "Database parameter name",
+        "Database parameter value"
+      ],
+      [
+        "Posted date",
+        "Sep 15, 2026  9:30 PM"
+      ],
+      [
+        "Number of letters",
+        "4,570,250,484,773"
+      ],
+      [
+        "Number of sequences",
+        "131,305,035"
+      ],
+      [
+        "Entrez query",
+        "\n Includes: \n Excludes: \n None\n "
+      ]
+    ],
+    [
+      [
+        "Params",
+        "Ungapped",
+        "Gapped"
+      ],
+      [
+        "Lambda",
+        "1.33271",
+        "1.28"
+      ],
+      [
+        "K",
+        "0.620991",
+        "0.46"
+      ],
+      [
+        "H",
+        "1.12409",
+        "0.85"
+      ]
+    ],
+    [
+      [
+        "Results Statistics parameter name",
+        "Results Statistics parameter value"
+      ],
+      [
+        "Length adjustment",
+        " 38"
+      ],
+      [
+        "Effective length of query",
+        " 539"
+      ],
+      [
+        "Effective length of database",
+        " 4565260893443"
+      ],
+      [
+        "Effective search space",
+        " 2460675621565777"
+      ],
+      [
+        "Effective search space used",
+        " 2460675621565777"
+      ]
+    ],
+    [
+      [
+        "Select for downloading or viewing reports",
+        "Description",
+        "Scientific Name",
+        "\n  \n  \n  Common Name\n  \n  \n  ",
+        "\n  \n  Taxid\n  \n  \n  ",
+        "Max Score",
+        "Total Score",
+        "Query Cover",
+        "E value",
+        "Per. Ident",
+        "Acc. Len",
+        "Accession"
+      ],
+      [
+        "Select seq NM_000558.5",
+        "Homo sapiens hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "1066",
+        "1066",
+        "100%",
+        "0.0",
+        "100.00%",
+        "577",
+        "NM_000558.5"
+      ],
+      [
+        "Select seq BC005931.1",
+        "Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:14541 IMAGE:4047053), complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "1066",
+        "1066",
+        "100%",
+        "0.0",
+        "100.00%",
+        "633",
+        "BC005931.1"
+      ],
+      [
+        "Select seq AK223392.1",
+        "Homo sapiens mRNA for alpha 2 globin variant, clone: FCC107C11",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "1061",
+        "1061",
+        "100%",
+        "0.0",
+        "99.83%",
+        "608",
+        "AK223392.1"
+      ],
+      [
+        "Select seq BC032122.2",
+        "Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:29691 IMAGE:4849981), complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "1040",
+        "1040",
+        "98%",
+        "0.0",
+        "100.00%",
+        "585",
+        "BC032122.2"
+      ],
+      [
+        "Select seq BC050661.1",
+        "Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:60177 IMAGE:5209215), complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "1040",
+        "1040",
+        "98%",
+        "0.0",
+        "100.00%",
+        "603",
+        "BC050661.1"
+      ],
+      [
+        "Select seq XM_003809393.4",
+        "PREDICTED: Pan paniscus hemoglobin subunit alpha (LOC100984160), mRNA",
+        "Pan paniscus",
+        "pygmy chimpanzee",
+        "9597",
+        "1016",
+        "1016",
+        "100%",
+        "0.0",
+        "98.44%",
+        "631",
+        "XM_003809393.4"
+      ],
+      [
+        "Select seq NM_001042626.1",
+        "Pan troglodytes hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Pan troglodytes",
+        "chimpanzee",
+        "9598",
+        "1003",
+        "1003",
+        "100%",
+        "0.0",
+        "98.09%",
+        "577",
+        "NM_001042626.1"
+      ],
+      [
+        "Select seq XM_010381857.2",
+        "PREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Rhinopithecus roxellana",
+        "golden snub-nosed monkey",
+        "61622",
+        "992",
+        "992",
+        "100%",
+        "0.0",
+        "97.75%",
+        "603",
+        "XM_010381857.2"
+      ],
+      [
+        "Select seq XM_030924410.1",
+        "PREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha-like (LOC115895176), mRNA",
+        "Rhinopithecus roxellana",
+        "golden snub-nosed monkey",
+        "61622",
+        "985",
+        "985",
+        "100%",
+        "0.0",
+        "97.57%",
+        "657",
+        "XM_030924410.1"
+      ],
+      [
+        "Select seq XM_054453274.2",
+        "PREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015394), mRNA",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "983",
+        "983",
+        "100%",
+        "0.0",
+        "97.40%",
+        "666",
+        "XM_054453274.2"
+      ],
+      [
+        "Select seq XM_024233299.2",
+        "PREDICTED: Pongo abelii hemoglobin subunit alpha (LOC112128473), mRNA",
+        "Pongo abelii",
+        "Sumatran orangutan",
+        "9601",
+        "983",
+        "983",
+        "100%",
+        "0.0",
+        "97.40%",
+        "660",
+        "XM_024233299.2"
+      ],
+      [
+        "Select seq XM_033236450.1",
+        "PREDICTED: Trachypithecus francoisi hemoglobin subunit alpha (LOC117097923), mRNA",
+        "Trachypithecus francoisi",
+        "Francois's langur",
+        "54180",
+        "976",
+        "976",
+        "100%",
+        "0.0",
+        "97.23%",
+        "604",
+        "XM_033236450.1"
+      ],
+      [
+        "Select seq XM_033236449.1",
+        "PREDICTED: Trachypithecus francoisi translation initiation factor IF-2-like (LOC117097922), mRNA",
+        "Trachypithecus francoisi",
+        "Francois's langur",
+        "54180",
+        "976",
+        "976",
+        "100%",
+        "0.0",
+        "97.23%",
+        "1108",
+        "XM_033236449.1"
+      ],
+      [
+        "Select seq XM_037996351.2",
+        "PREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (HBA), mRNA",
+        "Chlorocebus sabaeus",
+        "green monkey",
+        "60711",
+        "970",
+        "970",
+        "100%",
+        "0.0",
+        "97.05%",
+        "616",
+        "XM_037996351.2"
+      ],
+      [
+        "Select seq XM_011960067.1",
+        "PREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X1, mRNA",
+        "Colobus angolensis palliatus",
+        "NA",
+        "336983",
+        "970",
+        "970",
+        "100%",
+        "0.0",
+        "97.05%",
+        "599",
+        "XM_011960067.1"
+      ],
+      [
+        "Select seq NM_001132429.1",
+        "Pongo abelii hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Pongo abelii",
+        "Sumatran orangutan",
+        "9601",
+        "959",
+        "959",
+        "100%",
+        "0.0",
+        "96.71%",
+        "589",
+        "NM_001132429.1"
+      ],
+      [
+        "Select seq XM_030798787.1",
+        "PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1-like (LOC115830409), mRNA",
+        "Nomascus leucogenys",
+        "northern white-cheeked gibbon",
+        "61853",
+        "955",
+        "955",
+        "100%",
+        "0.0",
+        "96.53%",
+        "584",
+        "XM_030798787.1"
+      ],
+      [
+        "Select seq XM_073014956.1",
+        "PREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (LOC103231670), mRNA",
+        "Chlorocebus sabaeus",
+        "green monkey",
+        "60711",
+        "953",
+        "953",
+        "100%",
+        "0.0",
+        "96.53%",
+        "596",
+        "XM_073014956.1"
+      ],
+      [
+        "Select seq NM_000517.6",
+        "Homo sapiens hemoglobin subunit alpha 2 (HBA2), mRNA",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "953",
+        "953",
+        "100%",
+        "0.0",
+        "96.53%",
+        "576",
+        "NM_000517.6"
+      ],
+      [
+        "Select seq XM_023189803.1",
+        "PREDICTED: Piliocolobus tephrosceles hemoglobin subunit alpha (LOC111524597), mRNA",
+        "Piliocolobus tephrosceles",
+        "Ugandan red Colobus",
+        "591936",
+        "953",
+        "953",
+        "100%",
+        "0.0",
+        "96.53%",
+        "606",
+        "XM_023189803.1"
+      ],
+      [
+        "Select seq XM_003809390.6",
+        "PREDICTED: Pan paniscus hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Pan paniscus",
+        "pygmy chimpanzee",
+        "9597",
+        "948",
+        "948",
+        "100%",
+        "0.0",
+        "96.36%",
+        "637",
+        "XM_003809390.6"
+      ],
+      [
+        "Select seq NM_001042627.1",
+        "Pan troglodytes hemoglobin subunit alpha 2 (HBA2), mRNA",
+        "Pan troglodytes",
+        "chimpanzee",
+        "9598",
+        "946",
+        "946",
+        "100%",
+        "0.0",
+        "96.35%",
+        "575",
+        "NM_001042627.1"
+      ],
+      [
+        "Select seq XM_050774762.1",
+        "PREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T (LOC126944882), mRNA",
+        "Macaca thibetana thibetana",
+        "NA",
+        "257877",
+        "942",
+        "942",
+        "100%",
+        "0.0",
+        "96.19%",
+        "611",
+        "XM_050774762.1"
+      ],
+      [
+        "Select seq XM_071083758.1",
+        "PREDICTED: Macaca nemestrina hemoglobin subunit alpha-1/2/3 (LOC139359788), mRNA",
+        "Macaca nemestrina",
+        "pig-tailed macaque",
+        "9545",
+        "937",
+        "937",
+        "100%",
+        "0.0",
+        "96.01%",
+        "600",
+        "XM_071083758.1"
+      ],
+      [
+        "Select seq XM_005590731.4",
+        "PREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136846), mRNA",
+        "Macaca fascicularis",
+        "crab-eating macaque",
+        "9541",
+        "937",
+        "937",
+        "100%",
+        "0.0",
+        "96.01%",
+        "576",
+        "XM_005590731.4"
+      ],
+      [
+        "Select seq XM_045382711.2",
+        "PREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136192), mRNA",
+        "Macaca fascicularis",
+        "crab-eating macaque",
+        "9541",
+        "937",
+        "937",
+        "100%",
+        "0.0",
+        "96.01%",
+        "576",
+        "XM_045382711.2"
+      ],
+      [
+        "Select seq XM_050774761.1",
+        "PREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T-like (LOC126944881), mRNA",
+        "Macaca thibetana thibetana",
+        "NA",
+        "257877",
+        "937",
+        "937",
+        "100%",
+        "0.0",
+        "96.01%",
+        "790",
+        "XM_050774761.1"
+      ],
+      [
+        "Select seq V00493.1",
+        "Homo sapiens messenger mRNA for hemoglobin alpha chain",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "935",
+        "935",
+        "100%",
+        "0.0",
+        "96.01%",
+        "575",
+        "V00493.1"
+      ],
+      [
+        "Select seq BC008572.1",
+        "Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:17020 IMAGE:4177243), complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "933",
+        "933",
+        "98%",
+        "0.0",
+        "96.63%",
+        "579",
+        "BC008572.1"
+      ],
+      [
+        "Select seq XM_063699834.1",
+        "PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-like (LOC134757486), mRNA",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "931",
+        "931",
+        "100%",
+        "0.0",
+        "95.84%",
+        "659",
+        "XM_063699834.1"
+      ],
+      [
+        "Select seq XM_031002843.3",
+        "PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha (LOC115931067), mRNA",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "931",
+        "931",
+        "100%",
+        "0.0",
+        "95.84%",
+        "630",
+        "XM_031002843.3"
+      ],
+      [
+        "Select seq XM_055078620.2",
+        "PREDICTED: Pan troglodytes hemoglobin subunit alpha (LOC129388389), mRNA",
+        "Pan troglodytes",
+        "chimpanzee",
+        "9598",
+        "929",
+        "929",
+        "99%",
+        "0.0",
+        "96.14%",
+        "569",
+        "XM_055078620.2"
+      ],
+      [
+        "Select seq AF147332.1",
+        "Homo sapiens full length insert cDNA clone YB24D09",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "924",
+        "924",
+        "97%",
+        "0.0",
+        "96.59%",
+        "566",
+        "AF147332.1"
+      ],
+      [
+        "Select seq XM_003269100.3",
+        "PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X1, mRNA",
+        "Nomascus leucogenys",
+        "northern white-cheeked gibbon",
+        "61853",
+        "920",
+        "920",
+        "100%",
+        "0.0",
+        "95.49%",
+        "586",
+        "XM_003269100.3"
+      ],
+      [
+        "Select seq XM_030798788.1",
+        "PREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X2, mRNA",
+        "Nomascus leucogenys",
+        "northern white-cheeked gibbon",
+        "61853",
+        "915",
+        "915",
+        "95%",
+        "0.0",
+        "96.72%",
+        "559",
+        "XM_030798788.1"
+      ],
+      [
+        "Select seq XM_055243101.2",
+        "PREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462773), mRNA",
+        "Symphalangus syndactylus",
+        "siamang",
+        "9590",
+        "915",
+        "915",
+        "100%",
+        "0.0",
+        "95.32%",
+        "659",
+        "XM_055243101.2"
+      ],
+      [
+        "Select seq XM_055243100.1",
+        "PREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462771), mRNA",
+        "Symphalangus syndactylus",
+        "siamang",
+        "9590",
+        "915",
+        "915",
+        "100%",
+        "0.0",
+        "95.32%",
+        "603",
+        "XM_055243100.1"
+      ],
+      [
+        "Select seq BC101846.1",
+        "Homo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:126895 IMAGE:8069352), complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "913",
+        "913",
+        "86%",
+        "0.0",
+        "100.00%",
+        "494",
+        "BC101846.1"
+      ],
+      [
+        "Select seq KX533500.1",
+        "Homo sapiens Hemoglobin subunit alpha (HBA2) mRNA, complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "909",
+        "1328",
+        "100%",
+        "0.0",
+        "100.00%",
+        "742",
+        "KX533500.1"
+      ],
+      [
+        "Select seq XM_032148482.2",
+        "PREDICTED: Hylobates moloch hemoglobin subunit alpha (LOC116465397), mRNA",
+        "Hylobates moloch",
+        "silvery gibbon",
+        "81572",
+        "909",
+        "909",
+        "100%",
+        "0.0",
+        "95.15%",
+        "603",
+        "XM_032148482.2"
+      ],
+      [
+        "Select seq AF105974.1",
+        "Homo sapiens alpha one globin (HBA1) mRNA, complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "902",
+        "902",
+        "85%",
+        "0.0",
+        "100.00%",
+        "488",
+        "AF105974.1"
+      ],
+      [
+        "Select seq AF349571.1",
+        "Homo sapiens hemoglobin alpha-1 globin chain (HBA1) mRNA, complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "896",
+        "896",
+        "85%",
+        "0.0",
+        "99.80%",
+        "491",
+        "AF349571.1"
+      ],
+      [
+        "Select seq NM_001168816.2",
+        "Papio anubis hemoglobin, alpha 1 (HBA1), mRNA",
+        "Papio anubis",
+        "olive baboon",
+        "9555",
+        "893",
+        "893",
+        "97%",
+        "0.0",
+        "95.37%",
+        "561",
+        "NM_001168816.2"
+      ],
+      [
+        "Select seq NM_001266776.2",
+        "Macaca mulatta hemoglobin subunit alpha 1 (HBA1), mRNA",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "891",
+        "891",
+        "96%",
+        "0.0",
+        "95.83%",
+        "551",
+        "NM_001266776.2"
+      ],
+      [
+        "Select seq AF097635.1",
+        "Homo sapiens alpha-2 globin (HBA1) mRNA, complete cds",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "891",
+        "891",
+        "90%",
+        "0.0",
+        "97.50%",
+        "521",
+        "AF097635.1"
+      ],
+      [
+        "Select seq XM_064362263.1",
+        "PREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC135268998), mRNA",
+        "Aotus nancymaae",
+        "Ma's night monkey",
+        "37293",
+        "881",
+        "881",
+        "100%",
+        "0.0",
+        "94.29%",
+        "592",
+        "XM_064362263.1"
+      ],
+      [
+        "Select seq XM_054453273.2",
+        "PREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015393), mRNA",
+        "Pongo pygmaeus",
+        "Bornean orangutan",
+        "9600",
+        "881",
+        "881",
+        "100%",
+        "0.0",
+        "94.28%",
+        "591",
+        "XM_054453273.2"
+      ],
+      [
+        "Select seq XM_009008812.5",
+        "PREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC103787296), mRNA",
+        "Callithrix jacchus",
+        "white-tufted-ear marmoset",
+        "9483",
+        "865",
+        "865",
+        "100%",
+        "0.0",
+        "93.77%",
+        "697",
+        "XM_009008812.5"
+      ],
+      [
+        "Select seq LT548101.1",
+        "TPA_inf: Homo sapiens GLNC1 gene for globin C1",
+        "Homo sapiens",
+        "human",
+        "9606",
+        "861",
+        "861",
+        "81%",
+        "0.0",
+        "100.00%",
+        "534",
+        "LT548101.1"
+      ],
+      [
+        "Select seq XM_004056858.5",
+        "PREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-3 (LOC101146261), mRNA",
+        "Gorilla gorilla gorilla",
+        "western lowland gorilla",
+        "9595",
+        "856",
+        "856",
+        "100%",
+        "0.0",
+        "93.33%",
+        "997",
+        "XM_004056858.5"
+      ],
+      [
+        "Select seq XM_012468715.2",
+        "PREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC105728358), mRNA",
+        "Aotus nancymaae",
+        "Ma's night monkey",
+        "37293",
+        "843",
+        "843",
+        "100%",
+        "0.0",
+        "93.08%",
+        "591",
+        "XM_012468715.2"
+      ],
+      [
+        "Select seq XM_054668109.2",
+        "PREDICTED: Pan troglodytes hemoglobin subunit alpha-3-like (LOC129137268), mRNA",
+        "Pan troglodytes",
+        "chimpanzee",
+        "9598",
+        "832",
+        "832",
+        "100%",
+        "0.0",
+        "92.50%",
+        "603",
+        "XM_054668109.2"
+      ],
+      [
+        "Select seq XM_012035741.1",
+        "PREDICTED: Cercocebus atys hemoglobin subunit alpha (LOC105574652), mRNA",
+        "Cercocebus atys",
+        "sooty mangabey",
+        "9531",
+        "832",
+        "832",
+        "89%",
+        "0.0",
+        "95.91%",
+        "513",
+        "XM_012035741.1"
+      ],
+      [
+        "Select seq XM_024733557.1",
+        "PREDICTED: Neophocaena asiaeorientalis asiaeorientalis hemoglobin subunit alpha (LOC112392006), mRNA",
+        "Neophocaena asiaeorientalis asiaeorientalis",
+        "Yangtze finless porpoise",
+        "1706337",
+        "830",
+        "830",
+        "78%",
+        "0.0",
+        "100.00%",
+        "449",
+        "XM_024733557.1"
+      ],
+      [
+        "Select seq XM_035266305.3",
+        "PREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC118142868), mRNA",
+        "Callithrix jacchus",
+        "white-tufted-ear marmoset",
+        "9483",
+        "830",
+        "830",
+        "100%",
+        "0.0",
+        "92.61%",
+        "580",
+        "XM_035266305.3"
+      ],
+      [
+        "Select seq XM_003928343.4",
+        "PREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101034843), mRNA",
+        "Saimiri boliviensis",
+        "Bolivian squirrel monkey",
+        "27679",
+        "828",
+        "828",
+        "100%",
+        "0.0",
+        "92.49%",
+        "590",
+        "XM_003928343.4"
+      ],
+      [
+        "Select seq XM_003928344.4",
+        "PREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101035149), mRNA",
+        "Saimiri boliviensis",
+        "Bolivian squirrel monkey",
+        "27679",
+        "821",
+        "821",
+        "100%",
+        "0.0",
+        "92.39%",
+        "595",
+        "XM_003928344.4"
+      ],
+      [
+        "Select seq DQ891761.2",
+        "Synthetic construct clone IMAGE:100004391; FLH179692.01X; RZPDo839B06132D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "800",
+        "800",
+        "75%",
+        "0.0",
+        "100.00%",
+        "469",
+        "DQ891761.2"
+      ],
+      [
+        "Select seq DQ894945.2",
+        "Synthetic construct Homo sapiens clone IMAGE:100009405; FLH179688.01L; RZPDo839B06131D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "798",
+        "798",
+        "75%",
+        "0.0",
+        "100.00%",
+        "469",
+        "DQ894945.2"
+      ],
+      [
+        "Select seq AY893615.1",
+        "Synthetic construct Homo sapiens clone FLH130873.01X hemoglobin alpha 2 (HBA2) mRNA, complete cds",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "793",
+        "793",
+        "74%",
+        "0.0",
+        "100.00%",
+        "429",
+        "AY893615.1"
+      ],
+      [
+        "Select seq AB590168.1",
+        "Synthetic construct DNA, clone: pFN21AE1112, Homo sapiens HBA1 gene for hemoglobin, alpha 1, without stop codon, in Flexi system",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "791",
+        "791",
+        "74%",
+        "0.0",
+        "100.00%",
+        "443",
+        "AB590168.1"
+      ],
+      [
+        "Select seq LT548130.1",
+        "TPA_inf: Macaca mulatta GLNC1 gene for globin C1",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "789",
+        "789",
+        "81%",
+        "0.0",
+        "97.21%",
+        "534",
+        "LT548130.1"
+      ],
+      [
+        "Select seq AY892605.1",
+        "Synthetic construct Homo sapiens clone FLH030172.01L hemoglobin alpha 2 (HBA2) mRNA, partial cds",
+        "synthetic construct",
+        "NA",
+        "32630",
+        "789",
+        "789",
+        "74%",
+        "0.0",
+        "100.00%",
+        "429",
+        "AY892605.1"
+      ],
+      [
+        "Select seq XM_017521561.2",
+        "PREDICTED: Cebus imitator hemoglobin subunit alpha (LOC108299244), mRNA",
+        "Cebus imitator",
+        "Panamanian white-faced capuchin",
+        "2715852",
+        "776",
+        "776",
+        "83%",
+        "0.0",
+        "96.02%",
+        "509",
+        "XM_017521561.2"
+      ],
+      [
+        "Select seq XM_032273653.1",
+        "PREDICTED: Sapajus apella hemoglobin subunit alpha (LOC116547886), mRNA",
+        "Sapajus apella",
+        "tufted capuchin",
+        "9515",
+        "765",
+        "765",
+        "83%",
+        "0.0",
+        "95.60%",
+        "506",
+        "XM_032273653.1"
+      ],
+      [
+        "Select seq LT548141.1",
+        "TPA_inf: Callithrix jacchus GLNC1 gene for globin C1",
+        "Callithrix jacchus",
+        "white-tufted-ear marmoset",
+        "9483",
+        "750",
+        "750",
+        "81%",
+        "0.0",
+        "95.72%",
+        "534",
+        "LT548141.1"
+      ],
+      [
+        "Select seq MH382891.1",
+        "Nasalis larvatus hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Nasalis larvatus",
+        "proboscis monkey",
+        "43780",
+        "737",
+        "737",
+        "74%",
+        "0.0",
+        "97.67%",
+        "429",
+        "MH382891.1"
+      ],
+      [
+        "Select seq MH382886.1",
+        "Trachypithecus francoisi hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Trachypithecus francoisi",
+        "Francois's langur",
+        "54180",
+        "737",
+        "737",
+        "74%",
+        "0.0",
+        "97.67%",
+        "429",
+        "MH382886.1"
+      ],
+      [
+        "Select seq MH382885.1",
+        "Hylobates lar hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Hylobates lar",
+        "common gibbon",
+        "9580",
+        "737",
+        "737",
+        "74%",
+        "0.0",
+        "97.67%",
+        "429",
+        "MH382885.1"
+      ],
+      [
+        "Select seq LT548134.1",
+        "TPA_inf: Papio hamadryas GLNC1 gene for globin C1",
+        "Papio hamadryas",
+        "hamadryas baboon",
+        "9557",
+        "734",
+        "734",
+        "81%",
+        "0.0",
+        "95.06%",
+        "984",
+        "LT548134.1"
+      ],
+      [
+        "Select seq MH382894.1",
+        "Cercopithecus wolfi hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Cercopithecus wolfi",
+        "Wolf's monkey",
+        "263448",
+        "732",
+        "732",
+        "74%",
+        "0.0",
+        "97.44%",
+        "429",
+        "MH382894.1"
+      ],
+      [
+        "Select seq MH382893.1",
+        "Miopithecus talapoin hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Miopithecus talapoin",
+        "talapoin",
+        "36231",
+        "732",
+        "732",
+        "74%",
+        "0.0",
+        "97.44%",
+        "429",
+        "MH382893.1"
+      ],
+      [
+        "Select seq MH382890.1",
+        "Erythrocebus patas hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Erythrocebus patas",
+        "red guenon",
+        "9538",
+        "732",
+        "732",
+        "74%",
+        "0.0",
+        "97.44%",
+        "429",
+        "MH382890.1"
+      ],
+      [
+        "Select seq NM_001044724.1",
+        "Macaca mulatta hemoglobin, alpha 2 (HBA), mRNA",
+        "Macaca mulatta",
+        "Rhesus monkey",
+        "9544",
+        "732",
+        "732",
+        "74%",
+        "0.0",
+        "97.44%",
+        "429",
+        "NM_001044724.1"
+      ],
+      [
+        "Select seq MH382892.1",
+        "Allenopithecus nigroviridis hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Allenopithecus nigroviridis",
+        "Allen's swamp monkey",
+        "54135",
+        "726",
+        "726",
+        "74%",
+        "0.0",
+        "97.20%",
+        "429",
+        "MH382892.1"
+      ],
+      [
+        "Select seq MH382884.1",
+        "Colobus guereza hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Colobus guereza",
+        "mantled guereza",
+        "33548",
+        "721",
+        "721",
+        "74%",
+        "0.0",
+        "96.97%",
+        "429",
+        "MH382884.1"
+      ],
+      [
+        "Select seq MH382883.1",
+        "Chlorocebus aethiops hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Chlorocebus aethiops",
+        "grivet monkey",
+        "9534",
+        "721",
+        "721",
+        "74%",
+        "0.0",
+        "96.97%",
+        "429",
+        "MH382883.1"
+      ],
+      [
+        "Select seq MH382889.1",
+        "Aotus nancymaae hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Aotus nancymaae",
+        "Ma's night monkey",
+        "37293",
+        "710",
+        "710",
+        "74%",
+        "0.0",
+        "96.51%",
+        "429",
+        "MH382889.1"
+      ],
+      [
+        "Select seq MH382888.1",
+        "Callithrix geoffroyi hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Callithrix geoffroyi",
+        "Geoffroy's marmoset",
+        "52231",
+        "704",
+        "704",
+        "74%",
+        "0.0",
+        "96.28%",
+        "429",
+        "MH382888.1"
+      ],
+      [
+        "Select seq MH382887.1",
+        "Lophocebus albigena hemoglobin subunit alpha (HBA) mRNA, complete cds",
+        "Lophocebus albigena",
+        "gray-cheeked mangabey",
+        "75567",
+        "671",
+        "671",
+        "74%",
+        "0.0",
+        "94.87%",
+        "429",
+        "MH382887.1"
+      ],
+      [
+        "Select seq XM_025374666.2",
+        "PREDICTED: Theropithecus gelada hemoglobin subunit alpha (LOC112618059), mRNA",
+        "Theropithecus gelada",
+        "gelada",
+        "9565",
+        "660",
+        "660",
+        "74%",
+        "0.0",
+        "94.41%",
+        "429",
+        "XM_025374666.2"
+      ],
+      [
+        "Select seq XM_017866554.1",
+        "PREDICTED: Rhinopithecus bieti hemoglobin subunit alpha (LOC108525644), partial mRNA",
+        "Rhinopithecus bieti",
+        "black snub-nosed monkey",
+        "61621",
+        "647",
+        "647",
+        "65%",
+        "3e-180",
+        "97.87%",
+        "373",
+        "XM_017866554.1"
+      ],
+      [
+        "Select seq XM_008063911.1",
+        "PREDICTED: Carlito syrichta hemoglobin subunit alpha-like (LOC103266303), partial mRNA",
+        "Carlito syrichta",
+        "Philippine tarsier",
+        "1868482",
+        "645",
+        "645",
+        "83%",
+        "1e-179",
+        "91.04%",
+        "503",
+        "XM_008063911.1"
+      ],
+      [
+        "Select seq XM_011960069.1",
+        "PREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X2, mRNA",
+        "Colobus angolensis palliatus",
+        "NA",
+        "336983",
+        "640",
+        "748",
+        "77%",
+        "5e-178",
+        "96.86%",
+        "434",
+        "XM_011960069.1"
+      ],
+      [
+        "Select seq XM_076839989.1",
+        "PREDICTED: Callospermophilus lateralis hemoglobin subunit alpha (LOC143384821), mRNA",
+        "Callospermophilus lateralis",
+        "golden-mantled ground squirrel",
+        "76772",
+        "628",
+        "628",
+        "98%",
+        "1e-174",
+        "86.80%",
+        "567",
+        "XM_076839989.1"
+      ],
+      [
+        "Select seq XM_053556072.1",
+        "PREDICTED: Nycticebus coucang hemoglobin subunit alpha-like (LOC128561619), mRNA",
+        "Nycticebus coucang",
+        "slow loris",
+        "9470",
+        "617",
+        "617",
+        "97%",
+        "2e-171",
+        "86.79%",
+        "658",
+        "XM_053556072.1"
+      ],
+      [
+        "Select seq XM_034670739.1",
+        "PREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC117804209), mRNA",
+        "Ailuropoda melanoleuca",
+        "giant panda",
+        "9646",
+        "612",
+        "612",
+        "82%",
+        "1e-169",
+        "90.08%",
+        "592",
+        "XM_034670739.1"
+      ],
+      [
+        "Select seq XM_002920155.4",
+        "PREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC100472013), mRNA",
+        "Ailuropoda melanoleuca",
+        "giant panda",
+        "9646",
+        "606",
+        "606",
+        "82%",
+        "5e-168",
+        "89.89%",
+        "663",
+        "XM_002920155.4"
+      ],
+      [
+        "Select seq XM_012659590.1",
+        "PREDICTED: Propithecus coquereli hemoglobin, alpha 1 (HBA1), mRNA",
+        "Propithecus coquereli",
+        "Coquerel's sifaka",
+        "379532",
+        "604",
+        "604",
+        "99%",
+        "2e-167",
+        "85.89%",
+        "576",
+        "XM_012659590.1"
+      ],
+      [
+        "Select seq XM_069486403.1",
+        "PREDICTED: Eulemur rufifrons hemoglobin subunit alpha (LOC138394438), mRNA",
+        "Eulemur rufifrons",
+        "Bennett's brown lemur",
+        "859984",
+        "601",
+        "601",
+        "96%",
+        "2e-166",
+        "86.27%",
+        "563",
+        "XM_069486403.1"
+      ],
+      [
+        "Select seq XM_027940371.2",
+        "PREDICTED: Marmota flaviventris hemoglobin subunit alpha 1 (Hba1), mRNA",
+        "Marmota flaviventris",
+        "yellow-bellied marmot",
+        "93162",
+        "595",
+        "595",
+        "100%",
+        "1e-164",
+        "85.27%",
+        "588",
+        "XM_027940371.2"
+      ],
+      [
+        "Select seq XM_046440878.2",
+        "PREDICTED: Marmota monax hemoglobin subunit alpha 1 (Hba1), mRNA",
+        "Marmota monax",
+        "woodchuck",
+        "9995",
+        "595",
+        "595",
+        "100%",
+        "1e-164",
+        "85.27%",
+        "606",
+        "XM_046440878.2"
+      ],
+      [
+        "Select seq XM_015491058.2",
+        "PREDICTED: Marmota marmota marmota hemoglobin subunit alpha 1 (Hba1), mRNA",
+        "Marmota marmota marmota",
+        "Alpine marmot",
+        "9994",
+        "595",
+        "595",
+        "100%",
+        "1e-164",
+        "85.27%",
+        "610",
+        "XM_015491058.2"
+      ],
+      [
+        "Select seq XM_081040025.1",
+        "Rhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493622), mRNA",
+        "Rhinolophus hipposideros",
+        "lesser horseshoe bat",
+        "77218",
+        "590",
+        "590",
+        "82%",
+        "5e-163",
+        "89.12%",
+        "559",
+        "XM_081040025.1"
+      ],
+      [
+        "Select seq XM_081040011.1",
+        "Rhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493614), mRNA",
+        "Rhinolophus hipposideros",
+        "lesser horseshoe bat",
+        "77218",
+        "590",
+        "590",
+        "82%",
+        "5e-163",
+        "89.12%",
+        "561",
+        "XM_081040011.1"
+      ],
+      [
+        "Select seq XM_045849121.1",
+        "PREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825583), mRNA",
+        "Phyllostomus hastatus",
+        "greater spear-nosed bat",
+        "9423",
+        "588",
+        "588",
+        "83%",
+        "2e-162",
+        "88.77%",
+        "580",
+        "XM_045849121.1"
+      ],
+      [
+        "Select seq XM_045849116.1",
+        "PREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825577), mRNA",
+        "Phyllostomus hastatus",
+        "greater spear-nosed bat",
+        "9423",
+        "588",
+        "588",
+        "83%",
+        "2e-162",
+        "88.77%",
+        "588",
+        "XM_045849116.1"
+      ],
+      [
+        "Select seq XM_066383080.1",
+        "PREDICTED: Saccopteryx leptura hemoglobin subunit alpha (LOC136403832), mRNA",
+        "Saccopteryx leptura",
+        "lesser sac-winged bat",
+        "249018",
+        "586",
+        "586",
+        "82%",
+        "7e-162",
+        "88.89%",
+        "585",
+        "XM_066383080.1"
+      ],
+      [
+        "Select seq XM_036460327.2",
+        "PREDICTED: Pipistrellus kuhlii hemoglobin subunit alpha (LOC118731626), mRNA",
+        "Pipistrellus kuhlii",
+        "Kuhl's pipistrelle",
+        "59472",
+        "586",
+        "586",
+        "83%",
+        "7e-162",
+        "88.80%",
+        "591",
+        "XM_036460327.2"
+      ],
+      [
+        "Select seq AB104818.1",
+        "Pipistrellus abramus HBA mRNA for alpha globin, complete cds",
+        "Pipistrellus abramus",
+        "NA",
+        "105295",
+        "573",
+        "573",
+        "81%",
+        "5e-158",
+        "88.68%",
+        "554",
+        "AB104818.1"
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Identities",
+        "Gaps",
+        "Strand",
+        "Frame"
+      ],
+      [
+        "1066 bits(577)",
+        "0.0()",
+        "577/577(100%)",
+        "0/577(0%)",
+        "Plus/Plus",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Identities",
+        "Gaps",
+        "Strand",
+        "Frame"
+      ],
+      [
+        "1066 bits(577)",
+        "0.0()",
+        "577/577(100%)",
+        "0/577(0%)",
+        "Plus/Plus",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Identities",
+        "Gaps",
+        "Strand",
+        "Frame"
+      ],
+      [
+        "1061 bits(574)",
+        "0.0()",
+        "576/577(99%)",
+        "0/577(0%)",
+        "Plus/Plus",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Identities",
+        "Gaps",
+        "Strand",
+        "Frame"
+      ],
+      [
+        "1040 bits(563)",
+        "0.0()",
+        "563/563(100%)",
+        "0/563(0%)",
+        "Plus/Plus",
+        ""
+      ]
+    ],
+    [
+      [
+        "Score",
+        "Expect",
+        "Identities",
+        "Gaps",
+        "Strand",
+        "Frame"
+      ],
+      [
+        "1040 bits(563)",
+        "0.0()",
+        "563/563(100%)",
+        "0/563(0%)",
+        "Plus/Plus",
+        ""
+      ]
+    ],
+    [
+      [
+        "Organism",
+        "Blast Name",
+        "Score",
+        "Number of Hits",
+        "Description"
+      ],
+      [
+        "root",
+        "",
+        "",
+        "113",
+        ""
+      ],
+      [
+        ".Boreoeutheria",
+        "placentals",
+        "",
+        "105",
+        ""
+      ],
+      [
+        "..Euarchontoglires",
+        "placentals",
+        "",
+        "95",
+        ""
+      ],
+      [
+        "...Primates",
+        "primates",
+        "",
+        "91",
+        ""
+      ],
+      [
+        "....Haplorrhini",
+        "primates",
+        "",
+        "88",
+        ""
+      ],
+      [
+        ".....Simiiformes",
+        "primates",
+        "",
+        "87",
+        ""
+      ],
+      [
+        "......Catarrhini",
+        "primates",
+        "",
+        "75",
+        ""
+      ],
+      [
+        ".......Hominoidea",
+        "primates",
+        "",
+        "41",
+        ""
+      ],
+      [
+        "........Hominidae",
+        "primates",
+        "",
+        "33",
+        ""
+      ],
+      [
+        ".........Homininae",
+        "primates",
+        "",
+        "28",
+        ""
+      ],
+      [
+        "..........Homo sapiens",
+        "primates",
+        "1066",
+        "17",
+        "\n\nHomo sapiens hits  \n\n"
+      ],
+      [
+        "..........Pan paniscus",
+        "primates",
+        "1016",
+        "2",
+        "\n\nPan paniscus hits  \n\n"
+      ],
+      [
+        "..........Pan troglodytes",
+        "primates",
+        "1003",
+        "6",
+        "\n\nPan troglodytes hits  \n\n"
+      ],
+      [
+        "..........Gorilla gorilla gorilla",
+        "primates",
+        "931",
+        "3",
+        "\n\nGorilla gorilla gorilla hits  \n\n"
+      ],
+      [
+        ".........Pongo pygmaeus",
+        "primates",
+        "983",
+        "2",
+        "\n\nPongo pygmaeus hits  \n\n"
+      ],
+      [
+        ".........Pongo abelii",
+        "primates",
+        "983",
+        "3",
+        "\n\nPongo abelii hits  \n\n"
+      ],
+      [
+        "........Nomascus leucogenys",
+        "primates",
+        "955",
+        "3",
+        "\n\nNomascus leucogenys hits  \n\n"
+      ],
+      [
+        "........Symphalangus syndactylus",
+        "primates",
+        "915",
+        "2",
+        "\n\nSymphalangus syndactylus hits  \n\n"
+      ],
+      [
+        "........Hylobates moloch",
+        "primates",
+        "909",
+        "2",
+        "\n\nHylobates moloch hits  \n\n"
+      ],
+      [
+        "........Hylobates lar",
+        "primates",
+        "737",
+        "1",
+        "\n\nHylobates lar hits  \n\n"
+      ],
+      [
+        ".......Rhinopithecus roxellana",
+        "primates",
+        "992",
+        "2",
+        "\n\nRhinopithecus roxellana hits  \n\n"
+      ],
+      [
+        ".......Trachypithecus francoisi",
+        "primates",
+        "976",
+        "3",
+        "\n\nTrachypithecus francoisi hits  \n\n"
+      ],
+      [
+        ".......Chlorocebus sabaeus",
+        "primates",
+        "970",
+        "2",
+        "\n\nChlorocebus sabaeus hits  \n\n"
+      ],
+      [
+        ".......Colobus angolensis palliatus",
+        "primates",
+        "970",
+        "2",
+        "\n\nColobus angolensis palliatus hits  \n\n"
+      ],
+      [
+        ".......Piliocolobus tephrosceles",
+        "primates",
+        "953",
+        "2",
+        "\n\nPiliocolobus tephrosceles hits  \n\n"
+      ],
+      [
+        ".......Macaca thibetana thibetana",
+        "primates",
+        "942",
+        "2",
+        "\n\nMacaca thibetana thibetana hits  \n\n"
+      ],
+      [
+        ".......Macaca nemestrina",
+        "primates",
+        "937",
+        "2",
+        "\n\nMacaca nemestrina hits  \n\n"
+      ],
+      [
+        ".......Macaca fascicularis",
+        "primates",
+        "937",
+        "2",
+        "\n\nMacaca fascicularis hits  \n\n"
+      ],
+      [
+        ".......Papio anubis",
+        "primates",
+        "893",
+        "1",
+        "\n\nPapio anubis hits  \n\n"
+      ],
+      [
+        ".......Macaca mulatta",
+        "primates",
+        "891",
+        "3",
+        "\n\nMacaca mulatta hits  \n\n"
+      ],
+      [
+        ".......Cercocebus atys",
+        "primates",
+        "832",
+        "1",
+        "\n\nCercocebus atys hits  \n\n"
+      ],
+      [
+        ".......Nasalis larvatus",
+        "primates",
+        "737",
+        "1",
+        "\n\nNasalis larvatus hits  \n\n"
+      ],
+      [
+        ".......Papio hamadryas",
+        "primates",
+        "734",
+        "1",
+        "\n\nPapio hamadryas hits  \n\n"
+      ],
+      [
+        ".......Cercopithecus wolfi",
+        "primates",
+        "732",
+        "1",
+        "\n\nCercopithecus wolfi hits  \n\n"
+      ],
+      [
+        ".......Miopithecus talapoin",
+        "primates",
+        "732",
+        "1",
+        "\n\nMiopithecus talapoin hits  \n\n"
+      ],
+      [
+        ".......Erythrocebus patas",
+        "primates",
+        "732",
+        "1",
+        "\n\nErythrocebus patas hits  \n\n"
+      ],
+      [
+        ".......Allenopithecus nigroviridis",
+        "primates",
+        "726",
+        "1",
+        "\n\nAllenopithecus nigroviridis hits  \n\n"
+      ],
+      [
+        ".......Colobus guereza",
+        "primates",
+        "721",
+        "1",
+        "\n\nColobus guereza hits  \n\n"
+      ],
+      [
+        ".......Chlorocebus aethiops",
+        "primates",
+        "721",
+        "1",
+        "\n\nChlorocebus aethiops hits  \n\n"
+      ],
+      [
+        ".......Lophocebus albigena",
+        "primates",
+        "671",
+        "1",
+        "\n\nLophocebus albigena hits  \n\n"
+      ],
+      [
+        ".......Theropithecus gelada",
+        "primates",
+        "660",
+        "2",
+        "\n\nTheropithecus gelada hits  \n\n"
+      ],
+      [
+        ".......Rhinopithecus bieti",
+        "primates",
+        "647",
+        "1",
+        "\n\nRhinopithecus bieti hits  \n\n"
+      ],
+      [
+        "......Aotus nancymaae",
+        "primates",
+        "881",
+        "3",
+        "\n\nAotus nancymaae hits  \n\n"
+      ],
+      [
+        "......Callithrix jacchus",
+        "primates",
+        "865",
+        "3",
+        "\n\nCallithrix jacchus hits  \n\n"
+      ],
+      [
+        "......Saimiri boliviensis",
+        "primates",
+        "828",
+        "2",
+        "\n\nSaimiri boliviensis hits  \n\n"
+      ],
+      [
+        "......Cebus imitator",
+        "primates",
+        "776",
+        "1",
+        "\n\nCebus imitator hits  \n\n"
+      ],
+      [
+        "......Sapajus apella",
+        "primates",
+        "765",
+        "2",
+        "\n\nSapajus apella hits  \n\n"
+      ],
+      [
+        "......Callithrix geoffroyi",
+        "primates",
+        "704",
+        "1",
+        "\n\nCallithrix geoffroyi hits  \n\n"
+      ],
+      [
+        ".....Carlito syrichta",
+        "primates",
+        "645",
+        "1",
+        "\n\nCarlito syrichta hits  \n\n"
+      ],
+      [
+        "....Nycticebus coucang",
+        "primates",
+        "617",
+        "1",
+        "\n\nNycticebus coucang hits  \n\n"
+      ],
+      [
+        "....Propithecus coquereli",
+        "primates",
+        "604",
+        "1",
+        "\n\nPropithecus coquereli hits  \n\n"
+      ],
+      [
+        "....Eulemur rufifrons",
+        "primates",
+        "601",
+        "1",
+        "\n\nEulemur rufifrons hits  \n\n"
+      ],
+      [
+        "...Callospermophilus lateralis",
+        "rodents",
+        "628",
+        "1",
+        "\n\nCallospermophilus lateralis hits  \n\n"
+      ],
+      [
+        "...Marmota flaviventris",
+        "rodents",
+        "595",
+        "1",
+        "\n\nMarmota flaviventris hits  \n\n"
+      ],
+      [
+        "...Marmota monax",
+        "rodents",
+        "595",
+        "1",
+        "\n\nMarmota monax hits  \n\n"
+      ],
+      [
+        "...Marmota marmota marmota",
+        "rodents",
+        "595",
+        "1",
+        "\n\nMarmota marmota marmota hits  \n\n"
+      ],
+      [
+        "..Neophocaena asiaeorientalis asiaeorientalis",
+        "whales & dolphins",
+        "830",
+        "1",
+        "\n\nNeophocaena asiaeorientalis asiaeorientalis hits  \n\n"
+      ],
+      [
+        "..Ailuropoda melanoleuca",
+        "carnivores",
+        "612",
+        "2",
+        "\n\nAiluropoda melanoleuca hits  \n\n"
+      ],
+      [
+        "..Rhinolophus hipposideros",
+        "bats",
+        "590",
+        "2",
+        "\n\nRhinolophus hipposideros hits  \n\n"
+      ],
+      [
+        "..Phyllostomus hastatus",
+        "bats",
+        "588",
+        "2",
+        "\n\nPhyllostomus hastatus hits  \n\n"
+      ],
+      [
+        "..Saccopteryx leptura",
+        "bats",
+        "586",
+        "1",
+        "\n\nSaccopteryx leptura hits  \n\n"
+      ],
+      [
+        "..Pipistrellus kuhlii",
+        "bats",
+        "586",
+        "1",
+        "\n\nPipistrellus kuhlii hits  \n\n"
+      ],
+      [
+        "..Pipistrellus abramus",
+        "bats",
+        "573",
+        "1",
+        "\n\nPipistrellus abramus hits  \n\n"
+      ],
+      [
+        ".synthetic construct",
+        "other sequences",
+        "800",
+        "8",
+        "\n\nsynthetic construct hits  \n\n"
+      ]
+    ],
+    [
+      [
+        "Description",
+        "Score",
+        "E value",
+        "Accession"
+      ],
+      [
+        "\n\nHomo sapiens (human) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "1066",
+        "0.0",
+        "\nNM_000558\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:14541 IMAGE:4047053), complete cds\n\n",
+        "1066",
+        "0.0",
+        "\nBC005931\n"
+      ],
+      [
+        "\n\nHomo sapiens mRNA for alpha 2 globin variant, clone: FCC107C11\n\n",
+        "1061",
+        "0.0",
+        "\nAK223392\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:29691 IMAGE:4849981), complete cds\n\n",
+        "1040",
+        "0.0",
+        "\nBC032122\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:60177 IMAGE:5209215), complete cds\n\n",
+        "1040",
+        "0.0",
+        "\nBC050661\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin subunit alpha 2 (HBA2), mRNA\n\n",
+        "953",
+        "0.0",
+        "\nNM_000517\n"
+      ],
+      [
+        "\n\nHomo sapiens messenger mRNA for hemoglobin alpha chain\n\n",
+        "935",
+        "0.0",
+        "\nV00493\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:17020 IMAGE:4177243), complete cds\n\n",
+        "933",
+        "0.0",
+        "\nBC008572\n"
+      ],
+      [
+        "\n\nHomo sapiens full length insert cDNA clone YB24D09\n\n",
+        "924",
+        "0.0",
+        "\nAF147332\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:126895 IMAGE:8069352), complete cds\n\n",
+        "913",
+        "0.0",
+        "\nBC101846\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin, alpha 1, mRNA (cDNA clone MGC:126897 IMAGE:8069354), complete cds\n\n",
+        "913",
+        "0.0",
+        "\nBC101848\n"
+      ],
+      [
+        "\n\nHomo sapiens Hemoglobin subunit alpha (HBA2) mRNA, complete cds\n\n",
+        "909",
+        "0.0",
+        "\nKX533500\n"
+      ],
+      [
+        "\n\nHomo sapiens alpha one globin (HBA1) mRNA, complete cds\n\n",
+        "902",
+        "0.0",
+        "\nAF105974\n"
+      ],
+      [
+        "\n\nHomo sapiens hemoglobin alpha-1 globin chain (HBA1) mRNA, complete cds\n\n",
+        "896",
+        "0.0",
+        "\nAF349571\n"
+      ],
+      [
+        "\n\nHomo sapiens alpha-2 globin (HBA1) mRNA, complete cds\n\n",
+        "891",
+        "0.0",
+        "\nAF097635\n"
+      ],
+      [
+        "\n\nTPA_inf: Homo sapiens GLNC1 gene for globin C1\n\n",
+        "861",
+        "0.0",
+        "\nLT548101\n"
+      ],
+      [
+        "\n\nTPA_inf: Homo sapiens GLNC2 gene for globin C2\n\n",
+        "861",
+        "0.0",
+        "\nLT548102\n"
+      ],
+      [
+        "\n\nPan paniscus (pygmy chimpanzee) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Pan paniscus hemoglobin subunit alpha (LOC100984160), mRNA\n\n",
+        "1016",
+        "0.0",
+        "\nXM_003809393\n"
+      ],
+      [
+        "\n\nPREDICTED: Pan paniscus hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "948",
+        "0.0",
+        "\nXM_003809390\n"
+      ],
+      [
+        "\n\nPan troglodytes (chimpanzee) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPan troglodytes hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "1003",
+        "0.0",
+        "\nNM_001042626\n"
+      ],
+      [
+        "\n\nPan troglodytes alpha-globin messenger RNA\n\n",
+        "1003",
+        "0.0",
+        "\nX00226\n"
+      ],
+      [
+        "\n\nPan troglodytes hemoglobin subunit alpha 2 (HBA2), mRNA\n\n",
+        "946",
+        "0.0",
+        "\nNM_001042627\n"
+      ],
+      [
+        "\n\nPan troglodytes alpha2-globin messenger RNA\n\n",
+        "946",
+        "0.0",
+        "\nX00227\n"
+      ],
+      [
+        "\n\nPREDICTED: Pan troglodytes hemoglobin subunit alpha (LOC129388389), mRNA\n\n",
+        "929",
+        "0.0",
+        "\nXM_055078620\n"
+      ],
+      [
+        "\n\nPREDICTED: Pan troglodytes hemoglobin subunit alpha-3-like (LOC129137268), mRNA\n\n",
+        "832",
+        "0.0",
+        "\nXM_054668109\n"
+      ],
+      [
+        "\n\nRhinopithecus roxellana (golden snub-nosed monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "992",
+        "0.0",
+        "\nXM_010381857\n"
+      ],
+      [
+        "\n\nPREDICTED: Rhinopithecus roxellana hemoglobin subunit alpha-like (LOC115895176), mRNA\n\n",
+        "985",
+        "0.0",
+        "\nXM_030924410\n"
+      ],
+      [
+        "\n\nPongo pygmaeus (Bornean orangutan) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015394), mRNA\n\n",
+        "983",
+        "0.0",
+        "\nXM_054453274\n"
+      ],
+      [
+        "\n\nPREDICTED: Pongo pygmaeus hemoglobin subunit alpha (LOC129015393), mRNA\n\n",
+        "881",
+        "0.0",
+        "\nXM_054453273\n"
+      ],
+      [
+        "\n\nPongo abelii (Sumatran orangutan) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Pongo abelii hemoglobin subunit alpha (LOC112128473), mRNA\n\n",
+        "983",
+        "0.0",
+        "\nXM_024233299\n"
+      ],
+      [
+        "\n\nPongo abelii hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "959",
+        "0.0",
+        "\nNM_001132429\n"
+      ],
+      [
+        "\n\nPongo abelii mRNA; cDNA DKFZp468J1717 (from clone DKFZp468J1717)\n\n",
+        "959",
+        "0.0",
+        "\nCR859361\n"
+      ],
+      [
+        "\n\nTrachypithecus francoisi (Francois's langur) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Trachypithecus francoisi hemoglobin subunit alpha (LOC117097923), mRNA\n\n",
+        "976",
+        "0.0",
+        "\nXM_033236450\n"
+      ],
+      [
+        "\n\nPREDICTED: Trachypithecus francoisi translation initiation factor IF-2-like (LOC117097922), mRNA\n\n",
+        "976",
+        "0.0",
+        "\nXM_033236449\n"
+      ],
+      [
+        "\n\nTrachypithecus francoisi hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "737",
+        "0.0",
+        "\nMH382886\n"
+      ],
+      [
+        "\n\nChlorocebus sabaeus (green monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (HBA), mRNA\n\n",
+        "970",
+        "0.0",
+        "\nXM_037996351\n"
+      ],
+      [
+        "\n\nPREDICTED: Chlorocebus sabaeus hemoglobin subunit alpha (LOC103231670), mRNA\n\n",
+        "953",
+        "0.0",
+        "\nXM_073014956\n"
+      ],
+      [
+        "\n\nColobus angolensis palliatus  [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X1, mRNA\n\n",
+        "970",
+        "0.0",
+        "\nXM_011960067\n"
+      ],
+      [
+        "\n\nPREDICTED: Colobus angolensis palliatus hemoglobin, alpha 1 (HBA1), transcript variant X2, mRNA\n\n",
+        "640",
+        "5e-178",
+        "\nXM_011960069\n"
+      ],
+      [
+        "\n\nNomascus leucogenys (northern white-cheeked gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1-like (LOC115830409), mRNA\n\n",
+        "955",
+        "0.0",
+        "\nXM_030798787\n"
+      ],
+      [
+        "\n\nPREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X1, mRNA\n\n",
+        "920",
+        "0.0",
+        "\nXM_003269100\n"
+      ],
+      [
+        "\n\nPREDICTED: Nomascus leucogenys hemoglobin subunit alpha-1 (LOC100583507), transcript variant X2, mRNA\n\n",
+        "915",
+        "0.0",
+        "\nXM_030798788\n"
+      ],
+      [
+        "\n\nPiliocolobus tephrosceles (Ugandan red Colobus) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Piliocolobus tephrosceles hemoglobin subunit alpha (LOC111524597), mRNA\n\n",
+        "953",
+        "0.0",
+        "\nXM_023189803\n"
+      ],
+      [
+        "\n\nPREDICTED: Piliocolobus tephrosceles hemoglobin subunit alpha (LOC113223029), mRNA\n\n",
+        "953",
+        "0.0",
+        "\nXM_026452618\n"
+      ],
+      [
+        "\n\nMacaca thibetana thibetana  [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T (LOC126944882), mRNA\n\n",
+        "942",
+        "0.0",
+        "\nXM_050774762\n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca thibetana thibetana hemoglobin subunit alpha-A/Q/R/T-like (LOC126944881), mRNA\n\n",
+        "937",
+        "0.0",
+        "\nXM_050774761\n"
+      ],
+      [
+        "\n\nMacaca nemestrina (pig-tailed macaque) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca nemestrina hemoglobin subunit alpha-1/2/3 (LOC139359788), mRNA\n\n",
+        "937",
+        "0.0",
+        "\nXM_071083758\n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca nemestrina hemoglobin subunit alpha-1/2/3 (LOC139359789), mRNA\n\n",
+        "937",
+        "0.0",
+        "\nXM_071083759\n"
+      ],
+      [
+        "\n\nMacaca fascicularis (crab-eating macaque) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136846), mRNA\n\n",
+        "937",
+        "0.0",
+        "\nXM_005590731\n"
+      ],
+      [
+        "\n\nPREDICTED: Macaca fascicularis hemoglobin subunit alpha-A/Q/R/T (LOC102136192), mRNA\n\n",
+        "937",
+        "0.0",
+        "\nXM_045382711\n"
+      ],
+      [
+        "\n\nGorilla gorilla gorilla (western lowland gorilla) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-like (LOC134757486), mRNA\n\n",
+        "931",
+        "0.0",
+        "\nXM_063699834\n"
+      ],
+      [
+        "\n\nPREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha (LOC115931067), mRNA\n\n",
+        "931",
+        "0.0",
+        "\nXM_031002843\n"
+      ],
+      [
+        "\n\nPREDICTED: Gorilla gorilla gorilla hemoglobin subunit alpha-3 (LOC101146261), mRNA\n\n",
+        "856",
+        "0.0",
+        "\nXM_004056858\n"
+      ],
+      [
+        "\n\nSymphalangus syndactylus (siamang) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462773), mRNA\n\n",
+        "915",
+        "0.0",
+        "\nXM_055243101\n"
+      ],
+      [
+        "\n\nPREDICTED: Symphalangus syndactylus hemoglobin subunit alpha-1 (LOC129462771), mRNA\n\n",
+        "915",
+        "0.0",
+        "\nXM_055243100\n"
+      ],
+      [
+        "\n\nHylobates moloch (silvery gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Hylobates moloch hemoglobin subunit alpha (LOC116465397), mRNA\n\n",
+        "909",
+        "0.0",
+        "\nXM_032148482\n"
+      ],
+      [
+        "\n\nPREDICTED: Hylobates moloch hemoglobin subunit alpha (LOC116465457), mRNA\n\n",
+        "909",
+        "0.0",
+        "\nXM_032148520\n"
+      ],
+      [
+        "\n\nPapio anubis (olive baboon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPapio anubis hemoglobin, alpha 1 (HBA1), mRNA\n\n",
+        "893",
+        "0.0",
+        "\nNM_001168816\n"
+      ],
+      [
+        "\n\nMacaca mulatta (Rhesus monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nMacaca mulatta hemoglobin subunit alpha 1 (HBA1), mRNA\n\n",
+        "891",
+        "0.0",
+        "\nNM_001266776\n"
+      ],
+      [
+        "\n\nTPA_inf: Macaca mulatta GLNC1 gene for globin C1\n\n",
+        "789",
+        "0.0",
+        "\nLT548130\n"
+      ],
+      [
+        "\n\nMacaca mulatta hemoglobin, alpha 2 (HBA), mRNA\n\n",
+        "732",
+        "0.0",
+        "\nNM_001044724\n"
+      ],
+      [
+        "\n\nAotus nancymaae (Ma's night monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC135268998), mRNA\n\n",
+        "881",
+        "0.0",
+        "\nXM_064362263\n"
+      ],
+      [
+        "\n\nPREDICTED: Aotus nancymaae hemoglobin subunit alpha (LOC105728358), mRNA\n\n",
+        "843",
+        "0.0",
+        "\nXM_012468715\n"
+      ],
+      [
+        "\n\nAotus nancymaae hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "710",
+        "0.0",
+        "\nMH382889\n"
+      ],
+      [
+        "\n\nCallithrix jacchus (white-tufted-ear marmoset) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC103787296), mRNA\n\n",
+        "865",
+        "0.0",
+        "\nXM_009008812\n"
+      ],
+      [
+        "\n\nPREDICTED: Callithrix jacchus hemoglobin subunit alpha (LOC118142868), mRNA\n\n",
+        "830",
+        "0.0",
+        "\nXM_035266305\n"
+      ],
+      [
+        "\n\nTPA_inf: Callithrix jacchus GLNC1 gene for globin C1\n\n",
+        "750",
+        "0.0",
+        "\nLT548141\n"
+      ],
+      [
+        "\n\nCercocebus atys (sooty mangabey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Cercocebus atys hemoglobin subunit alpha (LOC105574652), mRNA\n\n",
+        "832",
+        "0.0",
+        "\nXM_012035741\n"
+      ],
+      [
+        "\n\nNeophocaena asiaeorientalis asiaeorientalis (Yangtze finless porpoise) [whales & dolphins]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Neophocaena asiaeorientalis asiaeorientalis hemoglobin subunit alpha (LOC112392006), mRNA\n\n",
+        "830",
+        "0.0",
+        "\nXM_024733557\n"
+      ],
+      [
+        "\n\nSaimiri boliviensis (Bolivian squirrel monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101034843), mRNA\n\n",
+        "828",
+        "0.0",
+        "\nXM_003928343\n"
+      ],
+      [
+        "\n\nPREDICTED: Saimiri boliviensis hemoglobin subunit alpha (LOC101035149), mRNA\n\n",
+        "821",
+        "0.0",
+        "\nXM_003928344\n"
+      ],
+      [
+        "\n\nsynthetic construct  [other sequences]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nSynthetic construct clone IMAGE:100004391; FLH179692.01X; RZPDo839B06132D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein\n\n",
+        "800",
+        "0.0",
+        "\nDQ891761\n"
+      ],
+      [
+        "\n\nSynthetic construct clone IMAGE:100005739; FLH193826.01X; RZPDo839C0679D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein\n\n",
+        "800",
+        "0.0",
+        "\nDQ893109\n"
+      ],
+      [
+        "\n\nSynthetic construct Homo sapiens clone IMAGE:100009405; FLH179688.01L; RZPDo839B06131D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein\n\n",
+        "798",
+        "0.0",
+        "\nDQ894945\n"
+      ],
+      [
+        "\n\nSynthetic construct Homo sapiens clone IMAGE:100010843; FLH193822.01L; RZPDo839C0669D hemoglobin, alpha 2 (HBA2) gene, encodes complete protein\n\n",
+        "798",
+        "0.0",
+        "\nDQ896383\n"
+      ],
+      [
+        "\n\nSynthetic construct Homo sapiens clone FLH130873.01X hemoglobin alpha 2 (HBA2) mRNA, complete cds\n\n",
+        "793",
+        "0.0",
+        "\nAY893615\n"
+      ],
+      [
+        "\n\nSynthetic construct Homo sapiens clone FLH030176.01X hemoglobin alpha 2 (HBA2) mRNA, complete cds\n\n",
+        "793",
+        "0.0",
+        "\nAY890128\n"
+      ],
+      [
+        "\n\nSynthetic construct DNA, clone: pFN21AE1112, Homo sapiens HBA1 gene for hemoglobin, alpha 1, without stop codon, in Flexi system\n\n",
+        "791",
+        "0.0",
+        "\nAB590168\n"
+      ],
+      [
+        "\n\nSynthetic construct Homo sapiens clone FLH030172.01L hemoglobin alpha 2 (HBA2) mRNA, partial cds\n\n",
+        "789",
+        "0.0",
+        "\nAY892605\n"
+      ],
+      [
+        "\n\nCebus imitator (Panamanian white-faced capuchin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Cebus imitator hemoglobin subunit alpha (LOC108299244), mRNA\n\n",
+        "776",
+        "0.0",
+        "\nXM_017521561\n"
+      ],
+      [
+        "\n\nSapajus apella (tufted capuchin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Sapajus apella hemoglobin subunit alpha (LOC116547886), mRNA\n\n",
+        "765",
+        "0.0",
+        "\nXM_032273653\n"
+      ],
+      [
+        "\n\nPREDICTED: Sapajus apella hemoglobin subunit alpha (LOC116547888), mRNA\n\n",
+        "765",
+        "0.0",
+        "\nXM_032273655\n"
+      ],
+      [
+        "\n\nNasalis larvatus (proboscis monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nNasalis larvatus hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "737",
+        "0.0",
+        "\nMH382891\n"
+      ],
+      [
+        "\n\nHylobates lar (common gibbon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nHylobates lar hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "737",
+        "0.0",
+        "\nMH382885\n"
+      ],
+      [
+        "\n\nPapio hamadryas (hamadryas baboon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nTPA_inf: Papio hamadryas GLNC1 gene for globin C1\n\n",
+        "734",
+        "0.0",
+        "\nLT548134\n"
+      ],
+      [
+        "\n\nCercopithecus wolfi (Wolf's monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nCercopithecus wolfi hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "732",
+        "0.0",
+        "\nMH382894\n"
+      ],
+      [
+        "\n\nMiopithecus talapoin (talapoin) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nMiopithecus talapoin hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "732",
+        "0.0",
+        "\nMH382893\n"
+      ],
+      [
+        "\n\nErythrocebus patas (red guenon) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nErythrocebus patas hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "732",
+        "0.0",
+        "\nMH382890\n"
+      ],
+      [
+        "\n\nAllenopithecus nigroviridis (Allen's swamp monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nAllenopithecus nigroviridis hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "726",
+        "0.0",
+        "\nMH382892\n"
+      ],
+      [
+        "\n\nColobus guereza (mantled guereza) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nColobus guereza hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "721",
+        "0.0",
+        "\nMH382884\n"
+      ],
+      [
+        "\n\nChlorocebus aethiops (grivet monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nChlorocebus aethiops hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "721",
+        "0.0",
+        "\nMH382883\n"
+      ],
+      [
+        "\n\nCallithrix geoffroyi (Geoffroy's marmoset) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nCallithrix geoffroyi hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "704",
+        "0.0",
+        "\nMH382888\n"
+      ],
+      [
+        "\n\nLophocebus albigena (gray-cheeked mangabey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nLophocebus albigena hemoglobin subunit alpha (HBA) mRNA, complete cds\n\n",
+        "671",
+        "0.0",
+        "\nMH382887\n"
+      ],
+      [
+        "\n\nTheropithecus gelada (gelada) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Theropithecus gelada hemoglobin subunit alpha (LOC112618059), mRNA\n\n",
+        "660",
+        "0.0",
+        "\nXM_025374666\n"
+      ],
+      [
+        "\n\nPREDICTED: Theropithecus gelada hemoglobin subunit alpha (LOC147588065), mRNA\n\n",
+        "660",
+        "0.0",
+        "\nXM_086724167\n"
+      ],
+      [
+        "\n\nRhinopithecus bieti (black snub-nosed monkey) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Rhinopithecus bieti hemoglobin subunit alpha (LOC108525644), partial mRNA\n\n",
+        "647",
+        "3e-180",
+        "\nXM_017866554\n"
+      ],
+      [
+        "\n\nCarlito syrichta (Philippine tarsier) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Carlito syrichta hemoglobin subunit alpha-like (LOC103266303), partial mRNA\n\n",
+        "645",
+        "1e-179",
+        "\nXM_008063911\n"
+      ],
+      [
+        "\n\nCallospermophilus lateralis (golden-mantled ground squirrel) [rodents]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Callospermophilus lateralis hemoglobin subunit alpha (LOC143384821), mRNA\n\n",
+        "628",
+        "1e-174",
+        "\nXM_076839989\n"
+      ],
+      [
+        "\n\nNycticebus coucang (slow loris) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Nycticebus coucang hemoglobin subunit alpha-like (LOC128561619), mRNA\n\n",
+        "617",
+        "2e-171",
+        "\nXM_053556072\n"
+      ],
+      [
+        "\n\nAiluropoda melanoleuca (giant panda) [carnivores]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC117804209), mRNA\n\n",
+        "612",
+        "1e-169",
+        "\nXM_034670739\n"
+      ],
+      [
+        "\n\nPREDICTED: Ailuropoda melanoleuca hemoglobin subunit alpha (LOC100472013), mRNA\n\n",
+        "606",
+        "5e-168",
+        "\nXM_002920155\n"
+      ],
+      [
+        "\n\nPropithecus coquereli (Coquerel's sifaka) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Propithecus coquereli hemoglobin, alpha 1 (HBA1), mRNA\n\n",
+        "604",
+        "2e-167",
+        "\nXM_012659590\n"
+      ],
+      [
+        "\n\nEulemur rufifrons (Bennett's brown lemur) [primates]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Eulemur rufifrons hemoglobin subunit alpha (LOC138394438), mRNA\n\n",
+        "601",
+        "2e-166",
+        "\nXM_069486403\n"
+      ],
+      [
+        "\n\nMarmota flaviventris (yellow-bellied marmot) [rodents]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Marmota flaviventris hemoglobin subunit alpha 1 (Hba1), mRNA\n\n",
+        "595",
+        "1e-164",
+        "\nXM_027940371\n"
+      ],
+      [
+        "\n\nMarmota monax (woodchuck) [rodents]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Marmota monax hemoglobin subunit alpha 1 (Hba1), mRNA\n\n",
+        "595",
+        "1e-164",
+        "\nXM_046440878\n"
+      ],
+      [
+        "\n\nMarmota marmota marmota (Alpine marmot) [rodents]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Marmota marmota marmota hemoglobin subunit alpha 1 (Hba1), mRNA\n\n",
+        "595",
+        "1e-164",
+        "\nXM_015491058\n"
+      ],
+      [
+        "\n\nRhinolophus hipposideros (lesser horseshoe bat) [bats]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nRhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493622), mRNA\n\n",
+        "590",
+        "5e-163",
+        "\nXM_081040025\n"
+      ],
+      [
+        "\n\nRhinolophus hipposideros hemoglobin subunit alpha-1 (LOC308493614), mRNA\n\n",
+        "590",
+        "5e-163",
+        "\nXM_081040011\n"
+      ],
+      [
+        "\n\nPhyllostomus hastatus (greater spear-nosed bat) [bats]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825583), mRNA\n\n",
+        "588",
+        "2e-162",
+        "\nXM_045849121\n"
+      ],
+      [
+        "\n\nPREDICTED: Phyllostomus hastatus hemoglobin subunit alpha (LOC123825577), mRNA\n\n",
+        "588",
+        "2e-162",
+        "\nXM_045849116\n"
+      ],
+      [
+        "\n\nSaccopteryx leptura (lesser sac-winged bat) [bats]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Saccopteryx leptura hemoglobin subunit alpha (LOC136403832), mRNA\n\n",
+        "586",
+        "7e-162",
+        "\nXM_066383080\n"
+      ],
+      [
+        "\n\nPipistrellus kuhlii (Kuhl's pipistrelle) [bats]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPREDICTED: Pipistrellus kuhlii hemoglobin subunit alpha (LOC118731626), mRNA\n\n",
+        "586",
+        "7e-162",
+        "\nXM_036460327\n"
+      ],
+      [
+        "\n\nPipistrellus abramus  [bats]\n  \n\nNext\nPrevious\nFirst\n  \n"
+      ],
+      [
+        "\n\nPipistrellus abramus HBA mRNA for alpha globin, complete cds\n\n",
+        "573",
+        "5e-158",
+        "\nAB104818\n"
+      ]
+    ],
+    [
+      [
+        "Taxonomy",
+        "Number of hits",
+        "Number of Organisms",
+        "Description"
+      ],
+      [
+        "\n\nroot\n",
+        "113",
+        "54",
+        ""
+      ],
+      [
+        ".\n\nBoreoeutheria\n",
+        "105",
+        "53",
+        ""
+      ],
+      [
+        "..\n\nEuarchontoglires\n",
+        "95",
+        "46",
+        ""
+      ],
+      [
+        "...\n\nPrimates\n",
+        "91",
+        "42",
+        ""
+      ],
+      [
+        "....\n\nHaplorrhini\n",
+        "88",
+        "39",
+        ""
+      ],
+      [
+        ".....\n\nSimiiformes\n",
+        "87",
+        "38",
+        ""
+      ],
+      [
+        "......\n\nCatarrhini\n",
+        "75",
+        "32",
+        ""
+      ],
+      [
+        ".......\n\nHominoidea\n",
+        "41",
+        "10",
+        ""
+      ],
+      [
+        "........\n\nHominidae\n",
+        "33",
+        "6",
+        ""
+      ],
+      [
+        ".........\n\nHomininae\n",
+        "28",
+        "4",
+        ""
+      ],
+      [
+        "..........\n\nHomo sapiens\n",
+        "17",
+        "1",
+        "\n\nHomo sapiens hits  \n\n"
+      ],
+      [
+        "..........\n\nPan\n",
+        "8",
+        "2",
+        ""
+      ],
+      [
+        "...........\n\nPan paniscus\n",
+        "2",
+        "1",
+        "\n\nPan paniscus hits  \n\n"
+      ],
+      [
+        "...........\n\nPan troglodytes\n",
+        "6",
+        "1",
+        "\n\nPan troglodytes hits  \n\n"
+      ],
+      [
+        "..........\n\nGorilla gorilla gorilla\n",
+        "3",
+        "1",
+        "\n\nGorilla gorilla gorilla hits  \n\n"
+      ],
+      [
+        ".........\n\nPongo\n",
+        "5",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nPongo pygmaeus\n",
+        "2",
+        "1",
+        "\n\nPongo pygmaeus hits  \n\n"
+      ],
+      [
+        "..........\n\nPongo abelii\n",
+        "3",
+        "1",
+        "\n\nPongo abelii hits  \n\n"
+      ],
+      [
+        "........\n\nHylobatidae\n",
+        "8",
+        "4",
+        ""
+      ],
+      [
+        ".........\n\nNomascus leucogenys\n",
+        "3",
+        "1",
+        "\n\nNomascus leucogenys hits  \n\n"
+      ],
+      [
+        ".........\n\nSymphalangus syndactylus\n",
+        "2",
+        "1",
+        "\n\nSymphalangus syndactylus hits  \n\n"
+      ],
+      [
+        ".........\n\nHylobates\n",
+        "3",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nHylobates moloch\n",
+        "2",
+        "1",
+        "\n\nHylobates moloch hits  \n\n"
+      ],
+      [
+        "..........\n\nHylobates lar\n",
+        "1",
+        "1",
+        "\n\nHylobates lar hits  \n\n"
+      ],
+      [
+        ".......\n\nCercopithecidae\n",
+        "34",
+        "22",
+        ""
+      ],
+      [
+        "........\n\nColobinae\n",
+        "12",
+        "7",
+        ""
+      ],
+      [
+        ".........\n\nRhinopithecus\n",
+        "3",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nRhinopithecus roxellana\n",
+        "2",
+        "1",
+        "\n\nRhinopithecus roxellana hits  \n\n"
+      ],
+      [
+        "..........\n\nRhinopithecus bieti\n",
+        "1",
+        "1",
+        "\n\nRhinopithecus bieti hits  \n\n"
+      ],
+      [
+        ".........\n\nTrachypithecus francoisi\n",
+        "3",
+        "1",
+        "\n\nTrachypithecus francoisi hits  \n\n"
+      ],
+      [
+        ".........\n\nColobus\n",
+        "3",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nColobus angolensis palliatus\n",
+        "2",
+        "1",
+        "\n\nColobus angolensis palliatus hits  \n\n"
+      ],
+      [
+        "..........\n\nColobus guereza\n",
+        "1",
+        "1",
+        "\n\nColobus guereza hits  \n\n"
+      ],
+      [
+        ".........\n\nPiliocolobus tephrosceles\n",
+        "2",
+        "1",
+        "\n\nPiliocolobus tephrosceles hits  \n\n"
+      ],
+      [
+        ".........\n\nNasalis larvatus\n",
+        "1",
+        "1",
+        "\n\nNasalis larvatus hits  \n\n"
+      ],
+      [
+        "........\n\nCercopithecinae\n",
+        "22",
+        "15",
+        ""
+      ],
+      [
+        ".........\n\nChlorocebus\n",
+        "3",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nChlorocebus sabaeus\n",
+        "2",
+        "1",
+        "\n\nChlorocebus sabaeus hits  \n\n"
+      ],
+      [
+        "..........\n\nChlorocebus aethiops\n",
+        "1",
+        "1",
+        "\n\nChlorocebus aethiops hits  \n\n"
+      ],
+      [
+        ".........\n\nMacaca\n",
+        "9",
+        "4",
+        ""
+      ],
+      [
+        "..........\n\nMacaca thibetana thibetana\n",
+        "2",
+        "1",
+        "\n\nMacaca thibetana thibetana hits  \n\n"
+      ],
+      [
+        "..........\n\nMacaca nemestrina\n",
+        "2",
+        "1",
+        "\n\nMacaca nemestrina hits  \n\n"
+      ],
+      [
+        "..........\n\nMacaca fascicularis\n",
+        "2",
+        "1",
+        "\n\nMacaca fascicularis hits  \n\n"
+      ],
+      [
+        "..........\n\nMacaca mulatta\n",
+        "3",
+        "1",
+        "\n\nMacaca mulatta hits  \n\n"
+      ],
+      [
+        ".........\n\nPapio\n",
+        "2",
+        "2",
+        ""
+      ],
+      [
+        "..........\n\nPapio anubis\n",
+        "1",
+        "1",
+        "\n\nPapio anubis hits  \n\n"
+      ],
+      [
+        "..........\n\nPapio hamadryas\n",
+        "1",
+        "1",
+        "\n\nPapio hamadryas hits  \n\n"
+      ],
+      [
+        ".........\n\nCercocebus atys\n",
+        "1",
+        "1",
+        "\n\nCercocebus atys hits  \n\n"
+      ],
+      [
+        ".........\n\nCercopithecus wolfi\n",
+        "1",
+        "1",
+        "\n\nCercopithecus wolfi hits  \n\n"
+      ],
+      [
+        ".........\n\nMiopithecus talapoin\n",
+        "1",
+        "1",
+        "\n\nMiopithecus talapoin hits  \n\n"
+      ],
+      [
+        ".........\n\nErythrocebus patas\n",
+        "1",
+        "1",
+        "\n\nErythrocebus patas hits  \n\n"
+      ],
+      [
+        ".........\n\nAllenopithecus nigroviridis\n",
+        "1",
+        "1",
+        "\n\nAllenopithecus nigroviridis hits  \n\n"
+      ],
+      [
+        ".........\n\nLophocebus albigena\n",
+        "1",
+        "1",
+        "\n\nLophocebus albigena hits  \n\n"
+      ],
+      [
+        ".........\n\nTheropithecus gelada\n",
+        "2",
+        "1",
+        "\n\nTheropithecus gelada hits  \n\n"
+      ],
+      [
+        "......\n\nPlatyrrhini\n",
+        "12",
+        "6",
+        ""
+      ],
+      [
+        ".......\n\nAotus nancymaae\n",
+        "3",
+        "1",
+        "\n\nAotus nancymaae hits  \n\n"
+      ],
+      [
+        ".......\n\nCebidae\n",
+        "9",
+        "5",
+        ""
+      ],
+      [
+        "........\n\nCallithrix\n",
+        "4",
+        "2",
+        ""
+      ],
+      [
+        ".........\n\nCallithrix jacchus\n",
+        "3",
+        "1",
+        "\n\nCallithrix jacchus hits  \n\n"
+      ],
+      [
+        ".........\n\nCallithrix geoffroyi\n",
+        "1",
+        "1",
+        "\n\nCallithrix geoffroyi hits  \n\n"
+      ],
+      [
+        "........\n\nSaimiri boliviensis\n",
+        "2",
+        "1",
+        "\n\nSaimiri boliviensis hits  \n\n"
+      ],
+      [
+        "........\n\nCebinae\n",
+        "3",
+        "2",
+        ""
+      ],
+      [
+        ".........\n\nCebus imitator\n",
+        "1",
+        "1",
+        "\n\nCebus imitator hits  \n\n"
+      ],
+      [
+        ".........\n\nSapajus apella\n",
+        "2",
+        "1",
+        "\n\nSapajus apella hits  \n\n"
+      ],
+      [
+        ".....\n\nCarlito syrichta\n",
+        "1",
+        "1",
+        "\n\nCarlito syrichta hits  \n\n"
+      ],
+      [
+        "....\n\nStrepsirrhini\n",
+        "3",
+        "3",
+        ""
+      ],
+      [
+        ".....\n\nNycticebus coucang\n",
+        "1",
+        "1",
+        "\n\nNycticebus coucang hits  \n\n"
+      ],
+      [
+        ".....\n\nLemuriformes\n",
+        "2",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nPropithecus coquereli\n",
+        "1",
+        "1",
+        "\n\nPropithecus coquereli hits  \n\n"
+      ],
+      [
+        "......\n\nEulemur rufifrons\n",
+        "1",
+        "1",
+        "\n\nEulemur rufifrons hits  \n\n"
+      ],
+      [
+        "...\n\nMarmotini\n",
+        "4",
+        "4",
+        ""
+      ],
+      [
+        "....\n\nCallospermophilus lateralis\n",
+        "1",
+        "1",
+        "\n\nCallospermophilus lateralis hits  \n\n"
+      ],
+      [
+        "....\n\nMarmota\n",
+        "3",
+        "3",
+        ""
+      ],
+      [
+        ".....\n\nMarmota flaviventris\n",
+        "1",
+        "1",
+        "\n\nMarmota flaviventris hits  \n\n"
+      ],
+      [
+        ".....\n\nMarmota monax\n",
+        "1",
+        "1",
+        "\n\nMarmota monax hits  \n\n"
+      ],
+      [
+        ".....\n\nMarmota marmota marmota\n",
+        "1",
+        "1",
+        "\n\nMarmota marmota marmota hits  \n\n"
+      ],
+      [
+        "..\n\nLaurasiatheria\n",
+        "10",
+        "7",
+        ""
+      ],
+      [
+        "...\n\nNeophocaena asiaeorientalis asiaeorientalis\n",
+        "1",
+        "1",
+        "\n\nNeophocaena asiaeorientalis asiaeorientalis hits  \n\n"
+      ],
+      [
+        "...\n\nAiluropoda melanoleuca\n",
+        "2",
+        "1",
+        "\n\nAiluropoda melanoleuca hits  \n\n"
+      ],
+      [
+        "...\n\nChiroptera\n",
+        "7",
+        "5",
+        ""
+      ],
+      [
+        "....\n\nRhinolophus hipposideros\n",
+        "2",
+        "1",
+        "\n\nRhinolophus hipposideros hits  \n\n"
+      ],
+      [
+        "....\n\nYangochiroptera\n",
+        "5",
+        "4",
+        ""
+      ],
+      [
+        ".....\n\nPhyllostomus hastatus\n",
+        "2",
+        "1",
+        "\n\nPhyllostomus hastatus hits  \n\n"
+      ],
+      [
+        ".....\n\nSaccopteryx leptura\n",
+        "1",
+        "1",
+        "\n\nSaccopteryx leptura hits  \n\n"
+      ],
+      [
+        ".....\n\nPipistrellus\n",
+        "2",
+        "2",
+        ""
+      ],
+      [
+        "......\n\nPipistrellus kuhlii\n",
+        "1",
+        "1",
+        "\n\nPipistrellus kuhlii hits  \n\n"
+      ],
+      [
+        "......\n\nPipistrellus abramus\n",
+        "1",
+        "1",
+        "\n\nPipistrellus abramus hits  \n\n"
+      ],
+      [
+        ".\n\nsynthetic construct\n",
+        "8",
+        "1",
+        "\n\nsynthetic construct hits  \n\n"
+      ]
+    ]
+  ],
+  "data": null,
+  "parameters": {
+    "database": "Nucleotide collection (nr/nt)",
+    "program": "Highly similar sequences (megablast)",
+    "expect": "0.05"
+  },
+  "inputSha256": "6a2e6a77a0640e3e64762d403312a59b21ad4085cd9e7a6221de008fb74344b6",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:34:22Z"
+}

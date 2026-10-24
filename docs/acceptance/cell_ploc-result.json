@@ -1,0 +1,68 @@
+{
+  "siteId": "cell_ploc",
+  "recipeVersion": 1,
+  "url": "http://www.csbio.sjtu.edu.cn/cgi-bin/PlantmPLoc.cgi",
+  "title": "Plant-mPLoc server",
+  "tables": [
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites\n\n\n\n    | Read Me  |  Data  |  Citation  |  "
+      ],
+      [
+        " "
+      ],
+      [
+        "Your input sequence (180aa) is:"
+      ],
+      [
+        "\n>sp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\nMASSMLSSATMVASPAQATMVAPFNGLKSSAAFPATRKANNDITSITSNGGRVNCMQVWP\nPIGKKKFETLSYLPDLTDSELAKEVDYLIRNKWIPCVEFELEHGFVYREHGNSPGYYDGR\nYWTMWKLPLFGCTDSAQVLKEVEECKKEYPNAFIRIIGFDNTRQVQCISFIAYKPPSFTG"
+      ],
+      [
+        " "
+      ],
+      [
+        "----------- Plant-mPLoc Computation Result -----------"
+      ],
+      [
+        " "
+      ],
+      [
+        "Query protein\tPredicted location(s)\nsp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2\tChloroplast."
+      ]
+    ],
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites"
+      ],
+      [
+        "    | Read Me  |  Data  |  Citation  |  "
+      ]
+    ],
+    [
+      [
+        "Plant-mPLoc:Predicting subcellular localization of plant proteins including those with multiple sites"
+      ]
+    ],
+    [
+      [
+        "Query protein",
+        "Predicted location(s)"
+      ],
+      [
+        "sp|P10795|RBS1A_ARATH Ribulose bisphosphate carboxylase small subunit 1A, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RBCS-1A PE=1 SV=2",
+        "Chloroplast."
+      ]
+    ]
+  ],
+  "data": {
+    "locations": [
+      "chloroplast"
+    ]
+  },
+  "parameters": {
+    "organism": "Plant"
+  },
+  "inputSha256": "02a16f1d3e6d51a261c2f600485cac85b506e7ddd5dcfeeebdab0c51e249e269",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T11:50:19Z"
+}

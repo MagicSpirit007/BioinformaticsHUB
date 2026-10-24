@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import shutil
+import os
 import subprocess
 import re
 from pathlib import Path
@@ -33,6 +34,9 @@ def _is_aligned(records: list[dict]) -> bool:
 
 def _find_mafft() -> str | None:
     """Find MAFFT on PATH or in the repo/bundled engine tools directory."""
+    configured = os.environ.get("BIOINFORMATICS_HUB_MAFFT")
+    if configured and Path(configured).is_file():
+        return configured
     on_path = shutil.which("mafft") or shutil.which("mafft.bat")
     if on_path:
         return on_path
@@ -137,6 +141,7 @@ def run_msa_weblogo(
             try:
                 process = subprocess.run(
                     command,
+                    stdin=subprocess.DEVNULL,
                     capture_output=True,
                     text=True,
                     encoding="utf-8",

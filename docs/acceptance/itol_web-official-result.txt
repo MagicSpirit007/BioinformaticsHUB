@@ -1,0 +1,89 @@
+ Tree of Life
+ Upload
+ Data sharing
+ Help 
+ Sign in
+ Register
+0
+Citation: Letunic and Bork (2024) Nucleic Acids Res doi: 10.1093/nar/gkae268 | Privacy Policy
+design & development: biobyte solutions
+Control panel
+Basic
+Advanced
+Datasets
+Export
+Mode	
+Circular
+Rectangular
+Unrooted
+
+Mode options	Rotation:	
+°
+
+Branch lengths:	
+Use
+Ignore
+
+Invert tree:	
+Yes
+No
+
+Slanted:	
+Yes
+No
+
+Labels		
+Display
+Hide
+
+Label options	Font:	
+Arial
+Verdana
+Courier
+Courier New
+Times New Roman
+Georgia
+Impact
+Monotype Corsiva
+Arial
+	
+
+Font style:	
+px
+	
+▼
+	
+
+Position:	
+Aligned
+At tips
+
+Alignment:	
+Left
+Right
+
+Rotation:	
+On
+Off
+
+Shift:	
+px
+
+Branch options	Line style:	
+px
+	
+▼
+	
+
+Color gradient:	
+On
+Off
+
+Dashed lines:	
+px
+	
+▼
+	
+ Tree views 
+ Undo 
+ Reset tree

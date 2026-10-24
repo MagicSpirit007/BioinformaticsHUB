@@ -1,0 +1,106 @@
+{
+  "siteId": "orf_finder",
+  "recipeVersion": 1,
+  "url": "https://www.ncbi.nlm.nih.gov/orffinder/",
+  "title": "ORFfinder Viewer - NCBI",
+  "tables": [
+    [
+      [
+        "Label",
+        "Strand",
+        "Frame",
+        "Start",
+        "Stop",
+        "Length (nt | aa)"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "ORF1",
+        "+",
+        "2",
+        "38",
+        "466",
+        "429 | 142"
+      ],
+      [
+        "ORF2",
+        "-",
+        "2",
+        "267",
+        "163",
+        "105 | 34"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        ""
+      ]
+    ]
+  ],
+  "data": {
+    "orfs": 2,
+    "tables": [
+      [
+        [
+          "Label",
+          "Strand",
+          "Frame",
+          "Start",
+          "Stop",
+          "Length (nt | aa)"
+        ]
+      ],
+      [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ORF1",
+          "+",
+          "2",
+          "38",
+          "466",
+          "429 | 142"
+        ],
+        [
+          "ORF2",
+          "-",
+          "2",
+          "267",
+          "163",
+          "105 | 34"
+        ]
+      ],
+      [
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    ]
+  },
+  "parameters": {
+    "geneticCode": "1. Standard",
+    "startCodon": "ATG only"
+  },
+  "inputSha256": "6a2e6a77a0640e3e64762d403312a59b21ad4085cd9e7a6221de008fb74344b6",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:20:29Z"
+}

@@ -1,0 +1,255 @@
+EMBL-EBI
+About us
+Training
+Research
+Services
+EMBL-EBI home
+AlphaFold Protein Structure Database
+Home
+About
+FAQs
+Downloads
+API
+Collaborators
+Search
+Search
+Examples: MENFQKVEKIGEGTYGV...Free fatty acid receptor 2At1g58602Q9I1F6E. coli
+See search help
+Go to online course
+Hemoglobin subunit alpha
+Monomer
+•
+AF-P69905-F1
+•
+Version v6
+•
+Google DeepMind dataset
+•
+Download files
+Summary and Model Confidence
+Domains
+Annotations
+Similar Proteins
+Protein
+Hemoglobin subunit alpha
+Gene
+HBA1
+Source organism
+Homo sapiens (Human) go to search 
+UniProt
+P69905 go to UniProt
+Biological function
+Involved in oxygen transport from the lung to the various peripheral tissues. go to UniProt
+Found in
+16 entries in AFDB go to search
+Experimental structures
+356 structures in PDB for P69905 go to PDBe-KB
+Average pLDDT
+98.06 (Very high)
+pLDDT distribution
+ 
+99.3% Very high
+ 
+0% High
+ 
+0.7% Low
+ 
+0% Very low
+Copy sequence
+A | 1: Hemoglobin subunit alpha
+1    ​M​​V​​L​​S​​P​​A​​D​​K​​T​​N​11   ​V​​K​​A​​A​​W​​G​​K​​V​​G​​A​21   ​H​​A​​G​​E​​Y​​G​​A​​E​​A​​L​31   ​E​​R​​M​​F​​L​​S​​F​​P​​T​​T​41   ​K​​T​​Y​​F​​P​​H​​F​​D​​L​​S​51   ​H​​G​​S​​A​​Q​​V​​K​​G​​H​​G​61   ​K​​K​​V​​A​​D​​A​​L​​T​​N​​A​71   ​V​​A​​H​​V​​D​​D​​M​​P​​N​​A​81   ​L​​S​​A​​L​​S​​D​​L​​H​​A​​H​91   ​K​​L​​R​​V​​D​​P​​V​​N​​F​​K​101  ​L​​L​​S​​H​​C​​L​​L​​V​​T​​L​111  ​A​​A​​H​​L​​P​​A​​E​​F​​T​​P​121  ​A​​V​​H​​A​​S​​L​​D​​K​​F​​L​131  ​A​​S​​V​​S​​T​​V​​L​​T​​S​​K​141  ​Y​​R​
+0
+142
+Scored residue
+20
+40
+60
+80
+100
+120
+Aligned residue
+0
+142
+20
+40
+60
+80
+100
+120
+0
+5
+10
+15
+20
+25
+30
+Expected position error (Ångströms)
+Predicted Aligned Error (PAE)
+PAE measures the confidence in the relative position of two residues - see Help section below for more information.
+
+Share your feedback on the structure
+
+Report an issue
+Model Confidence
+ 
+Very high (pLDDT > 90)
+ 
+High (90 > pLDDT > 70)
+ 
+Low (70 > pLDDT > 50)
+ 
+Very low (pLDDT < 50)
+pLDDT is a per-residue measure of local confidence. Learn more...
+Domains (1)
+Annotations
+Audit history
+Model creation date: 1 Aug 2025
+Sequence version date: 23 Jan 2007
+Dataset publication
+Help
+Go to AlphaFold training course
+How to interpret the Predicted Aligned Error
+
+ 
+
+The Predicted Aligned Error (PAE) measures the confidence in the relative position of two residues within the predicted structure, providing insight into the reliability of relative position and orientations of different domains. Consider the human protein encoded by the gene GNE (Q9Y223).
+
+GNE has two distinct domains according to experimentally determined structures in the Protein Data Bank (PDBe-KB). Does AlphaFold confidently predict their relative positions? We can use the interactive Predicted Aligned Error (PAE) plot to answer this question.
+
+The PAE plot is not an inter-residue distance map or a contact map. Instead, the shade of green indicates the expected distance error in Ångströms (Å), ranging from 0 Å to an arbitrary cut-off of 31 Å. The colour at (x, y) corresponds to the expected distance error in the residue x’s position when the predicted and the true structures are aligned on residue y.
+
+A dark green tile corresponds to a good prediction (low error), whereas a light green tile indicates poor prediction (high error). For example, when aligning on residue 300:
+
+
+We’re confident in the relative position of residue 200
+We’re not confident in the relative position of residue 600
+
+Selecting along the diagonal highlights internally consistent regions within the same residue range; the yellow line marks the main diagonal (x = y) and is a visual aid rather than a PAE feature.
+
+The two low-error, dark green squares correspond to the two domains. By clicking and dragging, you can highlight these squares on the structure. If you want to remove the highlighting, click the cross icon.
+
+When selecting an off-diagonal region, the plot visually represents the relationship between the selected ranges on the sequence and structure. The x range corresponds to the selection for scored residues, highlighted in orange, while the y range of aligned residues is highlighted in emerald green.
+
+
+
+
+
+
+The high PAE values across the whole inter-domain region indicate that for this particular protein, AlphaFold does not reliably predict the relative position of the domains.
+
+Let’s consider another inter-domain example, the human protein encoded by DIP2B (Q9P265).
+
+In this case, we have confidence in the relative position of scored residues around 1450 when aligned with residues around 850, suggesting a packing between the small central domains.
+
+Note that the PAE scores are asymmetrical, meaning there might be variations in PAE values between (x,y) and (y,x) positions. This is particularly relevant for loop regions with highly uncertain orientations, as seen on the DNA topoisomerase 3 (Q8T2T7).
+
+ 
+
+How to use The Encyclopedia of Domains
+
+ 
+
+The Encyclopedia of Domains (TED) is a comprehensive resource that identifies and classifies protein domains within the AlphaFold Database using deep learning-based domain parsing and structure comparison. TED domains that share significant structural similarity with a previously characterised CATH domain are labelled with their predicted classification at the Topology/Fold level (3-level C.A.T. identifier) or Homologous Superfamily level (4-level C.A.T.H. identifier). Domains without classification labels indicate no similarity to CATH domains used during TED’s classification workflow.
+
+You can visualise TED Domains in the AlphaFold database entries in both the Mol* 3D Viewer and the domain annotation track displayed above the interactive PAE plot. Hovering and clicking on an individual domain track opens a tooltip with details such as the total number of residues (length), its position within the protein sequence (boundaries), the average pLDDT score, the 3-level C.A.T or 4-level C.A.T.H classification identifier and a quality metric for the domain assignment. Learn more in our FAQ.
+
+Let’s explore some examples:
+
+Hemoglobin subunit gamma-1 (AF-P69891-F1). This protein’s PAE shows high confidence in the relative positions of almost all residues. TED identifies one domain, spanning residues 5 to 142, with a superfamily assignment.
+
+Note that the Domain annotation track and the Mol* 3D Viewer structure colourings are mapped to individual domain boundaries and not classification levels. Therefore, an entry with multiple domains of the same Fold or Homologous Superfamily will show different colours for each domain. For example, the Bacterial Ig-like domain family protein (AF-A0A009R2D9-F1) contains twelve domains of varying quality, mostly assigned to the same Homologous Superfamily, but each domain has a distinct colour.
+
+Other important examples to better understand the complexity of protein architectures:
+
+
+SPR protein (AF-A0A836E5A2-F1), this entry contains one domain with insertions between segments, resulting in three boundaries, according to TED data. This illustrates how a single domain can have discontinuous segments in the sequence.
+
+
+Inosine-5'-monophosphate dehydrogenase (AF-Q21KQ8-F1) here, where a split domain (Domain 1, green) has another domain (Domain 2, orange) nested between its segments. This demonstrates the complexity of domain architectures compared to sequence.
+
+In the help section How to interpret the Predicted Aligned Error, we discussed the multi-domain protein like Disco-interacting protein 2 homolog B (AF-Q9P265-F1). With the integration of TED data, we see that the PAE shows a high confidence in the relative positions of domain 5 and domain 3.
+
+In the DUF5621 domain-containing protein (AF-Q5ZSU4-F1), TED identifies distinct domains, and the PAE shows an overall high confidence in the relative position of all domains.
+
+Some entries might not contain TED domains, such as the TrpR gene coding for the trp operon repressor protein (AF-A0A376RRE1-F1). There are several reasons why an entry might not have any TED domains, including the structural element does not qualify as a distinct domain according to TED's criteria, the fragment might not contain a complete domain or the overall entry has a very low pLDDT.
+
+ 
+
+Last updated
+Last updated in AlphaFold DB version 2025-08-01, created with the AlphaFold Monomer v2.0 pipeline.
+Licence and attributions
+
+Data is available for academic and commercial use, under a CC-BY-4.0 license.
+
+ 
+
+EMBL-EBI expects attribution (e.g. in publications, services or products) for any of its online services, databases or software in accordance with good scientific practice. If you make use of this prediction, please cite:
+
+Jumper, J et al. Highly accurate protein structure prediction with AlphaFold. Nature (2021)
+
+
+Bertoni D. et al. AlphaFold Protein Structure Database 2025: a redesigned interface and updated structural coverage, Nucleic Acids Research, (2025)
+
+
+ 
+
+If you use data from AlphaMissense in your work, please cite the following papers:
+
+Cheng, J et al. Accurate proteome-wide missense variant effect prediction with AlphaMissense. Science (2023).
+
+ 
+
+AlphaFold Data Copyright (2022) DeepMind Technologies Limited.
+AlphaMissense Copyright (2023) DeepMind Technologies Limited.
+
+
+Feedback and questions
+If you want to share feedback on an AlphaFold structure prediction, consider using the feedback buttons at the bottom of each structure viewer. If you have any questions that are not covered in the  FAQs, please contact [notification email] . If you have feedback on the website or experience any bugs please contact [notification email]. 
+
+Let us know how the AlphaFold Protein Structure Database has been useful in your research at  [notification email].
+Disclaimer
+
+The AlphaFold Data and other information provided on this site is for theoretical modelling only, caution should be exercised in its use. It is provided 'as-is' without any warranty of any kind, whether expressed or implied. For clarity , no warranty is given that use of the information shall not infringe the rights of any third party. The information is not intended to be a substitute for professional medical advice, diagnosis, or treatment, and does not constitute medical or other professional advice.
+
+ 
+
+Use of the AlphaFold Protein Structure Database is subject to EMBL-EBI Terms of Use.
+
+Developed by
+This website requires cookies, and the limited processing of your personal data in order to function. By using the site you are agreeing to this as outlined in our Privacy Notice and Terms of Use.
+I agree, dismiss this banner
+
+EMBL-EBI is the home for big data in biology. We help scientists exploit complex information to make discoveries that benefit humankind.
+
+SERVICES
+Data resources and tools
+Data submission
+Support and feedback
+Licensing
+RESEARCH
+Publications
+Research groups
+Postdocs and PhDs
+TRAINING
+Live training
+On-demand training
+Support for trainers
+Contact organisers
+INDUSTRY
+Members Area
+Contact Industry team
+ABOUT
+Contact us
+Events
+Jobs
+News
+People and groups
+Intranet for staff
+
+EMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK.
+Tel: +44 (0)1223 49 44 44
+Full contact details
+
+Copyright © EMBL 2023
+EMBL-EBI is part of the European Molecular Biology Laboratory
+Terms of use

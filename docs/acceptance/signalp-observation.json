@@ -1,0 +1,21 @@
+{
+  "url": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC52700009DECA0B1A9C7&wait=20",
+  "title": "SignalP-6.0 Results",
+  "text": "SignalP-6.0 - Results\nSummary of 1 predicted sequences from eukarya\n\nPredictions list. Use the instruction page for more detailed description of the output page.\n\nDownload:\n\nJSON Summary\n\nPrediction summary\n\nProcessed entries fasta\n\nProcessed entries gff3\n\nRegion predictions gff3\n\nAll results compressed (zip)\n\nPredicted proteins\nsp_P69905_HBA_HUMAN Hemoglobin subunit alpha\n\n\nPrediction: Other\n\n\n\n\n\nProtein type\tOther\tSignal Peptide (Sec/SPI)\nLikelihood\t1\t0\nDownload: PNG / EPS / Tabular\n\n\n\nInstructions - SignalP 6.0\nOpen guide in new window",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Protein type",
+        "Other",
+        "Signal Peptide (Sec/SPI)"
+      ],
+      [
+        "Likelihood",
+        "1",
+        "0"
+      ]
+    ]
+  ]
+}

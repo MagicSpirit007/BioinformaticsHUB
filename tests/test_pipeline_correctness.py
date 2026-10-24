@@ -286,12 +286,15 @@ class TestRetiredRuntimeSurface(unittest.TestCase):
         for removed in ("--proxy", "--with-llm-summary", "--skip-blast", "--with-hmmer"):
             self.assertNotIn(removed, help_text)
 
-    def test_no_http_api_or_llm_source_modules_remain(self) -> None:
+    def test_legacy_pipeline_remains_local_and_new_browser_workflow_uses_vendored_jev(self) -> None:
         python_files = list(SCRIPTS.rglob("*.py"))
         relative = {path.relative_to(SCRIPTS).as_posix() for path in python_files}
         self.assertNotIn("one_click_pipeline.py", relative)
-        self.assertFalse(any(path.endswith("_api.py") for path in relative))
-        self.assertFalse(any("llm" in path.lower() for path in relative))
+        self.assertIn('vendor/jev_ultrafast/model.py', relative)
+        self.assertIn('workflow/site.py', relative)
+        workflow = (SCRIPTS / 'workflow/site.py').read_text(encoding='utf-8')
+        self.assertIn('from vendor.jev_ultrafast import Agent', workflow)
+        self.assertNotIn('playwright', workflow.lower())
         browser_sources = {path for path in relative if path.startswith("browser/")}
         self.assertEqual(browser_sources, {"browser/__init__.py", "browser/plant_mploc.py"})
         for path in python_files:

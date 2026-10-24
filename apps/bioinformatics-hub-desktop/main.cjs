@@ -5,7 +5,7 @@
  * performs sequence preprocessing/local tools plus explicitly allow-listed
  * auto-submit sites and reports newline-delimited JSON events back here.
  */
-const { app, BrowserWindow, ipcMain, dialog, shell, Menu, protocol } = require('electron')
+const { app, BrowserWindow, ipcMain, dialog, shell, Menu, protocol, Tray, nativeImage } = require('electron')
 const path = require('path')
 const fs = require('fs')
 const { spawn, spawnSync } = require('child_process')
@@ -65,6 +65,15 @@ const LOCAL_TOOL_IDS = new Set([
 ])
 
 let mainWindow = null
+let workflowService = null
+let tray = null
+let quitting = false
+let shutdownComplete = false
+if (typeof app.requestSingleInstanceLock === 'function' && !app.requestSingleInstanceLock()) {
+  app.quit()
+  process.exit(0)
+}
+app.on('second-instance', () => { if (mainWindow && !mainWindow.isDestroyed()) { mainWindow.show(); mainWindow.focus() } })
 
 // UI language for main-process messages (errors, dialogs, research bundle).
 // The renderer pushes its selection via app:setLocale; defaults to the OS locale.
@@ -514,6 +523,7 @@ function createWindow() {
     },
   })
   attachNavigationGuards(mainWindow)
+  mainWindow.on('close', event => { if (!quitting) { event.preventDefault(); mainWindow.hide() } })
   mainWindow.once('ready-to-show', () => mainWindow.show())
 
   const devUrl = process.env.BIOINFORMATICS_HUB_DEV_URL || 'http://127.0.0.1:5173'
@@ -1809,6 +1819,7 @@ function writeResearchBundle(runDir, session) {
 }
 
 ipcMain.handle('session:start', async (_event, args) => {
+  if (workflowService) throw new Error('Please create a v2 workflow. Legacy tasks are available for reading and export.')
   const fastaText = String(args?.fastaText ?? args?.sequenceText ?? args?.cdsText ?? '').trim()
   if (!fastaText) throw new Error(msg('session.missingFasta'))
   assertFastaByteLimit(fastaText)
@@ -2144,6 +2155,7 @@ ipcMain.handle('session:list', async () => {
     }
     try {
       const session = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+      if (session.schemaVersion === 2) continue
       const input = session.input && typeof session.input === 'object' ? session.input : {}
       const publicInput = publicSession(session, runDir).input
       items.push({
@@ -2374,6 +2386,14 @@ app.whenReady().then(() => {
   Menu.setApplicationMenu(null)
   protocol.handle('bioinformatics-hub-artifact', handleArtifactRequest)
   createWindow()
+  workflowService = require('./workflow/service.cjs').installWorkflow({ app, ipcMain, dialog, shell, getWindow: () => mainWindow, paths: require('./paths.cjs') })
+  // A small embedded PNG avoids a missing tray resource in slim installations.
+  const icon = nativeImage.createFromPath(path.join(__dirname, 'workflow', 'tray.png'))
+  tray = new Tray(icon)
+  tray.setToolTip('BioinformaticsHUB · 流水线 / Workflows')
+  const show = () => { if (!mainWindow || mainWindow.isDestroyed()) createWindow(); mainWindow.show(); mainWindow.focus() }
+  tray.setContextMenu(Menu.buildFromTemplate([{ label: '打开 / Open BioinformaticsHUB', click: show }, { type: 'separator' }, { label: '保存并退出 / Save and quit', click: () => { quitting = true; app.quit() } }]))
+  tray.on('double-click', show)
 })
 
 app.on('activate', () => {
@@ -2381,8 +2401,17 @@ app.on('activate', () => {
 })
 
 app.on('window-all-closed', () => {
-  stopAllSessions()
-  if (process.platform !== 'darwin') app.quit()
+  if (quitting) app.quit()
 })
 
-app.on('before-quit', stopAllSessions)
+app.on('before-quit', event => {
+  quitting = true
+  if (shutdownComplete) return
+  event.preventDefault()
+  stopAllSessions()
+  Promise.resolve(workflowService?.shutdown()).finally(() => {
+    shutdownComplete = true
+    tray?.destroy()
+    app.quit()
+  })
+})

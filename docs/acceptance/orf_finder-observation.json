@@ -1,0 +1,51 @@
+{
+  "url": "https://www.ncbi.nlm.nih.gov/orffinder/",
+  "title": "ORFfinder Viewer - NCBI",
+  "text": "Skip to main page content\n\nAn official website of the United States government\n\n Here's how you know \nLog in\nAccess keys\nNCBI Homepage\nMyNCBI Homepage\nMain Content\nMain Navigation\n< ORFfinder submitting page\n> Help\nOpen Reading Frame Viewer\nSequence\nORFs found: 2 Genetic code: 1 Start codon: 'ATG' only\n1\nFind:\n\t\nTools\nTracks\n(U) ORFfinder_9.20.193516184\nORF1 \n1: 1..577 (577 nt)\nTracks shown: 2/3\nSix-frame translation...\nMark subset...\nMarked: 0 Download marked set as \nProtein FASTA\nCDS FASTA\nASN.1\nFeature table\nORF1 (142 aa) Display ORF as... Mark\nMarked set ( 0 )\nSmartBLAST best hit titles... \nBLAST\nORF1\nSmartBLAST\nBLAST\nBLAST Database:\n\nUniProtKB/Swiss-Prot (swissprot)\nReference proteins (refseq_protein)\nNon-redundant protein sequences (nr)\nLabel\n\t\nStrand\n\t\nFrame\n\t\nStart\n\t\nStop\n\t\nLength (nt | aa)\n\nORF1\t+\t2\t38\t466\t429 | 142\nORF2\t-\t2\t267\t163\t105 | 34\nGo back to the submitting page...\nFOLLOW NCBI\n\nConnect with NLM\n\n  \n\nNational Library of Medicine\n8600 Rockville Pike\nBethesda, MD 20894\n\nWeb Policies\nFOIA\nHHS Vulnerability Disclosure\n\nHelp\nAccessibility\nCareers\n\nNLM\nNIH\nHHS\nUSA.gov",
+  "svgText": [],
+  "tables": [
+    [
+      [
+        "Label",
+        "Strand",
+        "Frame",
+        "Start",
+        "Stop",
+        "Length (nt | aa)"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "ORF1",
+        "+",
+        "2",
+        "38",
+        "466",
+        "429 | 142"
+      ],
+      [
+        "ORF2",
+        "-",
+        "2",
+        "267",
+        "163",
+        "105 | 34"
+      ]
+    ],
+    [
+      [
+        "",
+        "",
+        ""
+      ]
+    ]
+  ]
+}

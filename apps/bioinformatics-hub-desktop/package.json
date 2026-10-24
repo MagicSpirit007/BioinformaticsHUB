@@ -1,18 +1,20 @@
 {
   "name": "bioinformatics-hub-desktop",
   "private": true,
-  "version": "0.5.2",
-  "description": "BioinformaticsHUB Electron shell — website analysis aggregator and local tools",
+  "version": "0.7.0",
+  "description": "Bioinformatics analysis tools for external AI and original result directory",
   "author": "MagicSpirit007",
   "main": "main.cjs",
   "scripts": {
     "dev": "electron .",
     "start": "electron .",
-    "test": "node --test tests/paths.helpers.test.cjs",
+    "test": "node --test tests/*.test.cjs",
     "check": "node --check main.cjs && node --check paths.cjs && node --check preload.cjs",
     "pack": "electron-builder --dir",
     "dist": "electron-builder --win --x64",
-    "dist:nsis": "electron-builder --win nsis --x64"
+    "dist:nsis": "electron-builder --win nsis --x64",
+    "cli": "node workflow/entry.cjs",
+    "mcp": "node workflow/entry.cjs mcp"
   },
   "devDependencies": {
     "electron": "^35.1.2",
@@ -31,6 +33,7 @@
       "main.cjs",
       "paths.cjs",
       "preload.cjs",
+      "workflow/**/*",
       "fallback.html",
       "package.json"
     ],
@@ -46,11 +49,20 @@
         "from": "../../packaging/engine",
         "to": "engine",
         "filter": [
-          "**/*",
+          "scripts/**/*",
+          "doctor.py",
+          "install_tools.ps1",
+          "requirements-engine.txt",
+          "requirements-browser.txt",
+          "THIRD_PARTY_NOTICES.md",
+          "build-manifest.json",
           "!**/__pycache__/**",
           "!**/*.pyc",
           "!**/.doctor_mpl.png",
-          "!**/runs/**"
+          "!**/runs/**",
+          "!**/.env*",
+          "!**/.venv/**",
+          "!**/artifacts/**"
         ]
       }
     ],
@@ -77,6 +89,15 @@
       "createStartMenuShortcut": true,
       "shortcutName": "BioinformaticsHUB",
       "deleteAppDataOnUninstall": false
-    }
+    },
+    "extraFiles": [
+      {
+        "from": "../../packaging/biohub.cmd",
+        "to": "biohub.cmd"
+      }
+    ],
+    "asarUnpack": [
+      "workflow/open-browser.ps1"
+    ]
   }
 }

@@ -120,6 +120,12 @@ def run_iqtree(
         return {"error": str(exc)}
 
     prefix = work / "tree"
+    parameters = getattr(cfg, "workflow_parameters", {})
+    selected_model = parameters.get("model", "MFP")
+    bootstrap = str(parameters.get("bootstrap", "1000"))
+    threads = str(parameters.get("threads", "AUTO"))
+    if selected_model not in {"MFP", "LG+G", "JTT+G", "WAG+G", "GTR+G"} or bootstrap not in {"1000", "2000", "5000"} or threads not in {"AUTO", "1", "2", "4", "8"}:
+        raise ValueError("Invalid IQ-TREE workflow parameters")
     cmd = [
         str(exe),
         "-s",
@@ -127,19 +133,25 @@ def run_iqtree(
         "-st",
         sequence_type,
         "-m",
-        "MFP",
+        selected_model,
         "-B",
-        "1000",
+        bootstrap,
         "-T",
-        "AUTO",
+        threads,
         "--prefix",
         str(prefix),
         "-redo",
     ]
+    if parameters.get('seed') is not None:
+        seed = str(parameters['seed'])
+        if not seed.isdigit() or not 1 <= int(seed) <= 2147483647:
+            raise ValueError('IQ-TREE seed must be a positive 32-bit integer')
+        cmd.extend(['-seed', seed])
     log("[iqtree] " + " ".join(cmd))
     try:
         p = subprocess.run(
             cmd,
+            stdin=subprocess.DEVNULL,
             capture_output=True,
             text=True,
             encoding="utf-8",
@@ -204,14 +216,15 @@ def run_iqtree(
         "svg": f"{STEP_DIRS['tree']}/tree.svg" if svg_path and svg_path.is_file() else None,
         "png": f"{STEP_DIRS['tree']}/tree.png" if png_path and Path(png_path).is_file() else None,
         "model": model_info,
-        "bootstrap": "UFBoot 1000",
-        "method": "IQ-TREE2 ML + ModelFinder",
+        "bootstrap": "UFBoot " + bootstrap,
+        "method": "IQ-TREE2 ML + ModelFinder" if selected_model == "MFP" else "IQ-TREE2 ML",
         "sequenceType": sequence_type,
         "parameters": {
             "sequenceType": sequence_type,
-            "model": "MFP",
-            "ultrafastBootstrap": 1000,
-            "threads": "AUTO",
+            "model": selected_model,
+            "ultrafastBootstrap": int(bootstrap),
+            "threads": threads,
+            "seed": int(parameters['seed']) if parameters.get('seed') is not None else None,
         },
     }
     write_json(out / "iqtree.json", result)

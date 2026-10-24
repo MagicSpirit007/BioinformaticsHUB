@@ -1,0 +1,80 @@
+{
+  "siteId": "prankweb",
+  "recipeVersion": 1,
+  "url": "https://prankweb.cz/viewer?id=2026-09-20-11-08-59-AFB303B7-3F54-46B0-A59A-05C3717D1B62&database=v4-user-upload",
+  "title": "PrankWeb",
+  "tables": [
+    [
+      [
+        "",
+        "Tools",
+        "Rank\nsorted ascending",
+        "Score",
+        "Probability",
+        "# of residues"
+      ],
+      [
+        "",
+        " ",
+        "1",
+        "47.61",
+        "0.964",
+        "25"
+      ],
+      [
+        ""
+      ],
+      [
+        "",
+        " ",
+        "2",
+        "1.53",
+        "0.018",
+        "8"
+      ],
+      [
+        ""
+      ],
+      [
+        "",
+        " ",
+        "3",
+        "1.51",
+        "0.018",
+        "6"
+      ],
+      [
+        ""
+      ]
+    ]
+  ],
+  "data": {
+    "pockets": [
+      {
+        "rank": 1,
+        "score": 47.61,
+        "probability": 0.964,
+        "residues": 25
+      },
+      {
+        "rank": 2,
+        "score": 1.53,
+        "probability": 0.018,
+        "residues": 8
+      },
+      {
+        "rank": 3,
+        "score": 1.51,
+        "probability": 0.018,
+        "residues": 6
+      }
+    ]
+  },
+  "parameters": {
+    "model": "AlphaFold model",
+    "inputMode": "Custom structure"
+  },
+  "inputSha256": "d9d7ad4607164de17b65767b467d366909d74f96df5176ee368a9a515aaa1911",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T11:31:32Z"
+}

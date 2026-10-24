@@ -1,0 +1,28 @@
+{
+  "siteId": "signalp",
+  "recipeVersion": 1,
+  "url": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC52700009DECA0B1A9C7&wait=20",
+  "title": "SignalP-6.0 Results",
+  "tables": [
+    [
+      [
+        "Protein type",
+        "Other",
+        "Signal Peptide (Sec/SPI)"
+      ],
+      [
+        "Likelihood",
+        "1",
+        "0"
+      ]
+    ]
+  ],
+  "data": null,
+  "parameters": {
+    "mode": "Slow",
+    "organism": "Eukarya"
+  },
+  "inputSha256": "885d988e837aceb36173cc97cff5205961d92f71765ee4c24c57ebbc9b688e25",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:11:43Z"
+}

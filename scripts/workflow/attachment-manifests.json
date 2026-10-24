@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sites": {
+    "blastp": [{"id": "blast-xml", "pattern": "\\.xml$", "required": true}],
+    "blastn": [{"id": "blast-xml", "pattern": "\\.xml$", "required": true}],
+    "psi_blast": [{"id": "blast-xml", "pattern": "\\.xml$", "required": true}],
+    "interpro": [{"id": "interpro-json", "pattern": "\\.json$", "required": true}],
+    "musite": [{"id": "prediction-zip", "pattern": "\\.zip$", "required": true}],
+    "hmmer": [
+      {"id": "search-receipt", "pattern": "(?:^|[-_])search\\.json$", "required": true},
+      {"id": "hits-json", "pattern": "(?:^|[-_])score\\.json$", "required": true},
+      {"id": "hits-tsv", "pattern": "\\.tsv$", "required": true}
+    ],
+    "espript": [
+      {"id": "server-input", "pattern": "\\.aln$", "required": true},
+      {"id": "figure-pdf", "pattern": "\\.pdf$", "required": true},
+      {"id": "figure-png", "pattern": "\\.png$", "required": true}
+    ],
+    "mafft_web": [{"id": "alignment", "pattern": "\\.(?:fa|fasta|aln-fasta)$", "required": true}],
+    "swiss_model": [{"id": "structure", "pattern": "\\.(?:pdb|cif)$", "required": true}],
+    "prankweb": [{"id": "prediction", "pattern": "prediction\\.json$", "required": true}],
+    "weblogo": [{"id": "logo", "pattern": "\\.(?:svg|pdf|eps)$", "required": true}]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "siteId": "scanprosite",
+  "recipeVersion": 1,
+  "url": "https://prosite.expasy.org/cgi-bin/prosite/scanprosite/ScanView.cgi?scanfile=3549319.scan.gz",
+  "title": "ScanProsite",
+  "tables": [
+    [
+      [
+        "Hits for all PROSITE (release 2026_03) motifs on"
+      ],
+      [
+        "1 FASTA sequence(s): sp-P69905-HBA_HUMAN"
+      ],
+      [
+        "Note: Scan performed locally."
+      ]
+    ],
+    [
+      [
+        "hits by profiles: [1 hit (by 1 profile) on 1 sequence]"
+      ]
+    ],
+    [
+      [
+        "ruler:",
+        ""
+      ]
+    ],
+    [
+      [
+        "sp-P69905-HBA_HUMAN",
+        "",
+        "    142 aa"
+      ]
+    ],
+    [
+      [
+        "2 - 142:",
+        "score = 42.058"
+      ]
+    ],
+    [
+      [
+        "DOMAIN",
+        "2",
+        "142",
+        "/note=\"Globin \"",
+        "[condition: none]",
+        ""
+      ],
+      [
+        "BINDING",
+        "59",
+        "",
+        "/ligand=\"O2\" /ligand_id=\"ChEBI:CHEBI:15379\"",
+        "[condition: H and <61-62=H-G>]",
+        "[group: 1]"
+      ],
+      [
+        "BINDING",
+        "88",
+        "",
+        "/ligand=\"heme b\" /ligand_id=\"ChEBI:CHEBI:60344\" /ligand_part=\"Fe\" /ligand_part_id=\"ChEBI:CHEBI:18248\" /note=\"proximal binding residue\"",
+        "[condition: H and <61-62=H-G>]",
+        "[group: 1]"
+      ]
+    ]
+  ],
+  "data": null,
+  "parameters": {
+    "excludeProfiles": "false"
+  },
+  "inputSha256": "885d988e837aceb36173cc97cff5205961d92f71765ee4c24c57ebbc9b688e25",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:11:53Z"
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://services.healthtech.dtu.dk/cgi-bin/webface2.cgi?jobid=6AAFC53C00009E36D233EEDE&wait=20",
+  "title": "DeepLoc-2.1",
+  "text": "Download prediction results: CSV Summary\nProbability thresholds\nSummary of predicted sequences\nTable of predicted subcelullar localizations and membrane association. Use the Instructions page for more detailed description of the output page.\nRunning ProtT5 on device of type cuda: NVIDIA L40S Model loaded in 33.95066285133362s Attention plotted in 2.480661630630493s Finished prediction in 39.80868053436279s",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Localization"
+      ],
+      [
+        " Threshold"
+      ]
+    ],
+    [
+      [
+        "Membrane types"
+      ],
+      [
+        " Threshold"
+      ]
+    ]
+  ]
+}

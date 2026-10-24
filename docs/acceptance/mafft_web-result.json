@@ -1,0 +1,15 @@
+{
+  "siteId": "mafft_web",
+  "recipeVersion": 1,
+  "url": "https://www.ebi.ac.uk/jdispatcher/msa/mafft/summary?jobId=mafft-I20260920-133722-0372-91887522-p2m",
+  "title": "MAFFT < Job Dispatcher < EMBL-EBI",
+  "tables": [],
+  "data": null,
+  "parameters": {
+    "sequenceType": "Protein",
+    "outputFormat": "Pearson/FASTA"
+  },
+  "inputSha256": "d6d399fe24e72c66812b4cc70d673cc2f0bcde2250b3b09d7f2e99043f640607",
+  "jobId": "mafft-I20260920-133722-0372-91887522-p2m",
+  "verifiedAt": "2026-09-20T12:45:42Z"
+}

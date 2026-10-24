@@ -1,0 +1,780 @@
+{
+  "siteId": "itol_web",
+  "recipeVersion": 1,
+  "url": "https://itol.embl.de/tree/21623645165214821789903394",
+  "title": "iTOL: BioinformaticsHUB",
+  "tables": [
+    [
+      [
+        "Mode",
+        "Circular\nRectangular\nUnrooted"
+      ],
+      [
+        "Mode options",
+        "Rotation:",
+        "°"
+      ],
+      [
+        "Arc:",
+        "°"
+      ],
+      [
+        "Equal-daylight:",
+        "iterations"
+      ],
+      [
+        "Branch lengths:",
+        "Use\nIgnore"
+      ],
+      [
+        "Invert tree:",
+        "Yes\nNo"
+      ],
+      [
+        "Slanted:",
+        "Yes\nNo"
+      ],
+      [
+        "Labels",
+        "",
+        "Display\nHide"
+      ],
+      [
+        "Label options",
+        "Font:",
+        "Arial\nVerdana\nCourier\nCourier New\nTimes New Roman\nGeorgia\nImpact\nMonotype Corsiva\nArial\n\t"
+      ],
+      [
+        "Font style:",
+        "px",
+        "▼",
+        ""
+      ],
+      [
+        "Position:",
+        "Aligned\nAt tips"
+      ],
+      [
+        "Alignment:",
+        "Left\nRight"
+      ],
+      [
+        "Rotation:",
+        "On\nOff"
+      ],
+      [
+        "Shift:",
+        "px"
+      ],
+      [
+        "Branch options",
+        "Line style:",
+        "px",
+        "▼",
+        ""
+      ],
+      [
+        "Color gradient:",
+        "On\nOff"
+      ],
+      [
+        "Dashed lines:",
+        "px",
+        "▼",
+        ""
+      ]
+    ],
+    [
+      [
+        "Arial\nVerdana\nCourier\nCourier New\nTimes New Roman\nGeorgia\nImpact\nMonotype Corsiva\nArial",
+        ""
+      ]
+    ],
+    [
+      [
+        "Scaling factors:",
+        "x horiz.",
+        "x vert."
+      ],
+      [
+        "Inverted circle size:",
+        "\n                            px inc./dec.\n                        "
+      ],
+      [
+        "Leaf sorting:",
+        "\n                                \n                                    \n                                         Default\n                                    \n                                    \n                                         None\n                                    \n                                \n                            "
+      ],
+      [
+        "Invert sort order:",
+        "\n                                \n                                    \n                                         Yes\n                                    \n                                    \n                                         No\n                                    \n                                \n                            "
+      ],
+      [
+        "Branch metadata display"
+      ],
+      [
+        "Node IDs:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    Font:px▼  \n                                        Next to branch:OnOff\n                                        Position on branch:%\n                                        Vertical shift:px\n                                        Label background:OnOff\n                                        Background border:px▼\n                                        Background color:▼\n                                        Rounded corners:px\n                                        Class filter:no classes defined\n\n                                    \n                                \n                            "
+      ],
+      [
+        "Branch lengths:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                  \n                                        Font:px▼  \n                                            Position on branch:%\n                                            Vertical shift:px\n                                            Round to:decimals\n                                            Sci. notation:OnOff\n                                            Display as age:OnOff\n                                            Label background:OnOff\n                                            Background border:px▼\n                                            Background color:▼\n                                            Rounded corners:px\n                                        \n                                    \n                                "
+      ],
+      [
+        "Bootstraps  / metadata:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        \n                                            Data source:\n                                            bootstrap\n                                        \n                                        \n                                            Display range:\n                                            to\n                                        \n                                        \n                                            Multiple ranges:\n                                            Define ranges\n                                        \n                                        \n                                            Legend:\n                                            OnOff\n                                        \n                                    \n\n                                    \n                                        \n                                            \n                                                 Symbol\n                                            \n                                            \n                                                 Text\n                                            \n                                            \n                                                 Color\n                                            \n                                            \n                                                 Width\n                                            \n                                        \n                                        \n                                            \n                                                 \n                                            \n                                            \n                                                 \n                                            \n                                            \n                                                 \n                                            \n                                            \n                                                 \n                                            \n                                        \n                                        \n                                            \n                                                Fill color:▼\n                                                Border color:▼\n                                                Border width:px\n                                                \n                                                    Minimum size:\n                                                    px\n                                                \n                                                \n                                                    Maximum size:\n                                                    px\n                                                \n                                                Position on branch:\n                                                    %\n                                                \n                                            \n                                        \n                                        \n                                            \n                                                Font:px▼  \n                                                Position on branch:%\n                                                Vertical shift:px\n                                                Scale by factor:x\n                                                Round to:decimals\n                                                Scientific notation:OnOff\n                                                Display as %:OnOff\n                                                Show all values:OnOff\n                                                Label background:OnOff\n                                                Background border:px▼\n                                                Background color:▼\n                                                Rounded corners:px\n                                            \n                                        \n                                        \n                                            \n                                                Minimum:▼\n                                                Midpoint:OnOff▼\n                                                Maximum:▼\n                                            \n                                        \n                                        \n                                            \n                                                Default width:px\n                                                Minimum width:px\n                                                Maximum width:px\n                                            \n                                        \n                                    \n                                    \n                                        \n                                            \n                                                 Text\n                                            \n                                            \n                                                 Color\n                                            \n                                        \n                                        \n                                            \n                                                Font size:px\n                                                Position on branch:%\n                                            \n                                        \n                                        \n                                            \n                                                Category colors:Define colors\n                                            \n                                        \n                                    \n                                \n                            "
+      ],
+      [
+        "Range metadata:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    Data source:\n\n                                    Vertical shift:px\n                                    Show bars:OnOff\n                                    Bar height:px\n                                    Bar color:▼\n                                    Bar border:px▼\n                                    Show whiskers:OnOff\n                                    Whisker height:px\n                                    Whisker width:px\n\n                                    Show labels:OnOff\n                                    Label font:px▼  \n                                    Label align:outsidecenterinside\n                                    Label shift (X and Y):pxpx\n                                    Scale by factor:x\n                                    Round to:decimals\n                                    Scientific notation:OnOff\n\n                                    \n                                \n                            "
+      ],
+      [
+        "Tree scales"
+      ],
+      [
+        "Internal tree scale:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        Branch lengthColorWidth\n                                        Interval 1▼px\n                                        Interval 2▼px\n                                        Fixed▼px\n                                        Inverted scaleYesNo\n                                        Label font sizepx\n                                        Label shiftpx\n                                        Draw gridYesNo\n                                        Draw axisYesNo\n                                        Axis/labels below the treeYesNo\n                                        Time scale mode\n                                        Set root to:\n                                        Scaling factor:\n                                        Round to:decimals\n                                    \n                                \n                            "
+      ],
+      [
+        "Tree scale box:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        Label font size:px\n                                        Label text:\n                                        Line width:px\n                                        Line color:▼\n                                        Fixed value:\n                                    \n                                \n                            "
+      ],
+      [
+        "Node options"
+      ],
+      [
+        "Leaf node symbols:",
+        "\n                                \n                                    \n                                        Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        Shape:SquareRhombus (diamond)CircleStarRight triangleLeft triangle \n                                        Size:px\n                                        Fill color:▼\n                                        Border width:px\n                                        Border color:▼\n                                    \n                                \n                            "
+      ],
+      [
+        "Internal node symbols:",
+        "\n                                \n                                    \n                                         Display\n                                    \n                                    \n                                         Hide\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                                \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        Node type:\n                                            \n                                                \n                                                     All\n                                                \n                                                \n                                                     One child\n                                                \n                                            \n                                        \n                                        Shape:SquareRhombus (diamond)CircleStarRight triangleLeft triangle \n                                        Size:px\n                                        Fill color:▼\n                                        Border width:px\n                                        Border color:▼\n                                    \n                                \n                            "
+      ],
+      [
+        "Collapsed clades:",
+        "\n                                \n                                    \n                                         Triangle\n                                    \n                                    \n                                         Iso. Triangle\n                                    \n                                    \n                                         Circle\n                                    \n                                \n                            "
+      ],
+      [
+        "\n                            \n                            ",
+        "\n                                Show details\n                                \n                                    \n                                        Fill color:▼\n                                        Arc/vertical spacing:leaves\n                                        Label font size factor:x\n                                        Collapsed shape size:px\n                                        Proportional sizing:OnOff\n                                        Un-collapse all:Un-collapse all\n                                    \n                                \n                            "
+      ],
+      [
+        "Truncated branches:",
+        "px",
+        "px"
+      ],
+      [
+        "Auto collapse clades:",
+        "> avg.BRL",
+        "Collapse"
+      ],
+      [
+        "",
+        "bootstrap",
+        "Collapse"
+      ],
+      [
+        "",
+        "no classes defined",
+        "Collapse"
+      ],
+      [
+        "",
+        "",
+        "Collapse"
+      ],
+      [
+        "Delete branches:",
+        "> bootstrap",
+        "Delete"
+      ],
+      [
+        "Other functions"
+      ],
+      [
+        "Label functions:",
+        "Multi-style",
+        "Bulk edit"
+      ],
+      [
+        "Auto assign taxonomy:",
+        "NCBI",
+        "GTDB"
+      ],
+      [
+        "Root the tree midpoint:",
+        "Midpoint root"
+      ],
+      [
+        "Auto timescale:",
+        "ICC geological timescale"
+      ]
+    ],
+    [
+      [
+        "Font:",
+        "px",
+        "▼",
+        "  "
+      ],
+      [
+        "Next to branch:",
+        "OnOff"
+      ],
+      [
+        "Position on branch:",
+        "%"
+      ],
+      [
+        "Vertical shift:",
+        "px"
+      ],
+      [
+        "Label background:",
+        "OnOff"
+      ],
+      [
+        "Background border:",
+        "px",
+        "▼"
+      ],
+      [
+        "Background color:",
+        "▼"
+      ],
+      [
+        "Rounded corners:",
+        "px"
+      ],
+      [
+        "Class filter:",
+        "no classes defined"
+      ]
+    ],
+    [
+      [
+        "Font:",
+        "px",
+        "▼",
+        "  "
+      ],
+      [
+        "Position on branch:",
+        "%"
+      ],
+      [
+        "Vertical shift:",
+        "px"
+      ],
+      [
+        "Round to:",
+        "decimals"
+      ],
+      [
+        "Sci. notation:",
+        "OnOff"
+      ],
+      [
+        "Display as age:",
+        "OnOff"
+      ],
+      [
+        "Label background:",
+        "OnOff"
+      ],
+      [
+        "Background border:",
+        "px",
+        "▼"
+      ],
+      [
+        "Background color:",
+        "▼"
+      ],
+      [
+        "Rounded corners:",
+        "px"
+      ]
+    ],
+    [
+      [
+        "Data source:",
+        "bootstrap"
+      ],
+      [
+        "Display range:",
+        "",
+        "to",
+        ""
+      ],
+      [
+        "Multiple ranges:",
+        "Define ranges"
+      ],
+      [
+        "Legend:",
+        "OnOff"
+      ]
+    ],
+    [
+      [
+        "Fill color:",
+        "▼"
+      ],
+      [
+        "Border color:",
+        "▼"
+      ],
+      [
+        "Border width:",
+        "px"
+      ],
+      [
+        "Minimum size:",
+        "px"
+      ],
+      [
+        "Maximum size:",
+        "px"
+      ],
+      [
+        "Position on branch:",
+        "%"
+      ]
+    ],
+    [
+      [
+        "Font:",
+        "px",
+        "▼",
+        "  "
+      ],
+      [
+        "Position on branch:",
+        "%"
+      ],
+      [
+        "Vertical shift:",
+        "px"
+      ],
+      [
+        "Scale by factor:",
+        "x"
+      ],
+      [
+        "Round to:",
+        "decimals"
+      ],
+      [
+        "Scientific notation:",
+        "OnOff"
+      ],
+      [
+        "Display as %:",
+        "OnOff"
+      ],
+      [
+        "Show all values:",
+        "OnOff"
+      ],
+      [],
+      [
+        "Label background:",
+        "OnOff"
+      ],
+      [
+        "Background border:",
+        "px",
+        "▼"
+      ],
+      [
+        "Background color:",
+        "▼"
+      ],
+      [
+        "Rounded corners:",
+        "px"
+      ]
+    ],
+    [
+      [
+        "Minimum:",
+        "▼"
+      ],
+      [
+        "Midpoint:",
+        "OnOff▼"
+      ],
+      [
+        "Maximum:",
+        "▼"
+      ]
+    ],
+    [
+      [
+        "Default width:",
+        "px"
+      ],
+      [
+        "Minimum width:",
+        "px"
+      ],
+      [
+        "Maximum width:",
+        "px"
+      ]
+    ],
+    [
+      [
+        "Font size:",
+        "px"
+      ],
+      [
+        "Position on branch:",
+        "%"
+      ]
+    ],
+    [
+      [
+        "Category colors:",
+        "Define colors"
+      ]
+    ],
+    [
+      [
+        "Data source:",
+        ""
+      ],
+      [
+        "Vertical shift:",
+        "px"
+      ],
+      [
+        "Show bars:",
+        "OnOff"
+      ],
+      [
+        "Bar height:",
+        "px"
+      ],
+      [
+        "Bar color:",
+        "▼"
+      ],
+      [
+        "Bar border:",
+        "px",
+        "▼"
+      ],
+      [
+        "Show whiskers:",
+        "OnOff"
+      ],
+      [
+        "Whisker height:",
+        "px"
+      ],
+      [
+        "Whisker width:",
+        "px"
+      ],
+      [
+        "Show labels:",
+        "OnOff"
+      ],
+      [
+        "Label font:",
+        "px",
+        "▼",
+        "  "
+      ],
+      [
+        "Label align:",
+        "outsidecenterinside"
+      ],
+      [
+        "Label shift (X and Y):",
+        "pxpx"
+      ],
+      [
+        "Scale by factor:",
+        "x"
+      ],
+      [
+        "Round to:",
+        "decimals"
+      ],
+      [
+        "Scientific notation:",
+        "OnOff"
+      ]
+    ],
+    [
+      [
+        "px",
+        "px"
+      ]
+    ],
+    [
+      [
+        "Branch length",
+        "Color",
+        "",
+        "",
+        "Width"
+      ],
+      [
+        "Interval 1",
+        "",
+        "▼",
+        "",
+        "",
+        "px"
+      ],
+      [
+        "Interval 2",
+        "",
+        "▼",
+        "",
+        "",
+        "px"
+      ],
+      [
+        "Fixed",
+        "",
+        "▼",
+        "",
+        "",
+        "px"
+      ],
+      [
+        "Inverted scale",
+        "YesNo"
+      ],
+      [
+        "Label font size",
+        "px"
+      ],
+      [
+        "Label shift",
+        "px"
+      ],
+      [
+        "Draw grid",
+        "YesNo"
+      ],
+      [
+        "Draw axis",
+        "YesNo"
+      ],
+      [
+        "Axis/labels below the tree",
+        "YesNo"
+      ],
+      [
+        "Time scale mode"
+      ],
+      [
+        "Set root to:",
+        ""
+      ],
+      [
+        "Scaling factor:",
+        ""
+      ],
+      [
+        "Round to:",
+        "decimals"
+      ]
+    ],
+    [
+      [
+        "Label font size:",
+        "px"
+      ],
+      [
+        "Label text:",
+        ""
+      ],
+      [
+        "Line width:",
+        "px"
+      ],
+      [
+        "Line color:",
+        "▼"
+      ],
+      [
+        "Fixed value:",
+        ""
+      ]
+    ],
+    [
+      [
+        "Shape:",
+        "SquareRhombus (diamond)CircleStarRight triangleLeft triangle "
+      ],
+      [
+        "Size:",
+        "px"
+      ],
+      [
+        "Fill color:",
+        "▼"
+      ],
+      [
+        "Border width:",
+        "px"
+      ],
+      [
+        "Border color:",
+        "▼"
+      ]
+    ],
+    [
+      [
+        "Node type:",
+        "\n                                            \n                                                \n                                                     All\n                                                \n                                                \n                                                     One child\n                                                \n                                            \n                                        "
+      ],
+      [
+        "Shape:",
+        "SquareRhombus (diamond)CircleStarRight triangleLeft triangle "
+      ],
+      [
+        "Size:",
+        "px"
+      ],
+      [
+        "Fill color:",
+        "▼"
+      ],
+      [
+        "Border width:",
+        "px"
+      ],
+      [
+        "Border color:",
+        "▼"
+      ]
+    ],
+    [
+      [
+        "Fill color:",
+        "▼"
+      ],
+      [
+        "Arc/vertical spacing:",
+        "leaves"
+      ],
+      [
+        "Label font size factor:",
+        "x"
+      ],
+      [
+        "Collapsed shape size:",
+        "px"
+      ],
+      [
+        "Proportional sizing:",
+        "OnOff"
+      ],
+      [
+        "Un-collapse all:",
+        "Un-collapse all"
+      ]
+    ],
+    [
+      [
+        "Format:",
+        "\n                        \n                            SVG: Scalable Vector Graphics\n                            EPS: Encapsulated Postscript\n                            PDF: Portable Document FormatPNG: Portable Network Graphics\n                            Newick treephyloXML treeNEXUS tree\n                                Colors and styles annotationCollapsed nodes list\n                        \n                    "
+      ],
+      [
+        "Resolution:",
+        "dpi"
+      ],
+      [
+        "Margin:",
+        "mm"
+      ],
+      [
+        "Export area:",
+        "\n                        \n                            \n                                 Screen\n                            \n                            \n                                 Full image\n                            \n                        \n                    "
+      ],
+      [
+        "Bootstraps/metadata:",
+        "\n                        \n                            Simple\n                            Multiple\n                            MrBayes\n                            NHX\n                        \n\n                    "
+      ],
+      [
+        "Internal node IDs:",
+        "\n                        \n                            \n                                 Include\n                            \n                            \n                                 Exclude\n                            \n                        \n                    "
+      ],
+      [
+        "File name:",
+        "\n                            \n                      "
+      ],
+      [
+        "\n                         Share\n                         Export\n                    "
+      ],
+      [
+        " Cancel jobYour job is in the export queue at position 0. The download will start automatically when the export is complete."
+      ],
+      [
+        "If the download did not start automatically, please click here."
+      ]
+    ],
+    [
+      [
+        " Cancel job",
+        "Your job is in the export queue at position 0. The download will start automatically when the export is complete."
+      ]
+    ]
+  ],
+  "data": {
+    "name": "BioinformaticsHUB",
+    "leaves": [
+      "'sp HBA HUMAN Hemoglobin subunit alpha OS=Homo sapiens OX=9606 GN=HBA1 PE=1 SV=2'",
+      "'sp HBA MOUSE Hemoglobin subunit alpha OS=Mus musculus OX=10090 GN=Hba PE=1 SV=2'",
+      "'sp HBA RAT Hemoglobin subunit alpha-1/2 OS=Rattus norvegicus OX=10116 GN=Hba1 PE=1 SV=3'",
+      "'sp HBA HORSE Hemoglobin subunit alpha OS=Equus caballus OX=9796 GN=HBA PE=1 SV=2'"
+    ],
+    "rendered": true,
+    "nodeCount": 6
+  },
+  "parameters": {
+    "treeName": "BioinformaticsHUB"
+  },
+  "inputSha256": "6fd7c673dc9eaea974a7e19daab1e25895f48826a8a584c6613cff4a5b2bdf6d",
+  "jobId": null,
+  "verifiedAt": "2026-09-21T03:39:12Z"
+}

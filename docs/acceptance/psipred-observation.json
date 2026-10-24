@@ -1,0 +1,90 @@
+{
+  "url": "https://bioinf.cs.ucl.ac.uk/psipred/",
+  "title": "PSIPRED Workbench",
+  "text": "Toggle navigation\nUCL Computer Science\n   \nMAIN NAVIGATION\nIntroduction\n Contact\n Downloads & Branding\n PSIPRED Team Links\n People\n ProCovar\n Publications\n Vacancies\n PSIPRED Workbench Links\n PSIPRED Workbench\n Workbench Overview\n Workbench Citation\n Help & Tutorials\n YouTube Tutorials\n REST API\n PSIPRED Github\n\nThe PSIPRED Workbench provides a range of protein structure prediction methods. The site can be used interactively via a web browser or programmatically via our REST API. For high-throughput analyses, downloads of all the algorithms are available.\n\nAmino acid sequences enable: secondary structure prediction, including regions of disorder and transmembrane helix packing; contact analysis; fold recognition; structure modelling; and prediction of domains and function. In addition PDB Structure files allow prediction of protein-metal ion contacts, protein-protein hotspot residues, and membrane protein orientation.\n\nVideo tutorials for our most popular and latest methods can be found at the PSIPRED YouTube Channel\n\nFor Help or Errors please email [notification email]\n\nData Input\nSelect input data type\nSequence Data     PDB Structure Data     RNASeq Data  \n\n\nChoose prediction methods (hover for short description)\n\n\nPopular Analyses\n\n PSIPRED 4.0 (Predict Secondary Structure)\t DISOPRED3 (Disorder Prediction)\n MEMSAT-SVM (Membrane Helix Prediction)\t pGenTHREADER (Profile Based Fold Recognition)\n\n\n\nStructure Modelling\n\t\n DMPFold 2.0 (Protein Structure Prediction)\t\n\n\n\nSingle Sequence Prediction\n\t\n S4Pred (Single Sequence SS Prediction)\t\n\n\n\nContact Analysis\n\n DeepMetaPSICOV 1.0 (Structural Contact Prediction)\t MEMPACK (TM Topology and Helix Packing)\n\n\n\nFold Recognition\n\t\n genTHREADER (Rapid Fold Recognition)\t pDomTHREADER (Protein Domain Fold Recognition)\n\n\n\nDomain Prediction\n\t\n DomPred (Domain Boundary Prediction)\t\n\n\n\nFunction Prediction\n\t\n FFPred 4 (Eurkaryotic Function Prediction)\t DMPmetal (Metal Binding Site Prediction)\nHelp...\n\nSubmission details\n\n\n\n\nProtein Sequence\nHelp...\nIf you wish to test these services follow this link to retrieve a test fasta sequence or click here to load a test seq.\nFor DMPmetal, click here to set a test sequence.\n\n\nJob name\nEmail (optional)\n \nAdditional Settings\nCopyright ©\n\n ",
+  "svgText": [],
+  "tree": null,
+  "tables": [
+    [
+      [
+        "Popular Analyses"
+      ],
+      [
+        " PSIPRED 4.0 (Predict Secondary Structure)",
+        " DISOPRED3 (Disorder Prediction)"
+      ],
+      [
+        " MEMSAT-SVM (Membrane Helix Prediction)",
+        " pGenTHREADER (Profile Based Fold Recognition)"
+      ],
+      [
+        ""
+      ],
+      [
+        "Structure Modelling",
+        ""
+      ],
+      [
+        " DMPFold 2.0 (Protein Structure Prediction)",
+        ""
+      ],
+      [
+        ""
+      ],
+      [
+        "Single Sequence Prediction",
+        ""
+      ],
+      [
+        " S4Pred (Single Sequence SS Prediction)",
+        ""
+      ],
+      [
+        ""
+      ],
+      [
+        "Contact Analysis"
+      ],
+      [
+        " DeepMetaPSICOV 1.0 (Structural Contact Prediction)",
+        " MEMPACK (TM Topology and Helix Packing)"
+      ],
+      [
+        ""
+      ],
+      [
+        "Fold Recognition",
+        ""
+      ],
+      [
+        " genTHREADER (Rapid Fold Recognition)",
+        " pDomTHREADER (Protein Domain Fold Recognition)"
+      ],
+      [
+        ""
+      ],
+      [
+        "Domain Prediction",
+        ""
+      ],
+      [
+        " DomPred (Domain Boundary Prediction)",
+        ""
+      ],
+      [
+        ""
+      ],
+      [
+        "Function Prediction",
+        ""
+      ],
+      [
+        " FFPred 4 (Eurkaryotic Function Prediction)",
+        " DMPmetal (Metal Binding Site Prediction)"
+      ],
+      [
+        "Help...\n"
+      ]
+    ]
+  ]
+}

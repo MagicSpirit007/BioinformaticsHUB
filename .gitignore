@@ -57,6 +57,7 @@ node_modules/
 # Frontend / desktop build artifacts
 apps/**/dist/
 apps/**/release/
+apps/**/release-candidate*/
 apps/**/out/
 packaging/embed-python/
 packaging/cache/
@@ -67,3 +68,18 @@ packaging/engine/
 
 # Optional local review dumps
 .codex_review/
+/.venv-local/
+
+# Installed desktop payload and local research discard folder
+/apps/resources/
+/apps/locales/
+/apps/*.dll
+/apps/*.pak
+/apps/*.bin
+/apps/*.dat
+/apps/LICENSE.electron.txt
+/apps/LICENSES.chromium.html
+/apps/vk_swiftshader_icd.json
+/apps/biohub.cmd
+/apps/bioinformatics-hub-desktop/release-*/
+/trash/

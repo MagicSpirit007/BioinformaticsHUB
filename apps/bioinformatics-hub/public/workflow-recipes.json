@@ -1,0 +1,955 @@
+{
+  "version": 1,
+  "recipes": {
+    "orf_finder": {
+      "input": "nucleotide_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "submit|orf|search",
+      "resultPatterns": [
+        "ORFs found:",
+        "Strand.*Frame.*Start.*Stop.*Length"
+      ],
+      "parameters": [
+        {
+          "id": "geneticCode",
+          "label": "遗传密码表 / Genetic code",
+          "required": true,
+          "default": "1. Standard"
+        },
+        {
+          "id": "startCodon",
+          "label": "起始密码子 / Start codon",
+          "required": true,
+          "default": "ATG only",
+          "aliases": {
+            "ATG only": [
+              "\"ATG\" only"
+            ]
+          }
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/orf_finder-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "blastn": {
+      "input": "nucleotide_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "query|sequence|fasta",
+      "submitPattern": "^BLAST$",
+      "resultPatterns": [
+        "Sequences producing significant alignments|No significant similarity found",
+        "Query.*Length|Query ID"
+      ],
+      "jobPattern": "RID[= :]+([A-Z0-9-]+)",
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "Nucleotide collection (nr/nt)"
+        },
+        {
+          "id": "program",
+          "label": "算法 / Program",
+          "required": true,
+          "default": "Highly similar sequences (megablast)",
+          "aliases": {
+            "Highly similar sequences (megablast)": [
+              "Optimize for Highly similar sequences (megablast)"
+            ]
+          }
+        },
+        {
+          "id": "expect",
+          "label": "E-value",
+          "required": true,
+          "default": "0.05"
+        }
+      ],
+      "pollUrlPattern": "[?&]RID=[A-Z0-9-]+",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/blastn-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "blastp": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "query|sequence|fasta",
+      "submitPattern": "^BLAST$",
+      "resultPatterns": [
+        "Sequences producing significant alignments|No significant similarity found",
+        "Query.*Length|Query ID"
+      ],
+      "jobPattern": "RID[= :]+([A-Z0-9-]+)",
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "Non-redundant protein sequences (nr)"
+        },
+        {
+          "id": "program",
+          "label": "算法 / Program",
+          "required": true,
+          "default": "blastp (protein-protein BLAST)",
+          "aliases": {
+            "blastp (protein-protein BLAST)": [
+              "Algorithm blastp (protein-protein BLAST)"
+            ]
+          }
+        },
+        {
+          "id": "expect",
+          "label": "E-value",
+          "required": true,
+          "default": "0.05"
+        }
+      ],
+      "pollUrlPattern": "[?&]RID=[A-Z0-9-]+",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/blastp-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "psi_blast": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "query|sequence|fasta",
+      "submitPattern": "^BLAST$",
+      "resultPatterns": [
+        "Sequences producing significant alignments|No significant similarity found",
+        "Query.*Length|Query ID"
+      ],
+      "jobPattern": "RID[= :]+([A-Z0-9-]+)",
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "Non-redundant protein sequences (nr)"
+        },
+        {
+          "id": "iterations",
+          "label": "迭代次数 / Iterations",
+          "required": true,
+          "default": "1",
+          "options": [
+            "1"
+          ],
+          "executionPolicy": true
+        },
+        {
+          "id": "inclusion",
+          "label": "Inclusion threshold",
+          "required": true,
+          "default": "0.005"
+        }
+      ],
+      "pollUrlPattern": "[?&]RID=[A-Z0-9-]+",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/psi_blast-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "interpro": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "^Search$|^Submit$",
+      "resultPatterns": [
+        "InterProScan|InterPro",
+        "Protein family|Homologous superfamily|Domains and repeats|No matches found"
+      ],
+      "parameters": [],
+      "pendingPattern": "\\b(?:Running|Pending|Queued)\\b",
+      "pollUrlPattern": "/result/InterProScan/",
+      "taskHint": "Prefer UPLOAD for the exact FASTA file. Use the sequence analysis form below the navigation, not the global text search. Scroll down to the form action if needed. After completion, scroll to and open the protein.fasta job link, then its protein annotation. Collect the actual IPR/PF matches; the completed jobs table alone is not a result.",
+      "pendingInTables": true,
+      "completePattern": "(?:^|\\n)Completed(?:\\n|$)",
+      "jobPattern": "(iprscan6-[A-Za-z0-9-]+)",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/interpro-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "cdd": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|query",
+      "submitPattern": "submit|search",
+      "resultPatterns": [
+        "Search completed successfully",
+        "Total domains found:"
+      ],
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "CDD",
+          "aliases": {
+            "CDD": [
+              "CDD -- 62456 PSSMs"
+            ]
+          }
+        },
+        {
+          "id": "expect",
+          "label": "E-value",
+          "required": true,
+          "default": "0.01"
+        },
+        {
+          "id": "email",
+          "label": "通知邮箱 / Notification email",
+          "required": false,
+          "fieldPattern": "email|e-mail"
+        }
+      ],
+      "jobPattern": "Search-ID:\\s*([A-Za-z0-9-]+)",
+      "emailNotification": {
+        "support": "optional",
+        "parameter": "email",
+        "fieldPattern": "email|e-mail",
+        "evidence": "docs/acceptance/cdd-observation.json"
+      }
+    },
+    "scanprosite": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "start|scan|submit",
+      "resultPatterns": [
+        "ScanProsite results|Scan results",
+        "matches|hits|no.*found"
+      ],
+      "parameters": [
+        {
+          "id": "excludeProfiles",
+          "label": "排除 profiles / Exclude profiles",
+          "default": "false",
+          "required": true,
+          "options": [
+            "false",
+            "true"
+          ],
+          "checkbox": true,
+          "fieldPattern": "^noprofile$"
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/scanprosite-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "psipred": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Job.*completed|Results for",
+        "PSIPRED|secondary structure"
+      ],
+      "parameters": [
+        {
+          "id": "method",
+          "label": "方法 / Method",
+          "required": true,
+          "default": "PSIPRED",
+          "aliases": {
+            "PSIPRED": [
+              "PSIPRED 4.0 (Predict Secondary Structure)"
+            ]
+          }
+        },
+        {
+          "id": "email",
+          "label": "通知邮箱 / Notification email",
+          "required": false,
+          "fieldPattern": "email|e-mail"
+        }
+      ],
+      "taskHint": "Upload/fill the exact protein sequence. Select only PSIPRED 4.0. Email is optional. Scroll to the form submission button.",
+      "emailNotification": {
+        "support": "optional",
+        "parameter": "email",
+        "fieldPattern": "email|e-mail",
+        "evidence": "docs/acceptance/psipred-observation.json"
+      }
+    },
+    "jpred": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|^seq$| seq$",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "JPred.*results|Prediction results",
+        "Jnet|secondary structure|finished"
+      ],
+      "parameters": [
+        {
+          "id": "email",
+          "label": "通知邮箱 / Notification email",
+          "required": false,
+          "fieldPattern": "email|e-mail"
+        }
+      ],
+      "taskHint": "First fill the seq textarea with the runtime-bound exact FASTA, then Make Prediction. Only actual secondary structure predictions count as results; do not open Log file as the final result.",
+      "blockPattern": "Error\\s*-\\s*cluster error|Slurm status check failed",
+      "jobPattern": "chklog\\?(jp_[A-Za-z0-9]+)",
+      "pollUrlPattern": "/jpred4/cgi-bin/chklog\\?",
+      "completePattern": "Prediction results|job.*finished|results are",
+      "emailNotification": {
+        "support": "optional",
+        "parameter": "email",
+        "fieldPattern": "email|e-mail",
+        "evidence": "https://www.compbio.dundee.ac.uk/jpred/api.shtml"
+      }
+    },
+    "phobius": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Phobius|ID\\s+",
+        "TRANSMEM|SIGNAL|CYTOPLASMIC|NON CYTOPLASMIC"
+      ],
+      "parameters": [
+        {
+          "id": "format",
+          "label": "输出格式 / Output format",
+          "required": true,
+          "default": "Long",
+          "aliases": {
+            "Long": [
+              "Long — feature table, no graphics",
+              "long"
+            ]
+          }
+        }
+      ],
+      "entryUrl": "https://phobius.sbc.su.se/",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/phobius-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "signalp": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "SignalP.*results|Prediction results",
+        "CS pos|Cleavage|OTHER|SP\\("
+      ],
+      "parameters": [
+        {
+          "id": "organism",
+          "label": "生物类别 / Organism group",
+          "required": true,
+          "options": [
+            "Eukarya",
+            "Bacteria",
+            "Archaea"
+          ]
+        },
+        {
+          "id": "mode",
+          "label": "模型 / Mode",
+          "required": true,
+          "default": "Slow",
+          "aliases": {
+            "Slow": [
+              "slow-sequential"
+            ]
+          }
+        }
+      ],
+      "pendingPattern": "Status:\\s*(?:queued|running|active)|please wait",
+      "jobPattern": "(?:JobID:\\s*|jobid=)([A-Z0-9]+)",
+      "pollUrlPattern": "webface2\\.cgi\\?jobid=",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/signalp-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "tmhmm": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Number of predicted TMHs|PredHel=",
+        "Length"
+      ],
+      "parameters": [
+        {
+          "id": "format",
+          "label": "输出格式 / Output format",
+          "required": true,
+          "default": "Extensive",
+          "aliases": {
+            "Extensive": [
+              "-noshort"
+            ]
+          }
+        }
+      ],
+      "pendingPattern": "Status:\\s*(?:queued|running|active)|please wait",
+      "jobPattern": "(?:JobID:\\s*|jobid=)([A-Z0-9]+)",
+      "pollUrlPattern": "webface2\\.cgi\\?jobid=",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/tmhmm-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "deeptmhmm": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Predicted topology|Predicted protein types|DeepTMHMM.*results",
+        "TM|Globular|Signal|prediction"
+      ],
+      "parameters": [],
+      "allowedHosts": [
+        "dtu.biolib.com",
+        "biolib.com"
+      ],
+      "readyPattern": "Enter one or more proteins in FASTA",
+      "pendingPattern": "Computing|job has been queued|please wait|Allocating dedicated capacity",
+      "jobPattern": "/results/([a-f0-9-]{36})",
+      "pollUrlPattern": "^https://dtu\\.biolib\\.com/results/",
+      "completePattern": "Download|Predicted protein types|Predicted topology",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/deeptmhmm-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "plant_mploc": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|protein|textbox",
+      "submitPattern": "submit",
+      "resultPatterns": [
+        "Plant-mPLoc Computation Result",
+        "Predicted location"
+      ],
+      "parameters": [],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/plant_mploc-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "cell_ploc": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|protein",
+      "submitPattern": "submit",
+      "resultPatterns": [
+        "Computation Result|Prediction Result",
+        "Predicted location"
+      ],
+      "parameters": [
+        {
+          "id": "organism",
+          "label": "生物类别 / Organism group",
+          "required": true,
+          "options": [
+            "Plant",
+            "Eukaryote",
+            "Human",
+            "Gram-positive bacteria",
+            "Gram-negative bacteria"
+          ],
+          "executionPolicy": true
+        }
+      ],
+      "taskHint": "Choose the organism-specific server matching the configured group (Plant means Plant-mPLoc), then submit the bound input there.",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/cell_ploc-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "deeploc": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "DeepLoc.*results|Prediction results",
+        "Nucleus|Cytoplasm|Mitochondrion|Plastid|Extracellular"
+      ],
+      "parameters": [
+        {
+          "id": "model",
+          "label": "模型 / Model",
+          "required": true,
+          "default": "High-quality",
+          "aliases": {
+            "High-quality": [
+              "Slow"
+            ]
+          }
+        }
+      ],
+      "pendingPattern": "Status:\\s*(?:queued|running|active)|please wait",
+      "jobPattern": "(?:JobID:\\s*|jobid=)([A-Z0-9]+)",
+      "pollUrlPattern": "webface2\\.cgi\\?jobid=",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/deeploc-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "musite": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Prediction Results|Prediction Result",
+        "Position|Residue|Score"
+      ],
+      "parameters": [
+        {
+          "id": "modification",
+          "label": "修饰类型 / Modification",
+          "required": true
+        },
+        {
+          "id": "threshold",
+          "label": "阈值 / Threshold",
+          "required": true,
+          "default": "0.5"
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/musite-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "string": {
+      "input": "identifier",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "protein|identifier|search|name",
+      "submitPattern": "^Search\\s+waiting spinner$|^Continue$",
+      "resultPatterns": [
+        "Network Stats|network statistics|PPI enrichment",
+        "nodes|edges"
+      ],
+      "parameters": [
+        {
+          "id": "organism",
+          "label": "物种 / Species",
+          "required": true,
+          "fieldPattern": "species_text_single_identifier"
+        },
+        {
+          "id": "confidence",
+          "label": "最低置信度 / Minimum confidence",
+          "required": true,
+          "default": "0.400",
+          "aliases": {
+            "0.400": [
+              "medium confidence (0.400)"
+            ]
+          }
+        }
+      ],
+      "taskHint": "Choose Protein by name, enter the exact identifier, type the configured species and select its matching autocomplete suggestion. Open Advanced Settings to set confidence. Submit with the Search button inside the form (label includes waiting spinner). Global Search and My Data navigation do not submit the analysis. Never choose a different accession or species.",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/string-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "uniprot": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta",
+      "submitPattern": "^Run BLAST$",
+      "resultPatterns": [
+        "BLAST results|Blast results",
+        "Identity|E-value|Score"
+      ],
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "UniProtKB Swiss-Prot"
+        },
+        {
+          "id": "expect",
+          "label": "E-value",
+          "required": true,
+          "default": "10"
+        }
+      ],
+      "strictSubmitPattern": true,
+      "taskHint": "After filling the protein sequence and confirmed database/E-value, scroll the inner form panel down to Run BLAST. Click the Run BLAST submit button. The global BLAST navigation link and help drawer do not run the analysis.",
+      "jobPattern": "/blast/([A-Za-z0-9_-]+)",
+      "pollUrlPattern": "^https://www\\.uniprot\\.org/blast/[^/?#]+",
+      "completePattern": "Identity.*Score|Score.*Identity",
+      "emailNotification": {
+        "support": "unsupported",
+        "note": "此目录入口为现有数据库记录查询 / Existing database record lookup"
+      }
+    },
+    "eggnog": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|run|start",
+      "resultPatterns": [
+        "Job.*finished|Job.*completed|Download results",
+        "annotations|emapper"
+      ],
+      "parameters": [
+        {
+          "id": "email",
+          "label": "通知邮箱 / Notification email",
+          "required": true
+        },
+        {
+          "id": "taxonomicScope",
+          "label": "分类范围 / Taxonomic scope",
+          "required": true,
+          "default": "auto"
+        },
+        {
+          "id": "emailConsent",
+          "label": "同意网站保存通知邮箱 / Notification email consent",
+          "required": true,
+          "options": [
+            "true"
+          ],
+          "checkbox": true,
+          "fieldPattern": "I agree that my email address"
+        }
+      ],
+      "entryUrl": "https://eggnog-mapper.cgmlab.org/",
+      "taskHint": "Use the configured notification email and explicitly confirmed emailConsent checkbox. After submission, a private start link is sent by email; pause for human activation if that link is required. Do not guess a job URL.",
+      "emailNotification": {
+        "support": "required",
+        "parameter": "email",
+        "fieldPattern": "email|e-mail",
+        "consentParameter": "emailConsent",
+        "activationRequired": true,
+        "evidence": "https://eggnog-mapper.embl.de/",
+        "note": "提交后须通过邮件链接启动 / A private email link activates the job"
+      }
+    },
+    "iupred": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "input_seq|sequence|fasta",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "IUPred.*prediction|IUPred.*results",
+        "ANCHOR|disorder|residue"
+      ],
+      "parameters": [
+        {
+          "id": "mode",
+          "label": "预测模式 / Mode",
+          "required": true,
+          "options": [
+            "long",
+            "short",
+            "glob"
+          ],
+          "default": "long"
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/iupred-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "hmmer": {
+      "input": "protein_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|query",
+      "submitPattern": "submit|search|run",
+      "resultPatterns": [
+        "phmmer.*results|Search results",
+        "E-value|No hits|Target"
+      ],
+      "parameters": [
+        {
+          "id": "database",
+          "label": "数据库 / Database",
+          "required": true,
+          "default": "Reference Proteomes",
+          "aliases": {
+            "Reference Proteomes": [
+              "Reference Proteomes (2025_01)"
+            ]
+          }
+        }
+      ],
+      "taskHint": "Prefer uploading the bound FASTA file. Reject non-essential cookies if the consent banner covers the analysis form.",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/hmmer-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "mafft_web": {
+      "input": "alignment_fasta",
+      "outputs": [
+        "alignment_fasta",
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|file",
+      "submitPattern": "submit|run|start",
+      "resultPatterns": [
+        "Job.*finished|Job.*completed|Results",
+        "Alignment|Aligned"
+      ],
+      "parameters": [
+        {
+          "id": "sequenceType",
+          "label": "序列类型 / Sequence type",
+          "default": "Protein",
+          "required": true,
+          "options": [
+            "Protein",
+            "DNA"
+          ]
+        },
+        {
+          "id": "outputFormat",
+          "label": "输出格式 / Output format",
+          "default": "Pearson/FASTA",
+          "required": true,
+          "options": [
+            "Pearson/FASTA"
+          ]
+        }
+      ],
+      "completePattern": "mafft-[IR]\\d{8}-",
+      "jobPattern": "(mafft-[IR]\\d{8}-[A-Za-z0-9-]+)",
+      "taskHint": "After submitting, open the exact MAFFT job link in Recent Jobs, then download the Pearson/FASTA alignment. A recent-job list is not the final alignment.",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/mafft_web-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "itol_web": {
+      "input": "tree",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "tree text|newick|file",
+      "submitPattern": "upload|submit",
+      "resultPatterns": [
+        "Export|Datasets",
+        "Tree name|Leaf|leaves|branches"
+      ],
+      "parameters": [
+        {
+          "id": "treeName",
+          "label": "树名称 / Tree name",
+          "required": true,
+          "default": "BioinformaticsHUB"
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/itol_web-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "espript": {
+      "input": "alignment_fasta",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "alignment|file|sequence",
+      "submitPattern": "submit|run|execute",
+      "resultPatterns": [
+        "ESPript.*results|Output files|Job.*completed",
+        "PostScript|PDF|PNG"
+      ],
+      "parameters": [
+        {
+          "id": "format",
+          "label": "输出格式 / Output format",
+          "required": true,
+          "default": "PDF"
+        }
+      ],
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/espript-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "alphafold_db": {
+      "input": "identifier",
+      "outputs": [
+        "structure",
+        "report"
+      ],
+      "inputPattern": "search|accession|uniprot",
+      "submitPattern": "search",
+      "resultPatterns": [
+        "Predicted aligned error|Model confidence",
+        "UniProt|pLDDT"
+      ],
+      "parameters": [],
+      "lookup": true,
+      "taskHint": "The entry URL binds the exact UniProt accession and UniProt monomer source. Download only this model in PDB or mmCIF format. Do not search for a different model or use global bulk downloads.",
+      "identifierUrl": "https://alphafold.ebi.ac.uk/entry/AF-{identifier}-F1",
+      "resultUrlPattern": "/entry/(?:AF-)?{identifier}(?:-F1)?(?:[/?#]|$)",
+      "readyPattern": "Model confidence|Predicted aligned error|No prediction found|Entry not found",
+      "emailNotification": {
+        "support": "unsupported",
+        "note": "此目录入口为现有数据库记录查询 / Existing database record lookup"
+      }
+    },
+    "swiss_model": {
+      "input": "protein_fasta",
+      "outputs": [
+        "structure",
+        "report"
+      ],
+      "inputPattern": "sequence|fasta|target",
+      "submitPattern": "build|submit|search|start",
+      "resultPatterns": [
+        "Model.*Quality|Model Results|GMQE",
+        "QMEAN|Template|Coverage"
+      ],
+      "parameters": [
+        {
+          "id": "template",
+          "label": "模板选择 / Template selection",
+          "required": true,
+          "default": "Automated modelling",
+          "actionPatterns": {
+            "Automated modelling": "build model|start modelling|build|automodel"
+          }
+        }
+      ],
+      "pendingPattern": "Automodel is running|models will appear here when ready|job.*(?:queued|running)",
+      "pollUrlPattern": "/interactive/[A-Za-z0-9]+/models/",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/swiss_model-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    },
+    "prankweb": {
+      "input": "structure",
+      "outputs": [
+        "report"
+      ],
+      "inputPattern": "structure|pdb|file",
+      "submitPattern": "submit|predict|run",
+      "resultPatterns": [
+        "Predicted pockets|Prediction results",
+        "Pocket|Rank|Probability"
+      ],
+      "parameters": [
+        {
+          "id": "model",
+          "label": "模型 / Model",
+          "required": true,
+          "default": "AlphaFold model",
+          "options": [
+            "Default prediction model",
+            "Default model with conservation",
+            "AlphaFold model",
+            "AlphaFold model with conservation"
+          ]
+        },
+        {
+          "id": "inputMode",
+          "label": "输入方式 / Input method",
+          "required": true,
+          "default": "Custom structure",
+          "options": [
+            "Custom structure"
+          ]
+        }
+      ],
+      "taskHint": "Select Custom structure to upload the bound PDB/mmCIF file. Select the explicitly configured prediction model. Choose Reject all for optional analytics cookies.",
+      "emailNotification": {
+        "support": "unknown",
+        "evidence": "docs/acceptance/prankweb-observation.json",
+        "note": "尚未核实通知能力；不传递邮箱 / Notification capability not confirmed; no email forwarded"
+      }
+    }
+  }
+}

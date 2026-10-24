@@ -1,0 +1,11 @@
+TMHMM result
+
+# sp|P69905|HBA_HUMAN Length: 142
+# sp|P69905|HBA_HUMAN Number of predicted TMHs:  0
+# sp|P69905|HBA_HUMAN Exp number of AAs in TMHs: 0.45206
+# sp|P69905|HBA_HUMAN Exp number, first 60 AAs:  0.00246
+# sp|P69905|HBA_HUMAN Total prob of N-in:        0.23595
+sp|P69905|HBA_HUMAN	TMHMM2.0	outside	     1   142
+
+
+# plot in postscript, script for making the plot in gnuplot, data for plot

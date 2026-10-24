@@ -1,0 +1,348 @@
+{
+  "siteId": "cdd",
+  "recipeVersion": 1,
+  "url": "https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi",
+  "title": "Welcome to NCBI Batch CD-search",
+  "tables": [
+    [
+      [
+        "",
+        "\t"
+      ],
+      [
+        "",
+        "New search\tStructure Home\t3D Macromolecular Structures\tConserved Domains\tPubchem\tBioSystems\tHelp"
+      ]
+    ],
+    [
+      [
+        "",
+        ""
+      ]
+    ],
+    [
+      [
+        "New search",
+        "Structure Home",
+        "3D Macromolecular Structures",
+        "Conserved Domains",
+        "Pubchem",
+        "BioSystems",
+        "Help"
+      ]
+    ],
+    [
+      [
+        ""
+      ]
+    ],
+    [
+      [
+        "Search completed successfully \n\n- Or -\nSelect Download data \nDomain Hits\n\tAlign details\n\n\nas ASN Text XML JSON BLAST Text\n\n\tFeatures\n\n\n\nData mode\n\nConcise\nStandard\nFull\n\tSuperfamily Only\nInclude query defline\nInclude domain defline\n\t\n\t\nStatistics: \nSearch-ID:\tQM3-qcdsearch-3945260BC14B6612\nData source:\tCDSEARCH/cdd\nE-Value cut-off:\t0.01\nComposition-corrected scoring:\tApplied\nLow-complexity regions:\tNot filtered\nMaximum aligns:\t500\nRun time:\t0:00:00:02\nTotal queries parsed:\t1\nValid queries:\t1\nFailed queries:\t0\nQueries with no domain hits:\t0\nTotal domains found:\t12\nTotal clusters found:\t3\nTotal specific features found:\t2\nTotal generic features found:\t0\n\n\n\nSample data \n\nThe table below shows partial result. To download the complete result, select desired options in the download panel above and click the \"download\" button. Alternatively, click the \"Browse results\" button to view the results in graphical format, using the \"navigate results\" menu on the resultant page to select any individual protein from your query list and display its domain footprints, alignment details, and features.\n\nQuery\tHit type\tPSSM-ID\tFrom\tTo\tE-Value\tBitscore\tAccession\tShort name\tIncomplete\tSuperfamily\nQ#1 - >sp|P69905|HBA_HUMAN\tspecific\t381263\t3\t142\t9.01505e-85\t244.016\tcd08927\tHb-alpha-like\t-\tcl21461"
+      ]
+    ],
+    [
+      [
+        "Search completed successfully \n\n- Or -\nSelect Download data \nDomain Hits\n\tAlign details\n\n\nas ASN Text XML JSON BLAST Text\n\n\tFeatures\n\n\n\nData mode\n\nConcise\nStandard\nFull\n\tSuperfamily Only\nInclude query defline\nInclude domain defline\n\t",
+        "Statistics: \nSearch-ID:\tQM3-qcdsearch-3945260BC14B6612\nData source:\tCDSEARCH/cdd\nE-Value cut-off:\t0.01\nComposition-corrected scoring:\tApplied\nLow-complexity regions:\tNot filtered\nMaximum aligns:\t500\nRun time:\t0:00:00:02\nTotal queries parsed:\t1\nValid queries:\t1\nFailed queries:\t0\nQueries with no domain hits:\t0\nTotal domains found:\t12\nTotal clusters found:\t3\nTotal specific features found:\t2\nTotal generic features found:\t0"
+      ],
+      [
+        "Sample data \n\nThe table below shows partial result. To download the complete result, select desired options in the download panel above and click the \"download\" button. Alternatively, click the \"Browse results\" button to view the results in graphical format, using the \"navigate results\" menu on the resultant page to select any individual protein from your query list and display its domain footprints, alignment details, and features."
+      ],
+      [
+        "Query\tHit type\tPSSM-ID\tFrom\tTo\tE-Value\tBitscore\tAccession\tShort name\tIncomplete\tSuperfamily\nQ#1 - >sp|P69905|HBA_HUMAN\tspecific\t381263\t3\t142\t9.01505e-85\t244.016\tcd08927\tHb-alpha-like\t-\tcl21461"
+      ]
+    ],
+    [
+      [
+        "Select Download data "
+      ],
+      [
+        "Domain Hits\n",
+        "Align details\n\n\nas ASN Text XML JSON BLAST Text",
+        "Features\n"
+      ],
+      [
+        "Data mode\n\nConcise\nStandard\nFull\n",
+        "Superfamily Only\nInclude query defline\nInclude domain defline\n",
+        ""
+      ]
+    ],
+    [
+      [
+        "Search-ID:",
+        "QM3-qcdsearch-3945260BC14B6612"
+      ],
+      [
+        "Data source:",
+        "CDSEARCH/cdd"
+      ],
+      [
+        "E-Value cut-off:",
+        "0.01"
+      ],
+      [
+        "Composition-corrected scoring:",
+        "Applied"
+      ],
+      [
+        "Low-complexity regions:",
+        "Not filtered"
+      ],
+      [
+        "Maximum aligns:",
+        "500"
+      ],
+      [
+        "Run time:",
+        "0:00:00:02"
+      ],
+      [
+        "Total queries parsed:",
+        "1"
+      ],
+      [
+        "Valid queries:",
+        "1"
+      ],
+      [
+        "Failed queries:",
+        "0"
+      ],
+      [
+        "Queries with no domain hits:",
+        "0"
+      ],
+      [
+        "Total domains found:",
+        "12"
+      ],
+      [
+        "Total clusters found:",
+        "3"
+      ],
+      [
+        "Total specific features found:",
+        "2"
+      ],
+      [
+        "Total generic features found:",
+        "0"
+      ]
+    ],
+    [
+      [
+        "Query",
+        "Hit type",
+        "PSSM-ID",
+        "From",
+        "To",
+        "E-Value",
+        "Bitscore",
+        "Accession",
+        "Short name",
+        "Incomplete",
+        "Superfamily"
+      ],
+      [
+        "Q#1 - >sp|P69905|HBA_HUMAN",
+        "specific",
+        "381263",
+        "3",
+        "142",
+        "9.01505e-85",
+        "244.016",
+        "cd08927",
+        "Hb-alpha-like",
+        "-",
+        "cl21461"
+      ]
+    ],
+    [
+      [
+        "Help | Disclaimer | Write to the Help Desk\nNCBI | NLM | NIH"
+      ]
+    ],
+    [
+      [
+        "\n\t\t\t\t\t\t\n\t\t\t\t\t\t0:00:00:11\n\t\t\t\t\t"
+      ]
+    ]
+  ],
+  "data": {
+    "domains": 12,
+    "tables": [
+      [
+        [
+          "",
+          "\t"
+        ],
+        [
+          "",
+          "New search\tStructure Home\t3D Macromolecular Structures\tConserved Domains\tPubchem\tBioSystems\tHelp"
+        ]
+      ],
+      [
+        [
+          "",
+          ""
+        ]
+      ],
+      [
+        [
+          "New search",
+          "Structure Home",
+          "3D Macromolecular Structures",
+          "Conserved Domains",
+          "Pubchem",
+          "BioSystems",
+          "Help"
+        ]
+      ],
+      [
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          "Search completed successfully \n\n- Or -\nSelect Download data \nDomain Hits\n\tAlign details\n\n\nas ASN Text XML JSON BLAST Text\n\n\tFeatures\n\n\n\nData mode\n\nConcise\nStandard\nFull\n\tSuperfamily Only\nInclude query defline\nInclude domain defline\n\t\n\t\nStatistics: \nSearch-ID:\tQM3-qcdsearch-3945260BC14B6612\nData source:\tCDSEARCH/cdd\nE-Value cut-off:\t0.01\nComposition-corrected scoring:\tApplied\nLow-complexity regions:\tNot filtered\nMaximum aligns:\t500\nRun time:\t0:00:00:02\nTotal queries parsed:\t1\nValid queries:\t1\nFailed queries:\t0\nQueries with no domain hits:\t0\nTotal domains found:\t12\nTotal clusters found:\t3\nTotal specific features found:\t2\nTotal generic features found:\t0\n\n\n\nSample data \n\nThe table below shows partial result. To download the complete result, select desired options in the download panel above and click the \"download\" button. Alternatively, click the \"Browse results\" button to view the results in graphical format, using the \"navigate results\" menu on the resultant page to select any individual protein from your query list and display its domain footprints, alignment details, and features.\n\nQuery\tHit type\tPSSM-ID\tFrom\tTo\tE-Value\tBitscore\tAccession\tShort name\tIncomplete\tSuperfamily\nQ#1 - >sp|P69905|HBA_HUMAN\tspecific\t381263\t3\t142\t9.01505e-85\t244.016\tcd08927\tHb-alpha-like\t-\tcl21461"
+        ]
+      ],
+      [
+        [
+          "Search completed successfully \n\n- Or -\nSelect Download data \nDomain Hits\n\tAlign details\n\n\nas ASN Text XML JSON BLAST Text\n\n\tFeatures\n\n\n\nData mode\n\nConcise\nStandard\nFull\n\tSuperfamily Only\nInclude query defline\nInclude domain defline\n\t",
+          "Statistics: \nSearch-ID:\tQM3-qcdsearch-3945260BC14B6612\nData source:\tCDSEARCH/cdd\nE-Value cut-off:\t0.01\nComposition-corrected scoring:\tApplied\nLow-complexity regions:\tNot filtered\nMaximum aligns:\t500\nRun time:\t0:00:00:02\nTotal queries parsed:\t1\nValid queries:\t1\nFailed queries:\t0\nQueries with no domain hits:\t0\nTotal domains found:\t12\nTotal clusters found:\t3\nTotal specific features found:\t2\nTotal generic features found:\t0"
+        ],
+        [
+          "Sample data \n\nThe table below shows partial result. To download the complete result, select desired options in the download panel above and click the \"download\" button. Alternatively, click the \"Browse results\" button to view the results in graphical format, using the \"navigate results\" menu on the resultant page to select any individual protein from your query list and display its domain footprints, alignment details, and features."
+        ],
+        [
+          "Query\tHit type\tPSSM-ID\tFrom\tTo\tE-Value\tBitscore\tAccession\tShort name\tIncomplete\tSuperfamily\nQ#1 - >sp|P69905|HBA_HUMAN\tspecific\t381263\t3\t142\t9.01505e-85\t244.016\tcd08927\tHb-alpha-like\t-\tcl21461"
+        ]
+      ],
+      [
+        [
+          "Select Download data "
+        ],
+        [
+          "Domain Hits\n",
+          "Align details\n\n\nas ASN Text XML JSON BLAST Text",
+          "Features\n"
+        ],
+        [
+          "Data mode\n\nConcise\nStandard\nFull\n",
+          "Superfamily Only\nInclude query defline\nInclude domain defline\n",
+          ""
+        ]
+      ],
+      [
+        [
+          "Search-ID:",
+          "QM3-qcdsearch-3945260BC14B6612"
+        ],
+        [
+          "Data source:",
+          "CDSEARCH/cdd"
+        ],
+        [
+          "E-Value cut-off:",
+          "0.01"
+        ],
+        [
+          "Composition-corrected scoring:",
+          "Applied"
+        ],
+        [
+          "Low-complexity regions:",
+          "Not filtered"
+        ],
+        [
+          "Maximum aligns:",
+          "500"
+        ],
+        [
+          "Run time:",
+          "0:00:00:02"
+        ],
+        [
+          "Total queries parsed:",
+          "1"
+        ],
+        [
+          "Valid queries:",
+          "1"
+        ],
+        [
+          "Failed queries:",
+          "0"
+        ],
+        [
+          "Queries with no domain hits:",
+          "0"
+        ],
+        [
+          "Total domains found:",
+          "12"
+        ],
+        [
+          "Total clusters found:",
+          "3"
+        ],
+        [
+          "Total specific features found:",
+          "2"
+        ],
+        [
+          "Total generic features found:",
+          "0"
+        ]
+      ],
+      [
+        [
+          "Query",
+          "Hit type",
+          "PSSM-ID",
+          "From",
+          "To",
+          "E-Value",
+          "Bitscore",
+          "Accession",
+          "Short name",
+          "Incomplete",
+          "Superfamily"
+        ],
+        [
+          "Q#1 - >sp|P69905|HBA_HUMAN",
+          "specific",
+          "381263",
+          "3",
+          "142",
+          "9.01505e-85",
+          "244.016",
+          "cd08927",
+          "Hb-alpha-like",
+          "-",
+          "cl21461"
+        ]
+      ],
+      [
+        [
+          "Help | Disclaimer | Write to the Help Desk\nNCBI | NLM | NIH"
+        ]
+      ],
+      [
+        [
+          "\n\t\t\t\t\t\t\n\t\t\t\t\t\t0:00:00:11\n\t\t\t\t\t"
+        ]
+      ]
+    ]
+  },
+  "parameters": {
+    "database": "CDD",
+    "expect": "0.01"
+  },
+  "inputSha256": "885d988e837aceb36173cc97cff5205961d92f71765ee4c24c57ebbc9b688e25",
+  "jobId": null,
+  "verifiedAt": "2026-09-20T12:34:22Z"
+}
